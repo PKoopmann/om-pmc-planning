@@ -1,0 +1,38 @@
+package de.tu_dresden.inf.lat.ompmc
+
+
+import scala.collection.JavaConverters._
+
+
+import org.semanticweb.HermiT.{Reasoner, ReasonerFactory}
+import org.semanticweb.owlapi.model._
+import org.semanticweb.owlapi.profiles.OWL2ELProfile
+import org.semanticweb.owlapi.reasoner.{OWLReasoner, OWLReasonerFactory}
+
+
+class SingleExplanation(
+  ontologyManager: OWLOntologyManager,
+  reasonerFactory: OWLReasonerFactory = new ReasonerFactory(),
+  relevantAxioms: Set[OWLAxiom]) {
+
+    val dataFactory = ontologyManager.getOWLDataFactory()
+
+    val reasonerFactory:  = org.semanticweb.HermiT.ReasonerFactory
+
+    def explainInconsistency() = {
+      explainInconsistency(Set(), relevantAxioms)
+    }
+
+  def explainInconsistency(fixedRest: List[OWLAxiom], searchIn: List[OWLAxiom]) = {
+    if(searchIn.size()==1)
+      return searchIn
+    val (half1, half2) = split(searchIn)
+  }
+
+  def split(axiomList: List[OWLAxiom]) = {
+    val center = axiomList.size/2
+
+    (axiomList.drop(axiomList.center), 
+     axiomList.dropRight(axiomList.size-center))
+  }
+}

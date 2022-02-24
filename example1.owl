@@ -1,0 +1,66 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://om-pmc.example.de>
+
+
+ObjectProperty: <http://om-pmc.example.de#runsProcess>
+
+    
+Class: <http://om-pmc.example.de#OverloadedServer>
+
+    EquivalentTo: 
+        <http://om-pmc.example.de#Server>
+         and (<http://om-pmc.example.de#runsProcess> min 2 <http://om-pmc.example.de#Process>)
+    
+    SubClassOf: 
+        <http://om-pmc.example.de#Server>
+    
+    
+Class: <http://om-pmc.example.de#Process>
+
+    DisjointWith: 
+        <http://om-pmc.example.de#Server>
+    
+    
+Class: <http://om-pmc.example.de#Server>
+
+    DisjointWith: 
+        <http://om-pmc.example.de#Process>
+    
+    
+Individual: <http://om-pmc.example.de#process1>
+
+    Types: 
+        <http://om-pmc.example.de#Process>
+    
+    DifferentFrom: 
+        <http://om-pmc.example.de#process2>
+    
+    
+Individual: <http://om-pmc.example.de#process2>
+
+    Types: 
+        <http://om-pmc.example.de#Process>
+    
+    DifferentFrom: 
+        <http://om-pmc.example.de#process1>
+    
+    
+Individual: <http://om-pmc.example.de#server1>
+
+    Types: 
+        <http://om-pmc.example.de#Server>
+    
+    
+Individual: <http://om-pmc.example.de#server2>
+
+    Types: 
+        <http://om-pmc.example.de#Server>
+    
+    
