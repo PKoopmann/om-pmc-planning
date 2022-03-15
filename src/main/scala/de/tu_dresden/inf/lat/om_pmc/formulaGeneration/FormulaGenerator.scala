@@ -118,7 +118,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
   def generateAllFormulaDefinitions(): Iterable[String] = {
     List("formula inconsistent = (" + generateInconsistencyFormula() + ")") ++
       hook2axiom.hooks().map(hook =>
-        "formula " + hook + " = (inconsistent || " + generateFormula(hook) + ")"
+        "formula " + hook + " = (inconsistent | " + generateFormula(hook) + ")"
       )
   }
 
