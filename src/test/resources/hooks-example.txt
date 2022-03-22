@@ -1,0 +1,9 @@
+# Example hook definitions
+
+PREFIX : <http://om-pmc.example.de#>
+
+# server1_overloaded := <http://om-pmc.example.de#OverloadedServer>(<http://om-pmc.example.de#server1>)
+server1_overloaded := server1 type OverloadedServer
+# server2_overloaded := <http://om-pmc.example.de#OverloadedServer>(<http://om-pmc.example.de#server2>)
+server2_overloaded := server2 type OverloadedServer
+

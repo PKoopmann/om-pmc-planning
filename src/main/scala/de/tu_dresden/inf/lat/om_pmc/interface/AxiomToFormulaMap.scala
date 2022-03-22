@@ -1,6 +1,6 @@
 package de.tu_dresden.inf.lat.om_pmc.interface
 
-import org.semanticweb.owlapi.model.OWLLogicalAxiom
+import org.semanticweb.owlapi.model.{OWLLogicalAxiom}
 
 class AxiomToFormulaMap {
 
@@ -16,4 +16,9 @@ class AxiomToFormulaMap {
     map.contains(axiom)
 
   def axioms = map.keySet
+
+
+  override def toString() = {
+    map.mkString("[", ", ", "]")
+  }
 }
