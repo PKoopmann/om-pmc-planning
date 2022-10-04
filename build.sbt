@@ -14,8 +14,11 @@ lazy val root = (project in file("."))
     libraryDependencies += "com.github.galigator.openllet" % "openllet-explanation" % "2.6.5",
     libraryDependencies += "org.semanticweb.elk" % "elk-owlapi" % "0.4.3",
     libraryDependencies += "de.tu-dresden.lat" %% "dl-pretty-printer-owlapi5" % "0.4-SNAPSHOT",
-    libraryDependencies += "net.sourceforge.owlapi" % "org.semanticweb.hermit" % "1.4.5.519"
+    libraryDependencies += "net.sourceforge.owlapi" % "org.semanticweb.hermit" % "1.4.5.519",
       )
+
+//libraryDependencies ++= Seq("net.aichler" % "jupiter-interface" % JupiterKeys.jupiterVersion.value % Test)
+libraryDependencies += "net.aichler" % "jupiter-interface" % "0.10.0" % Test
 
 mainClass in (Compile, packageBin) := Some("de.tu_dresden.inf.lat.om_pmc.CreatePrismDefinitions")
 

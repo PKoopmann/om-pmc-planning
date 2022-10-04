@@ -40,7 +40,7 @@ object FormulaGenerator {
 
     var reasonerFactory: OWLReasonerFactory =
       if(explanationMethod.equals(Methods.BLACK_BOX) || explanationMethod.equals(Methods.INC_BASED))
-        new ReasonerFactory()
+        new ReasonerFactory() // HermiT
       else
         new OpenlletReasonerFactory()
 
@@ -135,13 +135,13 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     val repairs = getRepairs()
 
     println("Got " + repairs.size + " repairs.")
-    println("Repair: " + repairs)
+    println("Repairs: " + repairs)
 
     val axioms = ontology.getAxioms()
 
     val inconsistentDNF = generateInconsistentDNF()
 
-    println(SimpleOWLFormatter.format(ontology))
+    //println(SimpleOWLFormatter.format(ontology))
 
     var dnf = Set[Set[OWLLogicalAxiom]]()
 
@@ -163,11 +163,14 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
       println("Testing: " + ax)
 
-      println("Consistency of ontology: " + reasoner.isConsistent())
+      val consistent= reasoner.isConsistent()
+      val entailed = !consistent || reasoner.isEntailed(ax)
 
-      if (!reasoner.isConsistent() || reasoner.isEntailed(ax)) {
+      println("Consistency of ontology: " + consistent)
+      println("Entailment: "+entailed)
 
 
+      if (!consistent || entailed) {
         val start = System.currentTimeMillis
         println("Generating Explanations for " + ax)
         val explanations = getExplanations(ax)

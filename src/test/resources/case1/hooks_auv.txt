@@ -1,0 +1,9 @@
+# hook definitions for auv
+
+PREFIX auv: <http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#>
+
+HOOKisDead := :auv:DeadRobot(:auv:REMAROAUV)
+
+#HOOKrequiresSurfacing := :auv:RobotShouldSurface(:auv:REMAROAUV)
+
+#HOOKdumb := :auv:Sensor(:auv:REMAROCamera)

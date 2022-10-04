@@ -1,0 +1,23 @@
+# Axioms with corresponding formulas in Prism
+ 
+PREFIX auv: <http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#>
+
+# batteries
+
+:auv:hasClassification(:auv:Battery3, :auv:lowVoltage) := battery3_broken=true
+:auv:hasClassification(:auv:Battery3, :auv:ok) := battery3_broken=false
+
+:auv:hasClassification(:auv:Battery1, :auv:lowVoltage) := battery1_broken=true
+:auv:hasClassification(:auv:Battery1, :auv:ok) := battery1_broken=false
+
+:auv:hasClassification(:auv:Battery2, :auv:lowVoltage) := battery2_broken=true
+:auv:hasClassification(:auv:Battery2, :auv:ok) := battery2_broken=false
+
+#:auv:hasClassification(:auv:Battery2, :auv:lowVoltage) := battery2_broken=true
+#:auv:hasClassification(:auv:Battery2, :auv:ok) := battery2_broken=false
+
+
+
+
+
+
