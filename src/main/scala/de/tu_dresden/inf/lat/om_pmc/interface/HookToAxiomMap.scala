@@ -16,4 +16,8 @@ class HookToAxiomMap {
     map.contains(hook)
 
   def hooks() = map.keySet
+
+  override def toString() = {
+    map.mkString("[", ", ", "]")
+  }
 }

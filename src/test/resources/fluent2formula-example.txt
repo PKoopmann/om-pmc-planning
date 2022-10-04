@@ -1,0 +1,10 @@
+# Axioms with corresponding formulas in Prism
+
+PREFIX : <http://om-pmc.example.de#>
+PREFIX other: <http://other.example.de#>
+
+
+<http://om-pmc.example.de#runsProcess>(<http://om-pmc.example.de#server1>, <http://om-pmc.example.de#process1>) := server_proc1=1
+::runsProcess(:other:server1, :other:process2) := server_proc2=1
+::runsProcess(:other:server2, :other:process1) := server_proc1=2
+::runsProcess(:other:server2, :other:process2) := server_proc2=2
