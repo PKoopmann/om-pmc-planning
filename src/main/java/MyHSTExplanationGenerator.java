@@ -16,14 +16,8 @@ import java.util.List;
 import java.util.Set;
 import javax.annotation.Nonnegative;
 import javax.annotation.Nullable;
-import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLClassExpression;
-import org.semanticweb.owlapi.model.OWLDeclarationAxiom;
-import org.semanticweb.owlapi.model.OWLEntity;
-import org.semanticweb.owlapi.model.OWLException;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
-import org.semanticweb.owlapi.model.OWLRuntimeException;
+
+import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.util.OWLAPIPreconditions;
@@ -40,14 +34,14 @@ public class MyHSTExplanationGenerator implements MultipleExplanationGenerator {
     private final TransactionAwareSingleExpGen singleExplanationGenerator;
     private ExplanationProgressMonitor progressMonitor = new SilentExplanationProgressMonitor();
 
-    private final Set<OWLAxiom> relevantAxioms;
+    private final Set<OWLLogicalAxiom> relevantAxioms;
 	
     /**
      * Instantiates a new hST explanation generator.
      *
      * @param singleExplanationGenerator explanation generator to use
      */
-    public MyHSTExplanationGenerator(Set<OWLAxiom> relevantAxioms,
+    public MyHSTExplanationGenerator(Set<OWLLogicalAxiom> relevantAxioms,
 				     TransactionAwareSingleExpGen singleExplanationGenerator) {
 	this.relevantAxioms = relevantAxioms;
 	
@@ -171,17 +165,22 @@ public class MyHSTExplanationGenerator implements MultipleExplanationGenerator {
 
     @Override
     public Set<OWLAxiom> getExplanation(OWLClassExpression unsatClass) {
+        //System.out.println("SingleExplanationGenerator: "+singleExplanationGenerator);
         Set<OWLAxiom> result =
-	    new HashSet<OWLAxiom>(singleExplanationGenerator.getExplanation(unsatClass));
+	        new HashSet<OWLAxiom>(singleExplanationGenerator.getExplanation(unsatClass));
+
+        //System.out.println("Explanation before filtering: "+result);
+
+	    result.retainAll(relevantAxioms);
+
+        //System.out.println("Explanation after filtering: "+result);
+
+	    // for(OWLAxiom axiom: getOntology().getAxioms()){
+	    // 	if(!relevantAxioms.contains(axiom))
+	    // 		result.add(axiom);
+	    // }
 	
-	result.retainAll(relevantAxioms);
-	
-	// for(OWLAxiom axiom: getOntology().getAxioms()){
-	// 	if(!relevantAxioms.contains(axiom))
-	// 		result.add(axiom);
-	// }
-	
-	return result;
+	    return result;
     }
 
     @Override
@@ -203,6 +202,7 @@ public class MyHSTExplanationGenerator implements MultipleExplanationGenerator {
         LOGGER.info("Get {} explanation(s) for: {}", max, unsatClass);
         try {
             Set<OWLAxiom> firstMups = getExplanation(unsatClass);
+
             if (firstMups.isEmpty()) {
                 return Collections.emptySet();
             }

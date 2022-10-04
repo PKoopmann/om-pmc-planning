@@ -35,7 +35,7 @@ class IfmBlackboxSituationFormulaGenerator(
 
     expGenerator =
       new MyHSTExplanationGenerator(
-        relevantAxioms.toSet[OWLAxiom].asJava,
+        relevantAxioms.toSet[OWLLogicalAxiom].asJava,
         singleGen)
   }
 

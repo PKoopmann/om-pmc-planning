@@ -5,11 +5,11 @@ import de.tu_dresden.inf.lat.om_pmc.ifm.{IfmBlackboxSituationFormulaGenerator, I
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
 import de.tu_dresden.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import openllet.owlapi.OpenlletReasonerFactory
-import org.semanticweb.HermiT.ReasonerFactory
+import org.semanticweb.HermiT.{Configuration, ReasonerFactory}
 import org.semanticweb.elk.owlapi.ElkReasonerFactory
 import org.semanticweb.owlapi.model.{IRI, OWLAxiom, OWLClass, OWLEntity, OWLLogicalAxiom, OWLOntology, OWLOntologyManager}
 import org.semanticweb.owlapi.profiles.OWL2ELProfile
-import org.semanticweb.owlapi.reasoner.{OWLReasoner, OWLReasonerFactory}
+import org.semanticweb.owlapi.reasoner.{OWLReasoner, OWLReasonerConfiguration, OWLReasonerFactory}
 import uk.ac.manchester.cs.owlapi.modularity.{ModuleType, SyntacticLocalityModuleExtractor}
 
 import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
@@ -39,12 +39,13 @@ object FormulaGenerator {
     println(explanationMethod)
 
     var reasonerFactory: OWLReasonerFactory =
-      if(explanationMethod.equals(Methods.BLACK_BOX) || explanationMethod.equals(Methods.INC_BASED))
-        new ReasonerFactory() // HermiT
+      if(explanationMethod.equals(Methods.BLACK_BOX) || explanationMethod.equals(Methods.INC_BASED)) {
+        new ReasonerFactory()
+      } // HermiT
       else
         new OpenlletReasonerFactory()
 
-    println("factory: "+reasonerFactory)
+    //println("factory: "+reasonerFactory)
 
     if (inEL(module)) {
       println("only EL axioms relevant!")
@@ -57,7 +58,7 @@ object FormulaGenerator {
       case Methods.BLACK_BOX =>
         new BlackboxSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
       case Methods.GLASS_BOX =>
-        new GlassboxSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
+        new GlassboxCapableSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
       case Methods.INC_BASED =>
         new InconsistencyBasedGBSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
     }
@@ -111,7 +112,14 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   def initReasoner(ontology: OWLOntology) = {
     this.ontology=ontology
-    reasoner = reasonerFactory.createReasoner(ontology)
+    if(reasonerFactory.isInstanceOf[ReasonerFactory]){
+      val config = new Configuration();
+      config.throwInconsistentOntologyException=false
+      reasoner = reasonerFactory.createReasoner(ontology,config)
+    }
+    else
+      reasoner = reasonerFactory.createReasoner(ontology)
+
     initExplanationGenerator(ontology)
   }
 
@@ -145,7 +153,11 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     var dnf = Set[Set[OWLLogicalAxiom]]()
 
+    var counter = 0
+
     repairs.foreach { repair =>
+      counter+= 1
+      println("Using repair nr. "+counter)
       val repairedAxioms = axioms.asScala -- repair
 
       val repairedOntology = ontologyManager.createOntology(repairedAxioms.asJava)

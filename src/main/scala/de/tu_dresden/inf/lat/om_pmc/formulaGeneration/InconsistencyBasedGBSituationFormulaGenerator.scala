@@ -1,9 +1,11 @@
 package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
+import de.tu_dresden.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLLogicalAxiom, OWLOntology, OWLOntologyManager}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
+import java.io.{File, FileOutputStream}
 import scala.collection.JavaConverters.asScalaSetConverter
 
 class InconsistencyBasedGBSituationFormulaGenerator(
@@ -12,17 +14,31 @@ class InconsistencyBasedGBSituationFormulaGenerator(
                                                      ontologyManager: OWLOntologyManager,
                                                      reasonerFactory: OWLReasonerFactory
                                                    )
-  extends GlassboxSituationFormulaGenerator(axiom2formula,hook2axiom,ontologyManager,reasonerFactory) {
+  extends GlassboxCapableSituationFormulaGenerator(axiom2formula,hook2axiom,ontologyManager,reasonerFactory) {
 
   override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] = {
 
+    //println("Ontology before: ")
+    //println("--------------");
+    //println(SimpleOWLFormatter.format(ontology))
+
     val negated = negateAxiom(axiom)
 
-    ontology.addAxiom(negated)
+    val added =
+      if(ontology.containsAxiom(negated)) {
+        false
+      } else
+        true
+
+    if(added)
+      ontology.addAxiom(negated)
+
 
     initReasoner(ontology)
 
     reasoner.flush()
+
+    ontologyManager.saveOntology(ontology, new FileOutputStream(new File("test.owl")))
 
     System.out.println("consistency: "+reasoner.isConsistent)
 
@@ -30,7 +46,10 @@ class InconsistencyBasedGBSituationFormulaGenerator(
       .asScala
       .map(_.asScala.toSet[OWLAxiom].map(_.asInstanceOf[OWLLogicalAxiom]))
 
-    ontology.removeAxiom(negated)
+    assert(result.size>0)
+
+    if(!added)
+      ontology.removeAxiom(negated)
 
     initReasoner(ontology)
     reasoner.flush()

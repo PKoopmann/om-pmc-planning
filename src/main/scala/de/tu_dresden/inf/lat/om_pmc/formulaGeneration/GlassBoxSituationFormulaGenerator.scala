@@ -2,13 +2,13 @@ package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
 import de.tu_dresden.inf.lat.om_pmc.ifm.IfmSituationFormulaGenerator
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
-import openllet.owlapi.explanation.MyPelletExplanation
+import openllet.owlapi.explanation.MyExplanation
 import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLLogicalAxiom, OWLOntology, OWLOntologyManager}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
 import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
 
-class GlassboxSituationFormulaGenerator(
+class GlassboxCapableSituationFormulaGenerator(
                                          axiom2formula: AxiomToFormulaMap,
                                          hook2axiom: HookToAxiomMap,
                                          ontologyManager: OWLOntologyManager,
@@ -17,14 +17,16 @@ class GlassboxSituationFormulaGenerator(
   extends FormulaGenerator(axiom2formula, hook2axiom,ontologyManager, reasonerFactory) {
 
   //val explanationGenerator = new PelletExplanation(ontology, true);
-  var explanationGenerator: MyPelletExplanation = _
+  var explanationGenerator: MyExplanation = _
 
   //initExplanationGenerator(ontology)
 
   override def initExplanationGenerator(ontology: OWLOntology) = {
     val axioms = ontology.getAxioms().asScala.toSet
     val relevantAxiomsFiltered = relevantAxioms.filter(axioms)
-    explanationGenerator = new MyPelletExplanation(ontology, true, relevantAxiomsFiltered.asJava) // above line seems to fail
+    explanationGenerator = MyExplanation.getBlackBoxExplanation(reasonerFactory, reasoner, relevantAxiomsFiltered.asJava)
+    // TODO class name misleading - not glassbox!
+    //explanationGenerator = new MyExplanation(ontology, true, relevantAxiomsFiltered.asJava) // above line seems to fail
   }
 
   override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] =

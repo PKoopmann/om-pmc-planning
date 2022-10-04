@@ -23,8 +23,7 @@ import uk.ac.manchester.cs.owlapi.modularity.{ModuleType, SyntacticLocalityModul
 
 import org.semanticweb.elk.owlapi.ElkReasonerFactory;
 import openllet.owlapi.{OpenlletReasoner, OpenlletReasonerFactory}
-import openllet.owlapi.explanation.MyPelletExplanation
-import openllet.owlapi.explanation.PelletExplanation
+import openllet.owlapi.explanation.{MyExplanation, PelletExplanation}
 
 
 

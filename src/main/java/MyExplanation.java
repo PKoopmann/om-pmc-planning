@@ -10,12 +10,14 @@ import java.util.Set;
 import openllet.owlapi.OpenlletReasoner;
 import openllet.owlapi.OpenlletReasonerFactory;
 import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 
 /**
  * @author Evren Sirin
  * @author Patrick Koopmann (small adaptation)
  */
-public class MyPelletExplanation
+public class MyExplanation
 {
     static
     {
@@ -37,39 +39,57 @@ public class MyPelletExplanation
 
     private final SatisfiabilityConverter _converter;
 
-	
-    public MyPelletExplanation(final OWLOntology ontology,
-			       final Set<OWLLogicalAxiom> relevantAxioms)
+    public MyExplanation(final OWLOntology ontology,
+                         final Set<OWLLogicalAxiom> relevantAxioms)
     {
 	this(ontology, true, relevantAxioms);
     }
 
-    public MyPelletExplanation(final OWLOntology ontology,
-			       final boolean useGlassBox,
-			       final Set<OWLLogicalAxiom> relevantAxioms)
+    public MyExplanation(final OWLOntology ontology,
+                         final boolean useGlassBox,
+                         final Set<OWLLogicalAxiom> relevantAxioms)
     {
 	this(new OpenlletReasonerFactory().createReasoner(ontology),
 	     useGlassBox, Collections.unmodifiableSet(relevantAxioms));
     }
 
-    public MyPelletExplanation(final OpenlletReasoner reasoner,
-			       final Set<OWLAxiom> relevantAxioms)
+    public MyExplanation(final OpenlletReasoner reasoner,
+                         final Set<OWLLogicalAxiom> relevantAxioms)
     {
 	this(reasoner, true, relevantAxioms);
     }
 
-    private MyPelletExplanation(final OpenlletReasoner reasoner,
-				final boolean useGlassBox,
-				final Set<OWLAxiom> relevantAxioms)
-    {
-	// Get the _factory object
-	_factory = reasoner.getManager().getOWLDataFactory();
+    private MyExplanation(final OpenlletReasoner reasoner,
+                          final boolean useGlassBox,
+                          final Set<OWLLogicalAxiom> relevantAxioms) {
+        this(getSingleExp(useGlassBox,reasoner), reasoner.getFactory(), relevantAxioms);
+    }
 
-	// Create a single explanation generator
-	final TransactionAwareSingleExpGen singleExp =
-	    useGlassBox
-	    ? new GlassBoxExplanation(reasoner)
-	    : new MyBlackBoxExplanation(reasoner.getRootOntology(), new OpenlletReasonerFactory(), reasoner);
+    private static TransactionAwareSingleExpGen getSingleExp(final boolean useGlassBox, OpenlletReasoner reasoner) {
+        return  useGlassBox
+                ? new GlassBoxExplanation(reasoner)
+                : new MyBlackBoxExplanation(reasoner.getRootOntology(), new OpenlletReasonerFactory(), reasoner);
+    }
+
+
+    public static  MyExplanation getBlackBoxExplanation(
+            final OWLReasonerFactory factory,
+            final OWLReasoner reasoner,
+            final Set<OWLLogicalAxiom> relevantAxioms){
+        OWLOntology ontology = reasoner.getRootOntology();
+        OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
+        TransactionAwareSingleExpGen singleExp = new MyBlackBoxExplanation(reasoner.getRootOntology(), factory, reasoner);
+        return new MyExplanation(
+                singleExp,
+                dataFactory,
+                relevantAxioms
+        );
+    }
+
+    private MyExplanation(final TransactionAwareSingleExpGen singleExp, OWLDataFactory factory,
+                          final Set<OWLLogicalAxiom> relevantAxioms) {
+	// Get the _factory object
+	_factory = factory;
 
 	// Create multiple explanation generator
 	_expGen = new MyHSTExplanationGenerator(relevantAxioms, singleExp);

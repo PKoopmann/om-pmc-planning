@@ -1,6 +1,6 @@
 package de.tu_dresden.inf.lat.om_pmc.ifm
 
-import openllet.owlapi.explanation.MyPelletExplanation
+import openllet.owlapi.explanation.MyExplanation
 import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLLogicalAxiom, OWLOntology}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
@@ -21,14 +21,14 @@ class IfmGlassboxSituationFormulaGenerator(
     outputFileName) {
 
   //val explanationGenerator = new PelletExplanation(ontology, true);
-  var explanationGenerator: MyPelletExplanation = _
+  var explanationGenerator: MyExplanation = _
 
   initExplanationGenerator(ontology)
 
   override def initExplanationGenerator(ontology: OWLOntology) = {
     val axioms = ontology.getAxioms().asScala.toSet
     val relevantAxiomsFiltered = relevantAxioms.filter(axioms)
-    explanationGenerator = new MyPelletExplanation(ontology, true, relevantAxiomsFiltered.asJava) // above line seems to fail
+    explanationGenerator = new MyExplanation(ontology, true, relevantAxiomsFiltered.asJava) // above line seems to fail
   }
 
   override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] =

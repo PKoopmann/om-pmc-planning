@@ -27,6 +27,8 @@ import java.util.Set;
 
 import javax.annotation.Nullable;
 
+import org.semanticweb.HermiT.Configuration;
+import org.semanticweb.HermiT.ReasonerFactory;
 import org.semanticweb.owlapi.model.OWLAnnotationAxiom;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
@@ -347,8 +349,16 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
     private boolean isSatisfiable(OWLClassExpression unsatClass) throws OWLException {
         try {
             createDebuggingOntology();
-            OWLReasoner reasoner =
+
+            OWLReasoner reasoner;
+            if(getReasonerFactory() instanceof ReasonerFactory) {
+                Configuration config = new Configuration();
+                config.throwInconsistentOntologyException=false;
+                reasoner = getReasonerFactory().createNonBufferingReasoner(verifyNotNull(debuggingOntology),config);
+            } else
+                reasoner =
                 getReasonerFactory().createNonBufferingReasoner(verifyNotNull(debuggingOntology));
+
             if (OntologyUtils.containsUnreferencedEntity(verifyNotNull(debuggingOntology),
                 unsatClass)) {
                 reasoner.dispose();

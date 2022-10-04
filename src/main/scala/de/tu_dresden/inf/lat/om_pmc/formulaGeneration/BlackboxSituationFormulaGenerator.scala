@@ -32,7 +32,7 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     expGenerator =
       new MyHSTExplanationGenerator(
-        relevantAxioms.toSet[OWLAxiom].asJava,
+        relevantAxioms.toSet[OWLLogicalAxiom].asJava,
         singleGen)
   }
 
