@@ -145,6 +145,8 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     println("Got " + repairs.size + " repairs.")
     println("Repairs: " + repairs)
 
+    val originalOntology = ontology
+
     val axioms = ontology.getAxioms()
 
     val inconsistentDNF = generateInconsistentDNF()
@@ -189,14 +191,21 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
         println("took " + (System.currentTimeMillis - start))
         println(explanations.size + " explanations found")
         explanations.foreach { exp =>
+          println("Adding new explanation")
+          println("Explanations before: "+dnf.size)
           val rel = exp.filter(relevantAxioms)
           dnf = dnf.filterNot(rel.forall)
-          if (!dnf.exists(_.forall(rel)))
+          if (!dnf.exists(_.forall(rel))) {
             dnf += rel.toSet
+            println("Explanations after: "+dnf.size)
+          }
         }
 
       }
     }
+
+    ontology=originalOntology
+
     //      initReasoner()
     //      reasoner.flush()
 
@@ -205,15 +214,26 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     dnf
   }
 
-  def generateInconsistentDNF() = {
+  var inconsistentDNF: Option[Set[Set[OWLLogicalAxiom]]] = None
+
+  def generateInconsistentDNF(): Set[Set[OWLLogicalAxiom]] = {
+
+    if(!inconsistentDNF.isEmpty)
+      return inconsistentDNF.get
 
     var dnf = Set[Set[OWLLogicalAxiom]]()
 
     val start = System.currentTimeMillis
 
+    println("Generating inconsistency dnf")
+    //println("Ontology has now "+ontology.getAxiomCount()+ " axioms.")
+
+    initReasoner(ontology)
+    initExplanationGenerator(ontology)
+    reasoner.flush()
 
     if (!reasoner.isConsistent) {
-      println("Is inconsistent")
+      //println("Is inconsistent")
       val explanations = getExplanationsForInconsistency()
       println("took " + (System.currentTimeMillis - start))
       println(explanations.size + " explanations found")
@@ -229,6 +249,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       }
 
     }
+    inconsistentDNF = Some(dnf)
     dnf
   }
 

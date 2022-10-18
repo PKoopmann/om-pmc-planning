@@ -21,26 +21,24 @@ class InconsistencyBasedGBSituationFormulaGenerator(
     //println("Ontology before: ")
     //println("--------------");
     //println(SimpleOWLFormatter.format(ontology))
+    //println(ontology.getAxiomCount()+" axioms");
 
     val negated = negateAxiom(axiom)
 
-    val added =
-      if(ontology.containsAxiom(negated)) {
-        false
-      } else
-        true
+    val needsToAddAxiom = !ontology.containsAxiom(negated)
 
-    if(added)
+    if(needsToAddAxiom)
       ontology.addAxiom(negated)
 
+    //println("Needs to add axiom: "+needsToAddAxiom)
+    //println("negatedAxiom: "+SimpleOWLFormatter.format(negated))
 
     initReasoner(ontology)
-
     reasoner.flush()
 
     ontologyManager.saveOntology(ontology, new FileOutputStream(new File("test.owl")))
 
-    System.out.println("consistency: "+reasoner.isConsistent)
+    //System.out.println("consistency: "+reasoner.isConsistent)
 
     val result = explanationGenerator.getInconsistencyExplanations()
       .asScala
@@ -48,14 +46,22 @@ class InconsistencyBasedGBSituationFormulaGenerator(
 
     assert(result.size>0)
 
+    //System.out.println("Explanations found: "+result.size)
+
     //if(result.size==0)
     //  System.out.println("WARNING: Hook that is always satisfied for axiom "+SimpleOWLFormatter.format(axiom))
 
-    if(!added)
+    if(needsToAddAxiom)
       ontology.removeAxiom(negated)
 
     initReasoner(ontology)
     reasoner.flush()
+
+
+    //println("Ontology after: ")
+    //println("--------------");
+    //println(SimpleOWLFormatter.format(ontology))
+    //println(ontology.getAxiomCount()+" axioms");
 
     result
   }

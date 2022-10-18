@@ -12,14 +12,20 @@ class ComplexTestCases {
 
   @Test
   def test1(): Unit = {
-    val axiom2Formula = InterfaceParser.parseAxiomMapping(Source.fromResource("case1/weird.txt"))
-    val hook2axiom = InterfaceParser.parseHookDefinitions(Source.fromResource("case1/hooks_auv.txt"))
+
     val ontology = OWLManager.createOWLOntologyManager()
-      .loadOntologyFromOntologyDocument(
-        new ReaderDocumentSource(
-          Source.fromResource("case1/complex_AUV_system.owl").reader()
-        )
+    .loadOntologyFromOntologyDocument(
+      new ReaderDocumentSource(
+        Source.fromResource("case1/complex_AUV_system.owl").reader()
       )
+    )
+
+    val parser = new InterfaceParser(ontology)
+    parser.MANCHESTER_SYNTAX=false
+
+    val axiom2Formula = parser.parseAxiomMapping(Source.fromResource("case1/weird.txt"))
+    val hook2axiom = parser.parseHookDefinitions(Source.fromResource("case1/hooks_auv.txt"))
+
 
     val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula, hook2axiom, ontology)
 

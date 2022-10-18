@@ -23,11 +23,13 @@ object CreatePrismDefinitions {
   }
 
   def create(formulaFile: File, hookFile: File, ontologyFile: File, outputFile: File): Unit = {
-    val axiom2Formula = InterfaceParser.parseAxiomMapping(formulaFile)
-    println("Mapping DL fluent -> PRISM formula: "+axiom2Formula)
-    val hook2axiom = InterfaceParser.parseHookDefinitions(hookFile)
-    println("Mapping PRISM hook -> DL axiom: "+hook2axiom)
     val ontology = OWLManager.createOWLOntologyManager().loadOntologyFromOntologyDocument(ontologyFile)
+
+    val parser = new InterfaceParser(ontology)
+    val axiom2Formula = parser.parseAxiomMapping(formulaFile)
+    println("Mapping DL fluent -> PRISM formula: "+axiom2Formula)
+    val hook2axiom = parser.parseHookDefinitions(hookFile)
+    println("Mapping PRISM hook -> DL axiom: "+hook2axiom)
 
     val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
 
