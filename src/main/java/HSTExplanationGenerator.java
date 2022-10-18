@@ -199,7 +199,8 @@ public class HSTExplanationGenerator implements MultipleExplanationGenerator {
         try {
             Set<OWLAxiom> firstMups = getExplanation(unsatClass);
             if (firstMups.isEmpty()) {
-                return Collections.emptySet();
+                LOGGER.info("First MUPS is empty!");
+            //    return Collections.emptySet();
             }
             Set<Set<OWLAxiom>> allMups = new LinkedHashSet<>();
             progressMonitor.foundExplanation(firstMups);

@@ -179,7 +179,10 @@ public class MyHSTExplanationGenerator implements MultipleExplanationGenerator {
 	    // 	if(!relevantAxioms.contains(axiom))
 	    // 		result.add(axiom);
 	    // }
-	
+
+        if(result.isEmpty())
+            LOGGER.info("Empty explanation after filtering!");
+
 	    return result;
     }
 
@@ -204,7 +207,9 @@ public class MyHSTExplanationGenerator implements MultipleExplanationGenerator {
             Set<OWLAxiom> firstMups = getExplanation(unsatClass);
 
             if (firstMups.isEmpty()) {
-                return Collections.emptySet();
+                LOGGER.info("First MUPS empty");
+                //System.out.println("First MUPS is empty!");
+                //return Collections.emptySet();
             }
             Set<Set<OWLAxiom>> allMups = new LinkedHashSet<>();
             progressMonitor.foundExplanation(firstMups);

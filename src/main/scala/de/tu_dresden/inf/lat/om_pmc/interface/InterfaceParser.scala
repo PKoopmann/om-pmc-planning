@@ -43,6 +43,8 @@ object InterfaceParser {
               prefix = prefix.substring(1, prefix.length-1);
             println("Register prefix: '"+prefixName.trim+"' with "+prefix)
             prefixManager.setPrefix(prefixName.trim,prefix)
+            println("Prefixes (now added): ")
+            prefixManager.prefixNames().forEach(x => println(x))
           case other => throw new ParsingException("wrong prefix declaration: "+other)
         }
       }
@@ -50,6 +52,8 @@ object InterfaceParser {
         line.split(" := ") match {
           case Array(left: String, right: String) =>
             val formula = right
+            //println("Prefixes: ")
+            //prefixManager.prefixNames().forEach(x => println(x))
             val axiom = parser.parse(left)
             //val axiom = manchesterParser.parse(left)
             if(!axiom.isInstanceOf[OWLLogicalAxiom])
@@ -89,6 +93,8 @@ object InterfaceParser {
             prefix = prefix.substring(1, prefix.length-1);
           println("Register prefix: '"+prefixName.trim+"' with "+prefix)
           prefixManager.setPrefix(prefixName.trim,prefix)
+          println("Prefixes (now added): ")
+          prefixManager.prefixNames().forEach(x => println(x))
         case other => throw new ParsingException("wrong prefix declaration: "+other)
       }
     } else {

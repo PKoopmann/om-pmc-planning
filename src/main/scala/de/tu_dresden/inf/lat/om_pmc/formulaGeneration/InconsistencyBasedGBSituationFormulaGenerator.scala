@@ -48,6 +48,9 @@ class InconsistencyBasedGBSituationFormulaGenerator(
 
     assert(result.size>0)
 
+    //if(result.size==0)
+    //  System.out.println("WARNING: Hook that is always satisfied for axiom "+SimpleOWLFormatter.format(axiom))
+
     if(!added)
       ontology.removeAxiom(negated)
 
