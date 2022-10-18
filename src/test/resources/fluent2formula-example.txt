@@ -14,6 +14,7 @@ PREFIX other: <http://other.example.de#>
 <http://om-pmc.example.de#server1> <http://om-pmc.example.de#runsProcess> <http://om-pmc.example.de#process1> := server_proc1
 
 other:server1 :runsProcess other:process2 := server_proc2=1
-other:server2 runsProcess other:process1 := server_proc1=2
-other:server2 runsProcess other:process2 := server_proc2=2
+other:server2 :runsProcess other:process1 := server_proc1=2
+other:server2 :runsProcess other:process2 := server_proc2=2
+other:server :hasCapacity "10"^^xsd:integer := capacity=10
 

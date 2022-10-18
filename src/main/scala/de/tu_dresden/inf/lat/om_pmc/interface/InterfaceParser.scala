@@ -83,11 +83,29 @@ class InterfaceParser(ontology: OWLOntology) {
 
   val rePropertyAssertion = raw"([^\s]+)\s+([^\s]+)\s+([^\s]+)".r
 
+  val reLiteral = """([0-9\.]+|"[^"]*"(@.*)?(\^\^.*)?|true|false)""".r
+
+
   def parse(string: String,
             manchesterParser: ManchesterOWLSyntaxParserImpl,
             factory: OWLDataFactory,
             entityChecker: OWLEntityChecker): OWLAxiom = {
     val axiom = string match {
+      case rePropertyAssertion(first,property,second) if second matches(reLiteral.regex) =>
+        println(reLiteral.findFirstIn(second))
+        println("first: "+first)
+        println("second: "+second)
+        println("property: "+property)
+        val ind = factory.getOWLNamedIndividual(getIRI(first,manchesterParser))
+        val prp = factory.getOWLDataProperty(getIRI(property,manchesterParser))
+        manchesterParser.setStringToParse(second)
+        val value = manchesterParser.parseLiteral(null)
+        println(ind)
+        println(prp)
+        println(value)
+
+        factory.getOWLDataPropertyAssertionAxiom(prp,ind,value)
+
       case rePropertyAssertion(first,property,second) if !property.equals("Type:")  =>
         println("first: "+first)
         println("second: "+second)
