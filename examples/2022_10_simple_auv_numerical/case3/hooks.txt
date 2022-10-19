@@ -1,0 +1,9 @@
+# hook definitions for auv
+
+PREFIX auv: <http://www.ifi.uio.no/auv_numerical#>
+
+HOOKPtakePhoto = ?p := {:auv:AUV} SubClassOf :auv:hasCapability some (pSucces some ?p)
+
+
+
+

@@ -1,0 +1,10 @@
+# Axioms with corresponding formulas in Prism
+ 
+PREFIX auv: <http://www.ifi.uio.no/auv_numerical#>
+
+
+# detect Moby Dick (a whale)
+:auv:detects(:auv:AUV, :auv:MobyDick) := detect_moby_dick=true
+
+:auv:hasWeight(:auv:MobyDick, "10"^^xsd:integer) := whale_heavy=false
+:auv:hasWeight(:auv:MobyDick, "40"^^xsd:integer) := whale_heavy=true

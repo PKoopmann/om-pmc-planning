@@ -1,0 +1,1 @@
+formula HOOKPtakePhoto = ((cloudy=true) ? 0.2 : ((cloudy=false) ? 0.9 : 0.0));

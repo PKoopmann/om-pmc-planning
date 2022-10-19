@@ -1,0 +1,64 @@
+PRISM
+=====
+
+Version: 4.7
+Date: Wed Oct 05 17:34:40 CEST 2022
+Hostname: tobias-HP
+Memory limits: cudd=1g, java(heap)=1g
+Command line: prism ./case3/auv_control.prism -pf 'Rmax=? [ F (abort) ]'
+
+Parsing model file "./case3/auv_control.prism"...
+
+Type:        MDP
+Modules:     environment AUV time 
+Variables:   Player foundPipeline detect_moby_dick whale_heavy cloudy ENVsteps abort goodPhoto Adjustment 
+
+1 property:
+(1) Rmax=? [ F (abort) ]
+
+---------------------------------------------------------------------
+
+Model checking: Rmax=? [ F (abort) ]
+
+Building model...
+
+Computing reachable states...
+
+Reachability (BFS): 17 iterations in 0.00 seconds (average 0.000059, setup 0.00)
+
+Time for model construction: 0.013 seconds.
+
+Type:        MDP
+States:      288 (1 initial)
+Transitions: 464
+Choices:     304
+
+Transition matrix: 402 nodes (10 terminal), 464 minterms, vars: 13r/13c/5nd
+
+Prob0E: 10 iterations in 0.00 seconds (average 0.000100, setup 0.00)
+
+Prob1A: 1 iterations in 0.00 seconds (average 0.000000, setup 0.00)
+
+goal = 144, inf = 0, maybe = 144
+
+Computing remaining rewards...
+Switching engine since hybrid engine does yet support this computation...
+Engine: Sparse
+
+Building sparse matrix (transitions)... [n=288, nc=160, nnz=256, k=2] [4.8 KB]
+Building sparse matrix (transition rewards)... [n=288, nc=160, nnz=4, k=2] [1.8 KB]
+Creating vector for state rewards... [2.2 KB]
+Creating vector for inf... [2.2 KB]
+Allocating iteration vectors... [2 x 2.2 KB]
+TOTAL: [15.5 KB]
+
+Starting iterations...
+
+Iterative method: 4608 iterations in 0.01 seconds (average 0.000001, setup 0.00)
+
+Value in the initial state: 51.20793507137801
+
+Time for model checking: 0.011 seconds.
+
+Result: 51.20793507137801 (+/- 5.113521293318799E-4 estimated; rel err 9.985798658335148E-6)
+

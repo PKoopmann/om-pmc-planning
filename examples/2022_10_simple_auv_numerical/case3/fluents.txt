@@ -1,0 +1,9 @@
+# Axioms with corresponding formulas in Prism
+ 
+PREFIX auv: <http://www.ifi.uio.no/auv_numerical#>
+
+
+# detect Moby Dick (a whale)
+:auv:hasCapability(:auv:AUV, :auv:TakePhotoCloudy) := cloudy=true
+:auv:hasCapability(:auv:AUV, :auv:TakePhotoSun) := cloudy=false
+

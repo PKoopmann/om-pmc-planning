@@ -1,0 +1,2 @@
+formula inconsistent = (false)
+formula HOOKheavyWhale = (inconsistent | (whale_heavy=true))

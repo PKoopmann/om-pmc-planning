@@ -1,0 +1,102 @@
+// Author: Tobias John
+// affiliation: University of Oslo
+// year: 2022
+
+// PRISM model to simulate determinstic control of an AUV 
+// in an nondeterministic and probabilistic environment
+
+
+mdp
+
+// begin Hook rewritings
+formula inconsistent = (false);
+formula HOOKrequiresSurfacing = (inconsistent | (detect_moby_dick=true & whale_heavy=true));
+// end Hook rewritings
+
+// parameters of AUV
+
+
+const double PFindPipeline = 0.1;	// probability to find the pipeline in a given time step
+const double PLoosePipeline = 0.02;	// probability to loose the pipeline in a given time step
+const double PMeetWhale = 0.02;		// probability to meet a whale in a given time step
+const double PLoosWhale = 0.2;		// probability to lost sight of the whale in a given time step
+const double PWhaleHeavy = 0.5;
+
+// variable to ensure that all players do moves in the same order
+global Player : [0..2] init 1;	// AUV starts = initilization of auv before mission
+formula envState = Player=0;	// formulae to describe which player is acting
+formula auvState = Player=1;
+formula timeState = Player=2;
+
+
+// collect all critical states
+formula critical = HOOKrequiresSurfacing;
+
+
+// constants used to iterate through all possible aspects of env changes
+const int ENVinit = 0;
+const int ENVfindPipeline = 1;
+const int ENVmeetWhale = 2;
+const int ENVweighWhale = 3;
+const int ENVfinished = 4;
+
+module environment
+	foundPipeline : bool init false;
+
+	detect_moby_dick : bool init false;
+
+	whale_heavy : bool init false;
+
+	// use variable to loop through all the different aspects that could change
+	ENVsteps :[0..ENVfinished] init 0;	// iterate through all possible environmental changes
+	
+
+	[] envState & ENVsteps=ENVinit -> (ENVsteps'= ENVsteps+1);
+
+
+	// find or loose pipeline
+	[fPipe] envState & ENVsteps = ENVfindPipeline & !foundPipeline -> PFindPipeline : (foundPipeline'=true) & (ENVsteps'=ENVsteps+1)
+								+ 1-PFindPipeline : (ENVsteps'=ENVsteps+1);
+	[fPipe] envState & ENVsteps = ENVfindPipeline & foundPipeline -> PLoosePipeline : (foundPipeline'=false) & (ENVsteps'=ENVsteps+1)
+								+ 1-PLoosePipeline : (ENVsteps'=ENVsteps+1);
+	
+	// a whale might occur
+	[whale] envState & ENVsteps = ENVmeetWhale & !detect_moby_dick -> PMeetWhale : (detect_moby_dick'=true) & (ENVsteps'=ENVsteps+1)
+									+ 1-PMeetWhale : (ENVsteps'=ENVsteps+1);
+	[whale] envState & ENVsteps = ENVmeetWhale & detect_moby_dick -> PLoosWhale : (detect_moby_dick'=true) & (ENVsteps'=ENVsteps+1)
+									+ 1-PLoosWhale : (ENVsteps'=ENVsteps+2);
+	// if whale occured: how heavy is it?
+	[] envState & ENVsteps = ENVweighWhale -> PWhaleHeavy : (whale_heavy'=true) & (ENVsteps'=ENVsteps+1)
+						+ 1-PWhaleHeavy : (whale_heavy'=false) & (ENVsteps'=ENVsteps+1);
+	
+	[] envState & ENVsteps = ENVfinished -> (ENVsteps'=0) & (Player'=Player+1);	// finished making changes
+endmodule
+
+
+
+// constants used to iterate through all possible aspects of control adaptations
+const int AUVcheckSurfacing = 0;
+const int AUVfinished = 1;
+
+module AUV
+	abort : bool init false;	// whether AUV aborted mission
+
+	Adjustment : [0..AUVfinished] init 0;
+	
+
+	[] auvState & Adjustment=AUVcheckSurfacing & !abort & HOOKrequiresSurfacing -> (abort' = true) & (Adjustment' = Adjustment+1);
+	[] auvState & Adjustment=AUVcheckSurfacing & !(!abort & HOOKrequiresSurfacing) -> (Adjustment'=Adjustment+1);
+
+	[] auvState & Adjustment=AUVfinished -> (Adjustment'=0) & (Player'=Player+1);
+endmodule
+
+// clock that has EXACTLY one state per round of control
+module time
+	[] timeState -> (Player' = 0); // reset player state
+endmodule
+
+// collect rewards
+rewards "waypoint"
+	[] timeState & foundPipeline & !abort: 1;
+	//[] timeState  : 1;
+endrewards

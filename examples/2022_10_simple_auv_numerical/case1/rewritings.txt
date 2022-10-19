@@ -1,0 +1,2 @@
+formula inconsistent = (false)
+formula HOOKrequiresSurfacing = (inconsistent | (detect_moby_dick=true & whale_heavy=true))
