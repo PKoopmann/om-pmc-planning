@@ -110,15 +110,20 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   protected def getExplanations(axiom: OWLLogicalAxiom): Iterable[_ <: Set[OWLLogicalAxiom]]
 
-  def initReasoner(ontology: OWLOntology) = {
-    this.ontology=ontology
+  def getReasoner(ontology: OWLOntology) =
     if(reasonerFactory.isInstanceOf[ReasonerFactory]){
       val config = new Configuration();
       config.throwInconsistentOntologyException=false
-      reasoner = reasonerFactory.createReasoner(ontology,config)
+      reasonerFactory.createReasoner(ontology,config)
     }
     else
-      reasoner = reasonerFactory.createReasoner(ontology)
+      reasonerFactory.createReasoner(ontology)
+
+
+  def initReasoner(ontology: OWLOntology) = {
+    this.ontology=ontology
+
+    reasoner = getReasoner(ontology)
 
     initExplanationGenerator(ontology)
   }

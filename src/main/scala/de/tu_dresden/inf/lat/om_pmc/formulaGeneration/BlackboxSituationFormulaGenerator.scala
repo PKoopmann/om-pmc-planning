@@ -26,7 +26,8 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
     val singleGen = new MyBlackBoxExplanation(
       ontology,
       reasonerFactory,
-      reasonerFactory.createNonBufferingReasoner(ontology)
+      getReasoner(ontology)
+      //reasonerFactory.createNonBufferingReasoner(ontology)
     )
 
 
