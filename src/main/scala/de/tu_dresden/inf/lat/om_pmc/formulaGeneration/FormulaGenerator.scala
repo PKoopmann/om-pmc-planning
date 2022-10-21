@@ -162,10 +162,10 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     var counter = 0
 
-    println("Ontology:")
-    println(SimpleOWLFormatter.format(ontology))
+    //println("Ontology:")
+    //println(SimpleOWLFormatter.format(ontology))
 
-    println("Relevant axioms: "+relevantAxioms.map(SimpleOWLFormatter.format))
+    //println("Relevant axioms: "+relevantAxioms.map(SimpleOWLFormatter.format))
 
     repairs.foreach { repair =>
       counter+= 1
@@ -200,7 +200,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
         val explanations = getExplanations(ax)
         println("took " + (System.currentTimeMillis - start))
         println(explanations.size + " explanations found")
-        println("Explanations: "+explanations.map(_.map(SimpleOWLFormatter.format)))
+        //println("Explanations: "+explanations.map(_.map(SimpleOWLFormatter.format)))
         explanations.foreach { exp =>
           println("Adding new explanation")
           println("Explanations before: "+dnf.size)
