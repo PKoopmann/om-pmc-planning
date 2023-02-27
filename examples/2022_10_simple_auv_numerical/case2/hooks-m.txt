@@ -1,0 +1,6 @@
+# hook definitions for auv
+
+PREFIX auv: <http://www.ifi.uio.no/auv_numerical#>
+
+
+HOOKheavyWhale := {auv:MobyDick} SubClassOf auv:hasWeight some xsd:decimal[>=20]

@@ -165,15 +165,15 @@ public class MyHSTExplanationGenerator implements MultipleExplanationGenerator {
 
     @Override
     public Set<OWLAxiom> getExplanation(OWLClassExpression unsatClass) {
-        //System.out.println("SingleExplanationGenerator: "+singleExplanationGenerator);
+        System.out.println("SingleExplanationGenerator: "+singleExplanationGenerator);
         Set<OWLAxiom> result =
 	        new HashSet<OWLAxiom>(singleExplanationGenerator.getExplanation(unsatClass));
 
-        //System.out.println("Explanation before filtering: "+result);
+        System.out.println("Explanation before filtering: "+result);
 
 	    result.retainAll(relevantAxioms);
 
-        //System.out.println("Explanation after filtering: "+result);
+        System.out.println("Explanation after filtering: "+result);
 
 	    // for(OWLAxiom axiom: getOntology().getAxioms()){
 	    // 	if(!relevantAxioms.contains(axiom))

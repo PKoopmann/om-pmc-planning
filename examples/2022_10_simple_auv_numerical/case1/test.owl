@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:unnamed:ontology#ont21085354343810#"
+     xml:base="urn:unnamed:ontology#ont21085354343810"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:auv_numerical="http://www.ifi.uio.no/auv_numerical#">
+    <owl:Ontology rdf:about="urn:unnamed:ontology#ont21085354343810"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#detects -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.ifi.uio.no/auv_numerical#detects"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#hasWeight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ifi.uio.no/auv_numerical#hasWeight">
+        <rdfs:domain rdf:resource="http://www.ifi.uio.no/auv_numerical#PhysicalThing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>weight in t</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#pSucces -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.ifi.uio.no/auv_numerical#pSucces">
+        <rdfs:domain rdf:resource="http://www.ifi.uio.no/auv_numerical#Capability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#Capability -->
+
+
+    <owl:Class rdf:about="http://www.ifi.uio.no/auv_numerical#Capability">
+        <owl:disjointWith rdf:resource="http://www.ifi.uio.no/auv_numerical#PhysicalThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#PhysicalThing -->
+
+
+    <owl:Class rdf:about="http://www.ifi.uio.no/auv_numerical#PhysicalThing"/>
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#Robot -->
+
+
+    <owl:Class rdf:about="http://www.ifi.uio.no/auv_numerical#Robot">
+        <rdfs:subClassOf rdf:resource="http://www.ifi.uio.no/auv_numerical#PhysicalThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#RobotShouldSurface -->
+
+
+    <owl:Class rdf:about="http://www.ifi.uio.no/auv_numerical#RobotShouldSurface">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.ifi.uio.no/auv_numerical#Robot"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.ifi.uio.no/auv_numerical#detects"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.ifi.uio.no/auv_numerical#Whale"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.ifi.uio.no/auv_numerical#hasWeight"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.ifi.uio.no/auv_numerical#Robot"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#TakePhoto -->
+
+
+    <owl:Class rdf:about="http://www.ifi.uio.no/auv_numerical#TakePhoto">
+        <rdfs:subClassOf rdf:resource="http://www.ifi.uio.no/auv_numerical#Capability"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#Whale -->
+
+
+    <owl:Class rdf:about="http://www.ifi.uio.no/auv_numerical#Whale">
+        <rdfs:subClassOf rdf:resource="http://www.ifi.uio.no/auv_numerical#PhysicalThing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#AUV -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ifi.uio.no/auv_numerical#AUV">
+        <rdf:type rdf:resource="http://www.ifi.uio.no/auv_numerical#Robot"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:complementOf rdf:resource="http://www.ifi.uio.no/auv_numerical#RobotShouldSurface"/>
+            </owl:Class>
+        </rdf:type>
+        <auv_numerical:detects rdf:resource="http://www.ifi.uio.no/auv_numerical#MobyDick"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#MobyDick -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ifi.uio.no/auv_numerical#MobyDick">
+        <rdf:type rdf:resource="http://www.ifi.uio.no/auv_numerical#Whale"/>
+        <auv_numerical:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</auv_numerical:hasWeight>
+        <auv_numerical:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</auv_numerical:hasWeight>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#TakePhotoCloudy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ifi.uio.no/auv_numerical#TakePhotoCloudy">
+        <rdf:type rdf:resource="http://www.ifi.uio.no/auv_numerical#TakePhoto"/>
+        <auv_numerical:pSucces rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</auv_numerical:pSucces>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.ifi.uio.no/auv_numerical#TakePhotoSunlight -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.ifi.uio.no/auv_numerical#TakePhotoSunlight">
+        <rdf:type rdf:resource="http://www.ifi.uio.no/auv_numerical#TakePhoto"/>
+        <auv_numerical:pSucces rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</auv_numerical:pSucces>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+

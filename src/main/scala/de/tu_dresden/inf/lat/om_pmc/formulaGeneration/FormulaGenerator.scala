@@ -17,7 +17,7 @@ import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConvert
 object FormulaGenerator {
 
   val PREFIX = "http://lat.inf.tu-dresden.de/OM-PMC#"
-  var explanationMethod = Methods.INC_BASED
+  var explanationMethod = Methods.BLACK_BOX // Methods.INC_BASED
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
@@ -161,6 +161,11 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     var counter = 0
 
+    //println("Ontology:")
+    //println(SimpleOWLFormatter.format(ontology))
+
+    //println("Relevant axioms: "+relevantAxioms.map(SimpleOWLFormatter.format))
+
     repairs.foreach { repair =>
       counter+= 1
       println("Using repair nr. "+counter)
@@ -194,6 +199,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
         val explanations = getExplanations(ax)
         println("took " + (System.currentTimeMillis - start))
         println(explanations.size + " explanations found")
+        //println("Explanations: "+explanations.map(_.map(SimpleOWLFormatter.format)))
         explanations.foreach { exp =>
           println("Adding new explanation")
           println("Explanations before: "+dnf.size)
@@ -241,6 +247,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       val explanations = getExplanationsForInconsistency()
       println("took " + (System.currentTimeMillis - start))
       println(explanations.size + " explanations found")
+      println("Explanations: "+explanations.map(_.map(SimpleOWLFormatter.format)))
       explanations.foreach { exp =>
         val rel = exp.filter(relevantAxioms)
 

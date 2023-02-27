@@ -1,0 +1,5 @@
+# hook definitions for auv
+
+PREFIX auv: <http://www.ifi.uio.no/auv_numerical#>
+
+HOOKrequiresSurfacing := auv:AUV Type: auv:RobotShouldSurface
