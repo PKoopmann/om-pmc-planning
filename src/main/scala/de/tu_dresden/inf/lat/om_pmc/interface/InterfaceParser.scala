@@ -1,6 +1,6 @@
 package de.tu_dresden.inf.lat.om_pmc.interface
 
-import de.tu_dresden.lat.prettyPrinting.parsing.{DLParser, OWLParser}
+import de.tu_dresden.inf.lat.prettyPrinting.parsing.{DLParser, OWLParser}
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.expression.{OWLEntityChecker, ShortFormEntityChecker}
 import org.semanticweb.owlapi.manchestersyntax.parser

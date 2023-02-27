@@ -3,7 +3,7 @@ package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 import de.tu_dresden.inf.lat.om_pmc.ifm.IfmSituationFormulaGenerator.Methods.{BLACK_BOX, Value}
 import de.tu_dresden.inf.lat.om_pmc.ifm.{IfmBlackboxSituationFormulaGenerator, IfmGlassboxSituationFormulaGenerator, IfmInconsistencyBasedGBSituationFormulaGenerator, IfmSituationFormulaGenerator}
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
-import de.tu_dresden.lat.prettyPrinting.formatting.SimpleOWLFormatter
+import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import openllet.owlapi.OpenlletReasonerFactory
 import org.semanticweb.HermiT.{Configuration, ReasonerFactory}
 import org.semanticweb.elk.owlapi.ElkReasonerFactory
@@ -18,7 +18,6 @@ object FormulaGenerator {
 
   val PREFIX = "http://lat.inf.tu-dresden.de/OM-PMC#"
   var explanationMethod = Methods.INC_BASED
-
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
