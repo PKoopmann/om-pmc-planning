@@ -1,4 +1,8 @@
 # Example hook definitions
 
-server1_overloaded := <http://om-pmc.example.de#OverloadedServer>(<http://om-pmc.example.de#server1>)
-server2_overloaded := <http://om-pmc.example.de#OverloadedServer>(<http://om-pmc.example.de#server2>)
+PREFIX : <http://om-pmc.example.de#>
+PREFIX other: <http://om-pmc.example.de#>
+
+server1_overloaded := ::OverloadedServer(:other:server1)
+server2_overloaded := ::OverloadedServer(:other:server2)
+
