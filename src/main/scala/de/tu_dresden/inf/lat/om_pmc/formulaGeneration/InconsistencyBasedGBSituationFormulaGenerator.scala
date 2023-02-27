@@ -1,7 +1,7 @@
 package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
-import de.tu_dresden.lat.prettyPrinting.formatting.SimpleOWLFormatter
+import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLLogicalAxiom, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
