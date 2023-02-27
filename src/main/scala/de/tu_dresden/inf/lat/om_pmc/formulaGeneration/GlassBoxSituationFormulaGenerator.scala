@@ -25,7 +25,7 @@ class GlassboxCapableSituationFormulaGenerator(
     val axioms = ontology.getAxioms().asScala.toSet
     val relevantAxiomsFiltered = relevantAxioms.filter(axioms)
     //explanationGenerator = MyExplanation.getBlackBoxExplanation(reasonerFactory, reasoner, relevantAxiomsFiltered.asJava)
-    // TODO class name misleading - not glassbox!
+
     explanationGenerator = new MyExplanation(ontology, true, relevantAxiomsFiltered.asJava) // above line seems to fail
   }
 

@@ -1,0 +1,2 @@
+formula inconsistent = (((testProperty x a) & (testProperty x ?x)) | ((= ?x a)))
+formula isInA ?x = (inconsistent | false)

@@ -1,0 +1,4 @@
+formula inconsistent = (true)
+formula isInA = (inconsistent | false)
+formula isInB = (inconsistent | false)
+formula isInC = (inconsistent | false)

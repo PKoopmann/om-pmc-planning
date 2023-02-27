@@ -1,0 +1,169 @@
+Register prefix: 'ontologyIRI' with http://www.ifi.uio.no/tobiajoh/bugs#
+Prefixes (now added): 
+owl:
+rdf:
+xml:
+xsd:
+rdfs:
+ontologyIRI:
+Parsed axiom: SubClassOf(ObjectOneOf(<http://www.ifi.uio.no/tobiajoh/bugs#x>) <http://www.ifi.uio.no/tobiajoh/bugs#C>)
+Mapping DL fluent -> PRISM formula: [SubClassOf(ObjectOneOf(<http://www.ifi.uio.no/tobiajoh/bugs#x>) <http://www.ifi.uio.no/tobiajoh/bugs#C>) -> xInClassC]
+Register prefix: 'ontologyIRI' with http://www.ifi.uio.no/tobiajoh/bugs#
+Prefixes (now added): 
+owl:
+rdf:
+xml:
+xsd:
+rdfs:
+ontologyIRI:
+ontologyIRI:x Type: ontologyIRI:A
+Parsed axiom: ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#A> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+ontologyIRI:x Type: ontologyIRI:B
+Parsed axiom: ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#B> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+ontologyIRI:x Type: ontologyIRI:C
+Parsed axiom: ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#C> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+Mapping PRISM hook -> DL axiom: [isInA -> ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#A> <http://www.ifi.uio.no/tobiajoh/bugs#x>), isInB -> ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#B> <http://www.ifi.uio.no/tobiajoh/bugs#x>), isInC -> ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#C> <http://www.ifi.uio.no/tobiajoh/bugs#x>)]
+10:36:58.101 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor - 
+Extracting BOTTOM_BOTTOM module for the following seed signature: 
+10:36:58.102 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   <http://www.ifi.uio.no/tobiajoh/bugs#A>
+10:36:58.102 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   <http://www.ifi.uio.no/tobiajoh/bugs#C>
+10:36:58.102 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   <http://www.ifi.uio.no/tobiajoh/bugs#B>
+10:36:58.102 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   <http://www.ifi.uio.no/tobiajoh/bugs#x>
+10:36:58.103 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   Loop 1
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Non-local axiom:   DisjointClasses(<http://www.ifi.uio.no/tobiajoh/bugs#A> <http://www.ifi.uio.no/tobiajoh/bugs#B>)
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Non-local axiom:   SubClassOf(<http://www.ifi.uio.no/tobiajoh/bugs#C> <http://www.ifi.uio.no/tobiajoh/bugs#A>)
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Non-local axiom:   SubClassOf(ObjectOneOf(<http://www.ifi.uio.no/tobiajoh/bugs#x>) <http://www.ifi.uio.no/tobiajoh/bugs#C>)
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Local axiom:       Declaration(Class(<http://www.ifi.uio.no/tobiajoh/bugs#A>))
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Local axiom:       Declaration(NamedIndividual(<http://www.ifi.uio.no/tobiajoh/bugs#x>))
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Local axiom:       Declaration(Class(<http://www.ifi.uio.no/tobiajoh/bugs#B>))
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Local axiom:       Declaration(Class(<http://www.ifi.uio.no/tobiajoh/bugs#C>))
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Non-local axiom:   ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#A> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor - 
+Extracting TOP_TOP module for the following seed signature: 
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   <http://www.ifi.uio.no/tobiajoh/bugs#A>
+10:36:58.104 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   <http://www.ifi.uio.no/tobiajoh/bugs#C>
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   <http://www.ifi.uio.no/tobiajoh/bugs#B>
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   <http://www.ifi.uio.no/tobiajoh/bugs#x>
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   Loop 1
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Non-local axiom:   DisjointClasses(<http://www.ifi.uio.no/tobiajoh/bugs#A> <http://www.ifi.uio.no/tobiajoh/bugs#B>)
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Non-local axiom:   SubClassOf(<http://www.ifi.uio.no/tobiajoh/bugs#C> <http://www.ifi.uio.no/tobiajoh/bugs#A>)
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Non-local axiom:   SubClassOf(ObjectOneOf(<http://www.ifi.uio.no/tobiajoh/bugs#x>) <http://www.ifi.uio.no/tobiajoh/bugs#C>)
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -       Non-local axiom:   ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#A> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor - 
+Enriching with declaration axioms, annotation axioms, same/different individual axioms ...
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   Added entity declaration axiom:   Declaration(Class(<http://www.ifi.uio.no/tobiajoh/bugs#A>))
+10:36:58.105 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   Added entity declaration axiom:   Declaration(Class(<http://www.ifi.uio.no/tobiajoh/bugs#C>))
+10:36:58.106 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   Added entity declaration axiom:   Declaration(Class(<http://www.ifi.uio.no/tobiajoh/bugs#B>))
+10:36:58.106 [main] INFO  u.a.m.c.o.m.SyntacticLocalityModuleExtractor -   Added entity declaration axiom:   Declaration(NamedIndividual(<http://www.ifi.uio.no/tobiajoh/bugs#x>))
+BLACK_BOX
+Generating inconsistency dnf
+inconsistency dnf: 
+----------
+
+-----------
+Got 1 repairs.
+Repairs: Set(Set())
+Using repair nr. 1
+axioms in ontology: 8
+Testing: ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#A> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+Consistency of ontology: true
+Entailment: true
+Generating Explanations for ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#A> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+10:36:58.192 [main] INFO  c.c.o.e.HSTExplanationGenerator - Get all explanation(s) for: ObjectIntersectionOf(ObjectComplementOf(<http://www.ifi.uio.no/tobiajoh/bugs#A>) ObjectOneOf(<http://www.ifi.uio.no/tobiajoh/bugs#x>))
+SingleExplanationGenerator: BlackBox
+10:36:58.198 [main] INFO  c.c.o.e.BlackBoxExplanation - Initial axiom count: 3
+10:36:58.202 [main] INFO  c.c.o.e.BlackBoxExplanation - Total number of axioms added: 0
+10:36:58.202 [main] INFO  c.c.o.e.BlackBoxExplanation - FOUND CLASH! Pruning 3 axioms...
+10:36:58.202 [main] INFO  c.c.o.e.BlackBoxExplanation - Fast pruning...
+10:36:58.202 [main] INFO  c.c.o.e.BlackBoxExplanation - Fast pruning: 
+10:36:58.202 [main] INFO  c.c.o.e.BlackBoxExplanation -      - Window size: 10
+10:36:58.205 [main] INFO  c.c.o.e.BlackBoxExplanation -     - End of fast pruning
+10:36:58.205 [main] INFO  c.c.o.e.BlackBoxExplanation - ... end of fast pruning. Axioms remaining: 3
+10:36:58.206 [main] INFO  c.c.o.e.BlackBoxExplanation - Performed 0 satisfiability tests during fast pruning
+10:36:58.206 [main] INFO  c.c.o.e.BlackBoxExplanation - Slow pruning...
+10:36:58.214 [main] INFO  c.c.o.e.BlackBoxExplanation - ... end of slow pruning
+10:36:58.214 [main] INFO  c.c.o.e.BlackBoxExplanation - Performed 2 satisfiability tests during slow pruning
+10:36:58.214 [main] INFO  c.c.o.e.BlackBoxExplanation - Total number of satisfiability tests performed: 2
+Explanation before filtering: [ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#A> <http://www.ifi.uio.no/tobiajoh/bugs#x>)]
+Explanation after filtering: []
+10:36:58.215 [main] INFO  c.c.o.e.HSTExplanationGenerator - Empty explanation after filtering!
+10:36:58.215 [main] INFO  c.c.o.e.HSTExplanationGenerator - First MUPS empty
+took 27
+1 explanations found
+Adding new explanation
+Explanations before: 0
+Explanations after: 1
+inconsistency dnf: 
+----------
+
+-----------
+Got 1 repairs.
+Repairs: Set(Set())
+Using repair nr. 1
+axioms in ontology: 8
+Testing: ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#B> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+Consistency of ontology: true
+Entailment: false
+inconsistency dnf: 
+----------
+
+-----------
+Got 1 repairs.
+Repairs: Set(Set())
+Using repair nr. 1
+axioms in ontology: 8
+Testing: ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#C> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+Consistency of ontology: true
+Entailment: true
+Generating Explanations for ClassAssertion(<http://www.ifi.uio.no/tobiajoh/bugs#C> <http://www.ifi.uio.no/tobiajoh/bugs#x>)
+10:36:58.233 [main] INFO  c.c.o.e.HSTExplanationGenerator - Get all explanation(s) for: ObjectIntersectionOf(ObjectComplementOf(<http://www.ifi.uio.no/tobiajoh/bugs#C>) ObjectOneOf(<http://www.ifi.uio.no/tobiajoh/bugs#x>))
+SingleExplanationGenerator: BlackBox
+10:36:58.235 [main] INFO  c.c.o.e.BlackBoxExplanation - Initial axiom count: 3
+10:36:58.238 [main] INFO  c.c.o.e.BlackBoxExplanation - Expanding axioms (expansion 0)
+10:36:58.238 [main] INFO  c.c.o.e.BlackBoxExplanation -     ... expanded by 1
+10:36:58.241 [main] INFO  c.c.o.e.BlackBoxExplanation - Expanding axioms (expansion 1)
+10:36:58.241 [main] INFO  c.c.o.e.BlackBoxExplanation -     ... expanded by 5
+10:36:58.245 [main] INFO  c.c.o.e.BlackBoxExplanation - Total number of axioms added: 6
+10:36:58.245 [main] INFO  c.c.o.e.BlackBoxExplanation - FOUND CLASH! Pruning 9 axioms...
+10:36:58.245 [main] INFO  c.c.o.e.BlackBoxExplanation - Fast pruning...
+10:36:58.245 [main] INFO  c.c.o.e.BlackBoxExplanation - Fast pruning: 
+10:36:58.245 [main] INFO  c.c.o.e.BlackBoxExplanation -      - Window size: 10
+10:36:58.246 [main] INFO  c.c.o.e.BlackBoxExplanation -     - End of fast pruning
+10:36:58.246 [main] INFO  c.c.o.e.BlackBoxExplanation - ... end of fast pruning. Axioms remaining: 9
+10:36:58.246 [main] INFO  c.c.o.e.BlackBoxExplanation - Performed 0 satisfiability tests during fast pruning
+10:36:58.246 [main] INFO  c.c.o.e.BlackBoxExplanation - Slow pruning...
+10:36:58.268 [main] INFO  c.c.o.e.BlackBoxExplanation - ... end of slow pruning
+10:36:58.268 [main] INFO  c.c.o.e.BlackBoxExplanation - Performed 8 satisfiability tests during slow pruning
+10:36:58.268 [main] INFO  c.c.o.e.BlackBoxExplanation - Total number of satisfiability tests performed: 8
+Explanation before filtering: [SubClassOf(ObjectOneOf(<http://www.ifi.uio.no/tobiajoh/bugs#x>) <http://www.ifi.uio.no/tobiajoh/bugs#C>)]
+Explanation after filtering: [SubClassOf(ObjectOneOf(<http://www.ifi.uio.no/tobiajoh/bugs#x>) <http://www.ifi.uio.no/tobiajoh/bugs#C>)]
+SingleExplanationGenerator: BlackBox
+10:36:58.270 [main] INFO  c.c.o.e.BlackBoxExplanation - Initial axiom count: 3
+10:36:58.273 [main] INFO  c.c.o.e.BlackBoxExplanation - Expanding axioms (expansion 0)
+10:36:58.273 [main] INFO  c.c.o.e.BlackBoxExplanation -     ... expanded by 1
+10:36:58.275 [main] INFO  c.c.o.e.BlackBoxExplanation - Expanding axioms (expansion 1)
+10:36:58.275 [main] INFO  c.c.o.e.BlackBoxExplanation -     ... expanded by 4
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - Expanding axioms (expansion 2)
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation -     ... expanded by 0
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - ERROR! Cannot find SOS axioms!
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - FOUND CLASH! Pruning 0 axioms...
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - Fast pruning...
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - Fast pruning: 
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation -      - Window size: 10
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation -     - End of fast pruning
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - ... end of fast pruning. Axioms remaining: 0
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - Performed 0 satisfiability tests during fast pruning
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - Slow pruning...
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - ... end of slow pruning
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - Performed 0 satisfiability tests during slow pruning
+10:36:58.278 [main] INFO  c.c.o.e.BlackBoxExplanation - Total number of satisfiability tests performed: 0
+Explanation before filtering: []
+Explanation after filtering: []
+10:36:58.278 [main] INFO  c.c.o.e.HSTExplanationGenerator - Empty explanation after filtering!
+10:36:58.278 [main] INFO  c.c.o.e.HSTExplanationGenerator - Stop - satisfiable
+10:36:58.278 [main] INFO  c.c.o.e.HSTExplanationGenerator - Restoring axiom: SubClassOf(ObjectOneOf(<http://www.ifi.uio.no/tobiajoh/bugs#x>) <http://www.ifi.uio.no/tobiajoh/bugs#C>)
+took 46
+1 explanations found
+Adding new explanation
+Explanations before: 0
+Explanations after: 1

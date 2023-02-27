@@ -12,12 +12,14 @@ import org.semanticweb.owlapi.profiles.OWL2ELProfile
 import org.semanticweb.owlapi.reasoner.{OWLReasoner, OWLReasonerConfiguration, OWLReasonerFactory}
 import uk.ac.manchester.cs.owlapi.modularity.{ModuleType, SyntacticLocalityModuleExtractor}
 
+import java.io.{File, FileOutputStream}
 import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
 
 object FormulaGenerator {
 
   val PREFIX = "http://lat.inf.tu-dresden.de/OM-PMC#"
   var explanationMethod = Methods.BLACK_BOX // Methods.INC_BASED
+
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
@@ -28,12 +30,15 @@ object FormulaGenerator {
 
     ontology.addAxioms(axiom2formula.axioms.asJava)
 
-
     val module =
         getModule(ontology,
           hook2axiom.hooks()
             .map(hook2axiom.axiom(_))
             .flatMap(_.getSignature().asScala))
+
+    println("Axioms in module: "+module.getAxiomCount())
+
+    manager.saveOntology(module, new FileOutputStream(new File("moduleUsed.owl")))
 
     println(explanationMethod)
 
@@ -75,6 +80,7 @@ object FormulaGenerator {
   }
 
   def getModule(ontology: OWLOntology, signature: Set[OWLEntity]) = {
+    println("Signature: "+signature)
     val moduleExtractor =
       new SyntacticLocalityModuleExtractor(
         ontology.getOWLOntologyManager,

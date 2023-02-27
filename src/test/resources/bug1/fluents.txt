@@ -1,0 +1,5 @@
+{ <http://www.uio.no/ifi/tobiajoh/testEqual#x> } SubClassOf { <http://www.uio.no/ifi/tobiajoh/testEqual#a> } := (= ?x a)
+{ <http://www.uio.no/ifi/tobiajoh/testEqual#a> } SubClassOf <http://www.uio.no/ifi/tobiajoh/testEqual#testProperty> value <http://www.uio.no/ifi/tobiajoh/testEqual#x> := (testProperty a ?x)
+{ <http://www.uio.no/ifi/tobiajoh/testEqual#x> } SubClassOf <http://www.uio.no/ifi/tobiajoh/testEqual#testProperty> value <http://www.uio.no/ifi/tobiajoh/testEqual#x> := (testProperty x ?x)
+{ <http://www.uio.no/ifi/tobiajoh/testEqual#x> } SubClassOf <http://www.uio.no/ifi/tobiajoh/testEqual#testProperty> value <http://www.uio.no/ifi/tobiajoh/testEqual#a> := (testProperty x a)
+
