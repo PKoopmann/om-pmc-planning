@@ -1,8 +1,8 @@
-package de.tu_dresden.inf.lat.om_planning
+package de.tu_dresden.inf.lat.om_planning.generation
 
 import de.tu_dresden.inf.lat.om_planning.data.{HookPredicate, InvalidSpecificationException}
 import de.tu_dresden.inf.lat.om_planning.tools.Tools
-import org.semanticweb.owlapi.model.{IRI, OWLClassAssertionAxiom, OWLDataFactory, OWLLogicalAxiom, OWLNamedIndividual, OWLObjectPropertyAssertionAxiom}
+import org.semanticweb.owlapi.model._
 import org.semanticweb.owlapi.reasoner.OWLReasoner
 
 import scala.collection.JavaConverters.asScalaSetConverter

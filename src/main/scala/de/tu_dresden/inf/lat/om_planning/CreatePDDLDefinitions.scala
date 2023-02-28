@@ -1,8 +1,8 @@
-package de.tu_dresden.inf.lat.om_pmc
+package de.tu_dresden.inf.lat.om_planning
 
+import de.tu_dresden.inf.lat.om_planning.generation.PDDLFormulaGenerator
 import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.FormulaGenerator
-import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.PDDLFormulaGenerator
-import de.tu_dresden.inf.lat.om_pmc.interface.InterfaceParser
+import de.tu_dresden.inf.lat.om_pmc.parsing.InterfaceParser
 import org.semanticweb.owlapi.apibinding.OWLManager
 
 import java.io.{File, PrintWriter}
@@ -10,7 +10,7 @@ import java.io.{File, PrintWriter}
 object CreatePDDLDefinitions {
 
   def main(args: Array[String]) = {
-    if(args.isEmpty || args.size!=4) {
+    if (args.isEmpty || args.size != 4) {
       println("Expected parameters : ")
       println("formulaFile hookFile ontologyFile outputFile")
     } else {
@@ -27,12 +27,12 @@ object CreatePDDLDefinitions {
 
     val parser = new InterfaceParser(ontology)
     val axiom2Formula = parser.parseAxiomMapping(formulaFile)
-    println("Mapping DL fluent -> PDDL formula: "+axiom2Formula)
+    println("Mapping DL fluent -> PDDL formula: " + axiom2Formula)
     val hook2axiom = parser.parseHookDefinitions(hookFile)
-    println("Mapping PDDL hook -> DL axiom: "+hook2axiom)
+    println("Mapping PDDL hook -> DL axiom: " + hook2axiom)
 
     // val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
-    val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
+    val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula, hook2axiom, ontology)
 
     val pddlFormulaGenerator = new PDDLFormulaGenerator(formulaGenerator);
 
