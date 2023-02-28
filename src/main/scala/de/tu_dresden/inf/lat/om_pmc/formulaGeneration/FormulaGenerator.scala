@@ -123,6 +123,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     else
       reasonerFactory.createReasoner(ontology)
 
+  def getHooks() = hook2axiom.hooks()
 
   def initReasoner(ontology: OWLOntology) = {
     this.ontology=ontology
@@ -147,7 +148,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     dnfToStr(generateDNF(hook))
   }
 
-  private def generateDNF(hook: String) = {
+  def generateDNF(hook: String) = {
 
     val repairs = getRepairs()
 

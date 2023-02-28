@@ -1,13 +1,13 @@
 package de.tu_dresden.inf.lat.om_pmc
 
 import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.FormulaGenerator
+import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.PDDLFormulaGenerator
 import de.tu_dresden.inf.lat.om_pmc.interface.InterfaceParser
 import org.semanticweb.owlapi.apibinding.OWLManager
-import org.semanticweb.owlapi.model.OWLOntology
 
 import java.io.{File, PrintWriter}
 
-object CreatePrismDefinitions {
+object CreatePDDLDefinitions {
 
   def main(args: Array[String]) = {
     if(args.isEmpty || args.size!=4) {
@@ -27,16 +27,18 @@ object CreatePrismDefinitions {
 
     val parser = new InterfaceParser(ontology)
     val axiom2Formula = parser.parseAxiomMapping(formulaFile)
-    println("Mapping DL fluent -> PRISM formula: "+axiom2Formula)
+    println("Mapping DL fluent -> PDDL formula: "+axiom2Formula)
     val hook2axiom = parser.parseHookDefinitions(hookFile)
-    println("Mapping PRISM hook -> DL axiom: "+hook2axiom)
+    println("Mapping PDDL hook -> DL axiom: "+hook2axiom)
 
- //   val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
+    // val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
     val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
+
+    val pddlFormulaGenerator = new PDDLFormulaGenerator(formulaGenerator);
 
     val printWriter = new PrintWriter(outputFile)
 
-    formulaGenerator.generateAllFormulaDefinitions()
+    pddlFormulaGenerator.generateAllFormulaDefinitions()
       .foreach(printWriter.println(_))
 
     printWriter.close()
