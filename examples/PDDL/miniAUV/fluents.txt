@@ -1,0 +1,23 @@
+# abstract fluent definitions for mini AUV example
+
+PREFIX auv: <https://www.ifi.uio.no/tobiajoh/miniAUVPlan#>
+
+OBJECT robot remaroAUV   ->  auv:remaroAUV
+OBJECT rgbCamera sensor   ->  auv:rgbCamera
+OBJECT backThruster actuator -> auv:backThruster
+OBJECT startPoint waypoint -> auv:startPoint
+OBJECT endPoint waypoint -> auv:endPoint
+OBJECT photoPoint waypoint -> auv:photoPoint
+
+
+PREDICATE canTakePicture(sensor)   ->  auv:CanTakePicture
+
+PREDICATE canDrive(actuator)   ->  auv:CanDrive
+
+PREDICATE at(robot,waypoint)  ->  auv:location
+
+CONDITION (false) ->  owl:Thing SubClassOf owl:Nothing
+
+
+
+

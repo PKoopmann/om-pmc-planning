@@ -1,0 +1,19 @@
+ # hook definition for miniAUV example
+ 
+ PREFIX auv: <https://www.ifi.uio.no/tobiajoh/miniAUVPlan#>
+
+predicate: KBquery_canTakePicture 
+variables: ?x 
+type specification: 
+   ?x Type: auv:Robot
+query: 
+   ?x Type: auv:CanTakePicture
+   
+   
+predicate: KBquery_canDrive
+variables: ?x 
+type specification:
+   ?x Type: auv:Robot
+query: 
+   ?x Type: auv:CanDrive
+
