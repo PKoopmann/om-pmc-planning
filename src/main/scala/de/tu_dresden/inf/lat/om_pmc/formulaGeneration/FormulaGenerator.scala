@@ -102,7 +102,6 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
                                 ontologyManager: OWLOntologyManager,
                                 reasonerFactory: OWLReasonerFactory) {
 
-
   val relevantAxioms = axiom2formula.axioms
   var reasoner: OWLReasoner = _
   var ontology: OWLOntology = _
@@ -148,7 +147,11 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     dnfToStr(generateDNF(hook))
   }
 
-  def generateDNF(hook: String) = {
+  private def generateDNF(hook: String) =
+    generateDNF(hook2axiom.axiom(hook))
+
+  def generateDNF(axiom: OWLLogicalAxiom) =
+  {
 
     val repairs = getRepairs()
 
@@ -188,12 +191,10 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       initExplanationGenerator(repairedOntology)
       reasoner.flush()
 
-      val ax = hook2axiom.axiom(hook)
-
-      println("Testing: " + ax)
+      println("Testing: " + axiom)
 
       val consistent= reasoner.isConsistent()
-      val entailed = !consistent || reasoner.isEntailed(ax)
+      val entailed = !consistent || reasoner.isEntailed(axiom)
 
       println("Consistency of ontology: " + consistent)
       println("Entailment: "+entailed)
@@ -201,8 +202,8 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
       if (!consistent || entailed) {
         val start = System.currentTimeMillis
-        println("Generating Explanations for " + ax)
-        val explanations = getExplanations(ax)
+        println("Generating Explanations for " + axiom)
+        val explanations = getExplanations(axiom)
         println("took " + (System.currentTimeMillis - start))
         println(explanations.size + " explanations found")
         //println("Explanations: "+explanations.map(_.map(SimpleOWLFormatter.format)))
