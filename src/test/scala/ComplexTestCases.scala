@@ -10,6 +10,7 @@ import scala.io.Source
 
 class ComplexTestCases {
 
+
   @Test
   def bug2() = {
     val ontology = OWLManager.createOWLOntologyManager()

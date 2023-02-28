@@ -1,24 +1,23 @@
 package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
-import de.tu_dresden.inf.lat.om_pmc.ifm.IfmSituationFormulaGenerator.Methods.{BLACK_BOX, Value}
-import de.tu_dresden.inf.lat.om_pmc.ifm.{IfmBlackboxSituationFormulaGenerator, IfmGlassboxSituationFormulaGenerator, IfmInconsistencyBasedGBSituationFormulaGenerator, IfmSituationFormulaGenerator}
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
 import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import openllet.owlapi.OpenlletReasonerFactory
 import org.semanticweb.HermiT.{Configuration, ReasonerFactory}
 import org.semanticweb.elk.owlapi.ElkReasonerFactory
-import org.semanticweb.owlapi.model.{IRI, OWLAxiom, OWLClass, OWLEntity, OWLLogicalAxiom, OWLOntology, OWLOntologyManager}
+import org.semanticweb.owlapi.model._
 import org.semanticweb.owlapi.profiles.OWL2ELProfile
-import org.semanticweb.owlapi.reasoner.{OWLReasoner, OWLReasonerConfiguration, OWLReasonerFactory}
+import org.semanticweb.owlapi.reasoner.{OWLReasoner, OWLReasonerFactory}
 import uk.ac.manchester.cs.owlapi.modularity.{ModuleType, SyntacticLocalityModuleExtractor}
 
 import java.io.{File, FileOutputStream}
 import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
 
-object FormulaGenerator {
+object FormulaGeneratorPDDL {
 
   val PREFIX = "http://lat.inf.tu-dresden.de/OM-PMC#"
   var explanationMethod = Methods.BLACK_BOX // Methods.INC_BASED
+
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
@@ -97,7 +96,7 @@ object FormulaGenerator {
 
 }
 
-abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
+abstract class FormulaGeneratorPDDL(axiom2formula: AxiomToFormulaMap,
                                 hook2axiom: HookToAxiomMap,
                                 ontologyManager: OWLOntologyManager,
                                 reasonerFactory: OWLReasonerFactory) {
@@ -133,9 +132,9 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
   }
 
   def generateAllFormulaDefinitions(): Iterable[String] = {
-    List("formula inconsistent = (" + generateInconsistencyFormula() + ")") ++
+    List("(derived: (inconsistent)" + generateInconsistencyFormula() + ")") ++
       hook2axiom.hooks().map(hook =>
-        "formula " + hook + " = (inconsistent | " + generateFormula(hook) + ")"
+        "(derived: (" + hook + ") " + "(or (inconsistent) " + generateFormula(hook) + "))"
       )
   }
 
@@ -298,16 +297,16 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   def dnfToStr(dnf: Set[Set[OWLLogicalAxiom]]): String = {
     if (dnf.isEmpty)
-      "false"
+      "(false)"
     else
-      dnf.map(clauseToStr).mkString(" | ")
+      dnf.map(clauseToStr).mkString("(or ", " ", ")")
   }
 
   def clauseToStr(clause: Set[OWLLogicalAxiom]): String = {
     if (clause.isEmpty)
-      "true"
+      "(true)"
     else
-      clause.map(c => toStr(c)).mkString("(", " & ", ")")
+      clause.map(c => toStr(c)).mkString("(and", " ", ")")
   }
 
   def toStr(axiom: OWLLogicalAxiom) =
