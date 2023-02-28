@@ -50,6 +50,7 @@ class HookInstantiator(reasoner: OWLReasoner, factory: OWLDataFactory) {
           val candidates = reasoner.getInstances(ca.getClassExpression)
             .getFlattened
             .asScala
+            .toSet
           if(!possibilities.contains(variable))
             possibilities += (variable -> candidates)
           else {

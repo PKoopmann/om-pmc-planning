@@ -16,10 +16,10 @@ class HookSpecificationParser(ontology: OWLOntology) {
 
   val COMMENT = "#"
   val PREFIX = "PREFIX"
-  val HOOK_PREDICATE = "HOOK_PREDICATE: "
-  val VARIABLES = "VARIABLES: "
-  val TYPE_SPECIFICATION = "TYPE_SPECIFICATION: "
-  val QUERY = "QUERY: "
+  val HOOK_PREDICATE = "HOOK_PREDICATE:"
+  val VARIABLES = "VARIABLES:"
+  val TYPE_SPECIFICATION = "TYPE_SPECIFICATION:"
+  val QUERY = "QUERY:"
 
   trait ParsingState
   object PARSING_TYPE_SPECIFICATION extends ParsingState
@@ -67,7 +67,8 @@ class HookSpecificationParser(ontology: OWLOntology) {
           case other => throw new ParsingException("wrong prefix declaration: "+other)
         }
       } else if (line.startsWith(HOOK_PREDICATE)) {
-        result = result + newHook(currentName,currentVariables,currentTypeConditions,currentQuery)
+        if(currentName.isDefined)
+          result += newHook(currentName,currentVariables,currentTypeConditions,currentQuery)
         currentName = Some(line.substring(HOOK_PREDICATE.length).trim)
         println("Hook name: "+currentName.get)
         currentVariables=None
@@ -81,7 +82,9 @@ class HookSpecificationParser(ontology: OWLOntology) {
       } else if(line.equals(QUERY)) {
         parsingState = PARSING_QUERY
       } else if(parsingState.equals(PARSING_QUERY) || parsingState.equals(PARSING_TYPE_SPECIFICATION)){
-        val axiom = GeneralOWLParsing.parse(line, manchesterParser, factory)
+        val axiom = GeneralOWLParsing
+          .parse(line, manchesterParser, factory)
+          .asInstanceOf[OWLLogicalAxiom]
         parsingState match {
           case PARSING_QUERY => currentQuery += axiom
           case PARSING_TYPE_SPECIFICATION => currentTypeConditions += axiom
@@ -90,6 +93,9 @@ class HookSpecificationParser(ontology: OWLOntology) {
         throw new ParsingException("Unexpected line: "+line)
       }
     })
+
+    if(currentName.isDefined)
+      result += newHook(currentName,currentVariables,currentTypeConditions,currentQuery)
 
     result
   }
@@ -107,5 +113,4 @@ class HookSpecificationParser(ontology: OWLOntology) {
     else
       HookPredicate(name.get, variables.get, typeConditions,query)
   }
-
 }

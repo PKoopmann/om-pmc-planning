@@ -1,6 +1,7 @@
 package de.tu_dresden.inf.lat.om_pmc.parsing
 
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
+import de.tu_dresden.inf.lat.prettyPrinting.owlapi.OWLParser
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.expression.{OWLEntityChecker, ShortFormEntityChecker}
 import org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxParserImpl
@@ -27,7 +28,7 @@ class InterfaceParser(ontology: OWLOntology) {
     val result = new AxiomToFormulaMap()
 
     val prefixManager = new DefaultPrefixManager();
-    var parser = new OWLParser(prefixManager)
+    //var parser = new OWLParser(prefixManager)
     val manager = OWLManager.createOWLOntologyManager()
     val factory = manager.getOWLDataFactory()
     var shortFormProvider = new ShortFormEntityChecker(new BidirectionalShortFormProviderAdapter(prefixManager))
@@ -51,7 +52,7 @@ class InterfaceParser(ontology: OWLOntology) {
             println("Prefixes (now added): ")
             prefixManager.prefixNames().forEach(x => println(x))
             manchesterParser.getPrefixManager.setPrefix(prefixName.trim,prefix)
-            parser = new OWLParser(prefixManager)
+         //   parser = new OWLParser(prefixManager)
 
             manchesterParser.setOWLEntityChecker(shortFormProvider);
             manchesterParser.setDefaultOntology(ontology)
@@ -69,7 +70,8 @@ class InterfaceParser(ontology: OWLOntology) {
               if(MANCHESTER_SYNTAX)
                 GeneralOWLParsing.parse(left, manchesterParser, factory)
               else
-                parser.parse(left)
+                throw new AssertionError("Only Manchester Syntax supported")
+           //     parser.parse(left)
             //val axiom = manchesterParser.parse(left)
             if(!axiom.isInstanceOf[OWLLogicalAxiom])
               throw new ParsingException("Not a logical axiom: "+axiom)
@@ -89,7 +91,7 @@ class InterfaceParser(ontology: OWLOntology) {
 
   def parseHookDefinitions(source: BufferedSource): HookToAxiomMap= {
     val prefixManager = new DefaultPrefixManager();
-    val parser = new OWLParser(prefixManager)
+    //val parser = new OWLParser(prefixManager)
     val manager = OWLManager.createOWLOntologyManager()
     val factory = manager.getOWLDataFactory()
     val shortFormProvider = new ShortFormEntityChecker(new BidirectionalShortFormProviderAdapter(prefixManager))
@@ -127,7 +129,8 @@ class InterfaceParser(ontology: OWLOntology) {
               if(MANCHESTER_SYNTAX)
                 GeneralOWLParsing.parse(right,manchesterParser,factory).asInstanceOf[OWLLogicalAxiom]
               else
-                parser.parse(right).asInstanceOf[OWLLogicalAxiom]
+                throw new AssertionError("Only Manchester syntax supported right now!")
+               // parser.parse(right).asInstanceOf[OWLLogicalAxiom]
 
             //val definition = manchesterParser.parse(right)
             if(!definition.isInstanceOf[OWLLogicalAxiom])

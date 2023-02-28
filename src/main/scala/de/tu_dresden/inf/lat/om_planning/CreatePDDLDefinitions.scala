@@ -34,13 +34,13 @@ object CreatePDDLDefinitions {
     // val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
     val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula, hook2axiom, ontology)
 
-    val pddlFormulaGenerator = new PDDLFormulaGenerator(formulaGenerator);
+   /* val pddlFormulaGenerator = new PDDLFormulaGenerator(formulaGenerator)
 
     val printWriter = new PrintWriter(outputFile)
 
     pddlFormulaGenerator.generateAllFormulaDefinitions()
       .foreach(printWriter.println(_))
 
-    printWriter.close()
+    printWriter.close()*/
   }
 }
