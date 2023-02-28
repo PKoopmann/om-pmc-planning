@@ -9,9 +9,9 @@ class PDDLFormulaGenerator(formulaGenerator : FormulaGenerator) {
   var generator: FormulaGenerator = formulaGenerator
 
   def generateAllFormulaDefinitions(): Iterable[String] = {
-    List("(derived: (inconsistent) (" + generateInconsistencyFormula() + ")") ++
+    List("(:derived (inconsistent) (" + generateInconsistencyFormula() + "))") ++
       generator.getHooks().map(hook =>
-        "(derived: (" + hook + ") (or (inconsistent) " + generateFormula(hook) + "))"
+        "(:derived (" + hook + ") (or (inconsistent) " + generateFormula(hook) + "))"
       )
   }
 
