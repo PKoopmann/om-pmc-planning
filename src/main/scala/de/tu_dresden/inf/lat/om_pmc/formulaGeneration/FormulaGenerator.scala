@@ -20,7 +20,6 @@ object FormulaGenerator {
   val PREFIX = "http://lat.inf.tu-dresden.de/OM-PMC#"
   var explanationMethod = Methods.BLACK_BOX // Methods.INC_BASED
 
-
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
                        ontology: OWLOntology)
@@ -31,19 +30,19 @@ object FormulaGenerator {
     ontology.addAxioms(axiom2formula.axioms.asJava)
 
     val module =
-        getModule(ontology,
-          hook2axiom.hooks()
-            .map(hook2axiom.axiom(_))
-            .flatMap(_.getSignature().asScala))
+      getModule(ontology,
+        hook2axiom.hooks()
+          .map(hook2axiom.axiom(_))
+          .flatMap(_.getSignature().asScala))
 
-    println("Axioms in module: "+module.getAxiomCount())
+    println("Axioms in module: " + module.getAxiomCount())
 
     manager.saveOntology(module, new FileOutputStream(new File("moduleUsed.owl")))
 
     println(explanationMethod)
 
     var reasonerFactory: OWLReasonerFactory =
-      if(explanationMethod.equals(Methods.BLACK_BOX) || explanationMethod.equals(Methods.INC_BASED)) {
+      if (explanationMethod.equals(Methods.BLACK_BOX) || explanationMethod.equals(Methods.INC_BASED)) {
         new ReasonerFactory()
       } // HermiT
       else
@@ -60,11 +59,11 @@ object FormulaGenerator {
 
     val result = explanationMethod match {
       case Methods.BLACK_BOX =>
-        new BlackboxSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
+        new BlackboxSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
       case Methods.GLASS_BOX =>
-        new GlassboxCapableSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
+        new GlassboxCapableSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
       case Methods.INC_BASED =>
-        new InconsistencyBasedGBSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
+        new InconsistencyBasedGBSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
     }
 
     result.initReasoner(module)
@@ -80,7 +79,7 @@ object FormulaGenerator {
   }
 
   def getModule(ontology: OWLOntology, signature: Set[OWLEntity]) = {
-    println("Signature: "+signature)
+    println("Signature: " + signature)
     val moduleExtractor =
       new SyntacticLocalityModuleExtractor(
         ontology.getOWLOntologyManager,
@@ -123,6 +122,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     else
       reasonerFactory.createReasoner(ontology)
 
+  def getHooks() = hook2axiom.hooks()
 
   def initReasoner(ontology: OWLOntology) = {
     this.ontology=ontology

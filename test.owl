@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="urn:unnamed:ontology#ont18041881317225#"
-     xml:base="urn:unnamed:ontology#ont18041881317225"
+<rdf:RDF xmlns="urn:unnamed:ontology#ont2174185380402#"
+     xml:base="urn:unnamed:ontology#ont2174185380402"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -10,7 +10,7 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:complex_auv_control="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#">
-    <owl:Ontology rdf:about="urn:unnamed:ontology#ont18041881317225"/>
+    <owl:Ontology rdf:about="urn:unnamed:ontology#ont2174185380402"/>
     
 
 
@@ -731,38 +731,24 @@ It is also used to classify the current environment of the AUV</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#RobotPart">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#ManmadeThing"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Failure"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Working"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:nodeID="genid9"/>
+    </owl:Class>
+    <owl:Class rdf:nodeID="genid9">
+        <owl:unionOf rdf:parseType="Collection">
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Failure"/>
+            </owl:Restriction>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Working"/>
+            </owl:Restriction>
+        </owl:unionOf>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#RobotPart"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Failure"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Working"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid9"/>
         <rdfs:comment>each Part is either working or has a failure</rdfs:comment>
     </owl:Axiom>
     
@@ -1576,35 +1562,23 @@ It is also used to classify the current environment of the AUV</rdfs:comment>
                         </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
-                <rdfs:subClassOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasCapability"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:oneOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#PipelineFollowCapability"/>
-                                </owl:oneOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </rdfs:subClassOf>
+                <rdfs:subClassOf rdf:nodeID="genid56"/>
             </owl:Class>
         </owl:annotatedSource>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasCapability"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#PipelineFollowCapability"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid56"/>
         <rdfs:comment>an underwater robot that can detect a pipeline, drive and steer can follow a pipeline</rdfs:comment>
     </owl:Axiom>
+    <owl:Restriction rdf:nodeID="genid56">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasCapability"/>
+        <owl:someValuesFrom>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#PipelineFollowCapability"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:someValuesFrom>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource>
             <owl:Class>
@@ -1641,35 +1615,23 @@ It is also used to classify the current environment of the AUV</rdfs:comment>
                         </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
-                <rdfs:subClassOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasCapability"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:oneOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#PipelineSearchCapability"/>
-                                </owl:oneOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </rdfs:subClassOf>
+                <rdfs:subClassOf rdf:nodeID="genid74"/>
             </owl:Class>
         </owl:annotatedSource>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasCapability"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#PipelineSearchCapability"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid74"/>
         <rdfs:comment>an undertwater robot that can detect a pipelne, drive and steer can find a pipeline</rdfs:comment>
     </owl:Axiom>
+    <owl:Restriction rdf:nodeID="genid74">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasCapability"/>
+        <owl:someValuesFrom>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#PipelineSearchCapability"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:someValuesFrom>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource>
             <owl:Class>
@@ -1701,35 +1663,23 @@ It is also used to classify the current environment of the AUV</rdfs:comment>
                         </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
-                <rdfs:subClassOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:oneOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#ShouldSurface"/>
-                                </owl:oneOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </rdfs:subClassOf>
+                <rdfs:subClassOf rdf:nodeID="genid89"/>
             </owl:Class>
         </owl:annotatedSource>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#ShouldSurface"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid89"/>
         <rdfs:comment>an underwater robot that has a part that detects something that should be protected should surface</rdfs:comment>
     </owl:Axiom>
+    <owl:Restriction rdf:nodeID="genid89">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
+        <owl:someValuesFrom>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#ShouldSurface"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:someValuesFrom>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource>
             <owl:Class>
@@ -1751,35 +1701,23 @@ It is also used to classify the current environment of the AUV</rdfs:comment>
                         </owl:onClass>
                     </owl:Restriction>
                 </owl:intersectionOf>
-                <rdfs:subClassOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:oneOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#ShouldSurface"/>
-                                </owl:oneOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </rdfs:subClassOf>
+                <rdfs:subClassOf rdf:nodeID="genid101"/>
             </owl:Class>
         </owl:annotatedSource>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#ShouldSurface"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid101"/>
         <rdfs:comment>an underwater robot who has at least two batteries with a failure should surface</rdfs:comment>
     </owl:Axiom>
+    <owl:Restriction rdf:nodeID="genid101">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
+        <owl:someValuesFrom>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#ShouldSurface"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:someValuesFrom>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource>
             <owl:Class>
@@ -1800,35 +1738,23 @@ It is also used to classify the current environment of the AUV</rdfs:comment>
                         </owl:onDataRange>
                     </owl:Restriction>
                 </owl:intersectionOf>
-                <rdfs:subClassOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:oneOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#NeedsProtection"/>
-                                </owl:oneOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </rdfs:subClassOf>
+                <rdfs:subClassOf rdf:nodeID="genid112"/>
             </owl:Class>
         </owl:annotatedSource>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#NeedsProtection"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid112"/>
         <rdfs:comment>a whale that weighs over 40t should be protected</rdfs:comment>
     </owl:Axiom>
+    <owl:Restriction rdf:nodeID="genid112">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
+        <owl:someValuesFrom>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#NeedsProtection"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:someValuesFrom>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource>
             <owl:Class>
@@ -1850,35 +1776,23 @@ It is also used to classify the current environment of the AUV</rdfs:comment>
                         </owl:allValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
-                <rdfs:subClassOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:oneOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#CapabilityEnabled"/>
-                                </owl:oneOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </rdfs:subClassOf>
+                <rdfs:subClassOf rdf:nodeID="genid123"/>
             </owl:Class>
         </owl:annotatedSource>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:oneOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#CapabilityEnabled"/>
-                        </owl:oneOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid123"/>
         <rdfs:comment>if all requirements for a capability are satisfied in the present state, the capability is enabled</rdfs:comment>
     </owl:Axiom>
+    <owl:Restriction rdf:nodeID="genid123">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
+        <owl:someValuesFrom>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#CapabilityEnabled"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:someValuesFrom>
+    </owl:Restriction>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -1939,23 +1853,17 @@ It is also used to classify the current environment of the AUV</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Failure"/>
-                <owl:disjointWith>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Working"/>
-                    </owl:Restriction>
-                </owl:disjointWith>
+                <owl:disjointWith rdf:nodeID="genid159"/>
             </owl:Restriction>
         </owl:annotatedSource>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Working"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid159"/>
         <rdfs:comment>having a failure and working fine are not possible at the same time</rdfs:comment>
     </owl:Axiom>
+    <owl:Restriction rdf:nodeID="genid159">
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#hasClassification"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/tobias/ontologies/2022/2/complex_auv_control#Working"/>
+    </owl:Restriction>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
@@ -2226,6 +2134,6 @@ It is also used to classify the current environment of the AUV</rdfs:comment>
 
 
 
-<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.17) https://github.com/owlcs/owlapi/ -->
 
 
