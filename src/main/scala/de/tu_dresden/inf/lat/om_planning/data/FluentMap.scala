@@ -1,5 +1,6 @@
 package de.tu_dresden.inf.lat.om_planning.data
 
+import de.tu_dresden.inf.lat.om_pmc.interface.AxiomToFormulaMap
 import org.semanticweb.owlapi.model
 import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLDataFactory, OWLEntity, OWLLogicalAxiom, OWLNamedIndividual, OWLObjectProperty, OWLObjectPropertyAssertionAxiom}
 
@@ -72,4 +73,9 @@ case class FluentMap(specifications: Set[FluentSpecification]) {
     result.toSet[String]
   }
 
+  def asAxiom2FormulaMap(factory: OWLDataFactory) = {
+    val result = new AxiomToFormulaMap()
+    fluents(factory).foreach(axiom => result.add(axiom, convert(axiom)))
+    result
+  }
 }

@@ -1,8 +1,10 @@
 package de.tu_dresden.inf.lat.om_planning
 
-import de.tu_dresden.inf.lat.om_planning.generation.PDDLFormulaGenerator
+import de.tu_dresden.inf.lat.om_planning.generation.{HookInstantiator, PDDLFormulaGenerator}
+import de.tu_dresden.inf.lat.om_planning.parsing.{FluentSpecificationParser, HookSpecificationParser}
 import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.FormulaGenerator
 import de.tu_dresden.inf.lat.om_pmc.parsing.InterfaceParser
+import org.semanticweb.HermiT.ReasonerFactory
 import org.semanticweb.owlapi.apibinding.OWLManager
 
 import java.io.{File, PrintWriter}
@@ -23,24 +25,28 @@ object CreatePDDLDefinitions {
   }
 
   def create(formulaFile: File, hookFile: File, ontologyFile: File, outputFile: File): Unit = {
-    val ontology = OWLManager.createOWLOntologyManager().loadOntologyFromOntologyDocument(ontologyFile)
+    val manager = OWLManager.createOWLOntologyManager()
+    val ontology = manager.loadOntologyFromOntologyDocument(ontologyFile)
+    val factory = manager.getOWLDataFactory()
 
-    val parser = new InterfaceParser(ontology)
-    val axiom2Formula = parser.parseAxiomMapping(formulaFile)
-    println("Mapping DL fluent -> PDDL formula: " + axiom2Formula)
-    val hook2axiom = parser.parseHookDefinitions(hookFile)
-    println("Mapping PDDL hook -> DL axiom: " + hook2axiom)
+    val fluentSpec = new FluentSpecificationParser(ontology, factory).parse(formulaFile)
+    val hookSpec = new HookSpecificationParser(ontology).parse(hookFile)
+
+    val reasoner = new ReasonerFactory().createReasoner(ontology)
+
+    val hookInstantiator = new HookInstantiator(reasoner, factory)
 
     // val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
-    val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula, hook2axiom, ontology)
+    val formulaGenerator = FormulaGenerator
+      .formulaGenerator(fluentSpec.asAxiom2FormulaMap(factory), hookInstantiator.asHookToAxiomMap(hookSpec), ontology)
 
-   /* val pddlFormulaGenerator = new PDDLFormulaGenerator(formulaGenerator)
+    val pddlFormulaGenerator = new PDDLFormulaGenerator(formulaGenerator, reasoner, factory, fluentSpec, hookSpec)
 
     val printWriter = new PrintWriter(outputFile)
 
     pddlFormulaGenerator.generateAllFormulaDefinitions()
-      .foreach(printWriter.println(_))
+      .foreach(printWriter.println)
 
-    printWriter.close()*/
+    printWriter.close()
   }
 }

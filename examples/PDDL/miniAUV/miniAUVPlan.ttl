@@ -63,8 +63,7 @@ auv:CanDrive rdf:type owl:Class ;
              owl:equivalentClass [ rdf:type owl:Restriction ;
                                    owl:onProperty auv:hasCapability ;
                                    owl:hasValue auv:driving
-                                 ] ;
-             rdfs:subClassOf auv:NonPhysical .
+                                 ].
 
 
 ###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#CanTakePicture
@@ -72,8 +71,7 @@ auv:CanTakePicture rdf:type owl:Class ;
                    owl:equivalentClass [ rdf:type owl:Restriction ;
                                          owl:onProperty auv:hasCapability ;
                                          owl:hasValue auv:takePhoto
-                                       ] ;
-                   rdfs:subClassOf auv:NonPhysical .
+                                       ].
 
 
 ###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Capability

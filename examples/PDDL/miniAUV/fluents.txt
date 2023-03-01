@@ -8,20 +8,18 @@ PREFIX auv: <https://www.ifi.uio.no/tobiajoh/miniAUVPlan#>
 # PREDICATE predicatename(type1,type2) -> iri (of OWLObjectProperty)
 # CONDITION condition -> owlaxiom (in Manchester Syntax)
 
-OBJECT robot remaroAUV   ->  auv:remaroAUV
-OBJECT rgbCamera sensor   ->  auv:rgbCamera
-OBJECT backThruster actuator -> auv:backThruster
-OBJECT startPoint waypoint -> auv:startPoint
-OBJECT endPoint waypoint -> auv:endPoint
-OBJECT photoPoint waypoint -> auv:photoPoint
+OBJECT robot remaroAUV       ->  auv:remaroAUV
+OBJECT sensor rgbCamera      ->  auv:rgbCamera
+OBJECT actuator backThruster ->  auv:backThruster
+OBJECT waypoint startPoint   ->  auv:startPoint
+OBJECT waypoint endPoint     ->  auv:endPoint
+OBJECT waypoint photoPoint   ->  auv:photoPoint
 
-PREDICATE canTakePicture(sensor)   ->  auv:CanTakePicture
+PREDICATE canTakePicture(sensor) ->  auv:CanTakePicture
+PREDICATE canDrive(actuator)     ->  auv:CanDrive
+PREDICATE at(robot,waypoint)     ->  auv:location
 
-PREDICATE canDrive(actuator)   ->  auv:CanDrive
-
-PREDICATE at(robot,waypoint)  ->  auv:location
-
-CONDITION (false) ->  owl:Thing SubClassOf owl:Nothing
+# CONDITION (false) ->  owl:Thing SubClassOf owl:Nothing
 
 
 
