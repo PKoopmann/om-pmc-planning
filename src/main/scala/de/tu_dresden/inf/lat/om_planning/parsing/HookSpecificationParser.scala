@@ -26,11 +26,11 @@ class HookSpecificationParser(ontology: OWLOntology) {
   object PARSING_QUERY extends ParsingState
   object PARSING_INDETERMINED extends ParsingState
 
-  def parseHookDefinitions(file: File): Set[HookPredicate] = {
-    parseHookDefinitions(Source.fromFile(file))
+  def parse(file: File): Set[HookPredicate] = {
+    parse(Source.fromFile(file))
   }
 
-  def parseHookDefinitions(source: BufferedSource): Set[HookPredicate] = {
+  def parse(source: BufferedSource): Set[HookPredicate] = {
     val prefixManager = new DefaultPrefixManager()
     val manager = OWLManager.createOWLOntologyManager()
     val factory = manager.getOWLDataFactory()

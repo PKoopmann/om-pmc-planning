@@ -1,5 +1,5 @@
 import de.tu_dresden.inf.lat.om_planning.generation.HookInstantiator
-import de.tu_dresden.inf.lat.om_planning.parsing.HookSpecificationParser
+import de.tu_dresden.inf.lat.om_planning.parsing.{FluentSpecificationParser, HookSpecificationParser}
 import de.tu_dresden.inf.lat.om_pmc.parsing.InterfaceParser
 import org.junit.Test
 import org.semanticweb.HermiT.ReasonerFactory
@@ -11,6 +11,34 @@ import scala.io.Source
 class PDDL {
 
   @Test
+  def testFluentParsing(): Unit = {
+    val manager = OWLManager.createOWLOntologyManager()
+    val factory = manager.getOWLDataFactory
+    val ontology = manager.loadOntologyFromOntologyDocument(new ReaderDocumentSource(
+        Source.fromResource("pddl/miniAUVPlan.ttl").reader()
+      ))
+
+    val parser = new FluentSpecificationParser(ontology, factory)
+
+    println(Source.fromResource("pddl/fluents.txt").size)
+
+    val fluentMap = parser.parse(Source.fromResource("pddl/fluents.txt"))
+
+    println()
+    println("Parsed fluent mappings:")
+    println("========================")
+    fluentMap.specifications.foreach(println)
+    println()
+    println("Fluents: ")
+    println("=========")
+    fluentMap.fluents(factory).foreach(println)
+    println()
+    println("Translated fluents: ")
+    println("=========")
+    fluentMap.fluents(factory).map(fluentMap.convert).foreach(println)
+  }
+
+  @Test
   def testHookParsing(): Unit = {
     val ontology = OWLManager.createOWLOntologyManager()
       .loadOntologyFromOntologyDocument(new ReaderDocumentSource(
@@ -19,7 +47,7 @@ class PDDL {
 
     val parser = new HookSpecificationParser(ontology)
 
-    val hookSpecifications = parser.parseHookDefinitions(Source.fromResource("pddl/hooks.txt"))
+    val hookSpecifications = parser.parse(Source.fromResource("pddl/hooks.txt"))
 
     println(hookSpecifications)
 
