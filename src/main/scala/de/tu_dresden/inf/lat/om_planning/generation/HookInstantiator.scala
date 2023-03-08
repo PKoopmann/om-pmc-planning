@@ -1,8 +1,9 @@
-package de.tu_dresden.inf.lat.om_planning
+package de.tu_dresden.inf.lat.om_planning.generation
 
 import de.tu_dresden.inf.lat.om_planning.data.{HookPredicate, InvalidSpecificationException}
 import de.tu_dresden.inf.lat.om_planning.tools.Tools
-import org.semanticweb.owlapi.model.{IRI, OWLClassAssertionAxiom, OWLDataFactory, OWLLogicalAxiom, OWLNamedIndividual, OWLObjectPropertyAssertionAxiom}
+import de.tu_dresden.inf.lat.om_pmc.interface.HookToAxiomMap
+import org.semanticweb.owlapi.model._
 import org.semanticweb.owlapi.reasoner.OWLReasoner
 
 import scala.collection.JavaConverters.asScalaSetConverter
@@ -43,27 +44,36 @@ class HookInstantiator(reasoner: OWLReasoner, factory: OWLDataFactory) {
   def validAssignments(hookPredicate: HookPredicate): Set[Map[String,OWLNamedIndividual]] = {
     var possibilities = Map[String, Set[OWLNamedIndividual]]()
 
-    hookPredicate.typeSpecification.foreach( _ match {
+    hookPredicate.typeSpecification.foreach(_ match {
       case ca: OWLClassAssertionAxiom => ca.getIndividual match {
         case ind: OWLNamedIndividual if hookPredicate.variables.contains(ind.getIRI.toString) =>
           val variable = ind.getIRI.toString
           val candidates = reasoner.getInstances(ca.getClassExpression)
             .getFlattened
             .asScala
-          if(!possibilities.contains(variable))
+            .toSet
+          if (!possibilities.contains(variable))
             possibilities += (variable -> candidates)
           else {
             possibilities += (variable -> possibilities(variable).intersect(candidates))
           }
-        case other => throw new RuntimeException("type specification not supported yet: "+ca)
+        case other => throw new RuntimeException("type specification not supported yet: " + ca)
       }
-      case other => throw new RuntimeException("type specification not supported yet: "+other)
+      case other => throw new RuntimeException("type specification not supported yet: " + other)
     })
 
-    if(hookPredicate.variables.exists(!possibilities.contains(_)))
-      throw new InvalidSpecificationException("variables without type specification: "+
-      hookPredicate.variables.filterNot(possibilities.contains(_)))
+    if (hookPredicate.variables.exists(!possibilities.contains(_)))
+      throw new InvalidSpecificationException("variables without type specification: " +
+        hookPredicate.variables.filterNot(possibilities.contains(_)))
     else
       Tools.setOfMaps(possibilities)
+  }
+
+  def asHookToAxiomMap(hookSpecifications: Iterable[HookPredicate]) = {
+    val result = new HookToAxiomMap()
+    hookSpecifications.foreach(f => instantiateQueries(f).foreach(query =>
+      result.add("--", Tools.asOne(query,factory))
+    ))
+    result
   }
 }

@@ -1,14 +1,12 @@
-package de.tu_dresden.inf.lat.om_pmc.interface
+package de.tu_dresden.inf.lat.om_pmc.parsing
 
-import de.tu_dresden.inf.lat.prettyPrinting.parsing.{DLParser, OWLParser}
+import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
+import de.tu_dresden.inf.lat.prettyPrinting.owlapi.OWLParser
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.expression.{OWLEntityChecker, ShortFormEntityChecker}
-import org.semanticweb.owlapi.manchestersyntax.parser
-import org.semanticweb.owlapi.manchestersyntax.parser.{ManchesterOWLSyntaxInlineAxiomParser, ManchesterOWLSyntaxParserImpl}
-import org.semanticweb.owlapi.model.providers.EntityProvider
-import org.semanticweb.owlapi.model.{IRI, OWLAxiom, OWLDataFactory, OWLEntity, OWLLogicalAxiom, OWLOntology, OntologyConfigurator}
-import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser
-import org.semanticweb.owlapi.util.{BidirectionalShortFormProviderAdapter, DefaultPrefixManager, ShortFormProvider}
+import org.semanticweb.owlapi.manchestersyntax.parser.ManchesterOWLSyntaxParserImpl
+import org.semanticweb.owlapi.model._
+import org.semanticweb.owlapi.util.{BidirectionalShortFormProviderAdapter, DefaultPrefixManager}
 
 import java.io.File
 import scala.io.{BufferedSource, Source}
@@ -30,7 +28,7 @@ class InterfaceParser(ontology: OWLOntology) {
     val result = new AxiomToFormulaMap()
 
     val prefixManager = new DefaultPrefixManager();
-    var parser = new OWLParser(prefixManager)
+    //var parser = new OWLParser(prefixManager)
     val manager = OWLManager.createOWLOntologyManager()
     val factory = manager.getOWLDataFactory()
     var shortFormProvider = new ShortFormEntityChecker(new BidirectionalShortFormProviderAdapter(prefixManager))
@@ -54,7 +52,7 @@ class InterfaceParser(ontology: OWLOntology) {
             println("Prefixes (now added): ")
             prefixManager.prefixNames().forEach(x => println(x))
             manchesterParser.getPrefixManager.setPrefix(prefixName.trim,prefix)
-            parser = new OWLParser(prefixManager)
+         //   parser = new OWLParser(prefixManager)
 
             manchesterParser.setOWLEntityChecker(shortFormProvider);
             manchesterParser.setDefaultOntology(ontology)
@@ -70,9 +68,10 @@ class InterfaceParser(ontology: OWLOntology) {
             //prefixManager.prefixNames().forEach(x => println(x))
             val axiom =
               if(MANCHESTER_SYNTAX)
-                parse(left, manchesterParser, factory, shortFormProvider)
+                GeneralOWLParsing.parse(left, manchesterParser, factory)
               else
-                parser.parse(left)
+                throw new AssertionError("Only Manchester Syntax supported")
+           //     parser.parse(left)
             //val axiom = manchesterParser.parse(left)
             if(!axiom.isInstanceOf[OWLLogicalAxiom])
               throw new ParsingException("Not a logical axiom: "+axiom)
@@ -85,86 +84,6 @@ class InterfaceParser(ontology: OWLOntology) {
     result
   }
 
-  val rePropertyAssertion = raw"([^\s]+)\s+([^\s]+)\s+([^\s]+)".r
-
-  val reLiteral = """([0-9\.]+|"[^"]*"(@.*)?(\^\^.*)?|true|false)""".r
-
-
-  def parse(string: String,
-            manchesterParser: ManchesterOWLSyntaxParserImpl,
-            factory: OWLDataFactory,
-            entityChecker: OWLEntityChecker): OWLAxiom = {
-    val axiom = string match {
-      case rePropertyAssertion(first,property,second) if second matches(reLiteral.regex) =>
-        println(reLiteral.findFirstIn(second))
-        println("first: "+first)
-        println("second: "+second)
-        println("property: "+property)
-        val ind = factory.getOWLNamedIndividual(getIRI(first,manchesterParser))
-        val prp = factory.getOWLDataProperty(getIRI(property,manchesterParser))
-        manchesterParser.setStringToParse(second)
-        val value = manchesterParser.parseLiteral(null)
-        println(ind)
-        println(prp)
-        println(value)
-
-        factory.getOWLDataPropertyAssertionAxiom(prp,ind,value)
-
-      case rePropertyAssertion(first, property, second) if property.equals("Type:") =>
-        val ind1 = factory.getOWLNamedIndividual(getIRI(first, manchesterParser))
-        val cl = factory.getOWLClass(getIRI(second, manchesterParser))
-        factory.getOWLClassAssertionAxiom(cl, ind1)
-
-      case rePropertyAssertion(first,property,second) if !property.equals("Type:")  =>
-        println("first: "+first)
-        println("second: "+second)
-        println("property: "+property)
-        val ind1 = factory.getOWLNamedIndividual(getIRI(first,manchesterParser))
-        val ind2 = factory.getOWLNamedIndividual(getIRI(second,manchesterParser))
-        val prp = factory.getOWLObjectProperty(getIRI(property,manchesterParser))
-        println(ind1)
-        println(ind2)
-        println(prp)
-
-        factory.getOWLObjectPropertyAssertionAxiom(prp,ind1,ind2)
-
-      case _ =>
-        manchesterParser.setStringToParse(string)
-        manchesterParser.parseAxiom()
-    }
-
-    println("Parsed axiom: "+axiom)
-
-    axiom
-   /* string match {
-      case rePropertyAssertion(property,first,second) =>
-        val second = manchesterParser.parseL
-      case reClassAssertion(classExp,individual) =>
-        val ce = manchesterParser.parseClassExpression(classExp)
-        val ind = entityChecker.getOWLIndividual(individual)
-        factory.getOWLClassAssertionAxiom(ce,ind)
-    }*/
-  }
-
-  /**
-   * copied and slightly adapted from ManchesterOWLSyntaxParserImpl for maximimum compatibility
-   * @param inputName
-   * @return
-   */
-  def getIRI(string: String, manchesterParser: ManchesterOWLSyntaxParserImpl): IRI = {
-    if(string.startsWith("<"))
-      return IRI.create(string)
-    else {
-      val shortened =
-        if(!string.contains(":"))
-          ":"+string
-        else
-          string
-
-      return manchesterParser.getPrefixManager.getIRI(string)
-    }
-  }
-
 
   def parseHookDefinitions(file: File): HookToAxiomMap = {
     parseHookDefinitions(Source.fromFile(file))
@@ -172,7 +91,7 @@ class InterfaceParser(ontology: OWLOntology) {
 
   def parseHookDefinitions(source: BufferedSource): HookToAxiomMap= {
     val prefixManager = new DefaultPrefixManager();
-    val parser = new OWLParser(prefixManager)
+    //val parser = new OWLParser(prefixManager)
     val manager = OWLManager.createOWLOntologyManager()
     val factory = manager.getOWLDataFactory()
     val shortFormProvider = new ShortFormEntityChecker(new BidirectionalShortFormProviderAdapter(prefixManager))
@@ -208,9 +127,10 @@ class InterfaceParser(ontology: OWLOntology) {
             //\println(DLParser.parseDLStatement(right))
             val definition =
               if(MANCHESTER_SYNTAX)
-                parse(right,manchesterParser,factory,shortFormProvider).asInstanceOf[OWLLogicalAxiom]
+                GeneralOWLParsing.parse(right,manchesterParser,factory).asInstanceOf[OWLLogicalAxiom]
               else
-                parser.parse(right).asInstanceOf[OWLLogicalAxiom]
+                throw new AssertionError("Only Manchester syntax supported right now!")
+               // parser.parse(right).asInstanceOf[OWLLogicalAxiom]
 
             //val definition = manchesterParser.parse(right)
             if(!definition.isInstanceOf[OWLLogicalAxiom])

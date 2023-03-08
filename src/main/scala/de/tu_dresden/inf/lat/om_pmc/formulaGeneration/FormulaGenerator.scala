@@ -147,10 +147,10 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     dnfToStr(generateDNF(hook))
   }
 
-  private def generateDNF(hook: String) =
+  private def generateDNF(hook: String): Set[Set[OWLLogicalAxiom]] =
     generateDNF(hook2axiom.axiom(hook))
 
-  def generateDNF(axiom: OWLLogicalAxiom) =
+  def generateDNF(axiom: OWLLogicalAxiom): Set[Set[OWLLogicalAxiom]] =
   {
 
     val repairs = getRepairs()

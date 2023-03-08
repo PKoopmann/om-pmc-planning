@@ -1,7 +1,7 @@
 package de.tu_dresden.inf.lat.om_pmc
 
 import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.FormulaGenerator
-import de.tu_dresden.inf.lat.om_pmc.interface.InterfaceParser
+import de.tu_dresden.inf.lat.om_pmc.parsing.InterfaceParser
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.model.OWLOntology
 
