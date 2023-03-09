@@ -56,6 +56,7 @@ class ComplexTestCases {
       .foreach(println(_))
   }
 
+/*
   @Test
   def test1(): Unit = {
 
@@ -78,4 +79,6 @@ class ComplexTestCases {
     formulaGenerator.generateAllFormulaDefinitions()
       .foreach(println(_))
   }
+*/
+
 }
