@@ -15,9 +15,12 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
                            hookPredicates: Iterable[HookPredicate]) {
 
   val hookInstantiator = new HookInstantiator(constantReasoner,factory)
+  val tab = " "*4
 
   def generateAllFormulaDefinitions(): Iterable[String] = {
-    "(:derived (inconsistent) " + generateInconsistencyFormula() + ")\n"::
+    tab + "(:derived (inconsistent) \n"+
+      tab*2 + generateInconsistencyFormula() + "\n" +
+      tab + ")\n"::
       hookPredicates.map(generateHookFormulas).toList
   }
 
@@ -25,15 +28,15 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
     dnfToStr(formulaGenerator.generateInconsistentDNF())
 
   def generateHookFormulas(hookPredicate: HookPredicate) = {
-    "(:derived ("+hookPredicate.name+" "+hookPredicate.variables.mkString("", " ", ")")+
-      "\n"+
-      "\t(or (inconsistent) \n"+
-      hookInstantiator.validAssignments(hookPredicate).map { ass =>
-        val query = hookInstantiator.instantiateQuery(hookPredicate, ass)
-        "\t    (and "+toString(ass) +" "+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
-    }.mkString("\n)")+
-    "\n\t)"+
-    "\n)\n"
+    tab + "(:derived ("+hookPredicate.name+" "+hookPredicate.variables.mkString("", " ", ")")+ "\n"+
+      tab*2 + "(or\n" +
+        tab*3 + "(inconsistent) \n"+
+        hookInstantiator.validAssignments(hookPredicate).map { ass =>
+          val query = hookInstantiator.instantiateQuery(hookPredicate, ass)
+          tab*3 + "(and "+toString(ass) +" "+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
+        }.mkString("\n") + "\n" +
+      tab*2 + ")\n" +
+    tab + ")\n"
   }
 
   def dnfToStr(dnf: Set[Set[OWLLogicalAxiom]]): String = {
