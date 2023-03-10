@@ -33,11 +33,21 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
         tab*3 + "(inconsistent) \n"+
         hookInstantiator.validAssignments(hookPredicate).map { ass =>
           val query = hookInstantiator.instantiateQuery(hookPredicate, ass)
-          tab*3 + "(and "+toString(ass) +" "+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
+          tab*3 + "(and "+toString(ass) +" "+
+            conjunction(query.map(x => dnfToStr(formulaGenerator.generateDNF(x))))
+          //+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
         }.mkString("\n") + "\n" +
       tab*2 + ")\n" +
     tab + ")\n"
   }
+
+  def conjunction(conjuncts: Set[String]) =
+    if(conjuncts.size==1)
+      conjuncts.head
+    else if(conjuncts.isEmpty)
+      "true"
+    else
+      conjuncts.mkString("(and ", " ", ")")
 
   def dnfToStr(dnf: Set[Set[OWLLogicalAxiom]]): String = {
     if (dnf.isEmpty)
