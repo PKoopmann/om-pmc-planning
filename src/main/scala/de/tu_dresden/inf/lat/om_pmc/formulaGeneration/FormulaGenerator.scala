@@ -3,7 +3,7 @@ package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 import de.tu_dresden.inf.lat.om_pmc.ifm.IfmSituationFormulaGenerator.Methods.{BLACK_BOX, Value}
 import de.tu_dresden.inf.lat.om_pmc.ifm.{IfmBlackboxSituationFormulaGenerator, IfmGlassboxSituationFormulaGenerator, IfmInconsistencyBasedGBSituationFormulaGenerator, IfmSituationFormulaGenerator}
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
-import de.tu_dresden.lat.prettyPrinting.formatting.SimpleOWLFormatter
+import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import openllet.owlapi.OpenlletReasonerFactory
 import org.semanticweb.HermiT.{Configuration, ReasonerFactory}
 import org.semanticweb.elk.owlapi.ElkReasonerFactory
@@ -20,7 +20,6 @@ object FormulaGenerator {
   val PREFIX = "http://lat.inf.tu-dresden.de/OM-PMC#"
   var explanationMethod = Methods.BLACK_BOX // Methods.INC_BASED
 
-
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
                        ontology: OWLOntology)
@@ -31,19 +30,19 @@ object FormulaGenerator {
     ontology.addAxioms(axiom2formula.axioms.asJava)
 
     val module =
-        getModule(ontology,
-          hook2axiom.hooks()
-            .map(hook2axiom.axiom(_))
-            .flatMap(_.getSignature().asScala))
+      getModule(ontology,
+        hook2axiom.hooks()
+          .map(hook2axiom.axiom(_))
+          .flatMap(_.getSignature().asScala))
 
     println("Axioms in module: "+module.getAxiomCount())
 
-    manager.saveOntology(module, new FileOutputStream(new File("moduleUsed.owl")))
+    //manager.saveOntology(module, new FileOutputStream(new File("moduleUsed.owl")))
 
     println(explanationMethod)
 
     var reasonerFactory: OWLReasonerFactory =
-      if(explanationMethod.equals(Methods.BLACK_BOX) || explanationMethod.equals(Methods.INC_BASED)) {
+      if (explanationMethod.equals(Methods.BLACK_BOX) || explanationMethod.equals(Methods.INC_BASED)) {
         new ReasonerFactory()
       } // HermiT
       else
@@ -60,11 +59,11 @@ object FormulaGenerator {
 
     val result = explanationMethod match {
       case Methods.BLACK_BOX =>
-        new BlackboxSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
+        new BlackboxSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
       case Methods.GLASS_BOX =>
-        new GlassboxCapableSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
+        new GlassboxCapableSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
       case Methods.INC_BASED =>
-        new InconsistencyBasedGBSituationFormulaGenerator(axiom2formula,hook2axiom,manager, reasonerFactory )
+        new InconsistencyBasedGBSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
     }
 
     result.initReasoner(module)
@@ -80,7 +79,7 @@ object FormulaGenerator {
   }
 
   def getModule(ontology: OWLOntology, signature: Set[OWLEntity]) = {
-    println("Signature: "+signature)
+//    println("Signature: "+signature)
     val moduleExtractor =
       new SyntacticLocalityModuleExtractor(
         ontology.getOWLOntologyManager,
@@ -103,7 +102,6 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
                                 ontologyManager: OWLOntologyManager,
                                 reasonerFactory: OWLReasonerFactory) {
 
-
   val relevantAxioms = axiom2formula.axioms
   var reasoner: OWLReasoner = _
   var ontology: OWLOntology = _
@@ -124,6 +122,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     else
       reasonerFactory.createReasoner(ontology)
 
+  def getHooks() = hook2axiom.hooks()
 
   def initReasoner(ontology: OWLOntology) = {
     this.ontology=ontology
@@ -148,12 +147,16 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     dnfToStr(generateDNF(hook))
   }
 
-  private def generateDNF(hook: String) = {
+  private def generateDNF(hook: String): Set[Set[OWLLogicalAxiom]] =
+    generateDNF(hook2axiom.axiom(hook))
+
+  def generateDNF(axiom: OWLLogicalAxiom): Set[Set[OWLLogicalAxiom]] =
+  {
 
     val repairs = getRepairs()
 
-    println("Got " + repairs.size + " repairs.")
-    println("Repairs: " + repairs)
+    //println("Got " + repairs.size + " repairs.")
+    //println("Repairs: " + repairs)
 
     val originalOntology = ontology
 
@@ -174,13 +177,13 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     repairs.foreach { repair =>
       counter+= 1
-      println("Using repair nr. "+counter)
+      //println("Using repair nr. "+counter)
       val repairedAxioms = axioms.asScala -- repair
 
       val repairedOntology = ontologyManager.createOntology(repairedAxioms.asJava)
 
       //      repair.foreach(ontology.removeAxiom)
-      println("axioms in ontology: " + repairedOntology.getAxiomCount())
+      //println("axioms in ontology: " + repairedOntology.getAxiomCount())
       // println("++++++++++++++++++++")
       // println(repairedOntology.getAxioms().asScala.mkString("\n"))
       // println("++++++++++++++++++++")
@@ -188,32 +191,30 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       initExplanationGenerator(repairedOntology)
       reasoner.flush()
 
-      val ax = hook2axiom.axiom(hook)
-
-      println("Testing: " + ax)
+      //println("Testing: " + axiom)
 
       val consistent= reasoner.isConsistent()
-      val entailed = !consistent || reasoner.isEntailed(ax)
+      val entailed = !consistent || reasoner.isEntailed(axiom)
 
-      println("Consistency of ontology: " + consistent)
-      println("Entailment: "+entailed)
+      //println("Consistency of ontology: " + consistent)
+      //println("Entailment: "+entailed)
 
 
       if (!consistent || entailed) {
         val start = System.currentTimeMillis
-        println("Generating Explanations for " + ax)
-        val explanations = getExplanations(ax)
-        println("took " + (System.currentTimeMillis - start))
-        println(explanations.size + " explanations found")
+        //println("Generating Explanations for " + axiom)
+        val explanations = getExplanations(axiom)
+        //println("took " + (System.currentTimeMillis - start))
+        //println(explanations.size + " explanations found")
         //println("Explanations: "+explanations.map(_.map(SimpleOWLFormatter.format)))
         explanations.foreach { exp =>
-          println("Adding new explanation")
-          println("Explanations before: "+dnf.size)
+         // println("Adding new explanation")
+          //println("Explanations before: "+dnf.size)
           val rel = exp.filter(relevantAxioms)
           dnf = dnf.filterNot(rel.forall)
           if (!dnf.exists(_.forall(rel))) {
             dnf += rel.toSet
-            println("Explanations after: "+dnf.size)
+            //println("Explanations after: "+dnf.size)
           }
         }
 
@@ -251,9 +252,9 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     if (!reasoner.isConsistent) {
       //println("Is inconsistent")
       val explanations = getExplanationsForInconsistency()
-      println("took " + (System.currentTimeMillis - start))
-      println(explanations.size + " explanations found")
-      println("Explanations: "+explanations.map(_.map(SimpleOWLFormatter.format)))
+      //println("took " + (System.currentTimeMillis - start))
+      //println(explanations.size + " explanations found")
+      //println("Explanations: "+explanations.map(_.map(SimpleOWLFormatter.format)))
       explanations.foreach { exp =>
         val rel = exp.filter(relevantAxioms)
 
@@ -272,14 +273,14 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   def getRepairs(): Set[Set[OWLLogicalAxiom]] = {
     val dnf = generateInconsistentDNF()
-    println("inconsistency dnf: ")
-    println("----------")
-    println(dnf.mkString("\n"))
-    println("-----------")
+    //println("inconsistency dnf: ")
+    //println("----------")
+    //println(dnf.mkString("\n"))
+    //println("-----------")
     if (dnf.size == 0)
       return Set(Set())
     else {
-      println(dnf.toList)
+      //println(dnf.toList)
       return hittingSet(dnf.toList)
     }
   }

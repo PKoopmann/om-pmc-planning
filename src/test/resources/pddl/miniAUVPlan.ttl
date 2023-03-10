@@ -1,0 +1,180 @@
+@prefix : <https://www.ifi.uio.no/tobiajoh/miniAUVPlan#> .
+@prefix auv: <https://www.ifi.uio.no/tobiajoh/miniAUVPlan#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@base <https://www.ifi.uio.no/tobiajoh/miniAUVPlan> .
+
+<https://www.ifi.uio.no/tobiajoh/miniAUVPlan> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasCapability
+auv:hasCapability rdf:type owl:ObjectProperty ;
+                  rdfs:range auv:Capability ;
+                  owl:propertyChainAxiom ( auv:hasPart
+                                           auv:hasCapability
+                                         ) .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasPart
+auv:hasPart rdf:type owl:ObjectProperty ;
+            rdfs:range auv:RobotPart .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#location
+auv:location rdf:type owl:ObjectProperty ;
+             rdfs:domain auv:Robot ;
+             rdfs:range auv:WayPoint .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Actuator
+auv:Actuator rdf:type owl:Class ;
+             rdfs:subClassOf auv:RobotPart ;
+             owl:disjointWith auv:Sensor .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Animal
+auv:Animal rdf:type owl:Class ;
+           rdfs:subClassOf auv:Physical .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#CanDrive
+auv:CanDrive rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Restriction ;
+                                   owl:onProperty auv:hasCapability ;
+                                   owl:hasValue auv:driving
+                                 ].
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#CanTakePicture
+auv:CanTakePicture rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty auv:hasCapability ;
+                                         owl:hasValue auv:takePhoto
+                                       ].
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Capability
+auv:Capability rdf:type owl:Class ;
+               rdfs:subClassOf auv:NonPhysical .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#NonPhysical
+auv:NonPhysical rdf:type owl:Class ;
+                owl:disjointWith auv:Robot .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Physical
+auv:Physical rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Robot
+auv:Robot rdf:type owl:Class ;
+          rdfs:subClassOf auv:Physical .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#RobotPart
+auv:RobotPart rdf:type owl:Class ;
+              rdfs:subClassOf auv:Physical .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Sensor
+auv:Sensor rdf:type owl:Class ;
+           rdfs:subClassOf auv:RobotPart .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#WayPoint
+auv:WayPoint rdf:type owl:Class ;
+             rdfs:subClassOf auv:NonPhysical .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#backThruster
+auv:backThruster rdf:type owl:NamedIndividual ,
+                          auv:Actuator ;
+                 auv:hasCapability auv:driving .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#driving
+auv:driving rdf:type owl:NamedIndividual ,
+                     auv:Capability .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#endPoint
+auv:endPoint rdf:type owl:NamedIndividual ,
+                      auv:WayPoint .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#photoPoint
+auv:photoPoint rdf:type owl:NamedIndividual ,
+                        auv:WayPoint .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#remaroAUV
+auv:remaroAUV rdf:type owl:NamedIndividual ,
+                       auv:Robot ;
+              auv:hasPart auv:backThruster ,
+                          auv:rgbCamera .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#rgbCamera
+auv:rgbCamera rdf:type owl:NamedIndividual ,
+                       auv:Sensor ;
+              auv:hasCapability auv:takePhoto .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#startPoint
+auv:startPoint rdf:type owl:NamedIndividual ,
+                        auv:WayPoint .
+
+
+###  https://www.ifi.uio.no/tobiajoh/miniAUVPlan#takePhoto
+auv:takePhoto rdf:type owl:NamedIndividual ,
+                       auv:Capability .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( auv:Animal
+                auv:Capability
+                auv:Robot
+                auv:RobotPart
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( auv:endPoint
+                        auv:photoPoint
+                        auv:startPoint
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

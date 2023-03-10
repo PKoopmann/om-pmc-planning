@@ -1,7 +1,7 @@
 package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
-import de.tu_dresden.lat.prettyPrinting.formatting.SimpleOWLFormatter
+import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLLogicalAxiom, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
@@ -18,11 +18,11 @@ class InconsistencyBasedGBSituationFormulaGenerator(
 
   override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] = {
 
-    println("Ontology before: ")
+  /*  println("Ontology before: ")
     println("--------------");
     println(SimpleOWLFormatter.format(ontology))
     println(ontology.getAxiomCount()+" axioms");
-
+*/
     val negated = negateAxiom(axiom)
 
     val needsToAddAxiom = !ontology.containsAxiom(negated)
@@ -30,15 +30,15 @@ class InconsistencyBasedGBSituationFormulaGenerator(
     if(needsToAddAxiom)
       ontology.addAxiom(negated)
 
-    println("Needs to add axiom: "+needsToAddAxiom)
+  /*  println("Needs to add axiom: "+needsToAddAxiom)
     println("negatedAxiom: "+SimpleOWLFormatter.format(negated))
-
+*/
     initReasoner(ontology)
     reasoner.flush()
 
     ontologyManager.saveOntology(ontology, new FileOutputStream(new File("test.owl")))
 
-    System.out.println("consistency: "+reasoner.isConsistent)
+  //  System.out.println("consistency: "+reasoner.isConsistent)
 
     val result = explanationGenerator.getInconsistencyExplanations()
       .asScala
@@ -46,11 +46,11 @@ class InconsistencyBasedGBSituationFormulaGenerator(
 
     assert(result.size>0)
 
-    System.out.println("Explanations found: "+result.size)
+    //System.out.println("Explanations found: "+result.size)
 
-    if(result.size==0)
+    /*if(result.size==0)
       System.out.println("WARNING: Hook that is never satisfied for axiom "+SimpleOWLFormatter.format(axiom))
-
+    */
     if(needsToAddAxiom)
       ontology.removeAxiom(negated)
 
@@ -58,11 +58,11 @@ class InconsistencyBasedGBSituationFormulaGenerator(
     reasoner.flush()
 
 
-    println("Ontology after: ")
+    /*println("Ontology after: ")
     println("--------------");
     println(SimpleOWLFormatter.format(ontology))
     println(ontology.getAxiomCount()+" axioms");
-
+    */
     result
   }
 

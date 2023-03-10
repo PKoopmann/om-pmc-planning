@@ -1,4 +1,4 @@
-import de.tu_dresden.inf.lat.om_pmc.interface.InterfaceParser
+import de.tu_dresden.inf.lat.om_pmc.parsing.InterfaceParser
 import org.junit.Test
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.expression.ShortFormEntityChecker

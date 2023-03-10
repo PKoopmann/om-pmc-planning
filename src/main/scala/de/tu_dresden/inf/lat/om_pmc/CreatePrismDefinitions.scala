@@ -1,7 +1,7 @@
 package de.tu_dresden.inf.lat.om_pmc
 
 import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.FormulaGenerator
-import de.tu_dresden.inf.lat.om_pmc.interface.InterfaceParser
+import de.tu_dresden.inf.lat.om_pmc.parsing.InterfaceParser
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.model.OWLOntology
 
@@ -27,10 +27,11 @@ object CreatePrismDefinitions {
 
     val parser = new InterfaceParser(ontology)
     val axiom2Formula = parser.parseAxiomMapping(formulaFile)
-    println("Mapping DL fluent -> PRISM formula: "+axiom2Formula)
+    //println("Mapping DL fluent -> PRISM formula: "+axiom2Formula)
     val hook2axiom = parser.parseHookDefinitions(hookFile)
-    println("Mapping PRISM hook -> DL axiom: "+hook2axiom)
+    //println("Mapping PRISM hook -> DL axiom: "+hook2axiom)
 
+ //   val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
     val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
 
     val printWriter = new PrintWriter(outputFile)

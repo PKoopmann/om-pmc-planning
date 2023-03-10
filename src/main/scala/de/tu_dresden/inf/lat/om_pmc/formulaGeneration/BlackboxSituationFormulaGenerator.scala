@@ -23,7 +23,7 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
     val axioms = ontology.getAxioms().asScala.toSet
     val relevantAxiomsFiltered = relevantAxioms.filter(axioms)
 
-    println("Relevant axioms after filtering: "+relevantAxiomsFiltered)
+//    println("Relevant axioms after filtering: "+relevantAxiomsFiltered)
 
     val singleGen = new MyBlackBoxExplanation(
       ontology,

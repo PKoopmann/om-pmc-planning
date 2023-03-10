@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="temporaryModule#"
+     xml:base="temporaryModule"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:miniAUVPlan="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#">
+    <owl:Ontology rdf:about="temporaryModule"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasCapability">
+        <rdfs:range rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Capability"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasPart"/>
+            <rdf:Description rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasCapability"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasPart">
+        <rdfs:range rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#RobotPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#location -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#location">
+        <rdfs:domain rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Robot"/>
+        <rdfs:range rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#WayPoint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Actuator -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Actuator">
+        <rdfs:subClassOf rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#RobotPart"/>
+        <owl:disjointWith rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Animal -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Animal"/>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#CanDrive -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#CanDrive">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasCapability"/>
+                <owl:hasValue rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#driving"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#CanTakePicture -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#CanTakePicture">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#hasCapability"/>
+                <owl:hasValue rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#takePhoto"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Capability -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Capability">
+        <rdfs:subClassOf rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#NonPhysical"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#NonPhysical -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#NonPhysical">
+        <owl:disjointWith rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Robot"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Robot -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Robot"/>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#RobotPart -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#RobotPart"/>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Sensor -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Sensor">
+        <rdfs:subClassOf rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#RobotPart"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#WayPoint -->
+
+
+    <owl:Class rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#WayPoint">
+        <rdfs:subClassOf rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#NonPhysical"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#backThruster -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#backThruster">
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Actuator"/>
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#CanDrive"/>
+        <miniAUVPlan:hasCapability rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#driving"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#driving -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#driving">
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Capability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#endPoint -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#endPoint">
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#WayPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#photoPoint -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#photoPoint">
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#WayPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#remaroAUV -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#remaroAUV">
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Robot"/>
+        <miniAUVPlan:hasPart rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#backThruster"/>
+        <miniAUVPlan:hasPart rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#rgbCamera"/>
+        <miniAUVPlan:location rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#endPoint"/>
+        <miniAUVPlan:location rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#photoPoint"/>
+        <miniAUVPlan:location rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#startPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#rgbCamera -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#rgbCamera">
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#CanTakePicture"/>
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Sensor"/>
+        <miniAUVPlan:hasCapability rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#takePhoto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#startPoint -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#startPoint">
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#WayPoint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.ifi.uio.no/tobiajoh/miniAUVPlan#takePhoto -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#takePhoto">
+        <rdf:type rdf:resource="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Capability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Animal"/>
+            <rdf:Description rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Capability"/>
+            <rdf:Description rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#Robot"/>
+            <rdf:Description rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#RobotPart"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#endPoint"/>
+            <rdf:Description rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#photoPoint"/>
+            <rdf:Description rdf:about="https://www.ifi.uio.no/tobiajoh/miniAUVPlan#startPoint"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+
+
