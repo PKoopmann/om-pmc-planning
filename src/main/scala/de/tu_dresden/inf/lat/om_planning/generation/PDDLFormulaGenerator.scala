@@ -34,7 +34,8 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
         hookInstantiator.validAssignments(hookPredicate).map { ass =>
           val query = hookInstantiator.instantiateQuery(hookPredicate, ass)
           tab*3 + "(and "+toString(ass) +" "+
-            conjunction(query.map(x => dnfToStr(formulaGenerator.generateDNF(x))))
+            //conjunction(query.map(x => dnfToStr(formulaGenerator.generateDNF(x))))+")"
+          query.map(x => dnfToStr(formulaGenerator.generateDNF(x))).mkString(" ")+")"
           //+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
         }.mkString("\n") + "\n" +
       tab*2 + ")\n" +
