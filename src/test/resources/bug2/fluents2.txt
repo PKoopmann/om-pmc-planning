@@ -1,0 +1,1 @@
+{ <http://www.ifi.uio.no/tobiajoh/bugs#x> } SubClassOf <http://www.ifi.uio.no/tobiajoh/bugs#B> := xInClassB

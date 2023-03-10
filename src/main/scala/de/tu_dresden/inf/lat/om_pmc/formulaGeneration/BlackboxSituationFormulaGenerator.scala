@@ -23,6 +23,8 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
     val axioms = ontology.getAxioms().asScala.toSet
     val relevantAxiomsFiltered = relevantAxioms.filter(axioms)
 
+    println("Relevant axioms after filtering: "+relevantAxiomsFiltered)
+
     val singleGen = new MyBlackBoxExplanation(
       ontology,
       reasonerFactory,
@@ -30,10 +32,9 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
       //reasonerFactory.createNonBufferingReasoner(ontology)
     )
 
-
     expGenerator =
       new MyHSTExplanationGenerator(
-        relevantAxioms.toSet[OWLLogicalAxiom].asJava,
+        relevantAxiomsFiltered.toSet[OWLLogicalAxiom].asJava,
         singleGen)
   }
 
@@ -45,7 +46,14 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
         .map(_.asInstanceOf[OWLLogicalAxiom]))
 
   override def getExplanationsForInconsistency(): Iterable[Set[OWLLogicalAxiom]] = {
-    getExplanations(getInconsistentAxiom)
+    initReasoner(ontology)
+
+    expGenerator.getExplanations(factory.getOWLThing)
+      .asScala
+      .map(_.asScala
+        .toSet[OWLAxiom]
+        .map(_.asInstanceOf[OWLLogicalAxiom]))
+    //getExplanations(getInconsistentAxiom)
   }
 
   def getInconsistentAxiom() = {

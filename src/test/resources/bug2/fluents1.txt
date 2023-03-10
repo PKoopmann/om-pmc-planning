@@ -1,0 +1,15 @@
+PREFIX ontologyIRI: <http://www.ifi.uio.no/tobiajoh/bugs#>
+
+# this works
+{ <http://www.ifi.uio.no/tobiajoh/bugs#x> } SubClassOf <http://www.ifi.uio.no/tobiajoh/bugs#C> := xInClassC
+
+# this would be nice to work (works in hook definition)-
+ontologyIRI:x Type: ontologyIRI:C := xInClassC
+
+# this works
+{ <http://www.ifi.uio.no/tobiajoh/bugs#x> } SubClassOf ontologyIRI:C := xInClassC
+
+# this should definetly work
+{ ontologyIRI:x } SubClassOf ontologyIRI:C := xInClassC
+
+

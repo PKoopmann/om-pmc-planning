@@ -1,0 +1,5 @@
+PREFIX ontologyIRI: <http://www.ifi.uio.no/tobiajoh/bugs#>
+
+isInA := ontologyIRI:x Type: ontologyIRI:A
+isInB := ontologyIRI:x Type: ontologyIRI:B
+isInC := ontologyIRI:x Type: ontologyIRI:C

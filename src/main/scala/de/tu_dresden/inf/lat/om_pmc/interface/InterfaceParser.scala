@@ -33,8 +33,8 @@ class InterfaceParser(ontology: OWLOntology) {
     var parser = new OWLParser(prefixManager)
     val manager = OWLManager.createOWLOntologyManager()
     val factory = manager.getOWLDataFactory()
-    val shortFormProvider = new ShortFormEntityChecker(new BidirectionalShortFormProviderAdapter(prefixManager))
-    val manchesterParser = new ManchesterOWLSyntaxParserImpl(new OntologyConfigurator(), factory)
+    var shortFormProvider = new ShortFormEntityChecker(new BidirectionalShortFormProviderAdapter(prefixManager))
+    var manchesterParser = new ManchesterOWLSyntaxParserImpl(new OntologyConfigurator(), factory)
     manchesterParser.setOWLEntityChecker(shortFormProvider);
     manchesterParser.setDefaultOntology(ontology)
     //new ManchesterOWLSyntaxInlineAxiomParser(factory,shortFormProvider)
@@ -55,6 +55,10 @@ class InterfaceParser(ontology: OWLOntology) {
             prefixManager.prefixNames().forEach(x => println(x))
             manchesterParser.getPrefixManager.setPrefix(prefixName.trim,prefix)
             parser = new OWLParser(prefixManager)
+
+            manchesterParser.setOWLEntityChecker(shortFormProvider);
+            manchesterParser.setDefaultOntology(ontology)
+
           case other => throw new ParsingException("wrong prefix declaration: "+other)
         }
       }
@@ -105,6 +109,11 @@ class InterfaceParser(ontology: OWLOntology) {
         println(value)
 
         factory.getOWLDataPropertyAssertionAxiom(prp,ind,value)
+
+      case rePropertyAssertion(first, property, second) if property.equals("Type:") =>
+        val ind1 = factory.getOWLNamedIndividual(getIRI(first, manchesterParser))
+        val cl = factory.getOWLClass(getIRI(second, manchesterParser))
+        factory.getOWLClassAssertionAxiom(cl, ind1)
 
       case rePropertyAssertion(first,property,second) if !property.equals("Type:")  =>
         println("first: "+first)

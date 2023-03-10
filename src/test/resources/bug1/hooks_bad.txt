@@ -1,0 +1,2 @@
+PREFIX equal: <http://www.uio.no/ifi/tobiajoh/testEqual#>
+#isInA ?x := equal:x Type: equal:A

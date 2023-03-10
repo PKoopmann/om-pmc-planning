@@ -165,17 +165,22 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
 
     @Override
     public Set<OWLAxiom> getExplanation(OWLClassExpression unsatClass) {
-        if (!getDefinitionTracker().isDefined(unsatClass)) {
+        /*if (!getDefinitionTracker().isDefined(unsatClass)) {
             return Collections.emptySet();
-        }
+        }*/ // <--- why is this even used?
         try {
+            System.out.println("I am here!");
             satTestCount++;
             if (isFirstExplanation() && getReasoner().isSatisfiable(unsatClass)) {
+                System.out.println("first explanation and satisfiable");
                 return Collections.emptySet();
             }
             reset();
+            System.out.println("after resetting: "+debuggingAxioms);
             expandUntilUnsatisfiable(unsatClass);
+            System.out.println("after expanding: "+debuggingAxioms);
             pruneUntilMinimal(unsatClass);
+            System.out.println("after pruning: "+debuggingAxioms);
             removeDeclarations();
             return new HashSet<>(debuggingAxioms);
         } catch (OWLException e) {
@@ -281,6 +286,9 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
         // return any axioms, then get the axioms that reference the entity
         Set<OWLAxiom> expansionAxioms =
             asUnorderedSet(getOntology().referencingAxioms(obj, INCLUDED));
+        if(obj.isTopEntity() && expansionAxioms.isEmpty()){ // PATRICK: added by me
+            expansionAxioms = asUnorderedSet(getOntology().axioms());
+        }
         expansionAxioms.removeAll(debuggingAxioms);
         return addMax(expansionAxioms, debuggingAxioms, limit);
     }
@@ -393,6 +401,7 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
         // defining axioms for the class being debugged
         resetSatisfiabilityTestCounter();
         if (unsatClass.isAnonymous()) {
+            System.out.println("Anonymous");
             OWLClass owlThing = man.getOWLDataFactory().getOWLThing();
             OWLSubClassOfAxiom axiom =
                 man.getOWLDataFactory().getOWLSubClassOfAxiom(unsatClass, owlThing);
@@ -400,8 +409,10 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
             expandAxioms();
             debuggingAxioms.remove(axiom);
         } else {
+            System.out.println("Expand with defining");
             expandWithDefiningAxioms((OWLClass) unsatClass, expansionLimit);
         }
+        System.out.println("now we have: "+debuggingAxioms);
         LOGGER.info("Initial axiom count: {}", Integer.valueOf(debuggingAxioms.size()));
         int totalAdded = 0;
         int expansionCount = 0;
@@ -409,9 +420,11 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
             LOGGER.info("Expanding axioms (expansion {})", Integer.valueOf(expansionCount));
             expansionCount++;
             int numberAdded = expandAxioms();
+            System.out.println("after expandAxioms: "+debuggingAxioms);
             totalAdded += numberAdded;
             LOGGER.info("    ... expanded by {}", Integer.valueOf(numberAdded));
             if (numberAdded == 0) {
+                System.out.println("Oops!");
                 LOGGER.info("ERROR! Cannot find SOS axioms!");
                 debuggingAxioms.clear();
                 return;
