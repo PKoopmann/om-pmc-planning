@@ -1,0 +1,6 @@
+(drive remaroauv startpoint endpoint backthruster rgbcamera)
+(drive remaroauv endpoint photopoint backthruster rgbcamera)
+(take-photo remaroauv photopoint)
+(drive remaroauv photopoint startpoint backthruster rgbcamera)
+(drive remaroauv startpoint endpoint backthruster rgbcamera)
+; cost = 5 (unit cost)

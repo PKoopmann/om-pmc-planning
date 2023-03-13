@@ -1,0 +1,5 @@
+# miniAUV types
+./insertPDDLRewritings.sh ../examples/miniAUV_types miniAUVPlan.ttl abstract_miniAUVDomain.pddl miniAUVProblem.pddl
+
+# drones
+./insertPDDLRewritings.sh ../examples/drones TTL5-5.ttl drone.pddl droneProblem5-5.pddl
