@@ -24,7 +24,6 @@ VARIABLES: ?x ?y
 TYPE_SPECIFICATION:
 	?x Type: drone:Cell
 	?y Type: drone:Cell
-	?x drone:veryClose drone:?y
 QUERY:
   ?x Type: drone:Drone
   ?x drone:veryClose drone:?y
