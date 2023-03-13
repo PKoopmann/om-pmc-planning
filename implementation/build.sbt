@@ -16,10 +16,12 @@ lazy val root = (project in file("."))
     //libraryDependencies += "de.tu-dresden.lat" %% "dl-pretty-printer-owlapi5" % "0.4-SNAPSHOT",
     libraryDependencies += "de.tu-dresden.inf.lat" %% "lat-scala-dl-tools-owlapi5" % "0.4.1-SNAPSHOT",
     libraryDependencies += "net.sourceforge.owlapi" % "org.semanticweb.hermit" % "1.4.5.519",
+    libraryDependencies += "junit" % "junit" % "4.12" % "test",
+    libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test"
       )
 
 //libraryDependencies ++= Seq("net.aichler" % "jupiter-interface" % JupiterKeys.jupiterVersion.value % Test)
-libraryDependencies += "net.aichler" % "jupiter-interface" % "0.10.0" % Test
+//libraryDependencies += "net.aichler" % "jupiter-interface" % "0.10.0" % Test
 
 mainClass in (Compile, packageBin) := Some("de.tu_dresden.inf.lat.om_planning.CreatePDDLDefinitions")
 
@@ -27,6 +29,7 @@ resolvers += Resolver.mavenLocal
 
 
 assemblyMergeStrategy in assembly := {
+  case "logback.xml.example" => MergeStrategy.discard
   //  case PathList("net.sourceforge.owlapi", "owlapi-distribution", xs @
   //      _*)         => MergeStrategy.first
   case PathList(ps @ _*) if ps.last endsWith ".class" => MergeStrategy.first
