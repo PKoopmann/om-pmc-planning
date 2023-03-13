@@ -5,33 +5,33 @@ INFO     Running translator.
 INFO     translator stdin: None
 INFO     translator time limit: None
 INFO     translator memory limit: None
-INFO     translator command line string: /usr/bin/python3 /home/tobias/Documents/REMARO/OntologyGuidedPlanning/src/FDplanner/builds/release/bin/translate/translate.py ../domains/drones/misc/generated_drone.pddl_19.pddl ../domains/drones/droneProblem5-5.pddl --sas-file ../domains/drones/misc/output.sas
+INFO     translator command line string: /usr/bin/python3 /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0/builds/release/bin/translate/translate.py ../examples/drones/misc/generated_drone.pddl ../examples/drones/droneProblem5-5.pddl --sas-file ../examples/drones/misc/output.sas
 Parsing...
-Parsing: [0.000s CPU, 0.001s wall-clock]
-Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Parsing: [0.010s CPU, 0.003s wall-clock]
+Normalizing task... [0.000s CPU, 0.002s wall-clock]
 Instantiating...
-Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
 Normalizing Datalog program...
 Trivial rules: Converted to facts.
-Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
-Preparing model... [0.000s CPU, 0.001s wall-clock]
-Generated 7 rules.
-Computing model... [0.000s CPU, 0.000s wall-clock]
-147 relevant atoms
-0 auxiliary atoms
-147 final queue length
-147 total queue pushes
+Normalizing Datalog program: [0.010s CPU, 0.007s wall-clock]
+Preparing model... [0.000s CPU, 0.004s wall-clock]
+Generated 675 rules.
+Computing model... [0.010s CPU, 0.010s wall-clock]
+179 relevant atoms
+482 auxiliary atoms
+661 final queue length
+661 total queue pushes
 Completing instantiation... [0.000s CPU, 0.000s wall-clock]
-Instantiating: [0.000s CPU, 0.002s wall-clock]
+Instantiating: [0.020s CPU, 0.023s wall-clock]
 Computing fact groups...
 Finding invariants...
 4 initial candidates
-Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Finding invariants: [0.000s CPU, 0.000s wall-clock]
 Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
 Instantiating groups... [0.000s CPU, 0.000s wall-clock]
 Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
 Choosing groups...
-5 uncovered facts
+21 uncovered facts
 Choosing groups: [0.000s CPU, 0.000s wall-clock]
 Building translation key... [0.000s CPU, 0.000s wall-clock]
 Computing fact groups: [0.000s CPU, 0.001s wall-clock]
@@ -61,52 +61,52 @@ Translator total mutex groups size: 0
 Translator operators: 0
 Translator axioms: 0
 Translator task size: 4
-Translator peak memory: 34344 KB
+Translator peak memory: 37040 KB
 Writing output... [0.000s CPU, 0.000s wall-clock]
-Done! [0.000s CPU, 0.005s wall-clock]
+Done! [0.030s CPU, 0.029s wall-clock]
 translate exit code: 0
 
 INFO     Running search (release).
-INFO     search stdin: ../domains/drones/misc/output.sas
+INFO     search stdin: ../examples/drones/misc/output.sas
 INFO     search time limit: None
 INFO     search memory limit: None
-INFO     search command line string: /home/tobias/Documents/REMARO/OntologyGuidedPlanning/src/FDplanner/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file ../domains/drones/plan.txt < ../domains/drones/misc/output.sas
-[t=2.4171e-05s, 9936 KB] reading input...
-[t=0.000131396s, 9936 KB] done reading input!
-[t=0.000852011s, 10136 KB] Initializing blind search heuristic...
-[t=0.000895929s, 10136 KB] Building successor generator...done!
-[t=0.000925638s, 10136 KB] peak memory difference for successor generator creation: 0 KB
-[t=0.000933919s, 10136 KB] time for successor generation creation: 2.35e-06s
-[t=0.000944163s, 10136 KB] Variables: 1
-[t=0.000953896s, 10136 KB] FactPairs: 2
-[t=0.000962209s, 10136 KB] Bytes per state: 4
-[t=0.00101361s, 10136 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-[t=0.0010483s, 10136 KB] New best heuristic value for blind: 0
-[t=0.00105886s, 10136 KB] g=0, 1 evaluated, 0 expanded
-[t=0.0010687s, 10136 KB] f = 0, 1 evaluated, 0 expanded
-[t=0.0010797s, 10136 KB] Initial heuristic value for blind: 0
-[t=0.00108908s, 10136 KB] pruning method: none
-[t=0.00110619s, 10136 KB] Solution found!
-[t=0.00111623s, 10136 KB] Actual search time: 1.9008e-05s
-[t=0.00112585s, 10136 KB] Plan length: 0 step(s).
-[t=0.00112585s, 10136 KB] Plan cost: 0
-[t=0.00112585s, 10136 KB] Expanded 1 state(s).
-[t=0.00112585s, 10136 KB] Reopened 0 state(s).
-[t=0.00112585s, 10136 KB] Evaluated 1 state(s).
-[t=0.00112585s, 10136 KB] Evaluations: 1
-[t=0.00112585s, 10136 KB] Generated 0 state(s).
-[t=0.00112585s, 10136 KB] Dead ends: 0 state(s).
-[t=0.00112585s, 10136 KB] Expanded until last jump: 0 state(s).
-[t=0.00112585s, 10136 KB] Reopened until last jump: 0 state(s).
-[t=0.00112585s, 10136 KB] Evaluated until last jump: 1 state(s).
-[t=0.00112585s, 10136 KB] Generated until last jump: 0 state(s).
-[t=0.00112585s, 10136 KB] Number of registered states: 1
-[t=0.00112585s, 10136 KB] Int hash set load factor: 1/1 = 1
-[t=0.00112585s, 10136 KB] Int hash set resizes: 0
-[t=0.00112585s, 10136 KB] Search time: 0.000112514s
-[t=0.00112585s, 10136 KB] Total time: 0.00112585s
+INFO     search command line string: /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file ../examples/drones/plan.txt < ../examples/drones/misc/output.sas
+[t=2.0287e-05s, 9940 KB] reading input...
+[t=0.000103495s, 9940 KB] done reading input!
+[t=0.000811201s, 10140 KB] Initializing blind search heuristic...
+[t=0.000856368s, 10140 KB] Building successor generator...done!
+[t=0.000888868s, 10140 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.000897991s, 10140 KB] time for successor generation creation: 2.335e-06s
+[t=0.000909149s, 10140 KB] Variables: 1
+[t=0.000918993s, 10140 KB] FactPairs: 2
+[t=0.000927957s, 10140 KB] Bytes per state: 4
+[t=0.000980092s, 10140 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.00101699s, 10140 KB] New best heuristic value for blind: 0
+[t=0.00102872s, 10140 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00103898s, 10140 KB] f = 0, 1 evaluated, 0 expanded
+[t=0.00105077s, 10140 KB] Initial heuristic value for blind: 0
+[t=0.00106695s, 10140 KB] pruning method: none
+[t=0.0010785s, 10140 KB] Solution found!
+[t=0.00108826s, 10140 KB] Actual search time: 1.8731e-05s
+[t=0.00109826s, 10140 KB] Plan length: 0 step(s).
+[t=0.00109826s, 10140 KB] Plan cost: 0
+[t=0.00109826s, 10140 KB] Expanded 1 state(s).
+[t=0.00109826s, 10140 KB] Reopened 0 state(s).
+[t=0.00109826s, 10140 KB] Evaluated 1 state(s).
+[t=0.00109826s, 10140 KB] Evaluations: 1
+[t=0.00109826s, 10140 KB] Generated 0 state(s).
+[t=0.00109826s, 10140 KB] Dead ends: 0 state(s).
+[t=0.00109826s, 10140 KB] Expanded until last jump: 0 state(s).
+[t=0.00109826s, 10140 KB] Reopened until last jump: 0 state(s).
+[t=0.00109826s, 10140 KB] Evaluated until last jump: 1 state(s).
+[t=0.00109826s, 10140 KB] Generated until last jump: 0 state(s).
+[t=0.00109826s, 10140 KB] Number of registered states: 1
+[t=0.00109826s, 10140 KB] Int hash set load factor: 1/1 = 1
+[t=0.00109826s, 10140 KB] Int hash set resizes: 0
+[t=0.00109826s, 10140 KB] Search time: 0.000118615s
+[t=0.00109826s, 10140 KB] Total time: 0.00109826s
 Solution found.
-Peak memory: 10136 KB
+Peak memory: 10140 KB
 search exit code: 0
 
-INFO     Planner time: 0.04s
+INFO     Planner time: 0.07s

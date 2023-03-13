@@ -75,7 +75,7 @@ fi
 TimeStartReasoning="$(date -u +%s.%N)"
 
 # possible options: -Xmx16g (increase RAM limit)
-java -Dlogback.configurationFile=./logback.xml -jar "$RewritingGenerator"  "$Fluents" "$Hooks" "$Ontology" "$Rewritings" >  "$ReasonerLog"
+java -jar "$RewritingGenerator"  "$Fluents" "$Hooks" "$Ontology" "$Rewritings" >  "$ReasonerLog"
 
 TimeEndReasoning="$(date -u +%s.%N)"
 DurationReasoning="$(bc <<<"$TimeEndReasoning-$TimeStartReasoning")"
