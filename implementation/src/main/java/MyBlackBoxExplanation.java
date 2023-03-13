@@ -169,18 +169,18 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
             return Collections.emptySet();
         }*/ // <--- why is this even used?
         try {
-            System.out.println("I am here!");
+            //System.out.println("I am here!");
             satTestCount++;
             if (isFirstExplanation() && getReasoner().isSatisfiable(unsatClass)) {
-                System.out.println("first explanation and satisfiable");
+                //System.out.println("first explanation and satisfiable");
                 return Collections.emptySet();
             }
             reset();
-            System.out.println("after resetting: "+debuggingAxioms);
+            //System.out.println("after resetting: "+debuggingAxioms);
             expandUntilUnsatisfiable(unsatClass);
-            System.out.println("after expanding: "+debuggingAxioms);
+            //System.out.println("after expanding: "+debuggingAxioms);
             pruneUntilMinimal(unsatClass);
-            System.out.println("after pruning: "+debuggingAxioms);
+            //System.out.println("after pruning: "+debuggingAxioms);
             removeDeclarations();
             return new HashSet<>(debuggingAxioms);
         } catch (OWLException e) {
@@ -401,7 +401,7 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
         // defining axioms for the class being debugged
         resetSatisfiabilityTestCounter();
         if (unsatClass.isAnonymous()) {
-            System.out.println("Anonymous");
+            //System.out.println("Anonymous");
             OWLClass owlThing = man.getOWLDataFactory().getOWLThing();
             OWLSubClassOfAxiom axiom =
                 man.getOWLDataFactory().getOWLSubClassOfAxiom(unsatClass, owlThing);
@@ -409,10 +409,10 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
             expandAxioms();
             debuggingAxioms.remove(axiom);
         } else {
-            System.out.println("Expand with defining");
+            //System.out.println("Expand with defining");
             expandWithDefiningAxioms((OWLClass) unsatClass, expansionLimit);
         }
-        System.out.println("now we have: "+debuggingAxioms);
+        //System.out.println("now we have: "+debuggingAxioms);
         LOGGER.info("Initial axiom count: {}", Integer.valueOf(debuggingAxioms.size()));
         int totalAdded = 0;
         int expansionCount = 0;
@@ -420,11 +420,11 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
             LOGGER.info("Expanding axioms (expansion {})", Integer.valueOf(expansionCount));
             expansionCount++;
             int numberAdded = expandAxioms();
-            System.out.println("after expandAxioms: "+debuggingAxioms);
+            //System.out.println("after expandAxioms: "+debuggingAxioms);
             totalAdded += numberAdded;
             LOGGER.info("    ... expanded by {}", Integer.valueOf(numberAdded));
             if (numberAdded == 0) {
-                System.out.println("Oops!");
+                //System.out.println("Oops!");
                 LOGGER.info("ERROR! Cannot find SOS axioms!");
                 debuggingAxioms.clear();
                 return;
