@@ -20,23 +20,25 @@
         (true)   ; predicate that is always true. Do NEVER set this to false
     )
 
-    (:derived (inconsistent) 
-        (false)
-    )
+    inconsistent = false
 
-    (:derived (KBquery_canTakePicture ?x)
-        (or
-            (inconsistent) 
-            (and (= ?x remaroAUV) (canTakePicture rgbCamera))
-        )
-    )
+    KBquery_canTakePicture ?x =
+        if (inconsistent)
+             then true
+        if ((?x == remaroAUV))
+            then ((canTakePicture rgbCamera))
+    else
+        false;
 
-    (:derived (KBquery_canDrive ?x)
-        (or
-            (inconsistent) 
-            (and (= ?x remaroAUV) (canDrive backThruster))
-        )
-    )
+
+    KBquery_canDrive ?x =
+        if (inconsistent)
+             then true
+        if ((?x == remaroAUV))
+            then ((canDrive backThruster))
+    else
+        false;
+
 
     (:action take-photo
         :parameters (

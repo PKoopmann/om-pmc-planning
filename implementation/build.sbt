@@ -23,7 +23,7 @@ lazy val root = (project in file("."))
 //libraryDependencies ++= Seq("net.aichler" % "jupiter-interface" % JupiterKeys.jupiterVersion.value % Test)
 //libraryDependencies += "net.aichler" % "jupiter-interface" % "0.10.0" % Test
 
-mainClass in (Compile, packageBin) := Some("de.tu_dresden.inf.lat.om_planning.CreatePDDLDefinitions")
+mainClass in (Compile, packageBin) := Some("de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions")
 
 resolvers += Resolver.mavenLocal
 
