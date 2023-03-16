@@ -1,0 +1,143 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3/Wsmo2TPSA> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3/Wsmo2TPSA> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3/Wsmo2TPSA> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/forService
+<http://www.semanticweb.org/anon/ontologies/2021/3/forService> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> ;
+                                                                rdfs:range <http://www.semanticweb.org/anon/ontologies/2021/3/service> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/greater
+<http://www.semanticweb.org/anon/ontologies/2021/3/greater> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hasContract
+<http://www.semanticweb.org/anon/ontologies/2021/3/hasContract> rdf:type owl:ObjectProperty ;
+                                                                 rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> ;
+                                                                 rdfs:range <http://www.semanticweb.org/anon/ontologies/2021/3/contract> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hasService
+<http://www.semanticweb.org/anon/ontologies/2021/3/hasService> rdf:type owl:ObjectProperty ;
+                                                                rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> ;
+                                                                rdfs:range <http://www.semanticweb.org/anon/ontologies/2021/3/service> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/requestedService
+<http://www.semanticweb.org/anon/ontologies/2021/3/requestedService> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> ;
+                                                                      rdfs:range <http://www.semanticweb.org/anon/ontologies/2021/3/service> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/requiredService
+<http://www.semanticweb.org/anon/ontologies/2021/3/requiredService> rdf:type owl:ObjectProperty ;
+                                                                     rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> ;
+                                                                     rdfs:range <http://www.semanticweb.org/anon/ontologies/2021/3/service> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ack
+<http://www.semanticweb.org/anon/ontologies/2021/3/ack> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/activation
+<http://www.semanticweb.org/anon/ontologies/2021/3/activation> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/confirmation
+<http://www.semanticweb.org/anon/ontologies/2021/3/confirmation> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://www.semanticweb.org/anon/ontologies/2021/3/hasService> ;
+                                                                                    owl:someValuesFrom owl:Thing
+                                                                                  ] .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/contract
+<http://www.semanticweb.org/anon/ontologies/2021/3/contract> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <http://www.semanticweb.org/anon/ontologies/2021/3/requiredService> ;
+                                                                                owl:someValuesFrom owl:Thing
+                                                                              ] ;
+                                                              owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/service> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/contractConfirmation
+<http://www.semanticweb.org/anon/ontologies/2021/3/contractConfirmation> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/confirmation> ,
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://www.semanticweb.org/anon/ontologies/2021/3/hasContract> ;
+                                                                                            owl:someValuesFrom owl:Thing
+                                                                                          ] .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/courierAck
+<http://www.semanticweb.org/anon/ontologies/2021/3/courierAck> rdf:type owl:Class ;
+                                                                rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/ack> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/crmAck
+<http://www.semanticweb.org/anon/ontologies/2021/3/crmAck> rdf:type owl:Class ;
+                                                            rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/ack> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hardwareAck
+<http://www.semanticweb.org/anon/ontologies/2021/3/hardwareAck> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/ack> ,
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/anon/ontologies/2021/3/forService> ;
+                                                                                   owl:someValuesFrom owl:Thing
+                                                                                 ] .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/invoice
+<http://www.semanticweb.org/anon/ontologies/2021/3/invoice> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/notFree
+<http://www.semanticweb.org/anon/ontologies/2021/3/notFree> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/order
+<http://www.semanticweb.org/anon/ontologies/2021/3/order> rdf:type owl:Class ;
+                                                           rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> ,
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty <http://www.semanticweb.org/anon/ontologies/2021/3/requestedService> ;
+                                                                             owl:someValuesFrom owl:Thing
+                                                                           ] .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/orderConfirmation
+<http://www.semanticweb.org/anon/ontologies/2021/3/orderConfirmation> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/confirmation> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/service
+<http://www.semanticweb.org/anon/ontologies/2021/3/service> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/notFree> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/serviceActivation
+<http://www.semanticweb.org/anon/ontologies/2021/3/serviceActivation> rdf:type owl:Class ;
+                                                                       rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/activation> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

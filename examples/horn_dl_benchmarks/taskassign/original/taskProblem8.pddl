@@ -1,0 +1,17 @@
+(define (problem taskAssigment_problem)
+	(:domain taskAssigment)
+	(:objects a b c d e f g h )
+	(:init
+		(Engineer a)
+		(Designer f)
+		(Engineer g)
+		(Engineer h)
+	)
+	(:goal (exists (?x ?y) 
+ 		 (and 
+ 			 (mko (and (ElectronicEngineer ?x) (ElectronicEngineer ?y))) 
+ 			 (not (mko (= ?x ?y))) 
+ 		 ) 
+ 	 ) 
+ 	)
+)

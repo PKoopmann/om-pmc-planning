@@ -1,0 +1,193 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix drone: <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology ;
+                                                     rdfs:comment """slightly modified but mainly based on ontology from the following paper:
+
+Borgwardt, Stefan, Jörg Hoffmann, Alisa Kovtunova, Markus Krötzsch, Bernhard Nebel, and Marcel Steinmetz. “Expressivity of Planning with Horn Description Logic Ontologies.” Proceedings of the AAAI Conference on Artificial Intelligence 36, no. 5 (June 28, 2022): 5503–11. https://doi.org/10.1609/aaai.v36i5.20489.""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/avoidCondition
+drone:avoidCondition rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/environment
+drone:environment rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/near
+drone:near rdf:type owl:ObjectProperty ,
+                    owl:SymmetricProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/veryClose
+drone:veryClose rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf drone:near ;
+                rdf:type owl:SymmetricProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Cell
+drone:Cell rdf:type owl:Class ;
+           owl:disjointWith drone:Environment .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Drone
+drone:Drone rdf:type owl:Class ;
+            rdfs:subClassOf drone:MovingObject ;
+            owl:disjointWith drone:Human .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Environment
+drone:Environment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Human
+drone:Human rdf:type owl:Class ;
+            rdfs:subClassOf drone:MovingObject .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LowVisibility
+drone:LowVisibility rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/MovingObject
+drone:MovingObject rdf:type owl:Class ;
+                   rdfs:subClassOf drone:Objectx .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Objectx
+drone:Objectx rdf:type owl:Class ;
+              owl:disjointWith drone:Rain .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Rain
+drone:Rain rdf:type owl:Class ;
+           rdfs:subClassOf drone:LowVisibility .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RiskOfPhysicalDamage
+drone:RiskOfPhysicalDamage rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Tree
+drone:Tree rdf:type owl:Class ;
+           rdfs:subClassOf drone:Objectx .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/WetDrone
+drone:WetDrone rdf:type owl:Class ;
+               rdfs:subClassOf drone:Drone ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty drone:environment ;
+                                 owl:someValuesFrom drone:Rain
+                               ] .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( drone:Drone
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty drone:environment ;
+                         owl:someValuesFrom drone:LowVisibility
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty drone:near ;
+                         owl:someValuesFrom drone:Objectx
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf drone:RiskOfPhysicalDamage
+] .
+
+
+[ owl:intersectionOf ( drone:Drone
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty drone:near ;
+                         owl:someValuesFrom drone:MovingObject
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf drone:RiskOfPhysicalDamage
+] .
+
+
+[ owl:intersectionOf ( drone:Drone
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty drone:veryClose ;
+                         owl:someValuesFrom drone:Objectx
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf drone:RiskOfPhysicalDamage
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:x rdf:type swrl:Variable .
+
+:y rdf:type swrl:Variable .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "avoidCondition"^^xsd:string ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate drone:RiskOfPhysicalDamage ;
+                           swrl:argument1 :x
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate drone:RiskOfPhysicalDamage ;
+                                      swrl:argument1 :y
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate drone:near ;
+                                                 swrl:argument1 :x ;
+                                                 swrl:argument2 :y
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate drone:avoidCondition ;
+                           swrl:argument1 :x ;
+                           swrl:argument2 :y
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

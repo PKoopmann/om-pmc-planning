@@ -1,0 +1,61 @@
+# fluent definitions for drone example
+
+PREFIX drone: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+OBJECT cell aa	-> drone:aa
+OBJECT cell ab	-> drone:ab
+OBJECT cell ac	-> drone:ac
+OBJECT cell ad	-> drone:ad
+OBJECT cell ae	-> drone:ae
+OBJECT cell af	-> drone:af
+OBJECT cell ag	-> drone:ag
+OBJECT cell ba	-> drone:ba
+OBJECT cell bb	-> drone:bb
+OBJECT cell bc	-> drone:bc
+OBJECT cell bd	-> drone:bd
+OBJECT cell be	-> drone:be
+OBJECT cell bf	-> drone:bf
+OBJECT cell bg	-> drone:bg
+OBJECT cell ca	-> drone:ca
+OBJECT cell cb	-> drone:cb
+OBJECT cell cc	-> drone:cc
+OBJECT cell cd	-> drone:cd
+OBJECT cell ce	-> drone:ce
+OBJECT cell cf	-> drone:cf
+OBJECT cell cg	-> drone:cg
+OBJECT cell da	-> drone:da
+OBJECT cell db	-> drone:db
+OBJECT cell dc	-> drone:dc
+OBJECT cell dd	-> drone:dd
+OBJECT cell de	-> drone:de
+OBJECT cell df	-> drone:df
+OBJECT cell dg	-> drone:dg
+OBJECT cell ea	-> drone:ea
+OBJECT cell eb	-> drone:eb
+OBJECT cell ec	-> drone:ec
+OBJECT cell ed	-> drone:ed
+OBJECT cell ee	-> drone:ee
+OBJECT cell ef	-> drone:ef
+OBJECT cell eg	-> drone:eg
+OBJECT cell fa	-> drone:fa
+OBJECT cell fb	-> drone:fb
+OBJECT cell fc	-> drone:fc
+OBJECT cell fd	-> drone:fd
+OBJECT cell fe	-> drone:fe
+OBJECT cell ff	-> drone:ff
+OBJECT cell fg	-> drone:fg
+OBJECT cell ga	-> drone:ga
+OBJECT cell gb	-> drone:gb
+OBJECT cell gc	-> drone:gc
+OBJECT cell gd	-> drone:gd
+OBJECT cell ge	-> drone:ge
+OBJECT cell gf	-> drone:gf
+OBJECT cell gg	-> drone:gg
+
+OBJECT environment env	-> drone:env
+
+PREDICATE WetDrone(cell)	-> drone:WetDrone
+PREDICATE Drone(cell)			-> drone:Drone
+
+
+

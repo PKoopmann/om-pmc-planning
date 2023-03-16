@@ -1,20 +1,18 @@
-    inconsistent = false
+    (:derived (inconsistent) 
+        (false)
+    )
 
-    KBquery_canTakePicture ?x =
-        if (inconsistent)
-             then true
-        if ((?x == remaroAUV))
-            then ((canTakePicture rgbCamera))
-    else
-        false;
+    (:derived (KBquery_canTakePicture ?x)
+        (or
+            (inconsistent) 
+            (and (= ?x remaroAUV) (canTakePicture rgbCamera))
+        )
+    )
 
-
-    KBquery_canDrive ?x =
-        if (inconsistent)
-             then true
-        if ((?x == remaroAUV))
-            then ((canDrive backThruster))
-    else
-        false;
-
+    (:derived (KBquery_canDrive ?x)
+        (or
+            (inconsistent) 
+            (and (= ?x remaroAUV) (canDrive backThruster))
+        )
+    )
 

@@ -28,6 +28,7 @@ ReasonerLog="$MiscFolder"/reasoner_log.txt
 Domain="$DomainFolder"/$3
 DomainNew="$MiscFolder"/generated_$3
 Problem="$DomainFolder"/$4
+ProblemNew="$MiscFolder"/generated_$4
 
 Plan="$DomainFolder"/plan.txt
 PlannerLog="$MiscFolder"/planner_log.txt
@@ -105,22 +106,71 @@ if [[ -f "$DomainNew" ]]; then
 fi
 
 # go through the domain line wise to insert rewritings at correct place
-inserted=0
+insertedRW=0
+noLine=0   
 while IFS= read line; do
-  if [[ "$line" =~ '(:action' && $inserted = 0 ]]; then
-  	# insert rewritings before the first action declaration
-    cat $Rewritings >> $DomainNew
-    inserted=1
+  if [[ "$line" =~ ':precondition' ]]; then
+    echo "        :precondition (and" >> $DomainNew
+    echo "            (not (inconsistent))" >> $DomainNew
+    echo "           "${line#*:precondition} >> $DomainNew
+    noLine=1
   fi
-  echo "$line" >> $DomainNew
+  if [[ "$line" =~ ':effect' ]]; then
+    echo "        )" >> $DomainNew
+  fi
+  if [[ "$line" =~ '(:predicates' ]]; then
+    echo "$line" >> $DomainNew
+    # insert true / false / inconsistent declaration
+    echo "    (false)" >> $DomainNew
+    echo "    (true)" >> $DomainNew
+    echo "    (inconsistent)" >> $DomainNew
+    noLine=1
+  fi
+  if [[ "$line" =~ '(:action' && $insertedRW = 0 ]]; then
+  	# insert rewritings before the first action declaration
+  	echo "    (:derived (true)" >> $DomainNew
+    echo "        (not (false))" >> $DomainNew
+    echo "    )" >> $DomainNew
+    echo "" >> $DomainNew
+    cat $Rewritings >> $DomainNew
+    insertedRW=1
+  fi
+  if [[ $noLine = 1 ]]; then
+    noLine=0
+  else
+    echo "$line" >> $DomainNew
+  fi
 done < "$Domain"
+
+
+
+# remove the new problem if it exists
+if [[ -f "$ProblemNew" ]]; then
+  rm $ProblemNew
+fi
+
+# add (not (inconsistent)) to goal
+while IFS= read line; do
+  if [[ "$line" =~ '(:goal' ]]; then
+    echo "    (:goal (and" >> $ProblemNew
+    echo "        (not (inconsistent))" >> $ProblemNew
+    echo "       "${line#*(:goal} >> $ProblemNew
+    noLine=1
+  fi
+  if [[ $noLine = 1 ]]; then
+    noLine=0
+  else
+    echo "$line" >> $ProblemNew
+  fi
+done < "$Problem"
+echo ")" >> $ProblemNew # add closing bracket for goal
 
 echo "created new domain"
 
 # call planner
 TimeStartPlanning="$(date -u +%s.%N)"
 
-$Planner --plan-file $Plan --sas-file $PlannerSAS $DomainNew $Problem --search "astar(blind())"  > "$PlannerLog"
+$Planner --plan-file $Plan --sas-file $PlannerSAS $DomainNew $ProblemNew --search "astar(blind())"  > "$PlannerLog"
 
 TimeEndPlanning="$(date -u +%s.%N)"
 DurationPlanning="$(bc <<<"$TimeEndPlanning-$TimeStartPlanning")"
