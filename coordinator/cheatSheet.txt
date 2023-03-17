@@ -2,7 +2,7 @@
 ./runOMPlanning.sh ../examples/miniAUV_types miniAUVPlan.ttl miniAUV.pddl miniAUVProblem.pddl
 
 # drones 5-5
-./runOMPlanning.sh ../examples/drones/5-5 drone5-5.ttl drone.pddl droneProblem5-5.pddl
+./runOMPlanning.sh ../examples/drones/5-5 drone5-5.ttl drone.pddl droneProblem5-5.pddl 100
 
 # cats 6
 ./runOMPlanning.sh ../examples/cats/6 cats6.ttl cats.pddl catsProblem6.pddl
