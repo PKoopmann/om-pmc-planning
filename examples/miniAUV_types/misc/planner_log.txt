@@ -1,28 +1,28 @@
-INFO     planner time limit: 10s
+INFO     planner time limit: None
 INFO     planner memory limit: None
 
 INFO     Running translator.
 INFO     translator stdin: None
-INFO     translator time limit: 9s
+INFO     translator time limit: None
 INFO     translator memory limit: None
 INFO     translator command line string: /usr/bin/python3 /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0/builds/release/bin/translate/translate.py ../examples/miniAUV_types/misc/generated_miniAUV.pddl ../examples/miniAUV_types/misc/generated_miniAUVProblem.pddl --sas-file ../examples/miniAUV_types/misc/output.sas
 Parsing...
 Parsing: [0.000s CPU, 0.001s wall-clock]
 Normalizing task... [0.000s CPU, 0.000s wall-clock]
 Instantiating...
-Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Generating Datalog program... [0.010s CPU, 0.000s wall-clock]
 Normalizing Datalog program...
 Trivial rules: Converted to facts.
 Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
 Preparing model... [0.000s CPU, 0.000s wall-clock]
-Generated 30 rules.
+Generated 24 rules.
 Computing model... [0.000s CPU, 0.000s wall-clock]
 49 relevant atoms
-32 auxiliary atoms
-81 final queue length
-88 total queue pushes
+20 auxiliary atoms
+69 final queue length
+76 total queue pushes
 Completing instantiation... [0.000s CPU, 0.000s wall-clock]
-Instantiating: [0.000s CPU, 0.001s wall-clock]
+Instantiating: [0.010s CPU, 0.001s wall-clock]
 Computing fact groups...
 Finding invariants...
 9 initial candidates
@@ -70,61 +70,61 @@ Translator axioms: 2
 Translator task size: 54
 Translator peak memory: 34732 KB
 Writing output... [0.000s CPU, 0.000s wall-clock]
-Done! [0.000s CPU, 0.004s wall-clock]
+Done! [0.010s CPU, 0.004s wall-clock]
 translate exit code: 0
 
 INFO     Running search (release).
 INFO     search stdin: ../examples/miniAUV_types/misc/output.sas
-INFO     search time limit: 9s
+INFO     search time limit: None
 INFO     search memory limit: None
 INFO     search command line string: /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file ../examples/miniAUV_types/plan.txt < ../examples/miniAUV_types/misc/output.sas
-[t=0s, 9940 KB] reading input...
-[t=0s, 9940 KB] done reading input!
-[t=0s, 10140 KB] Initializing blind search heuristic...
-[t=0s, 10140 KB] Building successor generator...done!
-[t=0s, 10140 KB] peak memory difference for successor generator creation: 0 KB
-[t=0s, 10140 KB] time for successor generation creation: 0s
-[t=0s, 10140 KB] Variables: 6
-[t=0s, 10140 KB] FactPairs: 13
-[t=0s, 10140 KB] Bytes per state: 4
-[t=0s, 10140 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-[t=0s, 10140 KB] New best heuristic value for blind: 1
-[t=0s, 10140 KB] g=0, 1 evaluated, 0 expanded
-[t=0s, 10140 KB] f = 1, 1 evaluated, 0 expanded
-[t=0s, 10140 KB] Initial heuristic value for blind: 1
-[t=0s, 10140 KB] pruning method: none
-[t=0s, 10140 KB] f = 2, 3 evaluated, 1 expanded
-[t=0s, 10140 KB] f = 3, 6 evaluated, 3 expanded
-[t=0s, 10140 KB] f = 4, 9 evaluated, 6 expanded
-[t=0s, 10140 KB] f = 5, 11 evaluated, 9 expanded
-[t=0s, 10140 KB] New best heuristic value for blind: 0
-[t=0s, 10140 KB] g=5, 12 evaluated, 11 expanded
-[t=0s, 10140 KB] Solution found!
-[t=0s, 10140 KB] Actual search time: 0s
+[t=2.105e-05s, 9940 KB] reading input...
+[t=0.00013378s, 9940 KB] done reading input!
+[t=0.000878561s, 10140 KB] Initializing blind search heuristic...
+[t=0.000924705s, 10140 KB] Building successor generator...done!
+[t=0.00096412s, 10140 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.000973429s, 10140 KB] time for successor generation creation: 6.632e-06s
+[t=0.000984704s, 10140 KB] Variables: 6
+[t=0.000994752s, 10140 KB] FactPairs: 13
+[t=0.00100389s, 10140 KB] Bytes per state: 4
+[t=0.00105905s, 10140 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.00110108s, 10140 KB] New best heuristic value for blind: 1
+[t=0.00111246s, 10140 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00112266s, 10140 KB] f = 1, 1 evaluated, 0 expanded
+[t=0.00113427s, 10140 KB] Initial heuristic value for blind: 1
+[t=0.00114456s, 10140 KB] pruning method: none
+[t=0.00116086s, 10140 KB] f = 2, 3 evaluated, 1 expanded
+[t=0.00117558s, 10140 KB] f = 3, 6 evaluated, 3 expanded
+[t=0.00119085s, 10140 KB] f = 4, 9 evaluated, 6 expanded
+[t=0.00120511s, 10140 KB] f = 5, 11 evaluated, 9 expanded
+[t=0.00121691s, 10140 KB] New best heuristic value for blind: 0
+[t=0.00122683s, 10140 KB] g=5, 12 evaluated, 11 expanded
+[t=0.00123771s, 10140 KB] Solution found!
+[t=0.00124801s, 10140 KB] Actual search time: 0.000101018s
 drive remaroauv startpoint endpoint backthruster rgbcamera (1)
 drive remaroauv endpoint photopoint backthruster rgbcamera (1)
 take-photo remaroauv photopoint (1)
 drive remaroauv photopoint startpoint backthruster rgbcamera (1)
 drive remaroauv startpoint endpoint backthruster rgbcamera (1)
-[t=0s, 10140 KB] Plan length: 5 step(s).
-[t=0s, 10140 KB] Plan cost: 5
-[t=0s, 10140 KB] Expanded 12 state(s).
-[t=0s, 10140 KB] Reopened 0 state(s).
-[t=0s, 10140 KB] Evaluated 13 state(s).
-[t=0s, 10140 KB] Evaluations: 13
-[t=0s, 10140 KB] Generated 20 state(s).
-[t=0s, 10140 KB] Dead ends: 0 state(s).
-[t=0s, 10140 KB] Expanded until last jump: 9 state(s).
-[t=0s, 10140 KB] Reopened until last jump: 0 state(s).
-[t=0s, 10140 KB] Evaluated until last jump: 11 state(s).
-[t=0s, 10140 KB] Generated until last jump: 17 state(s).
-[t=0s, 10140 KB] Number of registered states: 13
-[t=0s, 10140 KB] Int hash set load factor: 13/16 = 0.8125
-[t=0s, 10140 KB] Int hash set resizes: 4
-[t=0s, 10140 KB] Search time: 0s
-[t=0s, 10140 KB] Total time: 0s
+[t=0.00125826s, 10140 KB] Plan length: 5 step(s).
+[t=0.00125826s, 10140 KB] Plan cost: 5
+[t=0.00125826s, 10140 KB] Expanded 12 state(s).
+[t=0.00125826s, 10140 KB] Reopened 0 state(s).
+[t=0.00125826s, 10140 KB] Evaluated 13 state(s).
+[t=0.00125826s, 10140 KB] Evaluations: 13
+[t=0.00125826s, 10140 KB] Generated 20 state(s).
+[t=0.00125826s, 10140 KB] Dead ends: 0 state(s).
+[t=0.00125826s, 10140 KB] Expanded until last jump: 9 state(s).
+[t=0.00125826s, 10140 KB] Reopened until last jump: 0 state(s).
+[t=0.00125826s, 10140 KB] Evaluated until last jump: 11 state(s).
+[t=0.00125826s, 10140 KB] Generated until last jump: 17 state(s).
+[t=0.00125826s, 10140 KB] Number of registered states: 13
+[t=0.00125826s, 10140 KB] Int hash set load factor: 13/16 = 0.8125
+[t=0.00125826s, 10140 KB] Int hash set resizes: 4
+[t=0.00125826s, 10140 KB] Search time: 0.000199417s
+[t=0.00125826s, 10140 KB] Total time: 0.00125826s
 Solution found.
 Peak memory: 10140 KB
 search exit code: 0
 
-INFO     Planner time: 0.03s
+INFO     Planner time: 0.04s

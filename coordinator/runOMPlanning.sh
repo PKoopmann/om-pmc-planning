@@ -75,7 +75,7 @@ if [[ $foundGenerator == 0 ]]; then
 fi
 
 
-
+echo "start generating rewritings"
 # call rewriting generator
 TimeStartReasoning="$(date -u +%s.%N)"
 

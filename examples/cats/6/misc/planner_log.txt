@@ -10,19 +10,19 @@ Parsing...
 Parsing: [0.000s CPU, 0.001s wall-clock]
 Normalizing task... [0.000s CPU, 0.000s wall-clock]
 Instantiating...
-Generating Datalog program... [0.010s CPU, 0.000s wall-clock]
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
 Normalizing Datalog program...
 Trivial rules: Converted to facts.
 Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
-Preparing model... [0.000s CPU, 0.001s wall-clock]
-Generated 104 rules.
+Preparing model... [0.000s CPU, 0.000s wall-clock]
+Generated 64 rules.
 Computing model... [0.000s CPU, 0.001s wall-clock]
 144 relevant atoms
-72 auxiliary atoms
-216 final queue length
-219 total queue pushes
+68 auxiliary atoms
+212 final queue length
+215 total queue pushes
 Completing instantiation... [0.000s CPU, 0.001s wall-clock]
-Instantiating: [0.010s CPU, 0.004s wall-clock]
+Instantiating: [0.010s CPU, 0.003s wall-clock]
 Computing fact groups...
 Finding invariants...
 7 initial candidates
@@ -34,7 +34,7 @@ Choosing groups...
 13 uncovered facts
 Choosing groups: [0.000s CPU, 0.000s wall-clock]
 Building translation key... [0.000s CPU, 0.000s wall-clock]
-Computing fact groups: [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.000s CPU, 0.000s wall-clock]
 Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
 Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
 Building mutex information...
@@ -68,9 +68,9 @@ Translator total mutex groups size: 0
 Translator operators: 0
 Translator axioms: 13
 Translator task size: 46
-Translator peak memory: 34732 KB
+Translator peak memory: 34728 KB
 Writing output... [0.000s CPU, 0.000s wall-clock]
-Done! [0.010s CPU, 0.007s wall-clock]
+Done! [0.010s CPU, 0.006s wall-clock]
 translate exit code: 0
 
 INFO     Running search (release).
@@ -78,35 +78,35 @@ INFO     search stdin: ../examples/cats/6/misc/output.sas
 INFO     search time limit: None
 INFO     search memory limit: None
 INFO     search command line string: /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file ../examples/cats/6/plan.txt < ../examples/cats/6/misc/output.sas
-[t=1.9617e-05s, 9940 KB] reading input...
-[t=0.000125041s, 9940 KB] done reading input!
-[t=0.000843024s, 10140 KB] Initializing blind search heuristic...
-[t=0.00088808s, 10140 KB] Building successor generator...done!
-[t=0.000919477s, 10140 KB] peak memory difference for successor generator creation: 0 KB
-[t=0.000927679s, 10140 KB] time for successor generation creation: 2.742e-06s
-[t=0.000938046s, 10140 KB] Variables: 6
-[t=0.000947003s, 10140 KB] FactPairs: 12
-[t=0.000955308s, 10140 KB] Bytes per state: 4
-[t=0.00100566s, 10140 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-[t=0.00104859s, 10140 KB] Initial state is a dead end.
-[t=0.00105923s, 10140 KB] Initial heuristic value for blind: infinity
-[t=0.0010685s, 10140 KB] pruning method: none
-[t=0.00107734s, 10140 KB] Completely explored state space -- no solution!
-[t=0.00108578s, 10140 KB] Actual search time: 1.568e-05s
-[t=0.00109483s, 10140 KB] Expanded 0 state(s).
-[t=0.00109483s, 10140 KB] Reopened 0 state(s).
-[t=0.00109483s, 10140 KB] Evaluated 1 state(s).
-[t=0.00109483s, 10140 KB] Evaluations: 1
-[t=0.00109483s, 10140 KB] Generated 0 state(s).
-[t=0.00109483s, 10140 KB] Dead ends: 0 state(s).
-[t=0.00109483s, 10140 KB] Number of registered states: 1
-[t=0.00109483s, 10140 KB] Int hash set load factor: 1/1 = 1
-[t=0.00109483s, 10140 KB] Int hash set resizes: 0
-[t=0.00109483s, 10140 KB] Search time: 8.9523e-05s
-[t=0.00109483s, 10140 KB] Total time: 0.00109483s
+[t=2.3809e-05s, 9940 KB] reading input...
+[t=0.000131991s, 9940 KB] done reading input!
+[t=0.000812704s, 10140 KB] Initializing blind search heuristic...
+[t=0.000855443s, 10140 KB] Building successor generator...done!
+[t=0.000886796s, 10140 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.000895273s, 10140 KB] time for successor generation creation: 2.446e-06s
+[t=0.000905769s, 10140 KB] Variables: 6
+[t=0.000915357s, 10140 KB] FactPairs: 12
+[t=0.00092402s, 10140 KB] Bytes per state: 4
+[t=0.000975156s, 10140 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.00101412s, 10140 KB] Initial state is a dead end.
+[t=0.00102475s, 10140 KB] Initial heuristic value for blind: infinity
+[t=0.00103389s, 10140 KB] pruning method: none
+[t=0.00104305s, 10140 KB] Completely explored state space -- no solution!
+[t=0.00105182s, 10140 KB] Actual search time: 1.6127e-05s
+[t=0.00106131s, 10140 KB] Expanded 0 state(s).
+[t=0.00106131s, 10140 KB] Reopened 0 state(s).
+[t=0.00106131s, 10140 KB] Evaluated 1 state(s).
+[t=0.00106131s, 10140 KB] Evaluations: 1
+[t=0.00106131s, 10140 KB] Generated 0 state(s).
+[t=0.00106131s, 10140 KB] Dead ends: 0 state(s).
+[t=0.00106131s, 10140 KB] Number of registered states: 1
+[t=0.00106131s, 10140 KB] Int hash set load factor: 1/1 = 1
+[t=0.00106131s, 10140 KB] Int hash set resizes: 0
+[t=0.00106131s, 10140 KB] Search time: 8.6445e-05s
+[t=0.00106131s, 10140 KB] Total time: 0.00106131s
 Search stopped without finding a solution.
 Peak memory: 10140 KB
 search exit code: 12
 
 Driver aborting after search
-INFO     Planner time: 0.04s
+INFO     Planner time: 0.05s

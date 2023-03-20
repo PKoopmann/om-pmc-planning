@@ -3,15 +3,15 @@
 PREFIX cats: <http://www.semanticweb.org/anon/ontologies/2021/3/>
 
 OBJECT thing a	-> cats:a
-OBJECT thing b	-> cats:b
-OBJECT thing c	-> cats:c
+OBJECT package b	-> cats:b
+OBJECT package c	-> cats:c
 OBJECT thing d	-> cats:d
 OBJECT Dthing e	-> cats:e
-OBJECT Dthing f	-> cats:f
+OBJECT thing f	-> cats:f
 OBJECT Dthing g	-> cats:g
-OBJECT Dthing h	-> cats:h
-OBJECT Dthing i	-> cats:i
-OBJECT Dthing j	-> cats:j
+OBJECT package h	-> cats:h
+OBJECT thing i	-> cats:i
+OBJECT Dpackage j	-> cats:j
 OBJECT Dthing k	-> cats:k
 OBJECT Dthing l	-> cats:l
 
@@ -19,7 +19,6 @@ OBJECT Dthing l	-> cats:l
 
 #PREDICATE bomb(thing)	    -> cats:bomb
 #PREDICATE cat(thing)			-> cats:cat
-PREDICATE contains(thing, thing) -> cats:contains
-
+PREDICATE contains(package, thing) -> cats:contains
 
 
