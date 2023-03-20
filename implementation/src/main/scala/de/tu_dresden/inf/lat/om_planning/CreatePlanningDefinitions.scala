@@ -12,7 +12,7 @@ import java.io.{File, PrintWriter}
 object CreatePlanningDefinitions {
 
   def main(args: Array[String]) = {
-    /*if (args.isEmpty || args.size != 5) {
+    if (args.isEmpty || args.size != 5) {
       println("Expected parameters : ")
       println("outputSyntax formulaFile hookFile ontologyFile outputFile")
     } else if (args(0) != "-pddl" && args(0) != "-rddl") {
@@ -24,13 +24,14 @@ object CreatePlanningDefinitions {
           new File(args(2)),
           new File(args(3)),
           new File(args(4)))
-      }*/
+      }/*
     create(
       "-pddl",
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/fluents.txt"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/hooks.txt"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/drone5-5.ttl"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/misc/rewritings_new.txt"))
+      */
   }
 
   def create(outputSyntax: String, formulaFile: File, hookFile: File, ontologyFile: File, outputFile: File): Unit = {
