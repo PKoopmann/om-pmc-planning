@@ -30,6 +30,7 @@ resolvers += Resolver.mavenLocal
 
 assemblyMergeStrategy in assembly := {
   case "logback.xml.example" => MergeStrategy.discard
+  case "logback.xml" => MergeStrategy.first
   //  case PathList("net.sourceforge.owlapi", "owlapi-distribution", xs @
   //      _*)         => MergeStrategy.first
   case PathList(ps @ _*) if ps.last endsWith ".class" => MergeStrategy.first

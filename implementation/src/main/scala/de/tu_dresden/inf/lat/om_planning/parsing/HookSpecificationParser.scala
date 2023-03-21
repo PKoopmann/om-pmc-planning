@@ -26,11 +26,11 @@ class HookSpecificationParser(ontology: OWLOntology) {
   object PARSING_QUERY extends ParsingState
   object PARSING_INDETERMINED extends ParsingState
 
-  def parse(file: File): Set[HookPredicate] = {
+  def parse(file: File): Seq[HookPredicate] = {
     parse(Source.fromFile(file))
   }
 
-  def parse(source: BufferedSource): Set[HookPredicate] = {
+  def parse(source: BufferedSource): Seq[HookPredicate] = {
     val prefixManager = new DefaultPrefixManager()
     val manager = OWLManager.createOWLOntologyManager()
     val factory = manager.getOWLDataFactory()
@@ -39,7 +39,7 @@ class HookSpecificationParser(ontology: OWLOntology) {
     manchesterParser.setOWLEntityChecker(shortFormProvider);
     manchesterParser.setDefaultOntology(ontology)
 
-    var result = Set[HookPredicate]()
+    var result = Seq[HookPredicate]()
 
     var currentName: Option[String] = None
     var currentVariables: Option[Set[String]] = None
@@ -68,7 +68,7 @@ class HookSpecificationParser(ontology: OWLOntology) {
         }
       } else if (line.startsWith(HOOK_PREDICATE)) {
         if(currentName.isDefined)
-          result += newHook(currentName,currentVariables,currentTypeConditions,currentQuery)
+          result = result :+ newHook(currentName,currentVariables,currentTypeConditions,currentQuery)
         currentName = Some(line.substring(HOOK_PREDICATE.length).trim)
         //println("Hook name: "+currentName.get)
         currentVariables=None
@@ -95,7 +95,7 @@ class HookSpecificationParser(ontology: OWLOntology) {
     })
 
     if(currentName.isDefined)
-      result += newHook(currentName,currentVariables,currentTypeConditions,currentQuery)
+      result = result :+ newHook(currentName,currentVariables,currentTypeConditions,currentQuery)
 
     result
   }

@@ -7,32 +7,36 @@ import org.semanticweb.owlapi.manchestersyntax.renderer.ManchesterOWLSyntaxObjec
 import org.semanticweb.owlapi.model.IRI
 import org.semanticweb.owlapi.util.{BidirectionalShortFormProviderAdapter, DefaultPrefixManager}
 
-import java.io.{File, PrintWriter}
+import java.io.{BufferedInputStream, BufferedReader, File, InputStreamReader, PrintWriter}
+import scala.io.Source
 
 class TestParsers {
-  @Test
+  //@Test
   def testParseHooks(): Unit ={
-    val ontology = OWLManager.createOWLOntologyManager().loadOntologyFromOntologyDocument(new File("example1.owl"))
+    val ontology = OWLManager.createOWLOntologyManager()
+      .loadOntologyFromOntologyDocument(getClass.getClassLoader
+        .getResourceAsStream("example1.owl"))
+
+
     val parser = new InterfaceParser(ontology);
     parser.MANCHESTER_SYNTAX=true
 
-    val hooksFile = new File("hooks-example.txt")
+    val hooksFile = Source.fromResource("hooks-example.txt")
 
     val hooks = parser.parseHookDefinitions(hooksFile)
     println(hooks)
   }
 
 
-  @Test
+  //@Test
   def testParseFluents(): Unit ={
-    val ontology = OWLManager.createOWLOntologyManager().loadOntologyFromOntologyDocument(new File("example1.owl"))
+    val ontology = OWLManager.createOWLOntologyManager().loadOntologyFromOntologyDocument(getClass.getClassLoader
+      .getResourceAsStream("example1.owl"))
     val parser = new InterfaceParser(ontology);
 
     parser.MANCHESTER_SYNTAX=true
 
-    val fluentsFile = new File("fluent2formula-example.txt")
-
-    println(fluentsFile.getCanonicalPath)
+    val fluentsFile = Source.fromResource("fluent2formula-example.txt")
 
     val fluents = parser.parseAxiomMapping(fluentsFile)
     println(fluents)

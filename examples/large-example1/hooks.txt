@@ -1,0 +1,35 @@
+# abstract hook definitions for drone example
+
+PREFIX drone: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+
+HOOK_PREDICATE: KBquery_WetDrone
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: drone:Cell
+QUERY:
+	?x Type: drone:Drone
+	
+	
+HOOK_PREDICATE: KBquery_Objectx
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: drone:Cell
+QUERY:
+	?x Type: drone:Objectx
+
+
+HOOK_PREDICATE: KBquery_XveryCloseY
+VARIABLES: ?x ?y
+TYPE_SPECIFICATION:
+	?x Type: drone:Cell
+	?y Type: drone:Cell
+QUERY:
+  ?x Type: drone:Drone
+  ?x drone:veryClose drone:?y
+
+  
+
+
+
+#KBquery_AvoidCondition ?x ?y := drone:?x Type: drone:avoidCondition value drone:?y
