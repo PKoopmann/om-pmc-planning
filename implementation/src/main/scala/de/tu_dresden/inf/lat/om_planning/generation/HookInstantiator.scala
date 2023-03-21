@@ -41,7 +41,7 @@ class HookInstantiator(reasoner: OWLReasoner, factory: OWLDataFactory) {
       other
   }
 
-  def validAssignments(hookPredicate: HookPredicate): Set[Map[String,OWLNamedIndividual]] = {
+  def validAssignments(hookPredicate: HookPredicate): Seq[Map[String,OWLNamedIndividual]] = {
     var possibilities = Map[String, Set[OWLNamedIndividual]]()
 
     hookPredicate.typeSpecification.foreach(_ match {

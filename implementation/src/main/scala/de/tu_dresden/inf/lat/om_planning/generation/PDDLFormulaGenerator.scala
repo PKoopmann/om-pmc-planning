@@ -12,16 +12,20 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
                            constantReasoner: OWLReasoner,
                            factory: OWLDataFactory,
                            fluentMap: FluentMap,
-                           hookPredicates: Iterable[HookPredicate]) {
+                           hookPredicates: Seq[HookPredicate]) {
 
   val hookInstantiator = new HookInstantiator(constantReasoner,factory)
   val tab = " "*4
 
   def generateAllFormulaDefinitions(): Iterable[String] = {
-    tab + "(:derived (inconsistent) \n"+
-      tab*2 + generateInconsistencyFormula() + "\n" +
-      tab + ")\n"::
+   inconsistencyDefinition()::
       hookPredicates.map(generateHookFormulas).toList
+  }
+
+  def inconsistencyDefinition() = {
+    tab + "(:derived (inconsistent) \n" +
+      tab * 2 + generateInconsistencyFormula() + "\n" +
+      tab + ")\n"
   }
 
   def generateInconsistencyFormula() =
@@ -40,6 +44,49 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
         }.mkString("\n") + "\n" +
       tab*2 + ")\n" +
     tab + ")\n"
+  }
+
+  def generateRangeOfFormulaDefinitions(start: Int, end: Int): Iterable[String] = {
+    var result = List[String]()
+    var currentPos = 0
+    var hookPredicatesLeft = hookPredicates
+    if (start == 0) {
+      result ::= inconsistencyDefinition()
+      currentPos += 1
+    }
+    while (currentPos < end && !hookPredicatesLeft.isEmpty) {
+      val currentPredicate = hookPredicatesLeft.head
+      hookPredicatesLeft=hookPredicatesLeft.tail
+      var nextStrings = generateHookFormulas(currentPredicate, start, currentPos, end)
+      currentPos += nextStrings.size
+      result ++= nextStrings
+    }
+    result
+  }
+
+  def generateHookFormulas(hookPredicate: HookPredicate, start: Int, pos: Int, end: Int) = {
+    var result = List[String]()
+    var currentPos = pos
+    if(pos==start) {
+      result ::= (tab + "(:derived (" + hookPredicate.name + " " + hookPredicate.variables.mkString("", " ", ")") + "\n" +
+        tab * 2 + "(or\n" +
+        tab * 3 + "(inconsistent) \n")
+      currentPos+=1
+    }
+
+    var assignments = hookInstantiator.validAssignments(hookPredicate).toIndexedSeq // TODO this has to return a list
+    if(currentPos+assignments.size > start) {
+      assignments = assignments.slice(currentPos+assignments-start, end-start)
+      result :+= assignments.map {
+        ass =>
+          val query = hookInstantiator.instantiateQuery(hookPredicate, ass)
+          tab * 3 + "(and " + toString(ass) + " " +
+            //conjunction(query.map(x => dnfToStr(formulaGenerator.generateDNF(x))))+")"
+            query.map(x => dnfToStr(formulaGenerator.generateDNF(x))).mkString(" ") + ")"
+        //+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
+      }
+    }
+    result
   }
 
   def conjunction(conjuncts: Set[String]) =
