@@ -17,3 +17,5 @@ TYPE_SPECIFICATION:
    ?x Type: auv:Robot
 QUERY:
    ?x Type: auv:CanDrive
+   
+   

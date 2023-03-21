@@ -1,0 +1,633 @@
+@prefix : <https://www.ifi.uio.no/tobiajoh/pipes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pipes: <https://www.ifi.uio.no/tobiajoh/pipes#> .
+@base <https://www.ifi.uio.no/tobiajoh/pipes> .
+
+<https://www.ifi.uio.no/tobiajoh/pipes> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#connectedTo
+pipes:connectedTo rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hasObject
+pipes:hasObject rdf:type owl:ObjectProperty ;
+                owl:inverseOf pipes:locatedAt .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hasPicture
+pipes:hasPicture rdf:type owl:ObjectProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#locatedAt
+pipes:locatedAt rdf:type owl:ObjectProperty ;
+                rdfs:range pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#robotAt
+pipes:robotAt rdf:type owl:ObjectProperty ;
+              rdfs:domain pipes:Robot ;
+              rdfs:range pipes:WP .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Covered
+pipes:Covered rdf:type owl:Class ;
+              rdfs:subClassOf pipes:Risk ,
+                              [ rdf:type owl:Class ;
+                                owl:unionOf ( pipes:HighRisk
+                                              pipes:MediumRisk
+                                            )
+                              ] ;
+              rdfs:comment "this waypoint (that has some risk) is covered by the inspections" .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ForbiddenWP
+pipes:ForbiddenWP rdf:type owl:Class ;
+                  rdfs:subClassOf pipes:WP ;
+                  owl:disjointWith [ rdf:type owl:Restriction ;
+                                     owl:onProperty [ owl:inverseOf pipes:robotAt
+                                                    ] ;
+                                     owl:someValuesFrom pipes:Robot
+                                   ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource pipes:ForbiddenWP ;
+   owl:annotatedProperty owl:disjointWith ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:robotAt
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ] ;
+   rdfs:comment "no robot is allowed to be at a WP that is forbidden"
+ ] .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#HighRisk
+pipes:HighRisk rdf:type owl:Class ;
+               rdfs:subClassOf pipes:Risk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#MediumRisk
+pipes:MediumRisk rdf:type owl:Class ;
+                 rdfs:subClassOf pipes:Risk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#MediumRiskPipe
+pipes:MediumRiskPipe rdf:type owl:Class ;
+                     rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Mine
+pipes:Mine rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Pipe
+pipes:Pipe rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ProtectedStructure
+pipes:ProtectedStructure rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Risk
+pipes:Risk rdf:type owl:Class ;
+           rdfs:subClassOf pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Robot
+pipes:Robot rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Rock
+pipes:Rock rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#RustyPipe
+pipes:RustyPipe rdf:type owl:Class ;
+                rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#UnsupportedPipe
+pipes:UnsupportedPipe rdf:type owl:Class ;
+                      rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#WP
+pipes:WP rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#aa
+pipes:aa rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ab
+pipes:ab rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ac
+pipes:ac rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ad
+pipes:ad rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ae
+pipes:ae rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#af
+pipes:af rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ag
+pipes:ag rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#auv
+pipes:auv rdf:type owl:NamedIndividual ,
+                   pipes:Robot .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ba
+pipes:ba rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bb
+pipes:bb rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bc
+pipes:bc rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bd
+pipes:bd rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#be
+pipes:be rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bf
+pipes:bf rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bg
+pipes:bg rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ca
+pipes:ca rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cb
+pipes:cb rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cc
+pipes:cc rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cd
+pipes:cd rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ce
+pipes:ce rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cf
+pipes:cf rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cg
+pipes:cg rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#da
+pipes:da rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#db
+pipes:db rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#dc
+pipes:dc rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#dd
+pipes:dd rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#de
+pipes:de rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#df
+pipes:df rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#dg
+pipes:dg rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ea
+pipes:ea rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#eb
+pipes:eb rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ec
+pipes:ec rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ed
+pipes:ed rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ee
+pipes:ee rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ef
+pipes:ef rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#eg
+pipes:eg rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fa
+pipes:fa rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fb
+pipes:fb rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fc
+pipes:fc rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fd
+pipes:fd rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fe
+pipes:fe rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ff
+pipes:ff rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fg
+pipes:fg rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ga
+pipes:ga rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gb
+pipes:gb rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gc
+pipes:gc rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gd
+pipes:gd rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ge
+pipes:ge rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gf
+pipes:gf rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gg
+pipes:gg rdf:type owl:NamedIndividual ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#mineef
+pipes:mineef rdf:type owl:NamedIndividual ,
+                      pipes:Mine ;
+             pipes:locatedAt pipes:ef .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipebg
+pipes:pipebg rdf:type owl:NamedIndividual ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipecg ;
+             pipes:locatedAt pipes:bg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipecc
+pipes:pipecc rdf:type owl:NamedIndividual ,
+                      pipes:RustyPipe ;
+             pipes:locatedAt pipes:cc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipecd
+pipes:pipecd rdf:type owl:NamedIndividual ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipecc ;
+             pipes:locatedAt pipes:cd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipecg
+pipes:pipecg rdf:type owl:NamedIndividual ,
+                      pipes:UnsupportedPipe ;
+             pipes:connectedTo pipes:pipedf ;
+             pipes:locatedAt pipes:cg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipede
+pipes:pipede rdf:type owl:NamedIndividual ,
+                      pipes:MediumRiskPipe ;
+             pipes:connectedTo pipes:pipecd ;
+             pipes:locatedAt pipes:de .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipedf
+pipes:pipedf rdf:type owl:NamedIndividual ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipede ;
+             pipes:locatedAt pipes:df .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeee
+pipes:pipeee rdf:type owl:NamedIndividual ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipede ;
+             pipes:locatedAt pipes:ee .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipefc
+pipes:pipefc rdf:type owl:NamedIndividual ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipefd ;
+             pipes:locatedAt pipes:fc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipefd
+pipes:pipefd rdf:type owl:NamedIndividual ,
+                      pipes:MediumRiskPipe ;
+             pipes:connectedTo pipes:pipeee ;
+             pipes:locatedAt pipes:fd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipegb
+pipes:pipegb rdf:type owl:NamedIndividual ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipegc ;
+             pipes:locatedAt pipes:gb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipegc
+pipes:pipegc rdf:type owl:NamedIndividual ,
+                      pipes:RustyPipe ;
+             pipes:connectedTo pipes:pipefc ;
+             pipes:locatedAt pipes:gc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#wallab
+pipes:wallab rdf:type owl:NamedIndividual ,
+                      pipes:ProtectedStructure ;
+             pipes:locatedAt pipes:ab .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#wallbb
+pipes:wallbb rdf:type owl:NamedIndividual ,
+                      pipes:ProtectedStructure ;
+             pipes:locatedAt pipes:bb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#wallcb
+pipes:wallcb rdf:type owl:NamedIndividual ,
+                      pipes:ProtectedStructure ;
+             pipes:locatedAt pipes:cb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#walldb
+pipes:walldb rdf:type owl:NamedIndividual ,
+                      pipes:ProtectedStructure ;
+             pipes:locatedAt pipes:db .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#walldc
+pipes:walldc rdf:type owl:NamedIndividual ,
+                      pipes:ProtectedStructure ;
+             pipes:locatedAt pipes:dc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#walldd
+pipes:walldd rdf:type owl:NamedIndividual ,
+                      pipes:ProtectedStructure ;
+             pipes:locatedAt pipes:dd .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( pipes:HighRisk
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:Covered
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( pipes:MediumRisk
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty pipes:hasObject ;
+                                               owl:someValuesFrom [ owl:intersectionOf ( pipes:Pipe
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty pipes:connectedTo ;
+                                                                                           owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty pipes:locatedAt ;
+                                                                                                                owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                                                                                                                                    ] ;
+                                                                                                                                     owl:someValuesFrom pipes:Robot
+                                                                                                                                   ]
+                                                                                                              ]
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ]
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf pipes:Covered
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget pipes:Covered ;
+  rdfs:comment "a waypoint with medium risk is covered, if the pipe at this waypoint is connected to a pipe at a waypoint with a photo from some AUV"
+] .
+
+
+[ owl:intersectionOf ( pipes:MediumRisk
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:Covered
+] .
+
+
+[ owl:intersectionOf ( pipes:Pipe
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:connectedTo ;
+                         owl:someValuesFrom pipes:RustyPipe
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRiskPipe
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:MediumRiskPipe
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRisk
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:Pipe
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:Rock
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRisk
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( pipes:WP
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty pipes:hasObject ;
+                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( pipes:Mine
+                                                                                  pipes:ProtectedStructure
+                                                                                )
+                                                                  ]
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf pipes:ForbiddenWP
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget pipes:ForbiddenWP ;
+  rdfs:comment "a waypoint where there is a mine is not allowed to be visited"
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                              owl:unionOf ( pipes:RustyPipe
+                                                            pipes:UnsupportedPipe
+                                                          )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:HighRisk
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

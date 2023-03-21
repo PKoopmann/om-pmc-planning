@@ -15,7 +15,6 @@
         (dangerousForThruster photoPoint endPoint)
         (canDrive backThruster)
         (canTakePicture rgbCamera)
-        (true)
     )
 
     (:goal

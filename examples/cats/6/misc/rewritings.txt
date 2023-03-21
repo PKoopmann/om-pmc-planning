@@ -1,0 +1,22 @@
+    (:derived (inconsistent) 
+        (false)
+    )
+
+    (:derived (KBquery_Package ?x)
+        (or
+            (inconsistent) 
+            (and (= ?x h) (contains h i))
+            (and (= ?x j) (true))
+            (and (= ?x d) (false))
+            (and (= ?x k) (false))
+            (and (= ?x c) (true))
+            (and (= ?x e) (false))
+            (and (= ?x i) (false))
+            (and (= ?x b) (true))
+            (and (= ?x l) (false))
+            (and (= ?x a) (false))
+            (and (= ?x g) (false))
+            (and (= ?x f) (false))
+        )
+    )
+

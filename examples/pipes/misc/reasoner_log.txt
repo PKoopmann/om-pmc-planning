@@ -1,0 +1,3 @@
+Axioms in module: 303
+BLACK_BOX
+Generating inconsistency dnf

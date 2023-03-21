@@ -1,0 +1,10 @@
+(define (problem taskAssigment_problem)
+(:domain taskAssigment)
+(:init
+       (engineer a)
+       (developer f)
+       (engineer h)
+       (developer i)
+       (designer j))
+(:goal (and (AUX11) (not (DATALOG_INCONSISTENT))))
+)

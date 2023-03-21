@@ -1,0 +1,24 @@
+# fluent definitions for drone example
+
+PREFIX cats: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+OBJECT thing a	-> cats:a
+OBJECT package b	-> cats:b
+OBJECT package c	-> cats:c
+OBJECT thing d	-> cats:d
+OBJECT Dthing e	-> cats:e
+OBJECT thing f	-> cats:f
+OBJECT Dthing g	-> cats:g
+OBJECT package h	-> cats:h
+OBJECT thing i	-> cats:i
+OBJECT Dpackage j	-> cats:j
+OBJECT Dthing k	-> cats:k
+OBJECT Dthing l	-> cats:l
+
+
+
+#PREDICATE bomb(thing)	    -> cats:bomb
+#PREDICATE cat(thing)			-> cats:cat
+PREDICATE contains(package, thing) -> cats:contains
+
+

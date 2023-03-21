@@ -1,0 +1,781 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3/robot> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3/robot> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3/robot> rdf:type owl:Ontology .
+
+ ################################################################# 
+ #    Classes
+ ################################################################# 
+ 
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column0
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column0> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column0> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column1
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column1> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column1> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column2
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column2> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column2> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column3
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column3> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column3> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column4
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column4> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column4> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column5
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column5> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column5> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column6
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column6> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column6> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column7
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column7> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column7> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column8
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column8> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column8> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column9
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column9> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column9> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column10
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column10> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column10> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column11
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column11> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column11> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column12
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column12> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column12> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column13
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column13> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column13> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column14
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column14> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column14> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column15
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column15> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column15> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column16
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column16> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column16> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column17
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column17> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column17> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column18
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column18> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column18> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column19
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column19> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column19> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column20
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column20> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column20> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column21
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column21> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column21> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column22
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column22> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column22> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Column23
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Column23> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Column23> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row0
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row0> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row0> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row1
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row1> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row1> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row2
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row2> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row2> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row3
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row3> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row3> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row4
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row4> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row4> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row5
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row5> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row5> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row6
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row6> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row6> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row7
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row7> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row7> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row8
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row8> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row8> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row9
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row9> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row9> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row10
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row10> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row10> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row11
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row11> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row11> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row12
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row12> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row12> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row13
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row13> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row13> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row14
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row14> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row14> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row15
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row15> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row15> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row16
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row16> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row16> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row17
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row17> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row17> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row18
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row18> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row18> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row19
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row19> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row19> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row20
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row20> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row20> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row21
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row21> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row21> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row22
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row22> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row22> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Row23
+ <http://www.semanticweb.org/anon/ontologies/2021/3/Row23> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Row23> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf0
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf0> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Columns> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf1
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf1> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf0> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf1> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf2
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf2> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf1> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf2> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf3
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf3> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf2> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf3> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf4
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf4> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf3> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf4> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf5
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf5> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf4> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf5> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf6
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf6> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf5> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf6> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf7
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf7> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf6> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf7> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf8
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf8> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf7> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf8> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf9
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf9> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf8> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf9> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf10
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf10> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf9> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf10> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf11
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf11> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf10> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf11> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf12
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf12> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf11> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf12> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf13
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf13> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf12> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf13> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf14
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf14> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf13> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf14> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf15
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf15> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf14> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf15> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf16
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf16> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf15> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf16> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf17
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf17> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf16> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf17> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf18
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf18> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf17> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf18> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf19
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf19> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf18> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf19> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf20
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf20> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf19> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf20> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf21
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf21> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf20> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf21> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf22
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf22> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf21> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf22> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RightOf23
+ <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf23> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/RightOf22> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf23> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf24
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf24> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Columns> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf23
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf23> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf24> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf22
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf22> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf23> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf21
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf21> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf22> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf20
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf20> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf21> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf19
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf19> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf20> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf18
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf18> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf19> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf17
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf17> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf18> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf16
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf16> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf17> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf15
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf15> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf16> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf14
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf14> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf15> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf13
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf13> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf14> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf12
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf12> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf13> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf11
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf11> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf12> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf10
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf10> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf11> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf9
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf9> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf10> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf8
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf8> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf9> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf7
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf7> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf8> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf6
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf6> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf7> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf5
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf5> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf6> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf4
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf4> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf5> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf3
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf3> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf4> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf2
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf2> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf3> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf1
+ <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf1> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/LeftOf2> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf0
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf0> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Rows> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf1
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf1> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf0> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf1> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf2
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf2> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf1> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf2> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf3
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf3> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf2> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf3> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf4
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf4> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf3> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf4> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf5
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf5> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf4> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf5> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf6
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf6> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf5> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf6> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf7
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf7> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf6> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf7> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf8
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf8> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf7> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf8> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf9
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf9> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf8> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf9> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf10
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf10> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf9> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf10> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf11
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf11> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf10> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf11> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf12
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf12> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf11> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf12> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf13
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf13> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf12> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf13> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf14
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf14> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf13> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf14> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf15
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf15> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf14> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf15> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf16
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf16> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf15> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf16> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf17
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf17> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf16> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf17> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf18
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf18> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf17> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf18> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf19
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf19> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf18> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf19> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf20
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf20> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf19> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf20> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf21
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf21> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf20> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf21> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf22
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf22> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf21> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf22> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf23
+ <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf23> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/AboveOf22> ;
+                                                          owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf23> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf24
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf24> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/Rows> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf23
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf23> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf24> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf22
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf22> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf23> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf21
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf21> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf22> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf20
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf20> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf21> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf19
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf19> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf20> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf18
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf18> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf19> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf17
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf17> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf18> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf16
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf16> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf17> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf15
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf15> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf16> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf14
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf14> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf15> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf13
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf13> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf14> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf12
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf12> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf13> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf11
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf11> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf12> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf10
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf10> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf11> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf9
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf9> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf10> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf8
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf8> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf9> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf7
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf7> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf8> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf6
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf6> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf7> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf5
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf5> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf6> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf4
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf4> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf5> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf3
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf3> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf4> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf2
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf2> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf3> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf1
+ <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf1> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <http://www.semanticweb.org/anon/ontologies/2021/3/BelowOf2> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

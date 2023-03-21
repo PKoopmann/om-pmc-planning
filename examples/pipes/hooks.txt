@@ -1,0 +1,20 @@
+# abstract hook definitions for drone example
+
+PREFIX pipes: <https://www.ifi.uio.no/tobiajoh/pipes#>
+
+
+HOOK_PREDICATE: KBquery_inspectionNeeded
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: pipes:Risk
+QUERY:
+	?x Type: owl:Thing
+	
+	
+HOOK_PREDICATE: KBquery_inspected
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: pipes:Risk
+QUERY:
+	?x Type: pipes:Covered
+
