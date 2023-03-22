@@ -42,11 +42,14 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
         tab*3 + "(inconsistent) \n"+
         hookInstantiator.validAssignments(hookPredicate).map { ass =>
           val query = hookInstantiator.instantiateQuery(hookPredicate, ass)
-          tab*3 + "(and "+toString(ass) +" "+
+
+          val elements = query.map(x => dnfToStr(formulaGenerator.generateDNF(x))).toList //.mkString(" ") + ")"
+          tab*3 + conjunction(toString(ass) ++ elements)
+          //tab*3 + "(and "+toString(ass) +" "+
             //conjunction(query.map(x => dnfToStr(formulaGenerator.generateDNF(x))))+")"
-          query.map(x => dnfToStr(formulaGenerator.generateDNF(x))).mkString(" ")+")"
+          //query.map(x => dnfToStr(formulaGenerator.generateDNF(x))).mkString(" ")+")"
           //+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
-        }.mkString("\n") + "\n" +
+        }.filterNot(_.trim().equals("(false)")).mkString("\n") + "\n" +
       tab*2 + ")\n" +
     tab + ")\n"
   }
@@ -64,15 +67,15 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
     //if(currentPos+assignments.size > start) {
     val slice  = assignments.slice(start, end)
     result ++= slice.map { ass =>
-          println("process "+ass)
-          val query = hookInstantiator.instantiateQuery(hookPredicate, ass)
-          tab * 3 + "(and " + toString(ass) + " " +
+      val query = hookInstantiator.instantiateQuery(hookPredicate, ass)
+      val elements = query.map(x => dnfToStr(formulaGenerator.generateDNF(x))).toList//.mkString(" ") + ")"
+      tab*3+conjunction(toString(ass)++elements)
+//            tab * 3 + "(and " + toString(ass) + " " +elements.mkString(" ")
+//          else
             //conjunction(query.map(x => dnfToStr(formulaGenerator.generateDNF(x))))+")"
-            query.map(x => dnfToStr(formulaGenerator.generateDNF(x))).mkString(" ") + ")"
-        //+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
-    }
 
-    println("Assignments: "+assignments.size)
+        //+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
+    }.filterNot(_.trim().equals("(false)"))
 
     if(start<=assignments.size && assignments.size<=end)
       result = result :+ "\n" +
@@ -82,21 +85,29 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
     (result, assignments.size)
   }
 
-  def conjunction(conjuncts: Set[String]) =
-    if(conjuncts.size==1)
-      conjuncts.head
-    else if(conjuncts.isEmpty)
-      "true"
+  def conjunction(conjuncts: Seq[String]) = {
+    val filtered = conjuncts.filterNot(_.equals("(true)"))
+    if(filtered.contains("(false)"))
+      "(false)"
+    else if(filtered.size==1)
+      filtered.head
+    else if(filtered.isEmpty)
+      "(true)"
     else
-      conjuncts.mkString("(and ", " ", ")")
+      filtered.mkString("(and ", " ", ")")
+  }
 
-  def disjunction(disjuncts: Set[String]) =
-    if (disjuncts.size == 1)
-      disjuncts.head
-    else if (disjuncts.isEmpty)
-      "false"
+  def disjunction(disjuncts: Set[String]) = {
+    val filtered = disjuncts.filterNot(_.equals("(false)"))
+    if(filtered.contains("(true)"))
+      "(true)"
+    else if (filtered.size == 1)
+      filtered.head
+    else if (filtered.isEmpty)
+      "(false)"
     else
-      disjuncts.mkString("(or ", " ", ")")
+      filtered.mkString("(or ", " ", ")")
+  }
 
 
   def dnfToStr(dnf: Set[Set[OWLLogicalAxiom]]): String = {
@@ -118,9 +129,8 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
   }
 
   def toString(assignment: Map[String, OWLNamedIndividual]) =
-    assignment.map(entry =>
+    assignment.toList.map(entry =>
       "(= "+entry._1+" "+fluentMap.convert(entry._2)+")")
-      .mkString(" ")
 
 
 

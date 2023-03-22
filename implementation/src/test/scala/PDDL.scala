@@ -1,5 +1,6 @@
-import de.tu_dresden.inf.lat.om_planning.generation.HookInstantiator
+import de.tu_dresden.inf.lat.om_planning.generation.{HookInstantiator, PDDLFormulaGenerator, PlanningFormulaGenerator}
 import de.tu_dresden.inf.lat.om_planning.parsing.{FluentSpecificationParser, HookSpecificationParser}
+import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.FormulaGenerator
 import de.tu_dresden.inf.lat.om_pmc.parsing.InterfaceParser
 import org.junit.Test
 import org.semanticweb.HermiT.ReasonerFactory
@@ -9,6 +10,35 @@ import org.semanticweb.owlapi.io.ReaderDocumentSource
 import scala.io.Source
 
 class PDDL {
+
+  @Test
+  def bug3() = {
+    test("bug3/TTL5-5.ttl", "bug3/fluents.txt", "bug3/hooks.txt")
+  }
+
+  def test(ontologyPath: String, fluentPath: String, hookPath: String) = {
+    val manager = OWLManager.createOWLOntologyManager()
+    val ontology = manager.loadOntologyFromOntologyDocument(
+      new ReaderDocumentSource(Source.fromResource(ontologyPath).reader()))
+    val factory = manager.getOWLDataFactory()
+
+    val fluentSpec = new FluentSpecificationParser(ontology, factory).parse(Source.fromResource(fluentPath))
+    val hookSpec = new HookSpecificationParser(ontology).parse(Source.fromResource(hookPath))
+
+    val reasoner = new ReasonerFactory().createReasoner(ontology)
+
+    val hookInstantiator = new HookInstantiator(reasoner, factory)
+
+    // val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
+    val formulaGenerator = FormulaGenerator
+      .formulaGenerator(fluentSpec.asAxiom2FormulaMap(factory), hookInstantiator.asHookToAxiomMap(hookSpec), ontology)
+
+    val planningFormulaGenerator: PlanningFormulaGenerator =
+      new PDDLFormulaGenerator(formulaGenerator, reasoner, factory, fluentSpec, hookSpec)
+
+    planningFormulaGenerator.generateAllFormulaDefinitions()
+      .foreach(println)
+  }
 
   @Test
   def testFluentParsing(): Unit = {
