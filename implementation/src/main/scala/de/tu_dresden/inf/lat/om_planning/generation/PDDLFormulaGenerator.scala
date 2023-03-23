@@ -77,10 +77,16 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
         //+dnfToStr(formulaGenerator.generateDNF(Tools.asOne(query,factory)))+")"
     }.filterNot(_.trim().equals("(false)"))
 
-    if(start<=assignments.size && assignments.size<=end)
+
+    if(start<assignments.size && assignments.size<=end)
       result = result :+ "\n" +
         tab * 2 + ")\n" +
         tab + ")\n"
+
+    // make sure that result is not empty if we evaluated some hook
+    // --> later used as check whether something was computed
+    if (slice.nonEmpty && result.isEmpty)
+      result = result :+ " "
 
     (result, assignments.size)
   }
