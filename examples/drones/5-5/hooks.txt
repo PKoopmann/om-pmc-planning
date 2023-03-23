@@ -11,30 +11,29 @@ QUERY:
 	?x Type: drone:Drone
 	
 	
-HOOK_PREDICATE: KBquery_Objectx
-VARIABLES: ?x
-TYPE_SPECIFICATION:
-	?x Type: drone:Cell
-QUERY:
-	?x Type: drone:Objectx
+#HOOK_PREDICATE: KBquery_Objectx
+#VARIABLES: ?x
+#TYPE_SPECIFICATION:
+#	?x Type: drone:Cell
+#QUERY:
+#	?x Type: drone:Objectx
 
 
-HOOK_PREDICATE: KBquery_XveryCloseY
-VARIABLES: ?x ?y
-TYPE_SPECIFICATION:
-	?x Type: drone:Cell
-	?y Type: drone:Cell
-QUERY:
-  ?x Type: drone:Drone
+#HOOK_PREDICATE: KBquery_XveryCloseY
+#VARIABLES: ?x ?y
+#TYPE_SPECIFICATION:
+#	?x Type: drone:Cell
+#	?y Type: drone:Cell
+#QUERY:
+#  ?x Type: drone:Drone
+#  ?x drone:veryClose ?y
+
+#HOOK_PREDICATE: KBquery_XveryCloseY
+#VARIABLES: ?x ?y
+#TYPE_SPECIFICATION:
+#	?x Type: drone:Cell
+#	?y Type: drone:Cell
+#QUERY:
+#  ?x drone:avoidCondition ?y
+
   
-  
-#?x drone:veryClose ?y
-
-  
-
-
-
-#KBquery_WetDrone ?x := drone:?x Type: drone:WetDrone
-#KBquery_Objectx ?x := drone:?x Type: drone:Objectx
-#KBquery_XveryCloseY ?x ?y := drone:?x Type: drone:Drone and drone:veryClose value drone:?y
-#KBquery_AvoidCondition ?x ?y := drone:?x Type: drone:avoidCondition value drone:?y

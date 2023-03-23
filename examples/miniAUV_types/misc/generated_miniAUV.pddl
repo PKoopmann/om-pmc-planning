@@ -30,13 +30,17 @@
 
     (:derived (KBquery_canTakePicture ?x)
         (or
+
             (and (= ?x remaroAUV) (canTakePicture rgbCamera))
+
         )
     )
 
     (:derived (KBquery_canDrive ?x)
         (or
+
             (and (= ?x remaroAUV) (canDrive backThruster))
+
         )
     )
 

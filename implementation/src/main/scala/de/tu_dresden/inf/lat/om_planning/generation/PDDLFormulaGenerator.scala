@@ -39,7 +39,7 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
     tab + "(:derived ("+hookPredicate.name+" "+hookPredicate.variables.mkString("", " ", ")")+ "\n"+
       tab*2 + "(or\n" +
         // next line: derived axiom is true, if inconsistent
-        tab*3 + "(inconsistent) \n"+
+        //tab*3 + "(inconsistent) \n"+
         hookInstantiator.validAssignments(hookPredicate).map { ass =>
           val query = hookInstantiator.instantiateQuery(hookPredicate, ass)
 
@@ -59,8 +59,8 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
     var result = List[String]()
     if(start<=0) {
       result = result :+ (tab + "(:derived (" + hookPredicate.name + " " + hookPredicate.variables.mkString("", " ", ")") + "\n" +
-        tab * 2 + "(or\n" +
-        tab * 3 + "(inconsistent) \n")
+        tab * 2 + "(or\n")
+        //tab * 3 + "(inconsistent) \n")
     }
 
     val assignments = sortAssignments(hookInstantiator.validAssignments(hookPredicate))

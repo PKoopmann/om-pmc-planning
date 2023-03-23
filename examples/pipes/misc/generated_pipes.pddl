@@ -23,27 +23,31 @@
 
     (:derived (KBquery_inspectionNeeded ?x)
         (or
-            (and (= ?x gb) (true))
-            (and (= ?x fd) (true))
-            (and (= ?x de) (true))
-            (and (= ?x cd) (true))
-            (and (= ?x cg) (true))
-            (and (= ?x fc) (true))
-            (and (= ?x gc) (true))
-            (and (= ?x cc) (true))
+
+            (= ?x cc)
+            (= ?x cd)
+            (= ?x cg)
+            (= ?x de)
+            (= ?x fc)
+            (= ?x fd)
+            (= ?x gb)
+            (= ?x gc)
+
         )
     )
 
     (:derived (KBquery_inspected ?x)
         (or
-            (and (= ?x gc) (hasPicture auv gc))
+
             (and (= ?x cc) (hasPicture auv cc))
+            (and (= ?x cd) (or (hasPicture auv cd) (hasPicture auv cc) (hasPicture auv de)))
             (and (= ?x cg) (hasPicture auv cg))
+            (and (= ?x de) (or (hasPicture auv cd) (hasPicture auv de) (hasPicture auv df) (hasPicture auv ee)))
             (and (= ?x fc) (or (hasPicture auv fc) (hasPicture auv fd) (hasPicture auv gc)))
             (and (= ?x fd) (or (hasPicture auv fc) (hasPicture auv ee) (hasPicture auv fd)))
-            (and (= ?x de) (or (hasPicture auv cd) (hasPicture auv de) (hasPicture auv df) (hasPicture auv ee)))
             (and (= ?x gb) (or (hasPicture auv gc) (hasPicture auv gb)))
-            (and (= ?x cd) (or (hasPicture auv cd) (hasPicture auv cc) (hasPicture auv de)))
+            (and (= ?x gc) (hasPicture auv gc))
+
         )
     )
 

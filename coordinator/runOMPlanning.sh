@@ -35,6 +35,9 @@ Plan="$DomainFolder"/plan.txt
 PlannerLog="$MiscFolder"/planner_log.txt
 PlannerSAS="$MiscFolder"/output.sas
 
+# number of hooks that are evaluated at a time between restarts
+increment=25
+
 TimeLimit=-1
 if [ "$#" == 5 ]; then
   TimeLimit=$5
@@ -76,16 +79,40 @@ fi
 
 
 echo "start generating rewritings"
+
+# remove the rewritings if they exists
+if [[ -f "$Rewritings" ]]; then
+  rm $Rewritings
+fi
+start=0
+lastSize=-1
+newSize=0
+
 # call rewriting generator
 TimeStartReasoning="$(date -u +%s.%N)"
 
-# possible options: -Xmx16g (increase RAM limit)
-if [ $TimeLimit == -1 ]; then
-  # run without time limit
-  java -jar "$RewritingGenerator" "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" >  "$ReasonerLog"
-else
-  timeout "$TimeLimit"s java -jar "$RewritingGenerator" "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" >  "$ReasonerLog"
-fi
+while ((lastSize!=newSize))
+do
+
+  #echo $lastSize $newSize $start
+  lastSize=$newSize
+  
+  end=$((start+increment))
+
+  echo "compute hooks $start til $end"
+  # possible options: -Xmx16g (increase RAM limit)
+  if [ $TimeLimit == -1 ]; then
+    # run without time limit
+    java -cp "$RewritingGenerator" de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" $start $end > "$ReasonerLog"
+  else
+    timeout "$TimeLimit"s java -cp "$RewritingGenerator" de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" $start $end > "$ReasonerLog"
+  fi
+
+  start=$end
+    
+  newSize=`stat -c%s "$Rewritings"` 
+
+done
 
 
 TimeEndReasoning="$(date -u +%s.%N)"

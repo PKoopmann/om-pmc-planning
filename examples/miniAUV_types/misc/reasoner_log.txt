@@ -1,3 +1,7 @@
 Axioms in module: 51
 BLACK_BOX
+Creating slice from 0 to 100
 Generating inconsistency dnf
+0 - 100
+-1 - 99
+-2 - 98
