@@ -3,7 +3,7 @@ package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 import com.clarkparsia.owlapi.explanation.{MultipleExplanationGenerator, MyBlackBoxExplanation, MyHSTExplanationGenerator}
 import de.tu_dresden.inf.lat.om_pmc.ifm.IfmSituationFormulaGenerator
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
-import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLClassExpression, OWLLogicalAxiom, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom}
+import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLClassExpression, OWLLogicalAxiom, OWLObjectPropertyAssertionAxiom, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
 import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
@@ -70,6 +70,13 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
       factory.getOWLObjectIntersectionOf(
         factory.getOWLObjectComplementOf(as.getClassExpression()),
         factory.getOWLObjectOneOf(as.getIndividual))
+    case prp: OWLObjectPropertyAssertionAxiom =>
+      factory.getOWLObjectIntersectionOf(
+        factory.getOWLObjectOneOf(prp.getSubject()),
+        factory.getOWLObjectComplementOf(
+          factory.getOWLObjectHasValue(prp.getProperty(), prp.getObject)
+        )
+      )
   }
 
 }
