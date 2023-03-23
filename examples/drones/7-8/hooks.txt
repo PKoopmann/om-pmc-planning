@@ -26,7 +26,7 @@ TYPE_SPECIFICATION:
 	?y Type: drone:Cell
 QUERY:
   ?x Type: drone:Drone
-  ?x drone:veryClose drone:?y
+  ?x drone:veryClose ?y
   
 HOOK_PREDICATE: KBquery_AvoidCondition
 VARIABLES: ?x ?y
@@ -34,7 +34,7 @@ TYPE_SPECIFICATION:
 	?x Type: drone:Cell
 	?y Type: drone:Cell
 QUERY:
-  ?x drone:avoidCondition drone:?y
+  ?x drone:avoidCondition ?y
 
 
 

@@ -1,0 +1,5 @@
+benchmark,rewriting_generation,planning,horn_translation,horn_planning,
+drone5-5,422.7,0.39,,0.32,
+Drone5-6,458.14,0.81,,0.87,
+Drone5-7,540.89,5.33,,11.83,
+Drone5-8,?,5.99,,78,(no solution)

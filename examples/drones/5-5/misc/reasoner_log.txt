@@ -1,5 +1,8 @@
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 50 to 75
-50 - 75
-25 - 50
+Creating slice from 1300 to 1350
+1300 - 1350
+1275 - 1325
+1250 - 1300
+625 - 675
+0 - 50
