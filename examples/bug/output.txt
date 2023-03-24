@@ -1,0 +1,43 @@
+    (:derived (inconsistent) 
+        (false)
+    )
+
+    (:derived (KBquery_Queen ?x)
+        (or
+
+
+        )
+    )
+
+    (:derived (KBquery_Figure ?x)
+        (or
+
+            (= ?x aa)
+            (= ?x ab)
+            (= ?x ac)
+            (= ?x ad)
+            (= ?x ae)
+            (= ?x ba)
+            (= ?x bb)
+            (= ?x bc)
+            (= ?x bd)
+            (= ?x be)
+            (= ?x ca)
+            (= ?x cb)
+            (= ?x cc)
+            (= ?x cd)
+            (= ?x ce)
+            (= ?x da)
+            (= ?x db)
+            (= ?x dc)
+            (= ?x dd)
+            (= ?x de)
+            (= ?x ea)
+            (= ?x eb)
+            (= ?x ec)
+            (= ?x ed)
+            (= ?x ee)
+
+        )
+    )
+

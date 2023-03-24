@@ -1,4 +1,4 @@
-benchmark,rewriting_generation,planning,horn_translation,horn_planning,plan_length
+benchmark,rewriting_generation,rewriting_planning,horn_translation,horn_planning,plan_length
 drone5-5,366,0.4,,0.32,6
 Drone5-6,458,0.81,,0.87,8
 Drone5-7,540,5.33,,11.83,11
