@@ -171,7 +171,7 @@
         )
     )
 
-    (:derived (KBquery_XveryCloseY ?x ?y)
+    (:derived (KBquery_AvoidCondition ?x ?y)
         (or
 
             (and (= ?y ab) (= ?x aa) (or (and (Drone aa) (Drone ab)) (and (WetDrone ab) (Drone aa)) (and (WetDrone aa) (Drone ab)) (and (WetDrone ab) (WetDrone aa))))
@@ -185,7 +185,7 @@
             (and (= ?y ab) (= ?x ac) (or (and (WetDrone ab) (WetDrone ac)) (and (Drone ac) (Drone ab)) (and (WetDrone ac) (Drone ab)) (and (WetDrone ab) (Drone ac))))
             (and (= ?y ad) (= ?x ac) (or (and (Drone ad) (WetDrone ac)) (and (WetDrone ad) (Drone ac)) (and (WetDrone ad) (WetDrone ac)) (and (Drone ad) (Drone ac))))
             (and (= ?y bb) (= ?x ac) (or (and (Drone bb) (Drone ac)) (and (WetDrone bb) (Drone ac)) (and (Drone bb) (WetDrone ac)) (and (WetDrone bb) (WetDrone ac))))
-            (and (= ?y bc) (= ?x ac) (or (and (WetDrone bc) (Drone ac)) (and (WetDrone bc) (WetDrone ac)) (and (WetDrone ac) (Drone bc)) (and (Drone ac) (Drone bc))))
+            (and (= ?y bc) (= ?x ac) (or (and (WetDrone bc) (Drone ac)) (and (WetDrone bc) (WetDrone ac)) (and (WetDrone ac) (Drone bc)) (and (Drone bc) (Drone ac))))
             (and (= ?y bd) (= ?x ac) (or (and (WetDrone bd) (WetDrone ac)) (and (Drone ac) (Drone bd)) (and (WetDrone bd) (Drone ac)) (and (WetDrone ac) (Drone bd))))
             (and (= ?y ac) (= ?x ad) (or (and (Drone ad) (Drone ac)) (and (WetDrone ad) (Drone ac)) (and (Drone ad) (WetDrone ac)) (and (WetDrone ad) (WetDrone ac))))
             (and (= ?y ae) (= ?x ad) (or (and (Drone ad) (Drone ae)) (and (Drone ad) (WetDrone ae)) (and (WetDrone ad) (Drone ae)) (and (WetDrone ad) (WetDrone ae))))
@@ -268,7 +268,7 @@
             (and (= ?y dc) (= ?x dd) (or (and (Drone dd) (WetDrone dc)) (and (Drone dd) (Drone dc)) (and (WetDrone dd) (WetDrone dc)) (and (Drone dc) (WetDrone dd))))
             (and (= ?y de) (= ?x dd) (or (and (Drone dd) (Drone de)) (and (WetDrone dd) (WetDrone de)) (and (Drone de) (WetDrone dd)) (and (WetDrone de) (Drone dd))))
             (and (= ?y ec) (= ?x dd) (or (and (WetDrone ec) (Drone dd)) (and (WetDrone ec) (WetDrone dd)) (and (Drone ec) (WetDrone dd)) (and (Drone ec) (Drone dd))))
-            (and (= ?y ed) (= ?x dd) (or (and (WetDrone dd) (Drone ed)) (and (Drone dd) (WetDrone ed)) (and (WetDrone dd) (WetDrone ed)) (and (Drone ed) (Drone dd))))
+            (and (= ?y ed) (= ?x dd) (or (and (Drone ed) (WetDrone dd)) (and (Drone dd) (WetDrone ed)) (and (WetDrone dd) (WetDrone ed)) (and (Drone ed) (Drone dd))))
             (and (= ?y cd) (= ?x de) (or (and (WetDrone cd) (Drone de)) (and (Drone de) (Drone cd)) (and (WetDrone de) (Drone cd)) (and (WetDrone de) (WetDrone cd))))
             (and (= ?y ce) (= ?x de) (or (and (WetDrone de) (Drone ce)) (and (WetDrone de) (WetDrone ce)) (and (Drone de) (Drone ce)) (and (WetDrone ce) (Drone de))))
             (and (= ?y dd) (= ?x de) (or (and (Drone dd) (Drone de)) (and (WetDrone dd) (WetDrone de)) (and (Drone de) (WetDrone dd)) (and (WetDrone de) (Drone dd))))
@@ -279,7 +279,7 @@
             (and (= ?y dc) (= ?x eb) (or (and (Drone dc) (Drone eb)) (and (WetDrone dc) (Drone eb)) (and (WetDrone eb) (WetDrone dc)) (and (Drone dc) (WetDrone eb))))
             (and (= ?y ea) (= ?x eb) (or (and (Drone ea) (WetDrone eb)) (and (WetDrone ea) (WetDrone eb)) (and (Drone ea) (Drone eb)) (and (WetDrone ea) (Drone eb))))
             (and (= ?y ec) (= ?x eb) (or (and (Drone ec) (WetDrone eb)) (and (Drone ec) (Drone eb)) (and (WetDrone ec) (Drone eb)) (and (WetDrone ec) (WetDrone eb))))
-            (and (= ?y db) (= ?x ec) (or (and (Drone ec) (WetDrone db)) (and (WetDrone ec) (WetDrone db)) (and (Drone db) (WetDrone ec)) (and (Drone db) (Drone ec))))
+            (and (= ?y db) (= ?x ec) (or (and (Drone db) (Drone ec)) (and (WetDrone ec) (WetDrone db)) (and (Drone db) (WetDrone ec)) (and (Drone ec) (WetDrone db))))
             (and (= ?y dc) (= ?x ec) (or (and (Drone ec) (WetDrone dc)) (and (Drone ec) (Drone dc)) (and (WetDrone ec) (WetDrone dc)) (and (WetDrone ec) (Drone dc))))
             (and (= ?y dd) (= ?x ec) (or (and (WetDrone ec) (WetDrone dd)) (and (Drone ec) (Drone dd)) (and (WetDrone ec) (Drone dd)) (and (Drone ec) (WetDrone dd))))
             (and (= ?y eb) (= ?x ec) (or (and (Drone ec) (WetDrone eb)) (and (Drone ec) (Drone eb)) (and (WetDrone ec) (Drone eb)) (and (WetDrone ec) (WetDrone eb))))

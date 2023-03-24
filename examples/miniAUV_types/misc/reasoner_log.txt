@@ -1,7 +1,13 @@
 Axioms in module: 51
 BLACK_BOX
-Creating slice from 0 to 100
+Creating slice from 0 to 50
 Generating inconsistency dnf
-0 - 100
--1 - 99
--2 - 98
+0 - 50
+-1 - 49
+-2 - 48
+Axioms in module: 51
+BLACK_BOX
+Creating slice from 50 to 100
+50 - 100
+49 - 99
+48 - 98

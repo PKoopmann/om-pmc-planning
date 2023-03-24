@@ -28,7 +28,7 @@ QUERY:
   ?x Type: drone:Drone
   ?x drone:veryClose ?y
 
-HOOK_PREDICATE: KBquery_XveryCloseY
+HOOK_PREDICATE: KBquery_AvoidCondition
 VARIABLES: ?x ?y
 TYPE_SPECIFICATION:
 	?x Type: drone:Cell

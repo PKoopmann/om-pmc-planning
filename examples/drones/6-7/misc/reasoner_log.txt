@@ -1,0 +1,143 @@
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 0 to 50
+Generating inconsistency dnf
+0 - 50
+-36 - 14
+-72 - -22
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 50 to 100
+50 - 100
+14 - 64
+Generating inconsistency dnf
+-22 - 28
+-1318 - -1268
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 100 to 150
+100 - 150
+64 - 114
+28 - 78
+Generating inconsistency dnf
+-1268 - -1218
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 150 to 200
+150 - 200
+114 - 164
+78 - 128
+Generating inconsistency dnf
+-1218 - -1168
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 200 to 250
+200 - 250
+164 - 214
+128 - 178
+Generating inconsistency dnf
+-1168 - -1118
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 250 to 300
+250 - 300
+214 - 264
+178 - 228
+Generating inconsistency dnf
+-1118 - -1068
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 300 to 350
+300 - 350
+264 - 314
+228 - 278
+Generating inconsistency dnf
+-1068 - -1018
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 350 to 400
+350 - 400
+314 - 364
+278 - 328
+Generating inconsistency dnf
+-1018 - -968
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 400 to 450
+400 - 450
+364 - 414
+328 - 378
+Generating inconsistency dnf
+-968 - -918
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 450 to 500
+450 - 500
+414 - 464
+378 - 428
+Generating inconsistency dnf
+-918 - -868
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 500 to 550
+500 - 550
+464 - 514
+428 - 478
+Generating inconsistency dnf
+-868 - -818
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 550 to 600
+550 - 600
+514 - 564
+478 - 528
+Generating inconsistency dnf
+-818 - -768
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 600 to 650
+600 - 650
+564 - 614
+528 - 578
+Generating inconsistency dnf
+-768 - -718
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 650 to 700
+650 - 700
+614 - 664
+578 - 628
+Generating inconsistency dnf
+-718 - -668
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 700 to 750
+700 - 750
+664 - 714
+628 - 678
+Generating inconsistency dnf
+-668 - -618
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 750 to 800
+750 - 800
+714 - 764
+678 - 728
+Generating inconsistency dnf
+-618 - -568
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 800 to 850
+800 - 850
+764 - 814
+728 - 778
+Generating inconsistency dnf
+-568 - -518
+Axioms in module: 306
+BLACK_BOX
+Creating slice from 850 to 900
+850 - 900
+814 - 864
+778 - 828
+Generating inconsistency dnf
+-518 - -468

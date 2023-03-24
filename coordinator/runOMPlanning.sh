@@ -2,7 +2,7 @@
 # author: Tobias John, University of Oslo
 # year: 2023
 
-# usage: ./insertPDDLRewritings.sh FOLDER ONTOLOGY PDDL-DOMAIN PDDL-PROBLEM [TIME-BOUND (in s)]
+# usage: ./runOMPlanning.sh FOLDER ONTOLOGY PDDL-DOMAIN PDDL-PROBLEM [TIME-BOUND (in s)]
 
 
 
@@ -41,6 +41,7 @@ increment=50
 TimeLimit=-1
 if [ "$#" == 5 ]; then
   TimeLimit=$5
+  echo "time limit is set to $5 s"
 fi
 
 
@@ -96,29 +97,14 @@ newSize=0
 
 # call rewriting generator
 TimeStartReasoning="$(date -u +%s.%N)"
+if [ $TimeLimit == -1 ]; then
+  ./computeRewritings.sh "$RewritingGenerator" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" "$ReasonerLog" "$increment"
+  # no timeout
+else
+  # consider timeout
+  timeout "$TimeLimit"s  ./computeRewritings.sh "$RewritingGenerator" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" "$ReasonerLog" "$increment"
 
-while ((lastSize!=newSize))
-do
-
-  #echo $lastSize $newSize $start
-  lastSize=$newSize
-  
-  end=$((start+increment))
-
-  echo "compute hooks $start til $end"
-  # possible options: -Xmx16g (increase RAM limit)
-  if [ $TimeLimit == -1 ]; then
-    # run without time limit
-    java -cp "$RewritingGenerator" de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" $start $end >> "$ReasonerLog"
-  else
-    timeout "$TimeLimit"s java -cp "$RewritingGenerator" de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" $start $end >> "$ReasonerLog"
-  fi
-
-  start=$end
-    
-  newSize=`stat -c%s "$Rewritings"` 
-
-done
+fi
 
 
 TimeEndReasoning="$(date -u +%s.%N)"
