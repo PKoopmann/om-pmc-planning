@@ -18,6 +18,9 @@
 # drones 6-8
 ./runOMPlanning.sh ../examples/drones/6-8 drone6-8.ttl drone.pddl droneProblem6-8.pddl 1000
 
+# queens 5-1
+./runOMPlanning.sh ../examples/queens/5-1 queens5-1.ttl queens.pddl problem5-1.pddl 600
+
 # cats 6
 ./runOMPlanning.sh ../examples/cats/6 cats6.ttl cats.pddl catsProblem6.pddl
 

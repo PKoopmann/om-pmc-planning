@@ -1,0 +1,261 @@
+@prefix : <https://www.ifi.uio.no/tobiajoh/pipes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pipes: <https://www.ifi.uio.no/tobiajoh/pipes#> .
+@base <https://www.ifi.uio.no/tobiajoh/pipes> .
+
+<https://www.ifi.uio.no/tobiajoh/pipes> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#connectedTo
+pipes:connectedTo rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hasObject
+pipes:hasObject rdf:type owl:ObjectProperty ;
+                owl:inverseOf pipes:locatedAt .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hasPicture
+pipes:hasPicture rdf:type owl:ObjectProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#locatedAt
+pipes:locatedAt rdf:type owl:ObjectProperty ;
+                rdfs:range pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#robotAt
+pipes:robotAt rdf:type owl:ObjectProperty ;
+              rdfs:domain pipes:Robot ;
+              rdfs:range pipes:WP .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Covered
+pipes:Covered rdf:type owl:Class ;
+              rdfs:subClassOf pipes:Risk ,
+                              [ rdf:type owl:Class ;
+                                owl:unionOf ( pipes:HighRisk
+                                              pipes:MediumRisk
+                                            )
+                              ] ;
+              rdfs:comment "this waypoint (that has some risk) is covered by the inspections" .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ForbiddenWP
+pipes:ForbiddenWP rdf:type owl:Class ;
+                  rdfs:subClassOf pipes:WP ;
+                  owl:disjointWith [ rdf:type owl:Restriction ;
+                                     owl:onProperty [ owl:inverseOf pipes:robotAt
+                                                    ] ;
+                                     owl:someValuesFrom pipes:Robot
+                                   ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource pipes:ForbiddenWP ;
+   owl:annotatedProperty owl:disjointWith ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:robotAt
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ] ;
+   rdfs:comment "no robot is allowed to be at a WP that is forbidden"
+ ] .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#HighRisk
+pipes:HighRisk rdf:type owl:Class ;
+               rdfs:subClassOf pipes:Risk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#MediumRisk
+pipes:MediumRisk rdf:type owl:Class ;
+                 rdfs:subClassOf pipes:Risk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#MediumRiskPipe
+pipes:MediumRiskPipe rdf:type owl:Class ;
+                     rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Mine
+pipes:Mine rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Pipe
+pipes:Pipe rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ProtectedStructure
+pipes:ProtectedStructure rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Risk
+pipes:Risk rdf:type owl:Class ;
+           rdfs:subClassOf pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Robot
+pipes:Robot rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Rock
+pipes:Rock rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#RustyPipe
+pipes:RustyPipe rdf:type owl:Class ;
+                rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#UnsupportedPipe
+pipes:UnsupportedPipe rdf:type owl:Class ;
+                      rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#WP
+pipes:WP rdf:type owl:Class .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( pipes:HighRisk
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:Covered
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( pipes:MediumRisk
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty pipes:hasObject ;
+                                               owl:someValuesFrom [ owl:intersectionOf ( pipes:Pipe
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty pipes:connectedTo ;
+                                                                                           owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty pipes:locatedAt ;
+                                                                                                                owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                                                                                                                                    ] ;
+                                                                                                                                     owl:someValuesFrom pipes:Robot
+                                                                                                                                   ]
+                                                                                                              ]
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ]
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf pipes:Covered
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget pipes:Covered ;
+  rdfs:comment "a waypoint with medium risk is covered, if the pipe at this waypoint is connected to a pipe at a waypoint with a photo from some AUV"
+] .
+
+
+[ owl:intersectionOf ( pipes:MediumRisk
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:Covered
+] .
+
+
+[ owl:intersectionOf ( pipes:Pipe
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:connectedTo ;
+                         owl:someValuesFrom pipes:RustyPipe
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRiskPipe
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:MediumRiskPipe
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRisk
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:Pipe
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:Rock
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRisk
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( pipes:WP
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty pipes:hasObject ;
+                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( pipes:Mine
+                                                                                  pipes:ProtectedStructure
+                                                                                )
+                                                                  ]
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf pipes:ForbiddenWP
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget pipes:ForbiddenWP ;
+  rdfs:comment "a waypoint where there is a mine is not allowed to be visited"
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                              owl:unionOf ( pipes:RustyPipe
+                                                            pipes:UnsupportedPipe
+                                                          )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:HighRisk
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

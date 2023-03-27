@@ -2,7 +2,7 @@
 # author: Tobias John, University of Oslo
 # year: 2023
 
-# usage: ./computeRewritings.sh FOLDER ONTOLOGY PDDL-DOMAIN PDDL-PROBLEM [TIME-BOUND (in s)]
+# usage: ./computeRewritings.sh FOLDER ONTOLOGY PDDL-DOMAIN PDDL-PROBLEM 
 
 RewritingGenerator=$1
 Fluents=$2
@@ -29,9 +29,9 @@ do
   echo "compute hooks $start til $end"
   # possible options: -Xmx16g (increase RAM limit)
   java -cp "$RewritingGenerator" de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" $start $end >> "$ReasonerLog"
+  #java -cp "$RewritingGenerator" de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" >> "$ReasonerLog"
 
   start=$end
     
   newSize=`stat -c%s "$Rewritings"` 
-
 done

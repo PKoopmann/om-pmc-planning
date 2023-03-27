@@ -1,0 +1,63 @@
+Axioms in module: 115
+BLACK_BOX
+Creating slice from 0 to 100
+Generating inconsistency dnf
+0 - 100
+-25 - 75
+-50 - 50
+-675 - -575
+Axioms in module: 115
+BLACK_BOX
+Creating slice from 100 to 200
+100 - 200
+75 - 175
+50 - 150
+Generating inconsistency dnf
+-575 - -475
+Axioms in module: 115
+BLACK_BOX
+Creating slice from 200 to 300
+200 - 300
+175 - 275
+150 - 250
+Generating inconsistency dnf
+-475 - -375
+Axioms in module: 115
+BLACK_BOX
+Creating slice from 300 to 400
+300 - 400
+275 - 375
+250 - 350
+Generating inconsistency dnf
+-375 - -275
+Axioms in module: 115
+BLACK_BOX
+Creating slice from 400 to 500
+400 - 500
+375 - 475
+350 - 450
+Generating inconsistency dnf
+-275 - -175
+Axioms in module: 115
+BLACK_BOX
+Creating slice from 500 to 600
+500 - 600
+475 - 575
+450 - 550
+Generating inconsistency dnf
+-175 - -75
+Axioms in module: 115
+BLACK_BOX
+Creating slice from 600 to 700
+600 - 700
+575 - 675
+550 - 650
+Generating inconsistency dnf
+-75 - 25
+Axioms in module: 115
+BLACK_BOX
+Creating slice from 700 to 800
+700 - 800
+675 - 775
+650 - 750
+25 - 125
