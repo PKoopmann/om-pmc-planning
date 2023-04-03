@@ -4,4 +4,5 @@ downward-release-22.12.0
 
 logback.xml
 ontology-mediated-pmc-assembly-0.2.jar
-horn_dl_pddl_compiler/*
+horn_dl_pddl_compiler
+coordinator/.~lock.evaluation.csv#

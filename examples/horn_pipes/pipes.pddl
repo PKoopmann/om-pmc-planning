@@ -11,6 +11,7 @@
 		(Mine ?x)
 		(WP ?x)
 		(Pipe ?x)
+		(Rock ?x)
 		(UnsupportedPipe ?x)
 		(Robot ?x)
 		(ProtectedStructure ?x)
@@ -39,4 +40,5 @@
 		(hasPicture ?auv ?wp)
 	  )
 	)
+
 )
