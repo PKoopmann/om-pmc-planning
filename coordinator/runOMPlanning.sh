@@ -131,7 +131,7 @@ fi
 # go through the domain line wise to insert rewritings at correct place
 insertedRW=0
 noLine=0   
-while IFS= read line; do
+while IFS= read -r line || [ -n "$line" ]; do
   if [[ "$line" =~ ':precondition' ]]; then
     echo "        :precondition (and" >> $DomainNew
     echo "            (not (inconsistent))" >> $DomainNew
@@ -173,7 +173,7 @@ if [[ -f "$ProblemNew" ]]; then
 fi
 
 # add (not (inconsistent)) to goal
-while IFS= read line; do
+while IFS= read -r line || [ -n "$line" ]; do
   if [[ "$line" =~ '(:goal' ]]; then
     echo "    (:goal (and" >> $ProblemNew
     echo "        (not (inconsistent))" >> $ProblemNew
