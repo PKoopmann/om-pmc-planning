@@ -1,0 +1,20 @@
+# abstract hook definitions for drone example
+
+PREFIX pipes: <https://www.ifi.uio.no/tobiajoh/pipes#>
+
+
+HOOK_PREDICATE: KBquery_connectedToFailure
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: pipes:WP
+QUERY:
+	?x Type: owl:WPConnectedToFailure
+	
+	
+HOOK_PREDICATE: KBquery_WPTank
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: pipes:WPTank
+QUERY:
+	?x Type: owl:Thing
+

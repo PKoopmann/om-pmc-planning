@@ -1,0 +1,13 @@
+Axioms in module: 341
+BLACK_BOX
+Creating slice from 0 to 100
+Generating inconsistency dnf
+0 - 100
+-49 - 51
+-58 - 42
+Axioms in module: 341
+BLACK_BOX
+Creating slice from 100 to 200
+100 - 200
+51 - 151
+42 - 142

@@ -1,0 +1,13 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0/builds/release/bin/translate/translate.py ../examples/pipes/pipes2/misc/generated_pipes.pddl ../examples/pipes/pipes2/misc/generated_pipesProblem7-7.pddl --sas-file ../examples/pipes/pipes2/misc/output.sas
+Parsing...
+translate exit code: 30
+
+Driver aborting after translate
+INFO     Planner time: 0.03s
