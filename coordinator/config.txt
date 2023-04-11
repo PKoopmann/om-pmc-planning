@@ -1,6 +1,6 @@
  # configuration to run the the domain rewriter
  
 RewritingGenerator=../implementation/target/scala-2.12/ontology-mediated-pmc-assembly-0.2.jar
-Planner=../downward-release-22.12.0/fast-downward.py
+Planner=../downward-release-22.12.0-patched/fast-downward.py
 
  

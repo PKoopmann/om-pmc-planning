@@ -8,7 +8,7 @@ VARIABLES: ?x
 TYPE_SPECIFICATION:
 	?x Type: pipes:WP
 QUERY:
-	?x Type: owl:WPConnectedToFailure
+	?x Type: pipes:WPConnectedToFailure
 	
 	
 HOOK_PREDICATE: KBquery_WPTank

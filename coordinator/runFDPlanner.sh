@@ -60,7 +60,7 @@ TimeStartPlanning="$(date -u +%s.%N)"
 
 if [ $TimeLimit == -1 ]; then
   # run without time limit
-  $Planner --plan-file $Plan --sas-file $PlannerSAS $Domain $Problem --search "astar(blind())"  > "$PlannerLog"
+  $Planner --plan-file $Plan --sas-file $PlannerSAS $Domain $Problem --search "astar(blind())"  #> "$PlannerLog"
 else
   $Planner --overall-time-limit "$TimeLimit"s --plan-file $Plan --sas-file $PlannerSAS $Domain $Problem --search "astar(blind())"  > "$PlannerLog"
 fi

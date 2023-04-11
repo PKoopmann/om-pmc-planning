@@ -58,21 +58,10 @@ OBJECT valve valveEA -> pipes:valveEA
 OBJECT valve valveEC -> pipes:valveEC
 OBJECT valve valveEE -> pipes:valveEE
 OBJECT valve valveGD -> pipes:valveGD
-#OBJECT pipe pipeBA  -> pipes:pipeBA
-#OBJECT pipe pipeBB  -> pipes:pipeBB
-#OBJECT pipe pipeCB  -> pipes:pipeCB
-#OBJECT pipe pipeDB  -> pipes:pipeDB
-#OBJECT pipe pipeEB  -> pipes:pipeEB
-#OBJECT pipe pipeED  -> pipes:pipeED
-#OBJECT pipe pipeFD  -> pipes:pipeFD
-#OBJECT tank tankFA  -> pipes:tankFA
-#tankFC
-#tankFE
-#tankLarge
 
 
 PREDICATE robotAt(robot, wp)	-> pipes:robotAt
-PREDICATE hasPicture(robot, wp)			-> pipes:hasPicture
+PREDICATE hasPicture(robot, wp)	-> pipes:hasPicture
 PREDICATE open(valve)   -> pipes:OpenValve
 
 

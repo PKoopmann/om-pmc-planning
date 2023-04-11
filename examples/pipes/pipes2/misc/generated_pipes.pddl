@@ -26,6 +26,27 @@
     (:derived (KBquery_connectedToFailure ?x)
         (or
 
+            (and (= ?x ae) (open valveBD))
+            (and (= ?x af) (open valveBD))
+            (and (= ?x ba) (robotAt auv ba))
+            (= ?x bb)
+            (= ?x bd)
+            (and (= ?x be) (open valveBD))
+            (and (= ?x bf) (open valveBD))
+            (= ?x cb)
+            (and (= ?x ce) (open valveBD))
+            (and (= ?x cf) (open valveBD))
+            (= ?x db)
+            (= ?x ea)
+            (= ?x eb)
+            (= ?x ec)
+            (and (= ?x ed) (open valveEC))
+            (and (= ?x ee) (open valveEC))
+            (and (= ?x fa) (open valveEA))
+            (and (= ?x fc) (open valveEC))
+            (and (= ?x fd) (open valveEC))
+            (and (= ?x fe) (and (open valveEE) (open valveEC)))
+            (and (= ?x gd) (open valveEC))
 
         )
     )
@@ -75,12 +96,14 @@
 	)
 
 	(:action closeValve
-		:parameters (?auv ?wp ?valve)
+		:parameters (?auv ?valve)
         :precondition (and
             (not (inconsistent))
             (and 
-			(robotAt ?auv ?wp)
-			(locatedAt ?valve ?wp)
+			(exists (?wp) ( and
+				(robotAt ?auv ?wp)
+				(locatedAt ?valve ?wp)
+			))
 			(open ?valve)
 		)
         )

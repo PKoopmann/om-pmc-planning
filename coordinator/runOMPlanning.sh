@@ -189,6 +189,7 @@ done < "$Problem"
 echo ")" >> $ProblemNew # add closing bracket for goal
 
 echo "created new domain"
+echo "start planning"
 
 # call planner
 TimeStartPlanning="$(date -u +%s.%N)"
@@ -203,7 +204,7 @@ fi
 TimeEndPlanning="$(date -u +%s.%N)"
 DurationPlanning="$(bc <<<"$TimeEndPlanning-$TimeStartPlanning")"
 
-echo "called planner"
+echo "finished planning"
 
 
 

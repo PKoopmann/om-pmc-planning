@@ -8,9 +8,52 @@
 		(robotAt ?auv ?wp)
 		(open ?v)
 		(locatedAt ?x ?wp)
-		(KBquery_WPTank ?wp)
-		(KBquery_connectedToFailure ?wp)
+		(WPTank ?wp)
+		(WPConnectedToFailure ?wp)
+		(Rock ?x)
+		(MediumRiskPipe ?x)
+		(Mine ?x)
+		(Pipe ?x)
+		(ProtectedStructure ?x)
+		(Robot ?x)
+		(RustyPipe ?x)
+		(UnsupportedPipe ?x)
+		(pipefailure ?x)
+		(ClosedValve ?x)
+		(Tank ?x)
+		(Dummy ?x)
+		(Valve ?x)
+		(WP ?x)
+		(Wall ?x)
+		(connectedTo ?x ?y)
+		(OpenValve ?x)
+		(flowconnectedto ?x ?y)
 	)
+
+	; manual tranlation of SWRL-rule
+	(:derived (flowconnectedto ?x ?z)
+		(or
+			(connectedTo ?x ?z)
+			(connectedTo ?z ?x)
+			(exists (?y) 
+				(and
+					(OpenValve ?y)
+					(flowconnectedto ?x ?y)
+					(flowconnectedto ?y ?z)
+				)
+			)
+			(exists (?y) 
+				(and
+					(Pipe ?y)
+					(flowconnectedto ?x ?y)
+					(flowconnectedto ?y ?z)
+				)
+			)
+		)
+		
+	)
+
+
 
 	(:action Move
 	  :parameters (?auv ?wpA ?wpB)
@@ -41,10 +84,10 @@
 				(robotAt ?auv ?wp)
 				(locatedAt ?valve ?wp)
 			))
-			(open ?valve)
+			(OpenValve ?valve)
 		)
 		:effect (and 
-			(not (open ?valve))
+			(not (OpenValve ?valve))
 		)
 	)
 	

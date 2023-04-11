@@ -24,5 +24,8 @@
 # cats 6
 ./runOMPlanning.sh ../examples/cats/6 cats6.ttl cats.pddl catsProblem6.pddl
 
-# pipes 7-7
+# pipes1 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl
+
+# pipes2 7-7
+./runOMPlanning.sh ../examples/pipes/pipes2 pipes.ttl pipes.pddl pipesProblem7-7.pddl
