@@ -31,7 +31,7 @@ DomainNew="$MiscFolder"/generated_$3
 Problem="$DomainFolder"/$4
 ProblemNew="$MiscFolder"/generated_$4
 
-Plan="$DomainFolder"/plan.txt
+Plan="$DomainFolder"/${4%".pddl"}.plan.txt
 PlannerLog="$MiscFolder"/planner_log.txt
 PlannerSAS="$MiscFolder"/output.sas
 
@@ -41,7 +41,7 @@ increment=100
 TimeLimit=-1
 if [ "$#" == 5 ]; then
   TimeLimit=$5
-  echo "time limit is set to $5 s"
+  echo "time limit is set to ${5}s"
 fi
 
 
@@ -103,22 +103,19 @@ if [ $TimeLimit == -1 ]; then
 else
   # consider timeout
   timeout "$TimeLimit"s  ./computeRewritings.sh "$RewritingGenerator" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" "$ReasonerLog" "$increment"
-
+  if [ $? -eq 124 ]
+  then
+    echo "timeout for rewriting generator after $TimeLimit seconds"
+    echo "reasoning time: >{$TimeLimit}s"
+    echo "planning time: -"
+    echo "total time: -"
+    exit 1
+  fi
 fi
 
 
 TimeEndReasoning="$(date -u +%s.%N)"
 DurationReasoning="$(bc <<<"$TimeEndReasoning-$TimeStartReasoning")"
-
-if [ -s "$Rewritings" ]; then
-  echo "generated rewritings"
-else
-  # no rewritings were created
-  echo "timeout for rewriting generator after $TimeLimit seconds"
-  echo "exit script"
-  exit 1
-fi
-
 
 
 
@@ -194,12 +191,22 @@ echo "start planning"
 # call planner
 TimeStartPlanning="$(date -u +%s.%N)"
 
+
 if [ $TimeLimit == -1 ]; then
   # run without time limit
   $Planner --plan-file $Plan --sas-file $PlannerSAS $DomainNew $ProblemNew --search "astar(blind())"  > "$PlannerLog"
 else
-  $Planner --overall-time-limit "$TimeLimit"s --plan-file $Plan --sas-file $PlannerSAS $DomainNew $ProblemNew --search "astar(blind())"  > "$PlannerLog"
+  timeout "$TimeLimit"s $Planner --plan-file $Plan --sas-file $PlannerSAS $DomainNew $ProblemNew --search "astar(blind())"  > "$PlannerLog"
+  if [ $? -eq 124 ]
+  then
+    echo "timeout for rewriting generator after $TimeLimit seconds"
+    echo "reasoning time: ${DurationReasoning}s"
+    echo "planning time: >${TimeLimit}s"
+    echo "total time: -"
+    exit 1
+  fi
 fi
+
 
 TimeEndPlanning="$(date -u +%s.%N)"
 DurationPlanning="$(bc <<<"$TimeEndPlanning-$TimeStartPlanning")"

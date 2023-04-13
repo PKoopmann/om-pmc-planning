@@ -3,7 +3,7 @@
 - add some general information… 
 
 ## Requirements
-- We use the [Fast Downward planner](https://www.fast-downward.org/HomePage) to solve the planning problems. See also the [dependencies](https://www.fast-downward.org/ObtainingAndRunningFastDownward) of this planner. Obtain the planner by downloading the code from [github](https://github.com/aibasel/downward/). We tested our system with the release version 22.12 that we needed to slightly modify and can be obtained [here](https://github.com/remaro-network/downward/tree/release_22_12_0). Extract all the files and put them in a folder in the same folder as this readme and build the planner by running `./build.py`. If you choose a different release version or change the name of the folder, you need to provide the correct path to the `fast-downward.py` script in `Coordinator/config.txt`.
+- We use the [Fast Downward planner](https://www.fast-downward.org/HomePage) to solve the planning problems. See also the [dependencies](https://www.fast-downward.org/ObtainingAndRunningFastDownward) of this planner. Obtain the planner by downloading the code from [github](https://github.com/aibasel/downward/). We tested our system with the release version 22.12 that we needed to slightly modify and can be obtained via [this fork](https://github.com/remaro-network/downward/tree/release_22_12_0). Download all the files and put them in a folder `downward-release-22.12.0-patched` in the same folder as this readme and build the planner by running `./build.py`. If you change the name of the folder or use a different location, you need to provide the correct path to the `fast-downward.py` script in `Coordinator/config.txt`.
 - some JRE (version?)
 
 ## Structure

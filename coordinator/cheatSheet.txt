@@ -24,8 +24,33 @@
 # cats 6
 ./runOMPlanning.sh ../examples/cats/6 cats6.ttl cats.pddl catsProblem6.pddl
 
+# elevator 15
+./runOMPlanning.sh ../examples/elevator/elevator15 elevator15.ttl elevator.pddl elevatorProblem15.pddl
+
+# elevator modified 15
+./runOMPlanning.sh ../examples/elevator/elevator15_mod elevator15.ttl elevator.pddl elevatorProblem15.pddl
+
 # pipes1 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl
-
 # pipes2 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes2 pipes.ttl pipes.pddl pipesProblem7-7.pddl
+
+
+
+
+
+
+
+##############################################################################
+
+# Horn planning
+
+##############################################################################
+
+# elevator 15
+./runHornPlanning.sh ../examples/horn_dl_benchmarks/elevator/original TTL.owl domain.pddl elevatorProblem15.pddl
+
+# pipes1 7-7
+./runHornPlanning.sh ../examples/horn_pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl
+
+

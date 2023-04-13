@@ -3,17 +3,17 @@
 
 
 	(:predicates 
-    (false)
-    (true)
-    (inconsistent)
+        (false)
+        (true)
+        (inconsistent)
 		(nextTo ?wpA ?wpB)
 		(hasPicture ?auv ?wp)
 		(robotAt ?auv ?wp)
 		(open ?v)
 		(locatedAt ?x ?wp)
-		(KBquery_WPTank ?wp)
-		(KBquery_connectedToFailure ?wp)
-	)
+		(WPTank ?wp)
+		(connectedToFailure ?wp)
+    )
 
     (:derived (true)
         (not (false))
@@ -23,12 +23,12 @@
         (or (robotAt auv ae) (robotAt auv cc) (robotAt auv cf) (robotAt auv fc) (robotAt auv af) (robotAt auv ac) (robotAt auv be) (robotAt auv fe) (robotAt auv fa) (robotAt auv dc) (robotAt auv bf) (robotAt auv bc) (robotAt auv ce))
     )
 
-    (:derived (KBquery_connectedToFailure ?x)
+    (:derived (connectedToFailure ?x)
         (or
 
             (and (= ?x ae) (open valveBD))
             (and (= ?x af) (open valveBD))
-            (and (= ?x ba) (robotAt auv ba))
+            (= ?x ba) 
             (= ?x bb)
             (= ?x bd)
             (and (= ?x be) (open valveBD))
@@ -37,7 +37,7 @@
             (and (= ?x ce) (open valveBD))
             (and (= ?x cf) (open valveBD))
             (= ?x db)
-            (and (= ?x ea) (or (robotAt auv ea) (open valveEA)))
+            (= ?x ea)
             (= ?x eb)
             (= ?x ec)
             (and (= ?x ed) (open valveEC))
@@ -51,7 +51,7 @@
         )
     )
 
-    (:derived (KBquery_WPTank ?x)
+    (:derived (WPTank ?x)
         (or
 
             (= ?x ae)
@@ -72,9 +72,9 @@
         :precondition (and
             (not (inconsistent))
             (and 
-	    (or (nextTo ?wpA ?wpB) (nextTo ?wpB ?wpA))
-		(robotAt ?auv ?wpA)
-	  )
+                (or (nextTo ?wpA ?wpB) (nextTo ?wpB ?wpA))
+                (robotAt ?auv ?wpA)
+	        )
         )
 	  :effect (and
 	    (not (robotAt ?auv ?wpA))
@@ -87,8 +87,8 @@
         :precondition (and
             (not (inconsistent))
             (and 
-		(robotAt ?auv ?wp)
-	  )
+		        (robotAt ?auv ?wp)
+	        )
         )
 	  :effect (and 
 		(hasPicture ?auv ?wp)
@@ -100,12 +100,12 @@
         :precondition (and
             (not (inconsistent))
             (and 
-			(exists (?wp) ( and
-				(robotAt ?auv ?wp)
-				(locatedAt ?valve ?wp)
-			))
-			(open ?valve)
-		)
+                (exists (?wp) ( and
+                    (robotAt ?auv ?wp)
+                    (locatedAt ?valve ?wp)
+                ))
+                (open ?valve)
+		    )
         )
 		:effect (and 
 			(not (open ?valve))

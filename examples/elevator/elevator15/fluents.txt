@@ -1,0 +1,32 @@
+# fluent definitions for drone example
+
+PREFIX elevator: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+OBJECT thing a	-> elevator:a
+OBJECT thing b	-> elevator:b 
+OBJECT thing c	-> elevator:c 
+OBJECT thing d 	-> elevator:d 
+OBJECT thing e 	-> elevator:e 
+OBJECT thing f 	-> elevator:f 
+OBJECT thing g 	-> elevator:g 
+OBJECT thing h 	-> elevator:h 
+OBJECT thing i	-> elevator:i 
+OBJECT thing j	-> elevator:j 
+OBJECT thing k 	-> elevator:k 
+OBJECT thing l	-> elevator:l
+
+OBJECT thing pass_n	-> elevator:pass_n
+OBJECT thing pass_e	-> elevator:pass_e
+OBJECT thing pass_g	-> elevator:pass_g
+OBJECT thing pass_c	-> elevator:pass_c
+OBJECT thing pass_m	-> elevator:pass_m
+OBJECT thing pass_o	-> elevator:pass_o
+
+
+
+PREDICATE lift_at(thing)	-> elevator:lift_at
+PREDICATE boarded(thing)	-> elevator:boarded
+PREDICATE served(thing)	    -> elevator:served
+
+
+
