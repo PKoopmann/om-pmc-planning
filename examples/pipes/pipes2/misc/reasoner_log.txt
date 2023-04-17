@@ -3,7 +3,140 @@ BLACK_BOX
 Creating slice from 0 to 100
 Generating inconsistency dnf
 0 - 100
+Generate DNF for axiom: WPConnectedToFailure(aa)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(ab)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(ac)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(ad)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(ae)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(af)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(ag)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(bc)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(be)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(bf)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(bg)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(ca)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(cc)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(cd)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(ce)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(cf)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(cg)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(da)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(dc)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(dd)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(de)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(df)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(dg)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(ed)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(ee)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(ef)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(eg)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(fa)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(fb)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(fc)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(fd)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(fe)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(ff)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(fg)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(ga)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(gb)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(gc)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(gd)
+1 explanation found
+Generate DNF for axiom: WPConnectedToFailure(ge)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(gf)
+no explanation found
+Generate DNF for axiom: WPConnectedToFailure(gg)
+no explanation found
 -49 - 51
+Generate DNF for axiom: ⊤(ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(fe)
+entailed in static ontology
+1 explanation found
 -58 - 42
 Axioms in module: 341
 BLACK_BOX

@@ -1,0 +1,14 @@
+    (:derived (inconsistent) 
+        (robotAt auv cf)
+    )
+
+    (:derived (KBquery_connectedToFailure ?x)
+        (or
+
+            (= ?x ba)
+            (= ?x bb)
+            (= ?x cb)
+
+        )
+    )
+

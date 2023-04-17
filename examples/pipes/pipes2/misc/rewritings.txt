@@ -7,7 +7,7 @@
 
             (and (= ?x ae) (open valveBD))
             (and (= ?x af) (open valveBD))
-            (and (= ?x ba) (robotAt auv ba))
+            (= ?x ba)
             (= ?x bb)
             (= ?x bd)
             (and (= ?x be) (open valveBD))
@@ -16,7 +16,7 @@
             (and (= ?x ce) (open valveBD))
             (and (= ?x cf) (open valveBD))
             (= ?x db)
-            (and (= ?x ea) (or (robotAt auv ea) (open valveEA)))
+            (= ?x ea)
             (= ?x eb)
             (= ?x ec)
             (and (= ?x ed) (open valveEC))

@@ -20,49 +20,15 @@
     )
 
     (:derived (inconsistent) 
-        (or (robotAt auv ae) (robotAt auv cc) (robotAt auv cf) (robotAt auv fc) (robotAt auv af) (robotAt auv ac) (robotAt auv be) (robotAt auv fe) (robotAt auv fa) (robotAt auv dc) (robotAt auv bf) (robotAt auv bc) (robotAt auv ce))
+        (robotAt auv cf)
     )
 
     (:derived (KBquery_connectedToFailure ?x)
         (or
 
-            (and (= ?x ae) (open valveBD))
-            (and (= ?x af) (open valveBD))
             (= ?x ba)
             (= ?x bb)
-            (= ?x bd)
-            (and (= ?x be) (open valveBD))
-            (and (= ?x bf) (open valveBD))
             (= ?x cb)
-            (and (= ?x ce) (open valveBD))
-            (and (= ?x cf) (open valveBD))
-            (= ?x db)
-            (= ?x ea)
-            (= ?x eb)
-            (= ?x ec)
-            (and (= ?x ed) (open valveEC))
-            (and (= ?x ee) (open valveEC))
-            (and (= ?x fa) (open valveEA))
-            (and (= ?x fc) (open valveEC))
-            (and (= ?x fd) (open valveEC))
-            (and (= ?x fe) (and (open valveEE) (open valveEC)))
-            (and (= ?x gd) (open valveEC))
-
-        )
-    )
-
-    (:derived (KBquery_WPTank ?x)
-        (or
-
-            (= ?x ae)
-            (= ?x af)
-            (= ?x be)
-            (= ?x bf)
-            (= ?x ce)
-            (= ?x cf)
-            (= ?x fa)
-            (= ?x fc)
-            (= ?x fe)
 
         )
     )

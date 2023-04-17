@@ -3,7 +3,47 @@ BLACK_BOX
 Creating slice from 0 to 100
 Generating inconsistency dnf
 0 - 100
+Generate DNF for axiom: ⊤(cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(cg)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(gb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: ⊤(gc)
+entailed in static ontology
+1 explanation found
 -8 - 92
+Generate DNF for axiom: Covered(cc)
+1 explanation found
+Generate DNF for axiom: Covered(cd)
+3 explanations found
+Generate DNF for axiom: Covered(cg)
+1 explanation found
+Generate DNF for axiom: Covered(de)
+4 explanations found
+Generate DNF for axiom: Covered(fc)
+3 explanations found
+Generate DNF for axiom: Covered(fd)
+3 explanations found
+Generate DNF for axiom: Covered(gb)
+2 explanations found
+Generate DNF for axiom: Covered(gc)
+1 explanation found
 -16 - 84
 Axioms in module: 303
 BLACK_BOX

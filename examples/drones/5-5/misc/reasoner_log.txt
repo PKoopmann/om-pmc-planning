@@ -3,7 +3,113 @@ BLACK_BOX
 Creating slice from 0 to 50
 Generating inconsistency dnf
 0 - 50
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: Drone(ee)
+no explanation found
 -25 - 25
+Generate DNF for axiom: Objectx(aa)
+2 explanations found
+Generate DNF for axiom: Objectx(ab)
+2 explanations found
+Generate DNF for axiom: Objectx(ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Objectx(ad)
+2 explanations found
+Generate DNF for axiom: Objectx(ae)
+2 explanations found
+Generate DNF for axiom: Objectx(ba)
+2 explanations found
+Generate DNF for axiom: Objectx(bb)
+2 explanations found
+Generate DNF for axiom: Objectx(bc)
+2 explanations found
+Generate DNF for axiom: Objectx(bd)
+2 explanations found
+Generate DNF for axiom: Objectx(be)
+2 explanations found
+Generate DNF for axiom: Objectx(ca)
+2 explanations found
+Generate DNF for axiom: Objectx(cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Objectx(cc)
+2 explanations found
+Generate DNF for axiom: Objectx(cd)
+2 explanations found
+Generate DNF for axiom: Objectx(ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Objectx(da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Objectx(db)
+2 explanations found
+Generate DNF for axiom: Objectx(dc)
+2 explanations found
+Generate DNF for axiom: Objectx(dd)
+2 explanations found
+Generate DNF for axiom: Objectx(de)
+2 explanations found
+Generate DNF for axiom: Objectx(ea)
+2 explanations found
+Generate DNF for axiom: Objectx(eb)
+2 explanations found
+Generate DNF for axiom: Objectx(ec)
+2 explanations found
+Generate DNF for axiom: Objectx(ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Objectx(ee)
+entailed in static ontology
+1 explanation found
 -50 - 0
 Axioms in module: 219
 BLACK_BOX
@@ -12,6 +118,211 @@ Creating slice from 50 to 100
 25 - 75
 0 - 50
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, aa)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ac)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ad)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ae)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, bb)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, bc)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, bd)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, be)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ca)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, cb)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, cc)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, cd)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ce)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, da)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, db)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, dc)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, dd)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, de)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ea)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, eb)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ec)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ed)
+no explanation found
+Generate DNF for axiom: Drone(aa)
+2 explanations found
+Generate DNF for axiom: veryClose(aa, ee)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ab)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ad)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ae)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ba)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, bc)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, bd)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, be)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ca)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, cb)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, cc)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, cd)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ce)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, da)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, db)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, dc)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, dd)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, de)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ea)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, eb)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ec)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ed)
+no explanation found
+Generate DNF for axiom: Drone(ab)
+2 explanations found
+Generate DNF for axiom: veryClose(ab, ee)
+no explanation found
 -625 - -575
 Axioms in module: 219
 BLACK_BOX
@@ -20,6 +331,212 @@ Creating slice from 100 to 150
 75 - 125
 50 - 100
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, aa)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ac)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ae)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ba)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, bb)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, bd)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, be)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ca)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, cb)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, cc)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, cd)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ce)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, da)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, db)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, dc)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, dd)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, de)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ea)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, eb)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ec)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ed)
+no explanation found
+Generate DNF for axiom: Drone(ac)
+2 explanations found
+Generate DNF for axiom: veryClose(ac, ee)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, aa)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ab)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ad)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ba)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, bb)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, bc)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, be)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ca)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, cb)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, cc)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, cd)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ce)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, da)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, db)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, dc)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, dd)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, de)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ea)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, eb)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ec)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ed)
+no explanation found
+Generate DNF for axiom: Drone(ad)
+2 explanations found
+Generate DNF for axiom: veryClose(ad, ee)
+no explanation found
 -575 - -525
 Axioms in module: 219
 BLACK_BOX
@@ -28,6 +545,211 @@ Creating slice from 150 to 200
 125 - 175
 100 - 150
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, aa)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ab)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ac)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ae)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ba)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, bb)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, bc)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, bd)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ca)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, cb)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, cc)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, cd)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ce)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, da)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, db)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, dc)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, dd)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, de)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ea)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, eb)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ec)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ed)
+no explanation found
+Generate DNF for axiom: Drone(ae)
+2 explanations found
+Generate DNF for axiom: veryClose(ae, ee)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ab)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ac)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ad)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ae)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ba)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, bc)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, bd)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, be)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, cb)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, cc)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, cd)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ce)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, da)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, db)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, dc)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, dd)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, de)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ea)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, eb)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ec)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ed)
+no explanation found
+Generate DNF for axiom: Drone(ba)
+2 explanations found
+Generate DNF for axiom: veryClose(ba, ee)
+no explanation found
 -525 - -475
 Axioms in module: 219
 BLACK_BOX
@@ -36,6 +758,214 @@ Creating slice from 200 to 250
 175 - 225
 150 - 200
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, aa)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ac)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ad)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ae)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, bb)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, bd)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, be)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ca)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, cc)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, cd)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ce)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, da)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, db)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, dc)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, dd)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, de)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ea)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, eb)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ec)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ed)
+no explanation found
+Generate DNF for axiom: Drone(bb)
+2 explanations found
+Generate DNF for axiom: veryClose(bb, ee)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, aa)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ab)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ad)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ae)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ba)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, bc)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, be)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ca)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, cb)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, cd)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ce)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, da)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, db)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, dc)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, dd)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, de)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ea)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, eb)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ec)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ed)
+no explanation found
+Generate DNF for axiom: Drone(bc)
+2 explanations found
+Generate DNF for axiom: veryClose(bc, ee)
+no explanation found
 -475 - -425
 Axioms in module: 219
 BLACK_BOX
@@ -44,6 +974,213 @@ Creating slice from 250 to 300
 225 - 275
 200 - 250
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, aa)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ab)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ac)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ae)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ba)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, bb)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, bd)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ca)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, cb)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, cc)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ce)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, da)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, db)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, dc)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, dd)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, de)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ea)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, eb)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ec)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ed)
+no explanation found
+Generate DNF for axiom: Drone(bd)
+2 explanations found
+Generate DNF for axiom: veryClose(bd, ee)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, aa)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ab)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ac)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ad)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ba)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, bb)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, bc)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, be)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ca)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, cb)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, cc)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, cd)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, da)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, db)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, dc)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, dd)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, de)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ea)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, eb)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ec)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ed)
+no explanation found
+Generate DNF for axiom: Drone(be)
+2 explanations found
+Generate DNF for axiom: veryClose(be, ee)
+no explanation found
 -425 - -375
 Axioms in module: 219
 BLACK_BOX
@@ -52,6 +1189,213 @@ Creating slice from 300 to 350
 275 - 325
 250 - 300
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, aa)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ab)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ac)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ad)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ae)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, bb)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, bc)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, bd)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, be)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ca)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, cc)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, cd)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ce)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, db)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, dc)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, dd)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, de)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ea)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, eb)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ec)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ed)
+no explanation found
+Generate DNF for axiom: Drone(ca)
+2 explanations found
+Generate DNF for axiom: veryClose(ca, ee)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, aa)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ab)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ac)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ad)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ae)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ba)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, bc)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, bd)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, be)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, cb)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, cd)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ce)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, da)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, dc)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, dd)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, de)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ea)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, eb)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ec)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ed)
+no explanation found
+Generate DNF for axiom: Drone(cb)
+no explanation found
+Generate DNF for axiom: veryClose(cb, ee)
+no explanation found
 -375 - -325
 Axioms in module: 219
 BLACK_BOX
@@ -60,6 +1404,214 @@ Creating slice from 350 to 400
 325 - 375
 300 - 350
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, aa)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ab)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ac)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ad)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ae)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ba)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, bb)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, bd)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, be)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ca)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, cc)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ce)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, da)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, db)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, dd)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, de)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ea)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, eb)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ec)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ed)
+no explanation found
+Generate DNF for axiom: Drone(cc)
+2 explanations found
+Generate DNF for axiom: veryClose(cc, ee)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, aa)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ab)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ac)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ad)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ae)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ba)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, bb)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, bc)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, be)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ca)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, cb)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, cd)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, da)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, db)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, dc)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, de)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ea)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, eb)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ec)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ed)
+no explanation found
+Generate DNF for axiom: Drone(cd)
+2 explanations found
+Generate DNF for axiom: veryClose(cd, ee)
+no explanation found
 -325 - -275
 Axioms in module: 219
 BLACK_BOX
@@ -68,6 +1620,212 @@ Creating slice from 400 to 450
 375 - 425
 350 - 400
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, aa)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ab)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ac)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ad)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ae)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ba)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, bb)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, bc)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, bd)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ca)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, cb)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, cc)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ce)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, da)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, db)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, dc)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, dd)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ea)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, eb)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ec)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ed)
+no explanation found
+Generate DNF for axiom: Drone(ce)
+2 explanations found
+Generate DNF for axiom: veryClose(ce, ee)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, aa)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ab)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ac)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ad)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ae)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ba)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, bb)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, bc)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, bd)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, be)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, cb)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, cc)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, cd)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ce)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, da)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, dc)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, dd)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, de)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, eb)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ec)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ed)
+no explanation found
+Generate DNF for axiom: Drone(da)
+no explanation found
+Generate DNF for axiom: veryClose(da, ee)
+no explanation found
 -275 - -225
 Axioms in module: 219
 BLACK_BOX
@@ -76,6 +1834,214 @@ Creating slice from 450 to 500
 425 - 475
 400 - 450
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, aa)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ab)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ac)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ad)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ae)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ba)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, bb)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, bc)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, bd)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, be)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ca)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, cc)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, cd)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ce)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, db)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, dd)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, de)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ea)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ec)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ed)
+no explanation found
+Generate DNF for axiom: Drone(db)
+2 explanations found
+Generate DNF for axiom: veryClose(db, ee)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, aa)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ab)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ac)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ad)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ae)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ba)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, bb)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, bc)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, bd)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, be)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ca)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, cb)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, cd)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ce)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, da)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, dc)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, de)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ea)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, eb)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ed)
+no explanation found
+Generate DNF for axiom: Drone(dc)
+2 explanations found
+Generate DNF for axiom: veryClose(dc, ee)
+no explanation found
 -225 - -175
 Axioms in module: 219
 BLACK_BOX
@@ -84,6 +2050,213 @@ Creating slice from 500 to 550
 475 - 525
 450 - 500
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, aa)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ab)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ac)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ad)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ae)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ba)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, bb)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, bc)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, bd)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, be)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ca)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, cb)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, cc)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ce)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, da)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, db)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, dd)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ea)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, eb)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ec)
+no explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(dd)
+2 explanations found
+Generate DNF for axiom: veryClose(dd, ee)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, aa)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ab)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ac)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ad)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ae)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ba)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, bb)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, bc)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, bd)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, be)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ca)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, cb)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, cc)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, cd)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, da)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, db)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, dc)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, de)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ea)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, eb)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ec)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ed)
+no explanation found
+Generate DNF for axiom: Drone(de)
+2 explanations found
+Generate DNF for axiom: veryClose(de, ee)
+entailed in static ontology
+1 explanation found
 -175 - -125
 Axioms in module: 219
 BLACK_BOX
@@ -92,6 +2265,211 @@ Creating slice from 550 to 600
 525 - 575
 500 - 550
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, aa)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ab)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ac)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ad)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ae)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ba)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, bb)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, bc)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, bd)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, be)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ca)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, cb)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, cc)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, cd)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ce)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, db)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, dc)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, dd)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, de)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ea)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ec)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ed)
+no explanation found
+Generate DNF for axiom: Drone(ea)
+2 explanations found
+Generate DNF for axiom: veryClose(ea, ee)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, aa)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ab)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ac)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ad)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ae)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ba)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, bb)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, bc)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, bd)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, be)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ca)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, cb)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, cc)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, cd)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ce)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, da)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, dc)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, dd)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, de)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, eb)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ed)
+no explanation found
+Generate DNF for axiom: Drone(eb)
+2 explanations found
+Generate DNF for axiom: veryClose(eb, ee)
+no explanation found
 -125 - -75
 Axioms in module: 219
 BLACK_BOX
@@ -100,6 +2478,212 @@ Creating slice from 600 to 650
 575 - 625
 550 - 600
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, aa)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ab)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ac)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ad)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ae)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ba)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, bb)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, bc)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, bd)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, be)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ca)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, cb)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, cc)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, cd)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ce)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, da)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, db)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, dd)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, de)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ea)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ec)
+no explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ec)
+2 explanations found
+Generate DNF for axiom: veryClose(ec, ee)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, aa)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ab)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ac)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ad)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ae)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ba)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, bb)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, bc)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, bd)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, be)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ca)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, cb)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, cc)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, cd)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ce)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, da)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, db)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, dc)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, de)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ea)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, eb)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ed)
+no explanation found
+Generate DNF for axiom: Drone(ed)
+2 explanations found
+Generate DNF for axiom: veryClose(ed, ee)
+entailed in static ontology
+1 explanation found
 -75 - -25
 Axioms in module: 219
 BLACK_BOX
@@ -108,7 +2692,159 @@ Creating slice from 650 to 700
 625 - 675
 600 - 650
 Generating inconsistency dnf
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, aa)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ab)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ac)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ad)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ae)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ba)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, bb)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, bc)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, bd)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, be)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ca)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, cb)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, cc)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, cd)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ce)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, da)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, db)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, dc)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, dd)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ea)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, eb)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ec)
+no explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: Drone(ee)
+no explanation found
+Generate DNF for axiom: veryClose(ee, ee)
+no explanation found
 -25 - 25
+Generate DNF for axiom: avoidCondition(aa, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ab)
+4 explanations found
+Generate DNF for axiom: avoidCondition(aa, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ba)
+4 explanations found
+Generate DNF for axiom: avoidCondition(aa, bb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(aa, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(aa, ee)
+no explanation found
 -650 - -600
 Axioms in module: 219
 BLACK_BOX
@@ -118,6 +2854,106 @@ Creating slice from 700 to 750
 650 - 700
 25 - 75
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(ab, aa)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ab, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, ac)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ab, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, ba)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ab, bb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ab, bc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ab, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ab, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, ab)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ac, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, ad)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ac, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, bb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ac, bc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ac, bd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ac, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ac, ee)
+no explanation found
 -600 - -550
 Axioms in module: 219
 BLACK_BOX
@@ -127,6 +2963,106 @@ Creating slice from 750 to 800
 700 - 750
 75 - 125
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(ad, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, ac)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ad, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, ae)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ad, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, bc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ad, bd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ad, be)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ad, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ad, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, ad)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ae, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, bd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ae, be)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ae, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ae, ee)
+no explanation found
 -550 - -500
 Axioms in module: 219
 BLACK_BOX
@@ -136,6 +3072,106 @@ Creating slice from 800 to 850
 750 - 800
 125 - 175
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(ba, aa)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ba, ab)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ba, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, bb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ba, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, ca)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ba, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ba, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, aa)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bb, ab)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bb, ac)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bb, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, ba)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bb, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, bc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bb, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, ca)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bb, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, cc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bb, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(bb, ee)
+no explanation found
 -500 - -450
 Axioms in module: 219
 BLACK_BOX
@@ -145,6 +3181,106 @@ Creating slice from 850 to 900
 800 - 850
 175 - 225
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(bc, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, ab)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bc, ac)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bc, ad)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bc, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, bb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bc, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, bd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bc, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, cc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bc, cd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bc, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(bc, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, ac)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bd, ad)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bd, ae)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bd, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, bc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bd, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, be)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bd, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, cc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bd, cd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bd, ce)
+4 explanations found
+Generate DNF for axiom: avoidCondition(bd, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(bd, ee)
+no explanation found
 -450 - -400
 Axioms in module: 219
 BLACK_BOX
@@ -154,6 +3290,106 @@ Creating slice from 900 to 950
 850 - 900
 225 - 275
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(be, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, ad)
+4 explanations found
+Generate DNF for axiom: avoidCondition(be, ae)
+4 explanations found
+Generate DNF for axiom: avoidCondition(be, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, bd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(be, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, cd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(be, ce)
+4 explanations found
+Generate DNF for axiom: avoidCondition(be, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(be, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ba)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ca, bb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ca, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, db)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ca, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ca, ee)
+no explanation found
 -400 - -350
 Axioms in module: 219
 BLACK_BOX
@@ -163,6 +3399,106 @@ Creating slice from 950 to 1000
 900 - 950
 275 - 325
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(cb, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(cb, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, bb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cc, bc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cc, bd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cc, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, cd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cc, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, db)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cc, dc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cc, dd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cc, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(cc, ee)
+no explanation found
 -350 - -300
 Axioms in module: 219
 BLACK_BOX
@@ -172,6 +3508,106 @@ Creating slice from 1000 to 1050
 950 - 1000
 325 - 375
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(cd, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, bc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cd, bd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cd, be)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cd, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, cc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cd, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, ce)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cd, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, dc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cd, dd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cd, de)
+4 explanations found
+Generate DNF for axiom: avoidCondition(cd, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(cd, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, bd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ce, be)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ce, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, cd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ce, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, dd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ce, de)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ce, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ce, ee)
+no explanation found
 -300 - -250
 Axioms in module: 219
 BLACK_BOX
@@ -181,6 +3617,106 @@ Creating slice from 1050 to 1100
 1000 - 1050
 375 - 425
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(da, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(da, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, ca)
+4 explanations found
+Generate DNF for axiom: avoidCondition(db, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, cc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(db, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, dc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(db, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, ea)
+4 explanations found
+Generate DNF for axiom: avoidCondition(db, eb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(db, ec)
+4 explanations found
+Generate DNF for axiom: avoidCondition(db, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(db, ee)
+no explanation found
 -250 - -200
 Axioms in module: 219
 BLACK_BOX
@@ -190,6 +3726,106 @@ Creating slice from 1100 to 1150
 1050 - 1100
 425 - 475
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(dc, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, cc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dc, cd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dc, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, db)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dc, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, dd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dc, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(dc, eb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dc, ec)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dc, ed)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dc, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, cc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dd, cd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dd, ce)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dd, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, dc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dd, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, de)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dd, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(dd, ec)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dd, ed)
+4 explanations found
+Generate DNF for axiom: avoidCondition(dd, ee)
+no explanation found
 -200 - -150
 Axioms in module: 219
 BLACK_BOX
@@ -199,6 +3835,106 @@ Creating slice from 1150 to 1200
 1100 - 1150
 475 - 525
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(de, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, cd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(de, ce)
+4 explanations found
+Generate DNF for axiom: avoidCondition(de, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, dd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(de, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(de, ed)
+4 explanations found
+Generate DNF for axiom: avoidCondition(de, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, db)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ea, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, eb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ea, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ea, ee)
+no explanation found
 -150 - -100
 Axioms in module: 219
 BLACK_BOX
@@ -208,6 +3944,106 @@ Creating slice from 1200 to 1250
 1150 - 1200
 525 - 575
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(eb, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, db)
+4 explanations found
+Generate DNF for axiom: avoidCondition(eb, dc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(eb, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ea)
+4 explanations found
+Generate DNF for axiom: avoidCondition(eb, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ec)
+4 explanations found
+Generate DNF for axiom: avoidCondition(eb, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(eb, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, db)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ec, dc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ec, dd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ec, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, eb)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ec, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ec, ed)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ec, ee)
+no explanation found
 -100 - -50
 Axioms in module: 219
 BLACK_BOX
@@ -217,6 +4053,106 @@ Creating slice from 1250 to 1300
 1200 - 1250
 575 - 625
 Generating inconsistency dnf
+Generate DNF for axiom: avoidCondition(ed, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, dc)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ed, dd)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ed, de)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ed, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, ec)
+4 explanations found
+Generate DNF for axiom: avoidCondition(ed, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ed, ee)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, aa)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ab)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ac)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ad)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ae)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ba)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, bb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, bc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, bd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, be)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ca)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, cb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, cc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, cd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ce)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, da)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, db)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, dc)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, dd)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, de)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ea)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, eb)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ec)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ed)
+no explanation found
+Generate DNF for axiom: avoidCondition(ee, ee)
+no explanation found
 -50 - 0
 Axioms in module: 219
 BLACK_BOX

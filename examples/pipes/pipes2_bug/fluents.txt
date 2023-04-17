@@ -1,0 +1,36 @@
+# fluent definitions for drone example
+
+PREFIX pipes: <https://www.ifi.uio.no/tobiajoh/pipes#>
+
+OBJECT wp aa	-> pipes:aa
+OBJECT wp ab	-> pipes:ab
+OBJECT wp ac	-> pipes:ac
+OBJECT wp ad	-> pipes:ad
+OBJECT wp ae	-> pipes:ae
+OBJECT wp af	-> pipes:af
+OBJECT wp ag	-> pipes:ag
+OBJECT wp ba	-> pipes:ba
+OBJECT wp bb	-> pipes:bb
+OBJECT wp bc	-> pipes:bc
+OBJECT wp bd	-> pipes:bd
+OBJECT wp be	-> pipes:be
+OBJECT wp bf	-> pipes:bf
+OBJECT wp bg	-> pipes:bg
+OBJECT wp ca	-> pipes:ca
+OBJECT wp cb	-> pipes:cb
+OBJECT wp cc	-> pipes:cc
+OBJECT wp cd	-> pipes:cd
+OBJECT wp ce	-> pipes:ce
+OBJECT wp cf	-> pipes:cf
+OBJECT wp cg	-> pipes:cg
+
+
+OBJECT robot auv	-> pipes:auv
+
+
+PREDICATE robotAt(robot, wp)	-> pipes:robotAt
+PREDICATE hasPicture(robot, wp)	-> pipes:hasPicture
+PREDICATE open(valve)   -> pipes:OpenValve
+
+
+

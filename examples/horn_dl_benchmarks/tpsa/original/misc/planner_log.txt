@@ -1,0 +1,133 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0/builds/release/bin/translate/translate.py ../examples/horn_dl_benchmarks/tpsa/original/misc/generated_domain.pddl ../examples/horn_dl_benchmarks/tpsa/original/misc/generated_orderProblem5.pddl --sas-file ../examples/horn_dl_benchmarks/tpsa/original/misc/output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.001s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 87 rules.
+Computing model... [0.010s CPU, 0.009s wall-clock]
+2682 relevant atoms
+237 auxiliary atoms
+2919 final queue length
+5499 total queue pushes
+Completing instantiation... [0.020s CPU, 0.019s wall-clock]
+Instantiating: [0.030s CPU, 0.030s wall-clock]
+Computing fact groups...
+Finding invariants...
+23 initial candidates
+Finding invariants: [0.000s CPU, 0.001s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+144 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.001s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 31
+Computing negative axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.005s wall-clock]
+Translating task: [0.040s CPU, 0.037s wall-clock]
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+20 propositions removed
+Detecting unreachable propositions: [0.020s CPU, 0.020s wall-clock]
+Reordering and filtering variables...
+114 of 134 variables necessary.
+0 of 0 mutex groups necessary.
+2410 of 2410 operators necessary.
+47 of 47 axiom rules necessary.
+Reordering and filtering variables: [0.000s CPU, 0.006s wall-clock]
+Translator variables: 114
+Translator derived variables: 34
+Translator facts: 228
+Translator goal facts: 2
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 2410
+Translator axioms: 47
+Translator task size: 12488
+Translator peak memory: 41804 KB
+Writing output... [0.010s CPU, 0.008s wall-clock]
+Done! [0.100s CPU, 0.106s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: ../examples/horn_dl_benchmarks/tpsa/original/misc/output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file ../examples/horn_dl_benchmarks/tpsa/original/orderProblem5.plan.txt < ../examples/horn_dl_benchmarks/tpsa/original/misc/output.sas
+[t=1.5795e-05s, 9940 KB] reading input...
+[t=0.00415296s, 10500 KB] done reading input!
+[t=0.00483239s, 10756 KB] Initializing blind search heuristic...
+[t=0.0048784s, 10756 KB] Building successor generator...done!
+[t=0.00519339s, 11084 KB] peak memory difference for successor generator creation: 328 KB
+[t=0.00520358s, 11084 KB] time for successor generation creation: 0.000281409s
+[t=0.00522114s, 11084 KB] Variables: 114
+[t=0.00523211s, 11084 KB] FactPairs: 228
+[t=0.00524628s, 11084 KB] Bytes per state: 16
+[t=0.0053051s, 11084 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.00533692s, 11084 KB] New best heuristic value for blind: 1
+[t=0.00534787s, 11084 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00535708s, 11084 KB] f = 1, 1 evaluated, 0 expanded
+[t=0.00538306s, 11084 KB] Initial heuristic value for blind: 1
+[t=0.00539221s, 11084 KB] pruning method: none
+[t=0.00542064s, 11084 KB] f = 2, 11 evaluated, 1 expanded
+[t=0.00572189s, 11084 KB] f = 3, 256 evaluated, 11 expanded
+[t=0.0134907s, 11084 KB] f = 4, 4076 evaluated, 256 expanded
+[t=0.151953s, 13412 KB] f = 5, 57236 evaluated, 4076 expanded
+[t=2.28719s, 46220 KB] f = 6, 699563 evaluated, 57236 expanded
+[t=33.253s, 475532 KB] f = 7, 7884203 evaluated, 699563 expanded
+[t=38.0553s, 486780 KB] New best heuristic value for blind: 0
+[t=38.0553s, 486780 KB] g=7, 8818455 evaluated, 777399 expanded
+[t=38.0554s, 486780 KB] Solution found!
+[t=38.0554s, 486780 KB] Actual search time: 38.05s
+confirmorder voiprequest voip a (1)
+preparecontract a voip a (1)
+preparehardware a voip a (1)
+courierservice a a (1)
+contractsaving a a a (1)
+productactivation a a a (1)
+billingactivation a a (1)
+[t=38.0554s, 486780 KB] Plan length: 7 step(s).
+[t=38.0554s, 486780 KB] Plan cost: 7
+[t=38.0554s, 486780 KB] Expanded 777400 state(s).
+[t=38.0554s, 486780 KB] Reopened 0 state(s).
+[t=38.0554s, 486780 KB] Evaluated 8818464 state(s).
+[t=38.0554s, 486780 KB] Evaluations: 8818464
+[t=38.0554s, 486780 KB] Generated 47844020 state(s).
+[t=38.0554s, 486780 KB] Dead ends: 0 state(s).
+[t=38.0554s, 486780 KB] Expanded until last jump: 699563 state(s).
+[t=38.0554s, 486780 KB] Reopened until last jump: 0 state(s).
+[t=38.0554s, 486780 KB] Evaluated until last jump: 7884203 state(s).
+[t=38.0554s, 486780 KB] Generated until last jump: 41542330 state(s).
+[t=38.0554s, 486780 KB] Number of registered states: 8818464
+[t=38.0554s, 486780 KB] Int hash set load factor: 8818464/16777216 = 0.525621
+[t=38.0554s, 486780 KB] Int hash set resizes: 24
+[t=38.0554s, 486780 KB] Search time: 38.0501s
+[t=38.0554s, 486780 KB] Total time: 38.0554s
+Solution found.
+Peak memory: 486780 KB
+search exit code: 0
+
+INFO     Planner time: 38.21s

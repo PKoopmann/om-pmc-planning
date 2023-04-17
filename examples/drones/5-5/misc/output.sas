@@ -51,869 +51,869 @@ begin_variable
 var6
 0
 2
-Atom kbquery_xveryclosey(ac, ab)
-NegatedAtom kbquery_xveryclosey(ac, ab)
-end_variable
-begin_variable
-var7
-0
-2
-Atom kbquery_xveryclosey(ac, ad)
-NegatedAtom kbquery_xveryclosey(ac, ad)
-end_variable
-begin_variable
-var8
-0
-2
-Atom kbquery_xveryclosey(ce, be)
-NegatedAtom kbquery_xveryclosey(ce, be)
-end_variable
-begin_variable
-var9
-0
-2
-Atom kbquery_xveryclosey(ce, cd)
-NegatedAtom kbquery_xveryclosey(ce, cd)
-end_variable
-begin_variable
-var10
-0
-2
-Atom kbquery_xveryclosey(bb, ab)
-NegatedAtom kbquery_xveryclosey(bb, ab)
-end_variable
-begin_variable
-var11
-0
-2
-Atom kbquery_xveryclosey(bb, ba)
-NegatedAtom kbquery_xveryclosey(bb, ba)
-end_variable
-begin_variable
-var12
-0
-2
-Atom kbquery_xveryclosey(bb, bc)
-NegatedAtom kbquery_xveryclosey(bb, bc)
-end_variable
-begin_variable
-var13
-0
-2
-Atom kbquery_xveryclosey(bb, cb)
-NegatedAtom kbquery_xveryclosey(bb, cb)
-end_variable
-begin_variable
-var14
-0
-2
-Atom kbquery_xveryclosey(de, ce)
-NegatedAtom kbquery_xveryclosey(de, ce)
-end_variable
-begin_variable
-var15
-0
-2
-Atom kbquery_xveryclosey(de, dd)
-NegatedAtom kbquery_xveryclosey(de, dd)
-end_variable
-begin_variable
-var16
-0
-2
-Atom kbquery_xveryclosey(de, ee)
-NegatedAtom kbquery_xveryclosey(de, ee)
-end_variable
-begin_variable
-var17
-0
-2
-Atom kbquery_xveryclosey(ed, dd)
-NegatedAtom kbquery_xveryclosey(ed, dd)
-end_variable
-begin_variable
-var18
-0
-2
-Atom kbquery_xveryclosey(ed, ec)
-NegatedAtom kbquery_xveryclosey(ed, ec)
-end_variable
-begin_variable
-var19
-0
-2
-Atom kbquery_xveryclosey(db, cb)
-NegatedAtom kbquery_xveryclosey(db, cb)
-end_variable
-begin_variable
-var20
-0
-2
-Atom kbquery_xveryclosey(db, da)
-NegatedAtom kbquery_xveryclosey(db, da)
-end_variable
-begin_variable
-var21
-0
-2
-Atom kbquery_xveryclosey(db, dc)
-NegatedAtom kbquery_xveryclosey(db, dc)
-end_variable
-begin_variable
-var22
-0
-2
-Atom kbquery_xveryclosey(db, eb)
-NegatedAtom kbquery_xveryclosey(db, eb)
-end_variable
-begin_variable
-var23
-0
-2
-Atom kbquery_xveryclosey(eb, db)
-NegatedAtom kbquery_xveryclosey(eb, db)
-end_variable
-begin_variable
-var24
-0
-2
-Atom kbquery_xveryclosey(eb, ea)
-NegatedAtom kbquery_xveryclosey(eb, ea)
-end_variable
-begin_variable
-var25
-0
-2
-Atom kbquery_xveryclosey(eb, ec)
-NegatedAtom kbquery_xveryclosey(eb, ec)
-end_variable
-begin_variable
-var26
-0
-2
-Atom kbquery_xveryclosey(ec, dc)
-NegatedAtom kbquery_xveryclosey(ec, dc)
-end_variable
-begin_variable
-var27
-0
-2
-Atom kbquery_xveryclosey(ec, eb)
-NegatedAtom kbquery_xveryclosey(ec, eb)
-end_variable
-begin_variable
-var28
-0
-2
-Atom kbquery_xveryclosey(ec, ed)
-NegatedAtom kbquery_xveryclosey(ec, ed)
-end_variable
-begin_variable
-var29
-0
-2
-Atom kbquery_xveryclosey(ed, ee)
-NegatedAtom kbquery_xveryclosey(ed, ee)
-end_variable
-begin_variable
-var30
-0
-2
-Atom kbquery_xveryclosey(dd, cd)
-NegatedAtom kbquery_xveryclosey(dd, cd)
-end_variable
-begin_variable
-var31
-0
-2
-Atom kbquery_xveryclosey(dd, dc)
-NegatedAtom kbquery_xveryclosey(dd, dc)
-end_variable
-begin_variable
-var32
-0
-2
-Atom kbquery_xveryclosey(dd, de)
-NegatedAtom kbquery_xveryclosey(dd, de)
-end_variable
-begin_variable
-var33
-0
-2
-Atom kbquery_xveryclosey(dd, ed)
-NegatedAtom kbquery_xveryclosey(dd, ed)
-end_variable
-begin_variable
-var34
-0
-2
-Atom kbquery_xveryclosey(dc, cc)
-NegatedAtom kbquery_xveryclosey(dc, cc)
-end_variable
-begin_variable
-var35
-0
-2
-Atom kbquery_xveryclosey(dc, db)
-NegatedAtom kbquery_xveryclosey(dc, db)
-end_variable
-begin_variable
-var36
-0
-2
-Atom kbquery_xveryclosey(dc, dd)
-NegatedAtom kbquery_xveryclosey(dc, dd)
-end_variable
-begin_variable
-var37
-0
-2
-Atom kbquery_xveryclosey(dc, ec)
-NegatedAtom kbquery_xveryclosey(dc, ec)
-end_variable
-begin_variable
-var38
-0
-2
-Atom kbquery_xveryclosey(cc, bc)
-NegatedAtom kbquery_xveryclosey(cc, bc)
-end_variable
-begin_variable
-var39
-0
-2
-Atom kbquery_xveryclosey(cc, cb)
-NegatedAtom kbquery_xveryclosey(cc, cb)
-end_variable
-begin_variable
-var40
-0
-2
-Atom kbquery_xveryclosey(cc, cd)
-NegatedAtom kbquery_xveryclosey(cc, cd)
-end_variable
-begin_variable
-var41
-0
-2
-Atom kbquery_xveryclosey(cc, dc)
-NegatedAtom kbquery_xveryclosey(cc, dc)
-end_variable
-begin_variable
-var42
-0
-2
-Atom kbquery_xveryclosey(bc, ac)
-NegatedAtom kbquery_xveryclosey(bc, ac)
-end_variable
-begin_variable
-var43
-0
-2
-Atom kbquery_xveryclosey(bc, bb)
-NegatedAtom kbquery_xveryclosey(bc, bb)
-end_variable
-begin_variable
-var44
-0
-2
-Atom kbquery_xveryclosey(bc, bd)
-NegatedAtom kbquery_xveryclosey(bc, bd)
-end_variable
-begin_variable
-var45
-0
-2
-Atom kbquery_xveryclosey(bc, cc)
-NegatedAtom kbquery_xveryclosey(bc, cc)
-end_variable
-begin_variable
-var46
-0
-2
-Atom kbquery_xveryclosey(bd, ad)
-NegatedAtom kbquery_xveryclosey(bd, ad)
-end_variable
-begin_variable
-var47
-0
-2
-Atom kbquery_xveryclosey(bd, bc)
-NegatedAtom kbquery_xveryclosey(bd, bc)
-end_variable
-begin_variable
-var48
-0
-2
-Atom kbquery_xveryclosey(bd, be)
-NegatedAtom kbquery_xveryclosey(bd, be)
-end_variable
-begin_variable
-var49
-0
-2
-Atom kbquery_xveryclosey(bd, cd)
-NegatedAtom kbquery_xveryclosey(bd, cd)
-end_variable
-begin_variable
-var50
-0
-2
-Atom kbquery_xveryclosey(cd, bd)
-NegatedAtom kbquery_xveryclosey(cd, bd)
-end_variable
-begin_variable
-var51
-0
-2
-Atom kbquery_xveryclosey(cd, cc)
-NegatedAtom kbquery_xveryclosey(cd, cc)
-end_variable
-begin_variable
-var52
-0
-2
-Atom kbquery_xveryclosey(cd, ce)
-NegatedAtom kbquery_xveryclosey(cd, ce)
-end_variable
-begin_variable
-var53
-0
-2
-Atom kbquery_xveryclosey(cd, dd)
-NegatedAtom kbquery_xveryclosey(cd, dd)
-end_variable
-begin_variable
-var54
-0
-2
-Atom kbquery_xveryclosey(ce, de)
-NegatedAtom kbquery_xveryclosey(ce, de)
-end_variable
-begin_variable
-var55
-0
-2
-Atom kbquery_xveryclosey(ca, ba)
-NegatedAtom kbquery_xveryclosey(ca, ba)
-end_variable
-begin_variable
-var56
-0
-2
-Atom kbquery_xveryclosey(ca, cb)
-NegatedAtom kbquery_xveryclosey(ca, cb)
-end_variable
-begin_variable
-var57
-0
-2
-Atom kbquery_xveryclosey(ca, da)
-NegatedAtom kbquery_xveryclosey(ca, da)
-end_variable
-begin_variable
-var58
-0
-2
-Atom kbquery_xveryclosey(ea, da)
-NegatedAtom kbquery_xveryclosey(ea, da)
-end_variable
-begin_variable
-var59
-0
-2
-Atom kbquery_xveryclosey(ea, eb)
-NegatedAtom kbquery_xveryclosey(ea, eb)
-end_variable
-begin_variable
-var60
-0
-2
-Atom kbquery_xveryclosey(be, ae)
-NegatedAtom kbquery_xveryclosey(be, ae)
-end_variable
-begin_variable
-var61
-0
-2
-Atom kbquery_xveryclosey(be, bd)
-NegatedAtom kbquery_xveryclosey(be, bd)
-end_variable
-begin_variable
-var62
-0
-2
-Atom kbquery_xveryclosey(be, ce)
-NegatedAtom kbquery_xveryclosey(be, ce)
-end_variable
-begin_variable
-var63
-0
-2
-Atom kbquery_xveryclosey(ae, ad)
-NegatedAtom kbquery_xveryclosey(ae, ad)
-end_variable
-begin_variable
-var64
-0
-2
-Atom kbquery_xveryclosey(ae, be)
-NegatedAtom kbquery_xveryclosey(ae, be)
-end_variable
-begin_variable
-var65
-0
-2
-Atom kbquery_xveryclosey(ad, ac)
-NegatedAtom kbquery_xveryclosey(ad, ac)
-end_variable
-begin_variable
-var66
-0
-2
-Atom kbquery_xveryclosey(ad, ae)
-NegatedAtom kbquery_xveryclosey(ad, ae)
-end_variable
-begin_variable
-var67
-0
-2
-Atom kbquery_xveryclosey(ad, bd)
-NegatedAtom kbquery_xveryclosey(ad, bd)
-end_variable
-begin_variable
-var68
-0
-2
-Atom kbquery_xveryclosey(ac, bc)
-NegatedAtom kbquery_xveryclosey(ac, bc)
-end_variable
-begin_variable
-var69
-0
-2
-Atom kbquery_xveryclosey(ab, aa)
-NegatedAtom kbquery_xveryclosey(ab, aa)
-end_variable
-begin_variable
-var70
-0
-2
-Atom kbquery_xveryclosey(ab, ac)
-NegatedAtom kbquery_xveryclosey(ab, ac)
-end_variable
-begin_variable
-var71
-0
-2
-Atom kbquery_xveryclosey(ab, bb)
-NegatedAtom kbquery_xveryclosey(ab, bb)
-end_variable
-begin_variable
-var72
-0
-2
-Atom kbquery_xveryclosey(aa, ab)
-NegatedAtom kbquery_xveryclosey(aa, ab)
-end_variable
-begin_variable
-var73
-0
-2
-Atom kbquery_xveryclosey(aa, ba)
-NegatedAtom kbquery_xveryclosey(aa, ba)
-end_variable
-begin_variable
-var74
-0
-2
-Atom kbquery_xveryclosey(ba, aa)
-NegatedAtom kbquery_xveryclosey(ba, aa)
-end_variable
-begin_variable
-var75
-0
-2
-Atom kbquery_xveryclosey(ba, bb)
-NegatedAtom kbquery_xveryclosey(ba, bb)
-end_variable
-begin_variable
-var76
-0
-2
-Atom kbquery_xveryclosey(ba, ca)
-NegatedAtom kbquery_xveryclosey(ba, ca)
-end_variable
-begin_variable
-var77
-0
-2
 Atom kbquery_objectx(aa)
 NegatedAtom kbquery_objectx(aa)
 end_variable
 begin_variable
-var78
+var7
 0
 2
 Atom kbquery_objectx(ab)
 NegatedAtom kbquery_objectx(ab)
 end_variable
 begin_variable
-var79
+var8
 0
 2
 Atom kbquery_wetdrone(ac)
 NegatedAtom kbquery_wetdrone(ac)
 end_variable
 begin_variable
-var80
+var9
 0
 2
 Atom kbquery_objectx(ad)
 NegatedAtom kbquery_objectx(ad)
 end_variable
 begin_variable
-var81
+var10
 0
 2
 Atom kbquery_objectx(ae)
 NegatedAtom kbquery_objectx(ae)
 end_variable
 begin_variable
-var82
+var11
 0
 2
 Atom kbquery_objectx(be)
 NegatedAtom kbquery_objectx(be)
 end_variable
 begin_variable
-var83
+var12
 0
 2
 Atom kbquery_objectx(bd)
 NegatedAtom kbquery_objectx(bd)
 end_variable
 begin_variable
-var84
+var13
 0
 2
 Atom kbquery_objectx(bc)
 NegatedAtom kbquery_objectx(bc)
 end_variable
 begin_variable
-var85
+var14
 0
 2
 Atom kbquery_objectx(bb)
 NegatedAtom kbquery_objectx(bb)
 end_variable
 begin_variable
-var86
+var15
 0
 2
 Atom kbquery_objectx(ba)
 NegatedAtom kbquery_objectx(ba)
 end_variable
 begin_variable
-var87
+var16
 0
 2
 Atom kbquery_objectx(ca)
 NegatedAtom kbquery_objectx(ca)
 end_variable
 begin_variable
-var88
+var17
 0
 2
 Atom kbquery_wetdrone(ba)
 NegatedAtom kbquery_wetdrone(ba)
 end_variable
 begin_variable
-var89
+var18
 0
 2
 Atom kbquery_wetdrone(aa)
 NegatedAtom kbquery_wetdrone(aa)
 end_variable
 begin_variable
-var90
+var19
 0
 2
 Atom kbquery_wetdrone(ab)
 NegatedAtom kbquery_wetdrone(ab)
 end_variable
 begin_variable
-var91
+var20
+0
+2
+Atom kbquery_xveryclosey(ac, ab)
+NegatedAtom kbquery_xveryclosey(ac, ab)
+end_variable
+begin_variable
+var21
+0
+2
+Atom kbquery_xveryclosey(ac, ad)
+NegatedAtom kbquery_xveryclosey(ac, ad)
+end_variable
+begin_variable
+var22
 0
 2
 Atom kbquery_wetdrone(ad)
 NegatedAtom kbquery_wetdrone(ad)
 end_variable
 begin_variable
-var92
+var23
 0
 2
 Atom kbquery_wetdrone(ae)
 NegatedAtom kbquery_wetdrone(ae)
 end_variable
 begin_variable
-var93
+var24
 0
 2
 Atom kbquery_wetdrone(be)
 NegatedAtom kbquery_wetdrone(be)
 end_variable
 begin_variable
-var94
+var25
 0
 2
 Atom kbquery_wetdrone(ce)
 NegatedAtom kbquery_wetdrone(ce)
 end_variable
 begin_variable
-var95
+var26
 0
 2
 Atom kbquery_objectx(cd)
 NegatedAtom kbquery_objectx(cd)
 end_variable
 begin_variable
-var96
+var27
 0
 2
 Atom kbquery_objectx(cc)
 NegatedAtom kbquery_objectx(cc)
 end_variable
 begin_variable
-var97
+var28
 0
 2
 Atom kbquery_objectx(dc)
 NegatedAtom kbquery_objectx(dc)
 end_variable
 begin_variable
-var98
+var29
 0
 2
 Atom kbquery_objectx(db)
 NegatedAtom kbquery_objectx(db)
 end_variable
 begin_variable
-var99
+var30
 0
 2
 Atom kbquery_objectx(eb)
 NegatedAtom kbquery_objectx(eb)
 end_variable
 begin_variable
-var100
+var31
 0
 2
 Atom kbquery_objectx(ea)
 NegatedAtom kbquery_objectx(ea)
 end_variable
 begin_variable
-var101
+var32
 0
 2
 Atom kbquery_wetdrone(ea)
 NegatedAtom kbquery_wetdrone(ea)
 end_variable
 begin_variable
-var102
+var33
 0
 2
 Atom kbquery_objectx(dd)
 NegatedAtom kbquery_objectx(dd)
 end_variable
 begin_variable
-var103
+var34
 0
 2
 Atom kbquery_objectx(de)
 NegatedAtom kbquery_objectx(de)
 end_variable
 begin_variable
-var104
+var35
+0
+2
+Atom kbquery_xveryclosey(ce, be)
+NegatedAtom kbquery_xveryclosey(ce, be)
+end_variable
+begin_variable
+var36
+0
+2
+Atom kbquery_xveryclosey(ce, cd)
+NegatedAtom kbquery_xveryclosey(ce, cd)
+end_variable
+begin_variable
+var37
 0
 2
 Atom kbquery_wetdrone(cd)
 NegatedAtom kbquery_wetdrone(cd)
 end_variable
 begin_variable
-var105
+var38
 0
 2
 Atom kbquery_wetdrone(bd)
 NegatedAtom kbquery_wetdrone(bd)
 end_variable
 begin_variable
-var106
+var39
 0
 2
 Atom kbquery_wetdrone(bc)
 NegatedAtom kbquery_wetdrone(bc)
 end_variable
 begin_variable
-var107
+var40
 0
 2
 Atom kbquery_wetdrone(bb)
 NegatedAtom kbquery_wetdrone(bb)
 end_variable
 begin_variable
-var108
+var41
+0
+2
+Atom kbquery_xveryclosey(bb, ab)
+NegatedAtom kbquery_xveryclosey(bb, ab)
+end_variable
+begin_variable
+var42
+0
+2
+Atom kbquery_xveryclosey(bb, ba)
+NegatedAtom kbquery_xveryclosey(bb, ba)
+end_variable
+begin_variable
+var43
+0
+2
+Atom kbquery_xveryclosey(bb, bc)
+NegatedAtom kbquery_xveryclosey(bb, bc)
+end_variable
+begin_variable
+var44
+0
+2
+Atom kbquery_xveryclosey(bb, cb)
+NegatedAtom kbquery_xveryclosey(bb, cb)
+end_variable
+begin_variable
+var45
 0
 2
 Atom kbquery_wetdrone(cc)
 NegatedAtom kbquery_wetdrone(cc)
 end_variable
 begin_variable
-var109
+var46
 0
 2
 Atom kbquery_wetdrone(dc)
 NegatedAtom kbquery_wetdrone(dc)
 end_variable
 begin_variable
-var110
+var47
 0
 2
 Atom kbquery_objectx(ec)
 NegatedAtom kbquery_objectx(ec)
 end_variable
 begin_variable
-var111
+var48
 0
 2
 Atom kbquery_wetdrone(ed)
 NegatedAtom kbquery_wetdrone(ed)
 end_variable
 begin_variable
-var112
--1
-2
-Atom drone(ee)
-NegatedAtom drone(ee)
-end_variable
-begin_variable
-var113
--1
-2
-Atom wetdrone(ee)
-NegatedAtom wetdrone(ee)
-end_variable
-begin_variable
-var114
+var49
 0
 2
 Atom kbquery_wetdrone(dd)
 NegatedAtom kbquery_wetdrone(dd)
 end_variable
 begin_variable
-var115
+var50
 0
 2
 Atom kbquery_wetdrone(de)
 NegatedAtom kbquery_wetdrone(de)
 end_variable
 begin_variable
-var116
+var51
+0
+2
+Atom kbquery_xveryclosey(de, ce)
+NegatedAtom kbquery_xveryclosey(de, ce)
+end_variable
+begin_variable
+var52
+0
+2
+Atom kbquery_xveryclosey(de, dd)
+NegatedAtom kbquery_xveryclosey(de, dd)
+end_variable
+begin_variable
+var53
+0
+2
+Atom kbquery_xveryclosey(de, ee)
+NegatedAtom kbquery_xveryclosey(de, ee)
+end_variable
+begin_variable
+var54
+0
+2
+Atom kbquery_xveryclosey(ed, dd)
+NegatedAtom kbquery_xveryclosey(ed, dd)
+end_variable
+begin_variable
+var55
+0
+2
+Atom kbquery_xveryclosey(ed, ec)
+NegatedAtom kbquery_xveryclosey(ed, ec)
+end_variable
+begin_variable
+var56
 0
 2
 Atom kbquery_wetdrone(ec)
 NegatedAtom kbquery_wetdrone(ec)
 end_variable
 begin_variable
-var117
+var57
 0
 2
 Atom kbquery_wetdrone(eb)
 NegatedAtom kbquery_wetdrone(eb)
 end_variable
 begin_variable
-var118
--1
-2
-Atom wetdrone(ea)
-NegatedAtom wetdrone(ea)
-end_variable
-begin_variable
-var119
+var58
 0
 2
 Atom kbquery_wetdrone(db)
 NegatedAtom kbquery_wetdrone(db)
 end_variable
 begin_variable
-var120
+var59
+0
+2
+Atom kbquery_xveryclosey(db, cb)
+NegatedAtom kbquery_xveryclosey(db, cb)
+end_variable
+begin_variable
+var60
+0
+2
+Atom kbquery_xveryclosey(db, da)
+NegatedAtom kbquery_xveryclosey(db, da)
+end_variable
+begin_variable
+var61
+0
+2
+Atom kbquery_xveryclosey(db, dc)
+NegatedAtom kbquery_xveryclosey(db, dc)
+end_variable
+begin_variable
+var62
+0
+2
+Atom kbquery_xveryclosey(db, eb)
+NegatedAtom kbquery_xveryclosey(db, eb)
+end_variable
+begin_variable
+var63
+0
+2
+Atom kbquery_xveryclosey(eb, db)
+NegatedAtom kbquery_xveryclosey(eb, db)
+end_variable
+begin_variable
+var64
+0
+2
+Atom kbquery_xveryclosey(eb, ea)
+NegatedAtom kbquery_xveryclosey(eb, ea)
+end_variable
+begin_variable
+var65
+0
+2
+Atom kbquery_xveryclosey(eb, ec)
+NegatedAtom kbquery_xveryclosey(eb, ec)
+end_variable
+begin_variable
+var66
+0
+2
+Atom kbquery_xveryclosey(ec, dc)
+NegatedAtom kbquery_xveryclosey(ec, dc)
+end_variable
+begin_variable
+var67
+0
+2
+Atom kbquery_xveryclosey(ec, eb)
+NegatedAtom kbquery_xveryclosey(ec, eb)
+end_variable
+begin_variable
+var68
+0
+2
+Atom kbquery_xveryclosey(ec, ed)
+NegatedAtom kbquery_xveryclosey(ec, ed)
+end_variable
+begin_variable
+var69
+0
+2
+Atom kbquery_xveryclosey(ed, ee)
+NegatedAtom kbquery_xveryclosey(ed, ee)
+end_variable
+begin_variable
+var70
+0
+2
+Atom kbquery_xveryclosey(dd, cd)
+NegatedAtom kbquery_xveryclosey(dd, cd)
+end_variable
+begin_variable
+var71
+0
+2
+Atom kbquery_xveryclosey(dd, dc)
+NegatedAtom kbquery_xveryclosey(dd, dc)
+end_variable
+begin_variable
+var72
+0
+2
+Atom kbquery_xveryclosey(dd, de)
+NegatedAtom kbquery_xveryclosey(dd, de)
+end_variable
+begin_variable
+var73
+0
+2
+Atom kbquery_xveryclosey(dd, ed)
+NegatedAtom kbquery_xveryclosey(dd, ed)
+end_variable
+begin_variable
+var74
+0
+2
+Atom kbquery_xveryclosey(dc, cc)
+NegatedAtom kbquery_xveryclosey(dc, cc)
+end_variable
+begin_variable
+var75
+0
+2
+Atom kbquery_xveryclosey(dc, db)
+NegatedAtom kbquery_xveryclosey(dc, db)
+end_variable
+begin_variable
+var76
+0
+2
+Atom kbquery_xveryclosey(dc, dd)
+NegatedAtom kbquery_xveryclosey(dc, dd)
+end_variable
+begin_variable
+var77
+0
+2
+Atom kbquery_xveryclosey(dc, ec)
+NegatedAtom kbquery_xveryclosey(dc, ec)
+end_variable
+begin_variable
+var78
+0
+2
+Atom kbquery_xveryclosey(cc, bc)
+NegatedAtom kbquery_xveryclosey(cc, bc)
+end_variable
+begin_variable
+var79
+0
+2
+Atom kbquery_xveryclosey(cc, cb)
+NegatedAtom kbquery_xveryclosey(cc, cb)
+end_variable
+begin_variable
+var80
+0
+2
+Atom kbquery_xveryclosey(cc, cd)
+NegatedAtom kbquery_xveryclosey(cc, cd)
+end_variable
+begin_variable
+var81
+0
+2
+Atom kbquery_xveryclosey(cc, dc)
+NegatedAtom kbquery_xveryclosey(cc, dc)
+end_variable
+begin_variable
+var82
+0
+2
+Atom kbquery_xveryclosey(bc, ac)
+NegatedAtom kbquery_xveryclosey(bc, ac)
+end_variable
+begin_variable
+var83
+0
+2
+Atom kbquery_xveryclosey(bc, bb)
+NegatedAtom kbquery_xveryclosey(bc, bb)
+end_variable
+begin_variable
+var84
+0
+2
+Atom kbquery_xveryclosey(bc, bd)
+NegatedAtom kbquery_xveryclosey(bc, bd)
+end_variable
+begin_variable
+var85
+0
+2
+Atom kbquery_xveryclosey(bc, cc)
+NegatedAtom kbquery_xveryclosey(bc, cc)
+end_variable
+begin_variable
+var86
+0
+2
+Atom kbquery_xveryclosey(bd, ad)
+NegatedAtom kbquery_xveryclosey(bd, ad)
+end_variable
+begin_variable
+var87
+0
+2
+Atom kbquery_xveryclosey(bd, bc)
+NegatedAtom kbquery_xveryclosey(bd, bc)
+end_variable
+begin_variable
+var88
+0
+2
+Atom kbquery_xveryclosey(bd, be)
+NegatedAtom kbquery_xveryclosey(bd, be)
+end_variable
+begin_variable
+var89
+0
+2
+Atom kbquery_xveryclosey(bd, cd)
+NegatedAtom kbquery_xveryclosey(bd, cd)
+end_variable
+begin_variable
+var90
+0
+2
+Atom kbquery_xveryclosey(cd, bd)
+NegatedAtom kbquery_xveryclosey(cd, bd)
+end_variable
+begin_variable
+var91
+0
+2
+Atom kbquery_xveryclosey(cd, cc)
+NegatedAtom kbquery_xveryclosey(cd, cc)
+end_variable
+begin_variable
+var92
+0
+2
+Atom kbquery_xveryclosey(cd, ce)
+NegatedAtom kbquery_xveryclosey(cd, ce)
+end_variable
+begin_variable
+var93
+0
+2
+Atom kbquery_xveryclosey(cd, dd)
+NegatedAtom kbquery_xveryclosey(cd, dd)
+end_variable
+begin_variable
+var94
+0
+2
+Atom kbquery_xveryclosey(ce, de)
+NegatedAtom kbquery_xveryclosey(ce, de)
+end_variable
+begin_variable
+var95
 0
 2
 Atom kbquery_wetdrone(ca)
 NegatedAtom kbquery_wetdrone(ca)
 end_variable
 begin_variable
-var121
+var96
+0
+2
+Atom kbquery_xveryclosey(ca, ba)
+NegatedAtom kbquery_xveryclosey(ca, ba)
+end_variable
+begin_variable
+var97
+0
+2
+Atom kbquery_xveryclosey(ca, cb)
+NegatedAtom kbquery_xveryclosey(ca, cb)
+end_variable
+begin_variable
+var98
+0
+2
+Atom kbquery_xveryclosey(ca, da)
+NegatedAtom kbquery_xveryclosey(ca, da)
+end_variable
+begin_variable
+var99
+0
+2
+Atom kbquery_xveryclosey(ea, da)
+NegatedAtom kbquery_xveryclosey(ea, da)
+end_variable
+begin_variable
+var100
+0
+2
+Atom kbquery_xveryclosey(ea, eb)
+NegatedAtom kbquery_xveryclosey(ea, eb)
+end_variable
+begin_variable
+var101
+0
+2
+Atom kbquery_xveryclosey(be, ae)
+NegatedAtom kbquery_xveryclosey(be, ae)
+end_variable
+begin_variable
+var102
+0
+2
+Atom kbquery_xveryclosey(be, bd)
+NegatedAtom kbquery_xveryclosey(be, bd)
+end_variable
+begin_variable
+var103
+0
+2
+Atom kbquery_xveryclosey(be, ce)
+NegatedAtom kbquery_xveryclosey(be, ce)
+end_variable
+begin_variable
+var104
+0
+2
+Atom kbquery_xveryclosey(ae, ad)
+NegatedAtom kbquery_xveryclosey(ae, ad)
+end_variable
+begin_variable
+var105
+0
+2
+Atom kbquery_xveryclosey(ae, be)
+NegatedAtom kbquery_xveryclosey(ae, be)
+end_variable
+begin_variable
+var106
+0
+2
+Atom kbquery_xveryclosey(ad, ac)
+NegatedAtom kbquery_xveryclosey(ad, ac)
+end_variable
+begin_variable
+var107
+0
+2
+Atom kbquery_xveryclosey(ad, ae)
+NegatedAtom kbquery_xveryclosey(ad, ae)
+end_variable
+begin_variable
+var108
+0
+2
+Atom kbquery_xveryclosey(ad, bd)
+NegatedAtom kbquery_xveryclosey(ad, bd)
+end_variable
+begin_variable
+var109
+0
+2
+Atom kbquery_xveryclosey(ac, bc)
+NegatedAtom kbquery_xveryclosey(ac, bc)
+end_variable
+begin_variable
+var110
+0
+2
+Atom kbquery_xveryclosey(ab, aa)
+NegatedAtom kbquery_xveryclosey(ab, aa)
+end_variable
+begin_variable
+var111
+0
+2
+Atom kbquery_xveryclosey(ab, ac)
+NegatedAtom kbquery_xveryclosey(ab, ac)
+end_variable
+begin_variable
+var112
+0
+2
+Atom kbquery_xveryclosey(ab, bb)
+NegatedAtom kbquery_xveryclosey(ab, bb)
+end_variable
+begin_variable
+var113
+0
+2
+Atom kbquery_xveryclosey(aa, ab)
+NegatedAtom kbquery_xveryclosey(aa, ab)
+end_variable
+begin_variable
+var114
+0
+2
+Atom kbquery_xveryclosey(aa, ba)
+NegatedAtom kbquery_xveryclosey(aa, ba)
+end_variable
+begin_variable
+var115
+0
+2
+Atom kbquery_xveryclosey(ba, aa)
+NegatedAtom kbquery_xveryclosey(ba, aa)
+end_variable
+begin_variable
+var116
+0
+2
+Atom kbquery_xveryclosey(ba, bb)
+NegatedAtom kbquery_xveryclosey(ba, bb)
+end_variable
+begin_variable
+var117
+0
+2
+Atom kbquery_xveryclosey(ba, ca)
+NegatedAtom kbquery_xveryclosey(ba, ca)
+end_variable
+begin_variable
+var118
+-1
+2
+Atom drone(ee)
+NegatedAtom drone(ee)
+end_variable
+begin_variable
+var119
+-1
+2
+Atom wetdrone(ee)
+NegatedAtom wetdrone(ee)
+end_variable
+begin_variable
+var120
 -1
 2
 Atom drone(da)
 NegatedAtom drone(da)
 end_variable
 begin_variable
-var122
+var121
 -1
 2
 Atom wetdrone(da)
 NegatedAtom wetdrone(da)
 end_variable
 begin_variable
+var122
+-1
+2
+Atom wetdrone(ea)
+NegatedAtom wetdrone(ea)
+end_variable
+begin_variable
 var123
--1
-2
-Atom wetdrone(aa)
-NegatedAtom wetdrone(aa)
-end_variable
-begin_variable
-var124
--1
-2
-Atom wetdrone(ae)
-NegatedAtom wetdrone(ae)
-end_variable
-begin_variable
-var125
 -1
 2
 Atom drone(cb)
 NegatedAtom drone(cb)
 end_variable
 begin_variable
-var126
--1
-2
-Atom wetdrone(ca)
-NegatedAtom wetdrone(ca)
-end_variable
-begin_variable
-var127
+var124
 -1
 2
 Atom wetdrone(cb)
 NegatedAtom wetdrone(cb)
 end_variable
 begin_variable
+var125
+-1
+2
+Atom wetdrone(ae)
+NegatedAtom wetdrone(ae)
+end_variable
+begin_variable
+var126
+-1
+2
+Atom wetdrone(aa)
+NegatedAtom wetdrone(aa)
+end_variable
+begin_variable
+var127
+-1
+2
+Atom wetdrone(ca)
+NegatedAtom wetdrone(ca)
+end_variable
+begin_variable
 var128
 -1
 2
-Atom wetdrone(de)
-NegatedAtom wetdrone(de)
+Atom wetdrone(ed)
+NegatedAtom wetdrone(ed)
 end_variable
 begin_variable
 var129
 -1
 2
-Atom wetdrone(ed)
-NegatedAtom wetdrone(ed)
+Atom wetdrone(de)
+NegatedAtom wetdrone(de)
 end_variable
 begin_variable
 var130
@@ -926,71 +926,71 @@ begin_variable
 var131
 -1
 2
-Atom drone(aa)
-NegatedAtom drone(aa)
+Atom wetdrone(db)
+NegatedAtom wetdrone(db)
 end_variable
 begin_variable
 var132
--1
-2
-Atom drone(ae)
-NegatedAtom drone(ae)
-end_variable
-begin_variable
-var133
--1
-2
-Atom wetdrone(ad)
-NegatedAtom wetdrone(ad)
-end_variable
-begin_variable
-var134
--1
-2
-Atom wetdrone(be)
-NegatedAtom wetdrone(be)
-end_variable
-begin_variable
-var135
--1
-2
-Atom wetdrone(ac)
-NegatedAtom wetdrone(ac)
-end_variable
-begin_variable
-var136
--1
-2
-Atom wetdrone(ab)
-NegatedAtom wetdrone(ab)
-end_variable
-begin_variable
-var137
--1
-2
-Atom wetdrone(ce)
-NegatedAtom wetdrone(ce)
-end_variable
-begin_variable
-var138
 -1
 2
 Atom wetdrone(ec)
 NegatedAtom wetdrone(ec)
 end_variable
 begin_variable
+var133
+-1
+2
+Atom wetdrone(eb)
+NegatedAtom wetdrone(eb)
+end_variable
+begin_variable
+var134
+-1
+2
+Atom wetdrone(ce)
+NegatedAtom wetdrone(ce)
+end_variable
+begin_variable
+var135
+-1
+2
+Atom wetdrone(be)
+NegatedAtom wetdrone(be)
+end_variable
+begin_variable
+var136
+-1
+2
+Atom drone(ae)
+NegatedAtom drone(ae)
+end_variable
+begin_variable
+var137
+-1
+2
+Atom wetdrone(ad)
+NegatedAtom wetdrone(ad)
+end_variable
+begin_variable
+var138
+-1
+2
+Atom wetdrone(ac)
+NegatedAtom wetdrone(ac)
+end_variable
+begin_variable
 var139
 -1
 2
-Atom wetdrone(db)
-NegatedAtom wetdrone(db)
+Atom wetdrone(ab)
+NegatedAtom wetdrone(ab)
 end_variable
 begin_variable
 var140
 -1
 2
-Atom wetdrone(eb)
-NegatedAtom wetdrone(eb)
+Atom drone(aa)
+NegatedAtom drone(aa)
 end_variable
 begin_variable
 var141
@@ -1003,15 +1003,15 @@ begin_variable
 var142
 -1
 2
-Atom wetdrone(bb)
-NegatedAtom wetdrone(bb)
+Atom wetdrone(cc)
+NegatedAtom wetdrone(cc)
 end_variable
 begin_variable
 var143
 -1
 2
-Atom wetdrone(cc)
-NegatedAtom wetdrone(cc)
+Atom wetdrone(bb)
+NegatedAtom wetdrone(bb)
 end_variable
 begin_variable
 var144
@@ -1024,15 +1024,15 @@ begin_variable
 var145
 -1
 2
-Atom wetdrone(bd)
-NegatedAtom wetdrone(bd)
+Atom drone(ed)
+NegatedAtom drone(ed)
 end_variable
 begin_variable
 var146
 -1
 2
-Atom wetdrone(bc)
-NegatedAtom wetdrone(bc)
+Atom wetdrone(dc)
+NegatedAtom wetdrone(dc)
 end_variable
 begin_variable
 var147
@@ -1045,78 +1045,78 @@ begin_variable
 var148
 -1
 2
-Atom drone(de)
-NegatedAtom drone(de)
+Atom wetdrone(dd)
+NegatedAtom wetdrone(dd)
 end_variable
 begin_variable
 var149
 -1
 2
-Atom wetdrone(dd)
-NegatedAtom wetdrone(dd)
+Atom drone(de)
+NegatedAtom drone(de)
 end_variable
 begin_variable
 var150
 -1
 2
-Atom drone(ed)
-NegatedAtom drone(ed)
+Atom wetdrone(bd)
+NegatedAtom wetdrone(bd)
 end_variable
 begin_variable
 var151
 -1
 2
-Atom wetdrone(dc)
-NegatedAtom wetdrone(dc)
+Atom wetdrone(bc)
+NegatedAtom wetdrone(bc)
 end_variable
 begin_variable
 var152
--1
-2
-Atom drone(ad)
-NegatedAtom drone(ad)
-end_variable
-begin_variable
-var153
--1
-2
-Atom drone(be)
-NegatedAtom drone(be)
-end_variable
-begin_variable
-var154
--1
-2
-Atom drone(ac)
-NegatedAtom drone(ac)
-end_variable
-begin_variable
-var155
--1
-2
-Atom drone(ab)
-NegatedAtom drone(ab)
-end_variable
-begin_variable
-var156
--1
-2
-Atom drone(ce)
-NegatedAtom drone(ce)
-end_variable
-begin_variable
-var157
 -1
 2
 Atom drone(ec)
 NegatedAtom drone(ec)
 end_variable
 begin_variable
-var158
+var153
 -1
 2
 Atom drone(eb)
 NegatedAtom drone(eb)
+end_variable
+begin_variable
+var154
+-1
+2
+Atom drone(ce)
+NegatedAtom drone(ce)
+end_variable
+begin_variable
+var155
+-1
+2
+Atom drone(be)
+NegatedAtom drone(be)
+end_variable
+begin_variable
+var156
+-1
+2
+Atom drone(ad)
+NegatedAtom drone(ad)
+end_variable
+begin_variable
+var157
+-1
+2
+Atom drone(ac)
+NegatedAtom drone(ac)
+end_variable
+begin_variable
+var158
+-1
+2
+Atom drone(ab)
+NegatedAtom drone(ab)
 end_variable
 begin_variable
 var159
@@ -1136,50 +1136,50 @@ begin_variable
 var161
 -1
 2
-Atom drone(bb)
-NegatedAtom drone(bb)
+Atom drone(cc)
+NegatedAtom drone(cc)
 end_variable
 begin_variable
 var162
 -1
 2
-Atom drone(cc)
-NegatedAtom drone(cc)
+Atom drone(bb)
+NegatedAtom drone(bb)
 end_variable
 begin_variable
 var163
 -1
 2
-Atom drone(bd)
-NegatedAtom drone(bd)
+Atom drone(dc)
+NegatedAtom drone(dc)
 end_variable
 begin_variable
 var164
--1
-2
-Atom drone(bc)
-NegatedAtom drone(bc)
-end_variable
-begin_variable
-var165
 -1
 2
 Atom drone(cd)
 NegatedAtom drone(cd)
 end_variable
 begin_variable
-var166
+var165
 -1
 2
 Atom drone(dd)
 NegatedAtom drone(dd)
 end_variable
 begin_variable
+var166
+-1
+2
+Atom drone(bd)
+NegatedAtom drone(bd)
+end_variable
+begin_variable
 var167
 -1
 2
-Atom drone(dc)
-NegatedAtom drone(dc)
+Atom drone(bc)
+NegatedAtom drone(bc)
 end_variable
 begin_variable
 var168
@@ -2141,11 +2141,6 @@ begin_state
 1
 1
 1
-1
-1
-1
-1
-1
 0
 1
 1
@@ -2157,12 +2152,17 @@ begin_state
 1
 1
 1
+1
+1
+1
+1
 0
+1
 1
 0
 0
-0
 1
+0
 1
 1
 1
@@ -2290,42 +2290,42 @@ begin_operator
 move aa ab
 3
 168 1
-78 1
-72 0
+7 1
+113 0
 5
-1 89 0 131 -1 1
-1 89 1 131 -1 1
-1 89 1 155 -1 0
-1 89 0 123 -1 1
-1 89 0 136 -1 0
+1 18 0 140 -1 1
+1 18 1 140 -1 1
+1 18 1 158 -1 0
+1 18 0 126 -1 1
+1 18 0 139 -1 0
 1
 end_operator
 begin_operator
 move aa ba
 3
 168 1
-86 1
-73 0
+15 1
+114 0
 5
-1 89 0 131 -1 1
-1 89 1 131 -1 1
-1 89 1 159 -1 0
-1 89 0 123 -1 1
-1 89 0 141 -1 0
+1 18 0 140 -1 1
+1 18 1 140 -1 1
+1 18 1 159 -1 0
+1 18 0 126 -1 1
+1 18 0 141 -1 0
 1
 end_operator
 begin_operator
 move ab aa
 3
 168 1
-77 1
-69 0
+6 1
+110 0
 5
-1 90 1 131 -1 0
-1 90 0 155 -1 1
-1 90 1 155 -1 1
-1 90 0 123 -1 0
-1 90 0 136 -1 1
+1 19 1 140 -1 0
+1 19 0 158 -1 1
+1 19 1 158 -1 1
+1 19 0 126 -1 0
+1 19 0 139 -1 1
 1
 end_operator
 begin_operator
@@ -2333,69 +2333,69 @@ move ab ac
 3
 168 1
 5 1
-70 0
+111 0
 5
-1 90 0 155 -1 1
-1 90 1 155 -1 1
-1 90 1 154 -1 0
-1 90 0 136 -1 1
-1 90 0 135 -1 0
+1 19 0 158 -1 1
+1 19 1 158 -1 1
+1 19 1 157 -1 0
+1 19 0 139 -1 1
+1 19 0 138 -1 0
 1
 end_operator
 begin_operator
 move ab bb
 3
 168 1
-85 1
-71 0
+14 1
+112 0
 5
-1 90 0 155 -1 1
-1 90 1 155 -1 1
-1 90 1 161 -1 0
-1 90 0 136 -1 1
-1 90 0 142 -1 0
+1 19 0 158 -1 1
+1 19 1 158 -1 1
+1 19 1 162 -1 0
+1 19 0 139 -1 1
+1 19 0 143 -1 0
 1
 end_operator
 begin_operator
 move ac ab
 3
 168 1
-78 1
-6 0
+7 1
+20 0
 5
-1 79 1 155 -1 0
-1 79 0 154 -1 1
-1 79 1 154 -1 1
-1 79 0 136 -1 0
-1 79 0 135 -1 1
+1 8 1 158 -1 0
+1 8 0 157 -1 1
+1 8 1 157 -1 1
+1 8 0 139 -1 0
+1 8 0 138 -1 1
 1
 end_operator
 begin_operator
 move ac ad
 3
 168 1
-80 1
-7 0
+9 1
+21 0
 5
-1 79 0 154 -1 1
-1 79 1 154 -1 1
-1 79 1 152 -1 0
-1 79 0 135 -1 1
-1 79 0 133 -1 0
+1 8 0 157 -1 1
+1 8 1 157 -1 1
+1 8 1 156 -1 0
+1 8 0 138 -1 1
+1 8 0 137 -1 0
 1
 end_operator
 begin_operator
 move ac bc
 3
 168 1
-84 1
-68 0
+13 1
+109 0
 5
-1 79 0 154 -1 1
-1 79 1 154 -1 1
-1 79 1 164 -1 0
-1 79 0 135 -1 1
-1 79 0 146 -1 0
+1 8 0 157 -1 1
+1 8 1 157 -1 1
+1 8 1 167 -1 0
+1 8 0 138 -1 1
+1 8 0 151 -1 0
 1
 end_operator
 begin_operator
@@ -2403,153 +2403,153 @@ move ad ac
 3
 168 1
 5 1
-65 0
+106 0
 5
-1 91 1 154 -1 0
-1 91 0 152 -1 1
-1 91 1 152 -1 1
-1 91 0 135 -1 0
-1 91 0 133 -1 1
+1 22 1 157 -1 0
+1 22 0 156 -1 1
+1 22 1 156 -1 1
+1 22 0 138 -1 0
+1 22 0 137 -1 1
 1
 end_operator
 begin_operator
 move ad ae
 3
 168 1
-81 1
-66 0
+10 1
+107 0
 5
-1 91 0 152 -1 1
-1 91 1 152 -1 1
-1 91 1 132 -1 0
-1 91 0 133 -1 1
-1 91 0 124 -1 0
+1 22 0 156 -1 1
+1 22 1 156 -1 1
+1 22 1 136 -1 0
+1 22 0 137 -1 1
+1 22 0 125 -1 0
 1
 end_operator
 begin_operator
 move ad bd
 3
 168 1
-83 1
-67 0
+12 1
+108 0
 5
-1 91 0 152 -1 1
-1 91 1 152 -1 1
-1 91 1 163 -1 0
-1 91 0 133 -1 1
-1 91 0 145 -1 0
+1 22 0 156 -1 1
+1 22 1 156 -1 1
+1 22 1 166 -1 0
+1 22 0 137 -1 1
+1 22 0 150 -1 0
 1
 end_operator
 begin_operator
 move ae ad
 3
 168 1
-80 1
-63 0
+9 1
+104 0
 5
-1 92 1 152 -1 0
-1 92 0 132 -1 1
-1 92 1 132 -1 1
-1 92 0 133 -1 0
-1 92 0 124 -1 1
+1 23 1 156 -1 0
+1 23 0 136 -1 1
+1 23 1 136 -1 1
+1 23 0 137 -1 0
+1 23 0 125 -1 1
 1
 end_operator
 begin_operator
 move ae be
 3
 168 1
-82 1
-64 0
+11 1
+105 0
 5
-1 92 0 132 -1 1
-1 92 1 132 -1 1
-1 92 1 153 -1 0
-1 92 0 124 -1 1
-1 92 0 134 -1 0
+1 23 0 136 -1 1
+1 23 1 136 -1 1
+1 23 1 155 -1 0
+1 23 0 125 -1 1
+1 23 0 135 -1 0
 1
 end_operator
 begin_operator
 move ba aa
 3
 168 1
-77 1
-74 0
+6 1
+115 0
 5
-1 88 1 131 -1 0
-1 88 0 159 -1 1
-1 88 1 159 -1 1
-1 88 0 123 -1 0
-1 88 0 141 -1 1
+1 17 1 140 -1 0
+1 17 0 159 -1 1
+1 17 1 159 -1 1
+1 17 0 126 -1 0
+1 17 0 141 -1 1
 1
 end_operator
 begin_operator
 move ba bb
 3
 168 1
-85 1
-75 0
+14 1
+116 0
 5
-1 88 0 159 -1 1
-1 88 1 159 -1 1
-1 88 1 161 -1 0
-1 88 0 141 -1 1
-1 88 0 142 -1 0
+1 17 0 159 -1 1
+1 17 1 159 -1 1
+1 17 1 162 -1 0
+1 17 0 141 -1 1
+1 17 0 143 -1 0
 1
 end_operator
 begin_operator
 move ba ca
 3
 168 1
-87 1
-76 0
+16 1
+117 0
 5
-1 88 0 159 -1 1
-1 88 1 159 -1 1
-1 88 1 144 -1 0
-1 88 0 141 -1 1
-1 88 0 126 -1 0
+1 17 0 159 -1 1
+1 17 1 159 -1 1
+1 17 1 144 -1 0
+1 17 0 141 -1 1
+1 17 0 127 -1 0
 1
 end_operator
 begin_operator
 move bb ab
 3
 168 1
-78 1
-10 0
+7 1
+41 0
 5
-1 107 1 155 -1 0
-1 107 0 161 -1 1
-1 107 1 161 -1 1
-1 107 0 136 -1 0
-1 107 0 142 -1 1
+1 40 1 158 -1 0
+1 40 0 162 -1 1
+1 40 1 162 -1 1
+1 40 0 139 -1 0
+1 40 0 143 -1 1
 1
 end_operator
 begin_operator
 move bb ba
 3
 168 1
-86 1
-11 0
+15 1
+42 0
 5
-1 107 1 159 -1 0
-1 107 0 161 -1 1
-1 107 1 161 -1 1
-1 107 0 141 -1 0
-1 107 0 142 -1 1
+1 40 1 159 -1 0
+1 40 0 162 -1 1
+1 40 1 162 -1 1
+1 40 0 141 -1 0
+1 40 0 143 -1 1
 1
 end_operator
 begin_operator
 move bb bc
 3
 168 1
-84 1
-12 0
+13 1
+43 0
 5
-1 107 0 161 -1 1
-1 107 1 161 -1 1
-1 107 1 164 -1 0
-1 107 0 142 -1 1
-1 107 0 146 -1 0
+1 40 0 162 -1 1
+1 40 1 162 -1 1
+1 40 1 167 -1 0
+1 40 0 143 -1 1
+1 40 0 151 -1 0
 1
 end_operator
 begin_operator
@@ -2557,13 +2557,13 @@ move bb cb
 3
 168 1
 4 1
-13 0
+44 0
 5
-1 107 0 161 -1 1
-1 107 1 161 -1 1
-1 107 1 125 -1 0
-1 107 0 142 -1 1
-1 107 0 127 -1 0
+1 40 0 162 -1 1
+1 40 1 162 -1 1
+1 40 1 123 -1 0
+1 40 0 143 -1 1
+1 40 0 124 -1 0
 1
 end_operator
 begin_operator
@@ -2571,139 +2571,139 @@ move bc ac
 3
 168 1
 5 1
-42 0
+82 0
 5
-1 106 1 154 -1 0
-1 106 0 164 -1 1
-1 106 1 164 -1 1
-1 106 0 135 -1 0
-1 106 0 146 -1 1
+1 39 1 157 -1 0
+1 39 0 167 -1 1
+1 39 1 167 -1 1
+1 39 0 138 -1 0
+1 39 0 151 -1 1
 1
 end_operator
 begin_operator
 move bc bb
 3
 168 1
-85 1
-43 0
+14 1
+83 0
 5
-1 106 1 161 -1 0
-1 106 0 164 -1 1
-1 106 1 164 -1 1
-1 106 0 142 -1 0
-1 106 0 146 -1 1
+1 39 1 162 -1 0
+1 39 0 167 -1 1
+1 39 1 167 -1 1
+1 39 0 143 -1 0
+1 39 0 151 -1 1
 1
 end_operator
 begin_operator
 move bc bd
 3
 168 1
-83 1
-44 0
+12 1
+84 0
 5
-1 106 0 164 -1 1
-1 106 1 164 -1 1
-1 106 1 163 -1 0
-1 106 0 146 -1 1
-1 106 0 145 -1 0
+1 39 0 167 -1 1
+1 39 1 167 -1 1
+1 39 1 166 -1 0
+1 39 0 151 -1 1
+1 39 0 150 -1 0
 1
 end_operator
 begin_operator
 move bc cc
 3
 168 1
-96 1
-45 0
+27 1
+85 0
 5
-1 106 0 164 -1 1
-1 106 1 164 -1 1
-1 106 1 162 -1 0
-1 106 0 146 -1 1
-1 106 0 143 -1 0
+1 39 0 167 -1 1
+1 39 1 167 -1 1
+1 39 1 161 -1 0
+1 39 0 151 -1 1
+1 39 0 142 -1 0
 1
 end_operator
 begin_operator
 move bd ad
 3
 168 1
-80 1
-46 0
+9 1
+86 0
 5
-1 105 1 152 -1 0
-1 105 0 163 -1 1
-1 105 1 163 -1 1
-1 105 0 133 -1 0
-1 105 0 145 -1 1
+1 38 1 156 -1 0
+1 38 0 166 -1 1
+1 38 1 166 -1 1
+1 38 0 137 -1 0
+1 38 0 150 -1 1
 1
 end_operator
 begin_operator
 move bd bc
 3
 168 1
-84 1
-47 0
+13 1
+87 0
 5
-1 105 1 164 -1 0
-1 105 0 163 -1 1
-1 105 1 163 -1 1
-1 105 0 146 -1 0
-1 105 0 145 -1 1
+1 38 1 167 -1 0
+1 38 0 166 -1 1
+1 38 1 166 -1 1
+1 38 0 151 -1 0
+1 38 0 150 -1 1
 1
 end_operator
 begin_operator
 move bd be
 3
 168 1
-82 1
-48 0
+11 1
+88 0
 5
-1 105 0 163 -1 1
-1 105 1 163 -1 1
-1 105 1 153 -1 0
-1 105 0 145 -1 1
-1 105 0 134 -1 0
+1 38 0 166 -1 1
+1 38 1 166 -1 1
+1 38 1 155 -1 0
+1 38 0 150 -1 1
+1 38 0 135 -1 0
 1
 end_operator
 begin_operator
 move bd cd
 3
 168 1
-95 1
-49 0
+26 1
+89 0
 5
-1 105 0 163 -1 1
-1 105 1 163 -1 1
-1 105 1 165 -1 0
-1 105 0 145 -1 1
-1 105 0 147 -1 0
+1 38 0 166 -1 1
+1 38 1 166 -1 1
+1 38 1 164 -1 0
+1 38 0 150 -1 1
+1 38 0 147 -1 0
 1
 end_operator
 begin_operator
 move be ae
 3
 168 1
-81 1
-60 0
+10 1
+101 0
 5
-1 93 1 132 -1 0
-1 93 0 153 -1 1
-1 93 1 153 -1 1
-1 93 0 124 -1 0
-1 93 0 134 -1 1
+1 24 1 136 -1 0
+1 24 0 155 -1 1
+1 24 1 155 -1 1
+1 24 0 125 -1 0
+1 24 0 135 -1 1
 1
 end_operator
 begin_operator
 move be bd
 3
 168 1
-83 1
-61 0
+12 1
+102 0
 5
-1 93 1 163 -1 0
-1 93 0 153 -1 1
-1 93 1 153 -1 1
-1 93 0 145 -1 0
-1 93 0 134 -1 1
+1 24 1 166 -1 0
+1 24 0 155 -1 1
+1 24 1 155 -1 1
+1 24 0 150 -1 0
+1 24 0 135 -1 1
 1
 end_operator
 begin_operator
@@ -2711,27 +2711,27 @@ move be ce
 3
 168 1
 3 1
-62 0
+103 0
 5
-1 93 0 153 -1 1
-1 93 1 153 -1 1
-1 93 1 156 -1 0
-1 93 0 134 -1 1
-1 93 0 137 -1 0
+1 24 0 155 -1 1
+1 24 1 155 -1 1
+1 24 1 154 -1 0
+1 24 0 135 -1 1
+1 24 0 134 -1 0
 1
 end_operator
 begin_operator
 move ca ba
 3
 168 1
-86 1
-55 0
+15 1
+96 0
 5
-1 120 1 159 -1 0
-1 120 0 144 -1 1
-1 120 1 144 -1 1
-1 120 0 141 -1 0
-1 120 0 126 -1 1
+1 95 1 159 -1 0
+1 95 0 144 -1 1
+1 95 1 144 -1 1
+1 95 0 141 -1 0
+1 95 0 127 -1 1
 1
 end_operator
 begin_operator
@@ -2739,13 +2739,13 @@ move ca cb
 3
 168 1
 4 1
-56 0
+97 0
 5
-1 120 0 144 -1 1
-1 120 1 144 -1 1
-1 120 1 125 -1 0
-1 120 0 126 -1 1
-1 120 0 127 -1 0
+1 95 0 144 -1 1
+1 95 1 144 -1 1
+1 95 1 123 -1 0
+1 95 0 127 -1 1
+1 95 0 124 -1 0
 1
 end_operator
 begin_operator
@@ -2753,27 +2753,27 @@ move ca da
 3
 168 1
 2 1
-57 0
+98 0
 5
-1 120 0 144 -1 1
-1 120 1 144 -1 1
-1 120 1 121 -1 0
-1 120 0 126 -1 1
-1 120 0 122 -1 0
+1 95 0 144 -1 1
+1 95 1 144 -1 1
+1 95 1 120 -1 0
+1 95 0 127 -1 1
+1 95 0 121 -1 0
 1
 end_operator
 begin_operator
 move cc bc
 3
 168 1
-84 1
-38 0
+13 1
+78 0
 5
-1 108 1 164 -1 0
-1 108 0 162 -1 1
-1 108 1 162 -1 1
-1 108 0 146 -1 0
-1 108 0 143 -1 1
+1 45 1 167 -1 0
+1 45 0 161 -1 1
+1 45 1 161 -1 1
+1 45 0 151 -1 0
+1 45 0 142 -1 1
 1
 end_operator
 begin_operator
@@ -2781,69 +2781,69 @@ move cc cb
 3
 168 1
 4 1
-39 0
+79 0
 5
-1 108 1 125 -1 0
-1 108 0 162 -1 1
-1 108 1 162 -1 1
-1 108 0 127 -1 0
-1 108 0 143 -1 1
+1 45 1 123 -1 0
+1 45 0 161 -1 1
+1 45 1 161 -1 1
+1 45 0 124 -1 0
+1 45 0 142 -1 1
 1
 end_operator
 begin_operator
 move cc cd
 3
 168 1
-95 1
-40 0
+26 1
+80 0
 5
-1 108 0 162 -1 1
-1 108 1 162 -1 1
-1 108 1 165 -1 0
-1 108 0 143 -1 1
-1 108 0 147 -1 0
+1 45 0 161 -1 1
+1 45 1 161 -1 1
+1 45 1 164 -1 0
+1 45 0 142 -1 1
+1 45 0 147 -1 0
 1
 end_operator
 begin_operator
 move cc dc
 3
 168 1
-97 1
-41 0
+28 1
+81 0
 5
-1 108 0 162 -1 1
-1 108 1 162 -1 1
-1 108 1 167 -1 0
-1 108 0 143 -1 1
-1 108 0 151 -1 0
+1 45 0 161 -1 1
+1 45 1 161 -1 1
+1 45 1 163 -1 0
+1 45 0 142 -1 1
+1 45 0 146 -1 0
 1
 end_operator
 begin_operator
 move cd bd
 3
 168 1
-83 1
-50 0
+12 1
+90 0
 5
-1 104 1 163 -1 0
-1 104 0 165 -1 1
-1 104 1 165 -1 1
-1 104 0 145 -1 0
-1 104 0 147 -1 1
+1 37 1 166 -1 0
+1 37 0 164 -1 1
+1 37 1 164 -1 1
+1 37 0 150 -1 0
+1 37 0 147 -1 1
 1
 end_operator
 begin_operator
 move cd cc
 3
 168 1
-96 1
-51 0
+27 1
+91 0
 5
-1 104 1 162 -1 0
-1 104 0 165 -1 1
-1 104 1 165 -1 1
-1 104 0 143 -1 0
-1 104 0 147 -1 1
+1 37 1 161 -1 0
+1 37 0 164 -1 1
+1 37 1 164 -1 1
+1 37 0 142 -1 0
+1 37 0 147 -1 1
 1
 end_operator
 begin_operator
@@ -2851,69 +2851,69 @@ move cd ce
 3
 168 1
 3 1
-52 0
+92 0
 5
-1 104 0 165 -1 1
-1 104 1 165 -1 1
-1 104 1 156 -1 0
-1 104 0 147 -1 1
-1 104 0 137 -1 0
+1 37 0 164 -1 1
+1 37 1 164 -1 1
+1 37 1 154 -1 0
+1 37 0 147 -1 1
+1 37 0 134 -1 0
 1
 end_operator
 begin_operator
 move cd dd
 3
 168 1
-102 1
-53 0
+33 1
+93 0
 5
-1 104 0 165 -1 1
-1 104 1 165 -1 1
-1 104 1 166 -1 0
-1 104 0 147 -1 1
-1 104 0 149 -1 0
+1 37 0 164 -1 1
+1 37 1 164 -1 1
+1 37 1 165 -1 0
+1 37 0 147 -1 1
+1 37 0 148 -1 0
 1
 end_operator
 begin_operator
 move ce be
 3
 168 1
-82 1
-8 0
+11 1
+35 0
 5
-1 94 1 153 -1 0
-1 94 0 156 -1 1
-1 94 1 156 -1 1
-1 94 0 134 -1 0
-1 94 0 137 -1 1
+1 25 1 155 -1 0
+1 25 0 154 -1 1
+1 25 1 154 -1 1
+1 25 0 135 -1 0
+1 25 0 134 -1 1
 1
 end_operator
 begin_operator
 move ce cd
 3
 168 1
-95 1
-9 0
+26 1
+36 0
 5
-1 94 1 165 -1 0
-1 94 0 156 -1 1
-1 94 1 156 -1 1
-1 94 0 147 -1 0
-1 94 0 137 -1 1
+1 25 1 164 -1 0
+1 25 0 154 -1 1
+1 25 1 154 -1 1
+1 25 0 147 -1 0
+1 25 0 134 -1 1
 1
 end_operator
 begin_operator
 move ce de
 3
 168 1
-103 1
-54 0
+34 1
+94 0
 5
-1 94 0 156 -1 1
-1 94 1 156 -1 1
-1 94 1 148 -1 0
-1 94 0 137 -1 1
-1 94 0 128 -1 0
+1 25 0 154 -1 1
+1 25 1 154 -1 1
+1 25 1 149 -1 0
+1 25 0 134 -1 1
+1 25 0 129 -1 0
 1
 end_operator
 begin_operator
@@ -2921,13 +2921,13 @@ move db cb
 3
 168 1
 4 1
-19 0
+59 0
 5
-1 119 1 125 -1 0
-1 119 0 160 -1 1
-1 119 1 160 -1 1
-1 119 0 127 -1 0
-1 119 0 139 -1 1
+1 58 1 123 -1 0
+1 58 0 160 -1 1
+1 58 1 160 -1 1
+1 58 0 124 -1 0
+1 58 0 131 -1 1
 1
 end_operator
 begin_operator
@@ -2935,139 +2935,139 @@ move db da
 3
 168 1
 2 1
-20 0
+60 0
 5
-1 119 1 121 -1 0
-1 119 0 160 -1 1
-1 119 1 160 -1 1
-1 119 0 122 -1 0
-1 119 0 139 -1 1
+1 58 1 120 -1 0
+1 58 0 160 -1 1
+1 58 1 160 -1 1
+1 58 0 121 -1 0
+1 58 0 131 -1 1
 1
 end_operator
 begin_operator
 move db dc
 3
 168 1
-97 1
-21 0
+28 1
+61 0
 5
-1 119 0 160 -1 1
-1 119 1 160 -1 1
-1 119 1 167 -1 0
-1 119 0 139 -1 1
-1 119 0 151 -1 0
+1 58 0 160 -1 1
+1 58 1 160 -1 1
+1 58 1 163 -1 0
+1 58 0 131 -1 1
+1 58 0 146 -1 0
 1
 end_operator
 begin_operator
 move db eb
 3
 168 1
-99 1
-22 0
+30 1
+62 0
 5
-1 119 0 160 -1 1
-1 119 1 160 -1 1
-1 119 1 158 -1 0
-1 119 0 139 -1 1
-1 119 0 140 -1 0
+1 58 0 160 -1 1
+1 58 1 160 -1 1
+1 58 1 153 -1 0
+1 58 0 131 -1 1
+1 58 0 133 -1 0
 1
 end_operator
 begin_operator
 move dc cc
 3
 168 1
-96 1
-34 0
+27 1
+74 0
 5
-1 109 1 162 -1 0
-1 109 0 167 -1 1
-1 109 1 167 -1 1
-1 109 0 143 -1 0
-1 109 0 151 -1 1
+1 46 1 161 -1 0
+1 46 0 163 -1 1
+1 46 1 163 -1 1
+1 46 0 142 -1 0
+1 46 0 146 -1 1
 1
 end_operator
 begin_operator
 move dc db
 3
 168 1
-98 1
-35 0
+29 1
+75 0
 5
-1 109 1 160 -1 0
-1 109 0 167 -1 1
-1 109 1 167 -1 1
-1 109 0 139 -1 0
-1 109 0 151 -1 1
+1 46 1 160 -1 0
+1 46 0 163 -1 1
+1 46 1 163 -1 1
+1 46 0 131 -1 0
+1 46 0 146 -1 1
 1
 end_operator
 begin_operator
 move dc dd
 3
 168 1
-102 1
-36 0
+33 1
+76 0
 5
-1 109 0 167 -1 1
-1 109 1 167 -1 1
-1 109 1 166 -1 0
-1 109 0 151 -1 1
-1 109 0 149 -1 0
+1 46 0 163 -1 1
+1 46 1 163 -1 1
+1 46 1 165 -1 0
+1 46 0 146 -1 1
+1 46 0 148 -1 0
 1
 end_operator
 begin_operator
 move dc ec
 3
 168 1
-110 1
-37 0
+47 1
+77 0
 5
-1 109 0 167 -1 1
-1 109 1 167 -1 1
-1 109 1 157 -1 0
-1 109 0 151 -1 1
-1 109 0 138 -1 0
+1 46 0 163 -1 1
+1 46 1 163 -1 1
+1 46 1 152 -1 0
+1 46 0 146 -1 1
+1 46 0 132 -1 0
 1
 end_operator
 begin_operator
 move dd cd
 3
 168 1
-95 1
-30 0
+26 1
+70 0
 5
-1 114 1 165 -1 0
-1 114 0 166 -1 1
-1 114 1 166 -1 1
-1 114 0 147 -1 0
-1 114 0 149 -1 1
+1 49 1 164 -1 0
+1 49 0 165 -1 1
+1 49 1 165 -1 1
+1 49 0 147 -1 0
+1 49 0 148 -1 1
 1
 end_operator
 begin_operator
 move dd dc
 3
 168 1
-97 1
-31 0
+28 1
+71 0
 5
-1 114 1 167 -1 0
-1 114 0 166 -1 1
-1 114 1 166 -1 1
-1 114 0 151 -1 0
-1 114 0 149 -1 1
+1 49 1 163 -1 0
+1 49 0 165 -1 1
+1 49 1 165 -1 1
+1 49 0 146 -1 0
+1 49 0 148 -1 1
 1
 end_operator
 begin_operator
 move dd de
 3
 168 1
-103 1
-32 0
+34 1
+72 0
 5
-1 114 0 166 -1 1
-1 114 1 166 -1 1
-1 114 1 148 -1 0
-1 114 0 149 -1 1
-1 114 0 128 -1 0
+1 49 0 165 -1 1
+1 49 1 165 -1 1
+1 49 1 149 -1 0
+1 49 0 148 -1 1
+1 49 0 129 -1 0
 1
 end_operator
 begin_operator
@@ -3075,13 +3075,13 @@ move dd ed
 3
 168 1
 1 1
-33 0
+73 0
 5
-1 114 0 166 -1 1
-1 114 1 166 -1 1
-1 114 1 150 -1 0
-1 114 0 149 -1 1
-1 114 0 129 -1 0
+1 49 0 165 -1 1
+1 49 1 165 -1 1
+1 49 1 145 -1 0
+1 49 0 148 -1 1
+1 49 0 128 -1 0
 1
 end_operator
 begin_operator
@@ -3089,27 +3089,27 @@ move de ce
 3
 168 1
 3 1
-14 0
+51 0
 5
-1 115 1 156 -1 0
-1 115 0 148 -1 1
-1 115 1 148 -1 1
-1 115 0 137 -1 0
-1 115 0 128 -1 1
+1 50 1 154 -1 0
+1 50 0 149 -1 1
+1 50 1 149 -1 1
+1 50 0 134 -1 0
+1 50 0 129 -1 1
 1
 end_operator
 begin_operator
 move de dd
 3
 168 1
-102 1
-15 0
+33 1
+52 0
 5
-1 115 1 166 -1 0
-1 115 0 148 -1 1
-1 115 1 148 -1 1
-1 115 0 149 -1 0
-1 115 0 128 -1 1
+1 50 1 165 -1 0
+1 50 0 149 -1 1
+1 50 1 149 -1 1
+1 50 0 148 -1 0
+1 50 0 129 -1 1
 1
 end_operator
 begin_operator
@@ -3117,13 +3117,13 @@ move de ee
 3
 168 1
 0 1
-16 0
+53 0
 5
-1 115 0 148 -1 1
-1 115 1 148 -1 1
-1 115 1 112 -1 0
-1 115 0 128 -1 1
-1 115 0 113 -1 0
+1 50 0 149 -1 1
+1 50 1 149 -1 1
+1 50 1 118 -1 0
+1 50 0 129 -1 1
+1 50 0 119 -1 0
 1
 end_operator
 begin_operator
@@ -3131,97 +3131,97 @@ move ea da
 3
 168 1
 2 1
-58 0
+99 0
 5
-1 101 1 121 -1 0
-1 101 0 130 -1 1
-1 101 1 130 -1 1
-1 101 0 122 -1 0
-1 101 0 118 -1 1
+1 32 1 120 -1 0
+1 32 0 130 -1 1
+1 32 1 130 -1 1
+1 32 0 121 -1 0
+1 32 0 122 -1 1
 1
 end_operator
 begin_operator
 move ea eb
 3
 168 1
-99 1
-59 0
+30 1
+100 0
 5
-1 101 0 130 -1 1
-1 101 1 130 -1 1
-1 101 1 158 -1 0
-1 101 0 118 -1 1
-1 101 0 140 -1 0
+1 32 0 130 -1 1
+1 32 1 130 -1 1
+1 32 1 153 -1 0
+1 32 0 122 -1 1
+1 32 0 133 -1 0
 1
 end_operator
 begin_operator
 move eb db
 3
 168 1
-98 1
-23 0
+29 1
+63 0
 5
-1 117 1 160 -1 0
-1 117 0 158 -1 1
-1 117 1 158 -1 1
-1 117 0 139 -1 0
-1 117 0 140 -1 1
+1 57 1 160 -1 0
+1 57 0 153 -1 1
+1 57 1 153 -1 1
+1 57 0 131 -1 0
+1 57 0 133 -1 1
 1
 end_operator
 begin_operator
 move eb ea
 3
 168 1
-100 1
-24 0
+31 1
+64 0
 5
-1 117 1 130 -1 0
-1 117 0 158 -1 1
-1 117 1 158 -1 1
-1 117 0 118 -1 0
-1 117 0 140 -1 1
+1 57 1 130 -1 0
+1 57 0 153 -1 1
+1 57 1 153 -1 1
+1 57 0 122 -1 0
+1 57 0 133 -1 1
 1
 end_operator
 begin_operator
 move eb ec
 3
 168 1
-110 1
-25 0
+47 1
+65 0
 5
-1 117 0 158 -1 1
-1 117 1 158 -1 1
-1 117 1 157 -1 0
-1 117 0 140 -1 1
-1 117 0 138 -1 0
+1 57 0 153 -1 1
+1 57 1 153 -1 1
+1 57 1 152 -1 0
+1 57 0 133 -1 1
+1 57 0 132 -1 0
 1
 end_operator
 begin_operator
 move ec dc
 3
 168 1
-97 1
-26 0
+28 1
+66 0
 5
-1 116 1 167 -1 0
-1 116 0 157 -1 1
-1 116 1 157 -1 1
-1 116 0 151 -1 0
-1 116 0 138 -1 1
+1 56 1 163 -1 0
+1 56 0 152 -1 1
+1 56 1 152 -1 1
+1 56 0 146 -1 0
+1 56 0 132 -1 1
 1
 end_operator
 begin_operator
 move ec eb
 3
 168 1
-99 1
-27 0
+30 1
+67 0
 5
-1 116 1 158 -1 0
-1 116 0 157 -1 1
-1 116 1 157 -1 1
-1 116 0 140 -1 0
-1 116 0 138 -1 1
+1 56 1 153 -1 0
+1 56 0 152 -1 1
+1 56 1 152 -1 1
+1 56 0 133 -1 0
+1 56 0 132 -1 1
 1
 end_operator
 begin_operator
@@ -3229,41 +3229,41 @@ move ec ed
 3
 168 1
 1 1
-28 0
+68 0
 5
-1 116 0 157 -1 1
-1 116 1 157 -1 1
-1 116 1 150 -1 0
-1 116 0 138 -1 1
-1 116 0 129 -1 0
+1 56 0 152 -1 1
+1 56 1 152 -1 1
+1 56 1 145 -1 0
+1 56 0 132 -1 1
+1 56 0 128 -1 0
 1
 end_operator
 begin_operator
 move ed dd
 3
 168 1
-102 1
-17 0
+33 1
+54 0
 5
-1 111 1 166 -1 0
-1 111 0 150 -1 1
-1 111 1 150 -1 1
-1 111 0 149 -1 0
-1 111 0 129 -1 1
+1 48 1 165 -1 0
+1 48 0 145 -1 1
+1 48 1 145 -1 1
+1 48 0 148 -1 0
+1 48 0 128 -1 1
 1
 end_operator
 begin_operator
 move ed ec
 3
 168 1
-110 1
-18 0
+47 1
+55 0
 5
-1 111 1 157 -1 0
-1 111 0 150 -1 1
-1 111 1 150 -1 1
-1 111 0 138 -1 0
-1 111 0 129 -1 1
+1 48 1 152 -1 0
+1 48 0 145 -1 1
+1 48 1 145 -1 1
+1 48 0 132 -1 0
+1 48 0 128 -1 1
 1
 end_operator
 begin_operator
@@ -3271,16 +3271,16 @@ move ed ee
 3
 168 1
 0 1
-29 0
+69 0
 5
-1 111 0 150 -1 1
-1 111 1 150 -1 1
-1 111 1 112 -1 0
-1 111 0 129 -1 1
-1 111 0 113 -1 0
+1 48 0 145 -1 1
+1 48 1 145 -1 1
+1 48 1 118 -1 0
+1 48 0 128 -1 1
+1 48 0 119 -1 0
 1
 end_operator
-1077
+806
 begin_rule
 0
 5 1 0
@@ -3307,911 +3307,605 @@ begin_rule
 end_rule
 begin_rule
 1
-131 0
-77 1 0
-end_rule
-begin_rule
-1
-131 0
-89 1 0
-end_rule
-begin_rule
-1
-131 0
-72 1 0
-end_rule
-begin_rule
-1
-131 0
-73 1 0
-end_rule
-begin_rule
-2
-131 0
-155 0
-282 1 0
-end_rule
-begin_rule
-2
-131 0
-155 0
-279 1 0
-end_rule
-begin_rule
-2
-131 0
-159 0
-281 1 0
-end_rule
-begin_rule
-2
-131 0
-159 0
-278 1 0
-end_rule
-begin_rule
-2
-131 0
-161 0
-280 1 0
-end_rule
-begin_rule
-2
-131 0
-161 0
-277 1 0
-end_rule
-begin_rule
-2
-131 0
-136 0
-282 1 0
-end_rule
-begin_rule
-2
-131 0
-136 0
-279 1 0
-end_rule
-begin_rule
-2
-131 0
-141 0
-281 1 0
-end_rule
-begin_rule
-2
-131 0
-141 0
-278 1 0
-end_rule
-begin_rule
-2
-131 0
-142 0
-280 1 0
-end_rule
-begin_rule
-2
-131 0
-142 0
-277 1 0
-end_rule
-begin_rule
-2
-131 1
-123 1
-282 0 1
-end_rule
-begin_rule
-2
-131 1
-123 1
-281 0 1
-end_rule
-begin_rule
-2
-131 1
-123 1
-280 0 1
-end_rule
-begin_rule
-2
-131 1
-123 1
-279 0 1
-end_rule
-begin_rule
-2
-131 1
-123 1
-278 0 1
-end_rule
-begin_rule
-2
-131 1
-123 1
-277 0 1
-end_rule
-begin_rule
-2
-131 1
-123 1
-77 0 1
-end_rule
-begin_rule
-2
-131 1
-123 1
-89 0 1
-end_rule
-begin_rule
-1
-155 0
-78 1 0
-end_rule
-begin_rule
-1
-155 0
-90 1 0
-end_rule
-begin_rule
-1
-155 0
-69 1 0
-end_rule
-begin_rule
-1
-155 0
-70 1 0
-end_rule
-begin_rule
-1
-155 0
-71 1 0
-end_rule
-begin_rule
-2
-155 0
-154 0
-276 1 0
-end_rule
-begin_rule
-2
-155 0
-154 0
-272 1 0
-end_rule
-begin_rule
-2
-155 0
-159 0
-275 1 0
-end_rule
-begin_rule
-2
-155 0
-159 0
-271 1 0
-end_rule
-begin_rule
-2
-155 0
-161 0
-274 1 0
-end_rule
-begin_rule
-2
-155 0
-161 0
-270 1 0
-end_rule
-begin_rule
-2
-155 0
-164 0
-273 1 0
-end_rule
-begin_rule
-2
-155 0
-164 0
-269 1 0
-end_rule
-begin_rule
-2
-155 0
-123 0
-282 1 0
-end_rule
-begin_rule
-2
-155 0
-123 0
-279 1 0
-end_rule
-begin_rule
-2
-155 0
-135 0
-276 1 0
-end_rule
-begin_rule
-2
-155 0
-135 0
-272 1 0
-end_rule
-begin_rule
-2
-155 0
-141 0
-275 1 0
-end_rule
-begin_rule
-2
-155 0
-141 0
-271 1 0
-end_rule
-begin_rule
-2
-155 0
-142 0
-274 1 0
-end_rule
-begin_rule
-2
-155 0
-142 0
-270 1 0
-end_rule
-begin_rule
-2
-155 0
-146 0
-273 1 0
-end_rule
-begin_rule
-2
-155 0
-146 0
-269 1 0
-end_rule
-begin_rule
-2
-155 1
-136 1
-282 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-279 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-276 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-275 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-274 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-273 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-272 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-271 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-270 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-269 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-78 0 1
-end_rule
-begin_rule
-2
-155 1
-136 1
-90 0 1
-end_rule
-begin_rule
-1
-154 0
-79 1 0
-end_rule
-begin_rule
-1
-154 0
+140 0
 6 1 0
 end_rule
 begin_rule
 1
-154 0
+140 0
+18 1 0
+end_rule
+begin_rule
+1
+140 0
+113 1 0
+end_rule
+begin_rule
+1
+140 0
+114 1 0
+end_rule
+begin_rule
+2
+140 0
+158 0
+282 1 0
+end_rule
+begin_rule
+2
+140 0
+158 0
+279 1 0
+end_rule
+begin_rule
+2
+140 0
+159 0
+281 1 0
+end_rule
+begin_rule
+2
+140 0
+159 0
+278 1 0
+end_rule
+begin_rule
+2
+140 0
+162 0
+280 1 0
+end_rule
+begin_rule
+2
+140 0
+162 0
+277 1 0
+end_rule
+begin_rule
+2
+140 0
+139 0
+282 1 0
+end_rule
+begin_rule
+2
+140 0
+139 0
+279 1 0
+end_rule
+begin_rule
+2
+140 0
+141 0
+281 1 0
+end_rule
+begin_rule
+2
+140 0
+141 0
+278 1 0
+end_rule
+begin_rule
+2
+140 0
+143 0
+280 1 0
+end_rule
+begin_rule
+2
+140 0
+143 0
+277 1 0
+end_rule
+begin_rule
+1
+158 0
 7 1 0
 end_rule
 begin_rule
 1
-154 0
-68 1 0
+158 0
+19 1 0
+end_rule
+begin_rule
+1
+158 0
+110 1 0
+end_rule
+begin_rule
+1
+158 0
+111 1 0
+end_rule
+begin_rule
+1
+158 0
+112 1 0
 end_rule
 begin_rule
 2
-154 0
-152 0
-268 1 0
-end_rule
-begin_rule
-2
-154 0
-152 0
-264 1 0
-end_rule
-begin_rule
-2
-154 0
-161 0
-267 1 0
-end_rule
-begin_rule
-2
-154 0
-161 0
-263 1 0
-end_rule
-begin_rule
-2
-154 0
-164 0
-266 1 0
-end_rule
-begin_rule
-2
-154 0
-164 0
-262 1 0
-end_rule
-begin_rule
-2
-154 0
-163 0
-265 1 0
-end_rule
-begin_rule
-2
-154 0
-163 0
-261 1 0
-end_rule
-begin_rule
-2
-154 0
-136 0
+158 0
+157 0
 276 1 0
 end_rule
 begin_rule
 2
-154 0
-136 0
+158 0
+157 0
 272 1 0
 end_rule
 begin_rule
 2
-154 0
-133 0
+158 0
+159 0
+275 1 0
+end_rule
+begin_rule
+2
+158 0
+159 0
+271 1 0
+end_rule
+begin_rule
+2
+158 0
+162 0
+274 1 0
+end_rule
+begin_rule
+2
+158 0
+162 0
+270 1 0
+end_rule
+begin_rule
+2
+158 0
+167 0
+273 1 0
+end_rule
+begin_rule
+2
+158 0
+167 0
+269 1 0
+end_rule
+begin_rule
+2
+158 0
+126 0
+282 1 0
+end_rule
+begin_rule
+2
+158 0
+126 0
+279 1 0
+end_rule
+begin_rule
+2
+158 0
+138 0
+276 1 0
+end_rule
+begin_rule
+2
+158 0
+138 0
+272 1 0
+end_rule
+begin_rule
+2
+158 0
+141 0
+275 1 0
+end_rule
+begin_rule
+2
+158 0
+141 0
+271 1 0
+end_rule
+begin_rule
+2
+158 0
+143 0
+274 1 0
+end_rule
+begin_rule
+2
+158 0
+143 0
+270 1 0
+end_rule
+begin_rule
+2
+158 0
+151 0
+273 1 0
+end_rule
+begin_rule
+2
+158 0
+151 0
+269 1 0
+end_rule
+begin_rule
+1
+157 0
+8 1 0
+end_rule
+begin_rule
+1
+157 0
+20 1 0
+end_rule
+begin_rule
+1
+157 0
+21 1 0
+end_rule
+begin_rule
+1
+157 0
+109 1 0
+end_rule
+begin_rule
+2
+157 0
+156 0
 268 1 0
 end_rule
 begin_rule
 2
-154 0
-133 0
+157 0
+156 0
 264 1 0
 end_rule
 begin_rule
 2
-154 0
-142 0
+157 0
+162 0
 267 1 0
 end_rule
 begin_rule
 2
-154 0
-142 0
+157 0
+162 0
 263 1 0
 end_rule
 begin_rule
 2
-154 0
-146 0
+157 0
+167 0
 266 1 0
 end_rule
 begin_rule
 2
-154 0
-146 0
+157 0
+167 0
 262 1 0
 end_rule
 begin_rule
 2
-154 0
-145 0
+157 0
+166 0
 265 1 0
 end_rule
 begin_rule
 2
-154 0
-145 0
+157 0
+166 0
 261 1 0
 end_rule
 begin_rule
 2
-154 1
-135 1
-276 0 1
+157 0
+139 0
+276 1 0
 end_rule
 begin_rule
 2
-154 1
-135 1
-272 0 1
+157 0
+139 0
+272 1 0
 end_rule
 begin_rule
 2
-154 1
-135 1
-268 0 1
-end_rule
-begin_rule
-2
-154 1
-135 1
-267 0 1
-end_rule
-begin_rule
-2
-154 1
-135 1
-266 0 1
-end_rule
-begin_rule
-2
-154 1
-135 1
-265 0 1
-end_rule
-begin_rule
-2
-154 1
-135 1
-264 0 1
-end_rule
-begin_rule
-2
-154 1
-135 1
-263 0 1
-end_rule
-begin_rule
-2
-154 1
-135 1
-262 0 1
-end_rule
-begin_rule
-2
-154 1
-135 1
-261 0 1
-end_rule
-begin_rule
-2
-154 1
-135 1
-79 0 1
-end_rule
-begin_rule
-1
-152 0
-80 1 0
-end_rule
-begin_rule
-1
-152 0
-91 1 0
-end_rule
-begin_rule
-1
-152 0
-65 1 0
-end_rule
-begin_rule
-1
-152 0
-66 1 0
-end_rule
-begin_rule
-1
-152 0
-67 1 0
-end_rule
-begin_rule
-2
-152 0
-132 0
-260 1 0
-end_rule
-begin_rule
-2
-152 0
-132 0
-256 1 0
-end_rule
-begin_rule
-2
-152 0
-164 0
-259 1 0
-end_rule
-begin_rule
-2
-152 0
-164 0
-255 1 0
-end_rule
-begin_rule
-2
-152 0
-163 0
-258 1 0
-end_rule
-begin_rule
-2
-152 0
-163 0
-254 1 0
-end_rule
-begin_rule
-2
-152 0
-153 0
-257 1 0
-end_rule
-begin_rule
-2
-152 0
-153 0
-253 1 0
-end_rule
-begin_rule
-2
-152 0
-135 0
+157 0
+137 0
 268 1 0
 end_rule
 begin_rule
 2
-152 0
-135 0
+157 0
+137 0
 264 1 0
 end_rule
 begin_rule
 2
-152 0
-124 0
+157 0
+143 0
+267 1 0
+end_rule
+begin_rule
+2
+157 0
+143 0
+263 1 0
+end_rule
+begin_rule
+2
+157 0
+151 0
+266 1 0
+end_rule
+begin_rule
+2
+157 0
+151 0
+262 1 0
+end_rule
+begin_rule
+2
+157 0
+150 0
+265 1 0
+end_rule
+begin_rule
+2
+157 0
+150 0
+261 1 0
+end_rule
+begin_rule
+1
+156 0
+9 1 0
+end_rule
+begin_rule
+1
+156 0
+22 1 0
+end_rule
+begin_rule
+1
+156 0
+106 1 0
+end_rule
+begin_rule
+1
+156 0
+107 1 0
+end_rule
+begin_rule
+1
+156 0
+108 1 0
+end_rule
+begin_rule
+2
+156 0
+136 0
 260 1 0
 end_rule
 begin_rule
 2
-152 0
-124 0
+156 0
+136 0
 256 1 0
 end_rule
 begin_rule
 2
-152 0
-146 0
+156 0
+167 0
 259 1 0
 end_rule
 begin_rule
 2
-152 0
-146 0
+156 0
+167 0
 255 1 0
 end_rule
 begin_rule
 2
-152 0
-145 0
+156 0
+166 0
 258 1 0
 end_rule
 begin_rule
 2
-152 0
-145 0
+156 0
+166 0
 254 1 0
 end_rule
 begin_rule
 2
-152 0
-134 0
+156 0
+155 0
 257 1 0
 end_rule
 begin_rule
 2
-152 0
-134 0
+156 0
+155 0
 253 1 0
 end_rule
 begin_rule
 2
-152 1
-133 1
-268 0 1
+156 0
+138 0
+268 1 0
 end_rule
 begin_rule
 2
-152 1
-133 1
-264 0 1
+156 0
+138 0
+264 1 0
 end_rule
 begin_rule
 2
-152 1
-133 1
-260 0 1
-end_rule
-begin_rule
-2
-152 1
-133 1
-259 0 1
-end_rule
-begin_rule
-2
-152 1
-133 1
-258 0 1
-end_rule
-begin_rule
-2
-152 1
-133 1
-257 0 1
-end_rule
-begin_rule
-2
-152 1
-133 1
-256 0 1
-end_rule
-begin_rule
-2
-152 1
-133 1
-255 0 1
-end_rule
-begin_rule
-2
-152 1
-133 1
-254 0 1
-end_rule
-begin_rule
-2
-152 1
-133 1
-253 0 1
-end_rule
-begin_rule
-2
-152 1
-133 1
-80 0 1
-end_rule
-begin_rule
-2
-152 1
-133 1
-91 0 1
-end_rule
-begin_rule
-1
-132 0
-81 1 0
-end_rule
-begin_rule
-1
-132 0
-92 1 0
-end_rule
-begin_rule
-1
-132 0
-63 1 0
-end_rule
-begin_rule
-1
-132 0
-64 1 0
-end_rule
-begin_rule
-2
-132 0
-163 0
-252 1 0
-end_rule
-begin_rule
-2
-132 0
-163 0
-250 1 0
-end_rule
-begin_rule
-2
-132 0
-153 0
-251 1 0
-end_rule
-begin_rule
-2
-132 0
-153 0
-249 1 0
-end_rule
-begin_rule
-2
-132 0
-133 0
+156 0
+125 0
 260 1 0
 end_rule
 begin_rule
 2
-132 0
-133 0
+156 0
+125 0
 256 1 0
 end_rule
 begin_rule
 2
-132 0
-145 0
+156 0
+151 0
+259 1 0
+end_rule
+begin_rule
+2
+156 0
+151 0
+255 1 0
+end_rule
+begin_rule
+2
+156 0
+150 0
+258 1 0
+end_rule
+begin_rule
+2
+156 0
+150 0
+254 1 0
+end_rule
+begin_rule
+2
+156 0
+135 0
+257 1 0
+end_rule
+begin_rule
+2
+156 0
+135 0
+253 1 0
+end_rule
+begin_rule
+1
+136 0
+10 1 0
+end_rule
+begin_rule
+1
+136 0
+23 1 0
+end_rule
+begin_rule
+1
+136 0
+104 1 0
+end_rule
+begin_rule
+1
+136 0
+105 1 0
+end_rule
+begin_rule
+2
+136 0
+166 0
 252 1 0
 end_rule
 begin_rule
 2
-132 0
-145 0
+136 0
+166 0
 250 1 0
 end_rule
 begin_rule
 2
-132 0
-134 0
+136 0
+155 0
 251 1 0
 end_rule
 begin_rule
 2
-132 0
-134 0
+136 0
+155 0
 249 1 0
 end_rule
 begin_rule
 2
-132 1
-124 1
-260 0 1
+136 0
+137 0
+260 1 0
 end_rule
 begin_rule
 2
-132 1
-124 1
-256 0 1
+136 0
+137 0
+256 1 0
 end_rule
 begin_rule
 2
-132 1
-124 1
-252 0 1
+136 0
+150 0
+252 1 0
 end_rule
 begin_rule
 2
-132 1
-124 1
-251 0 1
+136 0
+150 0
+250 1 0
 end_rule
 begin_rule
 2
-132 1
-124 1
-250 0 1
+136 0
+135 0
+251 1 0
 end_rule
 begin_rule
 2
-132 1
-124 1
-249 0 1
-end_rule
-begin_rule
-2
-132 1
-124 1
-81 0 1
-end_rule
-begin_rule
-2
-132 1
-124 1
-92 0 1
+136 0
+135 0
+249 1 0
 end_rule
 begin_rule
 1
 159 0
-86 1 0
+15 1 0
 end_rule
 begin_rule
 1
 159 0
-88 1 0
+17 1 0
 end_rule
 begin_rule
 1
 159 0
-74 1 0
+115 1 0
 end_rule
 begin_rule
 1
 159 0
-75 1 0
+116 1 0
 end_rule
 begin_rule
 1
 159 0
-76 1 0
+117 1 0
 end_rule
 begin_rule
 2
 159 0
-161 0
+162 0
 228 1 0
 end_rule
 begin_rule
 2
 159 0
-161 0
+162 0
 227 1 0
 end_rule
 begin_rule
@@ -4229,1221 +3923,55 @@ end_rule
 begin_rule
 2
 159 0
-123 0
+126 0
 281 1 0
 end_rule
 begin_rule
 2
 159 0
-123 0
+126 0
 278 1 0
 end_rule
 begin_rule
 2
 159 0
-136 0
+139 0
 275 1 0
 end_rule
 begin_rule
 2
 159 0
-136 0
+139 0
 271 1 0
 end_rule
 begin_rule
 2
 159 0
-142 0
+143 0
 228 1 0
 end_rule
 begin_rule
 2
 159 0
-142 0
+143 0
 227 1 0
 end_rule
 begin_rule
 2
 159 0
-126 0
+127 0
 222 1 0
 end_rule
 begin_rule
 2
 159 0
-126 0
+127 0
 221 1 0
 end_rule
 begin_rule
-2
-159 1
-141 1
-281 0 1
-end_rule
-begin_rule
-2
-159 1
-141 1
-275 0 1
-end_rule
-begin_rule
-2
-159 1
-141 1
-278 0 1
-end_rule
-begin_rule
-2
-159 1
-141 1
-271 0 1
-end_rule
-begin_rule
-2
-159 1
-141 1
-228 0 1
-end_rule
-begin_rule
-2
-159 1
-141 1
-222 0 1
-end_rule
-begin_rule
-2
-159 1
-141 1
-227 0 1
-end_rule
-begin_rule
-2
-159 1
-141 1
-221 0 1
-end_rule
-begin_rule
-2
-159 1
-141 1
-86 0 1
-end_rule
-begin_rule
-2
-159 1
-141 1
-88 0 1
-end_rule
-begin_rule
-1
-161 0
-85 1 0
-end_rule
-begin_rule
-1
-161 0
-107 1 0
-end_rule
-begin_rule
-1
-161 0
-10 1 0
-end_rule
-begin_rule
-1
-161 0
-11 1 0
-end_rule
-begin_rule
-1
-161 0
-12 1 0
-end_rule
-begin_rule
-1
-161 0
-13 1 0
-end_rule
-begin_rule
-2
-161 0
-164 0
-234 1 0
-end_rule
-begin_rule
-2
-161 0
-164 0
-233 1 0
-end_rule
-begin_rule
-2
-161 0
-144 0
-226 1 0
-end_rule
-begin_rule
-2
-161 0
-144 0
-224 1 0
-end_rule
-begin_rule
-2
-161 0
-162 0
-225 1 0
-end_rule
-begin_rule
-2
-161 0
-162 0
-223 1 0
-end_rule
-begin_rule
-2
-161 0
-123 0
-280 1 0
-end_rule
-begin_rule
-2
-161 0
-123 0
-277 1 0
-end_rule
-begin_rule
-2
-161 0
-136 0
-274 1 0
-end_rule
-begin_rule
-2
-161 0
-136 0
-270 1 0
-end_rule
-begin_rule
-2
-161 0
-135 0
-267 1 0
-end_rule
-begin_rule
-2
-161 0
-135 0
-263 1 0
-end_rule
-begin_rule
-2
-161 0
-141 0
-228 1 0
-end_rule
-begin_rule
-2
-161 0
-141 0
-227 1 0
-end_rule
-begin_rule
-2
-161 0
-146 0
-234 1 0
-end_rule
-begin_rule
-2
-161 0
-146 0
-233 1 0
-end_rule
-begin_rule
-2
-161 0
-126 0
-226 1 0
-end_rule
-begin_rule
-2
-161 0
-126 0
-224 1 0
-end_rule
-begin_rule
-2
-161 0
-143 0
-225 1 0
-end_rule
-begin_rule
-2
-161 0
-143 0
-223 1 0
-end_rule
-begin_rule
-2
-161 1
-142 1
-280 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-274 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-267 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-228 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-277 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-270 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-263 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-227 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-234 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-226 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-225 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-233 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-224 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-223 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-85 0 1
-end_rule
-begin_rule
-2
-161 1
-142 1
-107 0 1
-end_rule
-begin_rule
-1
-164 0
-84 1 0
-end_rule
-begin_rule
-1
-164 0
-106 1 0
-end_rule
-begin_rule
-1
-164 0
-42 1 0
-end_rule
-begin_rule
-1
-164 0
-43 1 0
-end_rule
-begin_rule
-1
-164 0
-44 1 0
-end_rule
-begin_rule
-1
-164 0
-45 1 0
-end_rule
-begin_rule
-2
-164 0
-163 0
-242 1 0
-end_rule
-begin_rule
-2
-164 0
-163 0
-241 1 0
-end_rule
-begin_rule
-2
-164 0
-162 0
-232 1 0
-end_rule
-begin_rule
-2
-164 0
-162 0
-230 1 0
-end_rule
-begin_rule
-2
-164 0
-165 0
-231 1 0
-end_rule
-begin_rule
-2
-164 0
-165 0
-229 1 0
-end_rule
-begin_rule
-2
-164 0
-136 0
-273 1 0
-end_rule
-begin_rule
-2
-164 0
-136 0
-269 1 0
-end_rule
-begin_rule
-2
-164 0
-135 0
-266 1 0
-end_rule
-begin_rule
-2
-164 0
-135 0
-262 1 0
-end_rule
-begin_rule
-2
-164 0
-133 0
-259 1 0
-end_rule
-begin_rule
-2
-164 0
-133 0
-255 1 0
-end_rule
-begin_rule
-2
-164 0
-142 0
-234 1 0
-end_rule
-begin_rule
-2
-164 0
-142 0
-233 1 0
-end_rule
-begin_rule
-2
-164 0
-145 0
-242 1 0
-end_rule
-begin_rule
-2
-164 0
-145 0
-241 1 0
-end_rule
-begin_rule
-2
-164 0
-143 0
-232 1 0
-end_rule
-begin_rule
-2
-164 0
-143 0
-230 1 0
-end_rule
-begin_rule
-2
-164 0
-147 0
-231 1 0
-end_rule
-begin_rule
-2
-164 0
-147 0
-229 1 0
-end_rule
-begin_rule
-2
-164 1
-146 1
-273 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-266 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-259 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-234 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-269 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-262 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-255 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-233 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-242 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-232 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-231 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-241 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-230 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-229 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-84 0 1
-end_rule
-begin_rule
-2
-164 1
-146 1
-106 0 1
-end_rule
-begin_rule
-1
-163 0
-83 1 0
-end_rule
-begin_rule
-1
-163 0
-105 1 0
-end_rule
-begin_rule
-1
-163 0
-46 1 0
-end_rule
-begin_rule
-1
-163 0
-47 1 0
-end_rule
-begin_rule
-1
-163 0
-48 1 0
-end_rule
-begin_rule
-1
-163 0
-49 1 0
-end_rule
-begin_rule
-2
-163 0
-153 0
-248 1 0
-end_rule
-begin_rule
-2
-163 0
-153 0
-247 1 0
-end_rule
-begin_rule
-2
-163 0
-162 0
-240 1 0
-end_rule
-begin_rule
-2
-163 0
-162 0
-237 1 0
-end_rule
-begin_rule
-2
-163 0
-165 0
-239 1 0
-end_rule
-begin_rule
-2
-163 0
-165 0
-236 1 0
-end_rule
-begin_rule
-2
-163 0
-156 0
-238 1 0
-end_rule
-begin_rule
-2
-163 0
-156 0
-235 1 0
-end_rule
-begin_rule
-2
-163 0
-135 0
-265 1 0
-end_rule
-begin_rule
-2
-163 0
-135 0
-261 1 0
-end_rule
-begin_rule
-2
-163 0
-133 0
-258 1 0
-end_rule
-begin_rule
-2
-163 0
-133 0
-254 1 0
-end_rule
-begin_rule
-2
-163 0
-124 0
-252 1 0
-end_rule
-begin_rule
-2
-163 0
-124 0
-250 1 0
-end_rule
-begin_rule
-2
-163 0
-146 0
-242 1 0
-end_rule
-begin_rule
-2
-163 0
-146 0
-241 1 0
-end_rule
-begin_rule
-2
-163 0
-134 0
-248 1 0
-end_rule
-begin_rule
-2
-163 0
-134 0
-247 1 0
-end_rule
-begin_rule
-2
-163 0
-143 0
-240 1 0
-end_rule
-begin_rule
-2
-163 0
-143 0
-237 1 0
-end_rule
-begin_rule
-2
-163 0
-147 0
-239 1 0
-end_rule
-begin_rule
-2
-163 0
-147 0
-236 1 0
-end_rule
-begin_rule
-2
-163 0
-137 0
-238 1 0
-end_rule
-begin_rule
-2
-163 0
-137 0
-235 1 0
-end_rule
-begin_rule
-2
-163 1
-145 1
-265 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-258 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-252 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-242 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-261 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-254 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-250 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-241 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-248 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-240 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-239 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-238 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-247 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-237 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-236 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-235 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-83 0 1
-end_rule
-begin_rule
-2
-163 1
-145 1
-105 0 1
-end_rule
-begin_rule
-1
-153 0
-82 1 0
-end_rule
-begin_rule
-1
-153 0
-93 1 0
-end_rule
-begin_rule
-1
-153 0
-60 1 0
-end_rule
-begin_rule
-1
-153 0
-61 1 0
-end_rule
-begin_rule
-1
-153 0
-62 1 0
-end_rule
-begin_rule
-2
-153 0
-165 0
-246 1 0
-end_rule
-begin_rule
-2
-153 0
-165 0
-244 1 0
-end_rule
-begin_rule
-2
-153 0
-156 0
-245 1 0
-end_rule
-begin_rule
-2
-153 0
-156 0
-243 1 0
-end_rule
-begin_rule
-2
-153 0
-133 0
-257 1 0
-end_rule
-begin_rule
-2
-153 0
-133 0
-253 1 0
-end_rule
-begin_rule
-2
-153 0
-124 0
-251 1 0
-end_rule
-begin_rule
-2
-153 0
-124 0
-249 1 0
-end_rule
-begin_rule
-2
-153 0
-145 0
-248 1 0
-end_rule
-begin_rule
-2
-153 0
-145 0
-247 1 0
-end_rule
-begin_rule
-2
-153 0
-147 0
-246 1 0
-end_rule
-begin_rule
-2
-153 0
-147 0
-244 1 0
-end_rule
-begin_rule
-2
-153 0
-137 0
-245 1 0
-end_rule
-begin_rule
-2
-153 0
-137 0
-243 1 0
-end_rule
-begin_rule
-2
-153 1
-134 1
-257 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-251 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-248 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-253 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-249 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-247 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-246 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-245 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-244 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-243 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-82 0 1
-end_rule
-begin_rule
-2
-153 1
-134 1
-93 0 1
-end_rule
-begin_rule
-1
-144 0
-87 1 0
-end_rule
-begin_rule
-1
-144 0
-120 1 0
-end_rule
-begin_rule
-1
-144 0
-55 1 0
-end_rule
-begin_rule
-1
-144 0
-56 1 0
-end_rule
-begin_rule
-1
-144 0
-57 1 0
-end_rule
-begin_rule
-2
-144 0
-160 0
-220 1 0
-end_rule
-begin_rule
-2
-144 0
-160 0
-219 1 0
-end_rule
-begin_rule
-2
-144 0
-141 0
-222 1 0
-end_rule
-begin_rule
-2
-144 0
-141 0
-221 1 0
-end_rule
-begin_rule
-2
-144 0
-142 0
-226 1 0
-end_rule
-begin_rule
-2
-144 0
-142 0
-224 1 0
-end_rule
-begin_rule
-2
-144 0
-139 0
-220 1 0
-end_rule
-begin_rule
-2
-144 0
-139 0
-219 1 0
-end_rule
-begin_rule
-2
-144 1
-126 1
-222 0 1
-end_rule
-begin_rule
-2
-144 1
-126 1
-226 0 1
-end_rule
-begin_rule
-2
-144 1
-126 1
-221 0 1
-end_rule
-begin_rule
-2
-144 1
-126 1
-224 0 1
-end_rule
-begin_rule
-2
-144 1
-126 1
-220 0 1
-end_rule
-begin_rule
-2
-144 1
-126 1
-219 0 1
-end_rule
-begin_rule
-2
-144 1
-126 1
-87 0 1
-end_rule
-begin_rule
-2
-144 1
-126 1
-120 0 1
-end_rule
-begin_rule
-1
-125 0
-168 1 0
-end_rule
-begin_rule
-6
-125 1
-121 1
-112 1
-127 1
-122 1
-113 1
-168 0 1
-end_rule
-begin_rule
 1
 162 0
-96 1 0
-end_rule
-begin_rule
-1
-162 0
-108 1 0
-end_rule
-begin_rule
-1
-162 0
-38 1 0
-end_rule
-begin_rule
-1
-162 0
-39 1 0
+14 1 0
 end_rule
 begin_rule
 1
@@ -5456,52 +3984,127 @@ begin_rule
 41 1 0
 end_rule
 begin_rule
-2
+1
 162 0
-165 0
-212 1 0
+42 1 0
 end_rule
 begin_rule
-2
+1
 162 0
-165 0
-211 1 0
+43 1 0
 end_rule
 begin_rule
-2
+1
 162 0
-160 0
-204 1 0
-end_rule
-begin_rule
-2
-162 0
-160 0
-201 1 0
+44 1 0
 end_rule
 begin_rule
 2
 162 0
 167 0
-203 1 0
+234 1 0
 end_rule
 begin_rule
 2
 162 0
 167 0
-200 1 0
+233 1 0
 end_rule
 begin_rule
 2
 162 0
-166 0
-202 1 0
+144 0
+226 1 0
 end_rule
 begin_rule
 2
 162 0
-166 0
-199 1 0
+144 0
+224 1 0
+end_rule
+begin_rule
+2
+162 0
+161 0
+225 1 0
+end_rule
+begin_rule
+2
+162 0
+161 0
+223 1 0
+end_rule
+begin_rule
+2
+162 0
+126 0
+280 1 0
+end_rule
+begin_rule
+2
+162 0
+126 0
+277 1 0
+end_rule
+begin_rule
+2
+162 0
+139 0
+274 1 0
+end_rule
+begin_rule
+2
+162 0
+139 0
+270 1 0
+end_rule
+begin_rule
+2
+162 0
+138 0
+267 1 0
+end_rule
+begin_rule
+2
+162 0
+138 0
+263 1 0
+end_rule
+begin_rule
+2
+162 0
+141 0
+228 1 0
+end_rule
+begin_rule
+2
+162 0
+141 0
+227 1 0
+end_rule
+begin_rule
+2
+162 0
+151 0
+234 1 0
+end_rule
+begin_rule
+2
+162 0
+151 0
+233 1 0
+end_rule
+begin_rule
+2
+162 0
+127 0
+226 1 0
+end_rule
+begin_rule
+2
+162 0
+127 0
+224 1 0
 end_rule
 begin_rule
 2
@@ -5516,670 +4119,1001 @@ begin_rule
 223 1 0
 end_rule
 begin_rule
+1
+167 0
+13 1 0
+end_rule
+begin_rule
+1
+167 0
+39 1 0
+end_rule
+begin_rule
+1
+167 0
+82 1 0
+end_rule
+begin_rule
+1
+167 0
+83 1 0
+end_rule
+begin_rule
+1
+167 0
+84 1 0
+end_rule
+begin_rule
+1
+167 0
+85 1 0
+end_rule
+begin_rule
 2
-162 0
-146 0
+167 0
+166 0
+242 1 0
+end_rule
+begin_rule
+2
+167 0
+166 0
+241 1 0
+end_rule
+begin_rule
+2
+167 0
+161 0
 232 1 0
 end_rule
 begin_rule
 2
-162 0
-146 0
+167 0
+161 0
 230 1 0
 end_rule
 begin_rule
 2
-162 0
-145 0
-240 1 0
-end_rule
-begin_rule
-2
-162 0
-145 0
-237 1 0
-end_rule
-begin_rule
-2
-162 0
-147 0
-212 1 0
-end_rule
-begin_rule
-2
-162 0
-147 0
-211 1 0
-end_rule
-begin_rule
-2
-162 0
-139 0
-204 1 0
-end_rule
-begin_rule
-2
-162 0
-139 0
-201 1 0
-end_rule
-begin_rule
-2
-162 0
-151 0
-203 1 0
-end_rule
-begin_rule
-2
-162 0
-151 0
-200 1 0
-end_rule
-begin_rule
-2
-162 0
-149 0
-202 1 0
-end_rule
-begin_rule
-2
-162 0
-149 0
-199 1 0
-end_rule
-begin_rule
-2
-162 1
-143 1
-225 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-232 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-240 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-223 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-230 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-237 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-212 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-204 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-203 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-202 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-211 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-201 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-200 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-199 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-96 0 1
-end_rule
-begin_rule
-2
-162 1
-143 1
-108 0 1
-end_rule
-begin_rule
-1
-165 0
-95 1 0
-end_rule
-begin_rule
-1
-165 0
-104 1 0
-end_rule
-begin_rule
-1
-165 0
-50 1 0
-end_rule
-begin_rule
-1
-165 0
-51 1 0
-end_rule
-begin_rule
-1
-165 0
-52 1 0
-end_rule
-begin_rule
-1
-165 0
-53 1 0
-end_rule
-begin_rule
-2
-165 0
-156 0
-218 1 0
-end_rule
-begin_rule
-2
-165 0
-156 0
-217 1 0
-end_rule
-begin_rule
-2
-165 0
 167 0
-210 1 0
-end_rule
-begin_rule
-2
-165 0
-167 0
-207 1 0
-end_rule
-begin_rule
-2
-165 0
-166 0
-209 1 0
-end_rule
-begin_rule
-2
-165 0
-166 0
-206 1 0
-end_rule
-begin_rule
-2
-165 0
-148 0
-208 1 0
-end_rule
-begin_rule
-2
-165 0
-148 0
-205 1 0
-end_rule
-begin_rule
-2
-165 0
-146 0
+164 0
 231 1 0
 end_rule
 begin_rule
 2
-165 0
-146 0
+167 0
+164 0
 229 1 0
 end_rule
 begin_rule
 2
-165 0
-145 0
+167 0
+139 0
+273 1 0
+end_rule
+begin_rule
+2
+167 0
+139 0
+269 1 0
+end_rule
+begin_rule
+2
+167 0
+138 0
+266 1 0
+end_rule
+begin_rule
+2
+167 0
+138 0
+262 1 0
+end_rule
+begin_rule
+2
+167 0
+137 0
+259 1 0
+end_rule
+begin_rule
+2
+167 0
+137 0
+255 1 0
+end_rule
+begin_rule
+2
+167 0
+143 0
+234 1 0
+end_rule
+begin_rule
+2
+167 0
+143 0
+233 1 0
+end_rule
+begin_rule
+2
+167 0
+150 0
+242 1 0
+end_rule
+begin_rule
+2
+167 0
+150 0
+241 1 0
+end_rule
+begin_rule
+2
+167 0
+142 0
+232 1 0
+end_rule
+begin_rule
+2
+167 0
+142 0
+230 1 0
+end_rule
+begin_rule
+2
+167 0
+147 0
+231 1 0
+end_rule
+begin_rule
+2
+167 0
+147 0
+229 1 0
+end_rule
+begin_rule
+1
+166 0
+12 1 0
+end_rule
+begin_rule
+1
+166 0
+38 1 0
+end_rule
+begin_rule
+1
+166 0
+86 1 0
+end_rule
+begin_rule
+1
+166 0
+87 1 0
+end_rule
+begin_rule
+1
+166 0
+88 1 0
+end_rule
+begin_rule
+1
+166 0
+89 1 0
+end_rule
+begin_rule
+2
+166 0
+155 0
+248 1 0
+end_rule
+begin_rule
+2
+166 0
+155 0
+247 1 0
+end_rule
+begin_rule
+2
+166 0
+161 0
+240 1 0
+end_rule
+begin_rule
+2
+166 0
+161 0
+237 1 0
+end_rule
+begin_rule
+2
+166 0
+164 0
 239 1 0
 end_rule
 begin_rule
 2
-165 0
-145 0
+166 0
+164 0
 236 1 0
 end_rule
 begin_rule
 2
-165 0
-134 0
-246 1 0
-end_rule
-begin_rule
-2
-165 0
-134 0
-244 1 0
-end_rule
-begin_rule
-2
-165 0
-143 0
-212 1 0
-end_rule
-begin_rule
-2
-165 0
-143 0
-211 1 0
-end_rule
-begin_rule
-2
-165 0
-137 0
-218 1 0
-end_rule
-begin_rule
-2
-165 0
-137 0
-217 1 0
-end_rule
-begin_rule
-2
-165 0
-151 0
-210 1 0
-end_rule
-begin_rule
-2
-165 0
-151 0
-207 1 0
-end_rule
-begin_rule
-2
-165 0
-149 0
-209 1 0
-end_rule
-begin_rule
-2
-165 0
-149 0
-206 1 0
-end_rule
-begin_rule
-2
-165 0
-128 0
-208 1 0
-end_rule
-begin_rule
-2
-165 0
-128 0
-205 1 0
-end_rule
-begin_rule
-2
-165 1
-147 1
-231 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-239 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-246 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-212 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-229 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-236 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-244 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-211 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-218 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-210 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-209 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-208 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-217 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-207 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-206 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-205 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-95 0 1
-end_rule
-begin_rule
-2
-165 1
-147 1
-104 0 1
-end_rule
-begin_rule
-1
-156 0
-94 1 0
-end_rule
-begin_rule
-1
-156 0
-8 1 0
-end_rule
-begin_rule
-1
-156 0
-9 1 0
-end_rule
-begin_rule
-1
-156 0
-54 1 0
-end_rule
-begin_rule
-2
-156 0
 166 0
-216 1 0
-end_rule
-begin_rule
-2
-156 0
-166 0
-214 1 0
-end_rule
-begin_rule
-2
-156 0
-148 0
-215 1 0
-end_rule
-begin_rule
-2
-156 0
-148 0
-213 1 0
-end_rule
-begin_rule
-2
-156 0
-145 0
+154 0
 238 1 0
 end_rule
 begin_rule
 2
-156 0
-145 0
+166 0
+154 0
 235 1 0
 end_rule
 begin_rule
 2
-156 0
+166 0
+138 0
+265 1 0
+end_rule
+begin_rule
+2
+166 0
+138 0
+261 1 0
+end_rule
+begin_rule
+2
+166 0
+137 0
+258 1 0
+end_rule
+begin_rule
+2
+166 0
+137 0
+254 1 0
+end_rule
+begin_rule
+2
+166 0
+125 0
+252 1 0
+end_rule
+begin_rule
+2
+166 0
+125 0
+250 1 0
+end_rule
+begin_rule
+2
+166 0
+151 0
+242 1 0
+end_rule
+begin_rule
+2
+166 0
+151 0
+241 1 0
+end_rule
+begin_rule
+2
+166 0
+135 0
+248 1 0
+end_rule
+begin_rule
+2
+166 0
+135 0
+247 1 0
+end_rule
+begin_rule
+2
+166 0
+142 0
+240 1 0
+end_rule
+begin_rule
+2
+166 0
+142 0
+237 1 0
+end_rule
+begin_rule
+2
+166 0
+147 0
+239 1 0
+end_rule
+begin_rule
+2
+166 0
+147 0
+236 1 0
+end_rule
+begin_rule
+2
+166 0
+134 0
+238 1 0
+end_rule
+begin_rule
+2
+166 0
+134 0
+235 1 0
+end_rule
+begin_rule
+1
+155 0
+11 1 0
+end_rule
+begin_rule
+1
+155 0
+24 1 0
+end_rule
+begin_rule
+1
+155 0
+101 1 0
+end_rule
+begin_rule
+1
+155 0
+102 1 0
+end_rule
+begin_rule
+1
+155 0
+103 1 0
+end_rule
+begin_rule
+2
+155 0
+164 0
+246 1 0
+end_rule
+begin_rule
+2
+155 0
+164 0
+244 1 0
+end_rule
+begin_rule
+2
+155 0
+154 0
+245 1 0
+end_rule
+begin_rule
+2
+155 0
+154 0
+243 1 0
+end_rule
+begin_rule
+2
+155 0
+137 0
+257 1 0
+end_rule
+begin_rule
+2
+155 0
+137 0
+253 1 0
+end_rule
+begin_rule
+2
+155 0
+125 0
+251 1 0
+end_rule
+begin_rule
+2
+155 0
+125 0
+249 1 0
+end_rule
+begin_rule
+2
+155 0
+150 0
+248 1 0
+end_rule
+begin_rule
+2
+155 0
+150 0
+247 1 0
+end_rule
+begin_rule
+2
+155 0
+147 0
+246 1 0
+end_rule
+begin_rule
+2
+155 0
+147 0
+244 1 0
+end_rule
+begin_rule
+2
+155 0
 134 0
 245 1 0
 end_rule
 begin_rule
 2
-156 0
+155 0
 134 0
 243 1 0
 end_rule
 begin_rule
+1
+144 0
+16 1 0
+end_rule
+begin_rule
+1
+144 0
+95 1 0
+end_rule
+begin_rule
+1
+144 0
+96 1 0
+end_rule
+begin_rule
+1
+144 0
+97 1 0
+end_rule
+begin_rule
+1
+144 0
+98 1 0
+end_rule
+begin_rule
 2
-156 0
+144 0
+160 0
+220 1 0
+end_rule
+begin_rule
+2
+144 0
+160 0
+219 1 0
+end_rule
+begin_rule
+2
+144 0
+141 0
+222 1 0
+end_rule
+begin_rule
+2
+144 0
+141 0
+221 1 0
+end_rule
+begin_rule
+2
+144 0
+143 0
+226 1 0
+end_rule
+begin_rule
+2
+144 0
+143 0
+224 1 0
+end_rule
+begin_rule
+2
+144 0
+131 0
+220 1 0
+end_rule
+begin_rule
+2
+144 0
+131 0
+219 1 0
+end_rule
+begin_rule
+1
+123 0
+168 1 0
+end_rule
+begin_rule
+1
+161 0
+27 1 0
+end_rule
+begin_rule
+1
+161 0
+45 1 0
+end_rule
+begin_rule
+1
+161 0
+78 1 0
+end_rule
+begin_rule
+1
+161 0
+79 1 0
+end_rule
+begin_rule
+1
+161 0
+80 1 0
+end_rule
+begin_rule
+1
+161 0
+81 1 0
+end_rule
+begin_rule
+2
+161 0
+164 0
+212 1 0
+end_rule
+begin_rule
+2
+161 0
+164 0
+211 1 0
+end_rule
+begin_rule
+2
+161 0
+160 0
+204 1 0
+end_rule
+begin_rule
+2
+161 0
+160 0
+201 1 0
+end_rule
+begin_rule
+2
+161 0
+163 0
+203 1 0
+end_rule
+begin_rule
+2
+161 0
+163 0
+200 1 0
+end_rule
+begin_rule
+2
+161 0
+165 0
+202 1 0
+end_rule
+begin_rule
+2
+161 0
+165 0
+199 1 0
+end_rule
+begin_rule
+2
+161 0
+143 0
+225 1 0
+end_rule
+begin_rule
+2
+161 0
+143 0
+223 1 0
+end_rule
+begin_rule
+2
+161 0
+151 0
+232 1 0
+end_rule
+begin_rule
+2
+161 0
+151 0
+230 1 0
+end_rule
+begin_rule
+2
+161 0
+150 0
+240 1 0
+end_rule
+begin_rule
+2
+161 0
+150 0
+237 1 0
+end_rule
+begin_rule
+2
+161 0
+147 0
+212 1 0
+end_rule
+begin_rule
+2
+161 0
+147 0
+211 1 0
+end_rule
+begin_rule
+2
+161 0
+131 0
+204 1 0
+end_rule
+begin_rule
+2
+161 0
+131 0
+201 1 0
+end_rule
+begin_rule
+2
+161 0
+146 0
+203 1 0
+end_rule
+begin_rule
+2
+161 0
+146 0
+200 1 0
+end_rule
+begin_rule
+2
+161 0
+148 0
+202 1 0
+end_rule
+begin_rule
+2
+161 0
+148 0
+199 1 0
+end_rule
+begin_rule
+1
+164 0
+26 1 0
+end_rule
+begin_rule
+1
+164 0
+37 1 0
+end_rule
+begin_rule
+1
+164 0
+90 1 0
+end_rule
+begin_rule
+1
+164 0
+91 1 0
+end_rule
+begin_rule
+1
+164 0
+92 1 0
+end_rule
+begin_rule
+1
+164 0
+93 1 0
+end_rule
+begin_rule
+2
+164 0
+154 0
+218 1 0
+end_rule
+begin_rule
+2
+164 0
+154 0
+217 1 0
+end_rule
+begin_rule
+2
+164 0
+163 0
+210 1 0
+end_rule
+begin_rule
+2
+164 0
+163 0
+207 1 0
+end_rule
+begin_rule
+2
+164 0
+165 0
+209 1 0
+end_rule
+begin_rule
+2
+164 0
+165 0
+206 1 0
+end_rule
+begin_rule
+2
+164 0
+149 0
+208 1 0
+end_rule
+begin_rule
+2
+164 0
+149 0
+205 1 0
+end_rule
+begin_rule
+2
+164 0
+151 0
+231 1 0
+end_rule
+begin_rule
+2
+164 0
+151 0
+229 1 0
+end_rule
+begin_rule
+2
+164 0
+150 0
+239 1 0
+end_rule
+begin_rule
+2
+164 0
+150 0
+236 1 0
+end_rule
+begin_rule
+2
+164 0
+135 0
+246 1 0
+end_rule
+begin_rule
+2
+164 0
+135 0
+244 1 0
+end_rule
+begin_rule
+2
+164 0
+142 0
+212 1 0
+end_rule
+begin_rule
+2
+164 0
+142 0
+211 1 0
+end_rule
+begin_rule
+2
+164 0
+134 0
+218 1 0
+end_rule
+begin_rule
+2
+164 0
+134 0
+217 1 0
+end_rule
+begin_rule
+2
+164 0
+146 0
+210 1 0
+end_rule
+begin_rule
+2
+164 0
+146 0
+207 1 0
+end_rule
+begin_rule
+2
+164 0
+148 0
+209 1 0
+end_rule
+begin_rule
+2
+164 0
+148 0
+206 1 0
+end_rule
+begin_rule
+2
+164 0
+129 0
+208 1 0
+end_rule
+begin_rule
+2
+164 0
+129 0
+205 1 0
+end_rule
+begin_rule
+1
+154 0
+25 1 0
+end_rule
+begin_rule
+1
+154 0
+35 1 0
+end_rule
+begin_rule
+1
+154 0
+36 1 0
+end_rule
+begin_rule
+1
+154 0
+94 1 0
+end_rule
+begin_rule
+2
+154 0
+165 0
+216 1 0
+end_rule
+begin_rule
+2
+154 0
+165 0
+214 1 0
+end_rule
+begin_rule
+2
+154 0
+149 0
+215 1 0
+end_rule
+begin_rule
+2
+154 0
+149 0
+213 1 0
+end_rule
+begin_rule
+2
+154 0
+150 0
+238 1 0
+end_rule
+begin_rule
+2
+154 0
+150 0
+235 1 0
+end_rule
+begin_rule
+2
+154 0
+135 0
+245 1 0
+end_rule
+begin_rule
+2
+154 0
+135 0
+243 1 0
+end_rule
+begin_rule
+2
+154 0
 147 0
 218 1 0
 end_rule
 begin_rule
 2
-156 0
+154 0
 147 0
 217 1 0
 end_rule
 begin_rule
 2
-156 0
-149 0
+154 0
+148 0
 216 1 0
 end_rule
 begin_rule
 2
-156 0
-149 0
+154 0
+148 0
 214 1 0
 end_rule
 begin_rule
 2
-156 0
-128 0
+154 0
+129 0
 215 1 0
 end_rule
 begin_rule
 2
-156 0
-128 0
+154 0
+129 0
 213 1 0
 end_rule
 begin_rule
-2
-156 1
-137 1
-238 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-245 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-218 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-235 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-243 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-217 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-216 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-215 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-214 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-213 0 1
-end_rule
-begin_rule
-2
-156 1
-137 1
-94 0 1
-end_rule
-begin_rule
 1
-121 0
+120 0
 168 1 0
 end_rule
 begin_rule
 1
 160 0
-98 1 0
+29 1 0
 end_rule
 begin_rule
 1
 160 0
-119 1 0
+58 1 0
 end_rule
 begin_rule
 1
 160 0
-19 1 0
+59 1 0
 end_rule
 begin_rule
 1
 160 0
-20 1 0
+60 1 0
 end_rule
 begin_rule
 1
 160 0
-21 1 0
+61 1 0
 end_rule
 begin_rule
 1
 160 0
-22 1 0
+62 1 0
 end_rule
 begin_rule
 2
 160 0
-167 0
+163 0
 198 1 0
 end_rule
 begin_rule
 2
 160 0
-167 0
+163 0
 197 1 0
 end_rule
 begin_rule
@@ -6197,831 +5131,510 @@ end_rule
 begin_rule
 2
 160 0
-158 0
+153 0
 187 1 0
 end_rule
 begin_rule
 2
 160 0
-158 0
+153 0
 184 1 0
 end_rule
 begin_rule
 2
 160 0
-157 0
+152 0
 186 1 0
 end_rule
 begin_rule
 2
 160 0
-157 0
+152 0
 183 1 0
 end_rule
 begin_rule
 2
 160 0
-126 0
+127 0
 220 1 0
 end_rule
 begin_rule
 2
 160 0
-126 0
+127 0
 219 1 0
 end_rule
 begin_rule
 2
 160 0
-143 0
+142 0
 204 1 0
 end_rule
 begin_rule
 2
 160 0
-143 0
+142 0
 201 1 0
 end_rule
 begin_rule
 2
 160 0
-151 0
+146 0
 198 1 0
 end_rule
 begin_rule
 2
 160 0
-151 0
+146 0
 197 1 0
 end_rule
 begin_rule
 2
 160 0
-118 0
+122 0
 188 1 0
 end_rule
 begin_rule
 2
 160 0
-118 0
+122 0
 185 1 0
 end_rule
 begin_rule
 2
 160 0
-140 0
+133 0
 187 1 0
 end_rule
 begin_rule
 2
 160 0
-140 0
+133 0
 184 1 0
 end_rule
 begin_rule
 2
 160 0
-138 0
+132 0
 186 1 0
 end_rule
 begin_rule
 2
 160 0
-138 0
+132 0
 183 1 0
 end_rule
 begin_rule
-2
-160 1
-139 1
-220 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-204 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-219 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-201 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-198 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-188 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-187 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-186 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-197 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-185 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-184 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-183 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-98 0 1
-end_rule
-begin_rule
-2
-160 1
-139 1
-119 0 1
+1
+163 0
+28 1 0
 end_rule
 begin_rule
 1
-167 0
-97 1 0
+163 0
+46 1 0
 end_rule
 begin_rule
 1
-167 0
-109 1 0
+163 0
+74 1 0
 end_rule
 begin_rule
 1
-167 0
-34 1 0
+163 0
+75 1 0
 end_rule
 begin_rule
 1
-167 0
-35 1 0
+163 0
+76 1 0
 end_rule
 begin_rule
 1
-167 0
-36 1 0
-end_rule
-begin_rule
-1
-167 0
-37 1 0
+163 0
+77 1 0
 end_rule
 begin_rule
 2
-167 0
-166 0
+163 0
+165 0
 196 1 0
 end_rule
 begin_rule
 2
-167 0
-166 0
+163 0
+165 0
 192 1 0
 end_rule
 begin_rule
 2
-167 0
-158 0
+163 0
+153 0
 195 1 0
 end_rule
 begin_rule
 2
-167 0
-158 0
+163 0
+153 0
 191 1 0
 end_rule
 begin_rule
 2
-167 0
-157 0
+163 0
+152 0
 194 1 0
 end_rule
 begin_rule
 2
-167 0
-157 0
+163 0
+152 0
 190 1 0
 end_rule
 begin_rule
 2
-167 0
-150 0
+163 0
+145 0
 193 1 0
 end_rule
 begin_rule
 2
-167 0
-150 0
+163 0
+145 0
 189 1 0
 end_rule
 begin_rule
 2
-167 0
-143 0
+163 0
+142 0
 203 1 0
 end_rule
 begin_rule
 2
-167 0
-143 0
+163 0
+142 0
 200 1 0
 end_rule
 begin_rule
 2
-167 0
+163 0
 147 0
 210 1 0
 end_rule
 begin_rule
 2
-167 0
+163 0
 147 0
 207 1 0
 end_rule
 begin_rule
 2
-167 0
-139 0
+163 0
+131 0
 198 1 0
 end_rule
 begin_rule
 2
-167 0
-139 0
+163 0
+131 0
 197 1 0
 end_rule
 begin_rule
 2
-167 0
-149 0
+163 0
+148 0
 196 1 0
 end_rule
 begin_rule
 2
-167 0
-149 0
+163 0
+148 0
 192 1 0
 end_rule
 begin_rule
 2
-167 0
-140 0
+163 0
+133 0
 195 1 0
 end_rule
 begin_rule
 2
-167 0
-140 0
+163 0
+133 0
 191 1 0
 end_rule
 begin_rule
 2
-167 0
-138 0
+163 0
+132 0
 194 1 0
 end_rule
 begin_rule
 2
-167 0
-138 0
+163 0
+132 0
 190 1 0
 end_rule
 begin_rule
 2
-167 0
-129 0
+163 0
+128 0
 193 1 0
 end_rule
 begin_rule
 2
-167 0
-129 0
+163 0
+128 0
 189 1 0
 end_rule
 begin_rule
-2
-167 1
-151 1
-203 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-210 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-198 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-200 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-207 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-197 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-196 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-195 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-194 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-193 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-192 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-191 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-190 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-189 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-97 0 1
-end_rule
-begin_rule
-2
-167 1
-151 1
-109 0 1
-end_rule
-begin_rule
 1
-166 0
-102 1 0
-end_rule
-begin_rule
-1
-166 0
-114 1 0
-end_rule
-begin_rule
-1
-166 0
-30 1 0
-end_rule
-begin_rule
-1
-166 0
-31 1 0
-end_rule
-begin_rule
-1
-166 0
-32 1 0
-end_rule
-begin_rule
-1
-166 0
+165 0
 33 1 0
 end_rule
 begin_rule
+1
+165 0
+49 1 0
+end_rule
+begin_rule
+1
+165 0
+70 1 0
+end_rule
+begin_rule
+1
+165 0
+71 1 0
+end_rule
+begin_rule
+1
+165 0
+72 1 0
+end_rule
+begin_rule
+1
+165 0
+73 1 0
+end_rule
+begin_rule
 2
-166 0
-148 0
+165 0
+149 0
 178 1 0
 end_rule
 begin_rule
 2
-166 0
-148 0
+165 0
+149 0
 175 1 0
 end_rule
 begin_rule
 2
-166 0
-157 0
+165 0
+152 0
 177 1 0
 end_rule
 begin_rule
 2
-166 0
-157 0
+165 0
+152 0
 174 1 0
 end_rule
 begin_rule
 2
-166 0
-150 0
+165 0
+145 0
 176 1 0
 end_rule
 begin_rule
 2
-166 0
-150 0
+165 0
+145 0
 173 1 0
 end_rule
 begin_rule
 2
-166 0
-143 0
+165 0
+142 0
 202 1 0
 end_rule
 begin_rule
 2
-166 0
-143 0
+165 0
+142 0
 199 1 0
 end_rule
 begin_rule
 2
-166 0
+165 0
 147 0
 209 1 0
 end_rule
 begin_rule
 2
-166 0
+165 0
 147 0
 206 1 0
 end_rule
 begin_rule
 2
-166 0
-137 0
+165 0
+134 0
 216 1 0
 end_rule
 begin_rule
 2
-166 0
-137 0
+165 0
+134 0
 214 1 0
 end_rule
 begin_rule
 2
-166 0
-151 0
+165 0
+146 0
 196 1 0
 end_rule
 begin_rule
 2
-166 0
-151 0
+165 0
+146 0
 192 1 0
 end_rule
 begin_rule
 2
-166 0
-128 0
+165 0
+129 0
 178 1 0
 end_rule
 begin_rule
 2
-166 0
-128 0
+165 0
+129 0
 175 1 0
 end_rule
 begin_rule
 2
-166 0
-138 0
+165 0
+132 0
 177 1 0
 end_rule
 begin_rule
 2
-166 0
-138 0
+165 0
+132 0
 174 1 0
 end_rule
 begin_rule
 2
-166 0
-129 0
+165 0
+128 0
 176 1 0
 end_rule
 begin_rule
 2
-166 0
-129 0
+165 0
+128 0
 173 1 0
 end_rule
 begin_rule
-2
-166 1
-149 1
-202 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-209 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-216 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-196 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-199 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-206 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-214 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-192 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-178 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-177 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-176 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-175 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-174 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-173 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-102 0 1
-end_rule
-begin_rule
-2
-166 1
-149 1
-114 0 1
+1
+149 0
+34 1 0
 end_rule
 begin_rule
 1
-148 0
-103 1 0
+149 0
+50 1 0
 end_rule
 begin_rule
 1
-148 0
-115 1 0
+149 0
+51 1 0
 end_rule
 begin_rule
 1
-148 0
-14 1 0
+149 0
+52 1 0
 end_rule
 begin_rule
 1
-148 0
-15 1 0
-end_rule
-begin_rule
-1
-148 0
-16 1 0
+149 0
+53 1 0
 end_rule
 begin_rule
 2
-148 0
-150 0
+149 0
+145 0
 172 1 0
 end_rule
 begin_rule
 2
-148 0
-150 0
+149 0
+145 0
 171 1 0
 end_rule
 begin_rule
 2
-148 0
+149 0
 147 0
 208 1 0
 end_rule
 begin_rule
 2
-148 0
+149 0
 147 0
 205 1 0
 end_rule
 begin_rule
 2
-148 0
-137 0
+149 0
+134 0
 215 1 0
 end_rule
 begin_rule
 2
-148 0
-137 0
+149 0
+134 0
 213 1 0
 end_rule
 begin_rule
 2
-148 0
 149 0
+148 0
 178 1 0
 end_rule
 begin_rule
 2
-148 0
 149 0
+148 0
 175 1 0
 end_rule
 begin_rule
 2
-148 0
-129 0
+149 0
+128 0
 172 1 0
 end_rule
 begin_rule
 2
-148 0
-129 0
+149 0
+128 0
 171 1 0
 end_rule
 begin_rule
-2
-148 1
-128 1
-208 0 1
+1
+130 0
+31 1 0
 end_rule
 begin_rule
-2
-148 1
-128 1
-215 0 1
+1
+130 0
+32 1 0
 end_rule
 begin_rule
-2
-148 1
-128 1
-178 0 1
-end_rule
-begin_rule
-2
-148 1
-128 1
-205 0 1
-end_rule
-begin_rule
-2
-148 1
-128 1
-213 0 1
-end_rule
-begin_rule
-2
-148 1
-128 1
-175 0 1
-end_rule
-begin_rule
-2
-148 1
-128 1
-172 0 1
-end_rule
-begin_rule
-2
-148 1
-128 1
-171 0 1
-end_rule
-begin_rule
-2
-148 1
-128 1
-103 0 1
-end_rule
-begin_rule
-2
-148 1
-128 1
-115 0 1
+1
+130 0
+99 1 0
 end_rule
 begin_rule
 1
@@ -7029,655 +5642,300 @@ begin_rule
 100 1 0
 end_rule
 begin_rule
-1
-130 0
-101 1 0
-end_rule
-begin_rule
-1
-130 0
-58 1 0
-end_rule
-begin_rule
-1
-130 0
-59 1 0
-end_rule
-begin_rule
 2
 130 0
-158 0
+153 0
 182 1 0
 end_rule
 begin_rule
 2
 130 0
-158 0
+153 0
 181 1 0
 end_rule
 begin_rule
 2
 130 0
-139 0
+131 0
 188 1 0
 end_rule
 begin_rule
 2
 130 0
-139 0
+131 0
 185 1 0
 end_rule
 begin_rule
 2
 130 0
-140 0
+133 0
 182 1 0
 end_rule
 begin_rule
 2
 130 0
-140 0
+133 0
 181 1 0
 end_rule
 begin_rule
-2
-130 1
-118 1
-188 0 1
-end_rule
-begin_rule
-2
-130 1
-118 1
-185 0 1
-end_rule
-begin_rule
-2
-130 1
-118 1
-182 0 1
-end_rule
-begin_rule
-2
-130 1
-118 1
-181 0 1
-end_rule
-begin_rule
-2
-130 1
-118 1
-100 0 1
-end_rule
-begin_rule
-2
-130 1
-118 1
-101 0 1
+1
+153 0
+30 1 0
 end_rule
 begin_rule
 1
-158 0
-99 1 0
+153 0
+57 1 0
 end_rule
 begin_rule
 1
-158 0
-117 1 0
+153 0
+63 1 0
 end_rule
 begin_rule
 1
-158 0
-23 1 0
+153 0
+64 1 0
 end_rule
 begin_rule
 1
-158 0
-24 1 0
-end_rule
-begin_rule
-1
-158 0
-25 1 0
+153 0
+65 1 0
 end_rule
 begin_rule
 2
-158 0
-157 0
+153 0
+152 0
 180 1 0
 end_rule
 begin_rule
 2
-158 0
-157 0
+153 0
+152 0
 179 1 0
 end_rule
 begin_rule
 2
-158 0
-139 0
+153 0
+131 0
 187 1 0
 end_rule
 begin_rule
 2
-158 0
-139 0
+153 0
+131 0
 184 1 0
 end_rule
 begin_rule
 2
-158 0
-151 0
+153 0
+146 0
 195 1 0
 end_rule
 begin_rule
 2
-158 0
-151 0
+153 0
+146 0
 191 1 0
 end_rule
 begin_rule
 2
-158 0
-118 0
+153 0
+122 0
 182 1 0
 end_rule
 begin_rule
 2
-158 0
-118 0
+153 0
+122 0
 181 1 0
 end_rule
 begin_rule
 2
-158 0
-138 0
+153 0
+132 0
 180 1 0
 end_rule
 begin_rule
 2
-158 0
-138 0
+153 0
+132 0
 179 1 0
 end_rule
 begin_rule
-2
-158 1
-140 1
-187 0 1
-end_rule
-begin_rule
-2
-158 1
-140 1
-195 0 1
-end_rule
-begin_rule
-2
-158 1
-140 1
-182 0 1
-end_rule
-begin_rule
-2
-158 1
-140 1
-184 0 1
-end_rule
-begin_rule
-2
-158 1
-140 1
-191 0 1
-end_rule
-begin_rule
-2
-158 1
-140 1
-181 0 1
-end_rule
-begin_rule
-2
-158 1
-140 1
-180 0 1
-end_rule
-begin_rule
-2
-158 1
-140 1
-179 0 1
-end_rule
-begin_rule
-2
-158 1
-140 1
-99 0 1
-end_rule
-begin_rule
-2
-158 1
-140 1
-117 0 1
+1
+152 0
+47 1 0
 end_rule
 begin_rule
 1
-157 0
-110 1 0
+152 0
+56 1 0
 end_rule
 begin_rule
 1
-157 0
-116 1 0
+152 0
+66 1 0
 end_rule
 begin_rule
 1
-157 0
-26 1 0
+152 0
+67 1 0
 end_rule
 begin_rule
 1
-157 0
-27 1 0
-end_rule
-begin_rule
-1
-157 0
-28 1 0
+152 0
+68 1 0
 end_rule
 begin_rule
 2
-157 0
-150 0
+152 0
+145 0
 170 1 0
 end_rule
 begin_rule
 2
-157 0
-150 0
+152 0
+145 0
 169 1 0
 end_rule
 begin_rule
 2
-157 0
-139 0
+152 0
+131 0
 186 1 0
 end_rule
 begin_rule
 2
-157 0
-139 0
+152 0
+131 0
 183 1 0
 end_rule
 begin_rule
 2
-157 0
-151 0
+152 0
+146 0
 194 1 0
 end_rule
 begin_rule
 2
-157 0
-151 0
+152 0
+146 0
 190 1 0
 end_rule
 begin_rule
 2
-157 0
-149 0
+152 0
+148 0
 177 1 0
 end_rule
 begin_rule
 2
-157 0
-149 0
+152 0
+148 0
 174 1 0
 end_rule
 begin_rule
 2
-157 0
-140 0
+152 0
+133 0
 180 1 0
 end_rule
 begin_rule
 2
-157 0
-140 0
+152 0
+133 0
 179 1 0
 end_rule
 begin_rule
 2
-157 0
-129 0
+152 0
+128 0
 170 1 0
 end_rule
 begin_rule
 2
-157 0
-129 0
+152 0
+128 0
 169 1 0
 end_rule
 begin_rule
-2
-157 1
-138 1
-186 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-194 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-177 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-180 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-183 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-190 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-174 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-179 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-170 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-169 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-110 0 1
-end_rule
-begin_rule
-2
-157 1
-138 1
-116 0 1
+1
+145 0
+48 1 0
 end_rule
 begin_rule
 1
-150 0
-111 1 0
+145 0
+54 1 0
 end_rule
 begin_rule
 1
-150 0
-17 1 0
+145 0
+55 1 0
 end_rule
 begin_rule
 1
-150 0
-18 1 0
-end_rule
-begin_rule
-1
-150 0
-29 1 0
+145 0
+69 1 0
 end_rule
 begin_rule
 2
-150 0
-151 0
+145 0
+146 0
 193 1 0
 end_rule
 begin_rule
 2
-150 0
-151 0
+145 0
+146 0
 189 1 0
 end_rule
 begin_rule
 2
-150 0
-149 0
+145 0
+148 0
 176 1 0
 end_rule
 begin_rule
 2
-150 0
-149 0
+145 0
+148 0
 173 1 0
 end_rule
 begin_rule
 2
-150 0
-128 0
+145 0
+129 0
 172 1 0
 end_rule
 begin_rule
 2
-150 0
-128 0
+145 0
+129 0
 171 1 0
 end_rule
 begin_rule
 2
-150 0
-138 0
+145 0
+132 0
 170 1 0
 end_rule
 begin_rule
 2
-150 0
-138 0
+145 0
+132 0
 169 1 0
 end_rule
 begin_rule
-2
-150 1
-129 1
-193 0 1
-end_rule
-begin_rule
-2
-150 1
-129 1
-176 0 1
-end_rule
-begin_rule
-2
-150 1
-129 1
-172 0 1
-end_rule
-begin_rule
-2
-150 1
-129 1
-170 0 1
-end_rule
-begin_rule
-2
-150 1
-129 1
-189 0 1
-end_rule
-begin_rule
-2
-150 1
-129 1
-173 0 1
-end_rule
-begin_rule
-2
-150 1
-129 1
-171 0 1
-end_rule
-begin_rule
-2
-150 1
-129 1
-169 0 1
-end_rule
-begin_rule
-2
-150 1
-129 1
-111 0 1
-end_rule
-begin_rule
 1
-112 0
+118 0
 168 1 0
 end_rule
 begin_rule
 1
 282 0
 283 1 0
-end_rule
-begin_rule
-114
-282 1
-281 1
-280 1
-279 1
-276 1
-275 1
-274 1
-273 1
-272 1
-268 1
-267 1
-266 1
-265 1
-264 1
-260 1
-259 1
-258 1
-257 1
-256 1
-252 1
-251 1
-278 1
-271 1
-228 1
-222 1
-277 1
-270 1
-263 1
-227 1
-234 1
-226 1
-225 1
-269 1
-262 1
-255 1
-233 1
-242 1
-232 1
-231 1
-261 1
-254 1
-250 1
-241 1
-248 1
-240 1
-239 1
-238 1
-253 1
-249 1
-247 1
-246 1
-245 1
-221 1
-224 1
-220 1
-223 1
-230 1
-237 1
-212 1
-204 1
-203 1
-202 1
-229 1
-236 1
-244 1
-211 1
-218 1
-210 1
-209 1
-208 1
-235 1
-243 1
-217 1
-216 1
-215 1
-219 1
-201 1
-198 1
-188 1
-187 1
-186 1
-200 1
-207 1
-197 1
-196 1
-195 1
-194 1
-193 1
-199 1
-206 1
-214 1
-192 1
-178 1
-177 1
-176 1
-205 1
-213 1
-175 1
-172 1
-185 1
-182 1
-184 1
-191 1
-181 1
-180 1
-183 1
-190 1
-174 1
-179 1
-170 1
-189 1
-173 1
-171 1
-169 1
-283 0 1
 end_rule
 begin_rule
 1
@@ -8246,687 +6504,371 @@ begin_rule
 end_rule
 begin_rule
 1
-123 0
-77 1 0
+126 0
+6 1 0
 end_rule
 begin_rule
 1
-123 0
-89 1 0
+126 0
+18 1 0
 end_rule
 begin_rule
 1
-123 0
-72 1 0
+126 0
+113 1 0
 end_rule
 begin_rule
 1
-123 0
-73 1 0
+126 0
+114 1 0
 end_rule
 begin_rule
 2
-123 0
-136 0
+126 0
+139 0
 282 1 0
 end_rule
 begin_rule
 2
-123 0
-136 0
+126 0
+139 0
 279 1 0
 end_rule
 begin_rule
 2
-123 0
+126 0
 141 0
 281 1 0
 end_rule
 begin_rule
 2
-123 0
+126 0
 141 0
 278 1 0
 end_rule
 begin_rule
 2
-123 0
-142 0
+126 0
+143 0
 280 1 0
 end_rule
 begin_rule
 2
-123 0
-142 0
+126 0
+143 0
 277 1 0
 end_rule
 begin_rule
 1
-136 0
-78 1 0
+139 0
+7 1 0
 end_rule
 begin_rule
 1
-136 0
-90 1 0
+139 0
+19 1 0
 end_rule
 begin_rule
 1
-136 0
-69 1 0
+139 0
+110 1 0
 end_rule
 begin_rule
 1
-136 0
-70 1 0
+139 0
+111 1 0
 end_rule
 begin_rule
 1
-136 0
-71 1 0
+139 0
+112 1 0
 end_rule
 begin_rule
 2
-136 0
-135 0
+139 0
+138 0
 276 1 0
 end_rule
 begin_rule
 2
-136 0
-135 0
+139 0
+138 0
 272 1 0
 end_rule
 begin_rule
 2
-136 0
+139 0
 141 0
 275 1 0
 end_rule
 begin_rule
 2
-136 0
+139 0
 141 0
 271 1 0
 end_rule
 begin_rule
 2
-136 0
-142 0
+139 0
+143 0
 274 1 0
 end_rule
 begin_rule
 2
-136 0
-142 0
+139 0
+143 0
 270 1 0
 end_rule
 begin_rule
 2
-136 0
-146 0
+139 0
+151 0
 273 1 0
 end_rule
 begin_rule
 2
-136 0
-146 0
+139 0
+151 0
 269 1 0
 end_rule
 begin_rule
 1
-135 0
-79 1 0
+138 0
+8 1 0
 end_rule
 begin_rule
 1
-135 0
-6 1 0
+138 0
+20 1 0
 end_rule
 begin_rule
 1
-135 0
-7 1 0
+138 0
+21 1 0
 end_rule
 begin_rule
 1
-135 0
-68 1 0
+138 0
+109 1 0
 end_rule
 begin_rule
 2
-135 0
-133 0
+138 0
+137 0
 268 1 0
 end_rule
 begin_rule
 2
-135 0
-133 0
+138 0
+137 0
 264 1 0
 end_rule
 begin_rule
 2
-135 0
-142 0
+138 0
+143 0
 267 1 0
 end_rule
 begin_rule
 2
-135 0
-142 0
+138 0
+143 0
 263 1 0
 end_rule
 begin_rule
 2
-135 0
-146 0
+138 0
+151 0
 266 1 0
 end_rule
 begin_rule
 2
-135 0
-146 0
+138 0
+151 0
 262 1 0
 end_rule
 begin_rule
 2
-135 0
-145 0
+138 0
+150 0
 265 1 0
 end_rule
 begin_rule
 2
-135 0
-145 0
+138 0
+150 0
 261 1 0
 end_rule
 begin_rule
 1
-133 0
-80 1 0
+137 0
+9 1 0
 end_rule
 begin_rule
 1
-133 0
-91 1 0
+137 0
+22 1 0
 end_rule
 begin_rule
 1
-133 0
-65 1 0
+137 0
+106 1 0
 end_rule
 begin_rule
 1
-133 0
-66 1 0
+137 0
+107 1 0
 end_rule
 begin_rule
 1
-133 0
-67 1 0
+137 0
+108 1 0
 end_rule
 begin_rule
 2
-133 0
-124 0
+137 0
+125 0
 260 1 0
 end_rule
 begin_rule
 2
-133 0
-124 0
+137 0
+125 0
 256 1 0
 end_rule
 begin_rule
 2
-133 0
-146 0
+137 0
+151 0
 259 1 0
 end_rule
 begin_rule
 2
-133 0
-146 0
+137 0
+151 0
 255 1 0
 end_rule
 begin_rule
 2
-133 0
-145 0
+137 0
+150 0
 258 1 0
 end_rule
 begin_rule
 2
-133 0
-145 0
+137 0
+150 0
 254 1 0
 end_rule
 begin_rule
 2
-133 0
-134 0
+137 0
+135 0
 257 1 0
 end_rule
 begin_rule
 2
-133 0
-134 0
+137 0
+135 0
 253 1 0
 end_rule
 begin_rule
 1
-124 0
-81 1 0
+125 0
+10 1 0
 end_rule
 begin_rule
 1
-124 0
-92 1 0
+125 0
+23 1 0
 end_rule
 begin_rule
 1
-124 0
-63 1 0
+125 0
+104 1 0
 end_rule
 begin_rule
 1
-124 0
-64 1 0
+125 0
+105 1 0
 end_rule
 begin_rule
 2
-124 0
-145 0
+125 0
+150 0
 252 1 0
 end_rule
 begin_rule
 2
-124 0
-145 0
+125 0
+150 0
 250 1 0
 end_rule
 begin_rule
 2
-124 0
-134 0
+125 0
+135 0
 251 1 0
 end_rule
 begin_rule
 2
-124 0
-134 0
+125 0
+135 0
 249 1 0
 end_rule
 begin_rule
 1
 141 0
-86 1 0
+15 1 0
 end_rule
 begin_rule
 1
 141 0
-88 1 0
+17 1 0
 end_rule
 begin_rule
 1
 141 0
-74 1 0
+115 1 0
 end_rule
 begin_rule
 1
 141 0
-75 1 0
+116 1 0
 end_rule
 begin_rule
 1
 141 0
-76 1 0
+117 1 0
 end_rule
 begin_rule
 2
 141 0
-142 0
+143 0
 228 1 0
 end_rule
 begin_rule
 2
 141 0
-142 0
+143 0
 227 1 0
 end_rule
 begin_rule
 2
 141 0
-126 0
+127 0
 222 1 0
 end_rule
 begin_rule
 2
 141 0
-126 0
+127 0
 221 1 0
 end_rule
 begin_rule
 1
-142 0
-85 1 0
-end_rule
-begin_rule
-1
-142 0
-107 1 0
-end_rule
-begin_rule
-1
-142 0
-10 1 0
-end_rule
-begin_rule
-1
-142 0
-11 1 0
-end_rule
-begin_rule
-1
-142 0
-12 1 0
-end_rule
-begin_rule
-1
-142 0
-13 1 0
-end_rule
-begin_rule
-2
-142 0
-146 0
-234 1 0
-end_rule
-begin_rule
-2
-142 0
-146 0
-233 1 0
-end_rule
-begin_rule
-2
-142 0
-126 0
-226 1 0
-end_rule
-begin_rule
-2
-142 0
-126 0
-224 1 0
-end_rule
-begin_rule
-2
-142 0
 143 0
-225 1 0
-end_rule
-begin_rule
-2
-142 0
-143 0
-223 1 0
-end_rule
-begin_rule
-1
-146 0
-84 1 0
-end_rule
-begin_rule
-1
-146 0
-106 1 0
-end_rule
-begin_rule
-1
-146 0
-42 1 0
-end_rule
-begin_rule
-1
-146 0
-43 1 0
-end_rule
-begin_rule
-1
-146 0
-44 1 0
-end_rule
-begin_rule
-1
-146 0
-45 1 0
-end_rule
-begin_rule
-2
-146 0
-145 0
-242 1 0
-end_rule
-begin_rule
-2
-146 0
-145 0
-241 1 0
-end_rule
-begin_rule
-2
-146 0
-143 0
-232 1 0
-end_rule
-begin_rule
-2
-146 0
-143 0
-230 1 0
-end_rule
-begin_rule
-2
-146 0
-147 0
-231 1 0
-end_rule
-begin_rule
-2
-146 0
-147 0
-229 1 0
-end_rule
-begin_rule
-1
-145 0
-83 1 0
-end_rule
-begin_rule
-1
-145 0
-105 1 0
-end_rule
-begin_rule
-1
-145 0
-46 1 0
-end_rule
-begin_rule
-1
-145 0
-47 1 0
-end_rule
-begin_rule
-1
-145 0
-48 1 0
-end_rule
-begin_rule
-1
-145 0
-49 1 0
-end_rule
-begin_rule
-2
-145 0
-134 0
-248 1 0
-end_rule
-begin_rule
-2
-145 0
-134 0
-247 1 0
-end_rule
-begin_rule
-2
-145 0
-143 0
-240 1 0
-end_rule
-begin_rule
-2
-145 0
-143 0
-237 1 0
-end_rule
-begin_rule
-2
-145 0
-147 0
-239 1 0
-end_rule
-begin_rule
-2
-145 0
-147 0
-236 1 0
-end_rule
-begin_rule
-2
-145 0
-137 0
-238 1 0
-end_rule
-begin_rule
-2
-145 0
-137 0
-235 1 0
-end_rule
-begin_rule
-1
-134 0
-82 1 0
-end_rule
-begin_rule
-1
-134 0
-93 1 0
-end_rule
-begin_rule
-1
-134 0
-60 1 0
-end_rule
-begin_rule
-1
-134 0
-61 1 0
-end_rule
-begin_rule
-1
-134 0
-62 1 0
-end_rule
-begin_rule
-2
-134 0
-147 0
-246 1 0
-end_rule
-begin_rule
-2
-134 0
-147 0
-244 1 0
-end_rule
-begin_rule
-2
-134 0
-137 0
-245 1 0
-end_rule
-begin_rule
-2
-134 0
-137 0
-243 1 0
-end_rule
-begin_rule
-1
-126 0
-87 1 0
-end_rule
-begin_rule
-1
-126 0
-120 1 0
-end_rule
-begin_rule
-1
-126 0
-55 1 0
-end_rule
-begin_rule
-1
-126 0
-56 1 0
-end_rule
-begin_rule
-1
-126 0
-57 1 0
-end_rule
-begin_rule
-2
-126 0
-139 0
-220 1 0
-end_rule
-begin_rule
-2
-126 0
-139 0
-219 1 0
-end_rule
-begin_rule
-1
-127 0
-168 1 0
-end_rule
-begin_rule
-1
-143 0
-96 1 0
-end_rule
-begin_rule
-1
-143 0
-108 1 0
-end_rule
-begin_rule
-1
-143 0
-38 1 0
-end_rule
-begin_rule
-1
-143 0
-39 1 0
+14 1 0
 end_rule
 begin_rule
 1
@@ -8939,567 +6881,883 @@ begin_rule
 41 1 0
 end_rule
 begin_rule
+1
+143 0
+42 1 0
+end_rule
+begin_rule
+1
+143 0
+43 1 0
+end_rule
+begin_rule
+1
+143 0
+44 1 0
+end_rule
+begin_rule
 2
 143 0
+151 0
+234 1 0
+end_rule
+begin_rule
+2
+143 0
+151 0
+233 1 0
+end_rule
+begin_rule
+2
+143 0
+127 0
+226 1 0
+end_rule
+begin_rule
+2
+143 0
+127 0
+224 1 0
+end_rule
+begin_rule
+2
+143 0
+142 0
+225 1 0
+end_rule
+begin_rule
+2
+143 0
+142 0
+223 1 0
+end_rule
+begin_rule
+1
+151 0
+13 1 0
+end_rule
+begin_rule
+1
+151 0
+39 1 0
+end_rule
+begin_rule
+1
+151 0
+82 1 0
+end_rule
+begin_rule
+1
+151 0
+83 1 0
+end_rule
+begin_rule
+1
+151 0
+84 1 0
+end_rule
+begin_rule
+1
+151 0
+85 1 0
+end_rule
+begin_rule
+2
+151 0
+150 0
+242 1 0
+end_rule
+begin_rule
+2
+151 0
+150 0
+241 1 0
+end_rule
+begin_rule
+2
+151 0
+142 0
+232 1 0
+end_rule
+begin_rule
+2
+151 0
+142 0
+230 1 0
+end_rule
+begin_rule
+2
+151 0
+147 0
+231 1 0
+end_rule
+begin_rule
+2
+151 0
+147 0
+229 1 0
+end_rule
+begin_rule
+1
+150 0
+12 1 0
+end_rule
+begin_rule
+1
+150 0
+38 1 0
+end_rule
+begin_rule
+1
+150 0
+86 1 0
+end_rule
+begin_rule
+1
+150 0
+87 1 0
+end_rule
+begin_rule
+1
+150 0
+88 1 0
+end_rule
+begin_rule
+1
+150 0
+89 1 0
+end_rule
+begin_rule
+2
+150 0
+135 0
+248 1 0
+end_rule
+begin_rule
+2
+150 0
+135 0
+247 1 0
+end_rule
+begin_rule
+2
+150 0
+142 0
+240 1 0
+end_rule
+begin_rule
+2
+150 0
+142 0
+237 1 0
+end_rule
+begin_rule
+2
+150 0
+147 0
+239 1 0
+end_rule
+begin_rule
+2
+150 0
+147 0
+236 1 0
+end_rule
+begin_rule
+2
+150 0
+134 0
+238 1 0
+end_rule
+begin_rule
+2
+150 0
+134 0
+235 1 0
+end_rule
+begin_rule
+1
+135 0
+11 1 0
+end_rule
+begin_rule
+1
+135 0
+24 1 0
+end_rule
+begin_rule
+1
+135 0
+101 1 0
+end_rule
+begin_rule
+1
+135 0
+102 1 0
+end_rule
+begin_rule
+1
+135 0
+103 1 0
+end_rule
+begin_rule
+2
+135 0
+147 0
+246 1 0
+end_rule
+begin_rule
+2
+135 0
+147 0
+244 1 0
+end_rule
+begin_rule
+2
+135 0
+134 0
+245 1 0
+end_rule
+begin_rule
+2
+135 0
+134 0
+243 1 0
+end_rule
+begin_rule
+1
+127 0
+16 1 0
+end_rule
+begin_rule
+1
+127 0
+95 1 0
+end_rule
+begin_rule
+1
+127 0
+96 1 0
+end_rule
+begin_rule
+1
+127 0
+97 1 0
+end_rule
+begin_rule
+1
+127 0
+98 1 0
+end_rule
+begin_rule
+2
+127 0
+131 0
+220 1 0
+end_rule
+begin_rule
+2
+127 0
+131 0
+219 1 0
+end_rule
+begin_rule
+1
+124 0
+168 1 0
+end_rule
+begin_rule
+1
+142 0
+27 1 0
+end_rule
+begin_rule
+1
+142 0
+45 1 0
+end_rule
+begin_rule
+1
+142 0
+78 1 0
+end_rule
+begin_rule
+1
+142 0
+79 1 0
+end_rule
+begin_rule
+1
+142 0
+80 1 0
+end_rule
+begin_rule
+1
+142 0
+81 1 0
+end_rule
+begin_rule
+2
+142 0
 147 0
 212 1 0
 end_rule
 begin_rule
 2
-143 0
+142 0
 147 0
 211 1 0
 end_rule
 begin_rule
 2
-143 0
-139 0
+142 0
+131 0
 204 1 0
 end_rule
 begin_rule
 2
-143 0
-139 0
+142 0
+131 0
 201 1 0
 end_rule
 begin_rule
 2
-143 0
-151 0
+142 0
+146 0
 203 1 0
 end_rule
 begin_rule
 2
-143 0
-151 0
+142 0
+146 0
 200 1 0
 end_rule
 begin_rule
 2
-143 0
-149 0
+142 0
+148 0
 202 1 0
 end_rule
 begin_rule
 2
-143 0
-149 0
+142 0
+148 0
 199 1 0
 end_rule
 begin_rule
 1
 147 0
-95 1 0
+26 1 0
 end_rule
 begin_rule
 1
 147 0
-104 1 0
+37 1 0
 end_rule
 begin_rule
 1
 147 0
-50 1 0
+90 1 0
 end_rule
 begin_rule
 1
 147 0
-51 1 0
+91 1 0
 end_rule
 begin_rule
 1
 147 0
-52 1 0
+92 1 0
 end_rule
 begin_rule
 1
 147 0
-53 1 0
+93 1 0
 end_rule
 begin_rule
 2
 147 0
-137 0
+134 0
 218 1 0
 end_rule
 begin_rule
 2
 147 0
-137 0
+134 0
 217 1 0
 end_rule
 begin_rule
 2
 147 0
-151 0
+146 0
 210 1 0
 end_rule
 begin_rule
 2
 147 0
-151 0
+146 0
 207 1 0
 end_rule
 begin_rule
 2
 147 0
-149 0
+148 0
 209 1 0
 end_rule
 begin_rule
 2
 147 0
-149 0
+148 0
 206 1 0
 end_rule
 begin_rule
 2
 147 0
-128 0
+129 0
 208 1 0
 end_rule
 begin_rule
 2
 147 0
-128 0
+129 0
 205 1 0
 end_rule
 begin_rule
 1
-137 0
-94 1 0
+134 0
+25 1 0
 end_rule
 begin_rule
 1
-137 0
-8 1 0
-end_rule
-begin_rule
-1
-137 0
-9 1 0
-end_rule
-begin_rule
-1
-137 0
-54 1 0
-end_rule
-begin_rule
-2
-137 0
-149 0
-216 1 0
-end_rule
-begin_rule
-2
-137 0
-149 0
-214 1 0
-end_rule
-begin_rule
-2
-137 0
-128 0
-215 1 0
-end_rule
-begin_rule
-2
-137 0
-128 0
-213 1 0
-end_rule
-begin_rule
-1
-122 0
-168 1 0
-end_rule
-begin_rule
-1
-139 0
-98 1 0
-end_rule
-begin_rule
-1
-139 0
-119 1 0
-end_rule
-begin_rule
-1
-139 0
-19 1 0
-end_rule
-begin_rule
-1
-139 0
-20 1 0
-end_rule
-begin_rule
-1
-139 0
-21 1 0
-end_rule
-begin_rule
-1
-139 0
-22 1 0
-end_rule
-begin_rule
-2
-139 0
-151 0
-198 1 0
-end_rule
-begin_rule
-2
-139 0
-151 0
-197 1 0
-end_rule
-begin_rule
-2
-139 0
-118 0
-188 1 0
-end_rule
-begin_rule
-2
-139 0
-118 0
-185 1 0
-end_rule
-begin_rule
-2
-139 0
-140 0
-187 1 0
-end_rule
-begin_rule
-2
-139 0
-140 0
-184 1 0
-end_rule
-begin_rule
-2
-139 0
-138 0
-186 1 0
-end_rule
-begin_rule
-2
-139 0
-138 0
-183 1 0
-end_rule
-begin_rule
-1
-151 0
-97 1 0
-end_rule
-begin_rule
-1
-151 0
-109 1 0
-end_rule
-begin_rule
-1
-151 0
-34 1 0
-end_rule
-begin_rule
-1
-151 0
+134 0
 35 1 0
 end_rule
 begin_rule
 1
-151 0
+134 0
 36 1 0
 end_rule
 begin_rule
 1
-151 0
-37 1 0
+134 0
+94 1 0
 end_rule
 begin_rule
 2
-151 0
-149 0
-196 1 0
+134 0
+148 0
+216 1 0
 end_rule
 begin_rule
 2
-151 0
-149 0
-192 1 0
+134 0
+148 0
+214 1 0
 end_rule
 begin_rule
 2
-151 0
-140 0
-195 1 0
-end_rule
-begin_rule
-2
-151 0
-140 0
-191 1 0
-end_rule
-begin_rule
-2
-151 0
-138 0
-194 1 0
-end_rule
-begin_rule
-2
-151 0
-138 0
-190 1 0
-end_rule
-begin_rule
-2
-151 0
+134 0
 129 0
-193 1 0
+215 1 0
 end_rule
 begin_rule
 2
-151 0
+134 0
 129 0
-189 1 0
+213 1 0
 end_rule
 begin_rule
 1
-149 0
-102 1 0
+121 0
+168 1 0
 end_rule
 begin_rule
 1
-149 0
-114 1 0
-end_rule
-begin_rule
-1
-149 0
-30 1 0
-end_rule
-begin_rule
-1
-149 0
-31 1 0
-end_rule
-begin_rule
-1
-149 0
-32 1 0
-end_rule
-begin_rule
-1
-149 0
-33 1 0
-end_rule
-begin_rule
-2
-149 0
-128 0
-178 1 0
-end_rule
-begin_rule
-2
-149 0
-128 0
-175 1 0
-end_rule
-begin_rule
-2
-149 0
-138 0
-177 1 0
-end_rule
-begin_rule
-2
-149 0
-138 0
-174 1 0
-end_rule
-begin_rule
-2
-149 0
-129 0
-176 1 0
-end_rule
-begin_rule
-2
-149 0
-129 0
-173 1 0
-end_rule
-begin_rule
-1
-128 0
-103 1 0
-end_rule
-begin_rule
-1
-128 0
-115 1 0
-end_rule
-begin_rule
-1
-128 0
-14 1 0
-end_rule
-begin_rule
-1
-128 0
-15 1 0
-end_rule
-begin_rule
-1
-128 0
-16 1 0
-end_rule
-begin_rule
-2
-128 0
-129 0
-172 1 0
-end_rule
-begin_rule
-2
-128 0
-129 0
-171 1 0
-end_rule
-begin_rule
-1
-118 0
-100 1 0
-end_rule
-begin_rule
-1
-118 0
-101 1 0
-end_rule
-begin_rule
-1
-118 0
-58 1 0
-end_rule
-begin_rule
-1
-118 0
-59 1 0
-end_rule
-begin_rule
-2
-118 0
-140 0
-182 1 0
-end_rule
-begin_rule
-2
-118 0
-140 0
-181 1 0
-end_rule
-begin_rule
-1
-140 0
-99 1 0
-end_rule
-begin_rule
-1
-140 0
-117 1 0
-end_rule
-begin_rule
-1
-140 0
-23 1 0
-end_rule
-begin_rule
-1
-140 0
-24 1 0
-end_rule
-begin_rule
-1
-140 0
-25 1 0
-end_rule
-begin_rule
-2
-140 0
-138 0
-180 1 0
-end_rule
-begin_rule
-2
-140 0
-138 0
-179 1 0
-end_rule
-begin_rule
-1
-138 0
-110 1 0
-end_rule
-begin_rule
-1
-138 0
-116 1 0
-end_rule
-begin_rule
-1
-138 0
-26 1 0
-end_rule
-begin_rule
-1
-138 0
-27 1 0
-end_rule
-begin_rule
-1
-138 0
-28 1 0
-end_rule
-begin_rule
-2
-138 0
-129 0
-170 1 0
-end_rule
-begin_rule
-2
-138 0
-129 0
-169 1 0
-end_rule
-begin_rule
-1
-129 0
-111 1 0
-end_rule
-begin_rule
-1
-129 0
-17 1 0
-end_rule
-begin_rule
-1
-129 0
-18 1 0
-end_rule
-begin_rule
-1
-129 0
+131 0
 29 1 0
 end_rule
 begin_rule
 1
-113 0
+131 0
+58 1 0
+end_rule
+begin_rule
+1
+131 0
+59 1 0
+end_rule
+begin_rule
+1
+131 0
+60 1 0
+end_rule
+begin_rule
+1
+131 0
+61 1 0
+end_rule
+begin_rule
+1
+131 0
+62 1 0
+end_rule
+begin_rule
+2
+131 0
+146 0
+198 1 0
+end_rule
+begin_rule
+2
+131 0
+146 0
+197 1 0
+end_rule
+begin_rule
+2
+131 0
+122 0
+188 1 0
+end_rule
+begin_rule
+2
+131 0
+122 0
+185 1 0
+end_rule
+begin_rule
+2
+131 0
+133 0
+187 1 0
+end_rule
+begin_rule
+2
+131 0
+133 0
+184 1 0
+end_rule
+begin_rule
+2
+131 0
+132 0
+186 1 0
+end_rule
+begin_rule
+2
+131 0
+132 0
+183 1 0
+end_rule
+begin_rule
+1
+146 0
+28 1 0
+end_rule
+begin_rule
+1
+146 0
+46 1 0
+end_rule
+begin_rule
+1
+146 0
+74 1 0
+end_rule
+begin_rule
+1
+146 0
+75 1 0
+end_rule
+begin_rule
+1
+146 0
+76 1 0
+end_rule
+begin_rule
+1
+146 0
+77 1 0
+end_rule
+begin_rule
+2
+146 0
+148 0
+196 1 0
+end_rule
+begin_rule
+2
+146 0
+148 0
+192 1 0
+end_rule
+begin_rule
+2
+146 0
+133 0
+195 1 0
+end_rule
+begin_rule
+2
+146 0
+133 0
+191 1 0
+end_rule
+begin_rule
+2
+146 0
+132 0
+194 1 0
+end_rule
+begin_rule
+2
+146 0
+132 0
+190 1 0
+end_rule
+begin_rule
+2
+146 0
+128 0
+193 1 0
+end_rule
+begin_rule
+2
+146 0
+128 0
+189 1 0
+end_rule
+begin_rule
+1
+148 0
+33 1 0
+end_rule
+begin_rule
+1
+148 0
+49 1 0
+end_rule
+begin_rule
+1
+148 0
+70 1 0
+end_rule
+begin_rule
+1
+148 0
+71 1 0
+end_rule
+begin_rule
+1
+148 0
+72 1 0
+end_rule
+begin_rule
+1
+148 0
+73 1 0
+end_rule
+begin_rule
+2
+148 0
+129 0
+178 1 0
+end_rule
+begin_rule
+2
+148 0
+129 0
+175 1 0
+end_rule
+begin_rule
+2
+148 0
+132 0
+177 1 0
+end_rule
+begin_rule
+2
+148 0
+132 0
+174 1 0
+end_rule
+begin_rule
+2
+148 0
+128 0
+176 1 0
+end_rule
+begin_rule
+2
+148 0
+128 0
+173 1 0
+end_rule
+begin_rule
+1
+129 0
+34 1 0
+end_rule
+begin_rule
+1
+129 0
+50 1 0
+end_rule
+begin_rule
+1
+129 0
+51 1 0
+end_rule
+begin_rule
+1
+129 0
+52 1 0
+end_rule
+begin_rule
+1
+129 0
+53 1 0
+end_rule
+begin_rule
+2
+129 0
+128 0
+172 1 0
+end_rule
+begin_rule
+2
+129 0
+128 0
+171 1 0
+end_rule
+begin_rule
+1
+122 0
+31 1 0
+end_rule
+begin_rule
+1
+122 0
+32 1 0
+end_rule
+begin_rule
+1
+122 0
+99 1 0
+end_rule
+begin_rule
+1
+122 0
+100 1 0
+end_rule
+begin_rule
+2
+122 0
+133 0
+182 1 0
+end_rule
+begin_rule
+2
+122 0
+133 0
+181 1 0
+end_rule
+begin_rule
+1
+133 0
+30 1 0
+end_rule
+begin_rule
+1
+133 0
+57 1 0
+end_rule
+begin_rule
+1
+133 0
+63 1 0
+end_rule
+begin_rule
+1
+133 0
+64 1 0
+end_rule
+begin_rule
+1
+133 0
+65 1 0
+end_rule
+begin_rule
+2
+133 0
+132 0
+180 1 0
+end_rule
+begin_rule
+2
+133 0
+132 0
+179 1 0
+end_rule
+begin_rule
+1
+132 0
+47 1 0
+end_rule
+begin_rule
+1
+132 0
+56 1 0
+end_rule
+begin_rule
+1
+132 0
+66 1 0
+end_rule
+begin_rule
+1
+132 0
+67 1 0
+end_rule
+begin_rule
+1
+132 0
+68 1 0
+end_rule
+begin_rule
+2
+132 0
+128 0
+170 1 0
+end_rule
+begin_rule
+2
+132 0
+128 0
+169 1 0
+end_rule
+begin_rule
+1
+128 0
+48 1 0
+end_rule
+begin_rule
+1
+128 0
+54 1 0
+end_rule
+begin_rule
+1
+128 0
+55 1 0
+end_rule
+begin_rule
+1
+128 0
+69 1 0
+end_rule
+begin_rule
+1
+119 0
 168 1 0
 end_rule

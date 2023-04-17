@@ -1,16 +1,19 @@
-benchmark,rewriting_generation,rewriting_planning,horn_translation,horn_planning,plan_length
-drone5-5,366,0.4,,0.32,6
-Drone5-6,458,0.81,,0.87,8
-Drone5-7,540,5.33,,11.83,11
-Drone5-8,456,6.64,,78,(no solution)
-Drone6-5,779,0.59,,0.47,5
-Drone6-6,789,0.91,,1,8
-Drone6-7,814,3.91,,6.76,11
-Drone6-8,737,59.42,,521.3,13
-,,,,,
-pipes1,20.5,0.25,0.42,1.78,27
-pipes2,14.19,9.7,1.05,514.3,32
-,,,,,
-,,,,,
-,,,,,
-elevator15_mod,14.85,0.1,0.47,0.09,25
+benchmark,rewriting_generation,rewriting_planning,horn_translation,horn_planning,plan_length,
+drone5-5,366,0.4,,0.32,6,
+Drone5-6,458,0.81,,0.87,8,
+Drone5-7,540,5.33,,11.83,11,
+Drone5-8,456,6.64,,78,(no solution),
+Drone6-5,779,0.59,,0.47,5,
+Drone6-6,789,0.91,,1,8,
+Drone6-7,814,3.91,,6.76,11,
+Drone6-8,737,59.42,,521.3,13,
+,,,,,,
+pipes1,20.5,0.25,0.42,1.78,27,
+pipes2,14.19,9.7,1.05,514.3,32,
+,,,,,,
+,,,,,,
+elevator15,,,0.47,0.09,25,set of repairs is quite big → timeout
+elevator15_mod,14.85,0.1,0.47,0.09,25,added PDDL types ->  only one set of repairs
+,,,,,,
+tpsa 4,,,0.44,18.23,7,"tpsa domain seems to be not correct: run time does not match result from existing paper (way higher), semantic of the domain seems weird → generated plan is strange"
+tpsa 5,,,0.42,38.32,7,
