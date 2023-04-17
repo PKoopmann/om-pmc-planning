@@ -36,7 +36,7 @@ PlannerLog="$MiscFolder"/planner_log.txt
 PlannerSAS="$MiscFolder"/output.sas
 
 # number of hooks that are evaluated at a time between restarts
-increment=100
+increment=50
 
 TimeLimit=-1
 if [ "$#" == 5 ]; then

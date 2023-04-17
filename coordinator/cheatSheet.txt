@@ -32,6 +32,7 @@
 
 # pipes1 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl
+
 # pipes2 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes2 pipes.ttl pipes.pddl pipesProblem7-7.pddl
 
@@ -49,6 +50,9 @@
 
 # elevator 15
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/elevator/original TTL.owl domain.pddl elevatorProblem15.pddl
+
+# tpsa 4
+./runHornPlanning.sh ../examples/horn_dl_benchmarks/tpsa/original TTL.owl domain.pddl orderProblem4.pddl
 
 # pipes1 7-7
 ./runHornPlanning.sh ../examples/horn_pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl

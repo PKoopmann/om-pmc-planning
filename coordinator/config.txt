@@ -2,7 +2,7 @@
  
 RewritingGenerator=../implementation/target/scala-2.12/ontology-mediated-pmc-assembly-0.2.jar
 Planner=../downward-release-22.12.0-patched/fast-downward.py
-#Planner=../downward-release-22.12.0/fast-downward.py
+PlannerOriginal=../downward-release-22.12.0/fast-downward.py
 HornCompilerFolder=../horn_dl_pddl_compiler
 Clipper=../horn_dl_pddl_compiler/patchedClipper/clipper-distribution/target/clipper/clipper.sh
 
