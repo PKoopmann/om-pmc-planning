@@ -66,6 +66,9 @@ object FormulaGenerator {
         new InconsistencyBasedGBSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
     }
 
+    val staticAxioms = ontology.getAxioms().asScala -- axiom2formula.axioms
+    result.staticOntology = manager.createOntology(staticAxioms.asJava)
+
     result.initReasoner(module)
     result
   }
@@ -105,6 +108,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
   val relevantAxioms = axiom2formula.axioms
   var reasoner: OWLReasoner = _
   var ontology: OWLOntology = _
+  var staticOntology: OWLOntology = _
   val factory = ontologyManager.getOWLDataFactory
 
   protected def initExplanationGenerator(ontology: OWLOntology): Unit
@@ -152,15 +156,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   def generateDNF(axiom: OWLLogicalAxiom): Set[Set[OWLLogicalAxiom]] =
   {
-
-    val repairs = getRepairs()
-
-    //println("Got " + repairs.size + " repairs.")
-    //println("Repairs: " + repairs)
-
     val originalOntology = ontology
-
-    val axioms = ontology.getAxioms()
 
     val inconsistentDNF = generateInconsistentDNF()
 
@@ -168,56 +164,81 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     var dnf = Set[Set[OWLLogicalAxiom]]()
 
-    var counter = 0
+    println("Generate DNF for axiom: " + SimpleOWLFormatter.format(axiom))
 
-    //println("Ontology:")
-    //println(SimpleOWLFormatter.format(ontology))
+    initReasoner(staticOntology)
+    reasoner.flush()
+    if (reasoner.isEntailed(axiom)) {
+      // axiom is already entailed in static ontology
+      // add empty explanation
+      dnf += Set()
+      println("entailed in static ontology")
+    }
+    else {
+      ontology = originalOntology
+      val axioms = ontology.getAxioms()
 
-    //println("Relevant axioms: "+relevantAxioms.map(SimpleOWLFormatter.format))
-
-    repairs.foreach { repair =>
-      counter+= 1
-      //println("Using repair nr. "+counter)
-      val repairedAxioms = axioms.asScala -- repair
-
-      val repairedOntology = ontologyManager.createOntology(repairedAxioms.asJava)
-
-      //      repair.foreach(ontology.removeAxiom)
-      //println("axioms in ontology: " + repairedOntology.getAxiomCount())
-      // println("++++++++++++++++++++")
-      // println(repairedOntology.getAxioms().asScala.mkString("\n"))
-      // println("++++++++++++++++++++")
-      initReasoner(repairedOntology)
-      initExplanationGenerator(repairedOntology)
-      reasoner.flush()
-
-      //println("Testing: " + axiom)
-
-      val consistent= reasoner.isConsistent()
-      val entailed = !consistent || reasoner.isEntailed(axiom)
-
-      //println("Consistency of ontology: " + consistent)
-      //println("Entailment: "+entailed)
+      val repairs = getRepairs()
 
 
-      if (!consistent || entailed) {
-        val start = System.currentTimeMillis
-        //println("Generating Explanations for " + axiom)
-        val explanations = getExplanations(axiom)
-        //println("took " + (System.currentTimeMillis - start))
-        //println(explanations.size + " explanations found")
-        //println("Explanations: "+explanations.map(_.map(SimpleOWLFormatter.format)))
-        explanations.foreach { exp =>
-         // println("Adding new explanation")
-          //println("Explanations before: "+dnf.size)
-          val rel = exp.filter(relevantAxioms)
-          dnf = dnf.filterNot(rel.forall)
-          if (!dnf.exists(_.forall(rel))) {
-            dnf += rel.toSet
-            //println("Explanations after: "+dnf.size)
+      //println("Got " + repairs.size + " repairs.")
+      //println("Repairs: " + repairs)
+
+      var counter = 0
+
+      //println("Ontology:")
+      //println(SimpleOWLFormatter.format(ontology))
+
+      //println("Relevant axioms: "+relevantAxioms.map(SimpleOWLFormatter.format))
+
+      repairs.foreach { repair =>
+        counter += 1
+        //println("Using repair nr. "+counter)
+        val repairedAxioms = axioms.asScala -- repair
+
+        val repairedOntology = ontologyManager.createOntology(repairedAxioms.asJava)
+
+        //      repair.foreach(ontology.removeAxiom)
+        //println("axioms in ontology: " + repairedOntology.getAxiomCount())
+        // println("++++++++++++++++++++")
+        // println(repairedOntology.getAxioms().asScala.mkString("\n"))
+        // println("++++++++++++++++++++")
+        initReasoner(repairedOntology)
+        initExplanationGenerator(repairedOntology)
+        reasoner.flush()
+
+        val consistent = reasoner.isConsistent()
+        val entailed = reasoner.isEntailed(axiom)
+
+        //println("Consistency of ontology: " + consistent)
+        //println("Entailment: " + entailed)
+
+
+        if (!consistent || entailed) {
+          val start = System.currentTimeMillis
+          //println("Generating Explanations for " + axiom)
+
+          val explanations = getExplanations(axiom)
+
+          //println("took " + (System.currentTimeMillis - start))
+          //println(explanations.size + " explanations found")
+          //repairedOntology.getAxioms().forEach(a => println(a));
+
+          //println("Explanations: " + explanations.map(_.map(SimpleOWLFormatter.format)))
+
+          explanations.foreach { exp =>
+            // println("Adding new explanation")
+            //println("Explanations before: "+dnf.size)
+
+            val rel = exp.filter(relevantAxioms)
+            dnf = dnf.filterNot(rel.forall)
+            if (!dnf.exists(_.forall(rel))) {
+              dnf += rel.toSet
+              //println("Explanations after: "+dnf.size)
+            }
           }
-        }
 
+        }
       }
     }
 
@@ -227,6 +248,12 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     //      reasoner.flush()
 
     dnf --= inconsistentDNF
+
+    dnf.size match {
+      case 0 => println("no explanation found")
+      case 1 => println("1 explanation found")
+      case n => println(n + " explanations found")
+    }
 
     dnf
   }

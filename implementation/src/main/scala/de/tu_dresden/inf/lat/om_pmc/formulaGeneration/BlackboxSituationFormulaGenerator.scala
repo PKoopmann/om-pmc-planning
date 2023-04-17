@@ -38,12 +38,14 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
         singleGen)
   }
 
-  override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] =
+  override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] = {
+
     expGenerator.getExplanations(toUnsatClassExp(axiom))
       .asScala
       .map(_.asScala
         .toSet[OWLAxiom]
         .map(_.asInstanceOf[OWLLogicalAxiom]))
+  }
 
   override def getExplanationsForInconsistency(): Iterable[Set[OWLLogicalAxiom]] = {
     initReasoner(ontology)
