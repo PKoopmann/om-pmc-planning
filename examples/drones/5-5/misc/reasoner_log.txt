@@ -1,8 +1,8 @@
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 0 to 50
+Creating slice from 0 to 100
 Generating inconsistency dnf
-0 - 50
+0 - 100
 Generate DNF for axiom: Drone(aa)
 2 explanations found
 Generate DNF for axiom: Drone(ab)
@@ -53,7 +53,7 @@ Generate DNF for axiom: Drone(ed)
 2 explanations found
 Generate DNF for axiom: Drone(ee)
 no explanation found
--25 - 25
+-25 - 75
 Generate DNF for axiom: Objectx(aa)
 2 explanations found
 Generate DNF for axiom: Objectx(ab)
@@ -110,14 +110,7 @@ entailed in static ontology
 Generate DNF for axiom: Objectx(ee)
 entailed in static ontology
 1 explanation found
--50 - 0
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 50 to 100
-50 - 100
-25 - 75
-0 - 50
-Generating inconsistency dnf
+-50 - 50
 Generate DNF for axiom: Drone(aa)
 2 explanations found
 Generate DNF for axiom: veryClose(aa, aa)
@@ -323,13 +316,13 @@ Generate DNF for axiom: Drone(ab)
 2 explanations found
 Generate DNF for axiom: veryClose(ab, ee)
 no explanation found
--625 - -575
+-675 - -575
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 100 to 150
-100 - 150
-75 - 125
-50 - 100
+Creating slice from 100 to 200
+100 - 200
+75 - 175
+50 - 150
 Generating inconsistency dnf
 Generate DNF for axiom: Drone(ac)
 2 explanations found
@@ -537,14 +530,6 @@ Generate DNF for axiom: Drone(ad)
 2 explanations found
 Generate DNF for axiom: veryClose(ad, ee)
 no explanation found
--575 - -525
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 150 to 200
-150 - 200
-125 - 175
-100 - 150
-Generating inconsistency dnf
 Generate DNF for axiom: Drone(ae)
 2 explanations found
 Generate DNF for axiom: veryClose(ae, aa)
@@ -750,13 +735,13 @@ Generate DNF for axiom: Drone(ba)
 2 explanations found
 Generate DNF for axiom: veryClose(ba, ee)
 no explanation found
--525 - -475
+-575 - -475
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 200 to 250
-200 - 250
-175 - 225
-150 - 200
+Creating slice from 200 to 300
+200 - 300
+175 - 275
+150 - 250
 Generating inconsistency dnf
 Generate DNF for axiom: Drone(bb)
 2 explanations found
@@ -966,14 +951,6 @@ Generate DNF for axiom: Drone(bc)
 2 explanations found
 Generate DNF for axiom: veryClose(bc, ee)
 no explanation found
--475 - -425
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 250 to 300
-250 - 300
-225 - 275
-200 - 250
-Generating inconsistency dnf
 Generate DNF for axiom: Drone(bd)
 2 explanations found
 Generate DNF for axiom: veryClose(bd, aa)
@@ -1181,13 +1158,13 @@ Generate DNF for axiom: Drone(be)
 2 explanations found
 Generate DNF for axiom: veryClose(be, ee)
 no explanation found
--425 - -375
+-475 - -375
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 300 to 350
-300 - 350
-275 - 325
-250 - 300
+Creating slice from 300 to 400
+300 - 400
+275 - 375
+250 - 350
 Generating inconsistency dnf
 Generate DNF for axiom: Drone(ca)
 2 explanations found
@@ -1396,14 +1373,6 @@ Generate DNF for axiom: Drone(cb)
 no explanation found
 Generate DNF for axiom: veryClose(cb, ee)
 no explanation found
--375 - -325
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 350 to 400
-350 - 400
-325 - 375
-300 - 350
-Generating inconsistency dnf
 Generate DNF for axiom: Drone(cc)
 2 explanations found
 Generate DNF for axiom: veryClose(cc, aa)
@@ -1612,13 +1581,13 @@ Generate DNF for axiom: Drone(cd)
 2 explanations found
 Generate DNF for axiom: veryClose(cd, ee)
 no explanation found
--325 - -275
+-375 - -275
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 400 to 450
-400 - 450
-375 - 425
-350 - 400
+Creating slice from 400 to 500
+400 - 500
+375 - 475
+350 - 450
 Generating inconsistency dnf
 Generate DNF for axiom: Drone(ce)
 2 explanations found
@@ -1826,14 +1795,6 @@ Generate DNF for axiom: Drone(da)
 no explanation found
 Generate DNF for axiom: veryClose(da, ee)
 no explanation found
--275 - -225
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 450 to 500
-450 - 500
-425 - 475
-400 - 450
-Generating inconsistency dnf
 Generate DNF for axiom: Drone(db)
 2 explanations found
 Generate DNF for axiom: veryClose(db, aa)
@@ -2042,13 +2003,13 @@ Generate DNF for axiom: Drone(dc)
 2 explanations found
 Generate DNF for axiom: veryClose(dc, ee)
 no explanation found
--225 - -175
+-275 - -175
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 500 to 550
-500 - 550
-475 - 525
-450 - 500
+Creating slice from 500 to 600
+500 - 600
+475 - 575
+450 - 550
 Generating inconsistency dnf
 Generate DNF for axiom: Drone(dd)
 2 explanations found
@@ -2257,14 +2218,6 @@ Generate DNF for axiom: Drone(de)
 Generate DNF for axiom: veryClose(de, ee)
 entailed in static ontology
 1 explanation found
--175 - -125
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 550 to 600
-550 - 600
-525 - 575
-500 - 550
-Generating inconsistency dnf
 Generate DNF for axiom: Drone(ea)
 2 explanations found
 Generate DNF for axiom: veryClose(ea, aa)
@@ -2470,13 +2423,13 @@ Generate DNF for axiom: Drone(eb)
 2 explanations found
 Generate DNF for axiom: veryClose(eb, ee)
 no explanation found
--125 - -75
+-175 - -75
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 600 to 650
-600 - 650
-575 - 625
-550 - 600
+Creating slice from 600 to 700
+600 - 700
+575 - 675
+550 - 650
 Generating inconsistency dnf
 Generate DNF for axiom: Drone(ec)
 2 explanations found
@@ -2684,14 +2637,6 @@ Generate DNF for axiom: Drone(ed)
 Generate DNF for axiom: veryClose(ed, ee)
 entailed in static ontology
 1 explanation found
--75 - -25
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 650 to 700
-650 - 700
-625 - 675
-600 - 650
-Generating inconsistency dnf
 Generate DNF for axiom: Drone(ee)
 no explanation found
 Generate DNF for axiom: veryClose(ee, aa)
@@ -2794,7 +2739,7 @@ Generate DNF for axiom: Drone(ee)
 no explanation found
 Generate DNF for axiom: veryClose(ee, ee)
 no explanation found
--25 - 25
+-75 - 25
 Generate DNF for axiom: avoidCondition(aa, aa)
 no explanation found
 Generate DNF for axiom: avoidCondition(aa, ab)
@@ -2845,14 +2790,14 @@ Generate DNF for axiom: avoidCondition(aa, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(aa, ee)
 no explanation found
--650 - -600
+-700 - -600
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 700 to 750
-700 - 750
-675 - 725
-650 - 700
-25 - 75
+Creating slice from 700 to 800
+700 - 800
+675 - 775
+650 - 750
+25 - 125
 Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(ab, aa)
 4 explanations found
@@ -2954,15 +2899,6 @@ Generate DNF for axiom: avoidCondition(ac, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(ac, ee)
 no explanation found
--600 - -550
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 750 to 800
-750 - 800
-725 - 775
-700 - 750
-75 - 125
-Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(ad, aa)
 no explanation found
 Generate DNF for axiom: avoidCondition(ad, ab)
@@ -3063,14 +2999,14 @@ Generate DNF for axiom: avoidCondition(ae, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(ae, ee)
 no explanation found
--550 - -500
+-600 - -500
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 800 to 850
-800 - 850
-775 - 825
-750 - 800
-125 - 175
+Creating slice from 800 to 900
+800 - 900
+775 - 875
+750 - 850
+125 - 225
 Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(ba, aa)
 4 explanations found
@@ -3172,15 +3108,6 @@ Generate DNF for axiom: avoidCondition(bb, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(bb, ee)
 no explanation found
--500 - -450
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 850 to 900
-850 - 900
-825 - 875
-800 - 850
-175 - 225
-Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(bc, aa)
 no explanation found
 Generate DNF for axiom: avoidCondition(bc, ab)
@@ -3281,14 +3208,14 @@ Generate DNF for axiom: avoidCondition(bd, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(bd, ee)
 no explanation found
--450 - -400
+-500 - -400
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 900 to 950
-900 - 950
-875 - 925
-850 - 900
-225 - 275
+Creating slice from 900 to 1000
+900 - 1000
+875 - 975
+850 - 950
+225 - 325
 Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(be, aa)
 no explanation found
@@ -3390,15 +3317,6 @@ Generate DNF for axiom: avoidCondition(ca, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(ca, ee)
 no explanation found
--400 - -350
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 950 to 1000
-950 - 1000
-925 - 975
-900 - 950
-275 - 325
-Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(cb, aa)
 no explanation found
 Generate DNF for axiom: avoidCondition(cb, ab)
@@ -3499,14 +3417,14 @@ Generate DNF for axiom: avoidCondition(cc, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(cc, ee)
 no explanation found
--350 - -300
+-400 - -300
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 1000 to 1050
-1000 - 1050
-975 - 1025
-950 - 1000
-325 - 375
+Creating slice from 1000 to 1100
+1000 - 1100
+975 - 1075
+950 - 1050
+325 - 425
 Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(cd, aa)
 no explanation found
@@ -3608,15 +3526,6 @@ Generate DNF for axiom: avoidCondition(ce, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(ce, ee)
 no explanation found
--300 - -250
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 1050 to 1100
-1050 - 1100
-1025 - 1075
-1000 - 1050
-375 - 425
-Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(da, aa)
 no explanation found
 Generate DNF for axiom: avoidCondition(da, ab)
@@ -3717,14 +3626,14 @@ Generate DNF for axiom: avoidCondition(db, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(db, ee)
 no explanation found
--250 - -200
+-300 - -200
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 1100 to 1150
-1100 - 1150
-1075 - 1125
-1050 - 1100
-425 - 475
+Creating slice from 1100 to 1200
+1100 - 1200
+1075 - 1175
+1050 - 1150
+425 - 525
 Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(dc, aa)
 no explanation found
@@ -3826,15 +3735,6 @@ Generate DNF for axiom: avoidCondition(dd, ed)
 4 explanations found
 Generate DNF for axiom: avoidCondition(dd, ee)
 no explanation found
--200 - -150
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 1150 to 1200
-1150 - 1200
-1125 - 1175
-1100 - 1150
-475 - 525
-Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(de, aa)
 no explanation found
 Generate DNF for axiom: avoidCondition(de, ab)
@@ -3935,14 +3835,14 @@ Generate DNF for axiom: avoidCondition(ea, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(ea, ee)
 no explanation found
--150 - -100
+-200 - -100
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 1200 to 1250
-1200 - 1250
-1175 - 1225
-1150 - 1200
-525 - 575
+Creating slice from 1200 to 1300
+1200 - 1300
+1175 - 1275
+1150 - 1250
+525 - 625
 Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(eb, aa)
 no explanation found
@@ -4044,15 +3944,6 @@ Generate DNF for axiom: avoidCondition(ec, ed)
 4 explanations found
 Generate DNF for axiom: avoidCondition(ec, ee)
 no explanation found
--100 - -50
-Axioms in module: 219
-BLACK_BOX
-Creating slice from 1250 to 1300
-1250 - 1300
-1225 - 1275
-1200 - 1250
-575 - 625
-Generating inconsistency dnf
 Generate DNF for axiom: avoidCondition(ed, aa)
 no explanation found
 Generate DNF for axiom: avoidCondition(ed, ab)
@@ -4153,12 +4044,12 @@ Generate DNF for axiom: avoidCondition(ee, ed)
 no explanation found
 Generate DNF for axiom: avoidCondition(ee, ee)
 no explanation found
--50 - 0
+-100 - 0
 Axioms in module: 219
 BLACK_BOX
-Creating slice from 1300 to 1350
-1300 - 1350
-1275 - 1325
-1250 - 1300
-625 - 675
-0 - 50
+Creating slice from 1300 to 1400
+1300 - 1400
+1275 - 1375
+1250 - 1350
+625 - 725
+0 - 100
