@@ -29,6 +29,10 @@ class GlassboxCapableSituationFormulaGenerator(
     explanationGenerator = new MyExplanation(ontology, true, relevantAxiomsFiltered.asJava) // above line seems to fail
   }
 
+  override def synchronizeExplanationGenerator() = {
+    initExplanationGenerator(reasoner.getRootOntology())
+  }
+
   override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] =
     explanationGenerator.getEntailmentExplanations(axiom)
       .asScala

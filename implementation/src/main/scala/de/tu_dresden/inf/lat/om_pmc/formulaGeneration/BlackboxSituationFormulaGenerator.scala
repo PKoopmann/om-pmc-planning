@@ -38,6 +38,29 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
         singleGen)
   }
 
+  /**
+   * synchronizes the explanation generator to use the current ontology of the reasoner
+   */
+  override def synchronizeExplanationGenerator() = {
+    val currentOntology = reasoner.getRootOntology()
+    val axioms = currentOntology.getAxioms().asScala.toSet
+    val relevantAxiomsFiltered = relevantAxioms.filter(axioms)
+
+    //    println("Relevant axioms after filtering: "+relevantAxiomsFiltered)
+
+    val singleGen = new MyBlackBoxExplanation(
+      currentOntology,
+      reasonerFactory,
+      reasoner
+      //reasonerFactory.createNonBufferingReasoner(ontology)
+    )
+
+    expGenerator =
+      new MyHSTExplanationGenerator(
+        relevantAxiomsFiltered.toSet[OWLLogicalAxiom].asJava,
+        singleGen)
+  }
+
   override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] = {
 
     expGenerator.getExplanations(toUnsatClassExp(axiom))

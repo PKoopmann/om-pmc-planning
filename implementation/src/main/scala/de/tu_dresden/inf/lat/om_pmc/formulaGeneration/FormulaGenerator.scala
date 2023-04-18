@@ -68,6 +68,8 @@ object FormulaGenerator {
 
     val staticAxioms = ontology.getAxioms().asScala -- axiom2formula.axioms
     result.staticOntology = manager.createOntology(staticAxioms.asJava)
+    result.staticReasoner = result.getReasoner(result.staticOntology)
+    result.staticReasoner.flush()
 
     result.initReasoner(module)
     result
@@ -108,10 +110,13 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
   val relevantAxioms = axiom2formula.axioms
   var reasoner: OWLReasoner = _
   var ontology: OWLOntology = _
+  var staticReasoner: OWLReasoner = _
   var staticOntology: OWLOntology = _
   val factory = ontologyManager.getOWLDataFactory
 
   protected def initExplanationGenerator(ontology: OWLOntology): Unit
+
+  protected def synchronizeExplanationGenerator(): Unit
 
   protected def getExplanationsForInconsistency(): Iterable[_ <: Set[OWLLogicalAxiom]]
 
@@ -134,6 +139,15 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     reasoner = getReasoner(ontology)
 
     initExplanationGenerator(ontology)
+  }
+
+  def updateReasoner(ontology: OWLOntology) = {
+    var oldOntology = reasoner.getRootOntology
+    oldOntology.removeAxioms(oldOntology.getAxioms())
+    oldOntology.addAxioms(ontology.getAxioms())
+    reasoner.flush()
+
+    synchronizeExplanationGenerator()
   }
 
   def generateAllFormulaDefinitions(): Iterable[String] = {
@@ -166,16 +180,13 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     println("Generate DNF for axiom: " + SimpleOWLFormatter.format(axiom))
 
-    initReasoner(staticOntology)
-    reasoner.flush()
-    if (reasoner.isEntailed(axiom)) {
+    if (staticReasoner.isEntailed(axiom)) {
       // axiom is already entailed in static ontology
       // add empty explanation
       dnf += Set()
       println("entailed in static ontology")
     }
     else {
-      ontology = originalOntology
       val axioms = ontology.getAxioms()
 
       val repairs = getRepairs()
@@ -203,16 +214,18 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
         // println("++++++++++++++++++++")
         // println(repairedOntology.getAxioms().asScala.mkString("\n"))
         // println("++++++++++++++++++++")
-        initReasoner(repairedOntology)
-        initExplanationGenerator(repairedOntology)
-        reasoner.flush()
+
+        //initReasoner(repairedOntology)
+        //initExplanationGenerator(repairedOntology)
+        //reasoner.flush()
+
+        updateReasoner(repairedOntology)
 
         val consistent = reasoner.isConsistent()
         val entailed = reasoner.isEntailed(axiom)
 
         //println("Consistency of ontology: " + consistent)
         //println("Entailment: " + entailed)
-
 
         if (!consistent || entailed) {
           val start = System.currentTimeMillis
@@ -313,6 +326,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
   }
 
   def hittingSet[T](sets: List[Set[T]]): Set[Set[T]] = sets match {
+    case Nil => Set()
     case head :: Nil =>
       //      println("A: "+ head.map(Set(_)))
       head.map(Set(_))
