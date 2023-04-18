@@ -12,13 +12,11 @@ newSize=0
 while ((lastSize!=newSize))
 do
 
-    echo $lastSize $newSize $start
-
     lastSize=$newSize
     
     end=$((start+increment))
 
-    java -cp ../../ontology-mediated-pmc-assembly-0.2.jar de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions -pddl fluents.txt hooks.txt queens5-1.ttl $outputfile $start $end
+    java -cp ../../implementation/target/scala-2.12/ontology-mediated-pmc-assembly-0.2.jar de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions -pddl fluents.txt hooks.txt queens5-1.ttl $outputfile $start $end
 
     start=$end
     
@@ -46,7 +44,7 @@ do
     
     end=$((start+increment))
 
-    java -cp ../../ontology-mediated-pmc-assembly-0.2.jar de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions -pddl fluents.txt hooks_good.txt queens5-1.ttl $outputfile $start $end
+    java -cp ../../implementation/target/scala-2.12/ontology-mediated-pmc-assembly-0.2.jar de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions -pddl fluents.txt hooks_good.txt queens5-1.ttl $outputfile $start $end
 
     start=$end
     

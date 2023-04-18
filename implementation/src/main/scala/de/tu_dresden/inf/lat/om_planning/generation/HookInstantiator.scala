@@ -71,9 +71,12 @@ class HookInstantiator(reasoner: OWLReasoner, factory: OWLDataFactory) {
 
   def asHookToAxiomMap(hookSpecifications: Iterable[HookPredicate]) = {
     val result = new HookToAxiomMap()
-    hookSpecifications.foreach(f => instantiateQueries(f).foreach(query =>
-      result.add("--", Tools.asOne(query,factory))
+    hookSpecifications.foreach(f => instantiateQueries(f).foreach(query => {
+      println("add to hooks: " + Tools.asOne(query, factory))
+      result.add("--", Tools.asOne(query, factory))
+    }
     ))
+    println("hooks: ", result.toString())
     result
   }
 }

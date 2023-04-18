@@ -36,7 +36,7 @@ object FormulaGenerator {
           .flatMap(_.getSignature().asScala))
 
     println("Axioms in module: "+module.getAxiomCount())
-
+    
     //manager.saveOntology(module, new FileOutputStream(new File("moduleUsed.owl")))
 
     println(explanationMethod)
@@ -71,6 +71,8 @@ object FormulaGenerator {
     result.staticReasoner = result.getReasoner(result.staticOntology)
     result.staticReasoner.flush()
 
+    println("Module axioms: "+module.getAxioms().asScala.map(SimpleOWLFormatter.format))
+    //println("Ontology axioms: "+ontology.getAxioms().asScala.map(SimpleOWLFormatter.format))
     result.initReasoner(module)
     result
   }
@@ -209,6 +211,8 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
         val repairedOntology = ontologyManager.createOntology(repairedAxioms.asJava)
 
+        //println("Ontology axioms: "+repairedAxioms.map(SimpleOWLFormatter.format))
+
         //      repair.foreach(ontology.removeAxiom)
         //println("axioms in ontology: " + repairedOntology.getAxiomCount())
         // println("++++++++++++++++++++")
@@ -226,11 +230,9 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
         //println("Consistency of ontology: " + consistent)
         //println("Entailment: " + entailed)
-
         if (!consistent || entailed) {
           val start = System.currentTimeMillis
           //println("Generating Explanations for " + axiom)
-
           val explanations = getExplanations(axiom)
 
           //println("took " + (System.currentTimeMillis - start))
