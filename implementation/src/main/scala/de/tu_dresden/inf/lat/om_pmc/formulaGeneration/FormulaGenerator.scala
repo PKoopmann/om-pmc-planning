@@ -35,7 +35,7 @@ object FormulaGenerator {
           .map(hook2axiom.axiom(_))
           .flatMap(_.getSignature().asScala))
 
-    println("Axioms in module: "+module.getAxiomCount())
+    //println("Axioms in module: "+module.getAxiomCount())
     
     //manager.saveOntology(module, new FileOutputStream(new File("moduleUsed.owl")))
 
@@ -66,13 +66,12 @@ object FormulaGenerator {
         new InconsistencyBasedGBSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
     }
 
-    val staticAxioms = ontology.getAxioms().asScala -- axiom2formula.axioms
+    val staticAxioms = module.getAxioms().asScala -- axiom2formula.axioms
     result.staticOntology = manager.createOntology(staticAxioms.asJava)
     result.staticReasoner = result.getReasoner(result.staticOntology)
     result.staticReasoner.flush()
 
-    println("Module axioms: "+module.getAxioms().asScala.map(SimpleOWLFormatter.format))
-    //println("Ontology axioms: "+ontology.getAxioms().asScala.map(SimpleOWLFormatter.format))
+    //println("Module axioms: "+module.getAxioms().asScala.map(SimpleOWLFormatter.format))
     result.initReasoner(module)
     result
   }
