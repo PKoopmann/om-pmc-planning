@@ -116,7 +116,7 @@ else
   if [ $? -eq 124 ]
   then
     echo "timeout for rewriting generator after $TimeLimit seconds"
-    echo "reasoning time: >{$TimeLimit}s"
+    echo "reasoning time: >${TimeLimit}s"
     echo "planning time: -"
     echo "total time: -"
     exit 1

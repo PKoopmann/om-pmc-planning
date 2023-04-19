@@ -3,6 +3,8 @@ target
 downward-release-22.12.0
 downward-release-22.12.0-patched
 
+benchmark_runs/tobias-HP
+
 
 logback.xml
 ontology-mediated-pmc-assembly-0.2.jar
