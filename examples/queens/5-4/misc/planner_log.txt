@@ -1,0 +1,122 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0-patched/builds/release/bin/translate/translate.py ../examples/queens/5-4/misc/generated_queens.pddl ../examples/queens/5-4/misc/generated_problem5-4.pddl --sas-file ../examples/queens/5-4/misc/output.sas
+Parsing...
+Parsing: [0.010s CPU, 0.009s wall-clock]
+Normalizing task... [0.000s CPU, 0.004s wall-clock]
+Instantiating...
+Generating Datalog program... [0.010s CPU, 0.003s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.030s CPU, 0.031s wall-clock]
+Preparing model... [0.010s CPU, 0.017s wall-clock]
+Generated 2282 rules.
+Computing model... [0.060s CPU, 0.054s wall-clock]
+1631 relevant atoms
+2245 auxiliary atoms
+3876 final queue length
+4544 total queue pushes
+Completing instantiation... [0.010s CPU, 0.013s wall-clock]
+Instantiating: [0.120s CPU, 0.120s wall-clock]
+Computing fact groups...
+Finding invariants...
+2 initial candidates
+Finding invariants: [0.000s CPU, 0.000s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+422 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.001s wall-clock]
+Computing fact groups: [0.010s CPU, 0.003s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.003s wall-clock]
+Translator axioms removed by simplifying: 0
+CAVE: Skip computing negative axioms. This might have unforeseen side effects!
+Processing axioms: [0.010s CPU, 0.012s wall-clock]
+Translating task: [0.020s CPU, 0.027s wall-clock]
+320 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+2 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.007s wall-clock]
+Reordering and filtering variables...
+421 of 421 variables necessary.
+0 of 0 mutex groups necessary.
+345 of 345 operators necessary.
+715 of 715 axiom rules necessary.
+Reordering and filtering variables: [0.010s CPU, 0.007s wall-clock]
+Translator variables: 421
+Translator derived variables: 396
+Translator facts: 842
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 345
+Translator axioms: 715
+Translator task size: 5034
+Translator peak memory: 43800 KB
+Writing output... [0.000s CPU, 0.005s wall-clock]
+Done! [0.180s CPU, 0.183s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: ../examples/queens/5-4/misc/output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0-patched/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file ../examples/queens/5-4/problem5-4.plan.txt < ../examples/queens/5-4/misc/output.sas
+[t=2.3424e-05s, 9936 KB] reading input...
+[t=0.00289484s, 10308 KB] done reading input!
+[t=0.00391154s, 10572 KB] Initializing blind search heuristic...
+[t=0.00399819s, 10704 KB] Building successor generator...done!
+[t=0.00419625s, 10704 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00421033s, 10704 KB] time for successor generation creation: 0.00013767s
+[t=0.00423427s, 10704 KB] Variables: 421
+[t=0.00425105s, 10704 KB] FactPairs: 842
+[t=0.00426881s, 10704 KB] Bytes per state: 56
+[t=0.00435754s, 10704 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.00442334s, 10704 KB] New best heuristic value for blind: 1
+[t=0.00444253s, 10704 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00446163s, 10704 KB] f = 1, 1 evaluated, 0 expanded
+[t=0.00448275s, 10704 KB] Initial heuristic value for blind: 1
+[t=0.00450018s, 10704 KB] pruning method: none
+[t=0.00460233s, 10704 KB] New best heuristic value for blind: 0
+[t=0.00461856s, 10704 KB] g=1, 15 evaluated, 1 expanded
+[t=0.00479667s, 10704 KB] Solution found!
+[t=0.00481302s, 10704 KB] Actual search time: 0.000309937s
+move de dc (1)
+[t=0.00483201s, 10704 KB] Plan length: 1 step(s).
+[t=0.00483201s, 10704 KB] Plan cost: 1
+[t=0.00483201s, 10704 KB] Expanded 2 state(s).
+[t=0.00483201s, 10704 KB] Reopened 0 state(s).
+[t=0.00483201s, 10704 KB] Evaluated 47 state(s).
+[t=0.00483201s, 10704 KB] Evaluations: 47
+[t=0.00483201s, 10704 KB] Generated 46 state(s).
+[t=0.00483201s, 10704 KB] Dead ends: 0 state(s).
+[t=0.00483201s, 10704 KB] Expanded until last jump: 0 state(s).
+[t=0.00483201s, 10704 KB] Reopened until last jump: 0 state(s).
+[t=0.00483201s, 10704 KB] Evaluated until last jump: 1 state(s).
+[t=0.00483201s, 10704 KB] Generated until last jump: 0 state(s).
+[t=0.00483201s, 10704 KB] Number of registered states: 47
+[t=0.00483201s, 10704 KB] Int hash set load factor: 47/64 = 0.734375
+[t=0.00483201s, 10704 KB] Int hash set resizes: 6
+[t=0.00483201s, 10704 KB] Search time: 0.000474882s
+[t=0.00483201s, 10704 KB] Total time: 0.00483201s
+Solution found.
+Peak memory: 10704 KB
+search exit code: 0
+
+INFO     Planner time: 0.25s

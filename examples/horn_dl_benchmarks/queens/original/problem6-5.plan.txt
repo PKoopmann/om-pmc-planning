@@ -1,0 +1,3 @@
+(move cf ce)
+(move be ba)
+; cost = 2 (unit cost)

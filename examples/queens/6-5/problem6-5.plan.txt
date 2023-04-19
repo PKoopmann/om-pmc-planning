@@ -1,0 +1,3 @@
+(move cf ed)
+(move ad ac)
+; cost = 2 (unit cost)

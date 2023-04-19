@@ -1,0 +1,2 @@
+(move ec dd)
+; cost = 1 (unit cost)

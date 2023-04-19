@@ -1,0 +1,2 @@
+(move de dc)
+; cost = 1 (unit cost)

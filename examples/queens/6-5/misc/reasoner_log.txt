@@ -1,0 +1,3456 @@
+BLACK_BOX
+Creating slice from 0 to 100
+Generating inconsistency dnf
+0 - 100
+Generate DNF for axiom: Queen(aa)
+1 explanation found
+Generate DNF for axiom: Queen(ab)
+1 explanation found
+Generate DNF for axiom: Queen(ac)
+1 explanation found
+Generate DNF for axiom: Queen(ad)
+1 explanation found
+Generate DNF for axiom: Queen(ae)
+1 explanation found
+Generate DNF for axiom: Queen(af)
+1 explanation found
+Generate DNF for axiom: Queen(ba)
+1 explanation found
+Generate DNF for axiom: Queen(bb)
+1 explanation found
+Generate DNF for axiom: Queen(bc)
+1 explanation found
+Generate DNF for axiom: Queen(bd)
+1 explanation found
+Generate DNF for axiom: Queen(be)
+1 explanation found
+Generate DNF for axiom: Queen(bf)
+1 explanation found
+Generate DNF for axiom: Queen(ca)
+1 explanation found
+Generate DNF for axiom: Queen(cb)
+1 explanation found
+Generate DNF for axiom: Queen(cc)
+1 explanation found
+Generate DNF for axiom: Queen(cd)
+1 explanation found
+Generate DNF for axiom: Queen(ce)
+1 explanation found
+Generate DNF for axiom: Queen(cf)
+1 explanation found
+Generate DNF for axiom: Queen(da)
+1 explanation found
+Generate DNF for axiom: Queen(db)
+1 explanation found
+Generate DNF for axiom: Queen(dc)
+1 explanation found
+Generate DNF for axiom: Queen(dd)
+1 explanation found
+Generate DNF for axiom: Queen(de)
+1 explanation found
+Generate DNF for axiom: Queen(df)
+1 explanation found
+Generate DNF for axiom: Queen(ea)
+1 explanation found
+Generate DNF for axiom: Queen(eb)
+1 explanation found
+Generate DNF for axiom: Queen(ec)
+1 explanation found
+Generate DNF for axiom: Queen(ed)
+1 explanation found
+Generate DNF for axiom: Queen(ee)
+1 explanation found
+Generate DNF for axiom: Queen(ef)
+1 explanation found
+Generate DNF for axiom: Queen(fa)
+1 explanation found
+Generate DNF for axiom: Queen(fb)
+1 explanation found
+Generate DNF for axiom: Queen(fc)
+1 explanation found
+Generate DNF for axiom: Queen(fd)
+1 explanation found
+Generate DNF for axiom: Queen(fe)
+1 explanation found
+Generate DNF for axiom: Queen(ff)
+1 explanation found
+-36 - 64
+Generate DNF for axiom: Figure(aa)
+1 explanation found
+Generate DNF for axiom: Figure(ab)
+1 explanation found
+Generate DNF for axiom: Figure(ac)
+1 explanation found
+Generate DNF for axiom: Figure(ad)
+1 explanation found
+Generate DNF for axiom: Figure(ae)
+1 explanation found
+Generate DNF for axiom: Figure(af)
+1 explanation found
+Generate DNF for axiom: Figure(ba)
+1 explanation found
+Generate DNF for axiom: Figure(bb)
+1 explanation found
+Generate DNF for axiom: Figure(bc)
+1 explanation found
+Generate DNF for axiom: Figure(bd)
+1 explanation found
+Generate DNF for axiom: Figure(be)
+1 explanation found
+Generate DNF for axiom: Figure(bf)
+1 explanation found
+Generate DNF for axiom: Figure(ca)
+1 explanation found
+Generate DNF for axiom: Figure(cb)
+1 explanation found
+Generate DNF for axiom: Figure(cc)
+1 explanation found
+Generate DNF for axiom: Figure(cd)
+1 explanation found
+Generate DNF for axiom: Figure(ce)
+1 explanation found
+Generate DNF for axiom: Figure(cf)
+1 explanation found
+Generate DNF for axiom: Figure(da)
+1 explanation found
+Generate DNF for axiom: Figure(db)
+1 explanation found
+Generate DNF for axiom: Figure(dc)
+1 explanation found
+Generate DNF for axiom: Figure(dd)
+1 explanation found
+Generate DNF for axiom: Figure(de)
+1 explanation found
+Generate DNF for axiom: Figure(df)
+1 explanation found
+Generate DNF for axiom: Figure(ea)
+1 explanation found
+Generate DNF for axiom: Figure(eb)
+1 explanation found
+Generate DNF for axiom: Figure(ec)
+1 explanation found
+Generate DNF for axiom: Figure(ed)
+1 explanation found
+Generate DNF for axiom: Figure(ee)
+1 explanation found
+Generate DNF for axiom: Figure(ef)
+1 explanation found
+Generate DNF for axiom: Figure(fa)
+1 explanation found
+Generate DNF for axiom: Figure(fb)
+1 explanation found
+Generate DNF for axiom: Figure(fc)
+1 explanation found
+Generate DNF for axiom: Figure(fd)
+1 explanation found
+Generate DNF for axiom: Figure(fe)
+1 explanation found
+Generate DNF for axiom: Figure(ff)
+1 explanation found
+-72 - 28
+Generate DNF for axiom: inline(aa, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, bc)
+no explanation found
+Generate DNF for axiom: inline(aa, bd)
+no explanation found
+Generate DNF for axiom: inline(aa, be)
+no explanation found
+Generate DNF for axiom: inline(aa, bf)
+no explanation found
+Generate DNF for axiom: inline(aa, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, cb)
+no explanation found
+Generate DNF for axiom: inline(aa, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, cd)
+no explanation found
+Generate DNF for axiom: inline(aa, ce)
+no explanation found
+Generate DNF for axiom: inline(aa, cf)
+no explanation found
+Generate DNF for axiom: inline(aa, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, db)
+no explanation found
+Generate DNF for axiom: inline(aa, dc)
+no explanation found
+Generate DNF for axiom: inline(aa, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, de)
+no explanation found
+Generate DNF for axiom: inline(aa, df)
+no explanation found
+Generate DNF for axiom: inline(aa, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, eb)
+no explanation found
+Generate DNF for axiom: inline(aa, ec)
+no explanation found
+Generate DNF for axiom: inline(aa, ed)
+no explanation found
+-1368 - -1268
+BLACK_BOX
+Creating slice from 100 to 200
+100 - 200
+64 - 164
+28 - 128
+Generating inconsistency dnf
+Generate DNF for axiom: inline(aa, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, ef)
+no explanation found
+Generate DNF for axiom: inline(aa, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(aa, fb)
+no explanation found
+Generate DNF for axiom: inline(aa, fc)
+no explanation found
+Generate DNF for axiom: inline(aa, fd)
+no explanation found
+Generate DNF for axiom: inline(aa, fe)
+no explanation found
+Generate DNF for axiom: inline(aa, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, bd)
+no explanation found
+Generate DNF for axiom: inline(ab, be)
+no explanation found
+Generate DNF for axiom: inline(ab, bf)
+no explanation found
+Generate DNF for axiom: inline(ab, ca)
+no explanation found
+Generate DNF for axiom: inline(ab, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, cc)
+no explanation found
+Generate DNF for axiom: inline(ab, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, ce)
+no explanation found
+Generate DNF for axiom: inline(ab, cf)
+no explanation found
+Generate DNF for axiom: inline(ab, da)
+no explanation found
+Generate DNF for axiom: inline(ab, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, dc)
+no explanation found
+Generate DNF for axiom: inline(ab, dd)
+no explanation found
+Generate DNF for axiom: inline(ab, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, df)
+no explanation found
+Generate DNF for axiom: inline(ab, ea)
+no explanation found
+Generate DNF for axiom: inline(ab, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, ec)
+no explanation found
+Generate DNF for axiom: inline(ab, ed)
+no explanation found
+Generate DNF for axiom: inline(ab, ee)
+no explanation found
+Generate DNF for axiom: inline(ab, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, fa)
+no explanation found
+Generate DNF for axiom: inline(ab, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ab, fc)
+no explanation found
+Generate DNF for axiom: inline(ab, fd)
+no explanation found
+Generate DNF for axiom: inline(ab, fe)
+no explanation found
+Generate DNF for axiom: inline(ab, ff)
+no explanation found
+Generate DNF for axiom: inline(ac, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, ba)
+no explanation found
+Generate DNF for axiom: inline(ac, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, be)
+no explanation found
+Generate DNF for axiom: inline(ac, bf)
+no explanation found
+Generate DNF for axiom: inline(ac, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, cb)
+no explanation found
+Generate DNF for axiom: inline(ac, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, cd)
+no explanation found
+Generate DNF for axiom: inline(ac, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, cf)
+no explanation found
+Generate DNF for axiom: inline(ac, da)
+no explanation found
+Generate DNF for axiom: inline(ac, db)
+no explanation found
+Generate DNF for axiom: inline(ac, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, dd)
+no explanation found
+Generate DNF for axiom: inline(ac, de)
+no explanation found
+Generate DNF for axiom: inline(ac, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, ea)
+no explanation found
+Generate DNF for axiom: inline(ac, eb)
+no explanation found
+Generate DNF for axiom: inline(ac, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, ed)
+no explanation found
+Generate DNF for axiom: inline(ac, ee)
+no explanation found
+Generate DNF for axiom: inline(ac, ef)
+no explanation found
+Generate DNF for axiom: inline(ac, fa)
+no explanation found
+Generate DNF for axiom: inline(ac, fb)
+no explanation found
+Generate DNF for axiom: inline(ac, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ac, fd)
+no explanation found
+Generate DNF for axiom: inline(ac, fe)
+no explanation found
+Generate DNF for axiom: inline(ac, ff)
+no explanation found
+Generate DNF for axiom: inline(ad, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, ba)
+no explanation found
+Generate DNF for axiom: inline(ad, bb)
+no explanation found
+Generate DNF for axiom: inline(ad, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, bf)
+no explanation found
+Generate DNF for axiom: inline(ad, ca)
+no explanation found
+Generate DNF for axiom: inline(ad, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, cc)
+no explanation found
+Generate DNF for axiom: inline(ad, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, ce)
+no explanation found
+Generate DNF for axiom: inline(ad, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, db)
+no explanation found
+-1268 - -1168
+BLACK_BOX
+Creating slice from 200 to 300
+200 - 300
+164 - 264
+128 - 228
+Generating inconsistency dnf
+Generate DNF for axiom: inline(ad, dc)
+no explanation found
+Generate DNF for axiom: inline(ad, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, de)
+no explanation found
+Generate DNF for axiom: inline(ad, df)
+no explanation found
+Generate DNF for axiom: inline(ad, ea)
+no explanation found
+Generate DNF for axiom: inline(ad, eb)
+no explanation found
+Generate DNF for axiom: inline(ad, ec)
+no explanation found
+Generate DNF for axiom: inline(ad, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, ee)
+no explanation found
+Generate DNF for axiom: inline(ad, ef)
+no explanation found
+Generate DNF for axiom: inline(ad, fa)
+no explanation found
+Generate DNF for axiom: inline(ad, fb)
+no explanation found
+Generate DNF for axiom: inline(ad, fc)
+no explanation found
+Generate DNF for axiom: inline(ad, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ad, fe)
+no explanation found
+Generate DNF for axiom: inline(ad, ff)
+no explanation found
+Generate DNF for axiom: inline(ae, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, ba)
+no explanation found
+Generate DNF for axiom: inline(ae, bb)
+no explanation found
+Generate DNF for axiom: inline(ae, bc)
+no explanation found
+Generate DNF for axiom: inline(ae, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, ca)
+no explanation found
+Generate DNF for axiom: inline(ae, cb)
+no explanation found
+Generate DNF for axiom: inline(ae, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, cd)
+no explanation found
+Generate DNF for axiom: inline(ae, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, cf)
+no explanation found
+Generate DNF for axiom: inline(ae, da)
+no explanation found
+Generate DNF for axiom: inline(ae, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, dc)
+no explanation found
+Generate DNF for axiom: inline(ae, dd)
+no explanation found
+Generate DNF for axiom: inline(ae, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, df)
+no explanation found
+Generate DNF for axiom: inline(ae, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, eb)
+no explanation found
+Generate DNF for axiom: inline(ae, ec)
+no explanation found
+Generate DNF for axiom: inline(ae, ed)
+no explanation found
+Generate DNF for axiom: inline(ae, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, ef)
+no explanation found
+Generate DNF for axiom: inline(ae, fa)
+no explanation found
+Generate DNF for axiom: inline(ae, fb)
+no explanation found
+Generate DNF for axiom: inline(ae, fc)
+no explanation found
+Generate DNF for axiom: inline(ae, fd)
+no explanation found
+Generate DNF for axiom: inline(ae, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ae, ff)
+no explanation found
+Generate DNF for axiom: inline(af, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, ba)
+no explanation found
+Generate DNF for axiom: inline(af, bb)
+no explanation found
+Generate DNF for axiom: inline(af, bc)
+no explanation found
+Generate DNF for axiom: inline(af, bd)
+no explanation found
+Generate DNF for axiom: inline(af, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, ca)
+no explanation found
+Generate DNF for axiom: inline(af, cb)
+no explanation found
+Generate DNF for axiom: inline(af, cc)
+no explanation found
+Generate DNF for axiom: inline(af, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, ce)
+no explanation found
+Generate DNF for axiom: inline(af, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, da)
+no explanation found
+Generate DNF for axiom: inline(af, db)
+no explanation found
+Generate DNF for axiom: inline(af, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, dd)
+no explanation found
+Generate DNF for axiom: inline(af, de)
+no explanation found
+Generate DNF for axiom: inline(af, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, ea)
+no explanation found
+Generate DNF for axiom: inline(af, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, ec)
+no explanation found
+Generate DNF for axiom: inline(af, ed)
+no explanation found
+Generate DNF for axiom: inline(af, ee)
+no explanation found
+Generate DNF for axiom: inline(af, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(af, fb)
+no explanation found
+Generate DNF for axiom: inline(af, fc)
+no explanation found
+Generate DNF for axiom: inline(af, fd)
+no explanation found
+Generate DNF for axiom: inline(af, fe)
+no explanation found
+Generate DNF for axiom: inline(af, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, ac)
+no explanation found
+Generate DNF for axiom: inline(ba, ad)
+no explanation found
+Generate DNF for axiom: inline(ba, ae)
+no explanation found
+Generate DNF for axiom: inline(ba, af)
+no explanation found
+Generate DNF for axiom: inline(ba, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, bf)
+entailed in static ontology
+1 explanation found
+-1168 - -1068
+BLACK_BOX
+Creating slice from 300 to 400
+300 - 400
+264 - 364
+228 - 328
+Generating inconsistency dnf
+Generate DNF for axiom: inline(ba, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, cc)
+no explanation found
+Generate DNF for axiom: inline(ba, cd)
+no explanation found
+Generate DNF for axiom: inline(ba, ce)
+no explanation found
+Generate DNF for axiom: inline(ba, cf)
+no explanation found
+Generate DNF for axiom: inline(ba, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, db)
+no explanation found
+Generate DNF for axiom: inline(ba, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, dd)
+no explanation found
+Generate DNF for axiom: inline(ba, de)
+no explanation found
+Generate DNF for axiom: inline(ba, df)
+no explanation found
+Generate DNF for axiom: inline(ba, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, eb)
+no explanation found
+Generate DNF for axiom: inline(ba, ec)
+no explanation found
+Generate DNF for axiom: inline(ba, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, ee)
+no explanation found
+Generate DNF for axiom: inline(ba, ef)
+no explanation found
+Generate DNF for axiom: inline(ba, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, fb)
+no explanation found
+Generate DNF for axiom: inline(ba, fc)
+no explanation found
+Generate DNF for axiom: inline(ba, fd)
+no explanation found
+Generate DNF for axiom: inline(ba, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ba, ff)
+no explanation found
+Generate DNF for axiom: inline(bb, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, ad)
+no explanation found
+Generate DNF for axiom: inline(bb, ae)
+no explanation found
+Generate DNF for axiom: inline(bb, af)
+no explanation found
+Generate DNF for axiom: inline(bb, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, cd)
+no explanation found
+Generate DNF for axiom: inline(bb, ce)
+no explanation found
+Generate DNF for axiom: inline(bb, cf)
+no explanation found
+Generate DNF for axiom: inline(bb, da)
+no explanation found
+Generate DNF for axiom: inline(bb, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, dc)
+no explanation found
+Generate DNF for axiom: inline(bb, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, de)
+no explanation found
+Generate DNF for axiom: inline(bb, df)
+no explanation found
+Generate DNF for axiom: inline(bb, ea)
+no explanation found
+Generate DNF for axiom: inline(bb, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, ec)
+no explanation found
+Generate DNF for axiom: inline(bb, ed)
+no explanation found
+Generate DNF for axiom: inline(bb, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, ef)
+no explanation found
+Generate DNF for axiom: inline(bb, fa)
+no explanation found
+Generate DNF for axiom: inline(bb, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bb, fc)
+no explanation found
+Generate DNF for axiom: inline(bb, fd)
+no explanation found
+Generate DNF for axiom: inline(bb, fe)
+no explanation found
+Generate DNF for axiom: inline(bb, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, aa)
+no explanation found
+Generate DNF for axiom: inline(bc, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, ae)
+no explanation found
+Generate DNF for axiom: inline(bc, af)
+no explanation found
+Generate DNF for axiom: inline(bc, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, ca)
+no explanation found
+Generate DNF for axiom: inline(bc, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, ce)
+no explanation found
+Generate DNF for axiom: inline(bc, cf)
+no explanation found
+Generate DNF for axiom: inline(bc, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, db)
+no explanation found
+Generate DNF for axiom: inline(bc, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, dd)
+no explanation found
+Generate DNF for axiom: inline(bc, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, df)
+no explanation found
+Generate DNF for axiom: inline(bc, ea)
+no explanation found
+Generate DNF for axiom: inline(bc, eb)
+no explanation found
+Generate DNF for axiom: inline(bc, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, ed)
+no explanation found
+Generate DNF for axiom: inline(bc, ee)
+no explanation found
+Generate DNF for axiom: inline(bc, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, fa)
+no explanation found
+Generate DNF for axiom: inline(bc, fb)
+no explanation found
+Generate DNF for axiom: inline(bc, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bc, fd)
+no explanation found
+Generate DNF for axiom: inline(bc, fe)
+no explanation found
+Generate DNF for axiom: inline(bc, ff)
+no explanation found
+Generate DNF for axiom: inline(bd, aa)
+no explanation found
+Generate DNF for axiom: inline(bd, ab)
+no explanation found
+Generate DNF for axiom: inline(bd, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, ad)
+entailed in static ontology
+1 explanation found
+-1068 - -968
+BLACK_BOX
+Creating slice from 400 to 500
+400 - 500
+364 - 464
+328 - 428
+Generating inconsistency dnf
+Generate DNF for axiom: inline(bd, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, af)
+no explanation found
+Generate DNF for axiom: inline(bd, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, ca)
+no explanation found
+Generate DNF for axiom: inline(bd, cb)
+no explanation found
+Generate DNF for axiom: inline(bd, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, cf)
+no explanation found
+Generate DNF for axiom: inline(bd, da)
+no explanation found
+Generate DNF for axiom: inline(bd, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, dc)
+no explanation found
+Generate DNF for axiom: inline(bd, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, de)
+no explanation found
+Generate DNF for axiom: inline(bd, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, eb)
+no explanation found
+Generate DNF for axiom: inline(bd, ec)
+no explanation found
+Generate DNF for axiom: inline(bd, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, ee)
+no explanation found
+Generate DNF for axiom: inline(bd, ef)
+no explanation found
+Generate DNF for axiom: inline(bd, fa)
+no explanation found
+Generate DNF for axiom: inline(bd, fb)
+no explanation found
+Generate DNF for axiom: inline(bd, fc)
+no explanation found
+Generate DNF for axiom: inline(bd, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bd, fe)
+no explanation found
+Generate DNF for axiom: inline(bd, ff)
+no explanation found
+Generate DNF for axiom: inline(be, aa)
+no explanation found
+Generate DNF for axiom: inline(be, ab)
+no explanation found
+Generate DNF for axiom: inline(be, ac)
+no explanation found
+Generate DNF for axiom: inline(be, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, ca)
+no explanation found
+Generate DNF for axiom: inline(be, cb)
+no explanation found
+Generate DNF for axiom: inline(be, cc)
+no explanation found
+Generate DNF for axiom: inline(be, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, da)
+no explanation found
+Generate DNF for axiom: inline(be, db)
+no explanation found
+Generate DNF for axiom: inline(be, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, dd)
+no explanation found
+Generate DNF for axiom: inline(be, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, df)
+no explanation found
+Generate DNF for axiom: inline(be, ea)
+no explanation found
+Generate DNF for axiom: inline(be, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, ec)
+no explanation found
+Generate DNF for axiom: inline(be, ed)
+no explanation found
+Generate DNF for axiom: inline(be, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, ef)
+no explanation found
+Generate DNF for axiom: inline(be, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, fb)
+no explanation found
+Generate DNF for axiom: inline(be, fc)
+no explanation found
+Generate DNF for axiom: inline(be, fd)
+no explanation found
+Generate DNF for axiom: inline(be, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(be, ff)
+no explanation found
+Generate DNF for axiom: inline(bf, aa)
+no explanation found
+Generate DNF for axiom: inline(bf, ab)
+no explanation found
+Generate DNF for axiom: inline(bf, ac)
+no explanation found
+Generate DNF for axiom: inline(bf, ad)
+no explanation found
+Generate DNF for axiom: inline(bf, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, ca)
+no explanation found
+Generate DNF for axiom: inline(bf, cb)
+no explanation found
+Generate DNF for axiom: inline(bf, cc)
+no explanation found
+Generate DNF for axiom: inline(bf, cd)
+no explanation found
+Generate DNF for axiom: inline(bf, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, da)
+no explanation found
+Generate DNF for axiom: inline(bf, db)
+no explanation found
+Generate DNF for axiom: inline(bf, dc)
+no explanation found
+Generate DNF for axiom: inline(bf, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, de)
+no explanation found
+Generate DNF for axiom: inline(bf, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, ea)
+no explanation found
+Generate DNF for axiom: inline(bf, eb)
+no explanation found
+Generate DNF for axiom: inline(bf, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, ed)
+no explanation found
+Generate DNF for axiom: inline(bf, ee)
+no explanation found
+Generate DNF for axiom: inline(bf, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(bf, fa)
+no explanation found
+Generate DNF for axiom: inline(bf, fb)
+entailed in static ontology
+1 explanation found
+-968 - -868
+BLACK_BOX
+Creating slice from 500 to 600
+500 - 600
+464 - 564
+428 - 528
+Generating inconsistency dnf
+Generate DNF for axiom: inline(bf, fc)
+no explanation found
+Generate DNF for axiom: inline(bf, fd)
+no explanation found
+Generate DNF for axiom: inline(bf, fe)
+no explanation found
+Generate DNF for axiom: inline(bf, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, ab)
+no explanation found
+Generate DNF for axiom: inline(ca, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, ad)
+no explanation found
+Generate DNF for axiom: inline(ca, ae)
+no explanation found
+Generate DNF for axiom: inline(ca, af)
+no explanation found
+Generate DNF for axiom: inline(ca, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, bc)
+no explanation found
+Generate DNF for axiom: inline(ca, bd)
+no explanation found
+Generate DNF for axiom: inline(ca, be)
+no explanation found
+Generate DNF for axiom: inline(ca, bf)
+no explanation found
+Generate DNF for axiom: inline(ca, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, dc)
+no explanation found
+Generate DNF for axiom: inline(ca, dd)
+no explanation found
+Generate DNF for axiom: inline(ca, de)
+no explanation found
+Generate DNF for axiom: inline(ca, df)
+no explanation found
+Generate DNF for axiom: inline(ca, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, eb)
+no explanation found
+Generate DNF for axiom: inline(ca, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, ed)
+no explanation found
+Generate DNF for axiom: inline(ca, ee)
+no explanation found
+Generate DNF for axiom: inline(ca, ef)
+no explanation found
+Generate DNF for axiom: inline(ca, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, fb)
+no explanation found
+Generate DNF for axiom: inline(ca, fc)
+no explanation found
+Generate DNF for axiom: inline(ca, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ca, fe)
+no explanation found
+Generate DNF for axiom: inline(ca, ff)
+no explanation found
+Generate DNF for axiom: inline(cb, aa)
+no explanation found
+Generate DNF for axiom: inline(cb, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, ac)
+no explanation found
+Generate DNF for axiom: inline(cb, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, ae)
+no explanation found
+Generate DNF for axiom: inline(cb, af)
+no explanation found
+Generate DNF for axiom: inline(cb, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, bd)
+no explanation found
+Generate DNF for axiom: inline(cb, be)
+no explanation found
+Generate DNF for axiom: inline(cb, bf)
+no explanation found
+Generate DNF for axiom: inline(cb, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, dd)
+no explanation found
+Generate DNF for axiom: inline(cb, de)
+no explanation found
+Generate DNF for axiom: inline(cb, df)
+no explanation found
+Generate DNF for axiom: inline(cb, ea)
+no explanation found
+Generate DNF for axiom: inline(cb, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, ec)
+no explanation found
+Generate DNF for axiom: inline(cb, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, ee)
+no explanation found
+Generate DNF for axiom: inline(cb, ef)
+no explanation found
+Generate DNF for axiom: inline(cb, fa)
+no explanation found
+Generate DNF for axiom: inline(cb, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, fc)
+no explanation found
+Generate DNF for axiom: inline(cb, fd)
+no explanation found
+Generate DNF for axiom: inline(cb, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cb, ff)
+no explanation found
+Generate DNF for axiom: inline(cc, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, ab)
+no explanation found
+Generate DNF for axiom: inline(cc, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, ad)
+no explanation found
+Generate DNF for axiom: inline(cc, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, af)
+no explanation found
+Generate DNF for axiom: inline(cc, ba)
+no explanation found
+Generate DNF for axiom: inline(cc, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, be)
+no explanation found
+Generate DNF for axiom: inline(cc, bf)
+no explanation found
+Generate DNF for axiom: inline(cc, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, da)
+no explanation found
+Generate DNF for axiom: inline(cc, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, de)
+no explanation found
+Generate DNF for axiom: inline(cc, df)
+no explanation found
+-868 - -768
+BLACK_BOX
+Creating slice from 600 to 700
+600 - 700
+564 - 664
+528 - 628
+Generating inconsistency dnf
+Generate DNF for axiom: inline(cc, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, eb)
+no explanation found
+Generate DNF for axiom: inline(cc, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, ed)
+no explanation found
+Generate DNF for axiom: inline(cc, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, ef)
+no explanation found
+Generate DNF for axiom: inline(cc, fa)
+no explanation found
+Generate DNF for axiom: inline(cc, fb)
+no explanation found
+Generate DNF for axiom: inline(cc, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cc, fd)
+no explanation found
+Generate DNF for axiom: inline(cc, fe)
+no explanation found
+Generate DNF for axiom: inline(cc, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, aa)
+no explanation found
+Generate DNF for axiom: inline(cd, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, ac)
+no explanation found
+Generate DNF for axiom: inline(cd, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, ae)
+no explanation found
+Generate DNF for axiom: inline(cd, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, ba)
+no explanation found
+Generate DNF for axiom: inline(cd, bb)
+no explanation found
+Generate DNF for axiom: inline(cd, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, bf)
+no explanation found
+Generate DNF for axiom: inline(cd, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, da)
+no explanation found
+Generate DNF for axiom: inline(cd, db)
+no explanation found
+Generate DNF for axiom: inline(cd, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, df)
+no explanation found
+Generate DNF for axiom: inline(cd, ea)
+no explanation found
+Generate DNF for axiom: inline(cd, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, ec)
+no explanation found
+Generate DNF for axiom: inline(cd, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, ee)
+no explanation found
+Generate DNF for axiom: inline(cd, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, fb)
+no explanation found
+Generate DNF for axiom: inline(cd, fc)
+no explanation found
+Generate DNF for axiom: inline(cd, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cd, fe)
+no explanation found
+Generate DNF for axiom: inline(cd, ff)
+no explanation found
+Generate DNF for axiom: inline(ce, aa)
+no explanation found
+Generate DNF for axiom: inline(ce, ab)
+no explanation found
+Generate DNF for axiom: inline(ce, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, ad)
+no explanation found
+Generate DNF for axiom: inline(ce, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, af)
+no explanation found
+Generate DNF for axiom: inline(ce, ba)
+no explanation found
+Generate DNF for axiom: inline(ce, bb)
+no explanation found
+Generate DNF for axiom: inline(ce, bc)
+no explanation found
+Generate DNF for axiom: inline(ce, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, da)
+no explanation found
+Generate DNF for axiom: inline(ce, db)
+no explanation found
+Generate DNF for axiom: inline(ce, dc)
+no explanation found
+Generate DNF for axiom: inline(ce, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, ea)
+no explanation found
+Generate DNF for axiom: inline(ce, eb)
+no explanation found
+Generate DNF for axiom: inline(ce, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, ed)
+no explanation found
+Generate DNF for axiom: inline(ce, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, ef)
+no explanation found
+Generate DNF for axiom: inline(ce, fa)
+no explanation found
+Generate DNF for axiom: inline(ce, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, fc)
+no explanation found
+Generate DNF for axiom: inline(ce, fd)
+no explanation found
+Generate DNF for axiom: inline(ce, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ce, ff)
+no explanation found
+Generate DNF for axiom: inline(cf, aa)
+no explanation found
+Generate DNF for axiom: inline(cf, ab)
+no explanation found
+Generate DNF for axiom: inline(cf, ac)
+no explanation found
+Generate DNF for axiom: inline(cf, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, ae)
+no explanation found
+Generate DNF for axiom: inline(cf, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, ba)
+no explanation found
+Generate DNF for axiom: inline(cf, bb)
+no explanation found
+Generate DNF for axiom: inline(cf, bc)
+no explanation found
+Generate DNF for axiom: inline(cf, bd)
+no explanation found
+Generate DNF for axiom: inline(cf, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, cd)
+entailed in static ontology
+1 explanation found
+-768 - -668
+BLACK_BOX
+Creating slice from 700 to 800
+700 - 800
+664 - 764
+628 - 728
+Generating inconsistency dnf
+Generate DNF for axiom: inline(cf, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, da)
+no explanation found
+Generate DNF for axiom: inline(cf, db)
+no explanation found
+Generate DNF for axiom: inline(cf, dc)
+no explanation found
+Generate DNF for axiom: inline(cf, dd)
+no explanation found
+Generate DNF for axiom: inline(cf, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, ea)
+no explanation found
+Generate DNF for axiom: inline(cf, eb)
+no explanation found
+Generate DNF for axiom: inline(cf, ec)
+no explanation found
+Generate DNF for axiom: inline(cf, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, ee)
+no explanation found
+Generate DNF for axiom: inline(cf, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, fa)
+no explanation found
+Generate DNF for axiom: inline(cf, fb)
+no explanation found
+Generate DNF for axiom: inline(cf, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(cf, fd)
+no explanation found
+Generate DNF for axiom: inline(cf, fe)
+no explanation found
+Generate DNF for axiom: inline(cf, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, ab)
+no explanation found
+Generate DNF for axiom: inline(da, ac)
+no explanation found
+Generate DNF for axiom: inline(da, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, ae)
+no explanation found
+Generate DNF for axiom: inline(da, af)
+no explanation found
+Generate DNF for axiom: inline(da, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, bb)
+no explanation found
+Generate DNF for axiom: inline(da, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, bd)
+no explanation found
+Generate DNF for axiom: inline(da, be)
+no explanation found
+Generate DNF for axiom: inline(da, bf)
+no explanation found
+Generate DNF for axiom: inline(da, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, cc)
+no explanation found
+Generate DNF for axiom: inline(da, cd)
+no explanation found
+Generate DNF for axiom: inline(da, ce)
+no explanation found
+Generate DNF for axiom: inline(da, cf)
+no explanation found
+Generate DNF for axiom: inline(da, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, ec)
+no explanation found
+Generate DNF for axiom: inline(da, ed)
+no explanation found
+Generate DNF for axiom: inline(da, ee)
+no explanation found
+Generate DNF for axiom: inline(da, ef)
+no explanation found
+Generate DNF for axiom: inline(da, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, fb)
+no explanation found
+Generate DNF for axiom: inline(da, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(da, fd)
+no explanation found
+Generate DNF for axiom: inline(da, fe)
+no explanation found
+Generate DNF for axiom: inline(da, ff)
+no explanation found
+Generate DNF for axiom: inline(db, aa)
+no explanation found
+Generate DNF for axiom: inline(db, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, ac)
+no explanation found
+Generate DNF for axiom: inline(db, ad)
+no explanation found
+Generate DNF for axiom: inline(db, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, af)
+no explanation found
+Generate DNF for axiom: inline(db, ba)
+no explanation found
+Generate DNF for axiom: inline(db, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, bc)
+no explanation found
+Generate DNF for axiom: inline(db, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, be)
+no explanation found
+Generate DNF for axiom: inline(db, bf)
+no explanation found
+Generate DNF for axiom: inline(db, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, cd)
+no explanation found
+Generate DNF for axiom: inline(db, ce)
+no explanation found
+Generate DNF for axiom: inline(db, cf)
+no explanation found
+Generate DNF for axiom: inline(db, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, ed)
+no explanation found
+Generate DNF for axiom: inline(db, ee)
+no explanation found
+Generate DNF for axiom: inline(db, ef)
+no explanation found
+Generate DNF for axiom: inline(db, fa)
+no explanation found
+Generate DNF for axiom: inline(db, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, fc)
+no explanation found
+Generate DNF for axiom: inline(db, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(db, fe)
+no explanation found
+Generate DNF for axiom: inline(db, ff)
+no explanation found
+Generate DNF for axiom: inline(dc, aa)
+no explanation found
+Generate DNF for axiom: inline(dc, ab)
+no explanation found
+Generate DNF for axiom: inline(dc, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, ad)
+no explanation found
+Generate DNF for axiom: inline(dc, ae)
+no explanation found
+Generate DNF for axiom: inline(dc, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, bb)
+no explanation found
+-668 - -568
+BLACK_BOX
+Creating slice from 800 to 900
+800 - 900
+764 - 864
+728 - 828
+Generating inconsistency dnf
+Generate DNF for axiom: inline(dc, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, bd)
+no explanation found
+Generate DNF for axiom: inline(dc, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, bf)
+no explanation found
+Generate DNF for axiom: inline(dc, ca)
+no explanation found
+Generate DNF for axiom: inline(dc, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, ce)
+no explanation found
+Generate DNF for axiom: inline(dc, cf)
+no explanation found
+Generate DNF for axiom: inline(dc, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, ea)
+no explanation found
+Generate DNF for axiom: inline(dc, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, ee)
+no explanation found
+Generate DNF for axiom: inline(dc, ef)
+no explanation found
+Generate DNF for axiom: inline(dc, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, fb)
+no explanation found
+Generate DNF for axiom: inline(dc, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, fd)
+no explanation found
+Generate DNF for axiom: inline(dc, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dc, ff)
+no explanation found
+Generate DNF for axiom: inline(dd, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, ab)
+no explanation found
+Generate DNF for axiom: inline(dd, ac)
+no explanation found
+Generate DNF for axiom: inline(dd, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, ae)
+no explanation found
+Generate DNF for axiom: inline(dd, af)
+no explanation found
+Generate DNF for axiom: inline(dd, ba)
+no explanation found
+Generate DNF for axiom: inline(dd, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, bc)
+no explanation found
+Generate DNF for axiom: inline(dd, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, be)
+no explanation found
+Generate DNF for axiom: inline(dd, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, ca)
+no explanation found
+Generate DNF for axiom: inline(dd, cb)
+no explanation found
+Generate DNF for axiom: inline(dd, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, cf)
+no explanation found
+Generate DNF for axiom: inline(dd, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, ea)
+no explanation found
+Generate DNF for axiom: inline(dd, eb)
+no explanation found
+Generate DNF for axiom: inline(dd, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, ef)
+no explanation found
+Generate DNF for axiom: inline(dd, fa)
+no explanation found
+Generate DNF for axiom: inline(dd, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, fc)
+no explanation found
+Generate DNF for axiom: inline(dd, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(dd, fe)
+no explanation found
+Generate DNF for axiom: inline(dd, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, aa)
+no explanation found
+Generate DNF for axiom: inline(de, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, ac)
+no explanation found
+Generate DNF for axiom: inline(de, ad)
+no explanation found
+Generate DNF for axiom: inline(de, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, af)
+no explanation found
+Generate DNF for axiom: inline(de, ba)
+no explanation found
+Generate DNF for axiom: inline(de, bb)
+no explanation found
+Generate DNF for axiom: inline(de, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, bd)
+no explanation found
+Generate DNF for axiom: inline(de, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, bf)
+no explanation found
+Generate DNF for axiom: inline(de, ca)
+no explanation found
+Generate DNF for axiom: inline(de, cb)
+no explanation found
+Generate DNF for axiom: inline(de, cc)
+no explanation found
+Generate DNF for axiom: inline(de, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, ea)
+no explanation found
+Generate DNF for axiom: inline(de, eb)
+no explanation found
+Generate DNF for axiom: inline(de, ec)
+no explanation found
+Generate DNF for axiom: inline(de, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, fa)
+no explanation found
+Generate DNF for axiom: inline(de, fb)
+no explanation found
+Generate DNF for axiom: inline(de, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, fd)
+no explanation found
+Generate DNF for axiom: inline(de, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(de, ff)
+no explanation found
+-568 - -468
+BLACK_BOX
+Creating slice from 900 to 1000
+900 - 1000
+864 - 964
+828 - 928
+Generating inconsistency dnf
+Generate DNF for axiom: inline(df, aa)
+no explanation found
+Generate DNF for axiom: inline(df, ab)
+no explanation found
+Generate DNF for axiom: inline(df, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, ad)
+no explanation found
+Generate DNF for axiom: inline(df, ae)
+no explanation found
+Generate DNF for axiom: inline(df, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, ba)
+no explanation found
+Generate DNF for axiom: inline(df, bb)
+no explanation found
+Generate DNF for axiom: inline(df, bc)
+no explanation found
+Generate DNF for axiom: inline(df, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, be)
+no explanation found
+Generate DNF for axiom: inline(df, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, ca)
+no explanation found
+Generate DNF for axiom: inline(df, cb)
+no explanation found
+Generate DNF for axiom: inline(df, cc)
+no explanation found
+Generate DNF for axiom: inline(df, cd)
+no explanation found
+Generate DNF for axiom: inline(df, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, ea)
+no explanation found
+Generate DNF for axiom: inline(df, eb)
+no explanation found
+Generate DNF for axiom: inline(df, ec)
+no explanation found
+Generate DNF for axiom: inline(df, ed)
+no explanation found
+Generate DNF for axiom: inline(df, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, fa)
+no explanation found
+Generate DNF for axiom: inline(df, fb)
+no explanation found
+Generate DNF for axiom: inline(df, fc)
+no explanation found
+Generate DNF for axiom: inline(df, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(df, fe)
+no explanation found
+Generate DNF for axiom: inline(df, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, ab)
+no explanation found
+Generate DNF for axiom: inline(ea, ac)
+no explanation found
+Generate DNF for axiom: inline(ea, ad)
+no explanation found
+Generate DNF for axiom: inline(ea, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, af)
+no explanation found
+Generate DNF for axiom: inline(ea, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, bb)
+no explanation found
+Generate DNF for axiom: inline(ea, bc)
+no explanation found
+Generate DNF for axiom: inline(ea, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, be)
+no explanation found
+Generate DNF for axiom: inline(ea, bf)
+no explanation found
+Generate DNF for axiom: inline(ea, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, cb)
+no explanation found
+Generate DNF for axiom: inline(ea, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, cd)
+no explanation found
+Generate DNF for axiom: inline(ea, ce)
+no explanation found
+Generate DNF for axiom: inline(ea, cf)
+no explanation found
+Generate DNF for axiom: inline(ea, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, dc)
+no explanation found
+Generate DNF for axiom: inline(ea, dd)
+no explanation found
+Generate DNF for axiom: inline(ea, de)
+no explanation found
+Generate DNF for axiom: inline(ea, df)
+no explanation found
+Generate DNF for axiom: inline(ea, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ea, fc)
+no explanation found
+Generate DNF for axiom: inline(ea, fd)
+no explanation found
+Generate DNF for axiom: inline(ea, fe)
+no explanation found
+Generate DNF for axiom: inline(ea, ff)
+no explanation found
+Generate DNF for axiom: inline(eb, aa)
+no explanation found
+Generate DNF for axiom: inline(eb, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, ac)
+no explanation found
+Generate DNF for axiom: inline(eb, ad)
+no explanation found
+Generate DNF for axiom: inline(eb, ae)
+no explanation found
+Generate DNF for axiom: inline(eb, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, ba)
+no explanation found
+Generate DNF for axiom: inline(eb, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, bc)
+no explanation found
+Generate DNF for axiom: inline(eb, bd)
+no explanation found
+Generate DNF for axiom: inline(eb, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, bf)
+no explanation found
+Generate DNF for axiom: inline(eb, ca)
+no explanation found
+Generate DNF for axiom: inline(eb, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, cc)
+no explanation found
+Generate DNF for axiom: inline(eb, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, ce)
+no explanation found
+Generate DNF for axiom: inline(eb, cf)
+no explanation found
+Generate DNF for axiom: inline(eb, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, dd)
+no explanation found
+Generate DNF for axiom: inline(eb, de)
+no explanation found
+Generate DNF for axiom: inline(eb, df)
+no explanation found
+Generate DNF for axiom: inline(eb, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, ed)
+entailed in static ontology
+1 explanation found
+-468 - -368
+BLACK_BOX
+Creating slice from 1000 to 1100
+1000 - 1100
+964 - 1064
+928 - 1028
+Generating inconsistency dnf
+Generate DNF for axiom: inline(eb, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(eb, fd)
+no explanation found
+Generate DNF for axiom: inline(eb, fe)
+no explanation found
+Generate DNF for axiom: inline(eb, ff)
+no explanation found
+Generate DNF for axiom: inline(ec, aa)
+no explanation found
+Generate DNF for axiom: inline(ec, ab)
+no explanation found
+Generate DNF for axiom: inline(ec, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, ad)
+no explanation found
+Generate DNF for axiom: inline(ec, ae)
+no explanation found
+Generate DNF for axiom: inline(ec, af)
+no explanation found
+Generate DNF for axiom: inline(ec, ba)
+no explanation found
+Generate DNF for axiom: inline(ec, bb)
+no explanation found
+Generate DNF for axiom: inline(ec, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, bd)
+no explanation found
+Generate DNF for axiom: inline(ec, be)
+no explanation found
+Generate DNF for axiom: inline(ec, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, cb)
+no explanation found
+Generate DNF for axiom: inline(ec, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, cd)
+no explanation found
+Generate DNF for axiom: inline(ec, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, cf)
+no explanation found
+Generate DNF for axiom: inline(ec, da)
+no explanation found
+Generate DNF for axiom: inline(ec, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, de)
+no explanation found
+Generate DNF for axiom: inline(ec, df)
+no explanation found
+Generate DNF for axiom: inline(ec, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, fa)
+no explanation found
+Generate DNF for axiom: inline(ec, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ec, fe)
+no explanation found
+Generate DNF for axiom: inline(ec, ff)
+no explanation found
+Generate DNF for axiom: inline(ed, aa)
+no explanation found
+Generate DNF for axiom: inline(ed, ab)
+no explanation found
+Generate DNF for axiom: inline(ed, ac)
+no explanation found
+Generate DNF for axiom: inline(ed, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, ae)
+no explanation found
+Generate DNF for axiom: inline(ed, af)
+no explanation found
+Generate DNF for axiom: inline(ed, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, bb)
+no explanation found
+Generate DNF for axiom: inline(ed, bc)
+no explanation found
+Generate DNF for axiom: inline(ed, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, be)
+no explanation found
+Generate DNF for axiom: inline(ed, bf)
+no explanation found
+Generate DNF for axiom: inline(ed, ca)
+no explanation found
+Generate DNF for axiom: inline(ed, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, cc)
+no explanation found
+Generate DNF for axiom: inline(ed, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, ce)
+no explanation found
+Generate DNF for axiom: inline(ed, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, da)
+no explanation found
+Generate DNF for axiom: inline(ed, db)
+no explanation found
+Generate DNF for axiom: inline(ed, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, df)
+no explanation found
+Generate DNF for axiom: inline(ed, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, fa)
+no explanation found
+Generate DNF for axiom: inline(ed, fb)
+no explanation found
+Generate DNF for axiom: inline(ed, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ed, ff)
+no explanation found
+Generate DNF for axiom: inline(ee, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, ab)
+no explanation found
+Generate DNF for axiom: inline(ee, ac)
+no explanation found
+Generate DNF for axiom: inline(ee, ad)
+no explanation found
+Generate DNF for axiom: inline(ee, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, af)
+no explanation found
+Generate DNF for axiom: inline(ee, ba)
+no explanation found
+Generate DNF for axiom: inline(ee, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, bc)
+no explanation found
+Generate DNF for axiom: inline(ee, bd)
+no explanation found
+Generate DNF for axiom: inline(ee, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, bf)
+no explanation found
+Generate DNF for axiom: inline(ee, ca)
+no explanation found
+Generate DNF for axiom: inline(ee, cb)
+no explanation found
+Generate DNF for axiom: inline(ee, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, cd)
+no explanation found
+Generate DNF for axiom: inline(ee, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, cf)
+no explanation found
+Generate DNF for axiom: inline(ee, da)
+no explanation found
+Generate DNF for axiom: inline(ee, db)
+no explanation found
+-368 - -268
+BLACK_BOX
+Creating slice from 1100 to 1200
+1100 - 1200
+1064 - 1164
+1028 - 1128
+Generating inconsistency dnf
+Generate DNF for axiom: inline(ee, dc)
+no explanation found
+Generate DNF for axiom: inline(ee, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, fa)
+no explanation found
+Generate DNF for axiom: inline(ee, fb)
+no explanation found
+Generate DNF for axiom: inline(ee, fc)
+no explanation found
+Generate DNF for axiom: inline(ee, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ee, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, aa)
+no explanation found
+Generate DNF for axiom: inline(ef, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ac)
+no explanation found
+Generate DNF for axiom: inline(ef, ad)
+no explanation found
+Generate DNF for axiom: inline(ef, ae)
+no explanation found
+Generate DNF for axiom: inline(ef, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ba)
+no explanation found
+Generate DNF for axiom: inline(ef, bb)
+no explanation found
+Generate DNF for axiom: inline(ef, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, bd)
+no explanation found
+Generate DNF for axiom: inline(ef, be)
+no explanation found
+Generate DNF for axiom: inline(ef, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ca)
+no explanation found
+Generate DNF for axiom: inline(ef, cb)
+no explanation found
+Generate DNF for axiom: inline(ef, cc)
+no explanation found
+Generate DNF for axiom: inline(ef, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ce)
+no explanation found
+Generate DNF for axiom: inline(ef, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, da)
+no explanation found
+Generate DNF for axiom: inline(ef, db)
+no explanation found
+Generate DNF for axiom: inline(ef, dc)
+no explanation found
+Generate DNF for axiom: inline(ef, dd)
+no explanation found
+Generate DNF for axiom: inline(ef, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, fa)
+no explanation found
+Generate DNF for axiom: inline(ef, fb)
+no explanation found
+Generate DNF for axiom: inline(ef, fc)
+no explanation found
+Generate DNF for axiom: inline(ef, fd)
+no explanation found
+Generate DNF for axiom: inline(ef, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ef, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, ab)
+no explanation found
+Generate DNF for axiom: inline(fa, ac)
+no explanation found
+Generate DNF for axiom: inline(fa, ad)
+no explanation found
+Generate DNF for axiom: inline(fa, ae)
+no explanation found
+Generate DNF for axiom: inline(fa, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, bb)
+no explanation found
+Generate DNF for axiom: inline(fa, bc)
+no explanation found
+Generate DNF for axiom: inline(fa, bd)
+no explanation found
+Generate DNF for axiom: inline(fa, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, bf)
+no explanation found
+Generate DNF for axiom: inline(fa, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, cb)
+no explanation found
+Generate DNF for axiom: inline(fa, cc)
+no explanation found
+Generate DNF for axiom: inline(fa, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, ce)
+no explanation found
+Generate DNF for axiom: inline(fa, cf)
+no explanation found
+Generate DNF for axiom: inline(fa, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, db)
+no explanation found
+Generate DNF for axiom: inline(fa, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, dd)
+no explanation found
+Generate DNF for axiom: inline(fa, de)
+no explanation found
+Generate DNF for axiom: inline(fa, df)
+no explanation found
+Generate DNF for axiom: inline(fa, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, ec)
+no explanation found
+Generate DNF for axiom: inline(fa, ed)
+no explanation found
+Generate DNF for axiom: inline(fa, ee)
+no explanation found
+Generate DNF for axiom: inline(fa, ef)
+no explanation found
+Generate DNF for axiom: inline(fa, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fa, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, aa)
+no explanation found
+Generate DNF for axiom: inline(fb, ab)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, ac)
+no explanation found
+Generate DNF for axiom: inline(fb, ad)
+no explanation found
+Generate DNF for axiom: inline(fb, ae)
+no explanation found
+Generate DNF for axiom: inline(fb, af)
+no explanation found
+Generate DNF for axiom: inline(fb, ba)
+no explanation found
+Generate DNF for axiom: inline(fb, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, bc)
+no explanation found
+Generate DNF for axiom: inline(fb, bd)
+no explanation found
+Generate DNF for axiom: inline(fb, be)
+no explanation found
+Generate DNF for axiom: inline(fb, bf)
+entailed in static ontology
+1 explanation found
+-268 - -168
+BLACK_BOX
+Creating slice from 1200 to 1300
+1200 - 1300
+1164 - 1264
+1128 - 1228
+Generating inconsistency dnf
+Generate DNF for axiom: inline(fb, ca)
+no explanation found
+Generate DNF for axiom: inline(fb, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, cc)
+no explanation found
+Generate DNF for axiom: inline(fb, cd)
+no explanation found
+Generate DNF for axiom: inline(fb, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, cf)
+no explanation found
+Generate DNF for axiom: inline(fb, da)
+no explanation found
+Generate DNF for axiom: inline(fb, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, dc)
+no explanation found
+Generate DNF for axiom: inline(fb, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, de)
+no explanation found
+Generate DNF for axiom: inline(fb, df)
+no explanation found
+Generate DNF for axiom: inline(fb, ea)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, ed)
+no explanation found
+Generate DNF for axiom: inline(fb, ee)
+no explanation found
+Generate DNF for axiom: inline(fb, ef)
+no explanation found
+Generate DNF for axiom: inline(fb, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fb, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, aa)
+no explanation found
+Generate DNF for axiom: inline(fc, ab)
+no explanation found
+Generate DNF for axiom: inline(fc, ac)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, ad)
+no explanation found
+Generate DNF for axiom: inline(fc, ae)
+no explanation found
+Generate DNF for axiom: inline(fc, af)
+no explanation found
+Generate DNF for axiom: inline(fc, ba)
+no explanation found
+Generate DNF for axiom: inline(fc, bb)
+no explanation found
+Generate DNF for axiom: inline(fc, bc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, bd)
+no explanation found
+Generate DNF for axiom: inline(fc, be)
+no explanation found
+Generate DNF for axiom: inline(fc, bf)
+no explanation found
+Generate DNF for axiom: inline(fc, ca)
+no explanation found
+Generate DNF for axiom: inline(fc, cb)
+no explanation found
+Generate DNF for axiom: inline(fc, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, cd)
+no explanation found
+Generate DNF for axiom: inline(fc, ce)
+no explanation found
+Generate DNF for axiom: inline(fc, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, da)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, db)
+no explanation found
+Generate DNF for axiom: inline(fc, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, dd)
+no explanation found
+Generate DNF for axiom: inline(fc, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, df)
+no explanation found
+Generate DNF for axiom: inline(fc, ea)
+no explanation found
+Generate DNF for axiom: inline(fc, eb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, ee)
+no explanation found
+Generate DNF for axiom: inline(fc, ef)
+no explanation found
+Generate DNF for axiom: inline(fc, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fc, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, aa)
+no explanation found
+Generate DNF for axiom: inline(fd, ab)
+no explanation found
+Generate DNF for axiom: inline(fd, ac)
+no explanation found
+Generate DNF for axiom: inline(fd, ad)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, ae)
+no explanation found
+Generate DNF for axiom: inline(fd, af)
+no explanation found
+Generate DNF for axiom: inline(fd, ba)
+no explanation found
+Generate DNF for axiom: inline(fd, bb)
+no explanation found
+Generate DNF for axiom: inline(fd, bc)
+no explanation found
+Generate DNF for axiom: inline(fd, bd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, be)
+no explanation found
+Generate DNF for axiom: inline(fd, bf)
+no explanation found
+Generate DNF for axiom: inline(fd, ca)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, cb)
+no explanation found
+Generate DNF for axiom: inline(fd, cc)
+no explanation found
+Generate DNF for axiom: inline(fd, cd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, ce)
+no explanation found
+Generate DNF for axiom: inline(fd, cf)
+no explanation found
+Generate DNF for axiom: inline(fd, da)
+no explanation found
+Generate DNF for axiom: inline(fd, db)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, dc)
+no explanation found
+Generate DNF for axiom: inline(fd, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, de)
+no explanation found
+Generate DNF for axiom: inline(fd, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, ea)
+no explanation found
+Generate DNF for axiom: inline(fd, eb)
+no explanation found
+Generate DNF for axiom: inline(fd, ec)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, ef)
+no explanation found
+Generate DNF for axiom: inline(fd, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fd, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, aa)
+no explanation found
+Generate DNF for axiom: inline(fe, ab)
+no explanation found
+Generate DNF for axiom: inline(fe, ac)
+no explanation found
+Generate DNF for axiom: inline(fe, ad)
+no explanation found
+-168 - -68
+BLACK_BOX
+Creating slice from 1300 to 1400
+1300 - 1400
+1264 - 1364
+1228 - 1328
+Generating inconsistency dnf
+Generate DNF for axiom: inline(fe, ae)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, af)
+no explanation found
+Generate DNF for axiom: inline(fe, ba)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, bb)
+no explanation found
+Generate DNF for axiom: inline(fe, bc)
+no explanation found
+Generate DNF for axiom: inline(fe, bd)
+no explanation found
+Generate DNF for axiom: inline(fe, be)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, bf)
+no explanation found
+Generate DNF for axiom: inline(fe, ca)
+no explanation found
+Generate DNF for axiom: inline(fe, cb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, cc)
+no explanation found
+Generate DNF for axiom: inline(fe, cd)
+no explanation found
+Generate DNF for axiom: inline(fe, ce)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, cf)
+no explanation found
+Generate DNF for axiom: inline(fe, da)
+no explanation found
+Generate DNF for axiom: inline(fe, db)
+no explanation found
+Generate DNF for axiom: inline(fe, dc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, dd)
+no explanation found
+Generate DNF for axiom: inline(fe, de)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, df)
+no explanation found
+Generate DNF for axiom: inline(fe, ea)
+no explanation found
+Generate DNF for axiom: inline(fe, eb)
+no explanation found
+Generate DNF for axiom: inline(fe, ec)
+no explanation found
+Generate DNF for axiom: inline(fe, ed)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(fe, ff)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, aa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, ab)
+no explanation found
+Generate DNF for axiom: inline(ff, ac)
+no explanation found
+Generate DNF for axiom: inline(ff, ad)
+no explanation found
+Generate DNF for axiom: inline(ff, ae)
+no explanation found
+Generate DNF for axiom: inline(ff, af)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, ba)
+no explanation found
+Generate DNF for axiom: inline(ff, bb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, bc)
+no explanation found
+Generate DNF for axiom: inline(ff, bd)
+no explanation found
+Generate DNF for axiom: inline(ff, be)
+no explanation found
+Generate DNF for axiom: inline(ff, bf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, ca)
+no explanation found
+Generate DNF for axiom: inline(ff, cb)
+no explanation found
+Generate DNF for axiom: inline(ff, cc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, cd)
+no explanation found
+Generate DNF for axiom: inline(ff, ce)
+no explanation found
+Generate DNF for axiom: inline(ff, cf)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, da)
+no explanation found
+Generate DNF for axiom: inline(ff, db)
+no explanation found
+Generate DNF for axiom: inline(ff, dc)
+no explanation found
+Generate DNF for axiom: inline(ff, dd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, de)
+no explanation found
+Generate DNF for axiom: inline(ff, df)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, ea)
+no explanation found
+Generate DNF for axiom: inline(ff, eb)
+no explanation found
+Generate DNF for axiom: inline(ff, ec)
+no explanation found
+Generate DNF for axiom: inline(ff, ed)
+no explanation found
+Generate DNF for axiom: inline(ff, ee)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, ef)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, fa)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, fb)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, fc)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, fd)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, fe)
+entailed in static ontology
+1 explanation found
+Generate DNF for axiom: inline(ff, ff)
+entailed in static ontology
+1 explanation found
+-68 - 32
+BLACK_BOX
+Creating slice from 1400 to 1500
+1400 - 1500
+1364 - 1464
+1328 - 1428
+32 - 132
