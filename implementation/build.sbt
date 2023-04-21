@@ -8,7 +8,9 @@ lazy val root = (project in file("."))
   .settings(
     commonSettings,
     name := "ontology-mediated-pmc",
-    libraryDependencies += "net.sourceforge.owlapi" % "owlapi-distribution" % "5.1.4",
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
+libraryDependencies += "org.slf4j" % "slf4j-api" % "1.7.36",
+libraryDependencies += "net.sourceforge.owlapi" % "owlapi-distribution" % "5.1.4",
 //    libraryDependencies += "net.sourceforge.owlapi" % "owlexplanation" % "5.0.0",
     libraryDependencies += "net.sourceforge.owlapi" % "org.semanticweb.hermit" % "1.3.8.500",
     libraryDependencies += "com.github.galigator.openllet" % "openllet-explanation" % "2.6.4",
