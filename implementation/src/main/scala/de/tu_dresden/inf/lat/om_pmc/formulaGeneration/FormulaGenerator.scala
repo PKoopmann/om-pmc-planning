@@ -171,7 +171,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   def generateDNF(axiom: OWLLogicalAxiom): Set[Set[OWLLogicalAxiom]] =
   {
-    val originalOntology = ontology
+    //val originalOntology = ontology
 
     val inconsistentDNF = generateInconsistentDNF()
 
@@ -207,7 +207,6 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
         counter += 1
         //println("Using repair nr. "+counter)
         val repairedAxioms = axioms.asScala -- repair
-
         val repairedOntology = ontologyManager.createOntology(repairedAxioms.asJava)
 
         //println("Ontology axioms: "+repairedAxioms.map(SimpleOWLFormatter.format))
@@ -217,6 +216,8 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
         // println("++++++++++++++++++++")
         // println(repairedOntology.getAxioms().asScala.mkString("\n"))
         // println("++++++++++++++++++++")
+
+        //println("try repair:" + repair.map(SimpleOWLFormatter.format))
 
         //initReasoner(repairedOntology)
         //initExplanationGenerator(repairedOntology)
@@ -254,9 +255,11 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
         }
       }
+      val oldOntology = ontologyManager.createOntology(axioms)
+      updateReasoner(oldOntology)
     }
 
-    ontology=originalOntology
+    //ontology=originalOntology
 
     //      initReasoner()
     //      reasoner.flush()
