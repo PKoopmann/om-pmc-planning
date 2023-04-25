@@ -23,6 +23,7 @@ tempLog="${directory}/${logName}_temp.txt"
 
 
 echo "run benchmarks from file $benchmarks with a time limit of ${TimeBound}s."
+echo "start time: $(date +'%Y %m %d %H %M')"
 echo "result will be written to $log"
 
 read -r head < "$benchmarks"

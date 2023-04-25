@@ -1,0 +1,6 @@
+run benchmarks from file benchmarkSmall.csv with a time limit of 5s.
+start time: 2023_04_24_09_51
+result will be written to ../benchmark_runs/tobias-HP/_2023_04_24_09_51_log.txt
+run ontology mediated planning for example with id 1 (folder: ../examples/pipes/pipes1)
+run horn planning for example with id 3 (folder: ../examples/horn_pipes/pipes1)
+total time to run benchmark set: 7.210040978s
