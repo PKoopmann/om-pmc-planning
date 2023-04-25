@@ -1,0 +1,199 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/forService
+:forService rdf:type owl:ObjectProperty ;
+            rdfs:domain :notFree ;
+            rdfs:range :service .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/greater
+:greater rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hasContract
+:hasContract rdf:type owl:ObjectProperty ;
+             rdfs:domain :notFree ;
+             rdfs:range :contract .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hasService
+:hasService rdf:type owl:ObjectProperty ;
+            rdfs:domain :notFree ;
+            rdfs:range :service .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/requestedService
+:requestedService rdf:type owl:ObjectProperty ;
+                  rdfs:domain :notFree ;
+                  rdfs:range :service .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/requiredService
+:requiredService rdf:type owl:ObjectProperty ;
+                 rdfs:domain :notFree ;
+                 rdfs:range :service .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Cell
+:Cell rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ack
+:ack rdf:type owl:Class ;
+     rdfs:subClassOf :notFree .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/activation
+:activation rdf:type owl:Class ;
+            rdfs:subClassOf :notFree .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/confirmation
+:confirmation rdf:type owl:Class ;
+              rdfs:subClassOf :notFree ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasService ;
+                                owl:someValuesFrom owl:Thing
+                              ] .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/contract
+:contract rdf:type owl:Class ;
+          rdfs:subClassOf :notFree ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :requiredService ;
+                            owl:someValuesFrom owl:Thing
+                          ] ;
+          owl:disjointWith :service .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/contractConfirmation
+:contractConfirmation rdf:type owl:Class ;
+                      rdfs:subClassOf :confirmation ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasContract ;
+                                        owl:someValuesFrom owl:Thing
+                                      ] .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/courierAck
+:courierAck rdf:type owl:Class ;
+            rdfs:subClassOf :ack .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/crmAck
+:crmAck rdf:type owl:Class ;
+        rdfs:subClassOf :ack .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hardwareAck
+:hardwareAck rdf:type owl:Class ;
+             rdfs:subClassOf :ack ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :forService ;
+                               owl:someValuesFrom owl:Thing
+                             ] .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/invoice
+:invoice rdf:type owl:Class ;
+         rdfs:subClassOf :notFree .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/notFree
+:notFree rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/order
+:order rdf:type owl:Class ;
+       rdfs:subClassOf :notFree ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :requestedService ;
+                         owl:someValuesFrom owl:Thing
+                       ] .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/orderConfirmation
+:orderConfirmation rdf:type owl:Class ;
+                   rdfs:subClassOf :confirmation .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/service
+:service rdf:type owl:Class ;
+         rdfs:subClassOf :notFree .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/serviceActivation
+:serviceActivation rdf:type owl:Class ;
+                   rdfs:subClassOf :activation .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/a
+:a rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/b
+:b rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/c
+:c rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/d
+:d rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/e
+:e rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/f
+:f rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/g
+:g rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/voip
+:voip rdf:type owl:NamedIndividual ,
+               :Cell ,
+               :service .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/voipRequest
+:voipRequest rdf:type owl:NamedIndividual ,
+                      :Cell ,
+                      :order ;
+             :requestedService :voip .
+
+
+###  Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/

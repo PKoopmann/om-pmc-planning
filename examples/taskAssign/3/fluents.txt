@@ -1,0 +1,19 @@
+# fluent definitions for drone example
+
+PREFIX task: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+OBJECT person a	-> task:a
+OBJECT person b	-> task:b
+OBJECT person c	-> task:c
+
+PREDICATE ElectronicEngineer(person) -> task:ElectronicEngineer
+PREDICATE InformaticEngineer(person) -> task:InformaticEngineer
+PREDICATE ElectronicsAgent(person) -> task:ElectronicsAgent
+PREDICATE SoftwareAgent(person) -> task:SoftwareAgent
+PREDICATE DesignAgent(person) -> task:DesignAgent
+PREDICATE TestingAgent(person) -> task:TestingAgent
+PREDICATE MaterialsAgent(person) -> task:MaterialsAgent
+PREDICATE CodingAgent(person) -> task:CodingAgent
+PREDICATE SpecificationsAgent(person) -> task:SpecificationsAgent
+PREDICATE hasPersonalInfo(person, name) -> task:hasPersonalInfo
+

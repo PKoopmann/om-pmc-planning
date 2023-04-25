@@ -1,12 +1,12 @@
-@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3/Wsmo2TPSA> .
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/anon/ontologies/2021/3/Wsmo2TPSA> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3> .
 
-<http://www.semanticweb.org/anon/ontologies/2021/3/Wsmo2TPSA> rdf:type owl:Ontology .
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology .
 
 #################################################################
 #    Object Properties

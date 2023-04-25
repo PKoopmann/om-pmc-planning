@@ -1,0 +1,95 @@
+# abstract hook definitions for drone example
+
+PREFIX tpsa: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+
+
+HOOK_PREDICATE: KBquery_activation
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:activation
+	
+HOOK_PREDICATE: KBquery_requestedService
+VARIABLES: ?x ?y
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?y Type: owl:Thing
+QUERY:
+	?x Type: tpsa:requestedService
+
+HOOK_PREDICATE: KBquery_order
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:order
+
+HOOK_PREDICATE: KBquery_service
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:service
+	
+HOOK_PREDICATE: KBquery_courierAck
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:courierAck
+	
+HOOK_PREDICATE: KBquery_contract
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:contract
+
+	
+HOOK_PREDICATE: KBquery_hasService
+VARIABLES: ?x ?y
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?y Type: owl:Thing
+QUERY:
+	?x Type: tpsa:hasService
+
+
+		
+HOOK_PREDICATE: KBquery_orderConfirmation
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:orderConfirmation
+
+		
+HOOK_PREDICATE: KBquery_confirmation
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:confirmation
+
+HOOK_PREDICATE: KBquery_crmAck
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:crmAck
+
+HOOK_PREDICATE: KBquery_hardwareAck
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:hardwareAck
+
+HOOK_PREDICATE: KBquery_invoice
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: tpsa:invoice

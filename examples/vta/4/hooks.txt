@@ -1,0 +1,98 @@
+# abstract hook definitions for drone example
+
+PREFIX vta: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+
+
+HOOK_PREDICATE: KBquery_notFree
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:notFree
+
+HOOK_PREDICATE: KBquery_directlyAfterObj
+VARIABLES: ?x ?y
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?y Type: owl:Thing
+QUERY:
+	?x vta:directlyAfterObj ?y
+
+HOOK_PREDICATE: KBquery_flightTicket
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:flightTicket
+
+HOOK_PREDICATE: KBquery_hotelStayConfirmation
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:hotelStayConfirmation
+
+HOOK_PREDICATE: KBquery_carRentalBooking
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:carRentalBooking
+
+HOOK_PREDICATE: KBquery_carRental
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:carRental
+
+HOOK_PREDICATE: KBquery_hotelStay
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:hotelStay
+
+HOOK_PREDICATE: KBquery_flight
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:flight
+
+HOOK_PREDICATE: KBquery_airportShuttle
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:airportShuttle
+
+HOOK_PREDICATE: KBquery_carHotelBundleOption
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:carHotelBundleOption
+
+HOOK_PREDICATE: KBquery_trip
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:trip
+
+
+HOOK_PREDICATE: KBquery_invoice
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:invoice
+
+HOOK_PREDICATE: KBquery_itinerary
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:itinerary

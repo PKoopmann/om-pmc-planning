@@ -34,18 +34,3 @@ Generate DNF for axiom: Covered(cd)
 Generate DNF for axiom: Covered(cg)
 1 explanation found
 Generate DNF for axiom: Covered(de)
-4 explanations found
-Generate DNF for axiom: Covered(fc)
-3 explanations found
-Generate DNF for axiom: Covered(fd)
-3 explanations found
-Generate DNF for axiom: Covered(gb)
-2 explanations found
-Generate DNF for axiom: Covered(gc)
-1 explanation found
--16 - 84
-BLACK_BOX
-Creating slice from 100 to 200
-100 - 200
-92 - 192
-84 - 184

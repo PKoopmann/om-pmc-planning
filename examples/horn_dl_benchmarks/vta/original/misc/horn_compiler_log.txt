@@ -1,0 +1,61 @@
+Compilation...
+Collecting queries... 0.0003s
+Rewriting... #logback.classic pattern: %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+13:22:11.033 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - rewrite(CQGraph g)
+13:22:11.034 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - g = { X1[2], X0[3],  }
+13:22:11.034 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - rewrite_recursive(CQGraph g)
+13:22:11.034 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - g = { X1[2], X0[3],  }
+13:22:11.035 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - cq(g) = QUERY0(X0,X1) :- c2(X1), c3(X0).
+0.4501s
+Generating derived predicated from datalog rules... 0.0007s
+Finalizing PDDL... 0.0005s
+Compilation took 0.4516s
+
+%% ONTOLOGY
+carrental(X0) :- carrentalrequest(X0).
+flight(X0) :- flightrequest(X0).
+hotelstay(X0) :- hotelstayrequest(X0).
+inconsistent() :- carrentalrequest(Y0), flightrequest(Y0).
+inconsistent() :- carrentalrequest(Y0), hotelstayrequest(Y0).
+inconsistent() :- flightrequest(Y0), hotelstayrequest(Y0).
+
+%% QUERY0(?0,?1) <- invoice(?1), itinerary(?0)
+QUERY0(X0,X1) :- invoice(X1), itinerary(X0).
+
+%% CONCEPTS/RELATIONS NOT DERIVABLE FROM ONTOLOGY:
+% airportshuttle
+% carhotelbundleoption
+% carrentalbooking
+% carrentalrequest
+% directlyafterobj
+% flightrequest
+% flightticket
+% hotelstayconfirmation
+% hotelstayrequest
+% invoice
+% itinerary
+% notfree
+% trip
+
+%% Tseitin transformation for PDDL using derived predicates
+
+%% MERGED DERIVED PREDICATES:
+% (:derived (DATALOG_INCONSISTENT)
+          (or (exists (?y0 - object) (AUX0 ?y0)) (exists (?y0 - object) (AUX1 ?y0)) (exists (?y0 - object) (AUX2 ?y0))))
+% (:derived (DATALOG_CARRENTAL ?x0 - object)
+          (or (carrental ?x0) (carrentalrequest ?x0)))
+% (:derived (DATALOG_FLIGHT ?x0 - object)
+          (or (flight ?x0) (flightrequest ?x0)))
+% (:derived (DATALOG_HOTELSTAY ?x0 - object)
+          (or (hotelstay ?x0) (hotelstayrequest ?x0)))
+
+%% NEW DERIVED PREDICATES:
+% (:derived (AUX0 ?y0 - object)
+          (and (carrentalrequest ?y0) (hotelstayrequest ?y0)))
+% (:derived (AUX1 ?y0 - object)
+          (and (carrentalrequest ?y0) (flightrequest ?y0)))
+% (:derived (AUX2 ?y0 - object)
+          (and (flightrequest ?y0) (hotelstayrequest ?y0)))
+% (:derived (AUX3)
+          (exists (?receipt ?fullTrip - object) (DATALOG_QUERY0 ?fullTrip ?receipt)))
+

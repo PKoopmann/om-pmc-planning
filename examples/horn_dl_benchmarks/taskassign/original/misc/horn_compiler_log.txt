@@ -1,0 +1,102 @@
+Compilation...
+Collecting queries... 0.0003s
+Rewriting... #logback.classic pattern: %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+09:53:32.165 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - rewrite(CQGraph g)
+09:53:32.167 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - g = { X1[2], X0[2],  }
+09:53:32.167 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - rewrite_recursive(CQGraph g)
+09:53:32.167 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - g = { X1[2], X0[2],  }
+09:53:32.168 [main] DEBUG o.s.c.h.q.HornSHIQQueryRewriter - cq(g) = QUERY0(X0,X1) :- c2(X1), c2(X0).
+0.4510s
+Generating derived predicated from datalog rules... 0.0010s
+Finalizing PDDL... 0.0003s
+Compilation took 0.4527s
+
+%% ONTOLOGY
+designagent(X0) :- materialsagent(X0).
+employee(X0) :- designer(X0).
+employee(X0) :- developer(X0).
+employee(X0) :- engineer(X0).
+employee(X0) :- haspersonalinfo(X0,Y0).
+employee(X0) :- taskagent(X0).
+engineer(X0) :- electronicengineer(X0).
+engineer(X0) :- informaticengineer(X0).
+engineer(X0) :- materialsengineer(X0).
+fullname(X0) :- haspersonalinfo(Y0,X0).
+inconsistent() :- codingagent(Y0), electronicengineer(Y0).
+inconsistent() :- designer(Y0), electronicsagent(Y0).
+inconsistent() :- designer(Y0), softwareagent(Y0).
+inconsistent() :- developer(Y0), specificationsagent(Y0).
+inconsistent() :- electronicengineer(Y0), informaticengineer(Y0).
+inconsistent() :- electronicsagent(Y0), informaticengineer(Y0).
+inconsistent() :- electronicsagent(Y0), materialsengineer(Y0).
+inconsistent() :- employee(Y0), fullname(Y0).
+inconsistent() :- materialsengineer(Y0), softwareagent(Y0).
+softwareagent(X0) :- codingagent(X0).
+softwareagent(X0) :- specificationsagent(X0).
+taskagent(X0) :- designagent(X0).
+taskagent(X0) :- electronicsagent(X0).
+taskagent(X0) :- softwareagent(X0).
+taskagent(X0) :- testingagent(X0).
+
+%% QUERY0(?0,?1) <- ElectronicEngineer(?0), ElectronicEngineer(?1)
+QUERY0(X0,X1) :- electronicengineer(X0), electronicengineer(X1).
+
+%% CONCEPTS/RELATIONS NOT DERIVABLE FROM ONTOLOGY:
+% codingagent
+% designer
+% developer
+% electronicengineer
+% electronicsagent
+% haspersonalinfo
+% informaticengineer
+% materialsagent
+% materialsengineer
+% specificationsagent
+% testingagent
+
+%% Tseitin transformation for PDDL using derived predicates
+
+%% MERGED DERIVED PREDICATES:
+% (:derived (DATALOG_TASKAGENT ?x0 - object)
+          (or (DATALOG_DESIGNAGENT ?x0) (DATALOG_SOFTWAREAGENT ?x0) (electronicsagent ?x0) (taskagent ?x0) (testingagent ?x0)))
+% (:derived (DATALOG_EMPLOYEE ?x0 - object)
+          (or (exists (?y0 - object) (haspersonalinfo ?x0 ?y0)) (DATALOG_ENGINEER ?x0) (DATALOG_TASKAGENT ?x0) (designer ?x0) (developer ?x0) (employee ?x0)))
+% (:derived (DATALOG_ENGINEER ?x0 - object)
+          (or (electronicengineer ?x0) (engineer ?x0) (informaticengineer ?x0) (materialsengineer ?x0)))
+% (:derived (DATALOG_FULLNAME ?x0 - object)
+          (or (exists (?y0 - object) (haspersonalinfo ?y0 ?x0)) (fullname ?x0)))
+% (:derived (DATALOG_INCONSISTENT)
+          (or (exists (?y0 - object) (AUX0 ?y0)) (exists (?y0 - object) (AUX1 ?y0)) (exists (?y0 - object) (AUX2 ?y0)) (exists (?y0 - object) (AUX3 ?y0)) (exists (?y0 - object) (AUX4 ?y0)) (exists (?y0 - object) (AUX5 ?y0)) (exists (?y0 - object) (AUX6 ?y0)) (exists (?y0 - object) (AUX7 ?y0)) (exists (?y0 - object) (AUX8 ?y0))))
+% (:derived (DATALOG_SOFTWAREAGENT ?x0 - object)
+          (or (codingagent ?x0) (softwareagent ?x0) (specificationsagent ?x0)))
+% (:derived (DATALOG_DESIGNAGENT ?x0 - object)
+          (or (designagent ?x0) (materialsagent ?x0)))
+
+%% NEW DERIVED PREDICATES:
+% (:derived (AUX0 ?y0 - object)
+          (and (electronicsagent ?y0) (informaticengineer ?y0)))
+% (:derived (AUX1 ?y0 - object)
+          (and (designer ?y0) (electronicsagent ?y0)))
+% (:derived (AUX2 ?y0 - object)
+          (and (developer ?y0) (specificationsagent ?y0)))
+% (:derived (AUX3 ?y0 - object)
+          (and (DATALOG_SOFTWAREAGENT ?y0) (materialsengineer ?y0)))
+% (:derived (AUX4 ?y0 - object)
+          (and (DATALOG_EMPLOYEE ?y0) (DATALOG_FULLNAME ?y0)))
+% (:derived (AUX5 ?y0 - object)
+          (and (DATALOG_SOFTWAREAGENT ?y0) (designer ?y0)))
+% (:derived (AUX6 ?y0 - object)
+          (and (codingagent ?y0) (electronicengineer ?y0)))
+% (:derived (AUX7 ?y0 - object)
+          (and (electronicsagent ?y0) (materialsengineer ?y0)))
+% (:derived (AUX8 ?y0 - object)
+          (and (electronicengineer ?y0) (informaticengineer ?y0)))
+% (:derived (AUX9 ?x1 - object ?x2 - object ?x3 - object)
+          (or (= ?x1 ?x2) (= ?x1 ?x3) (= ?x2 ?x3) (not (electronicengineer ?x1)) (not (electronicengineer ?x2)) (not (electronicengineer ?x3))))
+% (:derived (AUX10 ?x1 - object ?x2 - object ?x3 - object)
+          (or (= ?x1 ?x2) (= ?x1 ?x3) (= ?x2 ?x3) (not (informaticengineer ?x1)) (not (informaticengineer ?x2)) (not (informaticengineer ?x3))))
+% (:derived (AUX11)
+          (exists (?x ?y - object) (AUX12 ?y ?x)))
+% (:derived (AUX12 ?y - object ?x - object)
+          (and (DATALOG_QUERY0 ?x ?y) (not (= ?x ?y))))
+

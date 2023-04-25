@@ -1,9 +1,9 @@
 Compilation...
-Collecting queries... 0.0002s
-Rewriting... 0.3629s
-Generating derived predicated from datalog rules... 0.0008s
-Finalizing PDDL... 0.0002s
-Compilation took 0.3641s
+Collecting queries... 0.0003s
+Rewriting... 0.3821s
+Generating derived predicated from datalog rules... 0.0010s
+Finalizing PDDL... 0.0003s
+Compilation took 0.3838s
 
 %% ONTOLOGY
 ack(X0) :- courierack(X0).
@@ -20,25 +20,25 @@ service(X0) :- requestedservice(Y0,X0).
 service(X0) :- requiredservice(Y0,X0).
 
 %% DUPLICATE RULES:
-% notfree(X0) :- confirmation(X0).
-% notfree(X0) :- contract(X0).
 % notfree(X0) :- order(X0).
+% notfree(X0) :- contract(X0).
+% notfree(X0) :- confirmation(X0).
 
 %% IRRELEVANT RULES:
 % notfree(X0) :- service(X0).
 % notfree(X0) :- hardwareack(X0).
-% notfree(X0) :- activation(X0).
-% notfree(X0) :- requestedservice(X0,Y0).
-% notfree(X0) :- invoice(X0).
-% notfree(X0) :- hascontract(X0,Y0).
-% notfree(X0) :- contractconfirmation(X0).
-% notfree(X0) :- hasservice(X0,Y0).
 % notfree(X0) :- contract(X0).
-% notfree(X0) :- forservice(X0,Y0).
+% notfree(X0) :- hascontract(X0,Y0).
+% notfree(X0) :- requiredservice(X0,Y0).
+% notfree(X0) :- invoice(X0).
 % notfree(X0) :- ack(X0).
 % notfree(X0) :- confirmation(X0).
 % notfree(X0) :- order(X0).
-% notfree(X0) :- requiredservice(X0,Y0).
+% notfree(X0) :- contractconfirmation(X0).
+% notfree(X0) :- activation(X0).
+% notfree(X0) :- hasservice(X0,Y0).
+% notfree(X0) :- requestedservice(X0,Y0).
+% notfree(X0) :- forservice(X0,Y0).
 
 %% CONCEPTS/RELATIONS NOT DERIVABLE FROM ONTOLOGY:
 % contractconfirmation
@@ -58,12 +58,12 @@ service(X0) :- requiredservice(Y0,X0).
 %% Tseitin transformation for PDDL using derived predicates
 
 %% MERGED DERIVED PREDICATES:
-% (:derived (DATALOG_ACK ?x0 - object)
-          (or (ack ?x0) (courierack ?x0) (crmack ?x0) (hardwareack ?x0)))
 % (:derived (DATALOG_CONFIRMATION ?x0 - object)
           (or (confirmation ?x0) (contractconfirmation ?x0) (orderconfirmation ?x0)))
 % (:derived (DATALOG_SERVICE ?x0 - object)
           (or (exists (?y0 - object) (forservice ?y0 ?x0)) (exists (?y0 - object) (hasservice ?y0 ?x0)) (exists (?y0 - object) (requestedservice ?y0 ?x0)) (exists (?y0 - object) (requiredservice ?y0 ?x0)) (service ?x0)))
+% (:derived (DATALOG_ACK ?x0 - object)
+          (or (ack ?x0) (courierack ?x0) (crmack ?x0) (hardwareack ?x0)))
 % (:derived (DATALOG_ACTIVATION ?x0 - object)
           (or (activation ?x0) (serviceactivation ?x0)))
 % (:derived (DATALOG_CONTRACT ?x0 - object)

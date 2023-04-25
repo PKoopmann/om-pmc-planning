@@ -43,9 +43,18 @@
 # cats 6
 ./runOMPlanning.sh ../examples/cats/6 cats6.ttl cats.pddl catsProblem6.pddl
 
+# taskAssign 3
+./runOMPlanning.sh ../examples/taskAssign/3 task3.ttl domain.pddl taskProblem3.pddl
+
+# tpsa 4
+./runOMPlanning.sh ../examples/tpsa/4 tpsa4.ttl domain.pddl orderProblem4.pddl
+
+# vta 4
+./runOMPlanning.sh ../examples/vta/4 vta4.ttl domain.pddl tripProblem4.pddl
+
+
 # elevator 15
 ./runOMPlanning.sh ../examples/elevator/elevator15 elevator15.ttl elevator.pddl elevatorProblem15.pddl
-
 # elevator modified 15
 ./runOMPlanning.sh ../examples/elevator/elevator15_mod elevator15.ttl elevator.pddl elevatorProblem15.pddl
 
@@ -72,6 +81,12 @@
 
 # tpsa 4
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/tpsa/original TTL.owl domain.pddl orderProblem4.pddl
+
+# vta 4
+./runHornPlanning.sh ../examples/horn_dl_benchmarks/vta/original TTL.owl domain.pddl tripProblem4.pddl
+
+# taskAssign 3
+./runHornPlanning.sh ../examples/horn_dl_benchmarks/taskassign/original TTL.owl domain.pddl taskProblem3.pddl
 
 # pipes1 7-7
 ./runHornPlanning.sh ../examples/horn_pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl
