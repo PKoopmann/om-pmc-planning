@@ -5,24 +5,24 @@ INFO     Running translator.
 INFO     translator stdin: None
 INFO     translator time limit: None
 INFO     translator memory limit: None
-INFO     translator command line string: /usr/bin/python3 /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0-patched/builds/release/bin/translate/translate.py ../examples/horn_dl_benchmarks/elevator/original/misc/generated_domain.pddl ../examples/horn_dl_benchmarks/elevator/original/misc/generated_elevatorProblem15.pddl --sas-file ../examples/horn_dl_benchmarks/elevator/original/misc/output.sas
+INFO     translator command line string: /usr/bin/python3 /home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/builds/release/bin/translate/translate.py ../examples/horn_dl_benchmarks/elevator/original/misc/generated_domain.pddl ../examples/horn_dl_benchmarks/elevator/original/misc/generated_elevatorProblem15.pddl --sas-file ../examples/horn_dl_benchmarks/elevator/original/misc/output.sas
 Parsing...
-Parsing: [0.000s CPU, 0.001s wall-clock]
+Parsing: [0.010s CPU, 0.002s wall-clock]
 Normalizing task... [0.000s CPU, 0.000s wall-clock]
 Instantiating...
 Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
 Normalizing Datalog program...
 Trivial rules: Converted to facts.
-Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
 Preparing model... [0.000s CPU, 0.001s wall-clock]
 Generated 59 rules.
-Computing model... [0.010s CPU, 0.002s wall-clock]
+Computing model... [0.000s CPU, 0.004s wall-clock]
 291 relevant atoms
 134 auxiliary atoms
 425 final queue length
 714 total queue pushes
-Completing instantiation... [0.000s CPU, 0.001s wall-clock]
-Instantiating: [0.010s CPU, 0.006s wall-clock]
+Completing instantiation... [0.010s CPU, 0.002s wall-clock]
+Instantiating: [0.010s CPU, 0.009s wall-clock]
 Computing fact groups...
 Finding invariants...
 6 initial candidates
@@ -45,7 +45,7 @@ Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
 Translator axioms removed by simplifying: 18
 CAVE: Skip computing negative axioms. This might have unforeseen side effects!
 Processing axioms: [0.000s CPU, 0.001s wall-clock]
-Translating task: [0.000s CPU, 0.002s wall-clock]
+Translating task: [0.000s CPU, 0.003s wall-clock]
 12 effect conditions simplified
 0 implied preconditions added
 Detecting unreachable propositions...
@@ -68,59 +68,59 @@ Translator total mutex groups size: 0
 Translator operators: 28
 Translator axioms: 48
 Translator task size: 364
-Translator peak memory: 34992 KB
-Writing output... [0.000s CPU, 0.000s wall-clock]
-Done! [0.010s CPU, 0.012s wall-clock]
+Translator peak memory: 29316 KB
+Writing output... [0.000s CPU, 0.001s wall-clock]
+Done! [0.020s CPU, 0.019s wall-clock]
 translate exit code: 0
 
 INFO     Running search (release).
 INFO     search stdin: ../examples/horn_dl_benchmarks/elevator/original/misc/output.sas
 INFO     search time limit: None
 INFO     search memory limit: None
-INFO     search command line string: /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0-patched/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file ../examples/horn_dl_benchmarks/elevator/original/elevatorProblem15.plan.txt < ../examples/horn_dl_benchmarks/elevator/original/misc/output.sas
-[t=2.4115e-05s, 9936 KB] reading input...
-[t=0.000259295s, 9936 KB] done reading input!
-[t=0.000937246s, 10268 KB] Initializing blind search heuristic...
-[t=0.00098324s, 10268 KB] Building successor generator...done!
-[t=0.00102359s, 10268 KB] peak memory difference for successor generator creation: 0 KB
-[t=0.00103228s, 10268 KB] time for successor generation creation: 1.1027e-05s
-[t=0.00104866s, 10268 KB] Variables: 42
-[t=0.00105817s, 10268 KB] FactPairs: 91
-[t=0.00106639s, 10268 KB] Bytes per state: 8
-[t=0.00111223s, 10268 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
-[t=0.00114826s, 10268 KB] New best heuristic value for blind: 1
-[t=0.00115933s, 10268 KB] g=0, 1 evaluated, 0 expanded
-[t=0.00117743s, 10268 KB] f = 1, 1 evaluated, 0 expanded
-[t=0.00118907s, 10268 KB] Initial heuristic value for blind: 1
-[t=0.00120016s, 10268 KB] pruning method: none
-[t=0.00122058s, 10268 KB] f = 2, 5 evaluated, 1 expanded
-[t=0.00124822s, 10268 KB] f = 3, 14 evaluated, 5 expanded
-[t=0.0012892s, 10268 KB] f = 4, 32 evaluated, 14 expanded
-[t=0.00135536s, 10268 KB] f = 5, 64 evaluated, 32 expanded
-[t=0.00145201s, 10268 KB] f = 6, 113 evaluated, 64 expanded
-[t=0.0015881s, 10268 KB] f = 7, 184 evaluated, 113 expanded
-[t=0.00177093s, 10268 KB] f = 8, 283 evaluated, 184 expanded
-[t=0.00199754s, 10268 KB] f = 9, 412 evaluated, 283 expanded
-[t=0.00231981s, 10268 KB] f = 10, 575 evaluated, 412 expanded
-[t=0.00268196s, 10268 KB] f = 11, 783 evaluated, 575 expanded
-[t=0.00321706s, 10268 KB] f = 12, 1055 evaluated, 783 expanded
-[t=0.00382408s, 10268 KB] f = 13, 1409 evaluated, 1055 expanded
-[t=0.00452006s, 10268 KB] f = 14, 1844 evaluated, 1409 expanded
-[t=0.00559469s, 10268 KB] f = 15, 2341 evaluated, 1844 expanded
-[t=0.00663173s, 10268 KB] f = 16, 2880 evaluated, 2341 expanded
-[t=0.00774827s, 10268 KB] f = 17, 3444 evaluated, 2880 expanded
-[t=0.00898889s, 10424 KB] f = 18, 4010 evaluated, 3444 expanded
-[t=0.0101535s, 10424 KB] f = 19, 4548 evaluated, 4010 expanded
-[t=0.0112587s, 10424 KB] f = 20, 5036 evaluated, 4548 expanded
-[t=0.0125931s, 10424 KB] f = 21, 5462 evaluated, 5036 expanded
-[t=0.0134611s, 10424 KB] f = 22, 5817 evaluated, 5462 expanded
-[t=0.0141396s, 10424 KB] f = 23, 6091 evaluated, 5817 expanded
-[t=0.0146449s, 10424 KB] f = 24, 6285 evaluated, 6091 expanded
-[t=0.0149883s, 10424 KB] f = 25, 6413 evaluated, 6285 expanded
-[t=0.0151134s, 10424 KB] New best heuristic value for blind: 0
-[t=0.0151233s, 10424 KB] g=25, 6465 evaluated, 6355 expanded
-[t=0.0151332s, 10424 KB] Solution found!
-[t=0.015144s, 10424 KB] Actual search time: 0.013941s
+INFO     search command line string: /home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file ../examples/horn_dl_benchmarks/elevator/original/elevatorProblem15.plan.txt < ../examples/horn_dl_benchmarks/elevator/original/misc/output.sas
+[t=7.8353e-05s, 9872 KB] reading input...
+[t=0.000495942s, 9872 KB] done reading input!
+[t=0.00193178s, 10260 KB] Initializing blind search heuristic...
+[t=0.00201525s, 10260 KB] Building successor generator...done!
+[t=0.0021077s, 10260 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.00212503s, 10260 KB] time for successor generation creation: 3.0197e-05s
+[t=0.00214856s, 10260 KB] Variables: 42
+[t=0.00216684s, 10260 KB] FactPairs: 91
+[t=0.00219089s, 10260 KB] Bytes per state: 8
+[t=0.0022942s, 10260 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.00235174s, 10260 KB] New best heuristic value for blind: 1
+[t=0.00237015s, 10260 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00238666s, 10260 KB] f = 1, 1 evaluated, 0 expanded
+[t=0.00240621s, 10260 KB] Initial heuristic value for blind: 1
+[t=0.00242331s, 10260 KB] pruning method: none
+[t=0.00245532s, 10260 KB] f = 2, 5 evaluated, 1 expanded
+[t=0.00249526s, 10260 KB] f = 3, 14 evaluated, 5 expanded
+[t=0.0025523s, 10260 KB] f = 4, 32 evaluated, 14 expanded
+[t=0.0026431s, 10260 KB] f = 5, 64 evaluated, 32 expanded
+[t=0.00278398s, 10260 KB] f = 6, 113 evaluated, 64 expanded
+[t=0.0029865s, 10260 KB] f = 7, 184 evaluated, 113 expanded
+[t=0.00327036s, 10260 KB] f = 8, 283 evaluated, 184 expanded
+[t=0.00361665s, 10260 KB] f = 9, 412 evaluated, 283 expanded
+[t=0.00410058s, 10260 KB] f = 10, 575 evaluated, 412 expanded
+[t=0.00468888s, 10260 KB] f = 11, 783 evaluated, 575 expanded
+[t=0.00549967s, 10260 KB] f = 12, 1055 evaluated, 783 expanded
+[t=0.00643494s, 10260 KB] f = 13, 1409 evaluated, 1055 expanded
+[t=0.00759737s, 10260 KB] f = 14, 1844 evaluated, 1409 expanded
+[t=0.00919091s, 10260 KB] f = 15, 2341 evaluated, 1844 expanded
+[t=0.0107998s, 10260 KB] f = 16, 2880 evaluated, 2341 expanded
+[t=0.0125052s, 10260 KB] f = 17, 3444 evaluated, 2880 expanded
+[t=0.0146029s, 10416 KB] f = 18, 4010 evaluated, 3444 expanded
+[t=0.0163764s, 10416 KB] f = 19, 4548 evaluated, 4010 expanded
+[t=0.0180939s, 10416 KB] f = 20, 5036 evaluated, 4548 expanded
+[t=0.0196061s, 10416 KB] f = 21, 5462 evaluated, 5036 expanded
+[t=0.0209278s, 10416 KB] f = 22, 5817 evaluated, 5462 expanded
+[t=0.021983s, 10416 KB] f = 23, 6091 evaluated, 5817 expanded
+[t=0.0227743s, 10416 KB] f = 24, 6285 evaluated, 6091 expanded
+[t=0.0233227s, 10416 KB] f = 25, 6413 evaluated, 6285 expanded
+[t=0.0235223s, 10416 KB] New best heuristic value for blind: 0
+[t=0.0235415s, 10416 KB] g=25, 6465 evaluated, 6355 expanded
+[t=0.0235599s, 10416 KB] Solution found!
+[t=0.0235791s, 10416 KB] Actual search time: 0.0211534s
 stop pass_n i (1)
 stop pass_m i (1)
 moveup i j (1)
@@ -146,25 +146,25 @@ stop pass_o j (1)
 moveup j k (1)
 moveup k l (1)
 stop pass_m l (1)
-[t=0.0151536s, 10424 KB] Plan length: 25 step(s).
-[t=0.0151536s, 10424 KB] Plan cost: 25
-[t=0.0151536s, 10424 KB] Expanded 6356 state(s).
-[t=0.0151536s, 10424 KB] Reopened 0 state(s).
-[t=0.0151536s, 10424 KB] Evaluated 6465 state(s).
-[t=0.0151536s, 10424 KB] Evaluations: 6465
-[t=0.0151536s, 10424 KB] Generated 19907 state(s).
-[t=0.0151536s, 10424 KB] Dead ends: 0 state(s).
-[t=0.0151536s, 10424 KB] Expanded until last jump: 6285 state(s).
-[t=0.0151536s, 10424 KB] Reopened until last jump: 0 state(s).
-[t=0.0151536s, 10424 KB] Evaluated until last jump: 6413 state(s).
-[t=0.0151536s, 10424 KB] Generated until last jump: 19724 state(s).
-[t=0.0151536s, 10424 KB] Number of registered states: 6465
-[t=0.0151536s, 10424 KB] Int hash set load factor: 6465/8192 = 0.789185
-[t=0.0151536s, 10424 KB] Int hash set resizes: 13
-[t=0.0151536s, 10424 KB] Search time: 0.0140417s
-[t=0.0151536s, 10424 KB] Total time: 0.0151536s
+[t=0.0235973s, 10416 KB] Plan length: 25 step(s).
+[t=0.0235973s, 10416 KB] Plan cost: 25
+[t=0.0235973s, 10416 KB] Expanded 6356 state(s).
+[t=0.0235973s, 10416 KB] Reopened 0 state(s).
+[t=0.0235973s, 10416 KB] Evaluated 6465 state(s).
+[t=0.0235973s, 10416 KB] Evaluations: 6465
+[t=0.0235973s, 10416 KB] Generated 19907 state(s).
+[t=0.0235973s, 10416 KB] Dead ends: 0 state(s).
+[t=0.0235973s, 10416 KB] Expanded until last jump: 6285 state(s).
+[t=0.0235973s, 10416 KB] Reopened until last jump: 0 state(s).
+[t=0.0235973s, 10416 KB] Evaluated until last jump: 6413 state(s).
+[t=0.0235973s, 10416 KB] Generated until last jump: 19724 state(s).
+[t=0.0235973s, 10416 KB] Number of registered states: 6465
+[t=0.0235973s, 10416 KB] Int hash set load factor: 6465/8192 = 0.789185
+[t=0.0235973s, 10416 KB] Int hash set resizes: 13
+[t=0.0235973s, 10416 KB] Search time: 0.0213039s
+[t=0.0235973s, 10416 KB] Total time: 0.0235973s
 Solution found.
-Peak memory: 10424 KB
+Peak memory: 10416 KB
 search exit code: 0
 
-INFO     Planner time: 0.07s
+INFO     Planner time: 0.12s
