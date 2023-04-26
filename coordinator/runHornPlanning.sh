@@ -60,7 +60,7 @@ while read line; do
 		clipper=${line#*=} # remove everything left of and including "="
 		foundClipper=1
 	fi
-	if [[ "$line" == PlannerOriginal=* ]]; then
+	if [[ "$line" == Planner=* ]]; then
 		Planner=${line#*=} # remove everything left of and including "="
 		foundPlanner=1
 	fi
