@@ -1,5 +1,7 @@
-Axioms in module: 106
 BLACK_BOX
 Creating slice from 0 to 100
 Generating inconsistency dnf
 0 - 100
+Generate DNF for axiom: lift_at(a)
+1 explanation found
+Generate DNF for axiom: lift_at(b)
