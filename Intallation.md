@@ -49,10 +49,36 @@ call "build"
 
 ## Obtain Horn-Reasoner
 only necessary to run benchmark sets that include the Horn reasoning
+Requirement: obtain DVL
+`curl https://www.dlvsystem.it/files/dlv.i386-linux-elf-static.bin --output dlv`
+make it executable
+`chmod a+rx dlv`
+`mkdir -p /usr/local/bin`
+`sudo mv dlv /usr/local/bin`
+Requirement: install unzip
+`sudo apt install unzip`
 
-
-
-
+clone repository in om-folder
+`cd om-pmc-formula-generation`
+`git clone https://gitlab.perspicuous-computing.science/a.kovtunova/pddl-horndl.git`
+switch to (sub-) directory
+`cd pddl-horndl/horn_dl_pddl_compiler`
+clone clipper
+`git clone https://github.com/ghxiao/clipper.git`
+apply patch
+`patch -ruN -p 1 -d clipper < ../clipper.patch`
+rename folder
+`mv clipper patchedClipper`
+move reasoner directory to main folder
+`cd ../..`
+`mv pddl-horndl/horn_dl_pddl_compiler/ horn_dl_pddl_compiler`
+remove unnecessary folder with rest of supplementary material
+`rm -r -d -f pddl-horndl`
+build clipper:
+- build clipper
+`cd horn_dl_pddl_compiler/patchedClipper`
+`./build.sh`
+`cd ../..`
 
 
 
