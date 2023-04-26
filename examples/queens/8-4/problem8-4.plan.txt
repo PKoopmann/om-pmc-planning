@@ -1,0 +1,2 @@
+(move bc bh)
+; cost = 1 (unit cost)

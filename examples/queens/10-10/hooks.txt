@@ -1,0 +1,31 @@
+# abstract hook definitions for drone example
+
+PREFIX queens: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+
+
+HOOK_PREDICATE: KBquery_Queen
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: queens:Cell
+QUERY:
+	?x Type: queens:Queen
+	
+	
+HOOK_PREDICATE: KBquery_Figure
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: queens:Cell
+QUERY:
+	?x Type: queens:Figure
+
+HOOK_PREDICATE: KBquery_Inline
+VARIABLES: ?x ?y
+TYPE_SPECIFICATION:
+	?x Type: queens:Cell
+	?y Type: queens:Cell
+QUERY:
+  ?x queens:inline ?y
+
+
+  

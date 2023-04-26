@@ -1,0 +1,2 @@
+(move ee aa)
+; cost = 1 (unit cost)

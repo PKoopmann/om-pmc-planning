@@ -71,6 +71,8 @@ DurationPlanning="$(bc <<<"$TimeEndPlanning-$TimeStartPlanning")"
 echo "called planner"
 
 
+
+
 echo "planning time: ${DurationPlanning}s"
 
 

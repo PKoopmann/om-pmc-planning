@@ -1,0 +1,3 @@
+(move ac aa)
+(move be eb)
+; cost = 2 (unit cost)

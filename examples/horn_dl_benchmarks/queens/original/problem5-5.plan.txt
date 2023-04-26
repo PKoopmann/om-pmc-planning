@@ -1,0 +1,3 @@
+(move cd bc)
+(move dd ed)
+; cost = 2 (unit cost)

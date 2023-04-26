@@ -72,6 +72,9 @@ object FormulaGenerator {
     result.staticReasoner.flush()
 
     //println("Module axioms: "+module.getAxioms().asScala.map(SimpleOWLFormatter.format))
+    println("Module size: " + module.getAxioms().size)
+    println("Number of Hooks: " + hook2axiom.size)
+    println("Number of Fluents: " + axiom2formula.size)
     result.initReasoner(module)
     result
   }
@@ -193,7 +196,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       val repairs = getRepairs()
 
 
-      //println("Got " + repairs.size + " repairs.")
+      println("Number of repairs: " + repairs.size)
       //println("Repairs: " + repairs)
 
       var counter = 0

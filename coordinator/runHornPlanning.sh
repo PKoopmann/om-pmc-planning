@@ -155,6 +155,17 @@ DurationPlanning="$(bc <<<"$TimeEndPlanning-$TimeStartPlanning")"
 
 echo "finished planning"
 
+# extract information from planner log
+while read line; do
+	if [[ "$line" == *"Plan length"* ]]; then
+		LengthTemp=${line#*: } # remove everything left of and including ":"
+    PlanLength=${LengthTemp% step(s).}
+	fi
+  if [[ "$line" == *"Evaluations:"* ]]; then
+		Evaluations=${line#*: } # remove everything left of and including ":"
+	fi
+done < "$PlannerLog"
+
 # print out computation times
 TimeEnd="$(date -u +%s.%N)"
 DurationAll="$(bc <<<"$TimeEnd-$TimeStart")"
@@ -162,3 +173,6 @@ DurationAll="$(bc <<<"$TimeEnd-$TimeStart")"
 echo "reasoning time: ${DurationReasoning}s"
 echo "planning time: ${DurationPlanning}s"
 echo "total time: ${DurationAll}s"
+
+echo "analyzed states: ${Evaluations}"
+echo "plan length: ${PlanLength}"

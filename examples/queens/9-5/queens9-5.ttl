@@ -1,0 +1,753 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix queens: <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/backdiagonal
+queens:backdiagonal rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf queens:inline ;
+                    rdf:type owl:SymmetricProperty ,
+                             owl:TransitiveProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/horinline
+queens:horinline rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf queens:inline ;
+                 rdf:type owl:SymmetricProperty ,
+                          owl:TransitiveProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/inline
+queens:inline rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdf:type owl:SymmetricProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/rightdiagonal
+queens:rightdiagonal rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf queens:inline ;
+                     rdf:type owl:SymmetricProperty ,
+                              owl:TransitiveProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/verinline
+queens:verinline rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf queens:inline ;
+                 rdf:type owl:SymmetricProperty ,
+                          owl:TransitiveProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Cell
+queens:Cell rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Figure
+queens:Figure rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Queen
+queens:Queen rdf:type owl:Class ;
+             rdfs:subClassOf queens:Figure .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aa
+queens:aa rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:bb ;
+          queens:horinline queens:ab ;
+          queens:verinline queens:ba .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ab
+queens:ab rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:bc ;
+          queens:horinline queens:ac ;
+          queens:rightdiagonal queens:ba ;
+          queens:verinline queens:bb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ac
+queens:ac rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:bd ;
+          queens:horinline queens:ad ;
+          queens:rightdiagonal queens:bb ;
+          queens:verinline queens:bc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ad
+queens:ad rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:be ;
+          queens:horinline queens:ae ;
+          queens:rightdiagonal queens:bc ;
+          queens:verinline queens:bd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ae
+queens:ae rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:bf ;
+          queens:horinline queens:af ;
+          queens:rightdiagonal queens:bd ;
+          queens:verinline queens:be .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/af
+queens:af rdf:type owl:NamedIndividual ,
+                   queens:Cell ,
+                   queens:Queen ;
+          queens:backdiagonal queens:bg ;
+          queens:horinline queens:ag ;
+          queens:rightdiagonal queens:be ;
+          queens:verinline queens:bf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ag
+queens:ag rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:bh ;
+          queens:horinline queens:ah ;
+          queens:rightdiagonal queens:bf ;
+          queens:verinline queens:bg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ah
+queens:ah rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:bi ;
+          queens:horinline queens:ai ;
+          queens:rightdiagonal queens:bg ;
+          queens:verinline queens:bh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ai
+queens:ai rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:rightdiagonal queens:bh ;
+          queens:verinline queens:bi .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ba
+queens:ba rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:cb ;
+          queens:horinline queens:bb ;
+          queens:verinline queens:ca .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bb
+queens:bb rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:cc ;
+          queens:horinline queens:bc ;
+          queens:rightdiagonal queens:ca ;
+          queens:verinline queens:cb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bc
+queens:bc rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:cd ;
+          queens:horinline queens:bd ;
+          queens:rightdiagonal queens:cb ;
+          queens:verinline queens:cc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bd
+queens:bd rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ce ;
+          queens:horinline queens:be ;
+          queens:rightdiagonal queens:cc ;
+          queens:verinline queens:cd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/be
+queens:be rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:cf ;
+          queens:horinline queens:bf ;
+          queens:rightdiagonal queens:cd ;
+          queens:verinline queens:ce .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bf
+queens:bf rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:cg ;
+          queens:horinline queens:bg ;
+          queens:rightdiagonal queens:ce ;
+          queens:verinline queens:cf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bg
+queens:bg rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ch ;
+          queens:horinline queens:bh ;
+          queens:rightdiagonal queens:cf ;
+          queens:verinline queens:cg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bh
+queens:bh rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ci ;
+          queens:horinline queens:bi ;
+          queens:rightdiagonal queens:cg ;
+          queens:verinline queens:ch .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bi
+queens:bi rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:rightdiagonal queens:ch ;
+          queens:verinline queens:ci .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ca
+queens:ca rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:db ;
+          queens:horinline queens:cb ;
+          queens:verinline queens:da .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cb
+queens:cb rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:dc ;
+          queens:horinline queens:cc ;
+          queens:rightdiagonal queens:da ;
+          queens:verinline queens:db .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cc
+queens:cc rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:dd ;
+          queens:horinline queens:cd ;
+          queens:rightdiagonal queens:db ;
+          queens:verinline queens:dc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cd
+queens:cd rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:de ;
+          queens:horinline queens:ce ;
+          queens:rightdiagonal queens:dc ;
+          queens:verinline queens:dd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ce
+queens:ce rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:df ;
+          queens:horinline queens:cf ;
+          queens:rightdiagonal queens:dd ;
+          queens:verinline queens:de .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cf
+queens:cf rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:dg ;
+          queens:horinline queens:cg ;
+          queens:rightdiagonal queens:de ;
+          queens:verinline queens:df .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cg
+queens:cg rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:dh ;
+          queens:horinline queens:ch ;
+          queens:rightdiagonal queens:df ;
+          queens:verinline queens:dg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ch
+queens:ch rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:di ;
+          queens:horinline queens:ci ;
+          queens:rightdiagonal queens:dg ;
+          queens:verinline queens:dh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ci
+queens:ci rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:rightdiagonal queens:dh ;
+          queens:verinline queens:di .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/da
+queens:da rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:eb ;
+          queens:horinline queens:db ;
+          queens:verinline queens:ea .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/db
+queens:db rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ec ;
+          queens:horinline queens:dc ;
+          queens:rightdiagonal queens:ea ;
+          queens:verinline queens:eb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/dc
+queens:dc rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ed ;
+          queens:horinline queens:dd ;
+          queens:rightdiagonal queens:eb ;
+          queens:verinline queens:ec .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/dd
+queens:dd rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ee ;
+          queens:horinline queens:de ;
+          queens:rightdiagonal queens:ec ;
+          queens:verinline queens:ed .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/de
+queens:de rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ef ;
+          queens:horinline queens:df ;
+          queens:rightdiagonal queens:ed ;
+          queens:verinline queens:ee .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/df
+queens:df rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:eg ;
+          queens:horinline queens:dg ;
+          queens:rightdiagonal queens:ee ;
+          queens:verinline queens:ef .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/dg
+queens:dg rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:eh ;
+          queens:horinline queens:dh ;
+          queens:rightdiagonal queens:ef ;
+          queens:verinline queens:eg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/dh
+queens:dh rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ei ;
+          queens:horinline queens:di ;
+          queens:rightdiagonal queens:eg ;
+          queens:verinline queens:eh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/di
+queens:di rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:rightdiagonal queens:eh ;
+          queens:verinline queens:ei .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ea
+queens:ea rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:fb ;
+          queens:horinline queens:eb ;
+          queens:verinline queens:fa .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/eb
+queens:eb rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:fc ;
+          queens:horinline queens:ec ;
+          queens:rightdiagonal queens:fa ;
+          queens:verinline queens:fb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ec
+queens:ec rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:fd ;
+          queens:horinline queens:ed ;
+          queens:rightdiagonal queens:fb ;
+          queens:verinline queens:fc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ed
+queens:ed rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:fe ;
+          queens:horinline queens:ee ;
+          queens:rightdiagonal queens:fc ;
+          queens:verinline queens:fd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ee
+queens:ee rdf:type owl:NamedIndividual ,
+                   queens:Cell ,
+                   queens:Queen ;
+          queens:backdiagonal queens:ff ;
+          queens:horinline queens:ef ;
+          queens:rightdiagonal queens:fd ;
+          queens:verinline queens:fe .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ef
+queens:ef rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:fg ;
+          queens:horinline queens:eg ;
+          queens:rightdiagonal queens:fe ;
+          queens:verinline queens:ff .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/eg
+queens:eg rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:fh ;
+          queens:horinline queens:eh ;
+          queens:rightdiagonal queens:ff ;
+          queens:verinline queens:fg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/eh
+queens:eh rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:fi ;
+          queens:horinline queens:ei ;
+          queens:rightdiagonal queens:fg ;
+          queens:verinline queens:fh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ei
+queens:ei rdf:type owl:NamedIndividual ,
+                   queens:Cell ,
+                   queens:Queen ;
+          queens:rightdiagonal queens:fh ;
+          queens:verinline queens:fi .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fa
+queens:fa rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:gb ;
+          queens:horinline queens:fb ;
+          queens:verinline queens:ga .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fb
+queens:fb rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:gc ;
+          queens:horinline queens:fc ;
+          queens:rightdiagonal queens:ga ;
+          queens:verinline queens:gb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fc
+queens:fc rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:gd ;
+          queens:horinline queens:fd ;
+          queens:rightdiagonal queens:gb ;
+          queens:verinline queens:gc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fd
+queens:fd rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ge ;
+          queens:horinline queens:fe ;
+          queens:rightdiagonal queens:gc ;
+          queens:verinline queens:gd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fe
+queens:fe rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:gf ;
+          queens:horinline queens:ff ;
+          queens:rightdiagonal queens:gd ;
+          queens:verinline queens:ge .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ff
+queens:ff rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:gg ;
+          queens:horinline queens:fg ;
+          queens:rightdiagonal queens:ge ;
+          queens:verinline queens:gf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fg
+queens:fg rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:gh ;
+          queens:horinline queens:fh ;
+          queens:rightdiagonal queens:gf ;
+          queens:verinline queens:gg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fh
+queens:fh rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:gi ;
+          queens:horinline queens:fi ;
+          queens:rightdiagonal queens:gg ;
+          queens:verinline queens:gh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fi
+queens:fi rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:rightdiagonal queens:gh ;
+          queens:verinline queens:gi .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ga
+queens:ga rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:hb ;
+          queens:horinline queens:gb ;
+          queens:verinline queens:ha .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gb
+queens:gb rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:hc ;
+          queens:horinline queens:gc ;
+          queens:rightdiagonal queens:ha ;
+          queens:verinline queens:hb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gc
+queens:gc rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:hd ;
+          queens:horinline queens:gd ;
+          queens:rightdiagonal queens:hb ;
+          queens:verinline queens:hc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gd
+queens:gd rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:he ;
+          queens:horinline queens:ge ;
+          queens:rightdiagonal queens:hc ;
+          queens:verinline queens:hd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ge
+queens:ge rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:hf ;
+          queens:horinline queens:gf ;
+          queens:rightdiagonal queens:hd ;
+          queens:verinline queens:he .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gf
+queens:gf rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:hg ;
+          queens:horinline queens:gg ;
+          queens:rightdiagonal queens:he ;
+          queens:verinline queens:hf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gg
+queens:gg rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:hh ;
+          queens:horinline queens:gh ;
+          queens:rightdiagonal queens:hf ;
+          queens:verinline queens:hg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gh
+queens:gh rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:hi ;
+          queens:horinline queens:gi ;
+          queens:rightdiagonal queens:hg ;
+          queens:verinline queens:hh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gi
+queens:gi rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:rightdiagonal queens:hh ;
+          queens:verinline queens:hi .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ha
+queens:ha rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ib ;
+          queens:horinline queens:hb ;
+          queens:verinline queens:ia .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hb
+queens:hb rdf:type owl:NamedIndividual ,
+                   queens:Cell ,
+                   queens:Queen ;
+          queens:backdiagonal queens:ic ;
+          queens:horinline queens:hc ;
+          queens:rightdiagonal queens:ia ;
+          queens:verinline queens:ib .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hc
+queens:hc rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:id ;
+          queens:horinline queens:hd ;
+          queens:rightdiagonal queens:ib ;
+          queens:verinline queens:ic .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hd
+queens:hd rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ie ;
+          queens:horinline queens:he ;
+          queens:rightdiagonal queens:ic ;
+          queens:verinline queens:id .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/he
+queens:he rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:if ;
+          queens:horinline queens:hf ;
+          queens:rightdiagonal queens:id ;
+          queens:verinline queens:ie .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hf
+queens:hf rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ig ;
+          queens:horinline queens:hg ;
+          queens:rightdiagonal queens:ie ;
+          queens:verinline queens:if .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hg
+queens:hg rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ih ;
+          queens:horinline queens:hh ;
+          queens:rightdiagonal queens:if ;
+          queens:verinline queens:ig .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hh
+queens:hh rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:backdiagonal queens:ii ;
+          queens:horinline queens:hi ;
+          queens:rightdiagonal queens:ig ;
+          queens:verinline queens:ih .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hi
+queens:hi rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:rightdiagonal queens:ih ;
+          queens:verinline queens:ii .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ia
+queens:ia rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:horinline queens:ib .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ib
+queens:ib rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:horinline queens:ic .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ic
+queens:ic rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:horinline queens:id .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/id
+queens:id rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:horinline queens:ie .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ie
+queens:ie rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:horinline queens:if .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/if
+queens:if rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:horinline queens:ig .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ig
+queens:ig rdf:type owl:NamedIndividual ,
+                   queens:Cell ,
+                   queens:Queen ;
+          queens:horinline queens:ih .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ih
+queens:ih rdf:type owl:NamedIndividual ,
+                   queens:Cell ;
+          queens:horinline queens:ii .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ii
+queens:ii rdf:type owl:NamedIndividual ,
+                   queens:Cell .
+
+
+###  Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/

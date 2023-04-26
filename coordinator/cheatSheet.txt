@@ -38,7 +38,8 @@
 ./runOMPlanning.sh ../examples/queens/6-5 queens6-5.ttl queens.pddl problem6-5.pddl 600
 # queens 6-6
 ./runOMPlanning.sh ../examples/queens/6-6 queens6-6.ttl queens.pddl problem6-6.pddl 600
-
+# queens 8-4
+./runOMPlanning.sh ../examples/queens/8-4 queens8-4.ttl queens.pddl problem8-4.pddl 1000
 
 # cats 6
 ./runOMPlanning.sh ../examples/cats/6 cats6.ttl cats.pddl catsProblem6.pddl
@@ -97,5 +98,7 @@
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/queens/original TTL.owl domain.pddl problem6-5.pddl
 # queens 6-6
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/queens/original TTL.owl domain.pddl problem6-6.pddl
+# queens 8-4
+./runHornPlanning.sh ../examples/horn_dl_benchmarks/queens/original TTL.owl domain.pddl problem8-4.pddl
 
 

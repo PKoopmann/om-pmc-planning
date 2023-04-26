@@ -1,5 +1,0 @@
-(move fe fc)
-(move bf ce)
-(move bb ba)
-(move aa ad)
-; cost = 4 (unit cost)

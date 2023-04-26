@@ -555,3056 +555,3070 @@ begin_variable
 var78
 0
 2
-Atom aux9(walldd, dd)
-NegatedAtom aux9(walldd, dd)
+Atom aux8(pipegc, gc)
+NegatedAtom aux8(pipegc, gc)
 end_variable
 begin_variable
 var79
-0
-2
-Atom datalog_hasobjectsomemineorprotectedstructure(dd)
-NegatedAtom datalog_hasobjectsomemineorprotectedstructure(dd)
-end_variable
-begin_variable
-var80
-0
-2
-Atom datalog_forbiddenwp(dd)
-NegatedAtom datalog_forbiddenwp(dd)
-end_variable
-begin_variable
-var81
-0
-2
-Atom aux9(walldc, dc)
-NegatedAtom aux9(walldc, dc)
-end_variable
-begin_variable
-var82
-0
-2
-Atom datalog_hasobjectsomemineorprotectedstructure(dc)
-NegatedAtom datalog_hasobjectsomemineorprotectedstructure(dc)
-end_variable
-begin_variable
-var83
-0
-2
-Atom datalog_forbiddenwp(dc)
-NegatedAtom datalog_forbiddenwp(dc)
-end_variable
-begin_variable
-var84
-0
-2
-Atom aux9(walldb, db)
-NegatedAtom aux9(walldb, db)
-end_variable
-begin_variable
-var85
-0
-2
-Atom datalog_hasobjectsomemineorprotectedstructure(db)
-NegatedAtom datalog_hasobjectsomemineorprotectedstructure(db)
-end_variable
-begin_variable
-var86
-0
-2
-Atom datalog_forbiddenwp(db)
-NegatedAtom datalog_forbiddenwp(db)
-end_variable
-begin_variable
-var87
-0
-2
-Atom aux9(wallcb, cb)
-NegatedAtom aux9(wallcb, cb)
-end_variable
-begin_variable
-var88
-0
-2
-Atom datalog_hasobjectsomemineorprotectedstructure(cb)
-NegatedAtom datalog_hasobjectsomemineorprotectedstructure(cb)
-end_variable
-begin_variable
-var89
-0
-2
-Atom datalog_forbiddenwp(cb)
-NegatedAtom datalog_forbiddenwp(cb)
-end_variable
-begin_variable
-var90
-0
-2
-Atom aux9(wallbb, bb)
-NegatedAtom aux9(wallbb, bb)
-end_variable
-begin_variable
-var91
-0
-2
-Atom datalog_hasobjectsomemineorprotectedstructure(bb)
-NegatedAtom datalog_hasobjectsomemineorprotectedstructure(bb)
-end_variable
-begin_variable
-var92
-0
-2
-Atom datalog_forbiddenwp(bb)
-NegatedAtom datalog_forbiddenwp(bb)
-end_variable
-begin_variable
-var93
-0
-2
-Atom aux9(wallab, ab)
-NegatedAtom aux9(wallab, ab)
-end_variable
-begin_variable
-var94
-0
-2
-Atom datalog_hasobjectsomemineorprotectedstructure(ab)
-NegatedAtom datalog_hasobjectsomemineorprotectedstructure(ab)
-end_variable
-begin_variable
-var95
-0
-2
-Atom datalog_forbiddenwp(ab)
-NegatedAtom datalog_forbiddenwp(ab)
-end_variable
-begin_variable
-var96
-0
-2
-Atom aux9(mineef, ef)
-NegatedAtom aux9(mineef, ef)
-end_variable
-begin_variable
-var97
-0
-2
-Atom datalog_hasobjectsomemineorprotectedstructure(ef)
-NegatedAtom datalog_hasobjectsomemineorprotectedstructure(ef)
-end_variable
-begin_variable
-var98
-0
-2
-Atom datalog_forbiddenwp(ef)
-NegatedAtom datalog_forbiddenwp(ef)
-end_variable
-begin_variable
-var99
-0
-2
-Atom aux7(pipegc, pipegb)
-NegatedAtom aux7(pipegc, pipegb)
-end_variable
-begin_variable
-var100
-0
-2
-Atom datalog_connectedtosomerustypipe(pipegb)
-NegatedAtom datalog_connectedtosomerustypipe(pipegb)
-end_variable
-begin_variable
-var101
-0
-2
-Atom aux7(pipegc, pipefc)
-NegatedAtom aux7(pipegc, pipefc)
-end_variable
-begin_variable
-var102
-0
-2
-Atom datalog_connectedtosomerustypipe(pipefc)
-NegatedAtom datalog_connectedtosomerustypipe(pipefc)
-end_variable
-begin_variable
-var103
-0
-2
-Atom aux7(pipecc, pipecd)
-NegatedAtom aux7(pipecc, pipecd)
-end_variable
-begin_variable
-var104
-0
-2
-Atom datalog_connectedtosomerustypipe(pipecd)
-NegatedAtom datalog_connectedtosomerustypipe(pipecd)
-end_variable
-begin_variable
-var105
-0
-2
-Atom aux6(pipegc, gc)
-NegatedAtom aux6(pipegc, gc)
-end_variable
-begin_variable
-var106
 0
 2
 Atom datalog_hasobjectsomerustypipeorunsupportedpipe(gc)
 NegatedAtom datalog_hasobjectsomerustypipeorunsupportedpipe(gc)
 end_variable
 begin_variable
-var107
+var80
 0
 2
 Atom datalog_highrisk(gc)
 NegatedAtom datalog_highrisk(gc)
 end_variable
 begin_variable
-var108
+var81
 0
 2
-Atom aux6(pipecg, cg)
-NegatedAtom aux6(pipecg, cg)
+Atom aux8(pipecg, cg)
+NegatedAtom aux8(pipecg, cg)
 end_variable
 begin_variable
-var109
+var82
 0
 2
 Atom datalog_hasobjectsomerustypipeorunsupportedpipe(cg)
 NegatedAtom datalog_hasobjectsomerustypipeorunsupportedpipe(cg)
 end_variable
 begin_variable
-var110
+var83
 0
 2
 Atom datalog_highrisk(cg)
 NegatedAtom datalog_highrisk(cg)
 end_variable
 begin_variable
-var111
+var84
 0
 2
-Atom aux6(pipecc, cc)
-NegatedAtom aux6(pipecc, cc)
+Atom aux8(pipecc, cc)
+NegatedAtom aux8(pipecc, cc)
 end_variable
 begin_variable
-var112
+var85
 0
 2
 Atom datalog_hasobjectsomerustypipeorunsupportedpipe(cc)
 NegatedAtom datalog_hasobjectsomerustypipeorunsupportedpipe(cc)
 end_variable
 begin_variable
-var113
+var86
 0
 2
 Atom datalog_highrisk(cc)
 NegatedAtom datalog_highrisk(cc)
 end_variable
 begin_variable
-var114
+var87
+0
+2
+Atom aux6(pipefd, fd)
+NegatedAtom aux6(pipefd, fd)
+end_variable
+begin_variable
+var88
+0
+2
+Atom datalog_hasobjectsomemediumriskpipe(fd)
+NegatedAtom datalog_hasobjectsomemediumriskpipe(fd)
+end_variable
+begin_variable
+var89
+0
+2
+Atom aux6(pipede, de)
+NegatedAtom aux6(pipede, de)
+end_variable
+begin_variable
+var90
+0
+2
+Atom datalog_hasobjectsomemediumriskpipe(de)
+NegatedAtom datalog_hasobjectsomemediumriskpipe(de)
+end_variable
+begin_variable
+var91
 0
 2
 Atom aux19(walldd)
 NegatedAtom aux19(walldd)
 end_variable
 begin_variable
-var115
+var92
 0
 2
 Atom aux19(walldc)
 NegatedAtom aux19(walldc)
 end_variable
 begin_variable
-var116
+var93
 0
 2
 Atom aux19(walldb)
 NegatedAtom aux19(walldb)
 end_variable
 begin_variable
-var117
+var94
 0
 2
 Atom aux19(wallcb)
 NegatedAtom aux19(wallcb)
 end_variable
 begin_variable
-var118
+var95
 0
 2
 Atom aux19(wallbb)
 NegatedAtom aux19(wallbb)
 end_variable
 begin_variable
-var119
+var96
 0
 2
 Atom aux19(wallab)
 NegatedAtom aux19(wallab)
 end_variable
 begin_variable
-var120
+var97
 0
 2
 Atom aux19(pipegc)
 NegatedAtom aux19(pipegc)
 end_variable
 begin_variable
-var121
+var98
 0
 2
 Atom aux19(pipegb)
 NegatedAtom aux19(pipegb)
 end_variable
 begin_variable
-var122
+var99
 0
 2
 Atom aux19(pipefd)
 NegatedAtom aux19(pipefd)
 end_variable
 begin_variable
-var123
+var100
 0
 2
 Atom aux19(pipefc)
 NegatedAtom aux19(pipefc)
 end_variable
 begin_variable
-var124
+var101
 0
 2
 Atom aux19(pipeee)
 NegatedAtom aux19(pipeee)
 end_variable
 begin_variable
-var125
+var102
 0
 2
 Atom aux19(pipedf)
 NegatedAtom aux19(pipedf)
 end_variable
 begin_variable
-var126
+var103
 0
 2
 Atom aux19(pipede)
 NegatedAtom aux19(pipede)
 end_variable
 begin_variable
-var127
+var104
 0
 2
 Atom aux19(pipecg)
 NegatedAtom aux19(pipecg)
 end_variable
 begin_variable
-var128
+var105
 0
 2
 Atom aux19(pipecd)
 NegatedAtom aux19(pipecd)
 end_variable
 begin_variable
-var129
+var106
 0
 2
 Atom aux19(pipecc)
 NegatedAtom aux19(pipecc)
 end_variable
 begin_variable
-var130
+var107
 0
 2
 Atom aux19(pipebg)
 NegatedAtom aux19(pipebg)
 end_variable
 begin_variable
-var131
+var108
 0
 2
 Atom aux19(mineef)
 NegatedAtom aux19(mineef)
 end_variable
 begin_variable
-var132
+var109
 0
 2
 Atom aux19(gg)
 NegatedAtom aux19(gg)
 end_variable
 begin_variable
-var133
+var110
 0
 2
 Atom aux19(gf)
 NegatedAtom aux19(gf)
 end_variable
 begin_variable
-var134
+var111
 0
 2
 Atom aux19(ge)
 NegatedAtom aux19(ge)
 end_variable
 begin_variable
-var135
+var112
 0
 2
 Atom aux19(gd)
 NegatedAtom aux19(gd)
 end_variable
 begin_variable
-var136
+var113
 0
 2
 Atom aux19(ga)
 NegatedAtom aux19(ga)
 end_variable
 begin_variable
-var137
+var114
 0
 2
 Atom aux19(fg)
 NegatedAtom aux19(fg)
 end_variable
 begin_variable
-var138
+var115
 0
 2
 Atom aux19(ff)
 NegatedAtom aux19(ff)
 end_variable
 begin_variable
-var139
+var116
 0
 2
 Atom aux19(fe)
 NegatedAtom aux19(fe)
 end_variable
 begin_variable
-var140
+var117
 0
 2
 Atom aux19(fb)
 NegatedAtom aux19(fb)
 end_variable
 begin_variable
-var141
+var118
 0
 2
 Atom aux19(fa)
 NegatedAtom aux19(fa)
 end_variable
 begin_variable
-var142
+var119
 0
 2
 Atom aux19(eg)
 NegatedAtom aux19(eg)
 end_variable
 begin_variable
-var143
+var120
 0
 2
 Atom aux19(ef)
 NegatedAtom aux19(ef)
 end_variable
 begin_variable
-var144
+var121
 0
 2
 Atom aux19(ee)
 NegatedAtom aux19(ee)
 end_variable
 begin_variable
-var145
+var122
 0
 2
 Atom aux19(ed)
 NegatedAtom aux19(ed)
 end_variable
 begin_variable
-var146
+var123
 0
 2
 Atom aux19(ec)
 NegatedAtom aux19(ec)
 end_variable
 begin_variable
-var147
+var124
 0
 2
 Atom aux19(eb)
 NegatedAtom aux19(eb)
 end_variable
 begin_variable
-var148
+var125
 0
 2
 Atom aux19(ea)
 NegatedAtom aux19(ea)
 end_variable
 begin_variable
-var149
+var126
 0
 2
 Atom aux19(dg)
 NegatedAtom aux19(dg)
 end_variable
 begin_variable
-var150
+var127
 0
 2
 Atom aux19(df)
 NegatedAtom aux19(df)
 end_variable
 begin_variable
-var151
+var128
 0
 2
 Atom aux19(dd)
 NegatedAtom aux19(dd)
 end_variable
 begin_variable
-var152
+var129
 0
 2
 Atom aux19(dc)
 NegatedAtom aux19(dc)
 end_variable
 begin_variable
-var153
+var130
 0
 2
 Atom aux19(db)
 NegatedAtom aux19(db)
 end_variable
 begin_variable
-var154
+var131
 0
 2
 Atom aux19(da)
 NegatedAtom aux19(da)
 end_variable
 begin_variable
-var155
+var132
 0
 2
 Atom aux19(cf)
 NegatedAtom aux19(cf)
 end_variable
 begin_variable
-var156
+var133
 0
 2
 Atom aux19(ce)
 NegatedAtom aux19(ce)
 end_variable
 begin_variable
-var157
+var134
 0
 2
 Atom aux19(cb)
 NegatedAtom aux19(cb)
 end_variable
 begin_variable
-var158
+var135
 0
 2
 Atom aux19(ca)
 NegatedAtom aux19(ca)
 end_variable
 begin_variable
-var159
+var136
 0
 2
 Atom aux19(bg)
 NegatedAtom aux19(bg)
 end_variable
 begin_variable
-var160
+var137
 0
 2
 Atom aux19(bf)
 NegatedAtom aux19(bf)
 end_variable
 begin_variable
-var161
+var138
 0
 2
 Atom aux19(be)
 NegatedAtom aux19(be)
 end_variable
 begin_variable
-var162
+var139
 0
 2
 Atom aux19(bd)
 NegatedAtom aux19(bd)
 end_variable
 begin_variable
-var163
+var140
 0
 2
 Atom aux19(bc)
 NegatedAtom aux19(bc)
 end_variable
 begin_variable
-var164
+var141
 0
 2
 Atom aux19(bb)
 NegatedAtom aux19(bb)
 end_variable
 begin_variable
-var165
+var142
 0
 2
 Atom aux19(ba)
 NegatedAtom aux19(ba)
 end_variable
 begin_variable
-var166
+var143
 0
 2
 Atom aux19(auv)
 NegatedAtom aux19(auv)
 end_variable
 begin_variable
-var167
+var144
 0
 2
 Atom aux19(ag)
 NegatedAtom aux19(ag)
 end_variable
 begin_variable
-var168
+var145
 0
 2
 Atom aux19(af)
 NegatedAtom aux19(af)
 end_variable
 begin_variable
-var169
+var146
 0
 2
 Atom aux19(ae)
 NegatedAtom aux19(ae)
 end_variable
 begin_variable
-var170
+var147
 0
 2
 Atom aux19(ad)
 NegatedAtom aux19(ad)
 end_variable
 begin_variable
-var171
+var148
 0
 2
 Atom aux19(ac)
 NegatedAtom aux19(ac)
 end_variable
 begin_variable
-var172
+var149
 0
 2
 Atom aux19(ab)
 NegatedAtom aux19(ab)
 end_variable
 begin_variable
-var173
+var150
 0
 2
 Atom aux19(aa)
 NegatedAtom aux19(aa)
 end_variable
 begin_variable
-var174
+var151
 0
 2
 Atom aux18(gg, gf)
 NegatedAtom aux18(gg, gf)
 end_variable
 begin_variable
-var175
+var152
 0
 2
 Atom aux18(gg, fg)
 NegatedAtom aux18(gg, fg)
 end_variable
 begin_variable
-var176
+var153
 0
 2
 Atom aux18(gg, ff)
 NegatedAtom aux18(gg, ff)
 end_variable
 begin_variable
-var177
+var154
 0
 2
 Atom aux18(gf, gg)
 NegatedAtom aux18(gf, gg)
 end_variable
 begin_variable
-var178
+var155
 0
 2
 Atom aux18(gf, ge)
 NegatedAtom aux18(gf, ge)
 end_variable
 begin_variable
-var179
+var156
 0
 2
 Atom aux18(gf, fg)
 NegatedAtom aux18(gf, fg)
 end_variable
 begin_variable
-var180
+var157
 0
 2
 Atom aux18(gf, ff)
 NegatedAtom aux18(gf, ff)
 end_variable
 begin_variable
-var181
+var158
 0
 2
 Atom aux18(gf, fe)
 NegatedAtom aux18(gf, fe)
 end_variable
 begin_variable
-var182
+var159
 0
 2
 Atom aux18(ge, gf)
 NegatedAtom aux18(ge, gf)
 end_variable
 begin_variable
-var183
+var160
 0
 2
 Atom aux18(ge, gd)
 NegatedAtom aux18(ge, gd)
 end_variable
 begin_variable
-var184
+var161
 0
 2
 Atom aux18(ge, ff)
 NegatedAtom aux18(ge, ff)
 end_variable
 begin_variable
-var185
+var162
 0
 2
 Atom aux18(ge, fe)
 NegatedAtom aux18(ge, fe)
 end_variable
 begin_variable
-var186
+var163
 0
 2
 Atom aux18(ge, fd)
 NegatedAtom aux18(ge, fd)
 end_variable
 begin_variable
-var187
+var164
 0
 2
 Atom aux18(gd, ge)
 NegatedAtom aux18(gd, ge)
 end_variable
 begin_variable
-var188
+var165
 0
 2
 Atom aux18(gd, gc)
 NegatedAtom aux18(gd, gc)
 end_variable
 begin_variable
-var189
+var166
 0
 2
 Atom aux18(gd, fe)
 NegatedAtom aux18(gd, fe)
 end_variable
 begin_variable
-var190
+var167
 0
 2
 Atom aux18(gd, fd)
 NegatedAtom aux18(gd, fd)
 end_variable
 begin_variable
-var191
+var168
 0
 2
 Atom aux18(gd, fc)
 NegatedAtom aux18(gd, fc)
 end_variable
 begin_variable
-var192
+var169
 0
 2
 Atom aux18(gc, gd)
 NegatedAtom aux18(gc, gd)
 end_variable
 begin_variable
-var193
+var170
 0
 2
 Atom aux18(gc, gb)
 NegatedAtom aux18(gc, gb)
 end_variable
 begin_variable
-var194
+var171
 0
 2
 Atom aux18(gc, fd)
 NegatedAtom aux18(gc, fd)
 end_variable
 begin_variable
-var195
+var172
 0
 2
 Atom aux18(gc, fc)
 NegatedAtom aux18(gc, fc)
 end_variable
 begin_variable
-var196
+var173
 0
 2
 Atom aux18(gc, fb)
 NegatedAtom aux18(gc, fb)
 end_variable
 begin_variable
-var197
+var174
 0
 2
 Atom aux18(gb, gc)
 NegatedAtom aux18(gb, gc)
 end_variable
 begin_variable
-var198
+var175
 0
 2
 Atom aux18(gb, ga)
 NegatedAtom aux18(gb, ga)
 end_variable
 begin_variable
-var199
+var176
 0
 2
 Atom aux18(gb, fc)
 NegatedAtom aux18(gb, fc)
 end_variable
 begin_variable
-var200
+var177
 0
 2
 Atom aux18(gb, fb)
 NegatedAtom aux18(gb, fb)
 end_variable
 begin_variable
-var201
+var178
 0
 2
 Atom aux18(gb, fa)
 NegatedAtom aux18(gb, fa)
 end_variable
 begin_variable
-var202
+var179
 0
 2
 Atom aux18(ga, gb)
 NegatedAtom aux18(ga, gb)
 end_variable
 begin_variable
-var203
+var180
 0
 2
 Atom aux18(ga, fb)
 NegatedAtom aux18(ga, fb)
 end_variable
 begin_variable
-var204
+var181
 0
 2
 Atom aux18(ga, fa)
 NegatedAtom aux18(ga, fa)
 end_variable
 begin_variable
-var205
+var182
 0
 2
 Atom aux18(fg, gg)
 NegatedAtom aux18(fg, gg)
 end_variable
 begin_variable
-var206
+var183
 0
 2
 Atom aux18(fg, gf)
 NegatedAtom aux18(fg, gf)
 end_variable
 begin_variable
-var207
+var184
 0
 2
 Atom aux18(fg, ff)
 NegatedAtom aux18(fg, ff)
 end_variable
 begin_variable
-var208
+var185
 0
 2
 Atom aux18(fg, eg)
 NegatedAtom aux18(fg, eg)
 end_variable
 begin_variable
-var209
+var186
 0
 2
 Atom aux18(fg, ef)
 NegatedAtom aux18(fg, ef)
 end_variable
 begin_variable
-var210
+var187
 0
 2
 Atom aux18(ff, gg)
 NegatedAtom aux18(ff, gg)
 end_variable
 begin_variable
-var211
+var188
 0
 2
 Atom aux18(ff, gf)
 NegatedAtom aux18(ff, gf)
 end_variable
 begin_variable
-var212
+var189
 0
 2
 Atom aux18(ff, ge)
 NegatedAtom aux18(ff, ge)
 end_variable
 begin_variable
-var213
+var190
 0
 2
 Atom aux18(ff, fg)
 NegatedAtom aux18(ff, fg)
 end_variable
 begin_variable
-var214
+var191
 0
 2
 Atom aux18(ff, fe)
 NegatedAtom aux18(ff, fe)
 end_variable
 begin_variable
-var215
+var192
 0
 2
 Atom aux18(ff, eg)
 NegatedAtom aux18(ff, eg)
 end_variable
 begin_variable
-var216
+var193
 0
 2
 Atom aux18(ff, ef)
 NegatedAtom aux18(ff, ef)
 end_variable
 begin_variable
-var217
+var194
 0
 2
 Atom aux18(ff, ee)
 NegatedAtom aux18(ff, ee)
 end_variable
 begin_variable
-var218
+var195
 0
 2
 Atom aux18(fe, gf)
 NegatedAtom aux18(fe, gf)
 end_variable
 begin_variable
-var219
+var196
 0
 2
 Atom aux18(fe, ge)
 NegatedAtom aux18(fe, ge)
 end_variable
 begin_variable
-var220
+var197
 0
 2
 Atom aux18(fe, gd)
 NegatedAtom aux18(fe, gd)
 end_variable
 begin_variable
-var221
+var198
 0
 2
 Atom aux18(fe, ff)
 NegatedAtom aux18(fe, ff)
 end_variable
 begin_variable
-var222
+var199
 0
 2
 Atom aux18(fe, fd)
 NegatedAtom aux18(fe, fd)
 end_variable
 begin_variable
-var223
+var200
 0
 2
 Atom aux18(fe, ef)
 NegatedAtom aux18(fe, ef)
 end_variable
 begin_variable
-var224
+var201
 0
 2
 Atom aux18(fe, ee)
 NegatedAtom aux18(fe, ee)
 end_variable
 begin_variable
-var225
+var202
 0
 2
 Atom aux18(fe, ed)
 NegatedAtom aux18(fe, ed)
 end_variable
 begin_variable
-var226
+var203
 0
 2
 Atom aux18(fd, ge)
 NegatedAtom aux18(fd, ge)
 end_variable
 begin_variable
-var227
+var204
 0
 2
 Atom aux18(fd, gd)
 NegatedAtom aux18(fd, gd)
 end_variable
 begin_variable
-var228
+var205
 0
 2
 Atom aux18(fd, gc)
 NegatedAtom aux18(fd, gc)
 end_variable
 begin_variable
-var229
+var206
 0
 2
 Atom aux18(fd, fe)
 NegatedAtom aux18(fd, fe)
 end_variable
 begin_variable
-var230
+var207
 0
 2
 Atom aux18(fd, fc)
 NegatedAtom aux18(fd, fc)
 end_variable
 begin_variable
-var231
+var208
 0
 2
 Atom aux18(fd, ee)
 NegatedAtom aux18(fd, ee)
 end_variable
 begin_variable
-var232
+var209
 0
 2
 Atom aux18(fd, ed)
 NegatedAtom aux18(fd, ed)
 end_variable
 begin_variable
-var233
+var210
 0
 2
 Atom aux18(fd, ec)
 NegatedAtom aux18(fd, ec)
 end_variable
 begin_variable
-var234
+var211
 0
 2
 Atom aux18(fc, gd)
 NegatedAtom aux18(fc, gd)
 end_variable
 begin_variable
-var235
+var212
 0
 2
 Atom aux18(fc, gc)
 NegatedAtom aux18(fc, gc)
 end_variable
 begin_variable
-var236
+var213
 0
 2
 Atom aux18(fc, gb)
 NegatedAtom aux18(fc, gb)
 end_variable
 begin_variable
-var237
+var214
 0
 2
 Atom aux18(fc, fd)
 NegatedAtom aux18(fc, fd)
 end_variable
 begin_variable
-var238
+var215
 0
 2
 Atom aux18(fc, fb)
 NegatedAtom aux18(fc, fb)
 end_variable
 begin_variable
-var239
+var216
 0
 2
 Atom aux18(fc, ed)
 NegatedAtom aux18(fc, ed)
 end_variable
 begin_variable
-var240
+var217
 0
 2
 Atom aux18(fc, ec)
 NegatedAtom aux18(fc, ec)
 end_variable
 begin_variable
-var241
+var218
 0
 2
 Atom aux18(fc, eb)
 NegatedAtom aux18(fc, eb)
 end_variable
 begin_variable
-var242
+var219
 0
 2
 Atom aux18(fb, gc)
 NegatedAtom aux18(fb, gc)
 end_variable
 begin_variable
-var243
+var220
 0
 2
 Atom aux18(fb, gb)
 NegatedAtom aux18(fb, gb)
 end_variable
 begin_variable
-var244
+var221
 0
 2
 Atom aux18(fb, ga)
 NegatedAtom aux18(fb, ga)
 end_variable
 begin_variable
-var245
+var222
 0
 2
 Atom aux18(fb, fc)
 NegatedAtom aux18(fb, fc)
 end_variable
 begin_variable
-var246
+var223
 0
 2
 Atom aux18(fb, fa)
 NegatedAtom aux18(fb, fa)
 end_variable
 begin_variable
-var247
+var224
 0
 2
 Atom aux18(fb, ec)
 NegatedAtom aux18(fb, ec)
 end_variable
 begin_variable
-var248
+var225
 0
 2
 Atom aux18(fb, eb)
 NegatedAtom aux18(fb, eb)
 end_variable
 begin_variable
-var249
+var226
 0
 2
 Atom aux18(fb, ea)
 NegatedAtom aux18(fb, ea)
 end_variable
 begin_variable
-var250
+var227
 0
 2
 Atom aux18(fa, gb)
 NegatedAtom aux18(fa, gb)
 end_variable
 begin_variable
-var251
+var228
 0
 2
 Atom aux18(fa, ga)
 NegatedAtom aux18(fa, ga)
 end_variable
 begin_variable
-var252
+var229
 0
 2
 Atom aux18(fa, fb)
 NegatedAtom aux18(fa, fb)
 end_variable
 begin_variable
-var253
+var230
 0
 2
 Atom aux18(fa, eb)
 NegatedAtom aux18(fa, eb)
 end_variable
 begin_variable
-var254
+var231
 0
 2
 Atom aux18(fa, ea)
 NegatedAtom aux18(fa, ea)
 end_variable
 begin_variable
-var255
+var232
 0
 2
 Atom aux18(eg, fg)
 NegatedAtom aux18(eg, fg)
 end_variable
 begin_variable
-var256
+var233
 0
 2
 Atom aux18(eg, ff)
 NegatedAtom aux18(eg, ff)
 end_variable
 begin_variable
-var257
+var234
 0
 2
 Atom aux18(eg, ef)
 NegatedAtom aux18(eg, ef)
 end_variable
 begin_variable
-var258
+var235
 0
 2
 Atom aux18(eg, dg)
 NegatedAtom aux18(eg, dg)
 end_variable
 begin_variable
-var259
+var236
 0
 2
 Atom aux18(eg, df)
 NegatedAtom aux18(eg, df)
 end_variable
 begin_variable
-var260
+var237
 0
 2
 Atom aux18(ef, fg)
 NegatedAtom aux18(ef, fg)
 end_variable
 begin_variable
-var261
+var238
 0
 2
 Atom aux18(ef, ff)
 NegatedAtom aux18(ef, ff)
 end_variable
 begin_variable
-var262
+var239
 0
 2
 Atom aux18(ef, fe)
 NegatedAtom aux18(ef, fe)
 end_variable
 begin_variable
-var263
+var240
 0
 2
 Atom aux18(ef, eg)
 NegatedAtom aux18(ef, eg)
 end_variable
 begin_variable
-var264
+var241
 0
 2
 Atom aux18(ef, ee)
 NegatedAtom aux18(ef, ee)
 end_variable
 begin_variable
-var265
+var242
 0
 2
 Atom aux18(ef, dg)
 NegatedAtom aux18(ef, dg)
 end_variable
 begin_variable
-var266
+var243
 0
 2
 Atom aux18(ef, df)
 NegatedAtom aux18(ef, df)
 end_variable
 begin_variable
-var267
+var244
 0
 2
 Atom aux18(ef, de)
 NegatedAtom aux18(ef, de)
 end_variable
 begin_variable
-var268
+var245
 0
 2
 Atom aux18(ee, ff)
 NegatedAtom aux18(ee, ff)
 end_variable
 begin_variable
-var269
+var246
 0
 2
 Atom aux18(ee, fe)
 NegatedAtom aux18(ee, fe)
 end_variable
 begin_variable
-var270
+var247
 0
 2
 Atom aux18(ee, fd)
 NegatedAtom aux18(ee, fd)
 end_variable
 begin_variable
-var271
+var248
 0
 2
 Atom aux18(ee, ef)
 NegatedAtom aux18(ee, ef)
 end_variable
 begin_variable
-var272
+var249
 0
 2
 Atom aux18(ee, ed)
 NegatedAtom aux18(ee, ed)
 end_variable
 begin_variable
-var273
+var250
 0
 2
 Atom aux18(ee, df)
 NegatedAtom aux18(ee, df)
 end_variable
 begin_variable
-var274
+var251
 0
 2
 Atom aux18(ee, de)
 NegatedAtom aux18(ee, de)
 end_variable
 begin_variable
-var275
+var252
 0
 2
 Atom aux18(ee, dd)
 NegatedAtom aux18(ee, dd)
 end_variable
 begin_variable
-var276
+var253
 0
 2
 Atom aux18(ed, fe)
 NegatedAtom aux18(ed, fe)
 end_variable
 begin_variable
-var277
+var254
 0
 2
 Atom aux18(ed, fd)
 NegatedAtom aux18(ed, fd)
 end_variable
 begin_variable
-var278
+var255
 0
 2
 Atom aux18(ed, fc)
 NegatedAtom aux18(ed, fc)
 end_variable
 begin_variable
-var279
+var256
 0
 2
 Atom aux18(ed, ee)
 NegatedAtom aux18(ed, ee)
 end_variable
 begin_variable
-var280
+var257
 0
 2
 Atom aux18(ed, ec)
 NegatedAtom aux18(ed, ec)
 end_variable
 begin_variable
-var281
+var258
 0
 2
 Atom aux18(ed, de)
 NegatedAtom aux18(ed, de)
 end_variable
 begin_variable
-var282
+var259
 0
 2
 Atom aux18(ed, dd)
 NegatedAtom aux18(ed, dd)
 end_variable
 begin_variable
-var283
+var260
 0
 2
 Atom aux18(ed, dc)
 NegatedAtom aux18(ed, dc)
 end_variable
 begin_variable
-var284
+var261
 0
 2
 Atom aux18(ec, fd)
 NegatedAtom aux18(ec, fd)
 end_variable
 begin_variable
-var285
+var262
 0
 2
 Atom aux18(ec, fc)
 NegatedAtom aux18(ec, fc)
 end_variable
 begin_variable
-var286
+var263
 0
 2
 Atom aux18(ec, fb)
 NegatedAtom aux18(ec, fb)
 end_variable
 begin_variable
-var287
+var264
 0
 2
 Atom aux18(ec, ed)
 NegatedAtom aux18(ec, ed)
 end_variable
 begin_variable
-var288
+var265
 0
 2
 Atom aux18(ec, eb)
 NegatedAtom aux18(ec, eb)
 end_variable
 begin_variable
-var289
+var266
 0
 2
 Atom aux18(ec, dd)
 NegatedAtom aux18(ec, dd)
 end_variable
 begin_variable
-var290
+var267
 0
 2
 Atom aux18(ec, dc)
 NegatedAtom aux18(ec, dc)
 end_variable
 begin_variable
-var291
+var268
 0
 2
 Atom aux18(ec, db)
 NegatedAtom aux18(ec, db)
 end_variable
 begin_variable
-var292
+var269
 0
 2
 Atom aux18(eb, fc)
 NegatedAtom aux18(eb, fc)
 end_variable
 begin_variable
-var293
+var270
 0
 2
 Atom aux18(eb, fb)
 NegatedAtom aux18(eb, fb)
 end_variable
 begin_variable
-var294
+var271
 0
 2
 Atom aux18(eb, fa)
 NegatedAtom aux18(eb, fa)
 end_variable
 begin_variable
-var295
+var272
 0
 2
 Atom aux18(eb, ec)
 NegatedAtom aux18(eb, ec)
 end_variable
 begin_variable
-var296
+var273
 0
 2
 Atom aux18(eb, ea)
 NegatedAtom aux18(eb, ea)
 end_variable
 begin_variable
-var297
+var274
 0
 2
 Atom aux18(eb, dc)
 NegatedAtom aux18(eb, dc)
 end_variable
 begin_variable
-var298
+var275
 0
 2
 Atom aux18(eb, db)
 NegatedAtom aux18(eb, db)
 end_variable
 begin_variable
-var299
+var276
 0
 2
 Atom aux18(eb, da)
 NegatedAtom aux18(eb, da)
 end_variable
 begin_variable
-var300
+var277
 0
 2
 Atom aux18(ea, fb)
 NegatedAtom aux18(ea, fb)
 end_variable
 begin_variable
-var301
+var278
 0
 2
 Atom aux18(ea, fa)
 NegatedAtom aux18(ea, fa)
 end_variable
 begin_variable
-var302
+var279
 0
 2
 Atom aux18(ea, eb)
 NegatedAtom aux18(ea, eb)
 end_variable
 begin_variable
-var303
+var280
 0
 2
 Atom aux18(ea, db)
 NegatedAtom aux18(ea, db)
 end_variable
 begin_variable
-var304
+var281
 0
 2
 Atom aux18(ea, da)
 NegatedAtom aux18(ea, da)
 end_variable
 begin_variable
-var305
+var282
 0
 2
 Atom aux18(dg, eg)
 NegatedAtom aux18(dg, eg)
 end_variable
 begin_variable
-var306
+var283
 0
 2
 Atom aux18(dg, ef)
 NegatedAtom aux18(dg, ef)
 end_variable
 begin_variable
-var307
+var284
 0
 2
 Atom aux18(dg, df)
 NegatedAtom aux18(dg, df)
 end_variable
 begin_variable
-var308
+var285
 0
 2
 Atom aux18(dg, cg)
 NegatedAtom aux18(dg, cg)
 end_variable
 begin_variable
-var309
+var286
 0
 2
 Atom aux18(dg, cf)
 NegatedAtom aux18(dg, cf)
 end_variable
 begin_variable
-var310
+var287
 0
 2
 Atom aux18(df, eg)
 NegatedAtom aux18(df, eg)
 end_variable
 begin_variable
-var311
+var288
 0
 2
 Atom aux18(df, ef)
 NegatedAtom aux18(df, ef)
 end_variable
 begin_variable
-var312
+var289
 0
 2
 Atom aux18(df, ee)
 NegatedAtom aux18(df, ee)
 end_variable
 begin_variable
-var313
+var290
 0
 2
 Atom aux18(df, dg)
 NegatedAtom aux18(df, dg)
 end_variable
 begin_variable
-var314
+var291
 0
 2
 Atom aux18(df, de)
 NegatedAtom aux18(df, de)
 end_variable
 begin_variable
-var315
+var292
 0
 2
 Atom aux18(df, cg)
 NegatedAtom aux18(df, cg)
 end_variable
 begin_variable
-var316
+var293
 0
 2
 Atom aux18(df, cf)
 NegatedAtom aux18(df, cf)
 end_variable
 begin_variable
-var317
+var294
 0
 2
 Atom aux18(df, ce)
 NegatedAtom aux18(df, ce)
 end_variable
 begin_variable
-var318
+var295
 0
 2
 Atom aux18(de, ef)
 NegatedAtom aux18(de, ef)
 end_variable
 begin_variable
-var319
+var296
 0
 2
 Atom aux18(de, ee)
 NegatedAtom aux18(de, ee)
 end_variable
 begin_variable
-var320
+var297
 0
 2
 Atom aux18(de, ed)
 NegatedAtom aux18(de, ed)
 end_variable
 begin_variable
-var321
+var298
 0
 2
 Atom aux18(de, df)
 NegatedAtom aux18(de, df)
 end_variable
 begin_variable
-var322
+var299
 0
 2
 Atom aux18(de, dd)
 NegatedAtom aux18(de, dd)
 end_variable
 begin_variable
-var323
+var300
 0
 2
 Atom aux18(de, cf)
 NegatedAtom aux18(de, cf)
 end_variable
 begin_variable
-var324
+var301
 0
 2
 Atom aux18(de, ce)
 NegatedAtom aux18(de, ce)
 end_variable
 begin_variable
-var325
+var302
 0
 2
 Atom aux18(de, cd)
 NegatedAtom aux18(de, cd)
 end_variable
 begin_variable
-var326
+var303
 0
 2
 Atom aux18(dd, ee)
 NegatedAtom aux18(dd, ee)
 end_variable
 begin_variable
-var327
+var304
 0
 2
 Atom aux18(dd, ed)
 NegatedAtom aux18(dd, ed)
 end_variable
 begin_variable
-var328
+var305
 0
 2
 Atom aux18(dd, ec)
 NegatedAtom aux18(dd, ec)
 end_variable
 begin_variable
-var329
+var306
 0
 2
 Atom aux18(dd, de)
 NegatedAtom aux18(dd, de)
 end_variable
 begin_variable
-var330
+var307
 0
 2
 Atom aux18(dd, dc)
 NegatedAtom aux18(dd, dc)
 end_variable
 begin_variable
-var331
+var308
 0
 2
 Atom aux18(dd, ce)
 NegatedAtom aux18(dd, ce)
 end_variable
 begin_variable
-var332
+var309
 0
 2
 Atom aux18(dd, cd)
 NegatedAtom aux18(dd, cd)
 end_variable
 begin_variable
-var333
+var310
 0
 2
 Atom aux18(dd, cc)
 NegatedAtom aux18(dd, cc)
 end_variable
 begin_variable
-var334
+var311
 0
 2
 Atom aux18(dc, ed)
 NegatedAtom aux18(dc, ed)
 end_variable
 begin_variable
-var335
+var312
 0
 2
 Atom aux18(dc, ec)
 NegatedAtom aux18(dc, ec)
 end_variable
 begin_variable
-var336
+var313
 0
 2
 Atom aux18(dc, eb)
 NegatedAtom aux18(dc, eb)
 end_variable
 begin_variable
-var337
+var314
 0
 2
 Atom aux18(dc, dd)
 NegatedAtom aux18(dc, dd)
 end_variable
 begin_variable
-var338
+var315
 0
 2
 Atom aux18(dc, db)
 NegatedAtom aux18(dc, db)
 end_variable
 begin_variable
-var339
+var316
 0
 2
 Atom aux18(dc, cd)
 NegatedAtom aux18(dc, cd)
 end_variable
 begin_variable
-var340
+var317
 0
 2
 Atom aux18(dc, cc)
 NegatedAtom aux18(dc, cc)
 end_variable
 begin_variable
-var341
+var318
 0
 2
 Atom aux18(dc, cb)
 NegatedAtom aux18(dc, cb)
 end_variable
 begin_variable
-var342
+var319
 0
 2
 Atom aux18(db, ec)
 NegatedAtom aux18(db, ec)
 end_variable
 begin_variable
-var343
+var320
 0
 2
 Atom aux18(db, eb)
 NegatedAtom aux18(db, eb)
 end_variable
 begin_variable
-var344
+var321
 0
 2
 Atom aux18(db, ea)
 NegatedAtom aux18(db, ea)
 end_variable
 begin_variable
-var345
+var322
 0
 2
 Atom aux18(db, dc)
 NegatedAtom aux18(db, dc)
 end_variable
 begin_variable
-var346
+var323
 0
 2
 Atom aux18(db, da)
 NegatedAtom aux18(db, da)
 end_variable
 begin_variable
-var347
+var324
 0
 2
 Atom aux18(db, cc)
 NegatedAtom aux18(db, cc)
 end_variable
 begin_variable
-var348
+var325
 0
 2
 Atom aux18(db, cb)
 NegatedAtom aux18(db, cb)
 end_variable
 begin_variable
-var349
+var326
 0
 2
 Atom aux18(db, ca)
 NegatedAtom aux18(db, ca)
 end_variable
 begin_variable
-var350
+var327
 0
 2
 Atom aux18(da, eb)
 NegatedAtom aux18(da, eb)
 end_variable
 begin_variable
-var351
+var328
 0
 2
 Atom aux18(da, ea)
 NegatedAtom aux18(da, ea)
 end_variable
 begin_variable
-var352
+var329
 0
 2
 Atom aux18(da, db)
 NegatedAtom aux18(da, db)
 end_variable
 begin_variable
-var353
+var330
 0
 2
 Atom aux18(da, cb)
 NegatedAtom aux18(da, cb)
 end_variable
 begin_variable
-var354
+var331
 0
 2
 Atom aux18(da, ca)
 NegatedAtom aux18(da, ca)
 end_variable
 begin_variable
-var355
+var332
 0
 2
 Atom aux18(cg, dg)
 NegatedAtom aux18(cg, dg)
 end_variable
 begin_variable
-var356
+var333
 0
 2
 Atom aux18(cg, df)
 NegatedAtom aux18(cg, df)
 end_variable
 begin_variable
-var357
+var334
 0
 2
 Atom aux18(cg, cf)
 NegatedAtom aux18(cg, cf)
 end_variable
 begin_variable
-var358
+var335
 0
 2
 Atom aux18(cg, bg)
 NegatedAtom aux18(cg, bg)
 end_variable
 begin_variable
-var359
+var336
 0
 2
 Atom aux18(cg, bf)
 NegatedAtom aux18(cg, bf)
 end_variable
 begin_variable
-var360
+var337
 0
 2
 Atom aux18(cf, dg)
 NegatedAtom aux18(cf, dg)
 end_variable
 begin_variable
-var361
+var338
 0
 2
 Atom aux18(cf, df)
 NegatedAtom aux18(cf, df)
 end_variable
 begin_variable
-var362
+var339
 0
 2
 Atom aux18(cf, de)
 NegatedAtom aux18(cf, de)
 end_variable
 begin_variable
-var363
+var340
 0
 2
 Atom aux18(cf, cg)
 NegatedAtom aux18(cf, cg)
 end_variable
 begin_variable
-var364
+var341
 0
 2
 Atom aux18(cf, ce)
 NegatedAtom aux18(cf, ce)
 end_variable
 begin_variable
-var365
+var342
 0
 2
 Atom aux18(cf, bg)
 NegatedAtom aux18(cf, bg)
 end_variable
 begin_variable
-var366
+var343
 0
 2
 Atom aux18(cf, bf)
 NegatedAtom aux18(cf, bf)
 end_variable
 begin_variable
-var367
+var344
 0
 2
 Atom aux18(cf, be)
 NegatedAtom aux18(cf, be)
 end_variable
 begin_variable
-var368
+var345
 0
 2
 Atom aux18(ce, df)
 NegatedAtom aux18(ce, df)
 end_variable
 begin_variable
-var369
+var346
 0
 2
 Atom aux18(ce, de)
 NegatedAtom aux18(ce, de)
 end_variable
 begin_variable
-var370
+var347
 0
 2
 Atom aux18(ce, dd)
 NegatedAtom aux18(ce, dd)
 end_variable
 begin_variable
-var371
+var348
 0
 2
 Atom aux18(ce, cf)
 NegatedAtom aux18(ce, cf)
 end_variable
 begin_variable
-var372
+var349
 0
 2
 Atom aux18(ce, cd)
 NegatedAtom aux18(ce, cd)
 end_variable
 begin_variable
-var373
+var350
 0
 2
 Atom aux18(ce, bf)
 NegatedAtom aux18(ce, bf)
 end_variable
 begin_variable
-var374
+var351
 0
 2
 Atom aux18(ce, be)
 NegatedAtom aux18(ce, be)
 end_variable
 begin_variable
-var375
+var352
 0
 2
 Atom aux18(ce, bd)
 NegatedAtom aux18(ce, bd)
 end_variable
 begin_variable
-var376
+var353
 0
 2
 Atom aux18(cd, de)
 NegatedAtom aux18(cd, de)
 end_variable
 begin_variable
-var377
+var354
 0
 2
 Atom aux18(cd, dd)
 NegatedAtom aux18(cd, dd)
 end_variable
 begin_variable
-var378
+var355
 0
 2
 Atom aux18(cd, dc)
 NegatedAtom aux18(cd, dc)
 end_variable
 begin_variable
-var379
+var356
 0
 2
 Atom aux18(cd, ce)
 NegatedAtom aux18(cd, ce)
 end_variable
 begin_variable
-var380
+var357
 0
 2
 Atom aux18(cd, cc)
 NegatedAtom aux18(cd, cc)
 end_variable
 begin_variable
-var381
+var358
 0
 2
 Atom aux18(cd, be)
 NegatedAtom aux18(cd, be)
 end_variable
 begin_variable
-var382
+var359
 0
 2
 Atom aux18(cd, bd)
 NegatedAtom aux18(cd, bd)
 end_variable
 begin_variable
-var383
+var360
 0
 2
 Atom aux18(cd, bc)
 NegatedAtom aux18(cd, bc)
 end_variable
 begin_variable
-var384
+var361
 0
 2
 Atom aux18(cc, dd)
 NegatedAtom aux18(cc, dd)
 end_variable
 begin_variable
-var385
+var362
 0
 2
 Atom aux18(cc, dc)
 NegatedAtom aux18(cc, dc)
 end_variable
 begin_variable
-var386
+var363
 0
 2
 Atom aux18(cc, db)
 NegatedAtom aux18(cc, db)
 end_variable
 begin_variable
-var387
+var364
 0
 2
 Atom aux18(cc, cd)
 NegatedAtom aux18(cc, cd)
 end_variable
 begin_variable
-var388
+var365
 0
 2
 Atom aux18(cc, cb)
 NegatedAtom aux18(cc, cb)
 end_variable
 begin_variable
-var389
+var366
 0
 2
 Atom aux18(cc, bd)
 NegatedAtom aux18(cc, bd)
 end_variable
 begin_variable
-var390
+var367
 0
 2
 Atom aux18(cc, bc)
 NegatedAtom aux18(cc, bc)
 end_variable
 begin_variable
-var391
+var368
 0
 2
 Atom aux18(cc, bb)
 NegatedAtom aux18(cc, bb)
 end_variable
 begin_variable
-var392
+var369
 0
 2
 Atom aux18(cb, dc)
 NegatedAtom aux18(cb, dc)
 end_variable
 begin_variable
-var393
+var370
 0
 2
 Atom aux18(cb, db)
 NegatedAtom aux18(cb, db)
 end_variable
 begin_variable
-var394
+var371
 0
 2
 Atom aux18(cb, da)
 NegatedAtom aux18(cb, da)
 end_variable
 begin_variable
-var395
+var372
 0
 2
 Atom aux18(cb, cc)
 NegatedAtom aux18(cb, cc)
 end_variable
 begin_variable
-var396
+var373
 0
 2
 Atom aux18(cb, ca)
 NegatedAtom aux18(cb, ca)
 end_variable
 begin_variable
-var397
+var374
 0
 2
 Atom aux18(cb, bc)
 NegatedAtom aux18(cb, bc)
 end_variable
 begin_variable
-var398
+var375
 0
 2
 Atom aux18(cb, bb)
 NegatedAtom aux18(cb, bb)
 end_variable
 begin_variable
-var399
+var376
 0
 2
 Atom aux18(cb, ba)
 NegatedAtom aux18(cb, ba)
 end_variable
 begin_variable
-var400
+var377
 0
 2
 Atom aux18(ca, db)
 NegatedAtom aux18(ca, db)
 end_variable
 begin_variable
-var401
+var378
 0
 2
 Atom aux18(ca, da)
 NegatedAtom aux18(ca, da)
 end_variable
 begin_variable
-var402
+var379
 0
 2
 Atom aux18(ca, cb)
 NegatedAtom aux18(ca, cb)
 end_variable
 begin_variable
-var403
+var380
 0
 2
 Atom aux18(ca, bb)
 NegatedAtom aux18(ca, bb)
 end_variable
 begin_variable
-var404
+var381
 0
 2
 Atom aux18(ca, ba)
 NegatedAtom aux18(ca, ba)
 end_variable
 begin_variable
-var405
+var382
 0
 2
 Atom aux18(bg, cg)
 NegatedAtom aux18(bg, cg)
 end_variable
 begin_variable
-var406
+var383
 0
 2
 Atom aux18(bg, cf)
 NegatedAtom aux18(bg, cf)
 end_variable
 begin_variable
-var407
+var384
 0
 2
 Atom aux18(bg, bf)
 NegatedAtom aux18(bg, bf)
 end_variable
 begin_variable
-var408
+var385
 0
 2
 Atom aux18(bg, ag)
 NegatedAtom aux18(bg, ag)
 end_variable
 begin_variable
-var409
+var386
 0
 2
 Atom aux18(bg, af)
 NegatedAtom aux18(bg, af)
 end_variable
 begin_variable
-var410
+var387
 0
 2
 Atom aux18(bf, cg)
 NegatedAtom aux18(bf, cg)
 end_variable
 begin_variable
-var411
+var388
 0
 2
 Atom aux18(bf, cf)
 NegatedAtom aux18(bf, cf)
 end_variable
 begin_variable
-var412
+var389
 0
 2
 Atom aux18(bf, ce)
 NegatedAtom aux18(bf, ce)
 end_variable
 begin_variable
-var413
+var390
 0
 2
 Atom aux18(bf, bg)
 NegatedAtom aux18(bf, bg)
 end_variable
 begin_variable
-var414
+var391
 0
 2
 Atom aux18(bf, be)
 NegatedAtom aux18(bf, be)
 end_variable
 begin_variable
-var415
+var392
 0
 2
 Atom aux18(bf, ag)
 NegatedAtom aux18(bf, ag)
 end_variable
 begin_variable
-var416
+var393
 0
 2
 Atom aux18(bf, af)
 NegatedAtom aux18(bf, af)
 end_variable
 begin_variable
-var417
+var394
 0
 2
 Atom aux18(bf, ae)
 NegatedAtom aux18(bf, ae)
 end_variable
 begin_variable
-var418
+var395
 0
 2
 Atom aux18(be, cf)
 NegatedAtom aux18(be, cf)
 end_variable
 begin_variable
-var419
+var396
 0
 2
 Atom aux18(be, ce)
 NegatedAtom aux18(be, ce)
 end_variable
 begin_variable
-var420
+var397
 0
 2
 Atom aux18(be, cd)
 NegatedAtom aux18(be, cd)
 end_variable
 begin_variable
-var421
+var398
 0
 2
 Atom aux18(be, bf)
 NegatedAtom aux18(be, bf)
 end_variable
 begin_variable
-var422
+var399
 0
 2
 Atom aux18(be, bd)
 NegatedAtom aux18(be, bd)
 end_variable
 begin_variable
-var423
+var400
 0
 2
 Atom aux18(be, af)
 NegatedAtom aux18(be, af)
 end_variable
 begin_variable
-var424
+var401
 0
 2
 Atom aux18(be, ae)
 NegatedAtom aux18(be, ae)
 end_variable
 begin_variable
-var425
+var402
 0
 2
 Atom aux18(be, ad)
 NegatedAtom aux18(be, ad)
 end_variable
 begin_variable
-var426
+var403
 0
 2
 Atom aux18(bd, ce)
 NegatedAtom aux18(bd, ce)
 end_variable
 begin_variable
-var427
+var404
 0
 2
 Atom aux18(bd, cd)
 NegatedAtom aux18(bd, cd)
 end_variable
 begin_variable
-var428
+var405
 0
 2
 Atom aux18(bd, cc)
 NegatedAtom aux18(bd, cc)
 end_variable
 begin_variable
-var429
+var406
 0
 2
 Atom aux18(bd, be)
 NegatedAtom aux18(bd, be)
 end_variable
 begin_variable
-var430
+var407
 0
 2
 Atom aux18(bd, bc)
 NegatedAtom aux18(bd, bc)
 end_variable
 begin_variable
-var431
+var408
 0
 2
 Atom aux18(bd, ae)
 NegatedAtom aux18(bd, ae)
 end_variable
 begin_variable
-var432
+var409
 0
 2
 Atom aux18(bd, ad)
 NegatedAtom aux18(bd, ad)
 end_variable
 begin_variable
-var433
+var410
 0
 2
 Atom aux18(bd, ac)
 NegatedAtom aux18(bd, ac)
 end_variable
 begin_variable
-var434
+var411
 0
 2
 Atom aux18(bc, cd)
 NegatedAtom aux18(bc, cd)
 end_variable
 begin_variable
-var435
+var412
 0
 2
 Atom aux18(bc, cc)
 NegatedAtom aux18(bc, cc)
 end_variable
 begin_variable
-var436
+var413
 0
 2
 Atom aux18(bc, cb)
 NegatedAtom aux18(bc, cb)
 end_variable
 begin_variable
-var437
+var414
 0
 2
 Atom aux18(bc, bd)
 NegatedAtom aux18(bc, bd)
 end_variable
 begin_variable
-var438
+var415
 0
 2
 Atom aux18(bc, bb)
 NegatedAtom aux18(bc, bb)
 end_variable
 begin_variable
-var439
+var416
 0
 2
 Atom aux18(bc, ad)
 NegatedAtom aux18(bc, ad)
 end_variable
 begin_variable
-var440
+var417
 0
 2
 Atom aux18(bc, ac)
 NegatedAtom aux18(bc, ac)
 end_variable
 begin_variable
-var441
+var418
 0
 2
 Atom aux18(bc, ab)
 NegatedAtom aux18(bc, ab)
 end_variable
 begin_variable
-var442
+var419
 0
 2
 Atom aux18(bb, cc)
 NegatedAtom aux18(bb, cc)
 end_variable
 begin_variable
-var443
+var420
 0
 2
 Atom aux18(bb, cb)
 NegatedAtom aux18(bb, cb)
 end_variable
 begin_variable
-var444
+var421
 0
 2
 Atom aux18(bb, ca)
 NegatedAtom aux18(bb, ca)
 end_variable
 begin_variable
-var445
+var422
 0
 2
 Atom aux18(bb, bc)
 NegatedAtom aux18(bb, bc)
 end_variable
 begin_variable
-var446
+var423
 0
 2
 Atom aux18(bb, ba)
 NegatedAtom aux18(bb, ba)
 end_variable
 begin_variable
-var447
+var424
 0
 2
 Atom aux18(bb, ac)
 NegatedAtom aux18(bb, ac)
 end_variable
 begin_variable
-var448
+var425
 0
 2
 Atom aux18(bb, ab)
 NegatedAtom aux18(bb, ab)
 end_variable
 begin_variable
-var449
+var426
 0
 2
 Atom aux18(bb, aa)
 NegatedAtom aux18(bb, aa)
 end_variable
 begin_variable
-var450
+var427
 0
 2
 Atom aux18(ba, cb)
 NegatedAtom aux18(ba, cb)
 end_variable
 begin_variable
-var451
+var428
 0
 2
 Atom aux18(ba, ca)
 NegatedAtom aux18(ba, ca)
 end_variable
 begin_variable
-var452
+var429
 0
 2
 Atom aux18(ba, bb)
 NegatedAtom aux18(ba, bb)
 end_variable
 begin_variable
-var453
+var430
 0
 2
 Atom aux18(ba, ab)
 NegatedAtom aux18(ba, ab)
 end_variable
 begin_variable
-var454
+var431
 0
 2
 Atom aux18(ba, aa)
 NegatedAtom aux18(ba, aa)
 end_variable
 begin_variable
-var455
+var432
 0
 2
 Atom aux18(ag, bg)
 NegatedAtom aux18(ag, bg)
 end_variable
 begin_variable
-var456
+var433
 0
 2
 Atom aux18(ag, bf)
 NegatedAtom aux18(ag, bf)
 end_variable
 begin_variable
-var457
+var434
 0
 2
 Atom aux18(ag, af)
 NegatedAtom aux18(ag, af)
 end_variable
 begin_variable
-var458
+var435
 0
 2
 Atom aux18(af, bg)
 NegatedAtom aux18(af, bg)
 end_variable
 begin_variable
-var459
+var436
 0
 2
 Atom aux18(af, bf)
 NegatedAtom aux18(af, bf)
 end_variable
 begin_variable
-var460
+var437
 0
 2
 Atom aux18(af, be)
 NegatedAtom aux18(af, be)
 end_variable
 begin_variable
-var461
+var438
 0
 2
 Atom aux18(af, ag)
 NegatedAtom aux18(af, ag)
 end_variable
 begin_variable
-var462
+var439
 0
 2
 Atom aux18(af, ae)
 NegatedAtom aux18(af, ae)
 end_variable
 begin_variable
-var463
+var440
 0
 2
 Atom aux18(ae, bf)
 NegatedAtom aux18(ae, bf)
 end_variable
 begin_variable
-var464
+var441
 0
 2
 Atom aux18(ae, be)
 NegatedAtom aux18(ae, be)
 end_variable
 begin_variable
-var465
+var442
 0
 2
 Atom aux18(ae, bd)
 NegatedAtom aux18(ae, bd)
 end_variable
 begin_variable
-var466
+var443
 0
 2
 Atom aux18(ae, af)
 NegatedAtom aux18(ae, af)
 end_variable
 begin_variable
-var467
+var444
 0
 2
 Atom aux18(ae, ad)
 NegatedAtom aux18(ae, ad)
 end_variable
 begin_variable
-var468
+var445
 0
 2
 Atom aux18(ad, be)
 NegatedAtom aux18(ad, be)
 end_variable
 begin_variable
-var469
+var446
 0
 2
 Atom aux18(ad, bd)
 NegatedAtom aux18(ad, bd)
 end_variable
 begin_variable
-var470
+var447
 0
 2
 Atom aux18(ad, bc)
 NegatedAtom aux18(ad, bc)
 end_variable
 begin_variable
-var471
+var448
 0
 2
 Atom aux18(ad, ae)
 NegatedAtom aux18(ad, ae)
 end_variable
 begin_variable
-var472
+var449
 0
 2
 Atom aux18(ad, ac)
 NegatedAtom aux18(ad, ac)
 end_variable
 begin_variable
-var473
+var450
 0
 2
 Atom aux18(ac, bd)
 NegatedAtom aux18(ac, bd)
 end_variable
 begin_variable
-var474
+var451
 0
 2
 Atom aux18(ac, bc)
 NegatedAtom aux18(ac, bc)
 end_variable
 begin_variable
-var475
+var452
 0
 2
 Atom aux18(ac, bb)
 NegatedAtom aux18(ac, bb)
 end_variable
 begin_variable
-var476
+var453
 0
 2
 Atom aux18(ac, ad)
 NegatedAtom aux18(ac, ad)
 end_variable
 begin_variable
-var477
+var454
 0
 2
 Atom aux18(ac, ab)
 NegatedAtom aux18(ac, ab)
 end_variable
 begin_variable
-var478
+var455
 0
 2
 Atom aux18(ab, bc)
 NegatedAtom aux18(ab, bc)
 end_variable
 begin_variable
-var479
+var456
 0
 2
 Atom aux18(ab, bb)
 NegatedAtom aux18(ab, bb)
 end_variable
 begin_variable
-var480
+var457
 0
 2
 Atom aux18(ab, ba)
 NegatedAtom aux18(ab, ba)
 end_variable
 begin_variable
-var481
+var458
 0
 2
 Atom aux18(ab, ac)
 NegatedAtom aux18(ab, ac)
 end_variable
 begin_variable
-var482
+var459
 0
 2
 Atom aux18(ab, aa)
 NegatedAtom aux18(ab, aa)
 end_variable
 begin_variable
-var483
+var460
 0
 2
 Atom aux18(aa, bb)
 NegatedAtom aux18(aa, bb)
 end_variable
 begin_variable
-var484
+var461
 0
 2
 Atom aux18(aa, ba)
 NegatedAtom aux18(aa, ba)
 end_variable
 begin_variable
-var485
+var462
 0
 2
 Atom aux18(aa, ab)
 NegatedAtom aux18(aa, ab)
 end_variable
 begin_variable
+var463
+0
+2
+Atom aux12(fd)
+NegatedAtom aux12(fd)
+end_variable
+begin_variable
+var464
+0
+2
+Atom datalog_mediumrisk(fd)
+NegatedAtom datalog_mediumrisk(fd)
+end_variable
+begin_variable
+var465
+0
+2
+Atom aux12(de)
+NegatedAtom aux12(de)
+end_variable
+begin_variable
+var466
+0
+2
+Atom datalog_mediumrisk(de)
+NegatedAtom datalog_mediumrisk(de)
+end_variable
+begin_variable
+var467
+0
+2
+Atom aux11(walldd, dd)
+NegatedAtom aux11(walldd, dd)
+end_variable
+begin_variable
+var468
+0
+2
+Atom datalog_hasobjectsomemineorprotectedstructure(dd)
+NegatedAtom datalog_hasobjectsomemineorprotectedstructure(dd)
+end_variable
+begin_variable
+var469
+0
+2
+Atom datalog_forbiddenwp(dd)
+NegatedAtom datalog_forbiddenwp(dd)
+end_variable
+begin_variable
+var470
+0
+2
+Atom aux11(walldc, dc)
+NegatedAtom aux11(walldc, dc)
+end_variable
+begin_variable
+var471
+0
+2
+Atom datalog_hasobjectsomemineorprotectedstructure(dc)
+NegatedAtom datalog_hasobjectsomemineorprotectedstructure(dc)
+end_variable
+begin_variable
+var472
+0
+2
+Atom datalog_forbiddenwp(dc)
+NegatedAtom datalog_forbiddenwp(dc)
+end_variable
+begin_variable
+var473
+0
+2
+Atom aux11(walldb, db)
+NegatedAtom aux11(walldb, db)
+end_variable
+begin_variable
+var474
+0
+2
+Atom datalog_hasobjectsomemineorprotectedstructure(db)
+NegatedAtom datalog_hasobjectsomemineorprotectedstructure(db)
+end_variable
+begin_variable
+var475
+0
+2
+Atom datalog_forbiddenwp(db)
+NegatedAtom datalog_forbiddenwp(db)
+end_variable
+begin_variable
+var476
+0
+2
+Atom aux11(wallcb, cb)
+NegatedAtom aux11(wallcb, cb)
+end_variable
+begin_variable
+var477
+0
+2
+Atom datalog_hasobjectsomemineorprotectedstructure(cb)
+NegatedAtom datalog_hasobjectsomemineorprotectedstructure(cb)
+end_variable
+begin_variable
+var478
+0
+2
+Atom datalog_forbiddenwp(cb)
+NegatedAtom datalog_forbiddenwp(cb)
+end_variable
+begin_variable
+var479
+0
+2
+Atom aux11(wallbb, bb)
+NegatedAtom aux11(wallbb, bb)
+end_variable
+begin_variable
+var480
+0
+2
+Atom datalog_hasobjectsomemineorprotectedstructure(bb)
+NegatedAtom datalog_hasobjectsomemineorprotectedstructure(bb)
+end_variable
+begin_variable
+var481
+0
+2
+Atom datalog_forbiddenwp(bb)
+NegatedAtom datalog_forbiddenwp(bb)
+end_variable
+begin_variable
+var482
+0
+2
+Atom aux11(wallab, ab)
+NegatedAtom aux11(wallab, ab)
+end_variable
+begin_variable
+var483
+0
+2
+Atom datalog_hasobjectsomemineorprotectedstructure(ab)
+NegatedAtom datalog_hasobjectsomemineorprotectedstructure(ab)
+end_variable
+begin_variable
+var484
+0
+2
+Atom datalog_forbiddenwp(ab)
+NegatedAtom datalog_forbiddenwp(ab)
+end_variable
+begin_variable
+var485
+0
+2
+Atom aux11(mineef, ef)
+NegatedAtom aux11(mineef, ef)
+end_variable
+begin_variable
 var486
+0
+2
+Atom datalog_hasobjectsomemineorprotectedstructure(ef)
+NegatedAtom datalog_hasobjectsomemineorprotectedstructure(ef)
+end_variable
+begin_variable
+var487
+0
+2
+Atom datalog_forbiddenwp(ef)
+NegatedAtom datalog_forbiddenwp(ef)
+end_variable
+begin_variable
+var488
+0
+2
+Atom aux4(ef)
+NegatedAtom aux4(ef)
+end_variable
+begin_variable
+var489
 0
 2
 Atom datalog_robotat(auv, ab)
 NegatedAtom datalog_robotat(auv, ab)
 end_variable
 begin_variable
-var487
+var490
 0
 2
-Atom aux3(auv, ab)
-NegatedAtom aux3(auv, ab)
+Atom aux9(auv, ab)
+NegatedAtom aux9(auv, ab)
 end_variable
 begin_variable
-var488
+var491
 0
 2
 Atom datalog_inverserobotatsomerobot(ab)
 NegatedAtom datalog_inverserobotatsomerobot(ab)
 end_variable
 begin_variable
-var489
+var492
 0
 2
-Atom aux5(ab)
-NegatedAtom aux5(ab)
+Atom aux4(ab)
+NegatedAtom aux4(ab)
 end_variable
 begin_variable
-var490
+var493
 0
 2
 Atom datalog_robotat(auv, bb)
 NegatedAtom datalog_robotat(auv, bb)
 end_variable
 begin_variable
-var491
+var494
 0
 2
-Atom aux3(auv, bb)
-NegatedAtom aux3(auv, bb)
+Atom aux9(auv, bb)
+NegatedAtom aux9(auv, bb)
 end_variable
 begin_variable
-var492
+var495
 0
 2
 Atom datalog_inverserobotatsomerobot(bb)
 NegatedAtom datalog_inverserobotatsomerobot(bb)
 end_variable
 begin_variable
-var493
+var496
 0
 2
-Atom aux5(bb)
-NegatedAtom aux5(bb)
+Atom aux4(bb)
+NegatedAtom aux4(bb)
 end_variable
 begin_variable
-var494
+var497
 0
 2
 Atom datalog_robotat(auv, cb)
 NegatedAtom datalog_robotat(auv, cb)
 end_variable
 begin_variable
-var495
+var498
 0
 2
-Atom aux3(auv, cb)
-NegatedAtom aux3(auv, cb)
+Atom aux9(auv, cb)
+NegatedAtom aux9(auv, cb)
 end_variable
 begin_variable
-var496
+var499
 0
 2
 Atom datalog_inverserobotatsomerobot(cb)
 NegatedAtom datalog_inverserobotatsomerobot(cb)
 end_variable
 begin_variable
-var497
+var500
 0
 2
-Atom aux5(cb)
-NegatedAtom aux5(cb)
+Atom aux4(cb)
+NegatedAtom aux4(cb)
 end_variable
 begin_variable
-var498
+var501
 0
 2
 Atom datalog_robotat(auv, db)
 NegatedAtom datalog_robotat(auv, db)
 end_variable
 begin_variable
-var499
+var502
 0
 2
-Atom aux3(auv, db)
-NegatedAtom aux3(auv, db)
+Atom aux9(auv, db)
+NegatedAtom aux9(auv, db)
 end_variable
 begin_variable
-var500
+var503
 0
 2
 Atom datalog_inverserobotatsomerobot(db)
 NegatedAtom datalog_inverserobotatsomerobot(db)
 end_variable
 begin_variable
-var501
+var504
 0
 2
-Atom aux5(db)
-NegatedAtom aux5(db)
+Atom aux4(db)
+NegatedAtom aux4(db)
 end_variable
 begin_variable
-var502
+var505
 0
 2
 Atom datalog_robotat(auv, dc)
 NegatedAtom datalog_robotat(auv, dc)
 end_variable
 begin_variable
-var503
+var506
 0
 2
-Atom aux3(auv, dc)
-NegatedAtom aux3(auv, dc)
+Atom aux9(auv, dc)
+NegatedAtom aux9(auv, dc)
 end_variable
 begin_variable
-var504
+var507
 0
 2
 Atom datalog_inverserobotatsomerobot(dc)
 NegatedAtom datalog_inverserobotatsomerobot(dc)
 end_variable
 begin_variable
-var505
+var508
 0
 2
-Atom aux5(dc)
-NegatedAtom aux5(dc)
+Atom aux4(dc)
+NegatedAtom aux4(dc)
 end_variable
 begin_variable
-var506
+var509
 0
 2
 Atom datalog_robotat(auv, dd)
 NegatedAtom datalog_robotat(auv, dd)
 end_variable
 begin_variable
-var507
+var510
 0
 2
-Atom aux3(auv, dd)
-NegatedAtom aux3(auv, dd)
+Atom aux9(auv, dd)
+NegatedAtom aux9(auv, dd)
 end_variable
 begin_variable
-var508
+var511
 0
 2
 Atom datalog_inverserobotatsomerobot(dd)
 NegatedAtom datalog_inverserobotatsomerobot(dd)
 end_variable
 begin_variable
-var509
+var512
 0
 2
-Atom aux5(dd)
-NegatedAtom aux5(dd)
+Atom aux4(dd)
+NegatedAtom aux4(dd)
 end_variable
 begin_variable
-var510
+var513
 0
 2
 Atom datalog_robotat(auv, ef)
 NegatedAtom datalog_robotat(auv, ef)
 end_variable
 begin_variable
-var511
+var514
 0
 2
-Atom aux3(auv, ef)
-NegatedAtom aux3(auv, ef)
+Atom aux9(auv, ef)
+NegatedAtom aux9(auv, ef)
 end_variable
 begin_variable
-var512
+var515
 0
 2
 Atom datalog_inverserobotatsomerobot(ef)
 NegatedAtom datalog_inverserobotatsomerobot(ef)
 end_variable
 begin_variable
-var513
-0
-2
-Atom aux5(ef)
-NegatedAtom aux5(ef)
-end_variable
-begin_variable
-var514
+var516
 -1
 49
 Atom robotat(auv, aa)
@@ -3658,956 +3672,942 @@ Atom robotat(auv, gf)
 Atom robotat(auv, gg)
 end_variable
 begin_variable
-var515
+var517
 0
 2
 Atom datalog_inconsistent()
 NegatedAtom datalog_inconsistent()
 end_variable
 begin_variable
-var516
+var518
 -1
 2
 Atom haspicture(auv, gc)
 NegatedAtom haspicture(auv, gc)
 end_variable
 begin_variable
-var517
+var519
 0
 2
-Atom aux2(auv, gc)
-NegatedAtom aux2(auv, gc)
+Atom aux3(auv, gc)
+NegatedAtom aux3(auv, gc)
 end_variable
 begin_variable
-var518
+var520
 0
 2
 Atom datalog_inversehaspicturesomerobot(gc)
 NegatedAtom datalog_inversehaspicturesomerobot(gc)
 end_variable
 begin_variable
-var519
+var521
 0
 2
-Atom aux8(gc, pipegc)
-NegatedAtom aux8(gc, pipegc)
+Atom aux5(gc, pipegc)
+NegatedAtom aux5(gc, pipegc)
 end_variable
 begin_variable
-var520
+var522
 0
 2
 Atom datalog_locatedatsomeinversehaspicturesomerobot(pipegc)
 NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipegc)
 end_variable
 begin_variable
-var521
--1
-2
-Atom haspicture(auv, gb)
-NegatedAtom haspicture(auv, gb)
-end_variable
-begin_variable
-var522
-0
-2
-Atom aux2(auv, gb)
-NegatedAtom aux2(auv, gb)
-end_variable
-begin_variable
 var523
-0
-2
-Atom datalog_inversehaspicturesomerobot(gb)
-NegatedAtom datalog_inversehaspicturesomerobot(gb)
-end_variable
-begin_variable
-var524
--1
-2
-Atom haspicture(auv, fd)
-NegatedAtom haspicture(auv, fd)
-end_variable
-begin_variable
-var525
-0
-2
-Atom aux2(auv, fd)
-NegatedAtom aux2(auv, fd)
-end_variable
-begin_variable
-var526
-0
-2
-Atom datalog_inversehaspicturesomerobot(fd)
-NegatedAtom datalog_inversehaspicturesomerobot(fd)
-end_variable
-begin_variable
-var527
-0
-2
-Atom aux8(fd, pipefd)
-NegatedAtom aux8(fd, pipefd)
-end_variable
-begin_variable
-var528
-0
-2
-Atom datalog_locatedatsomeinversehaspicturesomerobot(pipefd)
-NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipefd)
-end_variable
-begin_variable
-var529
--1
-2
-Atom haspicture(auv, fc)
-NegatedAtom haspicture(auv, fc)
-end_variable
-begin_variable
-var530
-0
-2
-Atom aux2(auv, fc)
-NegatedAtom aux2(auv, fc)
-end_variable
-begin_variable
-var531
-0
-2
-Atom datalog_inversehaspicturesomerobot(fc)
-NegatedAtom datalog_inversehaspicturesomerobot(fc)
-end_variable
-begin_variable
-var532
-0
-2
-Atom aux8(fc, pipefc)
-NegatedAtom aux8(fc, pipefc)
-end_variable
-begin_variable
-var533
-0
-2
-Atom datalog_locatedatsomeinversehaspicturesomerobot(pipefc)
-NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipefc)
-end_variable
-begin_variable
-var534
--1
-2
-Atom haspicture(auv, ee)
-NegatedAtom haspicture(auv, ee)
-end_variable
-begin_variable
-var535
-0
-2
-Atom aux2(auv, ee)
-NegatedAtom aux2(auv, ee)
-end_variable
-begin_variable
-var536
-0
-2
-Atom datalog_inversehaspicturesomerobot(ee)
-NegatedAtom datalog_inversehaspicturesomerobot(ee)
-end_variable
-begin_variable
-var537
-0
-2
-Atom aux8(ee, pipeee)
-NegatedAtom aux8(ee, pipeee)
-end_variable
-begin_variable
-var538
-0
-2
-Atom datalog_locatedatsomeinversehaspicturesomerobot(pipeee)
-NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipeee)
-end_variable
-begin_variable
-var539
--1
-2
-Atom haspicture(auv, df)
-NegatedAtom haspicture(auv, df)
-end_variable
-begin_variable
-var540
-0
-2
-Atom aux2(auv, df)
-NegatedAtom aux2(auv, df)
-end_variable
-begin_variable
-var541
-0
-2
-Atom datalog_inversehaspicturesomerobot(df)
-NegatedAtom datalog_inversehaspicturesomerobot(df)
-end_variable
-begin_variable
-var542
-0
-2
-Atom aux8(df, pipedf)
-NegatedAtom aux8(df, pipedf)
-end_variable
-begin_variable
-var543
-0
-2
-Atom datalog_locatedatsomeinversehaspicturesomerobot(pipedf)
-NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipedf)
-end_variable
-begin_variable
-var544
--1
-2
-Atom haspicture(auv, de)
-NegatedAtom haspicture(auv, de)
-end_variable
-begin_variable
-var545
-0
-2
-Atom aux2(auv, de)
-NegatedAtom aux2(auv, de)
-end_variable
-begin_variable
-var546
-0
-2
-Atom datalog_inversehaspicturesomerobot(de)
-NegatedAtom datalog_inversehaspicturesomerobot(de)
-end_variable
-begin_variable
-var547
-0
-2
-Atom aux8(de, pipede)
-NegatedAtom aux8(de, pipede)
-end_variable
-begin_variable
-var548
-0
-2
-Atom datalog_locatedatsomeinversehaspicturesomerobot(pipede)
-NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipede)
-end_variable
-begin_variable
-var549
--1
-2
-Atom haspicture(auv, cg)
-NegatedAtom haspicture(auv, cg)
-end_variable
-begin_variable
-var550
-0
-2
-Atom aux2(auv, cg)
-NegatedAtom aux2(auv, cg)
-end_variable
-begin_variable
-var551
-0
-2
-Atom datalog_inversehaspicturesomerobot(cg)
-NegatedAtom datalog_inversehaspicturesomerobot(cg)
-end_variable
-begin_variable
-var552
--1
-2
-Atom haspicture(auv, cd)
-NegatedAtom haspicture(auv, cd)
-end_variable
-begin_variable
-var553
-0
-2
-Atom aux2(auv, cd)
-NegatedAtom aux2(auv, cd)
-end_variable
-begin_variable
-var554
-0
-2
-Atom datalog_inversehaspicturesomerobot(cd)
-NegatedAtom datalog_inversehaspicturesomerobot(cd)
-end_variable
-begin_variable
-var555
-0
-2
-Atom aux8(cd, pipecd)
-NegatedAtom aux8(cd, pipecd)
-end_variable
-begin_variable
-var556
-0
-2
-Atom datalog_locatedatsomeinversehaspicturesomerobot(pipecd)
-NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipecd)
-end_variable
-begin_variable
-var557
--1
-2
-Atom haspicture(auv, cc)
-NegatedAtom haspicture(auv, cc)
-end_variable
-begin_variable
-var558
-0
-2
-Atom aux2(auv, cc)
-NegatedAtom aux2(auv, cc)
-end_variable
-begin_variable
-var559
-0
-2
-Atom datalog_inversehaspicturesomerobot(cc)
-NegatedAtom datalog_inversehaspicturesomerobot(cc)
-end_variable
-begin_variable
-var560
-0
-2
-Atom aux8(cc, pipecc)
-NegatedAtom aux8(cc, pipecc)
-end_variable
-begin_variable
-var561
-0
-2
-Atom datalog_locatedatsomeinversehaspicturesomerobot(pipecc)
-NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipecc)
-end_variable
-begin_variable
-var562
-0
-2
-Atom aux17(pipegb)
-NegatedAtom aux17(pipegb)
-end_variable
-begin_variable
-var563
-0
-2
-Atom datalog_mediumriskpipe(pipegb)
-NegatedAtom datalog_mediumriskpipe(pipegb)
-end_variable
-begin_variable
-var564
-0
-2
-Atom aux17(pipefc)
-NegatedAtom aux17(pipefc)
-end_variable
-begin_variable
-var565
-0
-2
-Atom datalog_mediumriskpipe(pipefc)
-NegatedAtom datalog_mediumriskpipe(pipefc)
-end_variable
-begin_variable
-var566
-0
-2
-Atom aux17(pipecd)
-NegatedAtom aux17(pipecd)
-end_variable
-begin_variable
-var567
-0
-2
-Atom datalog_mediumriskpipe(pipecd)
-NegatedAtom datalog_mediumriskpipe(pipecd)
-end_variable
-begin_variable
-var568
 0
 2
 Atom aux16(gc)
 NegatedAtom aux16(gc)
 end_variable
 begin_variable
-var569
+var524
 0
 2
 Atom datalog_covered(gc)
 NegatedAtom datalog_covered(gc)
 end_variable
 begin_variable
-var570
+var525
 0
 2
 Atom datalog_risk(gc)
 NegatedAtom datalog_risk(gc)
 end_variable
 begin_variable
-var571
+var526
 1
 2
 Atom aux19(gc)
 NegatedAtom aux19(gc)
 end_variable
 begin_variable
-var572
+var527
+-1
+2
+Atom haspicture(auv, gb)
+NegatedAtom haspicture(auv, gb)
+end_variable
+begin_variable
+var528
 0
 2
-Atom aux16(cg)
-NegatedAtom aux16(cg)
+Atom aux3(auv, gb)
+NegatedAtom aux3(auv, gb)
 end_variable
 begin_variable
-var573
+var529
 0
 2
-Atom datalog_covered(cg)
-NegatedAtom datalog_covered(cg)
+Atom datalog_inversehaspicturesomerobot(gb)
+NegatedAtom datalog_inversehaspicturesomerobot(gb)
 end_variable
 begin_variable
-var574
+var530
+-1
+2
+Atom haspicture(auv, fd)
+NegatedAtom haspicture(auv, fd)
+end_variable
+begin_variable
+var531
 0
 2
-Atom datalog_risk(cg)
-NegatedAtom datalog_risk(cg)
+Atom aux3(auv, fd)
+NegatedAtom aux3(auv, fd)
 end_variable
 begin_variable
-var575
-1
-2
-Atom aux19(cg)
-NegatedAtom aux19(cg)
-end_variable
-begin_variable
-var576
+var532
 0
 2
-Atom aux16(cc)
-NegatedAtom aux16(cc)
+Atom datalog_inversehaspicturesomerobot(fd)
+NegatedAtom datalog_inversehaspicturesomerobot(fd)
 end_variable
 begin_variable
-var577
+var533
 0
 2
-Atom datalog_covered(cc)
-NegatedAtom datalog_covered(cc)
+Atom aux5(fd, pipefd)
+NegatedAtom aux5(fd, pipefd)
 end_variable
 begin_variable
-var578
+var534
 0
 2
-Atom datalog_risk(cc)
-NegatedAtom datalog_risk(cc)
+Atom datalog_locatedatsomeinversehaspicturesomerobot(pipefd)
+NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipefd)
 end_variable
 begin_variable
-var579
-1
-2
-Atom aux19(cc)
-NegatedAtom aux19(cc)
-end_variable
-begin_variable
-var580
-0
-2
-Atom aux11(pipegb, gb)
-NegatedAtom aux11(pipegb, gb)
-end_variable
-begin_variable
-var581
-0
-2
-Atom datalog_hasobjectsomemediumriskpipe(gb)
-NegatedAtom datalog_hasobjectsomemediumriskpipe(gb)
-end_variable
-begin_variable
-var582
-0
-2
-Atom aux12(gb)
-NegatedAtom aux12(gb)
-end_variable
-begin_variable
-var583
-0
-2
-Atom datalog_mediumrisk(gb)
-NegatedAtom datalog_mediumrisk(gb)
-end_variable
-begin_variable
-var584
-0
-2
-Atom aux15(gb)
-NegatedAtom aux15(gb)
-end_variable
-begin_variable
-var585
-0
-2
-Atom aux11(pipefd, fd)
-NegatedAtom aux11(pipefd, fd)
-end_variable
-begin_variable
-var586
-0
-2
-Atom datalog_hasobjectsomemediumriskpipe(fd)
-NegatedAtom datalog_hasobjectsomemediumriskpipe(fd)
-end_variable
-begin_variable
-var587
-0
-2
-Atom aux12(fd)
-NegatedAtom aux12(fd)
-end_variable
-begin_variable
-var588
-0
-2
-Atom datalog_mediumrisk(fd)
-NegatedAtom datalog_mediumrisk(fd)
-end_variable
-begin_variable
-var589
+var535
 0
 2
 Atom aux15(fd)
 NegatedAtom aux15(fd)
 end_variable
 begin_variable
-var590
-0
+var536
+-1
 2
-Atom aux11(pipefc, fc)
-NegatedAtom aux11(pipefc, fc)
+Atom haspicture(auv, fc)
+NegatedAtom haspicture(auv, fc)
 end_variable
 begin_variable
-var591
+var537
 0
 2
-Atom datalog_hasobjectsomemediumriskpipe(fc)
-NegatedAtom datalog_hasobjectsomemediumriskpipe(fc)
+Atom aux3(auv, fc)
+NegatedAtom aux3(auv, fc)
 end_variable
 begin_variable
-var592
+var538
 0
 2
-Atom aux12(fc)
-NegatedAtom aux12(fc)
+Atom datalog_inversehaspicturesomerobot(fc)
+NegatedAtom datalog_inversehaspicturesomerobot(fc)
 end_variable
 begin_variable
-var593
+var539
 0
 2
-Atom datalog_mediumrisk(fc)
-NegatedAtom datalog_mediumrisk(fc)
+Atom aux5(fc, pipefc)
+NegatedAtom aux5(fc, pipefc)
 end_variable
 begin_variable
-var594
+var540
 0
 2
-Atom aux15(fc)
-NegatedAtom aux15(fc)
+Atom datalog_locatedatsomeinversehaspicturesomerobot(pipefc)
+NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipefc)
 end_variable
 begin_variable
-var595
+var541
+-1
+2
+Atom haspicture(auv, ee)
+NegatedAtom haspicture(auv, ee)
+end_variable
+begin_variable
+var542
 0
 2
-Atom aux11(pipede, de)
-NegatedAtom aux11(pipede, de)
+Atom aux3(auv, ee)
+NegatedAtom aux3(auv, ee)
 end_variable
 begin_variable
-var596
+var543
 0
 2
-Atom datalog_hasobjectsomemediumriskpipe(de)
-NegatedAtom datalog_hasobjectsomemediumriskpipe(de)
+Atom datalog_inversehaspicturesomerobot(ee)
+NegatedAtom datalog_inversehaspicturesomerobot(ee)
 end_variable
 begin_variable
-var597
+var544
 0
 2
-Atom aux12(de)
-NegatedAtom aux12(de)
+Atom aux5(ee, pipeee)
+NegatedAtom aux5(ee, pipeee)
 end_variable
 begin_variable
-var598
+var545
 0
 2
-Atom datalog_mediumrisk(de)
-NegatedAtom datalog_mediumrisk(de)
+Atom datalog_locatedatsomeinversehaspicturesomerobot(pipeee)
+NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipeee)
 end_variable
 begin_variable
-var599
+var546
+-1
+2
+Atom haspicture(auv, df)
+NegatedAtom haspicture(auv, df)
+end_variable
+begin_variable
+var547
+0
+2
+Atom aux3(auv, df)
+NegatedAtom aux3(auv, df)
+end_variable
+begin_variable
+var548
+0
+2
+Atom datalog_inversehaspicturesomerobot(df)
+NegatedAtom datalog_inversehaspicturesomerobot(df)
+end_variable
+begin_variable
+var549
+0
+2
+Atom aux5(df, pipedf)
+NegatedAtom aux5(df, pipedf)
+end_variable
+begin_variable
+var550
+0
+2
+Atom datalog_locatedatsomeinversehaspicturesomerobot(pipedf)
+NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipedf)
+end_variable
+begin_variable
+var551
+-1
+2
+Atom haspicture(auv, de)
+NegatedAtom haspicture(auv, de)
+end_variable
+begin_variable
+var552
+0
+2
+Atom aux3(auv, de)
+NegatedAtom aux3(auv, de)
+end_variable
+begin_variable
+var553
+0
+2
+Atom datalog_inversehaspicturesomerobot(de)
+NegatedAtom datalog_inversehaspicturesomerobot(de)
+end_variable
+begin_variable
+var554
+0
+2
+Atom aux5(de, pipede)
+NegatedAtom aux5(de, pipede)
+end_variable
+begin_variable
+var555
+0
+2
+Atom datalog_locatedatsomeinversehaspicturesomerobot(pipede)
+NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipede)
+end_variable
+begin_variable
+var556
 0
 2
 Atom aux15(de)
 NegatedAtom aux15(de)
 end_variable
 begin_variable
-var600
-0
+var557
+-1
 2
-Atom aux11(pipecd, cd)
-NegatedAtom aux11(pipecd, cd)
+Atom haspicture(auv, cg)
+NegatedAtom haspicture(auv, cg)
 end_variable
 begin_variable
-var601
+var558
 0
 2
-Atom datalog_hasobjectsomemediumriskpipe(cd)
-NegatedAtom datalog_hasobjectsomemediumriskpipe(cd)
+Atom aux3(auv, cg)
+NegatedAtom aux3(auv, cg)
 end_variable
 begin_variable
-var602
+var559
 0
 2
-Atom aux12(cd)
-NegatedAtom aux12(cd)
+Atom datalog_inversehaspicturesomerobot(cg)
+NegatedAtom datalog_inversehaspicturesomerobot(cg)
 end_variable
 begin_variable
-var603
+var560
 0
 2
-Atom datalog_mediumrisk(cd)
-NegatedAtom datalog_mediumrisk(cd)
+Atom aux16(cg)
+NegatedAtom aux16(cg)
 end_variable
 begin_variable
-var604
+var561
 0
 2
-Atom aux15(cd)
-NegatedAtom aux15(cd)
+Atom datalog_covered(cg)
+NegatedAtom datalog_covered(cg)
 end_variable
 begin_variable
-var605
+var562
 0
 2
-Atom aux0(pipegc, pipegb)
-NegatedAtom aux0(pipegc, pipegb)
+Atom datalog_risk(cg)
+NegatedAtom datalog_risk(cg)
 end_variable
 begin_variable
-var606
+var563
+1
+2
+Atom aux19(cg)
+NegatedAtom aux19(cg)
+end_variable
+begin_variable
+var564
+-1
+2
+Atom haspicture(auv, cd)
+NegatedAtom haspicture(auv, cd)
+end_variable
+begin_variable
+var565
+0
+2
+Atom aux3(auv, cd)
+NegatedAtom aux3(auv, cd)
+end_variable
+begin_variable
+var566
+0
+2
+Atom datalog_inversehaspicturesomerobot(cd)
+NegatedAtom datalog_inversehaspicturesomerobot(cd)
+end_variable
+begin_variable
+var567
+0
+2
+Atom aux5(cd, pipecd)
+NegatedAtom aux5(cd, pipecd)
+end_variable
+begin_variable
+var568
+0
+2
+Atom datalog_locatedatsomeinversehaspicturesomerobot(pipecd)
+NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipecd)
+end_variable
+begin_variable
+var569
+-1
+2
+Atom haspicture(auv, cc)
+NegatedAtom haspicture(auv, cc)
+end_variable
+begin_variable
+var570
+0
+2
+Atom aux3(auv, cc)
+NegatedAtom aux3(auv, cc)
+end_variable
+begin_variable
+var571
+0
+2
+Atom datalog_inversehaspicturesomerobot(cc)
+NegatedAtom datalog_inversehaspicturesomerobot(cc)
+end_variable
+begin_variable
+var572
+0
+2
+Atom aux5(cc, pipecc)
+NegatedAtom aux5(cc, pipecc)
+end_variable
+begin_variable
+var573
+0
+2
+Atom datalog_locatedatsomeinversehaspicturesomerobot(pipecc)
+NegatedAtom datalog_locatedatsomeinversehaspicturesomerobot(pipecc)
+end_variable
+begin_variable
+var574
+0
+2
+Atom aux16(cc)
+NegatedAtom aux16(cc)
+end_variable
+begin_variable
+var575
+0
+2
+Atom datalog_covered(cc)
+NegatedAtom datalog_covered(cc)
+end_variable
+begin_variable
+var576
+0
+2
+Atom datalog_risk(cc)
+NegatedAtom datalog_risk(cc)
+end_variable
+begin_variable
+var577
+1
+2
+Atom aux19(cc)
+NegatedAtom aux19(cc)
+end_variable
+begin_variable
+var578
+0
+2
+Atom aux10(pipegc, pipegb)
+NegatedAtom aux10(pipegc, pipegb)
+end_variable
+begin_variable
+var579
 0
 2
 Atom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipegb)
 NegatedAtom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipegb)
 end_variable
 begin_variable
-var607
+var580
 0
 2
 Atom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipegb)
 NegatedAtom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipegb)
 end_variable
 begin_variable
-var608
+var581
 0
 2
-Atom aux4(pipegb, gb)
-NegatedAtom aux4(pipegb, gb)
+Atom aux2(pipegb, gb)
+NegatedAtom aux2(pipegb, gb)
 end_variable
 begin_variable
-var609
+var582
 0
 2
 Atom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(gb)
 NegatedAtom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(gb)
 end_variable
 begin_variable
-var610
+var583
 0
 2
-Atom aux14(gb)
-NegatedAtom aux14(gb)
+Atom aux10(pipegc, pipefc)
+NegatedAtom aux10(pipegc, pipefc)
 end_variable
 begin_variable
-var611
+var584
 0
 2
-Atom datalog_covered(gb)
-NegatedAtom datalog_covered(gb)
+Atom aux10(pipefd, pipefc)
+NegatedAtom aux10(pipefd, pipefc)
 end_variable
 begin_variable
-var612
-0
-2
-Atom datalog_risk(gb)
-NegatedAtom datalog_risk(gb)
-end_variable
-begin_variable
-var613
-1
-2
-Atom aux19(gb)
-NegatedAtom aux19(gb)
-end_variable
-begin_variable
-var614
-0
-2
-Atom aux0(pipegc, pipefc)
-NegatedAtom aux0(pipegc, pipefc)
-end_variable
-begin_variable
-var615
-0
-2
-Atom aux0(pipefd, pipefc)
-NegatedAtom aux0(pipefd, pipefc)
-end_variable
-begin_variable
-var616
+var585
 0
 2
 Atom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipefc)
 NegatedAtom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipefc)
 end_variable
 begin_variable
-var617
+var586
 0
 2
 Atom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipefc)
 NegatedAtom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipefc)
 end_variable
 begin_variable
-var618
+var587
 0
 2
-Atom aux4(pipefc, fc)
-NegatedAtom aux4(pipefc, fc)
+Atom aux2(pipefc, fc)
+NegatedAtom aux2(pipefc, fc)
 end_variable
 begin_variable
-var619
+var588
 0
 2
 Atom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(fc)
 NegatedAtom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(fc)
 end_variable
 begin_variable
-var620
+var589
 0
 2
-Atom aux14(fc)
-NegatedAtom aux14(fc)
+Atom aux10(pipefc, pipefd)
+NegatedAtom aux10(pipefc, pipefd)
 end_variable
 begin_variable
-var621
+var590
 0
 2
-Atom datalog_covered(fc)
-NegatedAtom datalog_covered(fc)
+Atom aux10(pipeee, pipefd)
+NegatedAtom aux10(pipeee, pipefd)
 end_variable
 begin_variable
-var622
-0
-2
-Atom datalog_risk(fc)
-NegatedAtom datalog_risk(fc)
-end_variable
-begin_variable
-var623
-1
-2
-Atom aux19(fc)
-NegatedAtom aux19(fc)
-end_variable
-begin_variable
-var624
-0
-2
-Atom aux0(pipefc, pipefd)
-NegatedAtom aux0(pipefc, pipefd)
-end_variable
-begin_variable
-var625
-0
-2
-Atom aux0(pipeee, pipefd)
-NegatedAtom aux0(pipeee, pipefd)
-end_variable
-begin_variable
-var626
+var591
 0
 2
 Atom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipefd)
 NegatedAtom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipefd)
 end_variable
 begin_variable
-var627
+var592
 0
 2
 Atom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipefd)
 NegatedAtom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipefd)
 end_variable
 begin_variable
-var628
+var593
 0
 2
-Atom aux4(pipefd, fd)
-NegatedAtom aux4(pipefd, fd)
+Atom aux2(pipefd, fd)
+NegatedAtom aux2(pipefd, fd)
 end_variable
 begin_variable
-var629
+var594
 0
 2
 Atom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(fd)
 NegatedAtom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(fd)
 end_variable
 begin_variable
-var630
+var595
 0
 2
 Atom aux14(fd)
 NegatedAtom aux14(fd)
 end_variable
 begin_variable
-var631
+var596
 0
 2
 Atom datalog_covered(fd)
 NegatedAtom datalog_covered(fd)
 end_variable
 begin_variable
-var632
+var597
 0
 2
 Atom datalog_risk(fd)
 NegatedAtom datalog_risk(fd)
 end_variable
 begin_variable
-var633
+var598
 1
 2
 Atom aux19(fd)
 NegatedAtom aux19(fd)
 end_variable
 begin_variable
-var634
+var599
 0
 2
-Atom aux0(pipeee, pipede)
-NegatedAtom aux0(pipeee, pipede)
+Atom aux10(pipeee, pipede)
+NegatedAtom aux10(pipeee, pipede)
 end_variable
 begin_variable
-var635
+var600
 0
 2
-Atom aux0(pipedf, pipede)
-NegatedAtom aux0(pipedf, pipede)
+Atom aux10(pipedf, pipede)
+NegatedAtom aux10(pipedf, pipede)
 end_variable
 begin_variable
-var636
+var601
 0
 2
-Atom aux0(pipede, pipecd)
-NegatedAtom aux0(pipede, pipecd)
+Atom aux10(pipede, pipecd)
+NegatedAtom aux10(pipede, pipecd)
 end_variable
 begin_variable
-var637
+var602
 0
 2
-Atom aux0(pipecd, pipede)
-NegatedAtom aux0(pipecd, pipede)
+Atom aux10(pipecd, pipede)
+NegatedAtom aux10(pipecd, pipede)
 end_variable
 begin_variable
-var638
+var603
 0
 2
 Atom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipede)
 NegatedAtom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipede)
 end_variable
 begin_variable
-var639
+var604
 0
 2
 Atom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipede)
 NegatedAtom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipede)
 end_variable
 begin_variable
-var640
+var605
 0
 2
-Atom aux4(pipede, de)
-NegatedAtom aux4(pipede, de)
+Atom aux2(pipede, de)
+NegatedAtom aux2(pipede, de)
 end_variable
 begin_variable
-var641
+var606
 0
 2
 Atom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(de)
 NegatedAtom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(de)
 end_variable
 begin_variable
-var642
+var607
 0
 2
 Atom aux14(de)
 NegatedAtom aux14(de)
 end_variable
 begin_variable
-var643
+var608
 0
 2
 Atom datalog_covered(de)
 NegatedAtom datalog_covered(de)
 end_variable
 begin_variable
-var644
+var609
 0
 2
 Atom datalog_risk(de)
 NegatedAtom datalog_risk(de)
 end_variable
 begin_variable
-var645
+var610
 1
 2
 Atom aux19(de)
 NegatedAtom aux19(de)
 end_variable
 begin_variable
-var646
+var611
 0
 2
-Atom aux0(pipecc, pipecd)
-NegatedAtom aux0(pipecc, pipecd)
+Atom aux10(pipecc, pipecd)
+NegatedAtom aux10(pipecc, pipecd)
 end_variable
 begin_variable
-var647
+var612
 0
 2
 Atom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipecd)
 NegatedAtom datalog_connectedtosomelocatedatsomeinversehaspicturesomerobot(pipecd)
 end_variable
 begin_variable
-var648
+var613
 0
 2
 Atom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipecd)
 NegatedAtom datalog_pipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(pipecd)
 end_variable
 begin_variable
+var614
+0
+2
+Atom aux2(pipecd, cd)
+NegatedAtom aux2(pipecd, cd)
+end_variable
+begin_variable
+var615
+0
+2
+Atom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(cd)
+NegatedAtom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(cd)
+end_variable
+begin_variable
+var616
+0
+2
+Atom aux0(pipegc, pipegb)
+NegatedAtom aux0(pipegc, pipegb)
+end_variable
+begin_variable
+var617
+0
+2
+Atom datalog_connectedtosomerustypipe(pipegb)
+NegatedAtom datalog_connectedtosomerustypipe(pipegb)
+end_variable
+begin_variable
+var618
+0
+2
+Atom aux17(pipegb)
+NegatedAtom aux17(pipegb)
+end_variable
+begin_variable
+var619
+0
+2
+Atom datalog_mediumriskpipe(pipegb)
+NegatedAtom datalog_mediumriskpipe(pipegb)
+end_variable
+begin_variable
+var620
+0
+2
+Atom aux6(pipegb, gb)
+NegatedAtom aux6(pipegb, gb)
+end_variable
+begin_variable
+var621
+0
+2
+Atom datalog_hasobjectsomemediumriskpipe(gb)
+NegatedAtom datalog_hasobjectsomemediumriskpipe(gb)
+end_variable
+begin_variable
+var622
+0
+2
+Atom aux12(gb)
+NegatedAtom aux12(gb)
+end_variable
+begin_variable
+var623
+0
+2
+Atom datalog_mediumrisk(gb)
+NegatedAtom datalog_mediumrisk(gb)
+end_variable
+begin_variable
+var624
+0
+2
+Atom aux15(gb)
+NegatedAtom aux15(gb)
+end_variable
+begin_variable
+var625
+0
+2
+Atom aux14(gb)
+NegatedAtom aux14(gb)
+end_variable
+begin_variable
+var626
+0
+2
+Atom datalog_covered(gb)
+NegatedAtom datalog_covered(gb)
+end_variable
+begin_variable
+var627
+0
+2
+Atom datalog_risk(gb)
+NegatedAtom datalog_risk(gb)
+end_variable
+begin_variable
+var628
+1
+2
+Atom aux19(gb)
+NegatedAtom aux19(gb)
+end_variable
+begin_variable
+var629
+0
+2
+Atom aux0(pipegc, pipefc)
+NegatedAtom aux0(pipegc, pipefc)
+end_variable
+begin_variable
+var630
+0
+2
+Atom datalog_connectedtosomerustypipe(pipefc)
+NegatedAtom datalog_connectedtosomerustypipe(pipefc)
+end_variable
+begin_variable
+var631
+0
+2
+Atom aux17(pipefc)
+NegatedAtom aux17(pipefc)
+end_variable
+begin_variable
+var632
+0
+2
+Atom datalog_mediumriskpipe(pipefc)
+NegatedAtom datalog_mediumriskpipe(pipefc)
+end_variable
+begin_variable
+var633
+0
+2
+Atom aux6(pipefc, fc)
+NegatedAtom aux6(pipefc, fc)
+end_variable
+begin_variable
+var634
+0
+2
+Atom datalog_hasobjectsomemediumriskpipe(fc)
+NegatedAtom datalog_hasobjectsomemediumriskpipe(fc)
+end_variable
+begin_variable
+var635
+0
+2
+Atom aux12(fc)
+NegatedAtom aux12(fc)
+end_variable
+begin_variable
+var636
+0
+2
+Atom datalog_mediumrisk(fc)
+NegatedAtom datalog_mediumrisk(fc)
+end_variable
+begin_variable
+var637
+0
+2
+Atom aux15(fc)
+NegatedAtom aux15(fc)
+end_variable
+begin_variable
+var638
+0
+2
+Atom aux14(fc)
+NegatedAtom aux14(fc)
+end_variable
+begin_variable
+var639
+0
+2
+Atom datalog_covered(fc)
+NegatedAtom datalog_covered(fc)
+end_variable
+begin_variable
+var640
+0
+2
+Atom datalog_risk(fc)
+NegatedAtom datalog_risk(fc)
+end_variable
+begin_variable
+var641
+1
+2
+Atom aux19(fc)
+NegatedAtom aux19(fc)
+end_variable
+begin_variable
+var642
+0
+2
+Atom aux0(pipecc, pipecd)
+NegatedAtom aux0(pipecc, pipecd)
+end_variable
+begin_variable
+var643
+0
+2
+Atom datalog_connectedtosomerustypipe(pipecd)
+NegatedAtom datalog_connectedtosomerustypipe(pipecd)
+end_variable
+begin_variable
+var644
+0
+2
+Atom aux17(pipecd)
+NegatedAtom aux17(pipecd)
+end_variable
+begin_variable
+var645
+0
+2
+Atom datalog_mediumriskpipe(pipecd)
+NegatedAtom datalog_mediumriskpipe(pipecd)
+end_variable
+begin_variable
+var646
+0
+2
+Atom aux6(pipecd, cd)
+NegatedAtom aux6(pipecd, cd)
+end_variable
+begin_variable
+var647
+0
+2
+Atom datalog_hasobjectsomemediumriskpipe(cd)
+NegatedAtom datalog_hasobjectsomemediumriskpipe(cd)
+end_variable
+begin_variable
+var648
+0
+2
+Atom aux12(cd)
+NegatedAtom aux12(cd)
+end_variable
+begin_variable
 var649
 0
 2
-Atom aux4(pipecd, cd)
-NegatedAtom aux4(pipecd, cd)
+Atom datalog_mediumrisk(cd)
+NegatedAtom datalog_mediumrisk(cd)
 end_variable
 begin_variable
 var650
 0
 2
-Atom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(cd)
-NegatedAtom datalog_hasobjectsomepipeandconnectedtosomelocatedatsomeinversehaspicturesomerobot(cd)
+Atom aux15(cd)
+NegatedAtom aux15(cd)
 end_variable
 begin_variable
 var651
@@ -5160,9 +5160,9 @@ begin_state
 1
 1
 1
+1
+1
 0
-1
-1
 1
 1
 1
@@ -5305,3002 +5305,2910 @@ begin_state
 end_state
 begin_goal
 3
-514 0
-515 1
+516 0
+517 1
 655 1
 end_goal
 322
 begin_operator
 move auv aa ab
 2
-485 0
-515 1
+462 0
+517 1
 1
-0 514 0 1
+0 516 0 1
 1
 end_operator
 begin_operator
 move auv aa ba
 2
-484 0
-515 1
+461 0
+517 1
 1
-0 514 0 7
+0 516 0 7
 1
 end_operator
 begin_operator
 move auv aa bb
 2
-483 0
-515 1
+460 0
+517 1
 1
-0 514 0 8
+0 516 0 8
 1
 end_operator
 begin_operator
 move auv ab aa
 2
-482 0
-515 1
+459 0
+517 1
 1
-0 514 1 0
+0 516 1 0
 1
 end_operator
 begin_operator
 move auv ab ac
 2
-481 0
-515 1
+458 0
+517 1
 1
-0 514 1 2
+0 516 1 2
 1
 end_operator
 begin_operator
 move auv ab ba
 2
-480 0
-515 1
+457 0
+517 1
 1
-0 514 1 7
+0 516 1 7
 1
 end_operator
 begin_operator
 move auv ab bb
 2
-479 0
-515 1
+456 0
+517 1
 1
-0 514 1 8
+0 516 1 8
 1
 end_operator
 begin_operator
 move auv ab bc
 2
-478 0
-515 1
+455 0
+517 1
 1
-0 514 1 9
+0 516 1 9
 1
 end_operator
 begin_operator
 move auv ac ab
 2
-477 0
-515 1
+454 0
+517 1
 1
-0 514 2 1
+0 516 2 1
 1
 end_operator
 begin_operator
 move auv ac ad
 2
-476 0
-515 1
+453 0
+517 1
 1
-0 514 2 3
+0 516 2 3
 1
 end_operator
 begin_operator
 move auv ac bb
 2
-475 0
-515 1
+452 0
+517 1
 1
-0 514 2 8
+0 516 2 8
 1
 end_operator
 begin_operator
 move auv ac bc
 2
-474 0
-515 1
+451 0
+517 1
 1
-0 514 2 9
+0 516 2 9
 1
 end_operator
 begin_operator
 move auv ac bd
 2
-473 0
-515 1
+450 0
+517 1
 1
-0 514 2 10
+0 516 2 10
 1
 end_operator
 begin_operator
 move auv ad ac
 2
-472 0
-515 1
+449 0
+517 1
 1
-0 514 3 2
+0 516 3 2
 1
 end_operator
 begin_operator
 move auv ad ae
 2
-471 0
-515 1
+448 0
+517 1
 1
-0 514 3 4
+0 516 3 4
 1
 end_operator
 begin_operator
 move auv ad bc
 2
-470 0
-515 1
+447 0
+517 1
 1
-0 514 3 9
+0 516 3 9
 1
 end_operator
 begin_operator
 move auv ad bd
 2
-469 0
-515 1
+446 0
+517 1
 1
-0 514 3 10
+0 516 3 10
 1
 end_operator
 begin_operator
 move auv ad be
 2
-468 0
-515 1
+445 0
+517 1
 1
-0 514 3 11
+0 516 3 11
 1
 end_operator
 begin_operator
 move auv ae ad
 2
-467 0
-515 1
+444 0
+517 1
 1
-0 514 4 3
+0 516 4 3
 1
 end_operator
 begin_operator
 move auv ae af
 2
-466 0
-515 1
+443 0
+517 1
 1
-0 514 4 5
+0 516 4 5
 1
 end_operator
 begin_operator
 move auv ae bd
 2
-465 0
-515 1
+442 0
+517 1
 1
-0 514 4 10
+0 516 4 10
 1
 end_operator
 begin_operator
 move auv ae be
 2
-464 0
-515 1
+441 0
+517 1
 1
-0 514 4 11
+0 516 4 11
 1
 end_operator
 begin_operator
 move auv ae bf
 2
-463 0
-515 1
+440 0
+517 1
 1
-0 514 4 12
+0 516 4 12
 1
 end_operator
 begin_operator
 move auv af ae
 2
-462 0
-515 1
+439 0
+517 1
 1
-0 514 5 4
+0 516 5 4
 1
 end_operator
 begin_operator
 move auv af ag
 2
-461 0
-515 1
+438 0
+517 1
 1
-0 514 5 6
+0 516 5 6
 1
 end_operator
 begin_operator
 move auv af be
 2
-460 0
-515 1
+437 0
+517 1
 1
-0 514 5 11
+0 516 5 11
 1
 end_operator
 begin_operator
 move auv af bf
 2
-459 0
-515 1
+436 0
+517 1
 1
-0 514 5 12
+0 516 5 12
 1
 end_operator
 begin_operator
 move auv af bg
 2
-458 0
-515 1
+435 0
+517 1
 1
-0 514 5 13
+0 516 5 13
 1
 end_operator
 begin_operator
 move auv ag af
 2
-457 0
-515 1
+434 0
+517 1
 1
-0 514 6 5
+0 516 6 5
 1
 end_operator
 begin_operator
 move auv ag bf
 2
-456 0
-515 1
+433 0
+517 1
 1
-0 514 6 12
+0 516 6 12
 1
 end_operator
 begin_operator
 move auv ag bg
 2
-455 0
-515 1
+432 0
+517 1
 1
-0 514 6 13
+0 516 6 13
 1
 end_operator
 begin_operator
 move auv ba aa
 2
-454 0
-515 1
+431 0
+517 1
 1
-0 514 7 0
+0 516 7 0
 1
 end_operator
 begin_operator
 move auv ba ab
 2
-453 0
-515 1
+430 0
+517 1
 1
-0 514 7 1
+0 516 7 1
 1
 end_operator
 begin_operator
 move auv ba bb
 2
-452 0
-515 1
+429 0
+517 1
 1
-0 514 7 8
+0 516 7 8
 1
 end_operator
 begin_operator
 move auv ba ca
 2
-451 0
-515 1
+428 0
+517 1
 1
-0 514 7 14
+0 516 7 14
 1
 end_operator
 begin_operator
 move auv ba cb
 2
-450 0
-515 1
+427 0
+517 1
 1
-0 514 7 15
+0 516 7 15
 1
 end_operator
 begin_operator
 move auv bb aa
 2
-449 0
-515 1
+426 0
+517 1
 1
-0 514 8 0
+0 516 8 0
 1
 end_operator
 begin_operator
 move auv bb ab
 2
-448 0
-515 1
+425 0
+517 1
 1
-0 514 8 1
+0 516 8 1
 1
 end_operator
 begin_operator
 move auv bb ac
 2
-447 0
-515 1
+424 0
+517 1
 1
-0 514 8 2
+0 516 8 2
 1
 end_operator
 begin_operator
 move auv bb ba
 2
-446 0
-515 1
+423 0
+517 1
 1
-0 514 8 7
+0 516 8 7
 1
 end_operator
 begin_operator
 move auv bb bc
 2
-445 0
-515 1
+422 0
+517 1
 1
-0 514 8 9
+0 516 8 9
 1
 end_operator
 begin_operator
 move auv bb ca
 2
-444 0
-515 1
+421 0
+517 1
 1
-0 514 8 14
+0 516 8 14
 1
 end_operator
 begin_operator
 move auv bb cb
 2
-443 0
-515 1
+420 0
+517 1
 1
-0 514 8 15
+0 516 8 15
 1
 end_operator
 begin_operator
 move auv bb cc
 2
-442 0
-515 1
+419 0
+517 1
 1
-0 514 8 16
+0 516 8 16
 1
 end_operator
 begin_operator
 move auv bc ab
 2
-441 0
-515 1
+418 0
+517 1
 1
-0 514 9 1
+0 516 9 1
 1
 end_operator
 begin_operator
 move auv bc ac
 2
-440 0
-515 1
+417 0
+517 1
 1
-0 514 9 2
+0 516 9 2
 1
 end_operator
 begin_operator
 move auv bc ad
 2
-439 0
-515 1
+416 0
+517 1
 1
-0 514 9 3
+0 516 9 3
 1
 end_operator
 begin_operator
 move auv bc bb
 2
-438 0
-515 1
+415 0
+517 1
 1
-0 514 9 8
+0 516 9 8
 1
 end_operator
 begin_operator
 move auv bc bd
 2
-437 0
-515 1
+414 0
+517 1
 1
-0 514 9 10
+0 516 9 10
 1
 end_operator
 begin_operator
 move auv bc cb
 2
-436 0
-515 1
+413 0
+517 1
 1
-0 514 9 15
+0 516 9 15
 1
 end_operator
 begin_operator
 move auv bc cc
 2
-435 0
-515 1
+412 0
+517 1
 1
-0 514 9 16
+0 516 9 16
 1
 end_operator
 begin_operator
 move auv bc cd
 2
-434 0
-515 1
+411 0
+517 1
 1
-0 514 9 17
+0 516 9 17
 1
 end_operator
 begin_operator
 move auv bd ac
 2
-433 0
-515 1
+410 0
+517 1
 1
-0 514 10 2
+0 516 10 2
 1
 end_operator
 begin_operator
 move auv bd ad
 2
-432 0
-515 1
+409 0
+517 1
 1
-0 514 10 3
+0 516 10 3
 1
 end_operator
 begin_operator
 move auv bd ae
 2
-431 0
-515 1
+408 0
+517 1
 1
-0 514 10 4
+0 516 10 4
 1
 end_operator
 begin_operator
 move auv bd bc
 2
-430 0
-515 1
+407 0
+517 1
 1
-0 514 10 9
+0 516 10 9
 1
 end_operator
 begin_operator
 move auv bd be
 2
-429 0
-515 1
+406 0
+517 1
 1
-0 514 10 11
+0 516 10 11
 1
 end_operator
 begin_operator
 move auv bd cc
 2
-428 0
-515 1
+405 0
+517 1
 1
-0 514 10 16
+0 516 10 16
 1
 end_operator
 begin_operator
 move auv bd cd
 2
-427 0
-515 1
+404 0
+517 1
 1
-0 514 10 17
+0 516 10 17
 1
 end_operator
 begin_operator
 move auv bd ce
 2
-426 0
-515 1
+403 0
+517 1
 1
-0 514 10 18
+0 516 10 18
 1
 end_operator
 begin_operator
 move auv be ad
 2
-425 0
-515 1
+402 0
+517 1
 1
-0 514 11 3
+0 516 11 3
 1
 end_operator
 begin_operator
 move auv be ae
 2
-424 0
-515 1
+401 0
+517 1
 1
-0 514 11 4
+0 516 11 4
 1
 end_operator
 begin_operator
 move auv be af
 2
-423 0
-515 1
+400 0
+517 1
 1
-0 514 11 5
+0 516 11 5
 1
 end_operator
 begin_operator
 move auv be bd
 2
-422 0
-515 1
+399 0
+517 1
 1
-0 514 11 10
+0 516 11 10
 1
 end_operator
 begin_operator
 move auv be bf
 2
-421 0
-515 1
+398 0
+517 1
 1
-0 514 11 12
+0 516 11 12
 1
 end_operator
 begin_operator
 move auv be cd
 2
-420 0
-515 1
+397 0
+517 1
 1
-0 514 11 17
+0 516 11 17
 1
 end_operator
 begin_operator
 move auv be ce
 2
-419 0
-515 1
+396 0
+517 1
 1
-0 514 11 18
+0 516 11 18
 1
 end_operator
 begin_operator
 move auv be cf
 2
-418 0
-515 1
+395 0
+517 1
 1
-0 514 11 19
+0 516 11 19
 1
 end_operator
 begin_operator
 move auv bf ae
 2
-417 0
-515 1
+394 0
+517 1
 1
-0 514 12 4
+0 516 12 4
 1
 end_operator
 begin_operator
 move auv bf af
 2
-416 0
-515 1
+393 0
+517 1
 1
-0 514 12 5
+0 516 12 5
 1
 end_operator
 begin_operator
 move auv bf ag
 2
-415 0
-515 1
+392 0
+517 1
 1
-0 514 12 6
+0 516 12 6
 1
 end_operator
 begin_operator
 move auv bf be
 2
-414 0
-515 1
+391 0
+517 1
 1
-0 514 12 11
+0 516 12 11
 1
 end_operator
 begin_operator
 move auv bf bg
 2
-413 0
-515 1
+390 0
+517 1
 1
-0 514 12 13
+0 516 12 13
 1
 end_operator
 begin_operator
 move auv bf ce
 2
-412 0
-515 1
+389 0
+517 1
 1
-0 514 12 18
+0 516 12 18
 1
 end_operator
 begin_operator
 move auv bf cf
 2
-411 0
-515 1
+388 0
+517 1
 1
-0 514 12 19
+0 516 12 19
 1
 end_operator
 begin_operator
 move auv bf cg
 2
-410 0
-515 1
+387 0
+517 1
 1
-0 514 12 20
+0 516 12 20
 1
 end_operator
 begin_operator
 move auv bg af
 2
-409 0
-515 1
+386 0
+517 1
 1
-0 514 13 5
+0 516 13 5
 1
 end_operator
 begin_operator
 move auv bg ag
 2
-408 0
-515 1
+385 0
+517 1
 1
-0 514 13 6
+0 516 13 6
 1
 end_operator
 begin_operator
 move auv bg bf
 2
-407 0
-515 1
+384 0
+517 1
 1
-0 514 13 12
+0 516 13 12
 1
 end_operator
 begin_operator
 move auv bg cf
 2
-406 0
-515 1
+383 0
+517 1
 1
-0 514 13 19
+0 516 13 19
 1
 end_operator
 begin_operator
 move auv bg cg
 2
-405 0
-515 1
+382 0
+517 1
 1
-0 514 13 20
+0 516 13 20
 1
 end_operator
 begin_operator
 move auv ca ba
 2
-404 0
-515 1
+381 0
+517 1
 1
-0 514 14 7
+0 516 14 7
 1
 end_operator
 begin_operator
 move auv ca bb
 2
-403 0
-515 1
+380 0
+517 1
 1
-0 514 14 8
+0 516 14 8
 1
 end_operator
 begin_operator
 move auv ca cb
 2
-402 0
-515 1
+379 0
+517 1
 1
-0 514 14 15
+0 516 14 15
 1
 end_operator
 begin_operator
 move auv ca da
 2
-401 0
-515 1
+378 0
+517 1
 1
-0 514 14 21
+0 516 14 21
 1
 end_operator
 begin_operator
 move auv ca db
 2
-400 0
-515 1
+377 0
+517 1
 1
-0 514 14 22
+0 516 14 22
 1
 end_operator
 begin_operator
 move auv cb ba
 2
-399 0
-515 1
+376 0
+517 1
 1
-0 514 15 7
+0 516 15 7
 1
 end_operator
 begin_operator
 move auv cb bb
 2
-398 0
-515 1
+375 0
+517 1
 1
-0 514 15 8
+0 516 15 8
 1
 end_operator
 begin_operator
 move auv cb bc
 2
-397 0
-515 1
+374 0
+517 1
 1
-0 514 15 9
+0 516 15 9
 1
 end_operator
 begin_operator
 move auv cb ca
 2
-396 0
-515 1
+373 0
+517 1
 1
-0 514 15 14
+0 516 15 14
 1
 end_operator
 begin_operator
 move auv cb cc
 2
-395 0
-515 1
+372 0
+517 1
 1
-0 514 15 16
+0 516 15 16
 1
 end_operator
 begin_operator
 move auv cb da
 2
-394 0
-515 1
+371 0
+517 1
 1
-0 514 15 21
+0 516 15 21
 1
 end_operator
 begin_operator
 move auv cb db
 2
-393 0
-515 1
+370 0
+517 1
 1
-0 514 15 22
+0 516 15 22
 1
 end_operator
 begin_operator
 move auv cb dc
 2
-392 0
-515 1
+369 0
+517 1
 1
-0 514 15 23
+0 516 15 23
 1
 end_operator
 begin_operator
 move auv cc bb
 2
-391 0
-515 1
+368 0
+517 1
 1
-0 514 16 8
+0 516 16 8
 1
 end_operator
 begin_operator
 move auv cc bc
 2
-390 0
-515 1
+367 0
+517 1
 1
-0 514 16 9
+0 516 16 9
 1
 end_operator
 begin_operator
 move auv cc bd
 2
-389 0
-515 1
+366 0
+517 1
 1
-0 514 16 10
+0 516 16 10
 1
 end_operator
 begin_operator
 move auv cc cb
 2
-388 0
-515 1
+365 0
+517 1
 1
-0 514 16 15
+0 516 16 15
 1
 end_operator
 begin_operator
 move auv cc cd
 2
-387 0
-515 1
+364 0
+517 1
 1
-0 514 16 17
+0 516 16 17
 1
 end_operator
 begin_operator
 move auv cc db
 2
-386 0
-515 1
+363 0
+517 1
 1
-0 514 16 22
+0 516 16 22
 1
 end_operator
 begin_operator
 move auv cc dc
 2
-385 0
-515 1
+362 0
+517 1
 1
-0 514 16 23
+0 516 16 23
 1
 end_operator
 begin_operator
 move auv cc dd
 2
-384 0
-515 1
+361 0
+517 1
 1
-0 514 16 24
+0 516 16 24
 1
 end_operator
 begin_operator
 move auv cd bc
 2
-383 0
-515 1
+360 0
+517 1
 1
-0 514 17 9
+0 516 17 9
 1
 end_operator
 begin_operator
 move auv cd bd
 2
-382 0
-515 1
+359 0
+517 1
 1
-0 514 17 10
+0 516 17 10
 1
 end_operator
 begin_operator
 move auv cd be
 2
-381 0
-515 1
+358 0
+517 1
 1
-0 514 17 11
+0 516 17 11
 1
 end_operator
 begin_operator
 move auv cd cc
 2
-380 0
-515 1
+357 0
+517 1
 1
-0 514 17 16
+0 516 17 16
 1
 end_operator
 begin_operator
 move auv cd ce
 2
-379 0
-515 1
+356 0
+517 1
 1
-0 514 17 18
+0 516 17 18
 1
 end_operator
 begin_operator
 move auv cd dc
 2
-378 0
-515 1
+355 0
+517 1
 1
-0 514 17 23
+0 516 17 23
 1
 end_operator
 begin_operator
 move auv cd dd
 2
-377 0
-515 1
+354 0
+517 1
 1
-0 514 17 24
+0 516 17 24
 1
 end_operator
 begin_operator
 move auv cd de
 2
-376 0
-515 1
+353 0
+517 1
 1
-0 514 17 25
+0 516 17 25
 1
 end_operator
 begin_operator
 move auv ce bd
 2
-375 0
-515 1
+352 0
+517 1
 1
-0 514 18 10
+0 516 18 10
 1
 end_operator
 begin_operator
 move auv ce be
 2
-374 0
-515 1
+351 0
+517 1
 1
-0 514 18 11
+0 516 18 11
 1
 end_operator
 begin_operator
 move auv ce bf
 2
-373 0
-515 1
+350 0
+517 1
 1
-0 514 18 12
+0 516 18 12
 1
 end_operator
 begin_operator
 move auv ce cd
 2
-372 0
-515 1
+349 0
+517 1
 1
-0 514 18 17
+0 516 18 17
 1
 end_operator
 begin_operator
 move auv ce cf
 2
-371 0
-515 1
+348 0
+517 1
 1
-0 514 18 19
+0 516 18 19
 1
 end_operator
 begin_operator
 move auv ce dd
 2
-370 0
-515 1
+347 0
+517 1
 1
-0 514 18 24
+0 516 18 24
 1
 end_operator
 begin_operator
 move auv ce de
 2
-369 0
-515 1
+346 0
+517 1
 1
-0 514 18 25
+0 516 18 25
 1
 end_operator
 begin_operator
 move auv ce df
 2
-368 0
-515 1
+345 0
+517 1
 1
-0 514 18 26
+0 516 18 26
 1
 end_operator
 begin_operator
 move auv cf be
 2
-367 0
-515 1
+344 0
+517 1
 1
-0 514 19 11
+0 516 19 11
 1
 end_operator
 begin_operator
 move auv cf bf
 2
-366 0
-515 1
+343 0
+517 1
 1
-0 514 19 12
+0 516 19 12
 1
 end_operator
 begin_operator
 move auv cf bg
 2
-365 0
-515 1
+342 0
+517 1
 1
-0 514 19 13
+0 516 19 13
 1
 end_operator
 begin_operator
 move auv cf ce
 2
-364 0
-515 1
+341 0
+517 1
 1
-0 514 19 18
+0 516 19 18
 1
 end_operator
 begin_operator
 move auv cf cg
 2
-363 0
-515 1
+340 0
+517 1
 1
-0 514 19 20
+0 516 19 20
 1
 end_operator
 begin_operator
 move auv cf de
 2
-362 0
-515 1
+339 0
+517 1
 1
-0 514 19 25
+0 516 19 25
 1
 end_operator
 begin_operator
 move auv cf df
 2
-361 0
-515 1
+338 0
+517 1
 1
-0 514 19 26
+0 516 19 26
 1
 end_operator
 begin_operator
 move auv cf dg
 2
-360 0
-515 1
+337 0
+517 1
 1
-0 514 19 27
+0 516 19 27
 1
 end_operator
 begin_operator
 move auv cg bf
 2
-359 0
-515 1
+336 0
+517 1
 1
-0 514 20 12
+0 516 20 12
 1
 end_operator
 begin_operator
 move auv cg bg
 2
-358 0
-515 1
+335 0
+517 1
 1
-0 514 20 13
+0 516 20 13
 1
 end_operator
 begin_operator
 move auv cg cf
 2
-357 0
-515 1
+334 0
+517 1
 1
-0 514 20 19
+0 516 20 19
 1
 end_operator
 begin_operator
 move auv cg df
 2
-356 0
-515 1
+333 0
+517 1
 1
-0 514 20 26
+0 516 20 26
 1
 end_operator
 begin_operator
 move auv cg dg
 2
-355 0
-515 1
+332 0
+517 1
 1
-0 514 20 27
+0 516 20 27
 1
 end_operator
 begin_operator
 move auv da ca
 2
-354 0
-515 1
+331 0
+517 1
 1
-0 514 21 14
+0 516 21 14
 1
 end_operator
 begin_operator
 move auv da cb
 2
-353 0
-515 1
+330 0
+517 1
 1
-0 514 21 15
+0 516 21 15
 1
 end_operator
 begin_operator
 move auv da db
 2
-352 0
-515 1
+329 0
+517 1
 1
-0 514 21 22
+0 516 21 22
 1
 end_operator
 begin_operator
 move auv da ea
 2
-351 0
-515 1
+328 0
+517 1
 1
-0 514 21 28
+0 516 21 28
 1
 end_operator
 begin_operator
 move auv da eb
 2
-350 0
-515 1
+327 0
+517 1
 1
-0 514 21 29
+0 516 21 29
 1
 end_operator
 begin_operator
 move auv db ca
 2
-349 0
-515 1
+326 0
+517 1
 1
-0 514 22 14
+0 516 22 14
 1
 end_operator
 begin_operator
 move auv db cb
 2
-348 0
-515 1
+325 0
+517 1
 1
-0 514 22 15
+0 516 22 15
 1
 end_operator
 begin_operator
 move auv db cc
 2
-347 0
-515 1
+324 0
+517 1
 1
-0 514 22 16
+0 516 22 16
 1
 end_operator
 begin_operator
 move auv db da
 2
-346 0
-515 1
+323 0
+517 1
 1
-0 514 22 21
+0 516 22 21
 1
 end_operator
 begin_operator
 move auv db dc
 2
-345 0
-515 1
+322 0
+517 1
 1
-0 514 22 23
+0 516 22 23
 1
 end_operator
 begin_operator
 move auv db ea
 2
-344 0
-515 1
+321 0
+517 1
 1
-0 514 22 28
+0 516 22 28
 1
 end_operator
 begin_operator
 move auv db eb
 2
-343 0
-515 1
+320 0
+517 1
 1
-0 514 22 29
+0 516 22 29
 1
 end_operator
 begin_operator
 move auv db ec
 2
-342 0
-515 1
+319 0
+517 1
 1
-0 514 22 30
+0 516 22 30
 1
 end_operator
 begin_operator
 move auv dc cb
 2
-341 0
-515 1
+318 0
+517 1
 1
-0 514 23 15
+0 516 23 15
 1
 end_operator
 begin_operator
 move auv dc cc
 2
-340 0
-515 1
+317 0
+517 1
 1
-0 514 23 16
+0 516 23 16
 1
 end_operator
 begin_operator
 move auv dc cd
 2
-339 0
-515 1
+316 0
+517 1
 1
-0 514 23 17
+0 516 23 17
 1
 end_operator
 begin_operator
 move auv dc db
 2
-338 0
-515 1
+315 0
+517 1
 1
-0 514 23 22
+0 516 23 22
 1
 end_operator
 begin_operator
 move auv dc dd
 2
-337 0
-515 1
+314 0
+517 1
 1
-0 514 23 24
+0 516 23 24
 1
 end_operator
 begin_operator
 move auv dc eb
 2
-336 0
-515 1
+313 0
+517 1
 1
-0 514 23 29
+0 516 23 29
 1
 end_operator
 begin_operator
 move auv dc ec
 2
-335 0
-515 1
+312 0
+517 1
 1
-0 514 23 30
+0 516 23 30
 1
 end_operator
 begin_operator
 move auv dc ed
 2
-334 0
-515 1
+311 0
+517 1
 1
-0 514 23 31
+0 516 23 31
 1
 end_operator
 begin_operator
 move auv dd cc
 2
-333 0
-515 1
+310 0
+517 1
 1
-0 514 24 16
+0 516 24 16
 1
 end_operator
 begin_operator
 move auv dd cd
 2
-332 0
-515 1
+309 0
+517 1
 1
-0 514 24 17
+0 516 24 17
 1
 end_operator
 begin_operator
 move auv dd ce
 2
-331 0
-515 1
+308 0
+517 1
 1
-0 514 24 18
+0 516 24 18
 1
 end_operator
 begin_operator
 move auv dd dc
 2
-330 0
-515 1
+307 0
+517 1
 1
-0 514 24 23
+0 516 24 23
 1
 end_operator
 begin_operator
 move auv dd de
 2
-329 0
-515 1
+306 0
+517 1
 1
-0 514 24 25
+0 516 24 25
 1
 end_operator
 begin_operator
 move auv dd ec
 2
-328 0
-515 1
+305 0
+517 1
 1
-0 514 24 30
+0 516 24 30
 1
 end_operator
 begin_operator
 move auv dd ed
 2
-327 0
-515 1
+304 0
+517 1
 1
-0 514 24 31
+0 516 24 31
 1
 end_operator
 begin_operator
 move auv dd ee
 2
-326 0
-515 1
+303 0
+517 1
 1
-0 514 24 32
+0 516 24 32
 1
 end_operator
 begin_operator
 move auv de cd
 2
-325 0
-515 1
+302 0
+517 1
 1
-0 514 25 17
+0 516 25 17
 1
 end_operator
 begin_operator
 move auv de ce
 2
-324 0
-515 1
+301 0
+517 1
 1
-0 514 25 18
+0 516 25 18
 1
 end_operator
 begin_operator
 move auv de cf
 2
-323 0
-515 1
+300 0
+517 1
 1
-0 514 25 19
+0 516 25 19
 1
 end_operator
 begin_operator
 move auv de dd
 2
-322 0
-515 1
+299 0
+517 1
 1
-0 514 25 24
+0 516 25 24
 1
 end_operator
 begin_operator
 move auv de df
 2
-321 0
-515 1
+298 0
+517 1
 1
-0 514 25 26
+0 516 25 26
 1
 end_operator
 begin_operator
 move auv de ed
 2
-320 0
-515 1
+297 0
+517 1
 1
-0 514 25 31
+0 516 25 31
 1
 end_operator
 begin_operator
 move auv de ee
 2
-319 0
-515 1
+296 0
+517 1
 1
-0 514 25 32
+0 516 25 32
 1
 end_operator
 begin_operator
 move auv de ef
 2
-318 0
-515 1
+295 0
+517 1
 1
-0 514 25 33
+0 516 25 33
 1
 end_operator
 begin_operator
 move auv df ce
 2
-317 0
-515 1
+294 0
+517 1
 1
-0 514 26 18
+0 516 26 18
 1
 end_operator
 begin_operator
 move auv df cf
 2
-316 0
-515 1
+293 0
+517 1
 1
-0 514 26 19
+0 516 26 19
 1
 end_operator
 begin_operator
 move auv df cg
 2
-315 0
-515 1
+292 0
+517 1
 1
-0 514 26 20
+0 516 26 20
 1
 end_operator
 begin_operator
 move auv df de
 2
-314 0
-515 1
+291 0
+517 1
 1
-0 514 26 25
+0 516 26 25
 1
 end_operator
 begin_operator
 move auv df dg
 2
-313 0
-515 1
+290 0
+517 1
 1
-0 514 26 27
+0 516 26 27
 1
 end_operator
 begin_operator
 move auv df ee
 2
-312 0
-515 1
+289 0
+517 1
 1
-0 514 26 32
+0 516 26 32
 1
 end_operator
 begin_operator
 move auv df ef
 2
-311 0
-515 1
+288 0
+517 1
 1
-0 514 26 33
+0 516 26 33
 1
 end_operator
 begin_operator
 move auv df eg
 2
-310 0
-515 1
+287 0
+517 1
 1
-0 514 26 34
+0 516 26 34
 1
 end_operator
 begin_operator
 move auv dg cf
 2
-309 0
-515 1
+286 0
+517 1
 1
-0 514 27 19
+0 516 27 19
 1
 end_operator
 begin_operator
 move auv dg cg
 2
-308 0
-515 1
+285 0
+517 1
 1
-0 514 27 20
+0 516 27 20
 1
 end_operator
 begin_operator
 move auv dg df
 2
-307 0
-515 1
+284 0
+517 1
 1
-0 514 27 26
+0 516 27 26
 1
 end_operator
 begin_operator
 move auv dg ef
 2
-306 0
-515 1
+283 0
+517 1
 1
-0 514 27 33
+0 516 27 33
 1
 end_operator
 begin_operator
 move auv dg eg
 2
-305 0
-515 1
+282 0
+517 1
 1
-0 514 27 34
+0 516 27 34
 1
 end_operator
 begin_operator
 move auv ea da
 2
-304 0
-515 1
+281 0
+517 1
 1
-0 514 28 21
+0 516 28 21
 1
 end_operator
 begin_operator
 move auv ea db
 2
-303 0
-515 1
+280 0
+517 1
 1
-0 514 28 22
+0 516 28 22
 1
 end_operator
 begin_operator
 move auv ea eb
 2
-302 0
-515 1
+279 0
+517 1
 1
-0 514 28 29
+0 516 28 29
 1
 end_operator
 begin_operator
 move auv ea fa
 2
-301 0
-515 1
+278 0
+517 1
 1
-0 514 28 35
+0 516 28 35
 1
 end_operator
 begin_operator
 move auv ea fb
 2
-300 0
-515 1
+277 0
+517 1
 1
-0 514 28 36
+0 516 28 36
 1
 end_operator
 begin_operator
 move auv eb da
 2
-299 0
-515 1
+276 0
+517 1
 1
-0 514 29 21
+0 516 29 21
 1
 end_operator
 begin_operator
 move auv eb db
 2
-298 0
-515 1
+275 0
+517 1
 1
-0 514 29 22
+0 516 29 22
 1
 end_operator
 begin_operator
 move auv eb dc
 2
-297 0
-515 1
+274 0
+517 1
 1
-0 514 29 23
+0 516 29 23
 1
 end_operator
 begin_operator
 move auv eb ea
 2
-296 0
-515 1
+273 0
+517 1
 1
-0 514 29 28
+0 516 29 28
 1
 end_operator
 begin_operator
 move auv eb ec
 2
-295 0
-515 1
+272 0
+517 1
 1
-0 514 29 30
+0 516 29 30
 1
 end_operator
 begin_operator
 move auv eb fa
 2
-294 0
-515 1
+271 0
+517 1
 1
-0 514 29 35
+0 516 29 35
 1
 end_operator
 begin_operator
 move auv eb fb
 2
-293 0
-515 1
+270 0
+517 1
 1
-0 514 29 36
+0 516 29 36
 1
 end_operator
 begin_operator
 move auv eb fc
 2
-292 0
-515 1
+269 0
+517 1
 1
-0 514 29 37
+0 516 29 37
 1
 end_operator
 begin_operator
 move auv ec db
 2
-291 0
-515 1
+268 0
+517 1
 1
-0 514 30 22
+0 516 30 22
 1
 end_operator
 begin_operator
 move auv ec dc
 2
-290 0
-515 1
+267 0
+517 1
 1
-0 514 30 23
+0 516 30 23
 1
 end_operator
 begin_operator
 move auv ec dd
 2
-289 0
-515 1
+266 0
+517 1
 1
-0 514 30 24
+0 516 30 24
 1
 end_operator
 begin_operator
 move auv ec eb
 2
-288 0
-515 1
+265 0
+517 1
 1
-0 514 30 29
+0 516 30 29
 1
 end_operator
 begin_operator
 move auv ec ed
 2
-287 0
-515 1
+264 0
+517 1
 1
-0 514 30 31
+0 516 30 31
 1
 end_operator
 begin_operator
 move auv ec fb
 2
-286 0
-515 1
+263 0
+517 1
 1
-0 514 30 36
+0 516 30 36
 1
 end_operator
 begin_operator
 move auv ec fc
 2
-285 0
-515 1
+262 0
+517 1
 1
-0 514 30 37
+0 516 30 37
 1
 end_operator
 begin_operator
 move auv ec fd
 2
-284 0
-515 1
+261 0
+517 1
 1
-0 514 30 38
+0 516 30 38
 1
 end_operator
 begin_operator
 move auv ed dc
 2
-283 0
-515 1
+260 0
+517 1
 1
-0 514 31 23
+0 516 31 23
 1
 end_operator
 begin_operator
 move auv ed dd
 2
-282 0
-515 1
+259 0
+517 1
 1
-0 514 31 24
+0 516 31 24
 1
 end_operator
 begin_operator
 move auv ed de
 2
-281 0
-515 1
+258 0
+517 1
 1
-0 514 31 25
+0 516 31 25
 1
 end_operator
 begin_operator
 move auv ed ec
 2
-280 0
-515 1
+257 0
+517 1
 1
-0 514 31 30
+0 516 31 30
 1
 end_operator
 begin_operator
 move auv ed ee
 2
-279 0
-515 1
+256 0
+517 1
 1
-0 514 31 32
+0 516 31 32
 1
 end_operator
 begin_operator
 move auv ed fc
 2
-278 0
-515 1
+255 0
+517 1
 1
-0 514 31 37
+0 516 31 37
 1
 end_operator
 begin_operator
 move auv ed fd
 2
-277 0
-515 1
+254 0
+517 1
 1
-0 514 31 38
+0 516 31 38
 1
 end_operator
 begin_operator
 move auv ed fe
 2
-276 0
-515 1
+253 0
+517 1
 1
-0 514 31 39
+0 516 31 39
 1
 end_operator
 begin_operator
 move auv ee dd
 2
-275 0
-515 1
+252 0
+517 1
 1
-0 514 32 24
+0 516 32 24
 1
 end_operator
 begin_operator
 move auv ee de
 2
-274 0
-515 1
+251 0
+517 1
 1
-0 514 32 25
+0 516 32 25
 1
 end_operator
 begin_operator
 move auv ee df
 2
-273 0
-515 1
+250 0
+517 1
 1
-0 514 32 26
+0 516 32 26
 1
 end_operator
 begin_operator
 move auv ee ed
 2
-272 0
-515 1
+249 0
+517 1
 1
-0 514 32 31
+0 516 32 31
 1
 end_operator
 begin_operator
 move auv ee ef
 2
-271 0
-515 1
+248 0
+517 1
 1
-0 514 32 33
+0 516 32 33
 1
 end_operator
 begin_operator
 move auv ee fd
 2
-270 0
-515 1
+247 0
+517 1
 1
-0 514 32 38
+0 516 32 38
 1
 end_operator
 begin_operator
 move auv ee fe
 2
-269 0
-515 1
+246 0
+517 1
 1
-0 514 32 39
+0 516 32 39
 1
 end_operator
 begin_operator
 move auv ee ff
 2
-268 0
-515 1
+245 0
+517 1
 1
-0 514 32 40
+0 516 32 40
 1
 end_operator
 begin_operator
 move auv ef de
 2
-267 0
-515 1
+244 0
+517 1
 1
-0 514 33 25
+0 516 33 25
 1
 end_operator
 begin_operator
 move auv ef df
 2
-266 0
-515 1
+243 0
+517 1
 1
-0 514 33 26
+0 516 33 26
 1
 end_operator
 begin_operator
 move auv ef dg
 2
-265 0
-515 1
+242 0
+517 1
 1
-0 514 33 27
+0 516 33 27
 1
 end_operator
 begin_operator
 move auv ef ee
 2
-264 0
-515 1
+241 0
+517 1
 1
-0 514 33 32
+0 516 33 32
 1
 end_operator
 begin_operator
 move auv ef eg
 2
-263 0
-515 1
+240 0
+517 1
 1
-0 514 33 34
+0 516 33 34
 1
 end_operator
 begin_operator
 move auv ef fe
 2
-262 0
-515 1
+239 0
+517 1
 1
-0 514 33 39
+0 516 33 39
 1
 end_operator
 begin_operator
 move auv ef ff
 2
-261 0
-515 1
+238 0
+517 1
 1
-0 514 33 40
+0 516 33 40
 1
 end_operator
 begin_operator
 move auv ef fg
 2
-260 0
-515 1
+237 0
+517 1
 1
-0 514 33 41
+0 516 33 41
 1
 end_operator
 begin_operator
 move auv eg df
 2
-259 0
-515 1
+236 0
+517 1
 1
-0 514 34 26
+0 516 34 26
 1
 end_operator
 begin_operator
 move auv eg dg
 2
-258 0
-515 1
+235 0
+517 1
 1
-0 514 34 27
+0 516 34 27
 1
 end_operator
 begin_operator
 move auv eg ef
 2
-257 0
-515 1
+234 0
+517 1
 1
-0 514 34 33
+0 516 34 33
 1
 end_operator
 begin_operator
 move auv eg ff
 2
-256 0
-515 1
+233 0
+517 1
 1
-0 514 34 40
+0 516 34 40
 1
 end_operator
 begin_operator
 move auv eg fg
 2
-255 0
-515 1
+232 0
+517 1
 1
-0 514 34 41
+0 516 34 41
 1
 end_operator
 begin_operator
 move auv fa ea
 2
-254 0
-515 1
+231 0
+517 1
 1
-0 514 35 28
+0 516 35 28
 1
 end_operator
 begin_operator
 move auv fa eb
 2
-253 0
-515 1
+230 0
+517 1
 1
-0 514 35 29
+0 516 35 29
 1
 end_operator
 begin_operator
 move auv fa fb
 2
-252 0
-515 1
+229 0
+517 1
 1
-0 514 35 36
+0 516 35 36
 1
 end_operator
 begin_operator
 move auv fa ga
 2
-251 0
-515 1
+228 0
+517 1
 1
-0 514 35 42
+0 516 35 42
 1
 end_operator
 begin_operator
 move auv fa gb
 2
-250 0
-515 1
+227 0
+517 1
 1
-0 514 35 43
+0 516 35 43
 1
 end_operator
 begin_operator
 move auv fb ea
 2
-249 0
-515 1
+226 0
+517 1
 1
-0 514 36 28
+0 516 36 28
 1
 end_operator
 begin_operator
 move auv fb eb
 2
-248 0
-515 1
+225 0
+517 1
 1
-0 514 36 29
+0 516 36 29
 1
 end_operator
 begin_operator
 move auv fb ec
 2
-247 0
-515 1
+224 0
+517 1
 1
-0 514 36 30
+0 516 36 30
 1
 end_operator
 begin_operator
 move auv fb fa
 2
-246 0
-515 1
+223 0
+517 1
 1
-0 514 36 35
+0 516 36 35
 1
 end_operator
 begin_operator
 move auv fb fc
 2
-245 0
-515 1
+222 0
+517 1
 1
-0 514 36 37
+0 516 36 37
 1
 end_operator
 begin_operator
 move auv fb ga
 2
-244 0
-515 1
+221 0
+517 1
 1
-0 514 36 42
+0 516 36 42
 1
 end_operator
 begin_operator
 move auv fb gb
 2
-243 0
-515 1
+220 0
+517 1
 1
-0 514 36 43
+0 516 36 43
 1
 end_operator
 begin_operator
 move auv fb gc
 2
-242 0
-515 1
+219 0
+517 1
 1
-0 514 36 44
+0 516 36 44
 1
 end_operator
 begin_operator
 move auv fc eb
 2
-241 0
-515 1
+218 0
+517 1
 1
-0 514 37 29
+0 516 37 29
 1
 end_operator
 begin_operator
 move auv fc ec
 2
-240 0
-515 1
+217 0
+517 1
 1
-0 514 37 30
+0 516 37 30
 1
 end_operator
 begin_operator
 move auv fc ed
 2
-239 0
-515 1
+216 0
+517 1
 1
-0 514 37 31
+0 516 37 31
 1
 end_operator
 begin_operator
 move auv fc fb
 2
-238 0
-515 1
+215 0
+517 1
 1
-0 514 37 36
+0 516 37 36
 1
 end_operator
 begin_operator
 move auv fc fd
 2
-237 0
-515 1
+214 0
+517 1
 1
-0 514 37 38
+0 516 37 38
 1
 end_operator
 begin_operator
 move auv fc gb
 2
-236 0
-515 1
+213 0
+517 1
 1
-0 514 37 43
+0 516 37 43
 1
 end_operator
 begin_operator
 move auv fc gc
 2
-235 0
-515 1
+212 0
+517 1
 1
-0 514 37 44
+0 516 37 44
 1
 end_operator
 begin_operator
 move auv fc gd
 2
-234 0
-515 1
+211 0
+517 1
 1
-0 514 37 45
+0 516 37 45
 1
 end_operator
 begin_operator
 move auv fd ec
 2
-233 0
-515 1
+210 0
+517 1
 1
-0 514 38 30
+0 516 38 30
 1
 end_operator
 begin_operator
 move auv fd ed
 2
-232 0
-515 1
+209 0
+517 1
 1
-0 514 38 31
+0 516 38 31
 1
 end_operator
 begin_operator
 move auv fd ee
 2
-231 0
-515 1
+208 0
+517 1
 1
-0 514 38 32
+0 516 38 32
 1
 end_operator
 begin_operator
 move auv fd fc
 2
-230 0
-515 1
+207 0
+517 1
 1
-0 514 38 37
+0 516 38 37
 1
 end_operator
 begin_operator
 move auv fd fe
 2
-229 0
-515 1
+206 0
+517 1
 1
-0 514 38 39
+0 516 38 39
 1
 end_operator
 begin_operator
 move auv fd gc
 2
-228 0
-515 1
+205 0
+517 1
 1
-0 514 38 44
+0 516 38 44
 1
 end_operator
 begin_operator
 move auv fd gd
 2
-227 0
-515 1
+204 0
+517 1
 1
-0 514 38 45
+0 516 38 45
 1
 end_operator
 begin_operator
 move auv fd ge
 2
-226 0
-515 1
+203 0
+517 1
 1
-0 514 38 46
+0 516 38 46
 1
 end_operator
 begin_operator
 move auv fe ed
 2
-225 0
-515 1
+202 0
+517 1
 1
-0 514 39 31
+0 516 39 31
 1
 end_operator
 begin_operator
 move auv fe ee
 2
-224 0
-515 1
+201 0
+517 1
 1
-0 514 39 32
+0 516 39 32
 1
 end_operator
 begin_operator
 move auv fe ef
 2
-223 0
-515 1
+200 0
+517 1
 1
-0 514 39 33
+0 516 39 33
 1
 end_operator
 begin_operator
 move auv fe fd
 2
-222 0
-515 1
+199 0
+517 1
 1
-0 514 39 38
+0 516 39 38
 1
 end_operator
 begin_operator
 move auv fe ff
 2
-221 0
-515 1
+198 0
+517 1
 1
-0 514 39 40
+0 516 39 40
 1
 end_operator
 begin_operator
 move auv fe gd
 2
-220 0
-515 1
+197 0
+517 1
 1
-0 514 39 45
+0 516 39 45
 1
 end_operator
 begin_operator
 move auv fe ge
 2
-219 0
-515 1
+196 0
+517 1
 1
-0 514 39 46
+0 516 39 46
 1
 end_operator
 begin_operator
 move auv fe gf
 2
-218 0
-515 1
+195 0
+517 1
 1
-0 514 39 47
+0 516 39 47
 1
 end_operator
 begin_operator
 move auv ff ee
 2
-217 0
-515 1
+194 0
+517 1
 1
-0 514 40 32
+0 516 40 32
 1
 end_operator
 begin_operator
 move auv ff ef
 2
-216 0
-515 1
+193 0
+517 1
 1
-0 514 40 33
+0 516 40 33
 1
 end_operator
 begin_operator
 move auv ff eg
 2
-215 0
-515 1
+192 0
+517 1
 1
-0 514 40 34
+0 516 40 34
 1
 end_operator
 begin_operator
 move auv ff fe
 2
-214 0
-515 1
+191 0
+517 1
 1
-0 514 40 39
+0 516 40 39
 1
 end_operator
 begin_operator
 move auv ff fg
 2
-213 0
-515 1
+190 0
+517 1
 1
-0 514 40 41
+0 516 40 41
 1
 end_operator
 begin_operator
 move auv ff ge
 2
-212 0
-515 1
+189 0
+517 1
 1
-0 514 40 46
+0 516 40 46
 1
 end_operator
 begin_operator
 move auv ff gf
 2
-211 0
-515 1
+188 0
+517 1
 1
-0 514 40 47
+0 516 40 47
 1
 end_operator
 begin_operator
 move auv ff gg
 2
-210 0
-515 1
+187 0
+517 1
 1
-0 514 40 48
+0 516 40 48
 1
 end_operator
 begin_operator
 move auv fg ef
 2
-209 0
-515 1
+186 0
+517 1
 1
-0 514 41 33
+0 516 41 33
 1
 end_operator
 begin_operator
 move auv fg eg
 2
-208 0
-515 1
+185 0
+517 1
 1
-0 514 41 34
+0 516 41 34
 1
 end_operator
 begin_operator
 move auv fg ff
 2
-207 0
-515 1
+184 0
+517 1
 1
-0 514 41 40
+0 516 41 40
 1
 end_operator
 begin_operator
 move auv fg gf
 2
-206 0
-515 1
+183 0
+517 1
 1
-0 514 41 47
+0 516 41 47
 1
 end_operator
 begin_operator
 move auv fg gg
 2
-205 0
-515 1
+182 0
+517 1
 1
-0 514 41 48
+0 516 41 48
 1
 end_operator
 begin_operator
 move auv ga fa
 2
-204 0
-515 1
+181 0
+517 1
 1
-0 514 42 35
+0 516 42 35
 1
 end_operator
 begin_operator
 move auv ga fb
 2
-203 0
-515 1
+180 0
+517 1
 1
-0 514 42 36
+0 516 42 36
 1
 end_operator
 begin_operator
 move auv ga gb
 2
-202 0
-515 1
+179 0
+517 1
 1
-0 514 42 43
+0 516 42 43
 1
 end_operator
 begin_operator
 move auv gb fa
 2
-201 0
-515 1
+178 0
+517 1
 1
-0 514 43 35
+0 516 43 35
 1
 end_operator
 begin_operator
 move auv gb fb
 2
-200 0
-515 1
+177 0
+517 1
 1
-0 514 43 36
+0 516 43 36
 1
 end_operator
 begin_operator
 move auv gb fc
 2
-199 0
-515 1
+176 0
+517 1
 1
-0 514 43 37
+0 516 43 37
 1
 end_operator
 begin_operator
 move auv gb ga
 2
-198 0
-515 1
+175 0
+517 1
 1
-0 514 43 42
+0 516 43 42
 1
 end_operator
 begin_operator
 move auv gb gc
 2
-197 0
-515 1
+174 0
+517 1
 1
-0 514 43 44
+0 516 43 44
 1
 end_operator
 begin_operator
 move auv gc fb
 2
-196 0
-515 1
+173 0
+517 1
 1
-0 514 44 36
+0 516 44 36
 1
 end_operator
 begin_operator
 move auv gc fc
 2
-195 0
-515 1
+172 0
+517 1
 1
-0 514 44 37
+0 516 44 37
 1
 end_operator
 begin_operator
 move auv gc fd
 2
-194 0
-515 1
+171 0
+517 1
 1
-0 514 44 38
+0 516 44 38
 1
 end_operator
 begin_operator
 move auv gc gb
 2
-193 0
-515 1
+170 0
+517 1
 1
-0 514 44 43
+0 516 44 43
 1
 end_operator
 begin_operator
 move auv gc gd
 2
-192 0
-515 1
+169 0
+517 1
 1
-0 514 44 45
+0 516 44 45
 1
 end_operator
 begin_operator
 move auv gd fc
 2
-191 0
-515 1
+168 0
+517 1
 1
-0 514 45 37
+0 516 45 37
 1
 end_operator
 begin_operator
 move auv gd fd
 2
-190 0
-515 1
+167 0
+517 1
 1
-0 514 45 38
+0 516 45 38
 1
 end_operator
 begin_operator
 move auv gd fe
 2
-189 0
-515 1
+166 0
+517 1
 1
-0 514 45 39
+0 516 45 39
 1
 end_operator
 begin_operator
 move auv gd gc
 2
-188 0
-515 1
+165 0
+517 1
 1
-0 514 45 44
+0 516 45 44
 1
 end_operator
 begin_operator
 move auv gd ge
 2
-187 0
-515 1
+164 0
+517 1
 1
-0 514 45 46
+0 516 45 46
 1
 end_operator
 begin_operator
 move auv ge fd
 2
-186 0
-515 1
+163 0
+517 1
 1
-0 514 46 38
+0 516 46 38
 1
 end_operator
 begin_operator
 move auv ge fe
 2
-185 0
-515 1
+162 0
+517 1
 1
-0 514 46 39
+0 516 46 39
 1
 end_operator
 begin_operator
 move auv ge ff
 2
-184 0
-515 1
+161 0
+517 1
 1
-0 514 46 40
+0 516 46 40
 1
 end_operator
 begin_operator
 move auv ge gd
 2
-183 0
-515 1
+160 0
+517 1
 1
-0 514 46 45
+0 516 46 45
 1
 end_operator
 begin_operator
 move auv ge gf
 2
-182 0
-515 1
+159 0
+517 1
 1
-0 514 46 47
+0 516 46 47
 1
 end_operator
 begin_operator
 move auv gf fe
 2
-181 0
-515 1
+158 0
+517 1
 1
-0 514 47 39
+0 516 47 39
 1
 end_operator
 begin_operator
 move auv gf ff
 2
-180 0
-515 1
+157 0
+517 1
 1
-0 514 47 40
+0 516 47 40
 1
 end_operator
 begin_operator
 move auv gf fg
 2
-179 0
-515 1
+156 0
+517 1
 1
-0 514 47 41
+0 516 47 41
 1
 end_operator
 begin_operator
 move auv gf ge
 2
-178 0
-515 1
+155 0
+517 1
 1
-0 514 47 46
+0 516 47 46
 1
 end_operator
 begin_operator
 move auv gf gg
 2
-177 0
-515 1
+154 0
+517 1
 1
-0 514 47 48
+0 516 47 48
 1
 end_operator
 begin_operator
 move auv gg ff
 2
-176 0
-515 1
+153 0
+517 1
 1
-0 514 48 40
+0 516 48 40
 1
 end_operator
 begin_operator
 move auv gg fg
 2
-175 0
-515 1
+152 0
+517 1
 1
-0 514 48 41
+0 516 48 41
 1
 end_operator
 begin_operator
 move auv gg gf
 2
-174 0
-515 1
+151 0
+517 1
 1
-0 514 48 47
+0 516 48 47
 1
 end_operator
 begin_operator
 takepicture auv cc
 2
-515 1
-514 16
+517 1
+516 16
 1
-0 557 -1 0
+0 569 -1 0
 1
 end_operator
 begin_operator
 takepicture auv cd
 2
-515 1
-514 17
+517 1
+516 17
 1
-0 552 -1 0
+0 564 -1 0
 1
 end_operator
 begin_operator
 takepicture auv cg
 2
-515 1
-514 20
+517 1
+516 20
 1
-0 549 -1 0
+0 557 -1 0
 1
 end_operator
 begin_operator
 takepicture auv de
 2
-515 1
-514 25
+517 1
+516 25
 1
-0 544 -1 0
+0 551 -1 0
 1
 end_operator
 begin_operator
 takepicture auv df
 2
-515 1
-514 26
+517 1
+516 26
 1
-0 539 -1 0
+0 546 -1 0
 1
 end_operator
 begin_operator
 takepicture auv ee
 2
-515 1
-514 32
+517 1
+516 32
 1
-0 534 -1 0
+0 541 -1 0
 1
 end_operator
 begin_operator
 takepicture auv fc
 2
-515 1
-514 37
+517 1
+516 37
 1
-0 529 -1 0
+0 536 -1 0
 1
 end_operator
 begin_operator
 takepicture auv fd
 2
-515 1
-514 38
+517 1
+516 38
 1
-0 524 -1 0
+0 530 -1 0
 1
 end_operator
 begin_operator
 takepicture auv gb
 2
-515 1
-514 43
+517 1
+516 43
 1
-0 521 -1 0
+0 527 -1 0
 1
 end_operator
 begin_operator
 takepicture auv gc
 2
-515 1
-514 44
+517 1
+516 44
 1
-0 516 -1 0
+0 518 -1 0
 1
 end_operator
 744
-begin_rule
-0
-485 1 0
-end_rule
-begin_rule
-0
-484 1 0
-end_rule
-begin_rule
-0
-483 1 0
-end_rule
-begin_rule
-0
-482 1 0
-end_rule
-begin_rule
-0
-481 1 0
-end_rule
-begin_rule
-0
-480 1 0
-end_rule
-begin_rule
-0
-479 1 0
-end_rule
-begin_rule
-0
-478 1 0
-end_rule
-begin_rule
-0
-477 1 0
-end_rule
-begin_rule
-0
-476 1 0
-end_rule
-begin_rule
-0
-475 1 0
-end_rule
-begin_rule
-0
-474 1 0
-end_rule
-begin_rule
-0
-473 1 0
-end_rule
-begin_rule
-0
-472 1 0
-end_rule
-begin_rule
-0
-471 1 0
-end_rule
-begin_rule
-0
-470 1 0
-end_rule
-begin_rule
-0
-469 1 0
-end_rule
-begin_rule
-0
-468 1 0
-end_rule
-begin_rule
-0
-467 1 0
-end_rule
-begin_rule
-0
-466 1 0
-end_rule
-begin_rule
-0
-465 1 0
-end_rule
-begin_rule
-0
-464 1 0
-end_rule
-begin_rule
-0
-463 1 0
-end_rule
 begin_rule
 0
 462 1 0
@@ -9699,6 +9607,98 @@ begin_rule
 end_rule
 begin_rule
 0
+113 1 0
+end_rule
+begin_rule
+0
+112 1 0
+end_rule
+begin_rule
+0
+111 1 0
+end_rule
+begin_rule
+0
+110 1 0
+end_rule
+begin_rule
+0
+109 1 0
+end_rule
+begin_rule
+0
+108 1 0
+end_rule
+begin_rule
+0
+107 1 0
+end_rule
+begin_rule
+0
+106 1 0
+end_rule
+begin_rule
+0
+105 1 0
+end_rule
+begin_rule
+0
+104 1 0
+end_rule
+begin_rule
+0
+103 1 0
+end_rule
+begin_rule
+0
+102 1 0
+end_rule
+begin_rule
+0
+101 1 0
+end_rule
+begin_rule
+0
+100 1 0
+end_rule
+begin_rule
+0
+99 1 0
+end_rule
+begin_rule
+0
+98 1 0
+end_rule
+begin_rule
+0
+97 1 0
+end_rule
+begin_rule
+0
+96 1 0
+end_rule
+begin_rule
+0
+95 1 0
+end_rule
+begin_rule
+0
+94 1 0
+end_rule
+begin_rule
+0
+93 1 0
+end_rule
+begin_rule
+0
+92 1 0
+end_rule
+begin_rule
+0
+91 1 0
+end_rule
+begin_rule
+0
 77 1 0
 end_rule
 begin_rule
@@ -9923,78 +9923,23 @@ begin_rule
 end_rule
 begin_rule
 1
-646 0
-647 1 0
+642 0
+643 1 0
 end_rule
 begin_rule
 1
-637 0
-638 1 0
+629 0
+630 1 0
 end_rule
 begin_rule
 1
-636 0
-647 1 0
+616 0
+617 1 0
 end_rule
 begin_rule
 1
-635 0
-638 1 0
-end_rule
-begin_rule
-1
-634 0
-638 1 0
-end_rule
-begin_rule
-1
-625 0
-626 1 0
-end_rule
-begin_rule
-1
-624 0
-626 1 0
-end_rule
-begin_rule
-1
-615 0
-616 1 0
-end_rule
-begin_rule
-1
-614 0
-616 1 0
-end_rule
-begin_rule
-1
-605 0
-606 1 0
-end_rule
-begin_rule
-1
-600 0
-601 1 0
-end_rule
-begin_rule
-1
-595 0
-596 1 0
-end_rule
-begin_rule
-1
-590 0
-591 1 0
-end_rule
-begin_rule
-1
-585 0
-586 1 0
-end_rule
-begin_rule
-1
-580 0
-581 1 0
+611 0
+612 1 0
 end_rule
 begin_rule
 1
@@ -10003,23 +9948,103 @@ begin_rule
 end_rule
 begin_rule
 1
-597 0
-598 1 0
+601 0
+612 1 0
 end_rule
 begin_rule
 1
-592 0
-593 1 0
+600 0
+603 1 0
 end_rule
 begin_rule
 1
-587 0
-588 1 0
+599 0
+603 1 0
 end_rule
 begin_rule
 1
-582 0
-583 1 0
+590 0
+591 1 0
+end_rule
+begin_rule
+1
+589 0
+591 1 0
+end_rule
+begin_rule
+1
+584 0
+585 1 0
+end_rule
+begin_rule
+1
+583 0
+585 1 0
+end_rule
+begin_rule
+1
+578 0
+579 1 0
+end_rule
+begin_rule
+1
+485 0
+486 1 0
+end_rule
+begin_rule
+1
+482 0
+483 1 0
+end_rule
+begin_rule
+1
+479 0
+480 1 0
+end_rule
+begin_rule
+1
+476 0
+477 1 0
+end_rule
+begin_rule
+1
+473 0
+474 1 0
+end_rule
+begin_rule
+1
+470 0
+471 1 0
+end_rule
+begin_rule
+1
+467 0
+468 1 0
+end_rule
+begin_rule
+1
+648 0
+649 1 0
+end_rule
+begin_rule
+1
+465 0
+466 1 0
+end_rule
+begin_rule
+1
+635 0
+636 1 0
+end_rule
+begin_rule
+1
+463 0
+464 1 0
+end_rule
+begin_rule
+1
+622 0
+623 1 0
 end_rule
 begin_rule
 1
@@ -10028,213 +10053,78 @@ begin_rule
 end_rule
 begin_rule
 1
-642 0
-643 1 0
+607 0
+608 1 0
 end_rule
 begin_rule
 1
-620 0
-621 1 0
+638 0
+639 1 0
 end_rule
 begin_rule
 1
-630 0
-631 1 0
+595 0
+596 1 0
 end_rule
 begin_rule
 1
-610 0
-611 1 0
+625 0
+626 1 0
 end_rule
 begin_rule
 1
-604 0
+650 0
 652 1 0
 end_rule
 begin_rule
 1
-599 0
-643 1 0
+556 0
+608 1 0
 end_rule
 begin_rule
 1
-594 0
-621 1 0
+637 0
+639 1 0
 end_rule
 begin_rule
 1
-589 0
-631 1 0
+535 0
+596 1 0
 end_rule
 begin_rule
 1
-584 0
-611 1 0
+624 0
+626 1 0
 end_rule
 begin_rule
 1
-576 0
-577 1 0
+574 0
+575 1 0
 end_rule
 begin_rule
 1
-572 0
-573 1 0
+560 0
+561 1 0
 end_rule
 begin_rule
 1
-568 0
-569 1 0
+523 0
+524 1 0
 end_rule
 begin_rule
 1
-566 0
-567 1 0
+644 0
+645 1 0
 end_rule
 begin_rule
 1
-564 0
-565 1 0
+631 0
+632 1 0
 end_rule
 begin_rule
 1
-562 0
-563 1 0
-end_rule
-begin_rule
-1
-173 1
-655 1 0
-end_rule
-begin_rule
-1
-172 1
-655 1 0
-end_rule
-begin_rule
-1
-171 1
-655 1 0
-end_rule
-begin_rule
-1
-170 1
-655 1 0
-end_rule
-begin_rule
-1
-169 1
-655 1 0
-end_rule
-begin_rule
-1
-168 1
-655 1 0
-end_rule
-begin_rule
-1
-167 1
-655 1 0
-end_rule
-begin_rule
-1
-166 1
-655 1 0
-end_rule
-begin_rule
-1
-165 1
-655 1 0
-end_rule
-begin_rule
-1
-164 1
-655 1 0
-end_rule
-begin_rule
-1
-163 1
-655 1 0
-end_rule
-begin_rule
-1
-162 1
-655 1 0
-end_rule
-begin_rule
-1
-161 1
-655 1 0
-end_rule
-begin_rule
-1
-160 1
-655 1 0
-end_rule
-begin_rule
-1
-159 1
-655 1 0
-end_rule
-begin_rule
-1
-158 1
-655 1 0
-end_rule
-begin_rule
-1
-157 1
-655 1 0
-end_rule
-begin_rule
-1
-579 1
-655 1 0
-end_rule
-begin_rule
-1
-654 1
-655 1 0
-end_rule
-begin_rule
-1
-156 1
-655 1 0
-end_rule
-begin_rule
-1
-155 1
-655 1 0
-end_rule
-begin_rule
-1
-575 1
-655 1 0
-end_rule
-begin_rule
-1
-154 1
-655 1 0
-end_rule
-begin_rule
-1
-153 1
-655 1 0
-end_rule
-begin_rule
-1
-152 1
-655 1 0
-end_rule
-begin_rule
-1
-151 1
-655 1 0
-end_rule
-begin_rule
-1
-645 1
-655 1 0
+618 0
+619 1 0
 end_rule
 begin_rule
 1
@@ -10293,16 +10183,6 @@ begin_rule
 end_rule
 begin_rule
 1
-623 1
-655 1 0
-end_rule
-begin_rule
-1
-633 1
-655 1 0
-end_rule
-begin_rule
-1
 139 1
 655 1 0
 end_rule
@@ -10323,16 +10203,6 @@ begin_rule
 end_rule
 begin_rule
 1
-613 1
-655 1 0
-end_rule
-begin_rule
-1
-571 1
-655 1 0
-end_rule
-begin_rule
-1
 135 1
 655 1 0
 end_rule
@@ -10343,12 +10213,27 @@ begin_rule
 end_rule
 begin_rule
 1
+577 1
+655 1 0
+end_rule
+begin_rule
+1
+654 1
+655 1 0
+end_rule
+begin_rule
+1
 133 1
 655 1 0
 end_rule
 begin_rule
 1
 132 1
+655 1 0
+end_rule
+begin_rule
+1
+563 1
 655 1 0
 end_rule
 begin_rule
@@ -10369,6 +10254,11 @@ end_rule
 begin_rule
 1
 128 1
+655 1 0
+end_rule
+begin_rule
+1
+610 1
 655 1 0
 end_rule
 begin_rule
@@ -10428,6 +10318,16 @@ begin_rule
 end_rule
 begin_rule
 1
+641 1
+655 1 0
+end_rule
+begin_rule
+1
+598 1
+655 1 0
+end_rule
+begin_rule
+1
 116 1
 655 1 0
 end_rule
@@ -10443,188 +10343,173 @@ begin_rule
 end_rule
 begin_rule
 1
+113 1
+655 1 0
+end_rule
+begin_rule
+1
+628 1
+655 1 0
+end_rule
+begin_rule
+1
+526 1
+655 1 0
+end_rule
+begin_rule
+1
+112 1
+655 1 0
+end_rule
+begin_rule
+1
+111 1
+655 1 0
+end_rule
+begin_rule
+1
+110 1
+655 1 0
+end_rule
+begin_rule
+1
+109 1
+655 1 0
+end_rule
+begin_rule
+1
+108 1
+655 1 0
+end_rule
+begin_rule
+1
+107 1
+655 1 0
+end_rule
+begin_rule
+1
+106 1
+655 1 0
+end_rule
+begin_rule
+1
+105 1
+655 1 0
+end_rule
+begin_rule
+1
+104 1
+655 1 0
+end_rule
+begin_rule
+1
+103 1
+655 1 0
+end_rule
+begin_rule
+1
+102 1
+655 1 0
+end_rule
+begin_rule
+1
+101 1
+655 1 0
+end_rule
+begin_rule
+1
+100 1
+655 1 0
+end_rule
+begin_rule
+1
+99 1
+655 1 0
+end_rule
+begin_rule
+1
+98 1
+655 1 0
+end_rule
+begin_rule
+1
+97 1
+655 1 0
+end_rule
+begin_rule
+1
+96 1
+655 1 0
+end_rule
+begin_rule
+1
+95 1
+655 1 0
+end_rule
+begin_rule
+1
+94 1
+655 1 0
+end_rule
+begin_rule
+1
+93 1
+655 1 0
+end_rule
+begin_rule
+1
+92 1
+655 1 0
+end_rule
+begin_rule
+1
+91 1
+655 1 0
+end_rule
+begin_rule
+1
+614 0
+615 1 0
+end_rule
+begin_rule
+1
+605 0
+606 1 0
+end_rule
+begin_rule
+1
+587 0
+588 1 0
+end_rule
+begin_rule
+1
+593 0
+594 1 0
+end_rule
+begin_rule
+1
+581 0
+582 1 0
+end_rule
+begin_rule
+1
+570 0
+571 1 0
+end_rule
+begin_rule
+1
+565 0
+566 1 0
+end_rule
+begin_rule
+1
 558 0
 559 1 0
 end_rule
 begin_rule
 1
-553 0
-554 1 0
-end_rule
-begin_rule
-1
-550 0
-551 1 0
-end_rule
-begin_rule
-1
-545 0
-546 1 0
-end_rule
-begin_rule
-1
-540 0
-541 1 0
-end_rule
-begin_rule
-1
-535 0
-536 1 0
-end_rule
-begin_rule
-1
-530 0
-531 1 0
-end_rule
-begin_rule
-1
-525 0
-526 1 0
-end_rule
-begin_rule
-1
-522 0
-523 1 0
-end_rule
-begin_rule
-1
-517 0
-518 1 0
-end_rule
-begin_rule
-1
-487 0
-488 1 0
-end_rule
-begin_rule
-1
-491 0
-492 1 0
-end_rule
-begin_rule
-1
-495 0
-496 1 0
-end_rule
-begin_rule
-1
-499 0
-500 1 0
-end_rule
-begin_rule
-1
-503 0
-504 1 0
-end_rule
-begin_rule
-1
-507 0
-508 1 0
-end_rule
-begin_rule
-1
-511 0
-512 1 0
-end_rule
-begin_rule
-1
-649 0
-650 1 0
-end_rule
-begin_rule
-1
-640 0
-641 1 0
-end_rule
-begin_rule
-1
-618 0
-619 1 0
-end_rule
-begin_rule
-1
-628 0
-629 1 0
-end_rule
-begin_rule
-1
-608 0
-609 1 0
-end_rule
-begin_rule
-1
-489 0
-515 1 0
-end_rule
-begin_rule
-1
-493 0
-515 1 0
-end_rule
-begin_rule
-1
-497 0
-515 1 0
-end_rule
-begin_rule
-1
-501 0
-515 1 0
-end_rule
-begin_rule
-1
-505 0
-515 1 0
-end_rule
-begin_rule
-1
-509 0
-515 1 0
-end_rule
-begin_rule
-1
-513 0
-515 1 0
-end_rule
-begin_rule
-1
-111 0
-112 1 0
-end_rule
-begin_rule
-1
-108 0
-109 1 0
-end_rule
-begin_rule
-1
-105 0
-106 1 0
-end_rule
-begin_rule
-1
-103 0
-104 1 0
-end_rule
-begin_rule
-1
-101 0
-102 1 0
-end_rule
-begin_rule
-1
-99 0
-100 1 0
-end_rule
-begin_rule
-1
-560 0
-561 1 0
-end_rule
-begin_rule
-1
-555 0
-556 1 0
+552 0
+553 1 0
 end_rule
 begin_rule
 1
@@ -10643,13 +10528,13 @@ begin_rule
 end_rule
 begin_rule
 1
-532 0
-533 1 0
+531 0
+532 1 0
 end_rule
 begin_rule
 1
-527 0
-528 1 0
+528 0
+529 1 0
 end_rule
 begin_rule
 1
@@ -10658,23 +10543,103 @@ begin_rule
 end_rule
 begin_rule
 1
-96 0
-97 1 0
+492 0
+517 1 0
 end_rule
 begin_rule
 1
-93 0
-94 1 0
+496 0
+517 1 0
 end_rule
 begin_rule
 1
-90 0
-91 1 0
+500 0
+517 1 0
+end_rule
+begin_rule
+1
+504 0
+517 1 0
+end_rule
+begin_rule
+1
+508 0
+517 1 0
+end_rule
+begin_rule
+1
+512 0
+517 1 0
+end_rule
+begin_rule
+1
+488 0
+517 1 0
+end_rule
+begin_rule
+1
+572 0
+573 1 0
+end_rule
+begin_rule
+1
+567 0
+568 1 0
+end_rule
+begin_rule
+1
+554 0
+555 1 0
+end_rule
+begin_rule
+1
+549 0
+550 1 0
+end_rule
+begin_rule
+1
+544 0
+545 1 0
+end_rule
+begin_rule
+1
+539 0
+540 1 0
+end_rule
+begin_rule
+1
+533 0
+534 1 0
+end_rule
+begin_rule
+1
+521 0
+522 1 0
+end_rule
+begin_rule
+1
+646 0
+647 1 0
+end_rule
+begin_rule
+1
+89 0
+90 1 0
+end_rule
+begin_rule
+1
+633 0
+634 1 0
 end_rule
 begin_rule
 1
 87 0
 88 1 0
+end_rule
+begin_rule
+1
+620 0
+621 1 0
 end_rule
 begin_rule
 1
@@ -10693,20 +10658,55 @@ begin_rule
 end_rule
 begin_rule
 1
+490 0
+491 1 0
+end_rule
+begin_rule
+1
+494 0
+495 1 0
+end_rule
+begin_rule
+1
+498 0
+499 1 0
+end_rule
+begin_rule
+1
+502 0
+503 1 0
+end_rule
+begin_rule
+1
+506 0
+507 1 0
+end_rule
+begin_rule
+1
+510 0
+511 1 0
+end_rule
+begin_rule
+1
+514 0
+515 1 0
+end_rule
+begin_rule
+1
 77 0
-103 1 0
+642 1 0
 end_rule
 begin_rule
 2
 77 0
-561 0
-646 1 0
+573 0
+611 1 0
 end_rule
 begin_rule
 2
 76 0
-548 0
-636 1 0
+555 0
+601 1 0
 end_rule
 begin_rule
 1
@@ -10716,20 +10716,20 @@ end_rule
 begin_rule
 2
 75 0
-556 0
-637 1 0
+568 0
+602 1 0
 end_rule
 begin_rule
 2
 74 0
-543 0
-635 1 0
+550 0
+600 1 0
 end_rule
 begin_rule
 2
 73 0
-538 0
-634 1 0
+545 0
+599 1 0
 end_rule
 begin_rule
 1
@@ -10749,42 +10749,42 @@ end_rule
 begin_rule
 2
 69 0
-528 0
-615 1 0
+534 0
+584 1 0
 end_rule
 begin_rule
 1
 68 0
-101 1 0
+629 1 0
 end_rule
 begin_rule
 2
 68 0
-520 0
-614 1 0
+522 0
+583 1 0
 end_rule
 begin_rule
 2
 67 0
-538 0
-625 1 0
+545 0
+590 1 0
 end_rule
 begin_rule
 2
 70 0
-533 0
-624 1 0
+540 0
+589 1 0
 end_rule
 begin_rule
 1
 66 0
-99 1 0
+616 1 0
 end_rule
 begin_rule
 2
 66 0
-520 0
-605 1 0
+522 0
+578 1 0
 end_rule
 begin_rule
 1
@@ -10793,61 +10793,61 @@ begin_rule
 end_rule
 begin_rule
 2
-647 0
+612 0
 21 0
-648 1 0
+613 1 0
 end_rule
 begin_rule
 2
-638 0
+603 0
 32 0
-639 1 0
+604 1 0
 end_rule
 begin_rule
 2
-616 0
+585 0
 20 0
-617 1 0
+586 1 0
 end_rule
 begin_rule
 2
-626 0
+591 0
 30 0
-627 1 0
+592 1 0
 end_rule
 begin_rule
 2
-606 0
+579 0
 19 0
-607 1 0
+580 1 0
 end_rule
 begin_rule
 2
-104 0
+643 0
 21 0
-566 1 0
+644 1 0
 end_rule
 begin_rule
 2
-102 0
+630 0
 20 0
-564 1 0
+631 1 0
 end_rule
 begin_rule
 2
-100 0
+617 0
 19 0
-562 1 0
+618 1 0
 end_rule
 begin_rule
 1
-577 0
-579 1 0
+575 0
+577 1 0
 end_rule
 begin_rule
 1
-577 0
-578 1 0
+575 0
+576 1 0
 end_rule
 begin_rule
 1
@@ -10861,456 +10861,456 @@ begin_rule
 end_rule
 begin_rule
 1
-573 0
-575 1 0
+561 0
+563 1 0
 end_rule
 begin_rule
 1
-573 0
-574 1 0
+561 0
+562 1 0
 end_rule
 begin_rule
 1
-643 0
-645 1 0
+608 0
+610 1 0
 end_rule
 begin_rule
 1
-643 0
-644 1 0
+608 0
+609 1 0
 end_rule
 begin_rule
 1
-621 0
-623 1 0
+639 0
+641 1 0
 end_rule
 begin_rule
 1
-621 0
-622 1 0
+639 0
+640 1 0
 end_rule
 begin_rule
 1
-631 0
-633 1 0
+596 0
+598 1 0
 end_rule
 begin_rule
 1
-631 0
-632 1 0
+596 0
+597 1 0
 end_rule
 begin_rule
 1
-611 0
-613 1 0
+626 0
+628 1 0
 end_rule
 begin_rule
 1
-611 0
-612 1 0
+626 0
+627 1 0
 end_rule
 begin_rule
 1
-569 0
-571 1 0
+524 0
+526 1 0
 end_rule
 begin_rule
 1
-569 0
-570 1 0
+524 0
+525 1 0
 end_rule
 begin_rule
 2
-95 0
-488 0
-489 1 0
+484 0
+491 0
+492 1 0
 end_rule
 begin_rule
 2
-92 0
-492 0
-493 1 0
+481 0
+495 0
+496 1 0
 end_rule
 begin_rule
 2
-89 0
-496 0
-497 1 0
+478 0
+499 0
+500 1 0
 end_rule
 begin_rule
 2
-86 0
-500 0
-501 1 0
+475 0
+503 0
+504 1 0
 end_rule
 begin_rule
 2
-83 0
-504 0
-505 1 0
+472 0
+507 0
+508 1 0
 end_rule
 begin_rule
 2
-80 0
-508 0
-509 1 0
+469 0
+511 0
+512 1 0
 end_rule
 begin_rule
 2
-98 0
-512 0
-513 1 0
+487 0
+515 0
+488 1 0
 end_rule
 begin_rule
 2
 64 0
 27 0
-93 1 0
+482 1 0
 end_rule
 begin_rule
 2
 63 0
 26 0
-90 1 0
+479 1 0
 end_rule
 begin_rule
 2
 62 0
 25 0
-87 1 0
+476 1 0
 end_rule
 begin_rule
 2
 61 0
 17 0
-111 1 0
+84 1 0
 end_rule
 begin_rule
 2
 60 0
-567 0
-600 1 0
+645 0
+646 1 0
 end_rule
 begin_rule
 2
 60 0
-648 0
-649 1 0
+613 0
+614 1 0
 end_rule
 begin_rule
 2
 59 0
 16 0
-108 1 0
+81 1 0
 end_rule
 begin_rule
 2
 58 0
 24 0
-84 1 0
+473 1 0
 end_rule
 begin_rule
 2
 57 0
 23 0
-81 1 0
+470 1 0
 end_rule
 begin_rule
 2
 56 0
 22 0
-78 1 0
+467 1 0
 end_rule
 begin_rule
 2
 55 0
 31 0
-595 1 0
+89 1 0
 end_rule
 begin_rule
 2
 55 0
-639 0
-640 1 0
+604 0
+605 1 0
 end_rule
 begin_rule
 2
 54 0
 28 0
-96 1 0
+485 1 0
 end_rule
 begin_rule
 2
 53 0
-565 0
-590 1 0
+632 0
+633 1 0
 end_rule
 begin_rule
 2
 53 0
-617 0
-618 1 0
+586 0
+587 1 0
 end_rule
 begin_rule
 2
 52 0
 29 0
-585 1 0
+87 1 0
 end_rule
 begin_rule
 2
 52 0
-627 0
-628 1 0
+592 0
+593 1 0
 end_rule
 begin_rule
 2
 51 0
-563 0
-580 1 0
+619 0
+620 1 0
 end_rule
 begin_rule
 2
 51 0
-607 0
-608 1 0
+580 0
+581 1 0
 end_rule
 begin_rule
 2
 50 0
 15 0
-105 1 0
+78 1 0
 end_rule
 begin_rule
 2
-601 0
+647 0
 10 0
-602 1 0
+648 1 0
 end_rule
 begin_rule
 2
-596 0
+90 0
 5 0
-597 1 0
+465 1 0
 end_rule
 begin_rule
 2
-591 0
+634 0
 3 0
-592 1 0
-end_rule
-begin_rule
-2
-586 0
-2 0
-587 1 0
-end_rule
-begin_rule
-2
-581 0
-1 0
-582 1 0
-end_rule
-begin_rule
-2
-94 0
-14 0
-95 1 0
-end_rule
-begin_rule
-2
-91 0
-13 0
-92 1 0
+635 1 0
 end_rule
 begin_rule
 2
 88 0
+2 0
+463 1 0
+end_rule
+begin_rule
+2
+621 0
+1 0
+622 1 0
+end_rule
+begin_rule
+2
+483 0
+14 0
+484 1 0
+end_rule
+begin_rule
+2
+480 0
+13 0
+481 1 0
+end_rule
+begin_rule
+2
+477 0
 12 0
-89 1 0
+478 1 0
+end_rule
+begin_rule
+2
+474 0
+8 0
+475 1 0
+end_rule
+begin_rule
+2
+471 0
+7 0
+472 1 0
+end_rule
+begin_rule
+2
+468 0
+6 0
+469 1 0
+end_rule
+begin_rule
+2
+486 0
+4 0
+487 1 0
+end_rule
+begin_rule
+2
+615 0
+649 0
+651 1 0
+end_rule
+begin_rule
+2
+606 0
+466 0
+607 1 0
+end_rule
+begin_rule
+2
+588 0
+636 0
+638 1 0
+end_rule
+begin_rule
+2
+594 0
+464 0
+595 1 0
+end_rule
+begin_rule
+2
+582 0
+623 0
+625 1 0
 end_rule
 begin_rule
 2
 85 0
-8 0
+11 0
 86 1 0
 end_rule
 begin_rule
 2
 82 0
-7 0
+9 0
 83 1 0
 end_rule
 begin_rule
 2
 79 0
-6 0
+0 0
 80 1 0
 end_rule
 begin_rule
-2
-97 0
-4 0
-98 1 0
-end_rule
-begin_rule
-2
-650 0
-603 0
-651 1 0
-end_rule
-begin_rule
-2
-641 0
-598 0
-642 1 0
-end_rule
-begin_rule
-2
-619 0
-593 0
-620 1 0
-end_rule
-begin_rule
-2
-629 0
-588 0
-630 1 0
-end_rule
-begin_rule
-2
-609 0
-583 0
-610 1 0
-end_rule
-begin_rule
-2
-112 0
-11 0
-113 1 0
-end_rule
-begin_rule
-2
-109 0
-9 0
-110 1 0
-end_rule
-begin_rule
-2
-106 0
-0 0
-107 1 0
-end_rule
-begin_rule
 1
-113 0
-578 1 0
-end_rule
-begin_rule
-2
-113 0
-559 0
+86 0
 576 1 0
 end_rule
 begin_rule
-1
-110 0
+2
+86 0
+571 0
 574 1 0
 end_rule
 begin_rule
-2
-110 0
-551 0
-572 1 0
-end_rule
-begin_rule
 1
-107 0
-570 1 0
+83 0
+562 1 0
 end_rule
 begin_rule
 2
-107 0
-518 0
-568 1 0
-end_rule
-begin_rule
-2
+83 0
 559 0
-48 0
 560 1 0
 end_rule
 begin_rule
+1
+80 0
+525 1 0
+end_rule
+begin_rule
 2
-554 0
+80 0
+520 0
+523 1 0
+end_rule
+begin_rule
+2
+571 0
+48 0
+572 1 0
+end_rule
+begin_rule
+2
+566 0
 47 0
-555 1 0
+567 1 0
 end_rule
 begin_rule
 2
-554 0
-603 0
-604 1 0
+566 0
+649 0
+650 1 0
 end_rule
 begin_rule
 2
-546 0
+553 0
 45 0
-547 1 0
+554 1 0
 end_rule
 begin_rule
 2
-546 0
-598 0
-599 1 0
+553 0
+466 0
+556 1 0
 end_rule
 begin_rule
 2
-541 0
+548 0
 44 0
-542 1 0
+549 1 0
 end_rule
 begin_rule
 2
-536 0
+543 0
 43 0
-537 1 0
+544 1 0
 end_rule
 begin_rule
 2
-531 0
+538 0
 42 0
-532 1 0
+539 1 0
 end_rule
 begin_rule
 2
-531 0
-593 0
-594 1 0
+538 0
+636 0
+637 1 0
 end_rule
 begin_rule
 2
-526 0
+532 0
 41 0
-527 1 0
+533 1 0
 end_rule
 begin_rule
 2
-526 0
-588 0
-589 1 0
+532 0
+464 0
+535 1 0
 end_rule
 begin_rule
 2
-523 0
-583 0
-584 1 0
+529 0
+623 0
+624 1 0
 end_rule
 begin_rule
 2
-518 0
+520 0
 39 0
-519 1 0
+521 1 0
 end_rule
 begin_rule
 1
@@ -11389,28 +11389,28 @@ begin_rule
 end_rule
 begin_rule
 1
-603 0
+649 0
 653 1 0
 end_rule
 begin_rule
 1
-598 0
-644 1 0
+466 0
+609 1 0
 end_rule
 begin_rule
 1
-593 0
-622 1 0
+636 0
+640 1 0
 end_rule
 begin_rule
 1
-588 0
-632 1 0
+464 0
+597 1 0
 end_rule
 begin_rule
 1
-583 0
-612 1 0
+623 0
+627 1 0
 end_rule
 begin_rule
 1
@@ -11424,8 +11424,8 @@ begin_rule
 end_rule
 begin_rule
 1
-578 1
-579 1 0
+576 1
+577 1 0
 end_rule
 begin_rule
 1
@@ -11434,75 +11434,87 @@ begin_rule
 end_rule
 begin_rule
 1
-574 1
-575 1 0
+562 1
+563 1 0
 end_rule
 begin_rule
 1
-644 1
-645 1 0
+609 1
+610 1 0
 end_rule
 begin_rule
 1
-622 1
-623 1 0
+640 1
+641 1 0
 end_rule
 begin_rule
 1
-632 1
-633 1 0
+597 1
+598 1 0
 end_rule
 begin_rule
 1
-612 1
-613 1 0
+627 1
+628 1 0
 end_rule
 begin_rule
 1
-570 1
-571 1 0
+525 1
+526 1 0
 end_rule
 begin_rule
 2
 18 0
-486 0
-487 1 0
+489 0
+490 1 0
 end_rule
 begin_rule
 2
 18 0
-490 0
-491 1 0
+493 0
+494 1 0
 end_rule
 begin_rule
 2
 18 0
-494 0
-495 1 0
+497 0
+498 1 0
 end_rule
 begin_rule
 2
 18 0
-498 0
-499 1 0
+501 0
+502 1 0
 end_rule
 begin_rule
 2
 18 0
-502 0
-503 1 0
+505 0
+506 1 0
 end_rule
 begin_rule
 2
 18 0
-506 0
-507 1 0
+509 0
+510 1 0
 end_rule
 begin_rule
 2
 18 0
-510 0
-511 1 0
+513 0
+514 1 0
+end_rule
+begin_rule
+2
+18 0
+569 0
+570 1 0
+end_rule
+begin_rule
+2
+18 0
+564 0
+565 1 0
 end_rule
 begin_rule
 2
@@ -11513,89 +11525,77 @@ end_rule
 begin_rule
 2
 18 0
-552 0
-553 1 0
+551 0
+552 1 0
 end_rule
 begin_rule
 2
 18 0
-549 0
-550 1 0
+546 0
+547 1 0
 end_rule
 begin_rule
 2
 18 0
-544 0
-545 1 0
+541 0
+542 1 0
 end_rule
 begin_rule
 2
 18 0
-539 0
-540 1 0
+536 0
+537 1 0
 end_rule
 begin_rule
 2
 18 0
-534 0
-535 1 0
+530 0
+531 1 0
 end_rule
 begin_rule
 2
 18 0
-529 0
-530 1 0
+527 0
+528 1 0
 end_rule
 begin_rule
 2
 18 0
-524 0
-525 1 0
-end_rule
-begin_rule
-2
-18 0
-521 0
-522 1 0
-end_rule
-begin_rule
-2
-18 0
-516 0
-517 1 0
+518 0
+519 1 0
 end_rule
 begin_rule
 1
-514 1
-486 1 0
+516 1
+489 1 0
 end_rule
 begin_rule
 1
-514 8
-490 1 0
+516 8
+493 1 0
 end_rule
 begin_rule
 1
-514 15
-494 1 0
+516 15
+497 1 0
 end_rule
 begin_rule
 1
-514 22
-498 1 0
+516 22
+501 1 0
 end_rule
 begin_rule
 1
-514 23
-502 1 0
+516 23
+505 1 0
 end_rule
 begin_rule
 1
-514 24
-506 1 0
+516 24
+509 1 0
 end_rule
 begin_rule
 1
-514 33
-510 1 0
+516 33
+513 1 0
 end_rule

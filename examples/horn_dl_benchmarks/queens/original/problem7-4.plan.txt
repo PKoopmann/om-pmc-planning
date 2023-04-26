@@ -1,0 +1,2 @@
+(move gd fc)
+; cost = 1 (unit cost)

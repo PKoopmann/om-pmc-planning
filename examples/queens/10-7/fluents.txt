@@ -1,0 +1,111 @@
+# fluent definitions for drone example
+
+PREFIX queens: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+OBJECT cell aa	-> queens:aa
+OBJECT cell ab	-> queens:ab
+OBJECT cell ac	-> queens:ac
+OBJECT cell ad	-> queens:ad
+OBJECT cell ae	-> queens:ae
+OBJECT cell af	-> queens:af
+OBJECT cell ag	-> queens:ag
+OBJECT cell ah	-> queens:ah
+OBJECT cell ai	-> queens:ai
+OBJECT cell aj	-> queens:aj
+OBJECT cell ba	-> queens:ba
+OBJECT cell bb	-> queens:bb
+OBJECT cell bc	-> queens:bc
+OBJECT cell bd	-> queens:bd
+OBJECT cell be	-> queens:be
+OBJECT cell bf	-> queens:bf
+OBJECT cell bg	-> queens:bg
+OBJECT cell bh	-> queens:bh
+OBJECT cell bi	-> queens:bi
+OBJECT cell bj	-> queens:bj
+OBJECT cell ca	-> queens:ca
+OBJECT cell cb	-> queens:cb
+OBJECT cell cc	-> queens:cc
+OBJECT cell cd	-> queens:cd
+OBJECT cell ce	-> queens:ce
+OBJECT cell cf	-> queens:cf
+OBJECT cell cg	-> queens:cg
+OBJECT cell ch	-> queens:ch
+OBJECT cell ci	-> queens:ci
+OBJECT cell cj	-> queens:cj
+OBJECT cell da	-> queens:da
+OBJECT cell db	-> queens:db
+OBJECT cell dc	-> queens:dc
+OBJECT cell dd	-> queens:dd
+OBJECT cell de	-> queens:de
+OBJECT cell df	-> queens:df
+OBJECT cell dg	-> queens:dg
+OBJECT cell dh	-> queens:dh
+OBJECT cell di	-> queens:di
+OBJECT cell dj	-> queens:dj
+OBJECT cell ea	-> queens:ea
+OBJECT cell eb	-> queens:eb
+OBJECT cell ec	-> queens:ec
+OBJECT cell ed	-> queens:ed
+OBJECT cell ee	-> queens:ee
+OBJECT cell ef	-> queens:ef
+OBJECT cell eg	-> queens:eg
+OBJECT cell eh	-> queens:eh
+OBJECT cell ei	-> queens:ei
+OBJECT cell ej	-> queens:ej
+OBJECT cell fa	-> queens:fa
+OBJECT cell fb	-> queens:fb
+OBJECT cell fc	-> queens:fc
+OBJECT cell fd	-> queens:fd
+OBJECT cell fe	-> queens:fe
+OBJECT cell ff	-> queens:ff
+OBJECT cell fg	-> queens:fg
+OBJECT cell fh	-> queens:fh
+OBJECT cell fi	-> queens:fi
+OBJECT cell fj	-> queens:fj
+OBJECT cell ga	-> queens:ga
+OBJECT cell gb	-> queens:gb
+OBJECT cell gc	-> queens:gc
+OBJECT cell gd	-> queens:gd
+OBJECT cell ge	-> queens:ge
+OBJECT cell gf	-> queens:gf
+OBJECT cell gg	-> queens:gg
+OBJECT cell gh	-> queens:gh
+OBJECT cell gi	-> queens:gi
+OBJECT cell gj	-> queens:gj
+OBJECT cell ha	-> queens:ha
+OBJECT cell hb	-> queens:hb
+OBJECT cell hc	-> queens:hc
+OBJECT cell hd	-> queens:hd
+OBJECT cell he	-> queens:he
+OBJECT cell hf	-> queens:hf
+OBJECT cell hg	-> queens:hg
+OBJECT cell hh	-> queens:hh
+OBJECT cell hi	-> queens:hi
+OBJECT cell hj	-> queens:hj
+OBJECT cell ia	-> queens:ia
+OBJECT cell ib	-> queens:ib
+OBJECT cell ic	-> queens:ic
+OBJECT cell id	-> queens:id
+OBJECT cell ie	-> queens:ie
+OBJECT cell if	-> queens:if
+OBJECT cell ig	-> queens:ig
+OBJECT cell ih	-> queens:ih
+OBJECT cell ii	-> queens:ii
+OBJECT cell ij	-> queens:ij
+OBJECT cell ja	-> queens:ja
+OBJECT cell jb	-> queens:jb
+OBJECT cell jc	-> queens:jc
+OBJECT cell jd	-> queens:jd
+OBJECT cell je	-> queens:je
+OBJECT cell jf	-> queens:jf
+OBJECT cell jg	-> queens:jg
+OBJECT cell jh	-> queens:jh
+OBJECT cell ji	-> queens:ji
+OBJECT cell jj	-> queens:jj
+
+
+PREDICATE Queen(cell)	-> queens:Queen
+
+
+
+

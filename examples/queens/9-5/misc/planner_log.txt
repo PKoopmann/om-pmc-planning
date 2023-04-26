@@ -1,0 +1,112 @@
+INFO     planner time limit: None
+INFO     planner memory limit: None
+
+INFO     Running translator.
+INFO     translator stdin: None
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     translator command line string: /usr/bin/python3 /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0-patched/builds/release/bin/translate/translate.py ../examples/queens/9-5/misc/generated_queens.pddl ../examples/queens/9-5/misc/generated_problem9-5.pddl --sas-file ../examples/queens/9-5/misc/output.sas
+Parsing...
+Parsing: [0.000s CPU, 0.002s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Trivial rules: Converted to facts.
+Normalizing Datalog program: [0.000s CPU, 0.001s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 10 rules.
+Computing model... [0.010s CPU, 0.001s wall-clock]
+442 relevant atoms
+10 auxiliary atoms
+452 final queue length
+452 total queue pushes
+Completing instantiation... [0.000s CPU, 0.000s wall-clock]
+Instantiating: [0.010s CPU, 0.003s wall-clock]
+Computing fact groups...
+Finding invariants...
+2 initial candidates
+Finding invariants: [0.000s CPU, 0.000s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+6 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.000s CPU, 0.000s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Translator axioms removed by simplifying: 0
+CAVE: Skip computing negative axioms. This might have unforeseen side effects!
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Empty goal! Generating solvable task...
+Translating task: [0.000s CPU, 0.000s wall-clock]
+0 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+Simplified to empty goal! Generating solvable task...
+Detecting unreachable propositions: [0.000s CPU, 0.000s wall-clock]
+Translator variables: 1
+Translator derived variables: 0
+Translator facts: 2
+Translator goal facts: 1
+Translator mutex groups: 0
+Translator total mutex groups size: 0
+Translator operators: 0
+Translator axioms: 0
+Translator task size: 4
+Translator peak memory: 26284 KB
+Writing output... [0.000s CPU, 0.000s wall-clock]
+Done! [0.010s CPU, 0.006s wall-clock]
+translate exit code: 0
+
+INFO     Running search (release).
+INFO     search stdin: ../examples/queens/9-5/misc/output.sas
+INFO     search time limit: None
+INFO     search memory limit: None
+INFO     search command line string: /home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/downward-release-22.12.0-patched/builds/release/bin/downward --search 'astar(blind())' --internal-plan-file ../examples/queens/9-5/problem9-5.plan.txt < ../examples/queens/9-5/misc/output.sas
+[t=2.2565e-05s, 9940 KB] reading input...
+[t=0.000107541s, 9940 KB] done reading input!
+[t=0.000791938s, 10140 KB] Initializing blind search heuristic...
+[t=0.00083904s, 10140 KB] Building successor generator...done!
+[t=0.000870453s, 10140 KB] peak memory difference for successor generator creation: 0 KB
+[t=0.000879424s, 10140 KB] time for successor generation creation: 2.298e-06s
+[t=0.000890261s, 10140 KB] Variables: 1
+[t=0.000899655s, 10140 KB] FactPairs: 2
+[t=0.000908525s, 10140 KB] Bytes per state: 4
+[t=0.000959463s, 10140 KB] Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+[t=0.000994434s, 10140 KB] New best heuristic value for blind: 0
+[t=0.00100433s, 10140 KB] g=0, 1 evaluated, 0 expanded
+[t=0.00101371s, 10140 KB] f = 0, 1 evaluated, 0 expanded
+[t=0.00103117s, 10140 KB] Initial heuristic value for blind: 0
+[t=0.00104145s, 10140 KB] pruning method: none
+[t=0.00105196s, 10140 KB] Solution found!
+[t=0.00106138s, 10140 KB] Actual search time: 1.8233e-05s
+[t=0.00107075s, 10140 KB] Plan length: 0 step(s).
+[t=0.00107075s, 10140 KB] Plan cost: 0
+[t=0.00107075s, 10140 KB] Expanded 1 state(s).
+[t=0.00107075s, 10140 KB] Reopened 0 state(s).
+[t=0.00107075s, 10140 KB] Evaluated 1 state(s).
+[t=0.00107075s, 10140 KB] Evaluations: 1
+[t=0.00107075s, 10140 KB] Generated 0 state(s).
+[t=0.00107075s, 10140 KB] Dead ends: 0 state(s).
+[t=0.00107075s, 10140 KB] Expanded until last jump: 0 state(s).
+[t=0.00107075s, 10140 KB] Reopened until last jump: 0 state(s).
+[t=0.00107075s, 10140 KB] Evaluated until last jump: 1 state(s).
+[t=0.00107075s, 10140 KB] Generated until last jump: 0 state(s).
+[t=0.00107075s, 10140 KB] Number of registered states: 1
+[t=0.00107075s, 10140 KB] Int hash set load factor: 1/1 = 1
+[t=0.00107075s, 10140 KB] Int hash set resizes: 0
+[t=0.00107075s, 10140 KB] Search time: 0.000111641s
+[t=0.00107075s, 10140 KB] Total time: 0.00107075s
+Solution found.
+Peak memory: 10140 KB
+search exit code: 0
+
+INFO     Planner time: 0.05s

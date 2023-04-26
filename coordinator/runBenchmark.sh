@@ -15,8 +15,8 @@ hostname=$(hostname)
 directory="../benchmark_runs/${hostname}"
 # create folder if it does not exist yet
 mkdir -p "$directory"
-name="${3}_$(date +'%Y_%m_%d_%H_%M')"
-logName="${3}_$(date +'%Y_%m_%d_%H_%M')_log"
+name="${1}_$(date +'%Y_%m_%d_%H_%M')"
+logName="${1}_$(date +'%Y_%m_%d_%H_%M')_log"
 result="${directory}/${name}.csv"
 log="${directory}/${logName}.txt"
 tempLog="${directory}/${logName}_temp.txt"
@@ -24,7 +24,7 @@ tempLog="${directory}/${logName}_temp.txt"
 
 echo "run benchmarks from file $benchmarks with a time limit of ${TimeBound}s."
 echo "start time: $(date +'%Y %m %d %H %M')"
-echo "result will be written to $log"
+echo "result will be written to $result"
 
 read -r head < "$benchmarks"
 if [[ $head != "id,method,name,folder,ontology,domain,problem" ]]; then
@@ -34,7 +34,7 @@ if [[ $head != "id,method,name,folder,ontology,domain,problem" ]]; then
     exit 1
 fi
 
-echo "id,method,name,folder,ontology,domain,problem,reasoning_time,planning_time,total_time" > $result
+echo "id,method,name,folder,ontology,domain,problem,reasoning_time,planning_time,total_time,plan_length,analyzed_states,ontology_axioms,hooks,fluents,repairs" > $result
 
 while IFS="," read -r id method name folder ontology domain problem
 do
@@ -57,6 +57,10 @@ do
   fi fi
 
   # extract results
+  ontologySize="-"
+  hookCount="-"
+  fluentCount="-"
+  repairCount="-"
   if [[ $runPlanner == 1 ]] ; then
     runPlanner=0
     while read line; do
@@ -69,9 +73,28 @@ do
         if [[ "$line" == total\ time:* ]]; then
             totalTime=${line#*:}	# remove everything left of and including ":""
         fi
+        if [[ "$line" == analyzed\ states:* ]]; then
+            analyszedStates=${line#*:}	# remove everything left of and including ":""
+        fi
+        if [[ "$line" == plan\ length:* ]]; then
+            planLength=${line#*:}	# remove everything left of and including ":""
+        fi
+        # the following parameters are only relevant for interface based planning
+        if [[ "$line" == ontology\ size:* ]]; then
+            ontologySize=${line#*:}	# remove everything left of and including ":""
+        fi
+        if [[ "$line" == hook\ count:* ]]; then
+            hookCount=${line#*:}	# remove everything left of and including ":""
+        fi
+        if [[ "$line" == fluent\ count:* ]]; then
+            fluentCount=${line#*:}	# remove everything left of and including ":""
+        fi
+        if [[ "$line" == repair\ count:* ]]; then
+            repairCount=${line#*:}	# remove everything left of and including ":""
+        fi
     done < "$tempLog"
 
-    echo ${id},${method},$name,$folder,$ontology,$domain,$problem,${reasoningTime%s},${planningTime%s},${totalTime%s} >> $result
+    echo ${id},${method},$name,$folder,$ontology,$domain,$problem,${reasoningTime%s},${planningTime%s},${totalTime%s},${planLength},${analyszedStates},${ontologySize},${hookCount},${fluentCount},${repairCount} >> $result
 
     cat $tempLog >> $log
     rm $tempLog

@@ -208,12 +208,38 @@ else
 fi
 
 
+
 TimeEndPlanning="$(date -u +%s.%N)"
 DurationPlanning="$(bc <<<"$TimeEndPlanning-$TimeStartPlanning")"
 
 echo "finished planning"
 
+RepairCount=0
+# extract information from planner log
+while read line; do
+	if [[ "$line" == *"Plan length"* ]]; then
+		LengthTemp=${line#*: } # remove everything left of and including ":"
+    PlanLength=${LengthTemp% step(s).}
+	fi
+  if [[ "$line" == *"Evaluations:"* ]]; then
+		Evaluations=${line#*: } # remove everything left of and including ":"
+	fi
+done < "$PlannerLog"
 
+while read line; do
+  if [[ "$line" == *"Module size"* ]]; then
+		AxiomCount=${line#*: } # remove everything left of and including ":"
+	fi
+  if [[ "$line" == *"Number of Hooks:"* ]]; then
+		HookCount=${line#*: } # remove everything left of and including ":"
+	fi
+  if [[ "$line" == *"Number of Fluents:"* ]]; then
+		FluentCount=${line#*: } # remove everything left of and including ":"
+	fi
+  if [[ "$line" == *"Number of repairs:"* ]]; then
+		RepairCount=${line#*: } # remove everything left of and including ":"
+	fi
+done < "$ReasonerLog"
 
 # print out computation times
 TimeEnd="$(date -u +%s.%N)"
@@ -223,4 +249,9 @@ echo "reasoning time: ${DurationReasoning}s"
 echo "planning time: ${DurationPlanning}s"
 echo "total time: ${DurationAll}s"
 
-
+echo "analyzed states: ${Evaluations}"
+echo "plan length: ${PlanLength}"
+echo "ontology size: ${AxiomCount}"
+echo "hook count: ${HookCount}"
+echo "fluent count: ${FluentCount}"
+echo "repair count: ${RepairCount}"

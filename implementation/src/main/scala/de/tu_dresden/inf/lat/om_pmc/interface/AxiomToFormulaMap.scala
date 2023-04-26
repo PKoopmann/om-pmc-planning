@@ -21,4 +21,6 @@ class AxiomToFormulaMap {
   override def toString() = {
     map.mkString("[", ", ", "]")
   }
+
+  def size() = map.size
 }

@@ -1,0 +1,9 @@
+BLACK_BOX
+Module size: 359
+Number of Hooks: 4224
+Number of Fluents: 64
+Creating slice from 0 to 100
+Generating inconsistency dnf
+0 - 100
+Generate DNF for axiom: Queen(aa)
+Number of repairs: 1
