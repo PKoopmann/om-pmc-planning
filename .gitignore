@@ -11,3 +11,5 @@ ontology-mediated-pmc-assembly-0.2.jar
 horn_dl_pddl_compiler
 coordinator/.~lock.evaluation.csv#
 moreflags2
+
+**/misc/
