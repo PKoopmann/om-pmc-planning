@@ -1,5 +1,0 @@
-Axioms in module: 305
-BLACK_BOX
-Creating slice from 0 to 50
-Generating inconsistency dnf
-0 - 50
