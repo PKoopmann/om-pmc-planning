@@ -1,0 +1,19 @@
+run ontology mediated planning for example with id 1 (folder: ../examples/pipes/pipes1)
+time limit is set to 10s
+start generating rewritings
+compute hooks 0 til 100
+timeout for rewriting generator after 10 seconds
+reasoning time: >10s
+planning time: -
+total time: -
+run horn planning for example with id 3 (folder: ../examples/horn_pipes/pipes1)
+time limit is set to 10s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .727697195s
+planning time: 2.284733472s
+total time: 3.022814966s
+analyzed states: 48440
+plan length: 27

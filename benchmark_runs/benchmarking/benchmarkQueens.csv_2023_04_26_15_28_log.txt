@@ -1,0 +1,1514 @@
+run ontology mediated planning for example with id 1 (folder: ../examples/queens/5-1)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+created new domain
+start planning
+finished planning
+reasoning time: 49.695457679s
+planning time: .347593552s
+total time: 51.078483851s
+analyzed states: 1
+plan length: 0
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+run ontology mediated planning for example with id 2 (folder: ../examples/queens/5-2)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+created new domain
+start planning
+finished planning
+reasoning time: 51.417980280s
+planning time: .339533167s
+total time: 52.777451916s
+analyzed states: 23
+plan length: 1
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+run ontology mediated planning for example with id 3 (folder: ../examples/queens/5-3)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+created new domain
+start planning
+finished planning
+reasoning time: 52.886376858s
+planning time: .327170271s
+total time: 54.324230244s
+analyzed states: 35
+plan length: 1
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+run ontology mediated planning for example with id 4 (folder: ../examples/queens/5-4)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+created new domain
+start planning
+finished planning
+reasoning time: 52.179530328s
+planning time: .324567801s
+total time: 53.548203568s
+analyzed states: 47
+plan length: 1
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+run ontology mediated planning for example with id 5 (folder: ../examples/queens/5-5)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+created new domain
+start planning
+finished planning
+reasoning time: 52.481553003s
+planning time: .354468920s
+total time: 53.866224265s
+analyzed states: 157
+plan length: 2
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+run ontology mediated planning for example with id 6 (folder: ../examples/queens/6-2)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+created new domain
+start planning
+finished planning
+reasoning time: 148.645970348s
+planning time: .579936856s
+total time: 151.229282440s
+analyzed states: 35
+plan length: 1
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+run ontology mediated planning for example with id 7 (folder: ../examples/queens/6-3)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+created new domain
+start planning
+finished planning
+reasoning time: 146.352829528s
+planning time: .606074062s
+total time: 148.961873513s
+analyzed states: 50
+plan length: 1
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+run ontology mediated planning for example with id 8 (folder: ../examples/queens/6-4)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+created new domain
+start planning
+finished planning
+reasoning time: 147.740065097s
+planning time: .543504771s
+total time: 150.279960898s
+analyzed states: 160
+plan length: 2
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+run ontology mediated planning for example with id 9 (folder: ../examples/queens/6-5)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+created new domain
+start planning
+finished planning
+reasoning time: 148.353989547s
+planning time: .568783126s
+total time: 150.898774954s
+analyzed states: 1550
+plan length: 2
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+run ontology mediated planning for example with id 10 (folder: ../examples/queens/6-6)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+created new domain
+start planning
+finished planning
+reasoning time: 147.354965048s
+planning time: 5.571595052s
+total time: 154.994171215s
+analyzed states: 105578
+plan length: 4
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+run ontology mediated planning for example with id 11 (folder: ../examples/queens/7-3)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+created new domain
+start planning
+finished planning
+reasoning time: 376.868576577s
+planning time: .956356970s
+total time: 381.798516050s
+analyzed states: 53
+plan length: 1
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+run ontology mediated planning for example with id 12 (folder: ../examples/queens/7-4)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+created new domain
+start planning
+finished planning
+reasoning time: 381.447965418s
+planning time: 1.032244140s
+total time: 386.248343654s
+analyzed states: 79
+plan length: 1
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+run ontology mediated planning for example with id 13 (folder: ../examples/queens/7-5)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+created new domain
+start planning
+finished planning
+reasoning time: 386.323332617s
+planning time: .992771370s
+total time: 391.095458397s
+analyzed states: 97
+plan length: 1
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+run ontology mediated planning for example with id 14 (folder: ../examples/queens/7-6)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+created new domain
+start planning
+finished planning
+reasoning time: 380.677118408s
+planning time: 7.037640321s
+total time: 391.416131389s
+analyzed states: 93680
+plan length: 4
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+run ontology mediated planning for example with id 15 (folder: ../examples/queens/7-7)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+created new domain
+start planning
+finished planning
+reasoning time: 381.867025074s
+planning time: 732.753223081s
+total time: 1118.321338137s
+analyzed states: 4349277
+plan length: 5
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+run ontology mediated planning for example with id 16 (folder: ../examples/queens/8-4)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+created new domain
+start planning
+finished planning
+reasoning time: 903.198104584s
+planning time: 1.736273194s
+total time: 911.599962021s
+analyzed states: 93
+plan length: 1
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 1
+run ontology mediated planning for example with id 17 (folder: ../examples/queens/8-5)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+created new domain
+start planning
+finished planning
+reasoning time: 908.617858937s
+planning time: 1.969640287s
+total time: 917.265569718s
+analyzed states: 1977
+plan length: 2
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 1
+run ontology mediated planning for example with id 18 (folder: ../examples/queens/8-6)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+created new domain
+start planning
+finished planning
+reasoning time: 888.721278631s
+planning time: 11.003379521s
+total time: 906.337082924s
+analyzed states: 135148
+plan length: 3
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 1
+run ontology mediated planning for example with id 19 (folder: ../examples/queens/8-7)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+created new domain
+start planning
+finished planning
+reasoning time: 903.865161616s
+planning time: 40.561955919s
+total time: 951.081368950s
+analyzed states: 491116
+plan length: 4
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 1
+run ontology mediated planning for example with id 20 (folder: ../examples/queens/8-8)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+created new domain
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: 909.225001803s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 21 (folder: ../examples/queens/9-5)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 22 (folder: ../examples/queens/9-6)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 23 (folder: ../examples/queens/9-7)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 24 (folder: ../examples/queens/9-8)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 25 (folder: ../examples/queens/9-9)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 26 (folder: ../examples/queens/10-6)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 27 (folder: ../examples/queens/10-7)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 28 (folder: ../examples/queens/10-8)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 29 (folder: ../examples/queens/10-9)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 30 (folder: ../examples/queens/10-10)
+time limit is set to 1200s
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 31 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .717093339s
+planning time: .963571897s
+total time: 1.692476055s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 32 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .729839411s
+planning time: .946081137s
+total time: 1.688017272s
+analyzed states: 23
+plan length: 1
+run horn planning for example with id 33 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .678600428s
+planning time: .899889765s
+total time: 1.588777588s
+analyzed states: 35
+plan length: 1
+run horn planning for example with id 34 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .721773602s
+planning time: .930470272s
+total time: 1.662891237s
+analyzed states: 47
+plan length: 1
+run horn planning for example with id 35 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .696944199s
+planning time: .938371178s
+total time: 1.645194408s
+analyzed states: 729
+plan length: 2
+run horn planning for example with id 36 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .701949755s
+planning time: 1.973298697s
+total time: 2.685485877s
+analyzed states: 35
+plan length: 1
+run horn planning for example with id 37 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .715754241s
+planning time: 1.983808534s
+total time: 2.710551279s
+analyzed states: 50
+plan length: 1
+run horn planning for example with id 38 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .737338156s
+planning time: 1.902533663s
+total time: 2.650130213s
+analyzed states: 113
+plan length: 2
+run horn planning for example with id 39 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .686061639s
+planning time: 1.959906462s
+total time: 2.655862852s
+analyzed states: 521
+plan length: 2
+run horn planning for example with id 40 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .773359960s
+planning time: 162.193920355s
+total time: 162.977760647s
+analyzed states: 161659
+plan length: 4
+run horn planning for example with id 41 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .742286539s
+planning time: 3.896568835s
+total time: 4.649365842s
+analyzed states: 53
+plan length: 1
+run horn planning for example with id 42 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .729335783s
+planning time: 3.877556631s
+total time: 4.617212227s
+analyzed states: 79
+plan length: 1
+run horn planning for example with id 43 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .722168349s
+planning time: 4.021088286s
+total time: 4.753656468s
+analyzed states: 97
+plan length: 1
+run horn planning for example with id 44 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .681620874s
+planning time: 138.654145759s
+total time: 139.345707386s
+analyzed states: 99198
+plan length: 4
+run horn planning for example with id 45 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .695851502s
+planning time: >1200s
+total time: -
+run horn planning for example with id 46 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .740642866s
+planning time: 7.254493279s
+total time: 8.005910419s
+analyzed states: 93
+plan length: 1
+run horn planning for example with id 47 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .752926409s
+planning time: 7.490890517s
+total time: 8.254179551s
+analyzed states: 739
+plan length: 2
+run horn planning for example with id 48 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .693909041s
+planning time: 27.040416406s
+total time: 27.745095694s
+analyzed states: 16104
+plan length: 3
+run horn planning for example with id 49 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .722731980s
+planning time: >1200s
+total time: -
+run horn planning for example with id 50 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .702628337s
+planning time: >1200s
+total time: -
+run horn planning for example with id 51 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .728010896s
+planning time: 10.883659251s
+total time: 11.622170104s
+analyzed states: 127
+plan length: 1
+run horn planning for example with id 52 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .687624297s
+planning time: 304.551890376s
+total time: 305.249771160s
+analyzed states: 107902
+plan length: 3
+run horn planning for example with id 53 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .715440406s
+planning time: 196.638580070s
+total time: 197.364208552s
+analyzed states: 78829
+plan length: 3
+run horn planning for example with id 54 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .690413765s
+planning time: >1200s
+total time: -
+run horn planning for example with id 55 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .747717439s
+planning time: >1200s
+total time: -
+run horn planning for example with id 56 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .736289269s
+planning time: 61.298716052s
+total time: 62.047433462s
+analyzed states: 11859
+plan length: 3
+run horn planning for example with id 57 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .727812192s
+planning time: 45.176509681s
+total time: 45.916103929s
+analyzed states: 12063
+plan length: 2
+run horn planning for example with id 58 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .762077826s
+planning time: 557.853281826s
+total time: 558.626353011s
+analyzed states: 134792
+plan length: 3
+run horn planning for example with id 59 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .694723707s
+planning time: >1200s
+total time: -
+run horn planning for example with id 60 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .718957631s
+planning time: >1200s
+total time: -

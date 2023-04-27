@@ -1,0 +1,4 @@
+(move bf ae)
+(move ch bh)
+(move fi fb)
+; cost = 3 (unit cost)

@@ -1,0 +1,5 @@
+(move gg ee)
+(move bg ba)
+(move bb db)
+(move eg fg)
+; cost = 4 (unit cost)

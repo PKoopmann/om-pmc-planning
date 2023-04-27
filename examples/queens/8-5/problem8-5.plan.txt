@@ -1,0 +1,3 @@
+(move de he)
+(move cc gg)
+; cost = 2 (unit cost)

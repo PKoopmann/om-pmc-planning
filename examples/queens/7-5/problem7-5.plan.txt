@@ -1,0 +1,2 @@
+(move df gc)
+; cost = 1 (unit cost)

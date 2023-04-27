@@ -1,0 +1,2 @@
+(move gd gc)
+; cost = 1 (unit cost)

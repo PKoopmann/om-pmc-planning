@@ -1,0 +1,4 @@
+(move db hb)
+(move cd fg)
+(move be cf)
+; cost = 3 (unit cost)
