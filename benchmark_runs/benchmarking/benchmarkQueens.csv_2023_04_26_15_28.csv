@@ -1,0 +1,61 @@
+id,method,name,folder,ontology,domain,problem,reasoning_time,planning_time,total_time,plan_length,analyzed_states,ontology_axioms,hooks,fluents,repairs
+1,om_planning,queen5-1,../examples/queens/5-1,queens5-1.ttl,queens.pddl,problem5-1.pddl, 49.695457679, .347593552, 51.078483851, 0, 1, 143, 675, 25, 1
+2,om_planning,queen5-2,../examples/queens/5-2,queens5-2.ttl,queens.pddl,problem5-2.pddl, 51.417980280, .339533167, 52.777451916, 1, 23, 143, 675, 25, 1
+3,om_planning,queen5-3,../examples/queens/5-3,queens5-3.ttl,queens.pddl,problem5-3.pddl, 52.886376858, .327170271, 54.324230244, 1, 35, 143, 675, 25, 1
+4,om_planning,queen5-4,../examples/queens/5-4,queens5-4.ttl,queens.pddl,problem5-4.pddl, 52.179530328, .324567801, 53.548203568, 1, 47, 143, 675, 25, 1
+5,om_planning,queen5-5,../examples/queens/5-5,queens5-5.ttl,queens.pddl,problem5-5.pddl, 52.481553003, .354468920, 53.866224265, 2, 157, 143, 675, 25, 1
+6,om_planning,queen6-2,../examples/queens/6-2,queens6-2.ttl,queens.pddl,problem6-2.pddl, 148.645970348, .579936856, 151.229282440, 1, 35, 203, 1368, 36, 1
+7,om_planning,queen6-3,../examples/queens/6-3,queens6-3.ttl,queens.pddl,problem6-3.pddl, 146.352829528, .606074062, 148.961873513, 1, 50, 203, 1368, 36, 1
+8,om_planning,queen6-4,../examples/queens/6-4,queens6-4.ttl,queens.pddl,problem6-4.pddl, 147.740065097, .543504771, 150.279960898, 2, 160, 203, 1368, 36, 1
+9,om_planning,queen6-5,../examples/queens/6-5,queens6-5.ttl,queens.pddl,problem6-5.pddl, 148.353989547, .568783126, 150.898774954, 2, 1550, 203, 1368, 36, 1
+10,om_planning,queen6-6,../examples/queens/6-6,queens6-6.ttl,queens.pddl,problem6-6.pddl, 147.354965048, 5.571595052, 154.994171215, 4, 105578, 203, 1368, 36, 1
+11,om_planning,queen7-3,../examples/queens/7-3,queens7-3.ttl,queens.pddl,problem7-3.pddl, 376.868576577, .956356970, 381.798516050, 1, 53, 275, 2499, 49, 1
+12,om_planning,queen7-4,../examples/queens/7-4,queens7-4.ttl,queens.pddl,problem7-4.pddl, 381.447965418, 1.032244140, 386.248343654, 1, 79, 275, 2499, 49, 1
+13,om_planning,queen7-5,../examples/queens/7-5,queens7-5.ttl,queens.pddl,problem7-5.pddl, 386.323332617, .992771370, 391.095458397, 1, 97, 275, 2499, 49, 1
+14,om_planning,queen7-6,../examples/queens/7-6,queens7-6.ttl,queens.pddl,problem7-6.pddl, 380.677118408, 7.037640321, 391.416131389, 4, 93680, 275, 2499, 49, 1
+15,om_planning,queen7-7,../examples/queens/7-7,queens7-7.ttl,queens.pddl,problem7-7.pddl, 381.867025074, 732.753223081, 1118.321338137, 5, 4349277, 275, 2499, 49, 1
+16,om_planning,queen8-4,../examples/queens/8-4,queens8-4.ttl,queens.pddl,problem8-4.pddl, 903.198104584, 1.736273194, 911.599962021, 1, 93, 359, 4224, 64, 1
+17,om_planning,queen8-5,../examples/queens/8-5,queens8-5.ttl,queens.pddl,problem8-5.pddl, 908.617858937, 1.969640287, 917.265569718, 2, 1977, 359, 4224, 64, 1
+18,om_planning,queen8-6,../examples/queens/8-6,queens8-6.ttl,queens.pddl,problem8-6.pddl, 888.721278631, 11.003379521, 906.337082924, 3, 135148, 359, 4224, 64, 1
+19,om_planning,queen8-7,../examples/queens/8-7,queens8-7.ttl,queens.pddl,problem8-7.pddl, 903.865161616, 40.561955919, 951.081368950, 4, 491116, 359, 4224, 64, 1
+20,om_planning,queen8-8,../examples/queens/8-8,queens8-8.ttl,queens.pddl,problem8-8.pddl, 909.225001803, >1200, -, 4, 491116,-,-,-,-
+21,om_planning,queen9-5,../examples/queens/9-5,queens9-5.ttl,queens.pddl,problem9-5.pddl, >1200, -, -, 4, 491116,-,-,-,-
+22,om_planning,queen9-6,../examples/queens/9-6,queens9-6.ttl,queens.pddl,problem9-6.pddl, >1200, -, -, 4, 491116,-,-,-,-
+23,om_planning,queen9-7,../examples/queens/9-7,queens9-7.ttl,queens.pddl,problem9-7.pddl, >1200, -, -, 4, 491116,-,-,-,-
+24,om_planning,queen9-8,../examples/queens/9-8,queens9-8.ttl,queens.pddl,problem9-8.pddl, >1200, -, -, 4, 491116,-,-,-,-
+25,om_planning,queen9-9,../examples/queens/9-9,queens9-9.ttl,queens.pddl,problem9-9.pddl, >1200, -, -, 4, 491116,-,-,-,-
+26,om_planning,queen10-6,../examples/queens/10-6,queens10-6.ttl,queens.pddl,problem10-6.pddl, >1200, -, -, 4, 491116,-,-,-,-
+27,om_planning,queen10-7,../examples/queens/10-7,queens10-7.ttl,queens.pddl,problem10-7.pddl, >1200, -, -, 4, 491116,-,-,-,-
+28,om_planning,queen10-8,../examples/queens/10-8,queens10-8.ttl,queens.pddl,problem10-8.pddl, >1200, -, -, 4, 491116,-,-,-,-
+29,om_planning,queen10-9,../examples/queens/10-9,queens10-9.ttl,queens.pddl,problem10-9.pddl, >1200, -, -, 4, 491116,-,-,-,-
+30,om_planning,queen10-10,../examples/queens/10-10,queens10-10.ttl,queens.pddl,problem10-10.pddl, >1200, -, -, 4, 491116,-,-,-,-
+31,horn_planning,queen5-1,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem5-1.pddl, .717093339, .963571897, 1.692476055, 0, 1,-,-,-,-
+32,horn_planning,queen5-2,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem5-2.pddl, .729839411, .946081137, 1.688017272, 1, 23,-,-,-,-
+33,horn_planning,queen5-3,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem5-3.pddl, .678600428, .899889765, 1.588777588, 1, 35,-,-,-,-
+34,horn_planning,queen5-4,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem5-4.pddl, .721773602, .930470272, 1.662891237, 1, 47,-,-,-,-
+35,horn_planning,queen5-5,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem5-5.pddl, .696944199, .938371178, 1.645194408, 2, 729,-,-,-,-
+36,horn_planning,queen6-2,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem6-2.pddl, .701949755, 1.973298697, 2.685485877, 1, 35,-,-,-,-
+37,horn_planning,queen6-3,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem6-3.pddl, .715754241, 1.983808534, 2.710551279, 1, 50,-,-,-,-
+38,horn_planning,queen6-4,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem6-4.pddl, .737338156, 1.902533663, 2.650130213, 2, 113,-,-,-,-
+39,horn_planning,queen6-5,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem6-5.pddl, .686061639, 1.959906462, 2.655862852, 2, 521,-,-,-,-
+40,horn_planning,queen6-6,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem6-6.pddl, .773359960, 162.193920355, 162.977760647, 4, 161659,-,-,-,-
+41,horn_planning,queen7-3,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem7-3.pddl, .742286539, 3.896568835, 4.649365842, 1, 53,-,-,-,-
+42,horn_planning,queen7-4,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem7-4.pddl, .729335783, 3.877556631, 4.617212227, 1, 79,-,-,-,-
+43,horn_planning,queen7-5,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem7-5.pddl, .722168349, 4.021088286, 4.753656468, 1, 97,-,-,-,-
+44,horn_planning,queen7-6,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem7-6.pddl, .681620874, 138.654145759, 139.345707386, 4, 99198,-,-,-,-
+45,horn_planning,queen7-7,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem7-7.pddl, .695851502, >1200, -, 4, 99198,-,-,-,-
+46,horn_planning,queen8-4,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem8-4.pddl, .740642866, 7.254493279, 8.005910419, 1, 93,-,-,-,-
+47,horn_planning,queen8-5,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem8-5.pddl, .752926409, 7.490890517, 8.254179551, 2, 739,-,-,-,-
+48,horn_planning,queen8-6,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem8-6.pddl, .693909041, 27.040416406, 27.745095694, 3, 16104,-,-,-,-
+49,horn_planning,queen8-7,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem8-7.pddl, .722731980, >1200, -, 3, 16104,-,-,-,-
+50,horn_planning,queen8-8,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem8-8.pddl, .702628337, >1200, -, 3, 16104,-,-,-,-
+51,horn_planning,queen9-5,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem9-5.pddl, .728010896, 10.883659251, 11.622170104, 1, 127,-,-,-,-
+52,horn_planning,queen9-6,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem9-6.pddl, .687624297, 304.551890376, 305.249771160, 3, 107902,-,-,-,-
+53,horn_planning,queen9-7,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem9-7.pddl, .715440406, 196.638580070, 197.364208552, 3, 78829,-,-,-,-
+54,horn_planning,queen9-8,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem9-8.pddl, .690413765, >1200, -, 3, 78829,-,-,-,-
+55,horn_planning,queen9-9,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem9-9.pddl, .747717439, >1200, -, 3, 78829,-,-,-,-
+56,horn_planning,queen10-6,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem10-6.pddl, .736289269, 61.298716052, 62.047433462, 3, 11859,-,-,-,-
+57,horn_planning,queen10-7,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem10-7.pddl, .727812192, 45.176509681, 45.916103929, 2, 12063,-,-,-,-
+58,horn_planning,queen10-8,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem10-8.pddl, .762077826, 557.853281826, 558.626353011, 3, 134792,-,-,-,-
+59,horn_planning,queen10-9,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem10-9.pddl, .694723707, >1200, -, 3, 134792,-,-,-,-
+60,horn_planning,queen10-10,../examples/horn_dl_benchmarks/queens/original,TTL.owl,domain.pddl,problem10-10.pddl, .718957631, >1200, -, 3, 134792,-,-,-,-
