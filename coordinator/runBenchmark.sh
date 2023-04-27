@@ -57,6 +57,10 @@ do
   fi fi
 
   # extract results
+  reasoningTime="-"
+  planningTime="-"
+  planLength="-"
+  analyzedStates="-"
   ontologySize="-"
   hookCount="-"
   fluentCount="-"
@@ -74,7 +78,7 @@ do
             totalTime=${line#*:}	# remove everything left of and including ":""
         fi
         if [[ "$line" == analyzed\ states:* ]]; then
-            analyszedStates=${line#*:}	# remove everything left of and including ":""
+            analyzedStates=${line#*:}	# remove everything left of and including ":""
         fi
         if [[ "$line" == plan\ length:* ]]; then
             planLength=${line#*:}	# remove everything left of and including ":""
@@ -94,7 +98,7 @@ do
         fi
     done < "$tempLog"
 
-    echo ${id},${method},$name,$folder,$ontology,$domain,$problem,${reasoningTime%s},${planningTime%s},${totalTime%s},${planLength},${analyszedStates},${ontologySize},${hookCount},${fluentCount},${repairCount} >> $result
+    echo ${id},${method},$name,$folder,$ontology,$domain,$problem,${reasoningTime%s},${planningTime%s},${totalTime%s},${planLength},${analyzedStates},${ontologySize},${hookCount},${fluentCount},${repairCount} >> $result
 
     cat $tempLog >> $log
     rm $tempLog

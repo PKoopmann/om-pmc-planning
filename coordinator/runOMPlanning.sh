@@ -117,7 +117,26 @@ fi
 TimeEndReasoning="$(date -u +%s.%N)"
 DurationReasoning="$(bc <<<"$TimeEndReasoning-$TimeStartReasoning")"
 
+# extract stats of ontology
+while read line; do
+  if [[ "$line" == *"Module size"* ]]; then
+		AxiomCount=${line#*: } # remove everything left of and including ":"
+	fi
+  if [[ "$line" == *"Number of Hooks:"* ]]; then
+		HookCount=${line#*: } # remove everything left of and including ":"
+	fi
+  if [[ "$line" == *"Number of Fluents:"* ]]; then
+		FluentCount=${line#*: } # remove everything left of and including ":"
+	fi
+  if [[ "$line" == *"Number of repairs:"* ]]; then
+		RepairCount=${line#*: } # remove everything left of and including ":"
+	fi
+done < "$ReasonerLog"
 
+echo "ontology size: ${AxiomCount}"
+echo "hook count: ${HookCount}"
+echo "fluent count: ${FluentCount}"
+echo "repair count: ${RepairCount}"
 
 
 # remove the new domain if it exists
@@ -226,20 +245,7 @@ while read line; do
 	fi
 done < "$PlannerLog"
 
-while read line; do
-  if [[ "$line" == *"Module size"* ]]; then
-		AxiomCount=${line#*: } # remove everything left of and including ":"
-	fi
-  if [[ "$line" == *"Number of Hooks:"* ]]; then
-		HookCount=${line#*: } # remove everything left of and including ":"
-	fi
-  if [[ "$line" == *"Number of Fluents:"* ]]; then
-		FluentCount=${line#*: } # remove everything left of and including ":"
-	fi
-  if [[ "$line" == *"Number of repairs:"* ]]; then
-		RepairCount=${line#*: } # remove everything left of and including ":"
-	fi
-done < "$ReasonerLog"
+
 
 # print out computation times
 TimeEnd="$(date -u +%s.%N)"
@@ -251,7 +257,3 @@ echo "total time: ${DurationAll}s"
 
 echo "analyzed states: ${Evaluations}"
 echo "plan length: ${PlanLength}"
-echo "ontology size: ${AxiomCount}"
-echo "hook count: ${HookCount}"
-echo "fluent count: ${FluentCount}"
-echo "repair count: ${RepairCount}"
