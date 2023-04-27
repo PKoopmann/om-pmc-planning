@@ -24,6 +24,7 @@ tempLog="${directory}/${logName}_temp.txt"
 
 echo "run benchmarks from file $benchmarks with a time limit of ${TimeBound}s."
 echo "start time: $(date +'%Y %m %d %H %M')"
+echo "start time: $(date +'%Y %m %d %H %M')" >> $log
 echo "result will be written to $result"
 
 read -r head < "$benchmarks"
@@ -110,3 +111,4 @@ TimeEnd="$(date -u +%s.%N)"
 Duration="$(bc <<<"$TimeEnd-$TimeStart")"
 
 echo "total time to run benchmark set: ${Duration}s"
+echo "total time to run benchmark set: ${Duration}s" >> $log
