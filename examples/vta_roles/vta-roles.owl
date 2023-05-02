@@ -1,0 +1,97 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/airportShuttle
+<http://www.semanticweb.org/anon/ontologies/2021/3/airportShuttle> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/trip> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/carHotelBundleOption
+<http://www.semanticweb.org/anon/ontologies/2021/3/carHotelBundleOption> rdf:type owl:ObjectProperty ;
+                                                                          rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/trip> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/carRentalBooking
+<http://www.semanticweb.org/anon/ontologies/2021/3/carRentalBooking> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/trip> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/carRentalRequest
+<http://www.semanticweb.org/anon/ontologies/2021/3/carRentalRequest> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/trip> ;
+                                                                      rdfs:range <http://www.semanticweb.org/anon/ontologies/2021/3/carRental> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/directlyAfterObject
+<http://www.semanticweb.org/anon/ontologies/2021/3/directlyAfterObject> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/flightRequest
+<http://www.semanticweb.org/anon/ontologies/2021/3/flightRequest> rdf:type owl:ObjectProperty ;
+                                                                   rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/trip> ;
+                                                                   rdfs:range <http://www.semanticweb.org/anon/ontologies/2021/3/flight> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/flightTicket
+<http://www.semanticweb.org/anon/ontologies/2021/3/flightTicket> rdf:type owl:ObjectProperty ;
+                                                                  rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/trip> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hotelStayConfirmation
+<http://www.semanticweb.org/anon/ontologies/2021/3/hotelStayConfirmation> rdf:type owl:ObjectProperty ;
+                                                                           rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/trip> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hotelStayRequest
+<http://www.semanticweb.org/anon/ontologies/2021/3/hotelStayRequest> rdf:type owl:ObjectProperty ;
+                                                                      rdfs:domain <http://www.semanticweb.org/anon/ontologies/2021/3/trip> ;
+                                                                      rdfs:range <http://www.semanticweb.org/anon/ontologies/2021/3/hotelStay> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/invoice
+<http://www.semanticweb.org/anon/ontologies/2021/3/invoice> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/itinerary
+<http://www.semanticweb.org/anon/ontologies/2021/3/itinerary> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/carRental
+<http://www.semanticweb.org/anon/ontologies/2021/3/carRental> rdf:type owl:Class ;
+                                                               owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/flight> ,
+                                                                                <http://www.semanticweb.org/anon/ontologies/2021/3/hotelStay> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/flight
+<http://www.semanticweb.org/anon/ontologies/2021/3/flight> rdf:type owl:Class ;
+                                                            owl:disjointWith <http://www.semanticweb.org/anon/ontologies/2021/3/hotelStay> .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hotelStay
+<http://www.semanticweb.org/anon/ontologies/2021/3/hotelStay> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/notFree
+<http://www.semanticweb.org/anon/ontologies/2021/3/notFree> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/trip
+<http://www.semanticweb.org/anon/ontologies/2021/3/trip> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

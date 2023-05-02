@@ -1,0 +1,129 @@
+# abstract hook definitions for vta roles example
+
+PREFIX vta: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+
+
+HOOK_PREDICATE: KBquery_notFree
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:notFree
+
+HOOK_PREDICATE: KBquery_directlyAfterObj
+VARIABLES: ?x ?y
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?y Type: owl:Thing
+QUERY:
+	?x vta:directlyAfterObj ?y
+
+HOOK_PREDICATE: KBquery_flightTicket
+VARIABLES: ?z ?x
+TYPE_SPECIFICATION:
+	?z Type: owl:Thing
+	?x Type: owl:Thing
+QUERY:
+	?z vta:flightTicket ?x
+
+HOOK_PREDICATE: KBquery_hotelStayConfirmation
+VARIABLES: ?s ?x
+TYPE_SPECIFICATION:
+	?s Type: owl:Thing
+	?x Type: owl:Thing
+QUERY:
+	?s vta:hotelStayConfirmation ?x
+
+HOOK_PREDICATE: KBquery_carRentalBooking
+VARIABLES: ?s ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?s Type: owl:Thing
+QUERY:
+	?s vta:carRentalBooking ?x
+
+HOOK_PREDICATE: KBquery_carRental
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:carRental
+
+HOOK_PREDICATE: KBquery_carRentalRequest
+VARIABLES: ?s ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?s Type: owl:Thing
+QUERY:
+	?s vta:carRentalRequest ?x
+
+HOOK_PREDICATE: KBquery_hotelStay
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:hotelStay
+
+HOOK_PREDICATE: KBquery_hotelStayRequest
+VARIABLES: ?s ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?s Type: owl:Thing
+QUERY:
+	?s vta:hotelStayRequest ?x
+
+HOOK_PREDICATE: KBquery_flight
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:flight
+
+HOOK_PREDICATE: KBquery_flightRequest
+VARIABLES: ?s ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?s Type: owl:Thing
+QUERY:
+	?s vta:hotelStayRequest ?x
+
+HOOK_PREDICATE: KBquery_airportShuttle
+VARIABLES: ?s ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?s Type: owl:Thing
+QUERY:
+	?s vta:airportShuttle ?x
+
+HOOK_PREDICATE: KBquery_carHotelBundleOption
+VARIABLES: ?s ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?s Type: owl:Thing
+QUERY:
+	?s vta:carHotelBundleOption ?x
+
+HOOK_PREDICATE: KBquery_trip
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: vta:trip
+
+
+HOOK_PREDICATE: KBquery_invoice
+VARIABLES: ?s ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?s Type: owl:Thing
+QUERY:
+	?s vta:invoice ?x
+
+HOOK_PREDICATE: KBquery_itinerary
+VARIABLES: ?s ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?s Type: owl:Thing
+QUERY:
+	?s vta:itinerary ?x
