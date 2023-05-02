@@ -1,0 +1,25 @@
+# fluent definitions for robot example
+PREFIX robot: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+OBJECT thing robot  -> robot:robot
+
+PREDICATE AboveOf0(thing)  -> robot:AboveOf0
+PREDICATE AboveOf1(thing)  -> robot:AboveOf1
+PREDICATE AboveOf2(thing)  -> robot:AboveOf2
+PREDICATE BelowOf1(thing)  -> robot:BelowOf1
+PREDICATE BelowOf2(thing)  -> robot:BelowOf2
+PREDICATE BelowOf3(thing)  -> robot:BelowOf3
+PREDICATE Column0(thing)  -> robot:Column0
+PREDICATE Column1(thing)  -> robot:Column1
+PREDICATE Column2(thing)  -> robot:Column2
+PREDICATE Columns(thing)  -> robot:Columns
+PREDICATE LeftOf1(thing)  -> robot:LeftOf1
+PREDICATE LeftOf2(thing)  -> robot:LeftOf2
+PREDICATE LeftOf3(thing)  -> robot:LeftOf3
+PREDICATE RightOf0(thing)  -> robot:RightOf0
+PREDICATE RightOf1(thing)  -> robot:RightOf1
+PREDICATE RightOf2(thing)  -> robot:RightOf2
+PREDICATE Row0(thing)  -> robot:Row0
+PREDICATE Row1(thing)  -> robot:Row1
+PREDICATE Row2(thing)  -> robot:Row2
+PREDICATE Rows(thing)  -> robot:Rows

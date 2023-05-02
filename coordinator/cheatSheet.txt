@@ -53,11 +53,18 @@
 # vta 4
 ./runOMPlanning.sh ../examples/vta/4 vta4.ttl domain.pddl tripProblem4.pddl
 
+# vta roles 4
+./runOMPlanning.sh ../examples/vta_roles/4 vta-roles4.ttl domain.pddl tripProblem4.pddl
+
 
 # elevator 15
 ./runOMPlanning.sh ../examples/elevator/elevator15 elevator15.ttl elevator.pddl elevatorProblem15.pddl
 # elevator modified 15
 ./runOMPlanning.sh ../examples/elevator/elevator15_mod elevator15.ttl elevator.pddl elevatorProblem15.pddl
+
+# robot 3
+./runOMPlanning.sh ../examples/robot/3 TTL3.owl robotDomain3.pddl robotProblem3.pddl
+
 
 # pipes1 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl
@@ -86,8 +93,14 @@
 # vta 4
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/vta/original TTL.owl domain.pddl tripProblem4.pddl
 
+# vta roles 4
+./runHornPlanning.sh ../examples/horn_dl_benchmarks/vta-roles/original TTL.owl domain.pddl tripProblem4.pddl
+
 # taskAssign 3
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/taskassign/original TTL.owl domain.pddl taskProblem3.pddl
+
+# robot 3
+./runHornPlanning.sh ../examples/horn_dl_benchmarks/robot/original TTL3.owl robotDomain3.pddl robotProblem3.pddl
 
 # pipes1 7-7
 ./runHornPlanning.sh ../examples/horn_pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl

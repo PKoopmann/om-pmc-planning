@@ -1,0 +1,4 @@
+(moveright robot)
+(movedown robot)
+(moveup robot)
+; cost = 3 (unit cost)

@@ -95,6 +95,8 @@ start=0
 lastSize=-1
 newSize=0
 
+TimeOut=0
+
 # call rewriting generator
 TimeStartReasoning="$(date -u +%s.%N)"
 if [ $TimeLimit == -1 ]; then
@@ -105,11 +107,7 @@ else
   timeout "$TimeLimit"s  ./computeRewritings.sh "$RewritingGenerator" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" "$ReasonerLog" "$increment"
   if [ $? -eq 124 ]
   then
-    echo "timeout for rewriting generator after $TimeLimit seconds"
-    echo "reasoning time: >${TimeLimit}s"
-    echo "planning time: -"
-    echo "total time: -"
-    exit 1
+    TimeOut=1
   fi
 fi
 
@@ -137,6 +135,14 @@ echo "ontology size: ${AxiomCount}"
 echo "hook count: ${HookCount}"
 echo "fluent count: ${FluentCount}"
 echo "repair count: ${RepairCount}"
+
+if [[ $TimeOut == 1 ]]; then
+  echo "timeout for rewriting generator after $TimeLimit seconds"
+  echo "reasoning time: >${TimeLimit}s"
+  echo "planning time: -"
+  echo "total time: -"
+  exit 1
+fi
 
 
 # remove the new domain if it exists

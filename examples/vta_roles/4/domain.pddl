@@ -1,4 +1,6 @@
 (define (domain Wsmo2VTAT)
+	(:requirements :strips :equality :disjunctive-preconditions :derived-predicates :negative-preconditions :conditional-effects :existential-preconditions)
+
 
 (:predicates 
 	(invoice ?x ?y)

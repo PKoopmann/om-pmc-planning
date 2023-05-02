@@ -1,0 +1,5477 @@
+# abstract hook definitions for robot example
+PREFIX robot: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+HOOK_PREDICATE: KBquery_AboveOf0
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf0
+
+HOOK_PREDICATE: KBquery_AboveOf1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf1
+
+HOOK_PREDICATE: KBquery_AboveOf10
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf10
+
+HOOK_PREDICATE: KBquery_AboveOf100
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf100
+
+HOOK_PREDICATE: KBquery_AboveOf101
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf101
+
+HOOK_PREDICATE: KBquery_AboveOf102
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf102
+
+HOOK_PREDICATE: KBquery_AboveOf103
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf103
+
+HOOK_PREDICATE: KBquery_AboveOf104
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf104
+
+HOOK_PREDICATE: KBquery_AboveOf105
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf105
+
+HOOK_PREDICATE: KBquery_AboveOf106
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf106
+
+HOOK_PREDICATE: KBquery_AboveOf107
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf107
+
+HOOK_PREDICATE: KBquery_AboveOf108
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf108
+
+HOOK_PREDICATE: KBquery_AboveOf109
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf109
+
+HOOK_PREDICATE: KBquery_AboveOf11
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf11
+
+HOOK_PREDICATE: KBquery_AboveOf110
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf110
+
+HOOK_PREDICATE: KBquery_AboveOf111
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf111
+
+HOOK_PREDICATE: KBquery_AboveOf112
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf112
+
+HOOK_PREDICATE: KBquery_AboveOf113
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf113
+
+HOOK_PREDICATE: KBquery_AboveOf114
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf114
+
+HOOK_PREDICATE: KBquery_AboveOf115
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf115
+
+HOOK_PREDICATE: KBquery_AboveOf116
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf116
+
+HOOK_PREDICATE: KBquery_AboveOf117
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf117
+
+HOOK_PREDICATE: KBquery_AboveOf118
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf118
+
+HOOK_PREDICATE: KBquery_AboveOf119
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf119
+
+HOOK_PREDICATE: KBquery_AboveOf12
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf12
+
+HOOK_PREDICATE: KBquery_AboveOf120
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf120
+
+HOOK_PREDICATE: KBquery_AboveOf121
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf121
+
+HOOK_PREDICATE: KBquery_AboveOf122
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf122
+
+HOOK_PREDICATE: KBquery_AboveOf123
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf123
+
+HOOK_PREDICATE: KBquery_AboveOf124
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf124
+
+HOOK_PREDICATE: KBquery_AboveOf125
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf125
+
+HOOK_PREDICATE: KBquery_AboveOf126
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf126
+
+HOOK_PREDICATE: KBquery_AboveOf127
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf127
+
+HOOK_PREDICATE: KBquery_AboveOf128
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf128
+
+HOOK_PREDICATE: KBquery_AboveOf129
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf129
+
+HOOK_PREDICATE: KBquery_AboveOf13
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf13
+
+HOOK_PREDICATE: KBquery_AboveOf14
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf14
+
+HOOK_PREDICATE: KBquery_AboveOf15
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf15
+
+HOOK_PREDICATE: KBquery_AboveOf16
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf16
+
+HOOK_PREDICATE: KBquery_AboveOf17
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf17
+
+HOOK_PREDICATE: KBquery_AboveOf18
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf18
+
+HOOK_PREDICATE: KBquery_AboveOf19
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf19
+
+HOOK_PREDICATE: KBquery_AboveOf2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf2
+
+HOOK_PREDICATE: KBquery_AboveOf20
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf20
+
+HOOK_PREDICATE: KBquery_AboveOf21
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf21
+
+HOOK_PREDICATE: KBquery_AboveOf22
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf22
+
+HOOK_PREDICATE: KBquery_AboveOf23
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf23
+
+HOOK_PREDICATE: KBquery_AboveOf24
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf24
+
+HOOK_PREDICATE: KBquery_AboveOf25
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf25
+
+HOOK_PREDICATE: KBquery_AboveOf26
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf26
+
+HOOK_PREDICATE: KBquery_AboveOf27
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf27
+
+HOOK_PREDICATE: KBquery_AboveOf28
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf28
+
+HOOK_PREDICATE: KBquery_AboveOf29
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf29
+
+HOOK_PREDICATE: KBquery_AboveOf3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf3
+
+HOOK_PREDICATE: KBquery_AboveOf30
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf30
+
+HOOK_PREDICATE: KBquery_AboveOf31
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf31
+
+HOOK_PREDICATE: KBquery_AboveOf32
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf32
+
+HOOK_PREDICATE: KBquery_AboveOf33
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf33
+
+HOOK_PREDICATE: KBquery_AboveOf34
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf34
+
+HOOK_PREDICATE: KBquery_AboveOf35
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf35
+
+HOOK_PREDICATE: KBquery_AboveOf36
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf36
+
+HOOK_PREDICATE: KBquery_AboveOf37
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf37
+
+HOOK_PREDICATE: KBquery_AboveOf38
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf38
+
+HOOK_PREDICATE: KBquery_AboveOf39
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf39
+
+HOOK_PREDICATE: KBquery_AboveOf4
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf4
+
+HOOK_PREDICATE: KBquery_AboveOf40
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf40
+
+HOOK_PREDICATE: KBquery_AboveOf41
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf41
+
+HOOK_PREDICATE: KBquery_AboveOf42
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf42
+
+HOOK_PREDICATE: KBquery_AboveOf43
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf43
+
+HOOK_PREDICATE: KBquery_AboveOf44
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf44
+
+HOOK_PREDICATE: KBquery_AboveOf45
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf45
+
+HOOK_PREDICATE: KBquery_AboveOf46
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf46
+
+HOOK_PREDICATE: KBquery_AboveOf47
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf47
+
+HOOK_PREDICATE: KBquery_AboveOf48
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf48
+
+HOOK_PREDICATE: KBquery_AboveOf49
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf49
+
+HOOK_PREDICATE: KBquery_AboveOf5
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf5
+
+HOOK_PREDICATE: KBquery_AboveOf50
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf50
+
+HOOK_PREDICATE: KBquery_AboveOf51
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf51
+
+HOOK_PREDICATE: KBquery_AboveOf52
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf52
+
+HOOK_PREDICATE: KBquery_AboveOf53
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf53
+
+HOOK_PREDICATE: KBquery_AboveOf54
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf54
+
+HOOK_PREDICATE: KBquery_AboveOf55
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf55
+
+HOOK_PREDICATE: KBquery_AboveOf56
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf56
+
+HOOK_PREDICATE: KBquery_AboveOf57
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf57
+
+HOOK_PREDICATE: KBquery_AboveOf58
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf58
+
+HOOK_PREDICATE: KBquery_AboveOf59
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf59
+
+HOOK_PREDICATE: KBquery_AboveOf6
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf6
+
+HOOK_PREDICATE: KBquery_AboveOf60
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf60
+
+HOOK_PREDICATE: KBquery_AboveOf61
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf61
+
+HOOK_PREDICATE: KBquery_AboveOf62
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf62
+
+HOOK_PREDICATE: KBquery_AboveOf63
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf63
+
+HOOK_PREDICATE: KBquery_AboveOf64
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf64
+
+HOOK_PREDICATE: KBquery_AboveOf65
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf65
+
+HOOK_PREDICATE: KBquery_AboveOf66
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf66
+
+HOOK_PREDICATE: KBquery_AboveOf67
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf67
+
+HOOK_PREDICATE: KBquery_AboveOf68
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf68
+
+HOOK_PREDICATE: KBquery_AboveOf69
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf69
+
+HOOK_PREDICATE: KBquery_AboveOf7
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf7
+
+HOOK_PREDICATE: KBquery_AboveOf70
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf70
+
+HOOK_PREDICATE: KBquery_AboveOf71
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf71
+
+HOOK_PREDICATE: KBquery_AboveOf72
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf72
+
+HOOK_PREDICATE: KBquery_AboveOf73
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf73
+
+HOOK_PREDICATE: KBquery_AboveOf74
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf74
+
+HOOK_PREDICATE: KBquery_AboveOf75
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf75
+
+HOOK_PREDICATE: KBquery_AboveOf76
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf76
+
+HOOK_PREDICATE: KBquery_AboveOf77
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf77
+
+HOOK_PREDICATE: KBquery_AboveOf78
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf78
+
+HOOK_PREDICATE: KBquery_AboveOf79
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf79
+
+HOOK_PREDICATE: KBquery_AboveOf8
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf8
+
+HOOK_PREDICATE: KBquery_AboveOf80
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf80
+
+HOOK_PREDICATE: KBquery_AboveOf81
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf81
+
+HOOK_PREDICATE: KBquery_AboveOf82
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf82
+
+HOOK_PREDICATE: KBquery_AboveOf83
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf83
+
+HOOK_PREDICATE: KBquery_AboveOf84
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf84
+
+HOOK_PREDICATE: KBquery_AboveOf85
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf85
+
+HOOK_PREDICATE: KBquery_AboveOf86
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf86
+
+HOOK_PREDICATE: KBquery_AboveOf87
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf87
+
+HOOK_PREDICATE: KBquery_AboveOf88
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf88
+
+HOOK_PREDICATE: KBquery_AboveOf89
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf89
+
+HOOK_PREDICATE: KBquery_AboveOf9
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf9
+
+HOOK_PREDICATE: KBquery_AboveOf90
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf90
+
+HOOK_PREDICATE: KBquery_AboveOf91
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf91
+
+HOOK_PREDICATE: KBquery_AboveOf92
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf92
+
+HOOK_PREDICATE: KBquery_AboveOf93
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf93
+
+HOOK_PREDICATE: KBquery_AboveOf94
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf94
+
+HOOK_PREDICATE: KBquery_AboveOf95
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf95
+
+HOOK_PREDICATE: KBquery_AboveOf96
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf96
+
+HOOK_PREDICATE: KBquery_AboveOf97
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf97
+
+HOOK_PREDICATE: KBquery_AboveOf98
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf98
+
+HOOK_PREDICATE: KBquery_AboveOf99
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf99
+
+HOOK_PREDICATE: KBquery_BelowOf1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf1
+
+HOOK_PREDICATE: KBquery_BelowOf10
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf10
+
+HOOK_PREDICATE: KBquery_BelowOf100
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf100
+
+HOOK_PREDICATE: KBquery_BelowOf101
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf101
+
+HOOK_PREDICATE: KBquery_BelowOf102
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf102
+
+HOOK_PREDICATE: KBquery_BelowOf103
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf103
+
+HOOK_PREDICATE: KBquery_BelowOf104
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf104
+
+HOOK_PREDICATE: KBquery_BelowOf105
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf105
+
+HOOK_PREDICATE: KBquery_BelowOf106
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf106
+
+HOOK_PREDICATE: KBquery_BelowOf107
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf107
+
+HOOK_PREDICATE: KBquery_BelowOf108
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf108
+
+HOOK_PREDICATE: KBquery_BelowOf109
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf109
+
+HOOK_PREDICATE: KBquery_BelowOf11
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf11
+
+HOOK_PREDICATE: KBquery_BelowOf110
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf110
+
+HOOK_PREDICATE: KBquery_BelowOf111
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf111
+
+HOOK_PREDICATE: KBquery_BelowOf112
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf112
+
+HOOK_PREDICATE: KBquery_BelowOf113
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf113
+
+HOOK_PREDICATE: KBquery_BelowOf114
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf114
+
+HOOK_PREDICATE: KBquery_BelowOf115
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf115
+
+HOOK_PREDICATE: KBquery_BelowOf116
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf116
+
+HOOK_PREDICATE: KBquery_BelowOf117
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf117
+
+HOOK_PREDICATE: KBquery_BelowOf118
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf118
+
+HOOK_PREDICATE: KBquery_BelowOf119
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf119
+
+HOOK_PREDICATE: KBquery_BelowOf12
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf12
+
+HOOK_PREDICATE: KBquery_BelowOf120
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf120
+
+HOOK_PREDICATE: KBquery_BelowOf121
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf121
+
+HOOK_PREDICATE: KBquery_BelowOf122
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf122
+
+HOOK_PREDICATE: KBquery_BelowOf123
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf123
+
+HOOK_PREDICATE: KBquery_BelowOf124
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf124
+
+HOOK_PREDICATE: KBquery_BelowOf125
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf125
+
+HOOK_PREDICATE: KBquery_BelowOf126
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf126
+
+HOOK_PREDICATE: KBquery_BelowOf127
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf127
+
+HOOK_PREDICATE: KBquery_BelowOf128
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf128
+
+HOOK_PREDICATE: KBquery_BelowOf129
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf129
+
+HOOK_PREDICATE: KBquery_BelowOf13
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf13
+
+HOOK_PREDICATE: KBquery_BelowOf130
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf130
+
+HOOK_PREDICATE: KBquery_BelowOf14
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf14
+
+HOOK_PREDICATE: KBquery_BelowOf15
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf15
+
+HOOK_PREDICATE: KBquery_BelowOf16
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf16
+
+HOOK_PREDICATE: KBquery_BelowOf17
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf17
+
+HOOK_PREDICATE: KBquery_BelowOf18
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf18
+
+HOOK_PREDICATE: KBquery_BelowOf19
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf19
+
+HOOK_PREDICATE: KBquery_BelowOf2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf2
+
+HOOK_PREDICATE: KBquery_BelowOf20
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf20
+
+HOOK_PREDICATE: KBquery_BelowOf21
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf21
+
+HOOK_PREDICATE: KBquery_BelowOf22
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf22
+
+HOOK_PREDICATE: KBquery_BelowOf23
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf23
+
+HOOK_PREDICATE: KBquery_BelowOf24
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf24
+
+HOOK_PREDICATE: KBquery_BelowOf25
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf25
+
+HOOK_PREDICATE: KBquery_BelowOf26
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf26
+
+HOOK_PREDICATE: KBquery_BelowOf27
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf27
+
+HOOK_PREDICATE: KBquery_BelowOf28
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf28
+
+HOOK_PREDICATE: KBquery_BelowOf29
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf29
+
+HOOK_PREDICATE: KBquery_BelowOf3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf3
+
+HOOK_PREDICATE: KBquery_BelowOf30
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf30
+
+HOOK_PREDICATE: KBquery_BelowOf31
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf31
+
+HOOK_PREDICATE: KBquery_BelowOf32
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf32
+
+HOOK_PREDICATE: KBquery_BelowOf33
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf33
+
+HOOK_PREDICATE: KBquery_BelowOf34
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf34
+
+HOOK_PREDICATE: KBquery_BelowOf35
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf35
+
+HOOK_PREDICATE: KBquery_BelowOf36
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf36
+
+HOOK_PREDICATE: KBquery_BelowOf37
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf37
+
+HOOK_PREDICATE: KBquery_BelowOf38
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf38
+
+HOOK_PREDICATE: KBquery_BelowOf39
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf39
+
+HOOK_PREDICATE: KBquery_BelowOf4
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf4
+
+HOOK_PREDICATE: KBquery_BelowOf40
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf40
+
+HOOK_PREDICATE: KBquery_BelowOf41
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf41
+
+HOOK_PREDICATE: KBquery_BelowOf42
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf42
+
+HOOK_PREDICATE: KBquery_BelowOf43
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf43
+
+HOOK_PREDICATE: KBquery_BelowOf44
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf44
+
+HOOK_PREDICATE: KBquery_BelowOf45
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf45
+
+HOOK_PREDICATE: KBquery_BelowOf46
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf46
+
+HOOK_PREDICATE: KBquery_BelowOf47
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf47
+
+HOOK_PREDICATE: KBquery_BelowOf48
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf48
+
+HOOK_PREDICATE: KBquery_BelowOf49
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf49
+
+HOOK_PREDICATE: KBquery_BelowOf5
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf5
+
+HOOK_PREDICATE: KBquery_BelowOf50
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf50
+
+HOOK_PREDICATE: KBquery_BelowOf51
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf51
+
+HOOK_PREDICATE: KBquery_BelowOf52
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf52
+
+HOOK_PREDICATE: KBquery_BelowOf53
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf53
+
+HOOK_PREDICATE: KBquery_BelowOf54
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf54
+
+HOOK_PREDICATE: KBquery_BelowOf55
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf55
+
+HOOK_PREDICATE: KBquery_BelowOf56
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf56
+
+HOOK_PREDICATE: KBquery_BelowOf57
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf57
+
+HOOK_PREDICATE: KBquery_BelowOf58
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf58
+
+HOOK_PREDICATE: KBquery_BelowOf59
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf59
+
+HOOK_PREDICATE: KBquery_BelowOf6
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf6
+
+HOOK_PREDICATE: KBquery_BelowOf60
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf60
+
+HOOK_PREDICATE: KBquery_BelowOf61
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf61
+
+HOOK_PREDICATE: KBquery_BelowOf62
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf62
+
+HOOK_PREDICATE: KBquery_BelowOf63
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf63
+
+HOOK_PREDICATE: KBquery_BelowOf64
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf64
+
+HOOK_PREDICATE: KBquery_BelowOf65
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf65
+
+HOOK_PREDICATE: KBquery_BelowOf66
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf66
+
+HOOK_PREDICATE: KBquery_BelowOf67
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf67
+
+HOOK_PREDICATE: KBquery_BelowOf68
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf68
+
+HOOK_PREDICATE: KBquery_BelowOf69
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf69
+
+HOOK_PREDICATE: KBquery_BelowOf7
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf7
+
+HOOK_PREDICATE: KBquery_BelowOf70
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf70
+
+HOOK_PREDICATE: KBquery_BelowOf71
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf71
+
+HOOK_PREDICATE: KBquery_BelowOf72
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf72
+
+HOOK_PREDICATE: KBquery_BelowOf73
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf73
+
+HOOK_PREDICATE: KBquery_BelowOf74
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf74
+
+HOOK_PREDICATE: KBquery_BelowOf75
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf75
+
+HOOK_PREDICATE: KBquery_BelowOf76
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf76
+
+HOOK_PREDICATE: KBquery_BelowOf77
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf77
+
+HOOK_PREDICATE: KBquery_BelowOf78
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf78
+
+HOOK_PREDICATE: KBquery_BelowOf79
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf79
+
+HOOK_PREDICATE: KBquery_BelowOf8
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf8
+
+HOOK_PREDICATE: KBquery_BelowOf80
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf80
+
+HOOK_PREDICATE: KBquery_BelowOf81
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf81
+
+HOOK_PREDICATE: KBquery_BelowOf82
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf82
+
+HOOK_PREDICATE: KBquery_BelowOf83
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf83
+
+HOOK_PREDICATE: KBquery_BelowOf84
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf84
+
+HOOK_PREDICATE: KBquery_BelowOf85
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf85
+
+HOOK_PREDICATE: KBquery_BelowOf86
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf86
+
+HOOK_PREDICATE: KBquery_BelowOf87
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf87
+
+HOOK_PREDICATE: KBquery_BelowOf88
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf88
+
+HOOK_PREDICATE: KBquery_BelowOf89
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf89
+
+HOOK_PREDICATE: KBquery_BelowOf9
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf9
+
+HOOK_PREDICATE: KBquery_BelowOf90
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf90
+
+HOOK_PREDICATE: KBquery_BelowOf91
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf91
+
+HOOK_PREDICATE: KBquery_BelowOf92
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf92
+
+HOOK_PREDICATE: KBquery_BelowOf93
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf93
+
+HOOK_PREDICATE: KBquery_BelowOf94
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf94
+
+HOOK_PREDICATE: KBquery_BelowOf95
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf95
+
+HOOK_PREDICATE: KBquery_BelowOf96
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf96
+
+HOOK_PREDICATE: KBquery_BelowOf97
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf97
+
+HOOK_PREDICATE: KBquery_BelowOf98
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf98
+
+HOOK_PREDICATE: KBquery_BelowOf99
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf99
+
+HOOK_PREDICATE: KBquery_Column0
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column0
+
+HOOK_PREDICATE: KBquery_Column1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column1
+
+HOOK_PREDICATE: KBquery_Column10
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column10
+
+HOOK_PREDICATE: KBquery_Column100
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column100
+
+HOOK_PREDICATE: KBquery_Column101
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column101
+
+HOOK_PREDICATE: KBquery_Column102
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column102
+
+HOOK_PREDICATE: KBquery_Column103
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column103
+
+HOOK_PREDICATE: KBquery_Column104
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column104
+
+HOOK_PREDICATE: KBquery_Column105
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column105
+
+HOOK_PREDICATE: KBquery_Column106
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column106
+
+HOOK_PREDICATE: KBquery_Column107
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column107
+
+HOOK_PREDICATE: KBquery_Column108
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column108
+
+HOOK_PREDICATE: KBquery_Column109
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column109
+
+HOOK_PREDICATE: KBquery_Column11
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column11
+
+HOOK_PREDICATE: KBquery_Column110
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column110
+
+HOOK_PREDICATE: KBquery_Column111
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column111
+
+HOOK_PREDICATE: KBquery_Column112
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column112
+
+HOOK_PREDICATE: KBquery_Column113
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column113
+
+HOOK_PREDICATE: KBquery_Column114
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column114
+
+HOOK_PREDICATE: KBquery_Column115
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column115
+
+HOOK_PREDICATE: KBquery_Column116
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column116
+
+HOOK_PREDICATE: KBquery_Column117
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column117
+
+HOOK_PREDICATE: KBquery_Column118
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column118
+
+HOOK_PREDICATE: KBquery_Column119
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column119
+
+HOOK_PREDICATE: KBquery_Column12
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column12
+
+HOOK_PREDICATE: KBquery_Column120
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column120
+
+HOOK_PREDICATE: KBquery_Column121
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column121
+
+HOOK_PREDICATE: KBquery_Column122
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column122
+
+HOOK_PREDICATE: KBquery_Column123
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column123
+
+HOOK_PREDICATE: KBquery_Column124
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column124
+
+HOOK_PREDICATE: KBquery_Column125
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column125
+
+HOOK_PREDICATE: KBquery_Column126
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column126
+
+HOOK_PREDICATE: KBquery_Column127
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column127
+
+HOOK_PREDICATE: KBquery_Column128
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column128
+
+HOOK_PREDICATE: KBquery_Column129
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column129
+
+HOOK_PREDICATE: KBquery_Column13
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column13
+
+HOOK_PREDICATE: KBquery_Column14
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column14
+
+HOOK_PREDICATE: KBquery_Column15
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column15
+
+HOOK_PREDICATE: KBquery_Column16
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column16
+
+HOOK_PREDICATE: KBquery_Column17
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column17
+
+HOOK_PREDICATE: KBquery_Column18
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column18
+
+HOOK_PREDICATE: KBquery_Column19
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column19
+
+HOOK_PREDICATE: KBquery_Column2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column2
+
+HOOK_PREDICATE: KBquery_Column20
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column20
+
+HOOK_PREDICATE: KBquery_Column21
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column21
+
+HOOK_PREDICATE: KBquery_Column22
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column22
+
+HOOK_PREDICATE: KBquery_Column23
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column23
+
+HOOK_PREDICATE: KBquery_Column24
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column24
+
+HOOK_PREDICATE: KBquery_Column25
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column25
+
+HOOK_PREDICATE: KBquery_Column26
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column26
+
+HOOK_PREDICATE: KBquery_Column27
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column27
+
+HOOK_PREDICATE: KBquery_Column28
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column28
+
+HOOK_PREDICATE: KBquery_Column29
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column29
+
+HOOK_PREDICATE: KBquery_Column3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column3
+
+HOOK_PREDICATE: KBquery_Column30
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column30
+
+HOOK_PREDICATE: KBquery_Column31
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column31
+
+HOOK_PREDICATE: KBquery_Column32
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column32
+
+HOOK_PREDICATE: KBquery_Column33
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column33
+
+HOOK_PREDICATE: KBquery_Column34
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column34
+
+HOOK_PREDICATE: KBquery_Column35
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column35
+
+HOOK_PREDICATE: KBquery_Column36
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column36
+
+HOOK_PREDICATE: KBquery_Column37
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column37
+
+HOOK_PREDICATE: KBquery_Column38
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column38
+
+HOOK_PREDICATE: KBquery_Column39
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column39
+
+HOOK_PREDICATE: KBquery_Column4
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column4
+
+HOOK_PREDICATE: KBquery_Column40
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column40
+
+HOOK_PREDICATE: KBquery_Column41
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column41
+
+HOOK_PREDICATE: KBquery_Column42
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column42
+
+HOOK_PREDICATE: KBquery_Column43
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column43
+
+HOOK_PREDICATE: KBquery_Column44
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column44
+
+HOOK_PREDICATE: KBquery_Column45
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column45
+
+HOOK_PREDICATE: KBquery_Column46
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column46
+
+HOOK_PREDICATE: KBquery_Column47
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column47
+
+HOOK_PREDICATE: KBquery_Column48
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column48
+
+HOOK_PREDICATE: KBquery_Column49
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column49
+
+HOOK_PREDICATE: KBquery_Column5
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column5
+
+HOOK_PREDICATE: KBquery_Column50
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column50
+
+HOOK_PREDICATE: KBquery_Column51
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column51
+
+HOOK_PREDICATE: KBquery_Column52
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column52
+
+HOOK_PREDICATE: KBquery_Column53
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column53
+
+HOOK_PREDICATE: KBquery_Column54
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column54
+
+HOOK_PREDICATE: KBquery_Column55
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column55
+
+HOOK_PREDICATE: KBquery_Column56
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column56
+
+HOOK_PREDICATE: KBquery_Column57
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column57
+
+HOOK_PREDICATE: KBquery_Column58
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column58
+
+HOOK_PREDICATE: KBquery_Column59
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column59
+
+HOOK_PREDICATE: KBquery_Column6
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column6
+
+HOOK_PREDICATE: KBquery_Column60
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column60
+
+HOOK_PREDICATE: KBquery_Column61
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column61
+
+HOOK_PREDICATE: KBquery_Column62
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column62
+
+HOOK_PREDICATE: KBquery_Column63
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column63
+
+HOOK_PREDICATE: KBquery_Column64
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column64
+
+HOOK_PREDICATE: KBquery_Column65
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column65
+
+HOOK_PREDICATE: KBquery_Column66
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column66
+
+HOOK_PREDICATE: KBquery_Column67
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column67
+
+HOOK_PREDICATE: KBquery_Column68
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column68
+
+HOOK_PREDICATE: KBquery_Column69
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column69
+
+HOOK_PREDICATE: KBquery_Column7
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column7
+
+HOOK_PREDICATE: KBquery_Column70
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column70
+
+HOOK_PREDICATE: KBquery_Column71
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column71
+
+HOOK_PREDICATE: KBquery_Column72
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column72
+
+HOOK_PREDICATE: KBquery_Column73
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column73
+
+HOOK_PREDICATE: KBquery_Column74
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column74
+
+HOOK_PREDICATE: KBquery_Column75
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column75
+
+HOOK_PREDICATE: KBquery_Column76
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column76
+
+HOOK_PREDICATE: KBquery_Column77
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column77
+
+HOOK_PREDICATE: KBquery_Column78
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column78
+
+HOOK_PREDICATE: KBquery_Column79
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column79
+
+HOOK_PREDICATE: KBquery_Column8
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column8
+
+HOOK_PREDICATE: KBquery_Column80
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column80
+
+HOOK_PREDICATE: KBquery_Column81
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column81
+
+HOOK_PREDICATE: KBquery_Column82
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column82
+
+HOOK_PREDICATE: KBquery_Column83
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column83
+
+HOOK_PREDICATE: KBquery_Column84
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column84
+
+HOOK_PREDICATE: KBquery_Column85
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column85
+
+HOOK_PREDICATE: KBquery_Column86
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column86
+
+HOOK_PREDICATE: KBquery_Column87
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column87
+
+HOOK_PREDICATE: KBquery_Column88
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column88
+
+HOOK_PREDICATE: KBquery_Column89
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column89
+
+HOOK_PREDICATE: KBquery_Column9
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column9
+
+HOOK_PREDICATE: KBquery_Column90
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column90
+
+HOOK_PREDICATE: KBquery_Column91
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column91
+
+HOOK_PREDICATE: KBquery_Column92
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column92
+
+HOOK_PREDICATE: KBquery_Column93
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column93
+
+HOOK_PREDICATE: KBquery_Column94
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column94
+
+HOOK_PREDICATE: KBquery_Column95
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column95
+
+HOOK_PREDICATE: KBquery_Column96
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column96
+
+HOOK_PREDICATE: KBquery_Column97
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column97
+
+HOOK_PREDICATE: KBquery_Column98
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column98
+
+HOOK_PREDICATE: KBquery_Column99
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column99
+
+HOOK_PREDICATE: KBquery_Columns
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Columns
+
+HOOK_PREDICATE: KBquery_LeftOf1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf1
+
+HOOK_PREDICATE: KBquery_LeftOf10
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf10
+
+HOOK_PREDICATE: KBquery_LeftOf100
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf100
+
+HOOK_PREDICATE: KBquery_LeftOf101
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf101
+
+HOOK_PREDICATE: KBquery_LeftOf102
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf102
+
+HOOK_PREDICATE: KBquery_LeftOf103
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf103
+
+HOOK_PREDICATE: KBquery_LeftOf104
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf104
+
+HOOK_PREDICATE: KBquery_LeftOf105
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf105
+
+HOOK_PREDICATE: KBquery_LeftOf106
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf106
+
+HOOK_PREDICATE: KBquery_LeftOf107
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf107
+
+HOOK_PREDICATE: KBquery_LeftOf108
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf108
+
+HOOK_PREDICATE: KBquery_LeftOf109
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf109
+
+HOOK_PREDICATE: KBquery_LeftOf11
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf11
+
+HOOK_PREDICATE: KBquery_LeftOf110
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf110
+
+HOOK_PREDICATE: KBquery_LeftOf111
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf111
+
+HOOK_PREDICATE: KBquery_LeftOf112
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf112
+
+HOOK_PREDICATE: KBquery_LeftOf113
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf113
+
+HOOK_PREDICATE: KBquery_LeftOf114
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf114
+
+HOOK_PREDICATE: KBquery_LeftOf115
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf115
+
+HOOK_PREDICATE: KBquery_LeftOf116
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf116
+
+HOOK_PREDICATE: KBquery_LeftOf117
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf117
+
+HOOK_PREDICATE: KBquery_LeftOf118
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf118
+
+HOOK_PREDICATE: KBquery_LeftOf119
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf119
+
+HOOK_PREDICATE: KBquery_LeftOf12
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf12
+
+HOOK_PREDICATE: KBquery_LeftOf120
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf120
+
+HOOK_PREDICATE: KBquery_LeftOf121
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf121
+
+HOOK_PREDICATE: KBquery_LeftOf122
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf122
+
+HOOK_PREDICATE: KBquery_LeftOf123
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf123
+
+HOOK_PREDICATE: KBquery_LeftOf124
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf124
+
+HOOK_PREDICATE: KBquery_LeftOf125
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf125
+
+HOOK_PREDICATE: KBquery_LeftOf126
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf126
+
+HOOK_PREDICATE: KBquery_LeftOf127
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf127
+
+HOOK_PREDICATE: KBquery_LeftOf128
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf128
+
+HOOK_PREDICATE: KBquery_LeftOf129
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf129
+
+HOOK_PREDICATE: KBquery_LeftOf13
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf13
+
+HOOK_PREDICATE: KBquery_LeftOf130
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf130
+
+HOOK_PREDICATE: KBquery_LeftOf14
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf14
+
+HOOK_PREDICATE: KBquery_LeftOf15
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf15
+
+HOOK_PREDICATE: KBquery_LeftOf16
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf16
+
+HOOK_PREDICATE: KBquery_LeftOf17
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf17
+
+HOOK_PREDICATE: KBquery_LeftOf18
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf18
+
+HOOK_PREDICATE: KBquery_LeftOf19
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf19
+
+HOOK_PREDICATE: KBquery_LeftOf2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf2
+
+HOOK_PREDICATE: KBquery_LeftOf20
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf20
+
+HOOK_PREDICATE: KBquery_LeftOf21
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf21
+
+HOOK_PREDICATE: KBquery_LeftOf22
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf22
+
+HOOK_PREDICATE: KBquery_LeftOf23
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf23
+
+HOOK_PREDICATE: KBquery_LeftOf24
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf24
+
+HOOK_PREDICATE: KBquery_LeftOf25
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf25
+
+HOOK_PREDICATE: KBquery_LeftOf26
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf26
+
+HOOK_PREDICATE: KBquery_LeftOf27
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf27
+
+HOOK_PREDICATE: KBquery_LeftOf28
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf28
+
+HOOK_PREDICATE: KBquery_LeftOf29
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf29
+
+HOOK_PREDICATE: KBquery_LeftOf3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf3
+
+HOOK_PREDICATE: KBquery_LeftOf30
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf30
+
+HOOK_PREDICATE: KBquery_LeftOf31
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf31
+
+HOOK_PREDICATE: KBquery_LeftOf32
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf32
+
+HOOK_PREDICATE: KBquery_LeftOf33
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf33
+
+HOOK_PREDICATE: KBquery_LeftOf34
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf34
+
+HOOK_PREDICATE: KBquery_LeftOf35
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf35
+
+HOOK_PREDICATE: KBquery_LeftOf36
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf36
+
+HOOK_PREDICATE: KBquery_LeftOf37
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf37
+
+HOOK_PREDICATE: KBquery_LeftOf38
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf38
+
+HOOK_PREDICATE: KBquery_LeftOf39
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf39
+
+HOOK_PREDICATE: KBquery_LeftOf4
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf4
+
+HOOK_PREDICATE: KBquery_LeftOf40
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf40
+
+HOOK_PREDICATE: KBquery_LeftOf41
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf41
+
+HOOK_PREDICATE: KBquery_LeftOf42
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf42
+
+HOOK_PREDICATE: KBquery_LeftOf43
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf43
+
+HOOK_PREDICATE: KBquery_LeftOf44
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf44
+
+HOOK_PREDICATE: KBquery_LeftOf45
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf45
+
+HOOK_PREDICATE: KBquery_LeftOf46
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf46
+
+HOOK_PREDICATE: KBquery_LeftOf47
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf47
+
+HOOK_PREDICATE: KBquery_LeftOf48
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf48
+
+HOOK_PREDICATE: KBquery_LeftOf49
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf49
+
+HOOK_PREDICATE: KBquery_LeftOf5
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf5
+
+HOOK_PREDICATE: KBquery_LeftOf50
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf50
+
+HOOK_PREDICATE: KBquery_LeftOf51
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf51
+
+HOOK_PREDICATE: KBquery_LeftOf52
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf52
+
+HOOK_PREDICATE: KBquery_LeftOf53
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf53
+
+HOOK_PREDICATE: KBquery_LeftOf54
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf54
+
+HOOK_PREDICATE: KBquery_LeftOf55
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf55
+
+HOOK_PREDICATE: KBquery_LeftOf56
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf56
+
+HOOK_PREDICATE: KBquery_LeftOf57
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf57
+
+HOOK_PREDICATE: KBquery_LeftOf58
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf58
+
+HOOK_PREDICATE: KBquery_LeftOf59
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf59
+
+HOOK_PREDICATE: KBquery_LeftOf6
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf6
+
+HOOK_PREDICATE: KBquery_LeftOf60
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf60
+
+HOOK_PREDICATE: KBquery_LeftOf61
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf61
+
+HOOK_PREDICATE: KBquery_LeftOf62
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf62
+
+HOOK_PREDICATE: KBquery_LeftOf63
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf63
+
+HOOK_PREDICATE: KBquery_LeftOf64
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf64
+
+HOOK_PREDICATE: KBquery_LeftOf65
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf65
+
+HOOK_PREDICATE: KBquery_LeftOf66
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf66
+
+HOOK_PREDICATE: KBquery_LeftOf67
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf67
+
+HOOK_PREDICATE: KBquery_LeftOf68
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf68
+
+HOOK_PREDICATE: KBquery_LeftOf69
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf69
+
+HOOK_PREDICATE: KBquery_LeftOf7
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf7
+
+HOOK_PREDICATE: KBquery_LeftOf70
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf70
+
+HOOK_PREDICATE: KBquery_LeftOf71
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf71
+
+HOOK_PREDICATE: KBquery_LeftOf72
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf72
+
+HOOK_PREDICATE: KBquery_LeftOf73
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf73
+
+HOOK_PREDICATE: KBquery_LeftOf74
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf74
+
+HOOK_PREDICATE: KBquery_LeftOf75
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf75
+
+HOOK_PREDICATE: KBquery_LeftOf76
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf76
+
+HOOK_PREDICATE: KBquery_LeftOf77
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf77
+
+HOOK_PREDICATE: KBquery_LeftOf78
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf78
+
+HOOK_PREDICATE: KBquery_LeftOf79
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf79
+
+HOOK_PREDICATE: KBquery_LeftOf8
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf8
+
+HOOK_PREDICATE: KBquery_LeftOf80
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf80
+
+HOOK_PREDICATE: KBquery_LeftOf81
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf81
+
+HOOK_PREDICATE: KBquery_LeftOf82
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf82
+
+HOOK_PREDICATE: KBquery_LeftOf83
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf83
+
+HOOK_PREDICATE: KBquery_LeftOf84
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf84
+
+HOOK_PREDICATE: KBquery_LeftOf85
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf85
+
+HOOK_PREDICATE: KBquery_LeftOf86
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf86
+
+HOOK_PREDICATE: KBquery_LeftOf87
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf87
+
+HOOK_PREDICATE: KBquery_LeftOf88
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf88
+
+HOOK_PREDICATE: KBquery_LeftOf89
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf89
+
+HOOK_PREDICATE: KBquery_LeftOf9
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf9
+
+HOOK_PREDICATE: KBquery_LeftOf90
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf90
+
+HOOK_PREDICATE: KBquery_LeftOf91
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf91
+
+HOOK_PREDICATE: KBquery_LeftOf92
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf92
+
+HOOK_PREDICATE: KBquery_LeftOf93
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf93
+
+HOOK_PREDICATE: KBquery_LeftOf94
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf94
+
+HOOK_PREDICATE: KBquery_LeftOf95
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf95
+
+HOOK_PREDICATE: KBquery_LeftOf96
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf96
+
+HOOK_PREDICATE: KBquery_LeftOf97
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf97
+
+HOOK_PREDICATE: KBquery_LeftOf98
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf98
+
+HOOK_PREDICATE: KBquery_LeftOf99
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf99
+
+HOOK_PREDICATE: KBquery_RightOf0
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf0
+
+HOOK_PREDICATE: KBquery_RightOf1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf1
+
+HOOK_PREDICATE: KBquery_RightOf10
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf10
+
+HOOK_PREDICATE: KBquery_RightOf100
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf100
+
+HOOK_PREDICATE: KBquery_RightOf101
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf101
+
+HOOK_PREDICATE: KBquery_RightOf102
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf102
+
+HOOK_PREDICATE: KBquery_RightOf103
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf103
+
+HOOK_PREDICATE: KBquery_RightOf104
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf104
+
+HOOK_PREDICATE: KBquery_RightOf105
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf105
+
+HOOK_PREDICATE: KBquery_RightOf106
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf106
+
+HOOK_PREDICATE: KBquery_RightOf107
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf107
+
+HOOK_PREDICATE: KBquery_RightOf108
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf108
+
+HOOK_PREDICATE: KBquery_RightOf109
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf109
+
+HOOK_PREDICATE: KBquery_RightOf11
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf11
+
+HOOK_PREDICATE: KBquery_RightOf110
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf110
+
+HOOK_PREDICATE: KBquery_RightOf111
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf111
+
+HOOK_PREDICATE: KBquery_RightOf112
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf112
+
+HOOK_PREDICATE: KBquery_RightOf113
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf113
+
+HOOK_PREDICATE: KBquery_RightOf114
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf114
+
+HOOK_PREDICATE: KBquery_RightOf115
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf115
+
+HOOK_PREDICATE: KBquery_RightOf116
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf116
+
+HOOK_PREDICATE: KBquery_RightOf117
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf117
+
+HOOK_PREDICATE: KBquery_RightOf118
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf118
+
+HOOK_PREDICATE: KBquery_RightOf119
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf119
+
+HOOK_PREDICATE: KBquery_RightOf12
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf12
+
+HOOK_PREDICATE: KBquery_RightOf120
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf120
+
+HOOK_PREDICATE: KBquery_RightOf121
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf121
+
+HOOK_PREDICATE: KBquery_RightOf122
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf122
+
+HOOK_PREDICATE: KBquery_RightOf123
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf123
+
+HOOK_PREDICATE: KBquery_RightOf124
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf124
+
+HOOK_PREDICATE: KBquery_RightOf125
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf125
+
+HOOK_PREDICATE: KBquery_RightOf126
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf126
+
+HOOK_PREDICATE: KBquery_RightOf127
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf127
+
+HOOK_PREDICATE: KBquery_RightOf128
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf128
+
+HOOK_PREDICATE: KBquery_RightOf129
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf129
+
+HOOK_PREDICATE: KBquery_RightOf13
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf13
+
+HOOK_PREDICATE: KBquery_RightOf14
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf14
+
+HOOK_PREDICATE: KBquery_RightOf15
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf15
+
+HOOK_PREDICATE: KBquery_RightOf16
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf16
+
+HOOK_PREDICATE: KBquery_RightOf17
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf17
+
+HOOK_PREDICATE: KBquery_RightOf18
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf18
+
+HOOK_PREDICATE: KBquery_RightOf19
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf19
+
+HOOK_PREDICATE: KBquery_RightOf2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf2
+
+HOOK_PREDICATE: KBquery_RightOf20
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf20
+
+HOOK_PREDICATE: KBquery_RightOf21
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf21
+
+HOOK_PREDICATE: KBquery_RightOf22
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf22
+
+HOOK_PREDICATE: KBquery_RightOf23
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf23
+
+HOOK_PREDICATE: KBquery_RightOf24
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf24
+
+HOOK_PREDICATE: KBquery_RightOf25
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf25
+
+HOOK_PREDICATE: KBquery_RightOf26
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf26
+
+HOOK_PREDICATE: KBquery_RightOf27
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf27
+
+HOOK_PREDICATE: KBquery_RightOf28
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf28
+
+HOOK_PREDICATE: KBquery_RightOf29
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf29
+
+HOOK_PREDICATE: KBquery_RightOf3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf3
+
+HOOK_PREDICATE: KBquery_RightOf30
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf30
+
+HOOK_PREDICATE: KBquery_RightOf31
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf31
+
+HOOK_PREDICATE: KBquery_RightOf32
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf32
+
+HOOK_PREDICATE: KBquery_RightOf33
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf33
+
+HOOK_PREDICATE: KBquery_RightOf34
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf34
+
+HOOK_PREDICATE: KBquery_RightOf35
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf35
+
+HOOK_PREDICATE: KBquery_RightOf36
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf36
+
+HOOK_PREDICATE: KBquery_RightOf37
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf37
+
+HOOK_PREDICATE: KBquery_RightOf38
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf38
+
+HOOK_PREDICATE: KBquery_RightOf39
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf39
+
+HOOK_PREDICATE: KBquery_RightOf4
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf4
+
+HOOK_PREDICATE: KBquery_RightOf40
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf40
+
+HOOK_PREDICATE: KBquery_RightOf41
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf41
+
+HOOK_PREDICATE: KBquery_RightOf42
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf42
+
+HOOK_PREDICATE: KBquery_RightOf43
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf43
+
+HOOK_PREDICATE: KBquery_RightOf44
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf44
+
+HOOK_PREDICATE: KBquery_RightOf45
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf45
+
+HOOK_PREDICATE: KBquery_RightOf46
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf46
+
+HOOK_PREDICATE: KBquery_RightOf47
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf47
+
+HOOK_PREDICATE: KBquery_RightOf48
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf48
+
+HOOK_PREDICATE: KBquery_RightOf49
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf49
+
+HOOK_PREDICATE: KBquery_RightOf5
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf5
+
+HOOK_PREDICATE: KBquery_RightOf50
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf50
+
+HOOK_PREDICATE: KBquery_RightOf51
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf51
+
+HOOK_PREDICATE: KBquery_RightOf52
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf52
+
+HOOK_PREDICATE: KBquery_RightOf53
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf53
+
+HOOK_PREDICATE: KBquery_RightOf54
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf54
+
+HOOK_PREDICATE: KBquery_RightOf55
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf55
+
+HOOK_PREDICATE: KBquery_RightOf56
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf56
+
+HOOK_PREDICATE: KBquery_RightOf57
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf57
+
+HOOK_PREDICATE: KBquery_RightOf58
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf58
+
+HOOK_PREDICATE: KBquery_RightOf59
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf59
+
+HOOK_PREDICATE: KBquery_RightOf6
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf6
+
+HOOK_PREDICATE: KBquery_RightOf60
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf60
+
+HOOK_PREDICATE: KBquery_RightOf61
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf61
+
+HOOK_PREDICATE: KBquery_RightOf62
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf62
+
+HOOK_PREDICATE: KBquery_RightOf63
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf63
+
+HOOK_PREDICATE: KBquery_RightOf64
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf64
+
+HOOK_PREDICATE: KBquery_RightOf65
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf65
+
+HOOK_PREDICATE: KBquery_RightOf66
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf66
+
+HOOK_PREDICATE: KBquery_RightOf67
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf67
+
+HOOK_PREDICATE: KBquery_RightOf68
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf68
+
+HOOK_PREDICATE: KBquery_RightOf69
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf69
+
+HOOK_PREDICATE: KBquery_RightOf7
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf7
+
+HOOK_PREDICATE: KBquery_RightOf70
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf70
+
+HOOK_PREDICATE: KBquery_RightOf71
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf71
+
+HOOK_PREDICATE: KBquery_RightOf72
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf72
+
+HOOK_PREDICATE: KBquery_RightOf73
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf73
+
+HOOK_PREDICATE: KBquery_RightOf74
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf74
+
+HOOK_PREDICATE: KBquery_RightOf75
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf75
+
+HOOK_PREDICATE: KBquery_RightOf76
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf76
+
+HOOK_PREDICATE: KBquery_RightOf77
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf77
+
+HOOK_PREDICATE: KBquery_RightOf78
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf78
+
+HOOK_PREDICATE: KBquery_RightOf79
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf79
+
+HOOK_PREDICATE: KBquery_RightOf8
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf8
+
+HOOK_PREDICATE: KBquery_RightOf80
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf80
+
+HOOK_PREDICATE: KBquery_RightOf81
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf81
+
+HOOK_PREDICATE: KBquery_RightOf82
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf82
+
+HOOK_PREDICATE: KBquery_RightOf83
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf83
+
+HOOK_PREDICATE: KBquery_RightOf84
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf84
+
+HOOK_PREDICATE: KBquery_RightOf85
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf85
+
+HOOK_PREDICATE: KBquery_RightOf86
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf86
+
+HOOK_PREDICATE: KBquery_RightOf87
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf87
+
+HOOK_PREDICATE: KBquery_RightOf88
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf88
+
+HOOK_PREDICATE: KBquery_RightOf89
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf89
+
+HOOK_PREDICATE: KBquery_RightOf9
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf9
+
+HOOK_PREDICATE: KBquery_RightOf90
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf90
+
+HOOK_PREDICATE: KBquery_RightOf91
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf91
+
+HOOK_PREDICATE: KBquery_RightOf92
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf92
+
+HOOK_PREDICATE: KBquery_RightOf93
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf93
+
+HOOK_PREDICATE: KBquery_RightOf94
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf94
+
+HOOK_PREDICATE: KBquery_RightOf95
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf95
+
+HOOK_PREDICATE: KBquery_RightOf96
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf96
+
+HOOK_PREDICATE: KBquery_RightOf97
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf97
+
+HOOK_PREDICATE: KBquery_RightOf98
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf98
+
+HOOK_PREDICATE: KBquery_RightOf99
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf99
+
+HOOK_PREDICATE: KBquery_Row0
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row0
+
+HOOK_PREDICATE: KBquery_Row1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row1
+
+HOOK_PREDICATE: KBquery_Row10
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row10
+
+HOOK_PREDICATE: KBquery_Row100
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row100
+
+HOOK_PREDICATE: KBquery_Row101
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row101
+
+HOOK_PREDICATE: KBquery_Row102
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row102
+
+HOOK_PREDICATE: KBquery_Row103
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row103
+
+HOOK_PREDICATE: KBquery_Row104
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row104
+
+HOOK_PREDICATE: KBquery_Row105
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row105
+
+HOOK_PREDICATE: KBquery_Row106
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row106
+
+HOOK_PREDICATE: KBquery_Row107
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row107
+
+HOOK_PREDICATE: KBquery_Row108
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row108
+
+HOOK_PREDICATE: KBquery_Row109
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row109
+
+HOOK_PREDICATE: KBquery_Row11
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row11
+
+HOOK_PREDICATE: KBquery_Row110
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row110
+
+HOOK_PREDICATE: KBquery_Row111
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row111
+
+HOOK_PREDICATE: KBquery_Row112
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row112
+
+HOOK_PREDICATE: KBquery_Row113
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row113
+
+HOOK_PREDICATE: KBquery_Row114
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row114
+
+HOOK_PREDICATE: KBquery_Row115
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row115
+
+HOOK_PREDICATE: KBquery_Row116
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row116
+
+HOOK_PREDICATE: KBquery_Row117
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row117
+
+HOOK_PREDICATE: KBquery_Row118
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row118
+
+HOOK_PREDICATE: KBquery_Row119
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row119
+
+HOOK_PREDICATE: KBquery_Row12
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row12
+
+HOOK_PREDICATE: KBquery_Row120
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row120
+
+HOOK_PREDICATE: KBquery_Row121
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row121
+
+HOOK_PREDICATE: KBquery_Row122
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row122
+
+HOOK_PREDICATE: KBquery_Row123
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row123
+
+HOOK_PREDICATE: KBquery_Row124
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row124
+
+HOOK_PREDICATE: KBquery_Row125
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row125
+
+HOOK_PREDICATE: KBquery_Row126
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row126
+
+HOOK_PREDICATE: KBquery_Row127
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row127
+
+HOOK_PREDICATE: KBquery_Row128
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row128
+
+HOOK_PREDICATE: KBquery_Row129
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row129
+
+HOOK_PREDICATE: KBquery_Row13
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row13
+
+HOOK_PREDICATE: KBquery_Row14
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row14
+
+HOOK_PREDICATE: KBquery_Row15
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row15
+
+HOOK_PREDICATE: KBquery_Row16
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row16
+
+HOOK_PREDICATE: KBquery_Row17
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row17
+
+HOOK_PREDICATE: KBquery_Row18
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row18
+
+HOOK_PREDICATE: KBquery_Row19
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row19
+
+HOOK_PREDICATE: KBquery_Row2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row2
+
+HOOK_PREDICATE: KBquery_Row20
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row20
+
+HOOK_PREDICATE: KBquery_Row21
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row21
+
+HOOK_PREDICATE: KBquery_Row22
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row22
+
+HOOK_PREDICATE: KBquery_Row23
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row23
+
+HOOK_PREDICATE: KBquery_Row24
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row24
+
+HOOK_PREDICATE: KBquery_Row25
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row25
+
+HOOK_PREDICATE: KBquery_Row26
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row26
+
+HOOK_PREDICATE: KBquery_Row27
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row27
+
+HOOK_PREDICATE: KBquery_Row28
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row28
+
+HOOK_PREDICATE: KBquery_Row29
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row29
+
+HOOK_PREDICATE: KBquery_Row3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row3
+
+HOOK_PREDICATE: KBquery_Row30
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row30
+
+HOOK_PREDICATE: KBquery_Row31
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row31
+
+HOOK_PREDICATE: KBquery_Row32
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row32
+
+HOOK_PREDICATE: KBquery_Row33
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row33
+
+HOOK_PREDICATE: KBquery_Row34
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row34
+
+HOOK_PREDICATE: KBquery_Row35
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row35
+
+HOOK_PREDICATE: KBquery_Row36
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row36
+
+HOOK_PREDICATE: KBquery_Row37
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row37
+
+HOOK_PREDICATE: KBquery_Row38
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row38
+
+HOOK_PREDICATE: KBquery_Row39
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row39
+
+HOOK_PREDICATE: KBquery_Row4
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row4
+
+HOOK_PREDICATE: KBquery_Row40
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row40
+
+HOOK_PREDICATE: KBquery_Row41
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row41
+
+HOOK_PREDICATE: KBquery_Row42
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row42
+
+HOOK_PREDICATE: KBquery_Row43
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row43
+
+HOOK_PREDICATE: KBquery_Row44
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row44
+
+HOOK_PREDICATE: KBquery_Row45
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row45
+
+HOOK_PREDICATE: KBquery_Row46
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row46
+
+HOOK_PREDICATE: KBquery_Row47
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row47
+
+HOOK_PREDICATE: KBquery_Row48
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row48
+
+HOOK_PREDICATE: KBquery_Row49
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row49
+
+HOOK_PREDICATE: KBquery_Row5
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row5
+
+HOOK_PREDICATE: KBquery_Row50
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row50
+
+HOOK_PREDICATE: KBquery_Row51
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row51
+
+HOOK_PREDICATE: KBquery_Row52
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row52
+
+HOOK_PREDICATE: KBquery_Row53
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row53
+
+HOOK_PREDICATE: KBquery_Row54
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row54
+
+HOOK_PREDICATE: KBquery_Row55
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row55
+
+HOOK_PREDICATE: KBquery_Row56
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row56
+
+HOOK_PREDICATE: KBquery_Row57
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row57
+
+HOOK_PREDICATE: KBquery_Row58
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row58
+
+HOOK_PREDICATE: KBquery_Row59
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row59
+
+HOOK_PREDICATE: KBquery_Row6
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row6
+
+HOOK_PREDICATE: KBquery_Row60
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row60
+
+HOOK_PREDICATE: KBquery_Row61
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row61
+
+HOOK_PREDICATE: KBquery_Row62
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row62
+
+HOOK_PREDICATE: KBquery_Row63
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row63
+
+HOOK_PREDICATE: KBquery_Row64
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row64
+
+HOOK_PREDICATE: KBquery_Row65
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row65
+
+HOOK_PREDICATE: KBquery_Row66
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row66
+
+HOOK_PREDICATE: KBquery_Row67
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row67
+
+HOOK_PREDICATE: KBquery_Row68
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row68
+
+HOOK_PREDICATE: KBquery_Row69
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row69
+
+HOOK_PREDICATE: KBquery_Row7
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row7
+
+HOOK_PREDICATE: KBquery_Row70
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row70
+
+HOOK_PREDICATE: KBquery_Row71
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row71
+
+HOOK_PREDICATE: KBquery_Row72
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row72
+
+HOOK_PREDICATE: KBquery_Row73
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row73
+
+HOOK_PREDICATE: KBquery_Row74
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row74
+
+HOOK_PREDICATE: KBquery_Row75
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row75
+
+HOOK_PREDICATE: KBquery_Row76
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row76
+
+HOOK_PREDICATE: KBquery_Row77
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row77
+
+HOOK_PREDICATE: KBquery_Row78
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row78
+
+HOOK_PREDICATE: KBquery_Row79
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row79
+
+HOOK_PREDICATE: KBquery_Row8
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row8
+
+HOOK_PREDICATE: KBquery_Row80
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row80
+
+HOOK_PREDICATE: KBquery_Row81
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row81
+
+HOOK_PREDICATE: KBquery_Row82
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row82
+
+HOOK_PREDICATE: KBquery_Row83
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row83
+
+HOOK_PREDICATE: KBquery_Row84
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row84
+
+HOOK_PREDICATE: KBquery_Row85
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row85
+
+HOOK_PREDICATE: KBquery_Row86
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row86
+
+HOOK_PREDICATE: KBquery_Row87
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row87
+
+HOOK_PREDICATE: KBquery_Row88
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row88
+
+HOOK_PREDICATE: KBquery_Row89
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row89
+
+HOOK_PREDICATE: KBquery_Row9
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row9
+
+HOOK_PREDICATE: KBquery_Row90
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row90
+
+HOOK_PREDICATE: KBquery_Row91
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row91
+
+HOOK_PREDICATE: KBquery_Row92
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row92
+
+HOOK_PREDICATE: KBquery_Row93
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row93
+
+HOOK_PREDICATE: KBquery_Row94
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row94
+
+HOOK_PREDICATE: KBquery_Row95
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row95
+
+HOOK_PREDICATE: KBquery_Row96
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row96
+
+HOOK_PREDICATE: KBquery_Row97
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row97
+
+HOOK_PREDICATE: KBquery_Row98
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row98
+
+HOOK_PREDICATE: KBquery_Row99
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row99
+
+HOOK_PREDICATE: KBquery_Rows
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Rows
+

@@ -1,0 +1,185 @@
+# abstract hook definitions for robot example
+PREFIX robot: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+HOOK_PREDICATE: KBquery_AboveOf0
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf0
+
+HOOK_PREDICATE: KBquery_AboveOf1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf1
+
+HOOK_PREDICATE: KBquery_AboveOf2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf2
+
+HOOK_PREDICATE: KBquery_AboveOf3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:AboveOf3
+
+HOOK_PREDICATE: KBquery_BelowOf1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf1
+
+HOOK_PREDICATE: KBquery_BelowOf2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf2
+
+HOOK_PREDICATE: KBquery_BelowOf3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf3
+
+HOOK_PREDICATE: KBquery_BelowOf4
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:BelowOf4
+
+HOOK_PREDICATE: KBquery_Column0
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column0
+
+HOOK_PREDICATE: KBquery_Column1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column1
+
+HOOK_PREDICATE: KBquery_Column2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column2
+
+HOOK_PREDICATE: KBquery_Column3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Column3
+
+HOOK_PREDICATE: KBquery_Columns
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Columns
+
+HOOK_PREDICATE: KBquery_LeftOf1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf1
+
+HOOK_PREDICATE: KBquery_LeftOf2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf2
+
+HOOK_PREDICATE: KBquery_LeftOf3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf3
+
+HOOK_PREDICATE: KBquery_LeftOf4
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:LeftOf4
+
+HOOK_PREDICATE: KBquery_RightOf0
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf0
+
+HOOK_PREDICATE: KBquery_RightOf1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf1
+
+HOOK_PREDICATE: KBquery_RightOf2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf2
+
+HOOK_PREDICATE: KBquery_RightOf3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:RightOf3
+
+HOOK_PREDICATE: KBquery_Row0
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row0
+
+HOOK_PREDICATE: KBquery_Row1
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row1
+
+HOOK_PREDICATE: KBquery_Row2
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row2
+
+HOOK_PREDICATE: KBquery_Row3
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Row3
+
+HOOK_PREDICATE: KBquery_Rows
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: robot:Rows
+
