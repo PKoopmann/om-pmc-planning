@@ -1,3 +1,0 @@
-id,method,name,folder,ontology,domain,problem
-390,om_planning,robotConj22,../examples/robotConj/22,TTL22.owl,robotDomain22.pddl,robotProblem22.pddl
-391,horn_planning,robotConj22,../examples/horn_dl_benchmarks/robotConj/original,TTL22.ttl,robotDomain22.pddl,robotProblem22.pddl

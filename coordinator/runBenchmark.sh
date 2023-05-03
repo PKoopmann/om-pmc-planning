@@ -23,7 +23,7 @@ tempLog="${directory}/${logName}_temp.txt"
 
 
 echo "run benchmarks from file $benchmarks with a time limit of ${TimeBound}s."
-echo "start time: $(date +'%Y %m %d %H %M')"
+echo "start time: $(date +'%d.%m.%Y at %H:%M')"
 echo "start time: $(date +'%Y %m %d %H %M')" >> $log
 echo "result will be written to $result"
 
