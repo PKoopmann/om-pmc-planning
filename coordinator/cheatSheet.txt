@@ -65,6 +65,9 @@
 # robot 3
 ./runOMPlanning.sh ../examples/robot/3 TTL3.owl robotDomain3.pddl robotProblem3.pddl
 
+# robotConj 3
+./runOMPlanning.sh ../examples/robotConj/3 TTL3.owl robotDomain3.pddl robotProblem3.pddl
+
 
 # pipes1 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl

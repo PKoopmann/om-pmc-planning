@@ -15,8 +15,8 @@ hostname=$(hostname)
 directory="../benchmark_runs/${hostname}"
 # create folder if it does not exist yet
 mkdir -p "$directory"
-name="${1}_$(date +'%Y_%m_%d_%H_%M')"
-logName="${1}_$(date +'%Y_%m_%d_%H_%M')_log"
+name="${1%".csv"}_$(date +'%Y_%m_%d_%H_%M')"
+logName="${1%".csv"}_$(date +'%Y_%m_%d_%H_%M')_log"
 result="${directory}/${name}.csv"
 log="${directory}/${logName}.txt"
 tempLog="${directory}/${logName}_temp.txt"
