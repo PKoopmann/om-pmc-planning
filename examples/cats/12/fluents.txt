@@ -1,0 +1,33 @@
+PREFIX cats: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+ 
+OBJECT thing a -> cats:a
+OBJECT thing b -> cats:b
+OBJECT thing c -> cats:c
+OBJECT thing d -> cats:d
+OBJECT thing e -> cats:e
+OBJECT thing f -> cats:f
+OBJECT thing g -> cats:g
+OBJECT thing h -> cats:h
+OBJECT thing i -> cats:i
+OBJECT thing j -> cats:j
+OBJECT thing k -> cats:k
+OBJECT thing l -> cats:l
+OBJECT thing m -> cats:m
+OBJECT thing n -> cats:n
+OBJECT thing o -> cats:o
+OBJECT thing p -> cats:p
+OBJECT thing q -> cats:q
+OBJECT thing r -> cats:r
+OBJECT thing s -> cats:s
+OBJECT thing t -> cats:t
+OBJECT thing u -> cats:u
+OBJECT thing v -> cats:v
+OBJECT thing w -> cats:w
+OBJECT thing x -> cats:x
+
+
+PREDICATE bomb(thing)	    -> cats:bomb
+PREDICATE cat(thing)			-> cats:cat
+PREDICATE contains(thing, thing) -> cats:contains
+
+

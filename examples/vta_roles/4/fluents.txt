@@ -1,22 +1,20 @@
-# fluent definitions for vta roles example
-
 PREFIX vta: <http://www.semanticweb.org/anon/ontologies/2021/3/>
-
-OBJECT thing iswc_2007	-> vta:iswc_2007
-OBJECT thing aa	-> vta:aa
-OBJECT thing ab	-> vta:ab
-OBJECT thing ac	-> vta:ac
-OBJECT thing ad	-> vta:ad
-OBJECT thing ae	-> vta:ae
-OBJECT thing af	-> vta:af
-OBJECT thing ag	-> vta:ag
-OBJECT thing ah	-> vta:ah
-OBJECT thing ai	-> vta:ai
-OBJECT thing aj	-> vta:aj
-OBJECT thing ak	-> vta:ak
-OBJECT thing al	-> vta:al
-OBJECT thing am	-> vta:am
-OBJECT thing an	-> vta:an
+ 
+OBJECT thing iswc_2007 -> vta:iswc_2007
+OBJECT thing aa -> vta:aa
+OBJECT thing ab -> vta:ab
+OBJECT thing ac -> vta:ac
+OBJECT thing ad -> vta:ad
+OBJECT thing ae -> vta:ae
+OBJECT thing af -> vta:af
+OBJECT thing ag -> vta:ag
+OBJECT thing ah -> vta:ah
+OBJECT thing ai -> vta:ai
+OBJECT thing aj -> vta:aj
+OBJECT thing ak -> vta:ak
+OBJECT thing al -> vta:al
+OBJECT thing am -> vta:am
+OBJECT thing an -> vta:an
 
 
 PREDICATE ariportShuttle(thing, thing) -> vta:airportShuttle

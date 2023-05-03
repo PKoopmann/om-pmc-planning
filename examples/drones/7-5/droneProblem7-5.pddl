@@ -185,6 +185,7 @@
 		(near fe gd)
 		(near ff ge)
 		(near fg gf)
+		
 	)
 	(:goal (and
 		(not (exists (?x ?y) (KBquery_AvoidCondition ?x ?y))))

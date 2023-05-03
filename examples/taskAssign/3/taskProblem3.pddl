@@ -3,6 +3,7 @@
 	(:objects a b c )
 	(:init
 		(Developer c)
+
 	)
 	(:goal (exists (?x ?y) 
  		 (and 

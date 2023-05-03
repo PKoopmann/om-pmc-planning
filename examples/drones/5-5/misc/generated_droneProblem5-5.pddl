@@ -91,6 +91,7 @@
 		(near dc eb)
 		(near dd ec)
 		(near de ed)
+		
 	)
     (:goal (and
         (not (inconsistent))

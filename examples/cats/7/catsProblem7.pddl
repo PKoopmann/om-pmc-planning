@@ -1,0 +1,27 @@
+(define (problem BTcat_problem)
+	(:domain BTcat)
+	(:objects a b c d e f g h i j k l m n )
+	(:init
+		(bomb b)
+		(cat d)
+		(cat f)
+		(bomb h)
+		(cat l)
+		(cat m)
+		(contains k h)
+		(contains i b)
+		(contains c f)
+		(contains e d)
+		(contains j l)
+		(contains g m)
+
+	)
+	(:goal (not (exists (?x) 
+ 		 (and 
+ 			 (KBquery_Package ?x)
+ 			 (not (KBquery_Disarmed ?x)) 
+ 		 ) 
+ 	 )) 
+ 	)
+
+)

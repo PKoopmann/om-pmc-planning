@@ -18,6 +18,7 @@
 		(directlyAfterObj ak al)
 		(directlyAfterObj al am)
 		(directlyAfterObj am an)
+
 	)
 	(:goal (exists ( ?receipt ?fullTrip)
  		 (and 

@@ -1,0 +1,74 @@
+PREFIX tpsa: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+ 
+OBJECT thing voipRequest -> tpsa:voipRequest
+OBJECT thing voip -> tpsa:voip
+OBJECT thing aa -> tpsa:aa
+OBJECT thing ab -> tpsa:ab
+OBJECT thing ac -> tpsa:ac
+OBJECT thing ad -> tpsa:ad
+OBJECT thing ae -> tpsa:ae
+OBJECT thing af -> tpsa:af
+OBJECT thing ag -> tpsa:ag
+OBJECT thing ah -> tpsa:ah
+OBJECT thing ai -> tpsa:ai
+OBJECT thing aj -> tpsa:aj
+OBJECT thing ak -> tpsa:ak
+OBJECT thing al -> tpsa:al
+OBJECT thing am -> tpsa:am
+OBJECT thing an -> tpsa:an
+OBJECT thing ao -> tpsa:ao
+OBJECT thing ap -> tpsa:ap
+OBJECT thing aq -> tpsa:aq
+OBJECT thing ar -> tpsa:ar
+OBJECT thing as -> tpsa:as
+OBJECT thing at -> tpsa:at
+OBJECT thing au -> tpsa:au
+OBJECT thing av -> tpsa:av
+OBJECT thing aw -> tpsa:aw
+OBJECT thing ax -> tpsa:ax
+OBJECT thing ay -> tpsa:ay
+OBJECT thing az -> tpsa:az
+OBJECT thing ba -> tpsa:ba
+OBJECT thing bb -> tpsa:bb
+OBJECT thing bc -> tpsa:bc
+OBJECT thing bd -> tpsa:bd
+OBJECT thing be -> tpsa:be
+OBJECT thing bf -> tpsa:bf
+OBJECT thing bg -> tpsa:bg
+OBJECT thing bh -> tpsa:bh
+OBJECT thing bi -> tpsa:bi
+OBJECT thing bj -> tpsa:bj
+OBJECT thing bk -> tpsa:bk
+OBJECT thing bl -> tpsa:bl
+OBJECT thing bm -> tpsa:bm
+OBJECT thing bn -> tpsa:bn
+OBJECT thing bo -> tpsa:bo
+OBJECT thing bp -> tpsa:bp
+OBJECT thing bq -> tpsa:bq
+OBJECT thing br -> tpsa:br
+OBJECT thing bs -> tpsa:bs
+OBJECT thing bt -> tpsa:bt
+OBJECT thing bu -> tpsa:bu
+OBJECT thing bv -> tpsa:bv
+OBJECT thing bw -> tpsa:bw
+OBJECT thing bx -> tpsa:bx
+OBJECT thing by -> tpsa:by
+OBJECT thing bz -> tpsa:bz
+OBJECT thing ca -> tpsa:ca
+OBJECT thing cb -> tpsa:cb
+OBJECT thing cc -> tpsa:cc
+OBJECT thing cd -> tpsa:cd
+OBJECT thing ce -> tpsa:ce
+OBJECT thing cf -> tpsa:cf
+
+PREDICATE invoice(thing) -> tpsa:invoice
+PREDICATE orderConfirmation(thing) -> tpsa:orderConfirmation
+PREDICATE crmAck(thing) -> tpsa:crmAck
+PREDICATE courierAck(thing) -> tpsa:courierAck
+PREDICATE contract(thing) -> tpsa:contract
+PREDICATE hardwareAck(thing) -> tpsa:hardwareAck
+PREDICATE serviceActivation(thing) -> tpsa:serviceActivation
+
+PREDICATE hasService(thing, thing) -> tpsa:hasService
+PREDICATE requiredService(thing, thing) -> tpsa:requiredService
+PREDICATE forService(thing, thing) -> tpsa:forService

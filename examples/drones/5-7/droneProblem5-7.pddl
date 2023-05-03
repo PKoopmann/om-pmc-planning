@@ -93,6 +93,7 @@
 		(near dc eb)
 		(near dd ec)
 		(near de ed)
+		
 	)
 	(:goal (and
 		(not (exists (?x ?y) (KBquery_AvoidCondition ?x ?y))))

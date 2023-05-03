@@ -1,0 +1,1094 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix drone: <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+@prefix swrla: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology ;
+                                                     rdfs:comment """slightly modified but mainly based on ontology from the following paper:
+
+Borgwardt, Stefan, Jörg Hoffmann, Alisa Kovtunova, Markus Krötzsch, Bernhard Nebel, and Marcel Steinmetz. “Expressivity of Planning with Horn Description Logic Ontologies.” Proceedings of the AAAI Conference on Artificial Intelligence 36, no. 5 (June 28, 2022): 5503–11. https://doi.org/10.1609/aaai.v36i5.20489.""" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+swrla:isRuleEnabled rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/avoidCondition
+drone:avoidCondition rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/environment
+drone:environment rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/near
+drone:near rdf:type owl:ObjectProperty ,
+                    owl:SymmetricProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/veryClose
+drone:veryClose rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf drone:near ;
+                rdf:type owl:SymmetricProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Cell
+drone:Cell rdf:type owl:Class ;
+           owl:disjointWith drone:Environment .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Drone
+drone:Drone rdf:type owl:Class ;
+            rdfs:subClassOf drone:MovingObject ;
+            owl:disjointWith drone:Human .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Environment
+drone:Environment rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Human
+drone:Human rdf:type owl:Class ;
+            rdfs:subClassOf drone:MovingObject .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/LowVisibility
+drone:LowVisibility rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/MovingObject
+drone:MovingObject rdf:type owl:Class ;
+                   rdfs:subClassOf drone:Objectx .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Objectx
+drone:Objectx rdf:type owl:Class ;
+              owl:disjointWith drone:Rain .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Rain
+drone:Rain rdf:type owl:Class ;
+           rdfs:subClassOf drone:LowVisibility .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/RiskOfPhysicalDamage
+drone:RiskOfPhysicalDamage rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Tree
+drone:Tree rdf:type owl:Class ;
+           rdfs:subClassOf drone:Objectx .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/WetDrone
+drone:WetDrone rdf:type owl:Class ;
+               rdfs:subClassOf drone:Drone ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty drone:environment ;
+                                 owl:someValuesFrom drone:Rain
+                               ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aa
+drone:aa rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:bb ;
+         drone:veryClose drone:ab ,
+                         drone:ba .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ab
+drone:ab rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:ba ,
+                    drone:bc ;
+         drone:veryClose drone:ac ,
+                         drone:bb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ac
+drone:ac rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:bb ,
+                    drone:bd ;
+         drone:veryClose drone:ad ,
+                         drone:bc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ad
+drone:ad rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:bc ,
+                    drone:be ;
+         drone:veryClose drone:ae ,
+                         drone:bd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ae
+drone:ae rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:environment drone:env ;
+         drone:near drone:bd ,
+                    drone:bf ;
+         drone:veryClose drone:af ,
+                         drone:be .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/af
+drone:af rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:be ,
+                    drone:bg ;
+         drone:veryClose drone:ag ,
+                         drone:bf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ag
+drone:ag rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:near drone:bf ,
+                    drone:bh ;
+         drone:veryClose drone:ah ,
+                         drone:bg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ah
+drone:ah rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:bg ,
+                    drone:bi ;
+         drone:veryClose drone:ai ,
+                         drone:bh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ai
+drone:ai rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:bh ,
+                    drone:bj ;
+         drone:veryClose drone:aj ,
+                         drone:bi .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aj
+drone:aj rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:bi ;
+         drone:veryClose drone:bj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ba
+drone:ba rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:cb ;
+         drone:veryClose drone:bb ,
+                         drone:ca .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bb
+drone:bb rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ca ,
+                    drone:cc ;
+         drone:veryClose drone:bc ,
+                         drone:cb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bc
+drone:bc rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:cb ,
+                    drone:cd ;
+         drone:veryClose drone:bd ,
+                         drone:cc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bd
+drone:bd rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:near drone:cc ,
+                    drone:ce ;
+         drone:veryClose drone:be ,
+                         drone:cd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/be
+drone:be rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:cd ,
+                    drone:cf ;
+         drone:veryClose drone:bf ,
+                         drone:ce .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bf
+drone:bf rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:ce ,
+                    drone:cg ;
+         drone:veryClose drone:bg ,
+                         drone:cf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bg
+drone:bg rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:environment drone:env ;
+         drone:near drone:cf ,
+                    drone:ch ;
+         drone:veryClose drone:bh ,
+                         drone:cg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bh
+drone:bh rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:cg ,
+                    drone:ci ;
+         drone:veryClose drone:bi ,
+                         drone:ch .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bi
+drone:bi rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:ch ,
+                    drone:cj ;
+         drone:veryClose drone:bj ,
+                         drone:ci .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bj
+drone:bj rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:ci ;
+         drone:veryClose drone:cj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ca
+drone:ca rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:db ;
+         drone:veryClose drone:cb ,
+                         drone:da .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cb
+drone:cb rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:near drone:da ,
+                    drone:dc ;
+         drone:veryClose drone:cc ,
+                         drone:db .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cc
+drone:cc rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:db ,
+                    drone:dd ;
+         drone:veryClose drone:cd ,
+                         drone:dc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cd
+drone:cd rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:dc ,
+                    drone:de ;
+         drone:veryClose drone:ce ,
+                         drone:dd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ce
+drone:ce rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:dd ,
+                    drone:df ;
+         drone:veryClose drone:cf ,
+                         drone:de .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cf
+drone:cf rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:de ,
+                    drone:dg ;
+         drone:veryClose drone:cg ,
+                         drone:df .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cg
+drone:cg rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:df ,
+                    drone:dh ;
+         drone:veryClose drone:ch ,
+                         drone:dg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ch
+drone:ch rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:dg ,
+                    drone:di ;
+         drone:veryClose drone:ci ,
+                         drone:dh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ci
+drone:ci rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:dh ,
+                    drone:dj ;
+         drone:veryClose drone:cj ,
+                         drone:di .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cj
+drone:cj rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:di ;
+         drone:veryClose drone:dj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/da
+drone:da rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:eb ;
+         drone:veryClose drone:db ,
+                         drone:ea .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/db
+drone:db rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ea ,
+                    drone:ec ;
+         drone:veryClose drone:dc ,
+                         drone:eb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/dc
+drone:dc rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:eb ,
+                    drone:ed ;
+         drone:veryClose drone:dd ,
+                         drone:ec .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/dd
+drone:dd rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ec ,
+                    drone:ee ;
+         drone:veryClose drone:de ,
+                         drone:ed .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/de
+drone:de rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Drone ;
+         drone:near drone:ed ,
+                    drone:ef ;
+         drone:veryClose drone:df ,
+                         drone:ee .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/df
+drone:df rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ee ,
+                    drone:eg ;
+         drone:veryClose drone:dg ,
+                         drone:ef .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/dg
+drone:dg rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:ef ,
+                    drone:eh ;
+         drone:veryClose drone:dh ,
+                         drone:eg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/dh
+drone:dh rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:eg ,
+                    drone:ei ;
+         drone:veryClose drone:di ,
+                         drone:eh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/di
+drone:di rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:eh ,
+                    drone:ej ;
+         drone:veryClose drone:dj ,
+                         drone:ei .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/dj
+drone:dj rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ei ;
+         drone:veryClose drone:ej .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ea
+drone:ea rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:fb ;
+         drone:veryClose drone:eb ,
+                         drone:fa .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/eb
+drone:eb rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:fa ,
+                    drone:fc ;
+         drone:veryClose drone:ec ,
+                         drone:fb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ec
+drone:ec rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:near drone:fb ,
+                    drone:fd ;
+         drone:veryClose drone:ed ,
+                         drone:fc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ed
+drone:ed rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:fc ,
+                    drone:fe ;
+         drone:veryClose drone:ee ,
+                         drone:fd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ee
+drone:ee rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Drone ;
+         drone:near drone:fd ,
+                    drone:ff ;
+         drone:veryClose drone:ef ,
+                         drone:fe .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ef
+drone:ef rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:fe ,
+                    drone:fg ;
+         drone:veryClose drone:eg ,
+                         drone:ff .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/eg
+drone:eg rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ff ,
+                    drone:fh ;
+         drone:veryClose drone:eh ,
+                         drone:fg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/eh
+drone:eh rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:fg ,
+                    drone:fi ;
+         drone:veryClose drone:ei ,
+                         drone:fh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ei
+drone:ei rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:fh ,
+                    drone:fj ;
+         drone:veryClose drone:ej ,
+                         drone:fi .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ej
+drone:ej rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:fi ;
+         drone:veryClose drone:fj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/env
+drone:env rdf:type owl:NamedIndividual ,
+                   drone:Environment ,
+                   drone:LowVisibility .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fa
+drone:fa rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:gb ;
+         drone:veryClose drone:fb ,
+                         drone:ga .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fb
+drone:fb rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:ga ,
+                    drone:gc ;
+         drone:veryClose drone:fc ,
+                         drone:gb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fc
+drone:fc rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:gb ,
+                    drone:gd ;
+         drone:veryClose drone:fd ,
+                         drone:gc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fd
+drone:fd rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:gc ,
+                    drone:ge ;
+         drone:veryClose drone:fe ,
+                         drone:gd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fe
+drone:fe rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Drone ;
+         drone:near drone:gd ,
+                    drone:gf ;
+         drone:veryClose drone:ff ,
+                         drone:ge .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ff
+drone:ff rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:WetDrone ;
+         drone:near drone:ge ,
+                    drone:gg ;
+         drone:veryClose drone:fg ,
+                         drone:gf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fg
+drone:fg rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:gf ,
+                    drone:gh ;
+         drone:veryClose drone:fh ,
+                         drone:gg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fh
+drone:fh rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:environment drone:env ;
+         drone:near drone:gg ,
+                    drone:gi ;
+         drone:veryClose drone:fi ,
+                         drone:gh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fi
+drone:fi rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:gh ,
+                    drone:gj ;
+         drone:veryClose drone:fj ,
+                         drone:gi .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/fj
+drone:fj rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:gi ;
+         drone:veryClose drone:gj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ga
+drone:ga rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:hb ;
+         drone:veryClose drone:gb ,
+                         drone:ha .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gb
+drone:gb rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:ha ,
+                    drone:hc ;
+         drone:veryClose drone:gc ,
+                         drone:hb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gc
+drone:gc rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:hb ,
+                    drone:hd ;
+         drone:veryClose drone:gd ,
+                         drone:hc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gd
+drone:gd rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:hc ,
+                    drone:he ;
+         drone:veryClose drone:ge ,
+                         drone:hd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ge
+drone:ge rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:hd ,
+                    drone:hf ;
+         drone:veryClose drone:gf ,
+                         drone:he .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gf
+drone:gf rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Drone ;
+         drone:near drone:he ,
+                    drone:hg ;
+         drone:veryClose drone:gg ,
+                         drone:hf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gg
+drone:gg rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Drone ;
+         drone:near drone:hf ,
+                    drone:hh ;
+         drone:veryClose drone:gh ,
+                         drone:hg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gh
+drone:gh rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:near drone:hg ,
+                    drone:hi ;
+         drone:veryClose drone:gi ,
+                         drone:hh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gi
+drone:gi rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:near drone:hh ,
+                    drone:hj ;
+         drone:veryClose drone:gj ,
+                         drone:hi .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/gj
+drone:gj rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:hi ;
+         drone:veryClose drone:hj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ha
+drone:ha rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ib ;
+         drone:veryClose drone:hb ,
+                         drone:ia .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hb
+drone:hb rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ia ,
+                    drone:ic ;
+         drone:veryClose drone:hc ,
+                         drone:ib .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hc
+drone:hc rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:near drone:ib ,
+                    drone:id ;
+         drone:veryClose drone:hd ,
+                         drone:ic .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hd
+drone:hd rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ic ,
+                    drone:ie ;
+         drone:veryClose drone:he ,
+                         drone:id .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/he
+drone:he rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:id ,
+                    drone:if ;
+         drone:veryClose drone:hf ,
+                         drone:ie .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hf
+drone:hf rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ie ,
+                    drone:ig ;
+         drone:veryClose drone:hg ,
+                         drone:if .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hg
+drone:hg rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:if ,
+                    drone:ih ;
+         drone:veryClose drone:hh ,
+                         drone:ig .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hh
+drone:hh rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:ig ,
+                    drone:ii ;
+         drone:veryClose drone:hi ,
+                         drone:ih .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hi
+drone:hi rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ih ,
+                    drone:ij ;
+         drone:veryClose drone:hj ,
+                         drone:ii .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hj
+drone:hj rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:near drone:ii ;
+         drone:veryClose drone:ij .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ia
+drone:ia rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:jb ;
+         drone:veryClose drone:ib ,
+                         drone:ja .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ib
+drone:ib rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:ja ,
+                    drone:jc ;
+         drone:veryClose drone:ic ,
+                         drone:jb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ic
+drone:ic rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:environment drone:env ;
+         drone:near drone:jb ,
+                    drone:jd ;
+         drone:veryClose drone:id ,
+                         drone:jc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/id
+drone:id rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:near drone:jc ,
+                    drone:je ;
+         drone:veryClose drone:ie ,
+                         drone:jd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ie
+drone:ie rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:jd ,
+                    drone:jf ;
+         drone:veryClose drone:if ,
+                         drone:je .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/if
+drone:if rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:je ,
+                    drone:jg ;
+         drone:veryClose drone:ig ,
+                         drone:jf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ig
+drone:ig rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:jf ,
+                    drone:jh ;
+         drone:veryClose drone:ih ,
+                         drone:jg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ih
+drone:ih rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:jg ,
+                    drone:ji ;
+         drone:veryClose drone:ii ,
+                         drone:jh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ii
+drone:ii rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:jh ,
+                    drone:jj ;
+         drone:veryClose drone:ij ,
+                         drone:ji .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ij
+drone:ij rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:near drone:ji ;
+         drone:veryClose drone:jj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ja
+drone:ja rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:veryClose drone:jb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/jb
+drone:jb rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:veryClose drone:jc .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/jc
+drone:jc rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:veryClose drone:jd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/jd
+drone:jd rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Human ;
+         drone:veryClose drone:je .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/je
+drone:je rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:veryClose drone:jf .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/jf
+drone:jf rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:veryClose drone:jg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/jg
+drone:jg rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:veryClose drone:jh .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/jh
+drone:jh rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env ;
+         drone:veryClose drone:ji .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ji
+drone:ji rdf:type owl:NamedIndividual ,
+                  drone:Cell ,
+                  drone:Tree ;
+         drone:veryClose drone:jj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/jj
+drone:jj rdf:type owl:NamedIndividual ,
+                  drone:Cell ;
+         drone:environment drone:env .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( drone:Drone
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty drone:environment ;
+                         owl:someValuesFrom drone:LowVisibility
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty drone:near ;
+                         owl:someValuesFrom drone:Objectx
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf drone:RiskOfPhysicalDamage
+] .
+
+
+[ owl:intersectionOf ( drone:Drone
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty drone:near ;
+                         owl:someValuesFrom drone:MovingObject
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf drone:RiskOfPhysicalDamage
+] .
+
+
+[ owl:intersectionOf ( drone:Drone
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty drone:veryClose ;
+                         owl:someValuesFrom drone:Objectx
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf drone:RiskOfPhysicalDamage
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:x rdf:type swrl:Variable .
+
+:y rdf:type swrl:Variable .
+
+[ swrla:isRuleEnabled "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "avoidCondition" ;
+   rdf:type swrl:Imp ;
+   swrl:body [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:ClassAtom ;
+                           swrl:classPredicate drone:RiskOfPhysicalDamage ;
+                           swrl:argument1 :x
+                         ] ;
+               rdf:rest [ rdf:type swrl:AtomList ;
+                          rdf:first [ rdf:type swrl:ClassAtom ;
+                                      swrl:classPredicate drone:RiskOfPhysicalDamage ;
+                                      swrl:argument1 :y
+                                    ] ;
+                          rdf:rest [ rdf:type swrl:AtomList ;
+                                     rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                                                 swrl:propertyPredicate drone:near ;
+                                                 swrl:argument1 :x ;
+                                                 swrl:argument2 :y
+                                               ] ;
+                                     rdf:rest rdf:nil
+                                   ]
+                        ]
+             ] ;
+   swrl:head [ rdf:type swrl:AtomList ;
+               rdf:first [ rdf:type swrl:IndividualPropertyAtom ;
+                           swrl:propertyPredicate drone:avoidCondition ;
+                           swrl:argument1 :x ;
+                           swrl:argument2 :y
+                         ] ;
+               rdf:rest rdf:nil
+             ]
+ ] .
+
+###  Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/

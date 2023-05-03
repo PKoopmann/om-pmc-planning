@@ -3,7 +3,7 @@
 	(:objects iswc_2007 aa ab ac ad ae af ag ah ai aj ak al am an )
 	(:init
 		(trip iswc_2007)
- 		(notFree iswc_2007)
+		(notFree iswc_2007)
 		(directlyAfterObj iswc_2007 aa)
 		(directlyAfterObj aa ab)
 		(directlyAfterObj ab ac)
@@ -18,6 +18,7 @@
 		(directlyAfterObj ak al)
 		(directlyAfterObj al am)
 		(directlyAfterObj am an)
+
 	)
 	(:goal (exists ( ?receipt ?fullTrip)
  		 (and 

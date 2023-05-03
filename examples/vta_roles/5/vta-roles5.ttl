@@ -1,0 +1,206 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/airportShuttle
+:airportShuttle rdf:type owl:ObjectProperty ;
+                rdfs:domain :trip .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/carHotelBundleOption
+:carHotelBundleOption rdf:type owl:ObjectProperty ;
+                      rdfs:domain :trip .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/carRentalBooking
+:carRentalBooking rdf:type owl:ObjectProperty ;
+                  rdfs:domain :trip .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/carRentalRequest
+:carRentalRequest rdf:type owl:ObjectProperty ;
+                  rdfs:domain :trip ;
+                  rdfs:range :carRental .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/directlyAfterObj
+:directlyAfterObj rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/directlyAfterObject
+:directlyAfterObject rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/flightRequest
+:flightRequest rdf:type owl:ObjectProperty ;
+               rdfs:domain :trip ;
+               rdfs:range :flight .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/flightTicket
+:flightTicket rdf:type owl:ObjectProperty ;
+              rdfs:domain :trip .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hotelStayConfirmation
+:hotelStayConfirmation rdf:type owl:ObjectProperty ;
+                       rdfs:domain :trip .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hotelStayRequest
+:hotelStayRequest rdf:type owl:ObjectProperty ;
+                  rdfs:domain :trip ;
+                  rdfs:range :hotelStay .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/invoice
+:invoice rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/itinerary
+:itinerary rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Cell
+:Cell rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/carRental
+:carRental rdf:type owl:Class ;
+           owl:disjointWith :flight ,
+                            :hotelStay .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/flight
+:flight rdf:type owl:Class ;
+        owl:disjointWith :hotelStay .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hotelStay
+:hotelStay rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/notFree
+:notFree rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/trip
+:trip rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aa
+:aa rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :ab .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ab
+:ab rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :ac .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ac
+:ac rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :ad .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ad
+:ad rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :ae .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ae
+:ae rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :af .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/af
+:af rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :ag .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ag
+:ag rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :ah .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ah
+:ah rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :ai .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ai
+:ai rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :aj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aj
+:aj rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :ak .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ak
+:ak rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :al .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/al
+:al rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :am .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/am
+:am rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :an .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/an
+:an rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :directlyAfterObj :ao .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ao
+:ao rdf:type owl:NamedIndividual ,
+             :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/iswc_2007
+:iswc_2007 rdf:type owl:NamedIndividual ,
+                    :Cell ,
+                    :notFree ,
+                    :trip ;
+           :directlyAfterObj :aa .
+
+
+###  Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/

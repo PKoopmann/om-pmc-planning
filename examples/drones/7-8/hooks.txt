@@ -27,7 +27,7 @@ TYPE_SPECIFICATION:
 QUERY:
   ?x Type: drone:Drone
   ?x drone:veryClose ?y
-  
+
 HOOK_PREDICATE: KBquery_AvoidCondition
 VARIABLES: ?x ?y
 TYPE_SPECIFICATION:
@@ -36,5 +36,4 @@ TYPE_SPECIFICATION:
 QUERY:
   ?x drone:avoidCondition ?y
 
-
-
+  

@@ -1,0 +1,12 @@
+
+PREDICATE invoice(thing) -> tpsa:invoice
+PREDICATE orderConfirmation(thing) -> tpsa:orderConfirmation
+PREDICATE crmAck(thing) -> tpsa:crmAck
+PREDICATE courierAck(thing) -> tpsa:courierAck
+PREDICATE contract(thing) -> tpsa:contract
+PREDICATE hardwareAck(thing) -> tpsa:hardwareAck
+PREDICATE serviceActivation(thing) -> tpsa:serviceActivation
+
+PREDICATE hasService(thing, thing) -> tpsa:hasService
+PREDICATE requiredService(thing, thing) -> tpsa:requiredService
+PREDICATE forService(thing, thing) -> tpsa:forService

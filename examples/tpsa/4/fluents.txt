@@ -1,16 +1,14 @@
-# fluent definitions for rpsa example
-
 PREFIX tpsa: <http://www.semanticweb.org/anon/ontologies/2021/3/>
-
-OBJECT thing a	-> tpsa:a
-OBJECT thing b	-> tpsa:b
-OBJECT thing c	-> tpsa:c
-OBJECT thing d 	-> tpsa:d 
-OBJECT thing e 	-> tpsa:e 
-OBJECT thing f	-> tpsa:f 
-OBJECT thing g	-> tpsa:g
-OBJECT thing voip	-> tpsa:voip
-OBJECT thing voipRequest	-> tpsa:voipRequest
+ 
+OBJECT thing voipRequest -> tpsa:voipRequest
+OBJECT thing voip -> tpsa:voip
+OBJECT thing a -> tpsa:a
+OBJECT thing b -> tpsa:b
+OBJECT thing c -> tpsa:c
+OBJECT thing d -> tpsa:d
+OBJECT thing e -> tpsa:e
+OBJECT thing f -> tpsa:f
+OBJECT thing g -> tpsa:g
 
 PREDICATE invoice(thing) -> tpsa:invoice
 PREDICATE orderConfirmation(thing) -> tpsa:orderConfirmation

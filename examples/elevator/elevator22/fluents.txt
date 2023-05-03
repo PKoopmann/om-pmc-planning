@@ -1,0 +1,31 @@
+PREFIX elevator: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+ 
+OBJECT thing pass_u -> elevator:pass_u
+OBJECT thing pass_r -> elevator:pass_r
+OBJECT thing pass_l -> elevator:pass_l
+OBJECT thing pass_o -> elevator:pass_o
+OBJECT thing pass_b -> elevator:pass_b
+OBJECT thing pass_c -> elevator:pass_c
+OBJECT thing pass_v -> elevator:pass_v
+OBJECT thing pass_d -> elevator:pass_d
+OBJECT thing a -> elevator:a
+OBJECT thing e -> elevator:e
+OBJECT thing f -> elevator:f
+OBJECT thing g -> elevator:g
+OBJECT thing h -> elevator:h
+OBJECT thing i -> elevator:i
+OBJECT thing j -> elevator:j
+OBJECT thing k -> elevator:k
+OBJECT thing m -> elevator:m
+OBJECT thing n -> elevator:n
+OBJECT thing p -> elevator:p
+OBJECT thing q -> elevator:q
+OBJECT thing s -> elevator:s
+OBJECT thing t -> elevator:t
+
+PREDICATE lift_at(thing)	-> elevator:lift_at
+PREDICATE boarded(thing)	-> elevator:boarded
+PREDICATE served(thing)	    -> elevator:served
+
+
+

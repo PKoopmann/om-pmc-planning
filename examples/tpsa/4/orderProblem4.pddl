@@ -2,9 +2,10 @@
 	(:domain Wsmo2TPSA)
 	(:objects voipRequest voip a b c d e f g )
 	(:init
-		(requestedService voipRequest voip) 
- 		 (service voip)
- 		 (order voipRequest) 
+		(requestedService voipRequest voip)
+		(service voip)
+		(order voipRequest)
+
  	)
 	(:goal (exists (?x)
  		 (KBquery_invoice ?x)

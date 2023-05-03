@@ -1,0 +1,39 @@
+# abstract hook definitions for drone example
+
+PREFIX cats: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+
+HOOK_PREDICATE: KBquery_Package
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: cats:package
+	
+#HOOK_PREDICATE: KBquery_Disarmed
+#VARIABLES: ?x
+#TYPE_SPECIFICATION:
+#	?x Type: owl:Thing
+#QUERY:
+#	?x Type: cats:disarmed
+	
+
+
+#HOOK_PREDICATE: KBquery_ContainsBomb
+#VARIABLES: ?x ?y
+#TYPE_SPECIFICATION:
+#	?x Type: owl:Thing
+#	?y Type: owl:Thing
+#QUERY:
+#  ?x drone:contains ?y
+#  ?y Type: cats:bomb
+
+
+#HOOK_PREDICATE: KBquery_Contains
+#VARIABLES: ?x ?y
+#TYPE_SPECIFICATION:
+#	?x Type: owl:Thing
+#	?y Type: owl:Thing
+#QUERY:
+#  ?x drone:contains ?y
+

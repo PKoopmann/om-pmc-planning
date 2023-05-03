@@ -1,0 +1,47 @@
+PREFIX cats: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+ 
+OBJECT thing aa -> cats:aa
+OBJECT thing ab -> cats:ab
+OBJECT thing ac -> cats:ac
+OBJECT thing ad -> cats:ad
+OBJECT thing ae -> cats:ae
+OBJECT thing af -> cats:af
+OBJECT thing ag -> cats:ag
+OBJECT thing ah -> cats:ah
+OBJECT thing ai -> cats:ai
+OBJECT thing aj -> cats:aj
+OBJECT thing ak -> cats:ak
+OBJECT thing al -> cats:al
+OBJECT thing am -> cats:am
+OBJECT thing an -> cats:an
+OBJECT thing ao -> cats:ao
+OBJECT thing ap -> cats:ap
+OBJECT thing aq -> cats:aq
+OBJECT thing ar -> cats:ar
+OBJECT thing as -> cats:as
+OBJECT thing at -> cats:at
+OBJECT thing au -> cats:au
+OBJECT thing av -> cats:av
+OBJECT thing aw -> cats:aw
+OBJECT thing ax -> cats:ax
+OBJECT thing ay -> cats:ay
+OBJECT thing az -> cats:az
+OBJECT thing ba -> cats:ba
+OBJECT thing bb -> cats:bb
+OBJECT thing bc -> cats:bc
+OBJECT thing bd -> cats:bd
+OBJECT thing be -> cats:be
+OBJECT thing bf -> cats:bf
+OBJECT thing bg -> cats:bg
+OBJECT thing bh -> cats:bh
+OBJECT thing bi -> cats:bi
+OBJECT thing bj -> cats:bj
+OBJECT thing bk -> cats:bk
+OBJECT thing bl -> cats:bl
+
+
+PREDICATE bomb(thing)	    -> cats:bomb
+PREDICATE cat(thing)			-> cats:cat
+PREDICATE contains(thing, thing) -> cats:contains
+
+

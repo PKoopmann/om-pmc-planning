@@ -1,0 +1,29 @@
+PREFIX tpsa: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+ 
+OBJECT thing voipRequest -> tpsa:voipRequest
+OBJECT thing voip -> tpsa:voip
+OBJECT thing aa -> tpsa:aa
+OBJECT thing ab -> tpsa:ab
+OBJECT thing ac -> tpsa:ac
+OBJECT thing ad -> tpsa:ad
+OBJECT thing ae -> tpsa:ae
+OBJECT thing af -> tpsa:af
+OBJECT thing ag -> tpsa:ag
+OBJECT thing ah -> tpsa:ah
+OBJECT thing ai -> tpsa:ai
+OBJECT thing aj -> tpsa:aj
+OBJECT thing ak -> tpsa:ak
+OBJECT thing al -> tpsa:al
+OBJECT thing am -> tpsa:am
+
+PREDICATE invoice(thing) -> tpsa:invoice
+PREDICATE orderConfirmation(thing) -> tpsa:orderConfirmation
+PREDICATE crmAck(thing) -> tpsa:crmAck
+PREDICATE courierAck(thing) -> tpsa:courierAck
+PREDICATE contract(thing) -> tpsa:contract
+PREDICATE hardwareAck(thing) -> tpsa:hardwareAck
+PREDICATE serviceActivation(thing) -> tpsa:serviceActivation
+
+PREDICATE hasService(thing, thing) -> tpsa:hasService
+PREDICATE requiredService(thing, thing) -> tpsa:requiredService
+PREDICATE forService(thing, thing) -> tpsa:forService

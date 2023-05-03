@@ -1,0 +1,13 @@
+
+
+PREDICATE ariportShuttle(thing, thing) -> vta:airportShuttle
+PREDICATE notFree(thing) -> vta:notFree
+PREDICATE carHotelBundleOption(thing, thing) -> vta:carHotelBundleOption
+PREDICATE carRentalBooking(thing, thing) -> vta:carRentalBooking
+PREDICATE hotelStayConfirmation(thing, thing) -> vta:hotelStayConfirmation
+PREDICATE flightTicket(thing, thing) -> vta:flightTicket
+PREDICATE itinerary(thing, thing) -> vta:itinerary
+PREDICATE invoice(thing, thing) -> vta:invoice
+PREDICATE flightRequest(thing, thing) -> vta:flightRequest
+PREDICATE hotelStayRequest(thing, thing) -> vta:hotelStayRequest
+PREDICATE carRentalRequest(thing, thing) -> vta:carRentalRequest

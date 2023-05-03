@@ -1,0 +1,240 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/destin
+:destin rdf:type owl:ObjectProperty ;
+        rdfs:domain :passenger ;
+        rdfs:range :floor .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/next
+:next rdf:type owl:ObjectProperty ,
+               owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/origin
+:origin rdf:type owl:ObjectProperty ;
+        rdfs:domain :passenger ;
+        rdfs:range :floor .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Cell
+:Cell rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/boarded
+:boarded rdf:type owl:Class ;
+         rdfs:subClassOf :passenger .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/floor
+:floor rdf:type owl:Class ;
+       owl:disjointWith :passenger .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/lift_at
+:lift_at rdf:type owl:Class ;
+         rdfs:subClassOf :floor .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/passenger
+:passenger rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/served
+:served rdf:type owl:Class ;
+        rdfs:subClassOf :passenger .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aa
+:aa rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :ad .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ad
+:ad rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :ae .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ae
+:ae rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :ag .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ag
+:ag rdf:type owl:NamedIndividual ,
+             :Cell ,
+             :lift_at ;
+    :next :aj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aj
+:aj rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :al .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/al
+:al rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :am .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/am
+:am rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :ao .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ao
+:ao rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :ap .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ap
+:ap rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :aq .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aq
+:aq rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :ar .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ar
+:ar rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :as .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/as
+:as rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :at .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/at
+:at rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :av .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/av
+:av rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :aw .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aw
+:aw rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :ax .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ax
+:ax rdf:type owl:NamedIndividual ,
+             :Cell ;
+    :next :ba .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ba
+:ba rdf:type owl:NamedIndividual ,
+             :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_ab
+:pass_ab rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :ad ;
+         :origin :ap .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_ac
+:pass_ac rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :ap ;
+         :origin :ax .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_af
+:pass_af rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :aq ;
+         :origin :at .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_ah
+:pass_ah rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :av ;
+         :origin :ap .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_ai
+:pass_ai rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :aa ;
+         :origin :ag .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_ak
+:pass_ak rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :as ;
+         :origin :aq .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_an
+:pass_an rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :ao ;
+         :origin :av .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_au
+:pass_au rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :ar ;
+         :origin :ap .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_ay
+:pass_ay rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :ba ;
+         :origin :ar .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/pass_az
+:pass_az rdf:type owl:NamedIndividual ,
+                  :Cell ;
+         :destin :at ;
+         :origin :ao .
+
+
+###  Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/

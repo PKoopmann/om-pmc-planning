@@ -26,7 +26,23 @@
     )
 
     (:derived (inconsistent) 
-        (or (lift_at pass_o) (and (boarded b) (lift_at b)) (served h) (served l) (and (lift_at c) (boarded c)) (served d) (boarded i) (boarded l) (boarded f) (and (boarded a) (lift_at a)) (served k) (boarded j) (lift_at pass_c) (and (boarded g) (lift_at g)) (served j) (and (lift_at g) (served g)) (and (served b) (lift_at b)) (boarded k) (boarded d) (lift_at pass_m) (and (lift_at c) (served c)) (and (lift_at e) (boarded e)) (served f) (served i) (and (lift_at a) (served a)) (and (lift_at e) (served e)) (lift_at pass_e) (lift_at pass_n) (boarded h) (lift_at pass_g))
+        (or (lift_at pass_o) (and (boarded b) (lift_at b)) (served h) (served l) (served d) (boarded i) (boarded l) (boarded f) (and (boarded a) (lift_at a)) (served k) (boarded j) (lift_at pass_c) (served j) (and (served b) (lift_at b)) (boarded k) (boarded d) (lift_at pass_m) (served f) (served i) (and (lift_at a) (served a)) (lift_at pass_e) (lift_at pass_n) (boarded h) (lift_at pass_g))
+    )
+
+    (:derived (KBquery_lift_at ?x)
+        (or
+
+            (and (= ?x a) (lift_at a))
+            (and (= ?x b) (lift_at b))
+            (and (= ?x d) (lift_at d))
+            (and (= ?x f) (lift_at f))
+            (and (= ?x h) (lift_at h))
+            (and (= ?x i) (lift_at i))
+            (and (= ?x j) (lift_at j))
+            (and (= ?x k) (lift_at k))
+            (and (= ?x l) (lift_at l))
+
+        )
     )
 
 (:action stop

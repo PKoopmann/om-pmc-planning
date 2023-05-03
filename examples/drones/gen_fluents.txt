@@ -1,0 +1,8 @@
+
+OBJECT environment env	-> drone:env
+
+PREDICATE WetDrone(thing)	-> drone:WetDrone
+PREDICATE Drone(thing)			-> drone:Drone
+
+
+

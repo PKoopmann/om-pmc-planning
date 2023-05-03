@@ -1,0 +1,92 @@
+PREFIX drone: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+ 
+OBJECT thing aa -> drone:aa
+OBJECT thing ab -> drone:ab
+OBJECT thing ac -> drone:ac
+OBJECT thing ad -> drone:ad
+OBJECT thing ae -> drone:ae
+OBJECT thing af -> drone:af
+OBJECT thing ag -> drone:ag
+OBJECT thing ah -> drone:ah
+OBJECT thing ai -> drone:ai
+OBJECT thing ba -> drone:ba
+OBJECT thing bb -> drone:bb
+OBJECT thing bc -> drone:bc
+OBJECT thing bd -> drone:bd
+OBJECT thing be -> drone:be
+OBJECT thing bf -> drone:bf
+OBJECT thing bg -> drone:bg
+OBJECT thing bh -> drone:bh
+OBJECT thing bi -> drone:bi
+OBJECT thing ca -> drone:ca
+OBJECT thing cb -> drone:cb
+OBJECT thing cc -> drone:cc
+OBJECT thing cd -> drone:cd
+OBJECT thing ce -> drone:ce
+OBJECT thing cf -> drone:cf
+OBJECT thing cg -> drone:cg
+OBJECT thing ch -> drone:ch
+OBJECT thing ci -> drone:ci
+OBJECT thing da -> drone:da
+OBJECT thing db -> drone:db
+OBJECT thing dc -> drone:dc
+OBJECT thing dd -> drone:dd
+OBJECT thing de -> drone:de
+OBJECT thing df -> drone:df
+OBJECT thing dg -> drone:dg
+OBJECT thing dh -> drone:dh
+OBJECT thing di -> drone:di
+OBJECT thing ea -> drone:ea
+OBJECT thing eb -> drone:eb
+OBJECT thing ec -> drone:ec
+OBJECT thing ed -> drone:ed
+OBJECT thing ee -> drone:ee
+OBJECT thing ef -> drone:ef
+OBJECT thing eg -> drone:eg
+OBJECT thing eh -> drone:eh
+OBJECT thing ei -> drone:ei
+OBJECT thing fa -> drone:fa
+OBJECT thing fb -> drone:fb
+OBJECT thing fc -> drone:fc
+OBJECT thing fd -> drone:fd
+OBJECT thing fe -> drone:fe
+OBJECT thing ff -> drone:ff
+OBJECT thing fg -> drone:fg
+OBJECT thing fh -> drone:fh
+OBJECT thing fi -> drone:fi
+OBJECT thing ga -> drone:ga
+OBJECT thing gb -> drone:gb
+OBJECT thing gc -> drone:gc
+OBJECT thing gd -> drone:gd
+OBJECT thing ge -> drone:ge
+OBJECT thing gf -> drone:gf
+OBJECT thing gg -> drone:gg
+OBJECT thing gh -> drone:gh
+OBJECT thing gi -> drone:gi
+OBJECT thing ha -> drone:ha
+OBJECT thing hb -> drone:hb
+OBJECT thing hc -> drone:hc
+OBJECT thing hd -> drone:hd
+OBJECT thing he -> drone:he
+OBJECT thing hf -> drone:hf
+OBJECT thing hg -> drone:hg
+OBJECT thing hh -> drone:hh
+OBJECT thing hi -> drone:hi
+OBJECT thing ia -> drone:ia
+OBJECT thing ib -> drone:ib
+OBJECT thing ic -> drone:ic
+OBJECT thing id -> drone:id
+OBJECT thing ie -> drone:ie
+OBJECT thing if -> drone:if
+OBJECT thing ig -> drone:ig
+OBJECT thing ih -> drone:ih
+OBJECT thing ii -> drone:ii
+OBJECT thing env -> drone:env
+
+OBJECT environment env	-> drone:env
+
+PREDICATE WetDrone(thing)	-> drone:WetDrone
+PREDICATE Drone(thing)			-> drone:Drone
+
+
+

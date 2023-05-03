@@ -23,14 +23,13 @@
 		(next j k)
 		(next k l)
 		(lift_at i)
+
+
 	)
-    (:goal (and
-        (not (inconsistent))
-        (not (exists (?x)
+	(:goal (not (exists (?x) 
  		 (and 
  			 (KBquery_passenger ?x)
  			 (not (KBquery_served ?x))
  		 )) 
  	 ))
-)
 )

@@ -1,0 +1,157 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/hasPersonalInfo
+:hasPersonalInfo rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Employee ;
+                 rdfs:range :FullName .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Cell
+:Cell rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/CodingAgent
+:CodingAgent rdf:type owl:Class ;
+             rdfs:subClassOf :SoftwareAgent ;
+             owl:disjointWith :ElectronicEngineer .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/DesignAgent
+:DesignAgent rdf:type owl:Class ;
+             rdfs:subClassOf :TaskAgent .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Designer
+:Designer rdf:type owl:Class ;
+          rdfs:subClassOf :Employee ;
+          owl:disjointWith :ElectronicsAgent ,
+                           :SoftwareAgent .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Developer
+:Developer rdf:type owl:Class ;
+           rdfs:subClassOf :Employee ;
+           owl:disjointWith :SpecificationsAgent .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ElectronicEngineer
+:ElectronicEngineer rdf:type owl:Class ;
+                    rdfs:subClassOf :Engineer ;
+                    owl:disjointWith :InformaticEngineer .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ElectronicsAgent
+:ElectronicsAgent rdf:type owl:Class ;
+                  rdfs:subClassOf :TaskAgent ;
+                  owl:disjointWith :InformaticEngineer ,
+                                   :MaterialsEngineer .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Employee
+:Employee rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasPersonalInfo ;
+                            owl:someValuesFrom owl:Thing
+                          ] ;
+          owl:disjointWith :FullName .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Engineer
+:Engineer rdf:type owl:Class ;
+          rdfs:subClassOf :Employee .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/FullName
+:FullName rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/InformaticEngineer
+:InformaticEngineer rdf:type owl:Class ;
+                    rdfs:subClassOf :Engineer .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/MaterialsAgent
+:MaterialsAgent rdf:type owl:Class ;
+                rdfs:subClassOf :DesignAgent .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/MaterialsEngineer
+:MaterialsEngineer rdf:type owl:Class ;
+                   rdfs:subClassOf :Engineer ;
+                   owl:disjointWith :SoftwareAgent .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/SoftwareAgent
+:SoftwareAgent rdf:type owl:Class ;
+               rdfs:subClassOf :TaskAgent .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/SpecificationsAgent
+:SpecificationsAgent rdf:type owl:Class ;
+                     rdfs:subClassOf :SoftwareAgent .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/TaskAgent
+:TaskAgent rdf:type owl:Class ;
+           rdfs:subClassOf :Employee .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/TestingAgent
+:TestingAgent rdf:type owl:Class ;
+              rdfs:subClassOf :TaskAgent .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/a
+:a rdf:type owl:NamedIndividual ,
+            :Cell ,
+            :Engineer .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/b
+:b rdf:type owl:NamedIndividual ,
+            :Cell ,
+            :Developer .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/c
+:c rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/d
+:d rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/e
+:e rdf:type owl:NamedIndividual ,
+            :Cell ,
+            :Developer .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/f
+:f rdf:type owl:NamedIndividual ,
+            :Cell .
+
+
+###  Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/

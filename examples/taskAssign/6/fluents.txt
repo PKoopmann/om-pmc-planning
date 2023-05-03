@@ -1,0 +1,21 @@
+PREFIX task: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+ 
+OBJECT thing a -> task:a
+OBJECT thing b -> task:b
+OBJECT thing c -> task:c
+OBJECT thing d -> task:d
+OBJECT thing e -> task:e
+OBJECT thing f -> task:f
+
+
+PREDICATE ElectronicEngineer(thing) -> task:ElectronicEngineer
+PREDICATE InformaticEngineer(thing) -> task:InformaticEngineer
+PREDICATE ElectronicsAgent(thing) -> task:ElectronicsAgent
+PREDICATE SoftwareAgent(thing) -> task:SoftwareAgent
+PREDICATE DesignAgent(thing) -> task:DesignAgent
+PREDICATE TestingAgent(thing) -> task:TestingAgent
+PREDICATE MaterialsAgent(thing) -> task:MaterialsAgent
+PREDICATE CodingAgent(thing) -> task:CodingAgent
+PREDICATE SpecificationsAgent(thing) -> task:SpecificationsAgent
+PREDICATE hasPersonalInfo(thing,name) -> task:hasPersonalInfo
+

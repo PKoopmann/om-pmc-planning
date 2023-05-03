@@ -23,6 +23,8 @@
 		(next j k)
 		(next k l)
 		(lift_at i)
+
+
 	)
 	(:goal (not (exists (?x) 
  		 (and 

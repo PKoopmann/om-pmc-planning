@@ -1,48 +1,47 @@
-# fluent definitions for drone example
-
 PREFIX drone: <http://www.semanticweb.org/anon/ontologies/2021/3/>
-
-OBJECT cell aa	-> drone:aa
-OBJECT cell ab	-> drone:ab
-OBJECT cell ac	-> drone:ac
-OBJECT cell ad	-> drone:ad
-OBJECT cell ae	-> drone:ae
-OBJECT cell af	-> drone:af
-OBJECT cell ba	-> drone:ba
-OBJECT cell bb	-> drone:bb
-OBJECT cell bc	-> drone:bc
-OBJECT cell bd	-> drone:bd
-OBJECT cell be	-> drone:be
-OBJECT cell bf	-> drone:bf
-OBJECT cell ca	-> drone:ca
-OBJECT cell cb	-> drone:cb
-OBJECT cell cc	-> drone:cc
-OBJECT cell cd	-> drone:cd
-OBJECT cell ce	-> drone:ce
-OBJECT cell cf	-> drone:cf
-OBJECT cell da	-> drone:da
-OBJECT cell db	-> drone:db
-OBJECT cell dc	-> drone:dc
-OBJECT cell dd	-> drone:dd
-OBJECT cell de	-> drone:de
-OBJECT cell df	-> drone:df
-OBJECT cell ea	-> drone:ea
-OBJECT cell eb	-> drone:eb
-OBJECT cell ec	-> drone:ec
-OBJECT cell ed	-> drone:ed
-OBJECT cell ee	-> drone:ee
-OBJECT cell ef	-> drone:ef
-OBJECT cell fa	-> drone:fa
-OBJECT cell fb	-> drone:fb
-OBJECT cell fc	-> drone:fc
-OBJECT cell fd	-> drone:fd
-OBJECT cell fe	-> drone:fe
-OBJECT cell ff	-> drone:ff
+ 
+OBJECT thing aa -> drone:aa
+OBJECT thing ab -> drone:ab
+OBJECT thing ac -> drone:ac
+OBJECT thing ad -> drone:ad
+OBJECT thing ae -> drone:ae
+OBJECT thing af -> drone:af
+OBJECT thing ba -> drone:ba
+OBJECT thing bb -> drone:bb
+OBJECT thing bc -> drone:bc
+OBJECT thing bd -> drone:bd
+OBJECT thing be -> drone:be
+OBJECT thing bf -> drone:bf
+OBJECT thing ca -> drone:ca
+OBJECT thing cb -> drone:cb
+OBJECT thing cc -> drone:cc
+OBJECT thing cd -> drone:cd
+OBJECT thing ce -> drone:ce
+OBJECT thing cf -> drone:cf
+OBJECT thing da -> drone:da
+OBJECT thing db -> drone:db
+OBJECT thing dc -> drone:dc
+OBJECT thing dd -> drone:dd
+OBJECT thing de -> drone:de
+OBJECT thing df -> drone:df
+OBJECT thing ea -> drone:ea
+OBJECT thing eb -> drone:eb
+OBJECT thing ec -> drone:ec
+OBJECT thing ed -> drone:ed
+OBJECT thing ee -> drone:ee
+OBJECT thing ef -> drone:ef
+OBJECT thing fa -> drone:fa
+OBJECT thing fb -> drone:fb
+OBJECT thing fc -> drone:fc
+OBJECT thing fd -> drone:fd
+OBJECT thing fe -> drone:fe
+OBJECT thing ff -> drone:ff
+OBJECT thing env -> drone:env
 
 OBJECT environment env	-> drone:env
 
-PREDICATE WetDrone(cell)	-> drone:WetDrone
-PREDICATE Drone(cell)			-> drone:Drone
+PREDICATE WetDrone(thing)	-> drone:WetDrone
+PREDICATE Drone(thing)			-> drone:Drone
 
 
 

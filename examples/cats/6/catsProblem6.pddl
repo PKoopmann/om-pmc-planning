@@ -10,6 +10,7 @@
 		(contains j f)
 		(contains c l)
 		(contains b a)
+
 	)
 	(:goal (not (exists (?x) 
  		 (and 

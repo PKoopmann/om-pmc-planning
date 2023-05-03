@@ -1,0 +1,26 @@
+# abstract hook definitions for drone example
+
+PREFIX task: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+
+
+HOOK_PREDICATE: KBquery_ElectronicEngineer
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: task:ElectronicEngineer
+	
+HOOK_PREDICATE: KBquery_InformaticEngineer
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: task:InformaticEngineer
+  
+HOOK_PREDICATE: KBquery_Employee
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: task:Employee

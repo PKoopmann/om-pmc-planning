@@ -1,0 +1,7 @@
+
+
+PREDICATE bomb(thing)	    -> cats:bomb
+PREDICATE cat(thing)			-> cats:cat
+PREDICATE contains(thing, thing) -> cats:contains
+
+

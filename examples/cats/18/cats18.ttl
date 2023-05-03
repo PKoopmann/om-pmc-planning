@@ -1,0 +1,269 @@
+@prefix : <http://www.semanticweb.org/anon/ontologies/2021/3> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix cats: <http://www.semanticweb.org/anon/ontologies/2021/3/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/anon/ontologies/2021/3> .
+
+<http://www.semanticweb.org/anon/ontologies/2021/3> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/contains
+cats:contains rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain cats:package ;
+              rdfs:range cats:ObjectX .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/Cell
+cats:Cell rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ObjectX
+cats:ObjectX rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bomb
+cats:bomb rdf:type owl:Class ;
+          rdfs:subClassOf cats:ObjectX ;
+          owl:disjointWith cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/cat
+cats:cat rdf:type owl:Class ;
+         rdfs:subClassOf cats:ObjectX .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/package
+cats:package rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Restriction ;
+                               owl:onProperty cats:contains ;
+                               owl:someValuesFrom owl:Thing
+                             ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aa
+cats:aa rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:ag .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ab
+cats:ab rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:bomb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ac
+cats:ac rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:bg .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ad
+cats:ad rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ae
+cats:ae rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:az .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/af
+cats:af rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:ad .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ag
+cats:ag rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ah
+cats:ah rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:ap .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ai
+cats:ai rdf:type owl:NamedIndividual ,
+                 cats:Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aj
+cats:aj rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ak
+cats:ak rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/al
+cats:al rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:bomb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/am
+cats:am rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:av .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/an
+cats:an rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:bomb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ao
+cats:ao rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:bb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ap
+cats:ap rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:bomb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aq
+cats:aq rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:bd .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ar
+cats:ar rdf:type owl:NamedIndividual ,
+                 cats:Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/as
+cats:as rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:ay .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/at
+cats:at rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:an .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/au
+cats:au rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:aj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/av
+cats:av rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/aw
+cats:aw rdf:type owl:NamedIndividual ,
+                 cats:Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ax
+cats:ax rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:ak .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ay
+cats:ay rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/az
+cats:az rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/ba
+cats:ba rdf:type owl:NamedIndividual ,
+                 cats:Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bb
+cats:bb rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:bomb .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bc
+cats:bc rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:ab .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bd
+cats:bd rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/be
+cats:be rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:bj .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bf
+cats:bf rdf:type owl:NamedIndividual ,
+                 cats:Cell ;
+        cats:contains cats:al .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bg
+cats:bg rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bh
+cats:bh rdf:type owl:NamedIndividual ,
+                 cats:Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bi
+cats:bi rdf:type owl:NamedIndividual ,
+                 cats:Cell .
+
+
+###  http://www.semanticweb.org/anon/ontologies/2021/3/bj
+cats:bj rdf:type owl:NamedIndividual ,
+                 cats:Cell ,
+                 cats:cat .
+
+
+###  Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/
