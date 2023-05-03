@@ -13,3 +13,5 @@ coordinator/.~lock.evaluation.csv#
 moreflags2
 
 **/misc/
+examples/*/*/misc/*
+examples/*/*/*/misc/*
