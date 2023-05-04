@@ -1,0 +1,3 @@
+id,method,name,folder,ontology,domain,problem
+1,om_planning,elevator15,../examples/elevator/elevator15,elevator15.ttl,elevator.pddl,elevatorProblem15.pddl
+58,horn_planning,cats15,../examples/horn_dl_benchmarks/cats/original,TTL.owl,domain.pddl,catProblem15.pddl

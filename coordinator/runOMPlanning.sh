@@ -2,8 +2,8 @@
 # author: Tobias John, University of Oslo
 # year: 2023
 
-# usage: ./runOMPlanning.sh FOLDER ONTOLOGY PDDL-DOMAIN PDDL-PROBLEM [TIME-BOUND (in s)]
-
+# usage: ./runOMPlanning.sh FOLDER ONTOLOGY PDDL-DOMAIN PDDL-PROBLEM [TIME-BOUND (in s) DELETE-MISC]
+# cave: as current: optin -delete-misc can only be added if time bound is used
 
 
 
@@ -37,11 +37,27 @@ PlannerSAS="$MiscFolder"/output.sas
 
 # number of hooks that are evaluated at a time between restarts
 increment=100
+DeleteMisc=false
 
 TimeLimit=-1
-if [ "$#" == 5 ]; then
-  TimeLimit=$5
-  echo "time limit is set to ${5}s"
+if [ "$#" -ge 5 ]; then
+  if [ $5 == "-delete-misc" ]; then
+    DeleteMisc=true
+  else
+    TimeLimit=$5
+  fi
+  if [ "$#" == 6 ]; then
+    if [ $6 == "-delete-misc" ]; then
+      DeleteMisc=true
+    else
+      TimeLimit=$6
+    fi
+  fi
+  echo "time limit is set to ${TimeLimit}s"
+fi
+
+if [[ $DeleteMisc == true ]]; then
+  echo "delete misc folders"
 fi
 
 
@@ -141,6 +157,10 @@ if [[ $TimeOut == 1 ]]; then
   echo "reasoning time: >${TimeLimit}s"
   echo "planning time: -"
   echo "total time: -"
+  # remove misc (if wished)
+  if [[ $DeleteMisc == true ]]; then
+    rm -r -f $MiscFolder
+  fi
   exit 1
 fi
 
@@ -228,6 +248,10 @@ else
     echo "reasoning time: ${DurationReasoning}s"
     echo "planning time: >${TimeLimit}s"
     echo "total time: -"
+    # remove misc (if wished)
+    if [[ $DeleteMisc == true ]]; then
+      rm -r -f $MiscFolder
+    fi
     exit 1
   fi
 fi
@@ -251,6 +275,10 @@ while read line; do
 	fi
 done < "$PlannerLog"
 
+# remove misc (if wished)
+if [[ $DeleteMisc == true ]]; then
+  rm -r -f $MiscFolder
+fi
 
 
 # print out computation times

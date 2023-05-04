@@ -2,7 +2,7 @@
 # author: Tobias John, University of Oslo
 # year: 2023
 
-# usage: ./runBenchmark.sh BENCHMARK-FILE TIME-BOUND [s]
+# usage: ./runBenchmark.sh BENCHMARK-FILE TIME-BOUND [s] [-delete-misc]
 # output will be put in folder ../benchmark_runs/NAME___.csv
 
 TimeStart="$(date -u +%s.%N)"
@@ -10,6 +10,8 @@ TimeStart="$(date -u +%s.%N)"
 
 benchmarks=$1
 TimeBound=$2
+DeleteMisc=${3: }
+
 
 hostname=$(hostname)
 directory="../benchmark_runs/${hostname}"
@@ -46,13 +48,13 @@ do
     echo "run ontology mediated planning for example with id ${id} (folder: ${folder})" >> $log
 
     runPlanner=1
-    ./runOMPlanning.sh $folder $ontology $domain $problem $TimeBound > "$tempLog"
+    ./runOMPlanning.sh $folder $ontology $domain $problem $TimeBound $DeleteMisc > "$tempLog"
   else if [[ $method == "horn_planning" ]]; then
     echo "run horn planning for example with id ${id} (folder: ${folder})"
     echo "run horn planning for example with id ${id} (folder: ${folder})" >> $log
 
     runPlanner=1
-    ./runHornPlanning.sh $folder $ontology $domain $problem $TimeBound > "$tempLog"
+    ./runHornPlanning.sh $folder $ontology $domain $problem $TimeBound $DeleteMisc > "$tempLog"
   else
     echo "ERROR: can not parse example with id ${id}. 'method' needs to be 'om_planning' or 'horn_planning'"
   fi fi

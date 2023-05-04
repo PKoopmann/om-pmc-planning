@@ -33,9 +33,27 @@ PlannerSAS="$MiscFolder"/output.sas
 
 # check, if a time limit is provided
 TimeLimit=-1
-if [ "$#" == 5 ]; then
-  TimeLimit=$5
-  echo "time limit is set to ${5}s"
+DeleteMisc=false
+
+TimeLimit=-1
+if [ "$#" -ge 5 ]; then
+  if [ $5 == "-delete-misc" ]; then
+    DeleteMisc=true
+  else
+    TimeLimit=$5
+  fi
+  if [ "$#" == 6 ]; then
+    if [ $6 == "-delete-misc" ]; then
+      DeleteMisc=true
+    else
+      TimeLimit=$6
+    fi
+  fi
+  echo "time limit is set to ${TimeLimit}s"
+fi
+
+if [[ $DeleteMisc == true ]]; then
+  echo "delete misc folders"
 fi
 
 
@@ -119,6 +137,10 @@ else
     echo "reasoning time: >${TimeLimit}s"
     echo "planning time: -"
     echo "total time: -"
+    # remove misc (if wished)
+    if [[ $DeleteMisc == true ]]; then
+      rm -r -f $MiscFolder
+    fi
     exit 1
   fi
 
@@ -146,6 +168,10 @@ else
     echo "reasoning time: ${DurationReasoning}s"
     echo "planning time: >${TimeLimit}s"
     echo "total time: -"
+    # remove misc (if wished)
+    if [[ $DeleteMisc == true ]]; then
+      rm -r -f $MiscFolder
+    fi
     exit 1
   fi
 fi
@@ -165,6 +191,12 @@ while read line; do
 		Evaluations=${line#*: } # remove everything left of and including ":"
 	fi
 done < "$PlannerLog"
+
+
+# remove misc (if wished)
+if [[ $DeleteMisc == true ]]; then
+  rm -r -f $MiscFolder
+fi
 
 # print out computation times
 TimeEnd="$(date -u +%s.%N)"
