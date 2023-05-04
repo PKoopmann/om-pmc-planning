@@ -1,6 +1,315 @@
-run benchmarks from file benchmarkSmall.csv with a time limit of 5s.
-start time: 2023_04_24_09_51
-result will be written to ../benchmark_runs/tobias-HP/_2023_04_24_09_51_log.txt
-run ontology mediated planning for example with id 1 (folder: ../examples/pipes/pipes1)
-run horn planning for example with id 3 (folder: ../examples/horn_pipes/pipes1)
-total time to run benchmark set: 7.210040978s
+./runOMPlanning.sh: line 116: cannot create temp file for here-document: No space left on device
+Traceback (most recent call last):
+  File "/home/ubuntu/git/om-pmc-formula-generation/horn_dl_pddl_compiler/pddl.py", line 1074, in consume
+    tk = self.pop()
+  File "/home/ubuntu/git/om-pmc-formula-generation/horn_dl_pddl_compiler/pddl.py", line 1050, in pop
+    raise IndexError()
+IndexError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "../horn_dl_pddl_compiler/tseitin.py", line 230, in <module>
+    p = pddl.parse_problem(f.read())
+  File "/home/ubuntu/git/om-pmc-formula-generation/horn_dl_pddl_compiler/pddl.py", line 1521, in parse_problem
+    tokens.skip('define', 'problem')
+  File "/home/ubuntu/git/om-pmc-formula-generation/horn_dl_pddl_compiler/pddl.py", line 1086, in skip
+    return self.consume(*x)
+  File "/home/ubuntu/git/om-pmc-formula-generation/horn_dl_pddl_compiler/pddl.py", line 1078, in consume
+    raise ValueError("expected '%s' but received EOF" % arg)
+ValueError: expected '(' but received EOF
+b"Error: Could not read file: ../examples/horn_dl_benchmarks/cats/original/misc/generated_catProblem14.pddl\nReason: [Errno 2] No such file or directory: '../examples/horn_dl_benchmarks/cats/original/misc/generated_catProblem14.pddl'.\n"
+./runOMPlanning.sh: line 116: cannot create temp file for here-document: No space left on device
+Traceback (most recent call last):
+  File "../horn_dl_pddl_compiler/tseitin.py", line 227, in <module>
+    with open(args.domain) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../examples/horn_dl_benchmarks/cats/original/misc/_temp_compiledDomain.pddl'
+rm: cannot remove '../examples/horn_dl_benchmarks/cats/original/misc/_temp_compiledDomain.pddl': No such file or directory
+rm: cannot remove '../examples/horn_dl_benchmarks/cats/original/misc/_temp_compiledProblem.pddl': No such file or directory
+./runHornPlanning.sh: line 130: cannot create temp file for here-document: No space left on device
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "../downward-release-22.12.0-patched/fast-downward.py", line 5, in <module>
+    main()
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/main.py", line 33, in main
+    limits.print_limits("planner", args.overall_time_limit, args.overall_memory_limit)
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/limits.py", line 101, in print_limits
+    logging.info("{} time limit: {}".format(nick, time_limit))
+Message: 'planner time limit: None'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "../downward-release-22.12.0-patched/fast-downward.py", line 5, in <module>
+    main()
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/main.py", line 33, in main
+    limits.print_limits("planner", args.overall_time_limit, args.overall_memory_limit)
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/limits.py", line 105, in print_limits
+    logging.info("{} memory limit: {}".format(nick, memory_limit))
+Message: 'planner memory limit: None'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "../downward-release-22.12.0-patched/fast-downward.py", line 5, in <module>
+    main()
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/main.py", line 39, in main
+    (exitcode, continue_execution) = run_components.run_translate(args)
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/run_components.py", line 51, in run_translate
+    logging.info("Running translator.")
+Message: 'Running translator.'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "../downward-release-22.12.0-patched/fast-downward.py", line 5, in <module>
+    main()
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/main.py", line 39, in main
+    (exitcode, continue_execution) = run_components.run_translate(args)
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/run_components.py", line 60, in run_translate
+    stderr, returncode = call.get_error_output_and_returncode(
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/call.py", line 63, in get_error_output_and_returncode
+    print_call_settings(nick, cmd, None, time_limit, memory_limit)
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/call.py", line 16, in print_call_settings
+    logging.info("{} stdin: {}".format(nick, stdin))
+Message: 'translator stdrun ontology mediated planning for example with id 59 (folder: ../examples/cats/16)
+run horn planning for example with id 60 (folder: ../examples/horn_dl_benchmarks/cats/original)
+run ontology mediated planning for example with id 61 (folder: ../examples/cats/17)
+run horn planning for example with id 62 (folder: ../examples/horn_dl_benchmarks/cats/original)
+run ontology mediated planning for example with id 63 (folder: ../examples/cats/18)
+run horn planning for example with id 64 (folder: ../examples/horn_dl_benchmarks/cats/original)
+run ontology mediated planning for example with id 65 (folder: ../examples/cats/19)
+run horn planning for example with id 66 (folder: ../examples/horn_dl_benchmarks/cats/original)
+run ontology mediated planning for example with id 67 (folder: ../examples/cats/21)
+run horn planning for example with id 68 (folder: ../examples/horn_dl_benchmarks/cats/original)
+run ontology mediated planning for example with id 69 (folder: ../examples/cats/22)
+run horn planning for example with id 70 (folder: ../examples/horn_dl_benchmarks/cats/original)
+run ontology mediated planning for example with id 71 (folder: ../examples/cats/23)
+run horn planning for example with id 72 (folder: ../examples/horn_dl_benchmarks/cats/original)
+run ontology mediated planning for example with id 73 (folder: ../examples/cats/24)
+run horn planning for example with id 74 (folder: ../examples/horn_dl_benchmarks/cats/original)
+run ontology mediated planning for example with id 75 (folder: ../examples/cats/25)
+run horn planning for example with id 76 (folder: ../examples/horn_dl_benchmarks/cats/original)
+run ontology mediated planning for example with id 77 (folder: ../examples/drones/5-5)
+run horn planning for example with id 78 (folder: ../examples/horn_dl_benchmarks/drones/original)
+run ontology mediated planning for example with id 79 (folder: ../examples/drones/5-6)
+run horn planning for example with id 80 (folder: ../examples/horn_dl_benchmarks/drones/original)
+run ontology mediated planning for example with id 81 (folder: ../examples/drones/5-7)
+run horn planning for example with id 82 (folder: ../examples/horn_dl_benchmarks/drones/original)
+run ontology mediated planning for example with id 83 (folder: ../examples/drones/5-8)
+run horn planning for example with id 84 (folder: ../examples/horn_dl_benchmarks/drones/original)
+run ontology mediated planning for example with id 85 (folder: ../examples/drones/6-5)
+run horn planning for example with id 86 (./runBenchmark.sh: line 52: echo: write error: No space left on device
+./runHornPlanning.sh: line 3run ontology mediated planning for example with id 255 (folder: ../examples/queens/5-2)
+run horn planning for example with id 256 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 257 (folder: ../examples/queens/5-3)
+run horn planning for example with id 258 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 259 (folder: ../examples/queens/5-4)
+run horn planning for example with id 260 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 261 (folder: ../examples/queens/5-5)
+run horn planning for example with id 262 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 263 (folder: ../examples/queens/6-2)
+run horn planning for example with id 264 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 265 (folder: ../examples/queens/6-3)
+run horn planning for example with id 266 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 267 (folder: ../examples/queens/6-4)
+run horn planning for example with id 268 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 269 (folder: ../examples/queens/6-5)
+run horn planning for example with id 270 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 271 (folder: ../examples/queens/6-6)
+run horn planning for example with id 272 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 273 (folder: ../examples/queens/7-3)
+run horn planning for example with id 274 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 275 (folder: ../examples/queens/7-4)
+run horn planning for example with id 276 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 277 (folder: ../examples/queens/7-5)
+run horn planning for example with id 278 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 279 (folder: ../examples/queens/7-6)
+run horn planning for example with id 280 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 281 (folder: ../examples/queens/7-7)
+run horn planning for example with id 282 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 283 (folder: ../examples/queens/8-4)
+run horn planning for example with id 284 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 285 (folder: ../examples/queens/8-5)
+run horn planning for example with id 286 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 287 (folder: ../examples/queens/8-6)
+run horn planning for example with id 288 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 289 (folder: ../examples/queens/8-7)
+run horn planning for example with id 290 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 291 (folder: ../examples/queens/8-8)
+run horn planning for example with id 292 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 293 (folder: ../examples/queens/9-5)
+run horn planning for example with id 294 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 295 (folder: ../examples/queens/9-6)
+run horn planning for example with id 296 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 297 (folder: ../examples/queens/9-7)
+run horn planning for example with id 298 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 299 (folder: ../examples/queens/9-8)
+run horn planning for example with id 300 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 301 (folder: ../examples/queens/9-9)
+run horn planning for example with id 302 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 303 (folder: ../examples/queens/10-6)
+run horn planning for example with id 304 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 305 (folder: ../examples/queens/10-7)
+run horn planning for example with id 306 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 307 (folder: ../examples/queens/10-8)
+run horn planning for example with id 308 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 309 (folder: ../examples/queens/10-9)
+run horn planning for example with id 310 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 311 (folder: ../examples/queens/10-10)
+run horn planning for example with id 312 (folder: ../examples/horn_dl_benchmarks/queens/original)
+run ontology mediated planning for example with id 313 (folder: ../examples/robot/3)
+run horn planning for example with id 314 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 315 (folder: ../examples/robot/4)
+run horn planning for example with id 316 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 317 (folder: ../examples/robot/5)
+run horn planning for example with id 318 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 319 (folder: ../examples/robot/6)
+run horn planning for example with id 320 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 321 (folder: ../examples/robot/7)
+run horn planning for example with id 322 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 323 (folder: ../examples/robot/8)
+run horn planning for example with id 324 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 325 (folder: ../examples/robot/9)
+run horn planning for example with id 326 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 327 (folder: ../examples/robot/10)
+run horn planning for example with id 328 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 329 (folder: ../examples/robot/11)
+run horn planning for example with id 330 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 331 (folder: ../examples/robot/12)
+run horn planning for example with id 332 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 333 (folder: ../examples/robot/13)
+run horn planning for example with id 334 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 335 (folder: ../examples/robot/14)
+run horn planning for example with id 336 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 337 (folder: ../examples/robot/15)
+run horn planning for example with id 338 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 339 (folder: ../examples/robot/16)
+run horn planning for example with id 340 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 341 (folder: ../examples/robot/17)
+run horn planning for example with id 342 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 343 (folder: ../examples/robot/18)
+run horn planning for example with id 344 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 345 (folder: ../examples/robot/19)
+run horn planning for example with id 346 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 347 (folder: ../examples/robot/20)
+run horn planning for example with id 348 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 349 (folder: ../examples/robot/21)
+run horn planning for example with id 350 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 351 (folder: ../examples/robot/22)
+run horn planning for example with id 352 (folder: ../examples/horn_dl_benchmarks/robot/original)
+run ontology mediated planning for example with id 353 (folder: ../examples/robotConj/3)
+run horn planning for example with id 354 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 355 (folder: ../examples/robotConj/4)
+run horn planning for example with id 356 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 357 (folder: ../examples/robotConj/5)
+run horn planning for example with id 358 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 359 (folder: ../examples/robotConj/6)
+run horn planning for example with id 360 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 361 (folder: ../examples/robotConj/7)
+run horn planning for example with id 362 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 363 (folder: ../examples/robotConj/8)
+run horn planning for example with id 364 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 365 (folder: ../examples/robotConj/9)
+run horn planning for example with id 366 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 367 (folder: ../examples/robotConj/10)
+run horn planning for example with id 368 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 369 (folder: ../examples/robotConj/11)
+run horn planning for example with id 370 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 371 (folder: ../examples/robotConj/12)
+run horn planning for example with id 372 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 373 (folder: ../examples/robotConj/13)
+run horn planning for example with id 374 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 375 (folder: ../examples/robotConj/14)
+run horn planning for example with id 376 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 377 (folder: ../examples/robotConj/15)
+run horn planning for example with id 378 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 379 (folder: ../examples/robotConj/16)
+run horn planning for example with id 380 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 381 (folder: ../examples/robotConj/17)
+run horn planning for example with id 382 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 383 (folder: ../examples/robotConj/18)
+run horn planning for example with id 384 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 385 (folder: ../examples/robotConj/19)
+run horn planning for example with id 386 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 387 (folder: ../examples/robotConj/20)
+run horn planning for example with id 388 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 389 (folder: ../examples/robotConj/21)
+run horn planning for example with id 390 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 391 (folder: ../examples/robotConj/22)
+run horn planning for example with id 392 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+run ontology mediated planning for example with id 393 (folder: ../examples/pipes/pipes1)
+run horn planning for example with id 394 (folder: ../examples/horn_pipes/pipes1)
+run ontology mediated planning for example with id 395 (folder: ../examples/pipes/pipes2)
+run horn planning for example with id 396 (folder: ../examples/horn_pipes/pipes2)
+total time to run benchmark set: s
+ce left on device
+./runOMPlanning.sh: line 134: echo: write error: No space left on device
+./runOMPlanning.sh: line 135: echo: write error: No space left on device
+./runOMPlanning.sh: line 136: echo: write error: No space left on device
+./runOMPlanning.sh: line 137: echo: write error: No space left on device
+./runOMPlanning.sh: line 140: echo: write error: No space left on device
+./runOMPlanning.sh: line 141: echo: write error: No space left on device
+./runOMPlanning.sh: line 142: echo: write error: No space left on device
+./runOMPlanning.sh: line 143: echo: write error: No space left on device
+./runHornPlanning.sh: line 38: echo: write error: No space left on device
+./runHornPlanning.sh: line 104: echo: write error: No space left on device
+Traceback (most recent call last):
+  File "../horn_dl_pddl_compiler/tseitin.py", line 227, in <module>
+    with open(args.domain) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../examples/horn_dl_benchmarks/robot/original/misc/_temp_compiledDomain.pddl'
+rm: cannot remove '../examples/horn_dl_benchmarks/robot/original/misc/_temp_compiledDomain.pddl': No such file or directory
+rm: cannot remove '../examples/horn_dl_benchmarks/robot/original/misc/_temp_compiledProblem.pddl': No such file or directory
+./runHornPlanning.sh: line 128: echo: write error: No space left on device
+./runHornPlanning.sh: line 130: cannot create temp file for here-document: No space left on device
+./runHornPlanning.sh: line 134: echo: write error: No space left on device
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "../downward-release-22.12.0-patched/fast-downward.py", line 5, in <module>
+    main()
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/main.py", line 33, in main
+    limits.print_limits("planner", args.overall_time_limit, args.overall_memory_limit)
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/limits.py", line 101, in print_limits
+    logging.info("{} time limit: {}".format(nick, time_limit))
+Message: 'planner time limit: None'
+Arguments: ()
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/logging/__init__.py", line 1089, in emit
+    self.flush()
+  File "/usr/lib/python3.8/logging/__init__.py", line 1069, in flush
+    self.stream.flush()
+OSError: [Errno 28] No space left on device
+Call stack:
+  File "../downward-release-22.12.0-patched/fast-downward.py", line 5, in <module>
+    main()
+  File "/home/ubuntu/git/om-pmc-formula-generation/downward-release-22.12.0-patched/driver/main.py", line 33, in main
+    limits.print_limits("planner", args.overall_time_limit, args.overall_memory_limit)
+  File "/home/ubuntu/git/om-p

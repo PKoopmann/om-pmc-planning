@@ -1,0 +1,8 @@
+(dunk m i)
+(dunk f o)
+(let_the_cats_out r d)
+(let_the_cats_out q n)
+(let_the_cats_out l g)
+(let_the_cats_out k h)
+(let_the_cats_out j a)
+; cost = 7 (unit cost)

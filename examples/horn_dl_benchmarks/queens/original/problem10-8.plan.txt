@@ -1,4 +1,0 @@
-(move gj ad)
-(move jf bf)
-(move hd hb)
-; cost = 3 (unit cost)

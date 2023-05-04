@@ -1,4 +1,0 @@
-(move ca ba)
-(move ac cc)
-(move db di)
-; cost = 3 (unit cost)
