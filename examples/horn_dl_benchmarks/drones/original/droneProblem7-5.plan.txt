@@ -1,0 +1,7 @@
+(move ce cd)
+(move cd cc)
+(move cc bc)
+(move dc db)
+(move dd dc)
+(move db da)
+; cost = 6 (unit cost)

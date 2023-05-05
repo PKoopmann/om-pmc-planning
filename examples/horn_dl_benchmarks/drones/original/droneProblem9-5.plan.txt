@@ -1,0 +1,6 @@
+(move ef df)
+(move df cf)
+(move ff fg)
+(move fg fh)
+(move hf if)
+; cost = 5 (unit cost)

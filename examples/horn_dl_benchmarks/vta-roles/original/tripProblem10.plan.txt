@@ -1,0 +1,8 @@
+(vtatripmakerservice iswc_2007 iswc_2007 aa ab ac)
+(vtacarrentalservice iswc_2007 ac ac ad)
+(vtaflightservice iswc_2007 aa ad ae)
+(vtahotelservice iswc_2007 ab ae af)
+(vtacarhotelbundlingservice iswc_2007 af ad af ag)
+(vtashuttleservice ae iswc_2007 ag ah)
+(vtatripcombinationservice iswc_2007 ah ag ai aj ah)
+; cost = 7 (unit cost)

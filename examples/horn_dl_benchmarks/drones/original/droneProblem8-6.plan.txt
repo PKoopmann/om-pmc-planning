@@ -1,0 +1,8 @@
+(move dd cd)
+(move cd bd)
+(move ee ed)
+(move ed ec)
+(move ef eg)
+(move ff fg)
+(move fg gg)
+; cost = 7 (unit cost)

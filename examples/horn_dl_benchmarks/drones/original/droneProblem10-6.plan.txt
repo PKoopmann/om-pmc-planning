@@ -1,0 +1,8 @@
+(move de ce)
+(move ce be)
+(move ee de)
+(move ff ef)
+(move ef eg)
+(move gf hf)
+(move hf he)
+; cost = 7 (unit cost)

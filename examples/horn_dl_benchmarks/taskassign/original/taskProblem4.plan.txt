@@ -1,0 +1,3 @@
+(hireelectroniceng a)
+(hireelectroniceng b)
+; cost = 2 (unit cost)
