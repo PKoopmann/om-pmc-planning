@@ -1,1 +1,7 @@
-; cost = 0 (unit cost)
+(move cd bd)
+(move bd ad)
+(move bc bb)
+(move bb ab)
+(move dd de)
+(move dc ec)
+; cost = 6 (unit cost)

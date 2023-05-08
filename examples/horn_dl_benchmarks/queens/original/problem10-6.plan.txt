@@ -1,4 +1,4 @@
-(move ja aa)
-(move bf bi)
-(move jg cg)
+(move ja aj)
+(move bf bh)
+(move jc cc)
 ; cost = 3 (unit cost)
