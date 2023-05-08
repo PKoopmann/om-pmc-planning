@@ -190,6 +190,9 @@ while read line; do
   if [[ "$line" == *"Evaluations:"* ]]; then
 		Evaluations=${line#*: } # remove everything left of and including ":"
 	fi
+  if [[ "$line" == *"Search stopped without finding a solution."* ]]; then
+    PlanLength="no plan"
+  fi
 done < "$PlannerLog"
 
 

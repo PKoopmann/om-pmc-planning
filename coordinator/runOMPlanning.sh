@@ -112,11 +112,13 @@ lastSize=-1
 newSize=0
 
 TimeOut=0
+MemOut=0
+Exception=0
 
 # call rewriting generator
 TimeStartReasoning="$(date -u +%s.%N)"
 if [ $TimeLimit == -1 ]; then
-  ./computeRewritings.sh "$RewritingGenerator" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" "$ReasonerLog" "$increment"
+  ./computeRewritings.sh "$RewritingGenerator" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" "$ReasonerLog" "$increment" 2>"$ReasonerLog"
   # no timeout
 else
   # consider timeout
@@ -145,6 +147,15 @@ while read line; do
   if [[ "$line" == *"Number of repairs:"* ]]; then
 		RepairCount=${line#*: } # remove everything left of and including ":"
 	fi
+  if [[ "$line" == *"OutOfMemoryError"* ]]; then
+    MemOut=1
+    echo $line
+  fi
+  if [[ "$line" == *"Exception"* ]]; then
+    Exception=1
+    echo $line
+  fi
+  
 done < "$ReasonerLog"
 
 echo "ontology size: ${AxiomCount}"
@@ -155,6 +166,30 @@ echo "repair count: ${RepairCount}"
 if [[ $TimeOut == 1 ]]; then
   echo "timeout for rewriting generator after $TimeLimit seconds"
   echo "reasoning time: >${TimeLimit}s"
+  echo "planning time: -"
+  echo "total time: -"
+  # remove misc (if wished)
+  if [[ $DeleteMisc == true ]]; then
+    rm -r -f $MiscFolder
+  fi
+  exit 1
+fi
+
+if [[ $MemOut == 1 ]]; then
+  echo "memory out for rewriting generator"
+  echo "reasoning time: MEMOUT"
+  echo "planning time: -"
+  echo "total time: -"
+  # remove misc (if wished)
+  if [[ $DeleteMisc == true ]]; then
+    rm -r -f $MiscFolder
+  fi
+  exit 1
+fi
+
+if [[ $Exception == 1 ]]; then
+  echo "exception in rewriting generator"
+  echo "reasoning time: EXCEPTION"
   echo "planning time: -"
   echo "total time: -"
   # remove misc (if wished)
@@ -273,6 +308,9 @@ while read line; do
   if [[ "$line" == *"Evaluations:"* ]]; then
 		Evaluations=${line#*: } # remove everything left of and including ":"
 	fi
+  if [[ "$line" == *"Search stopped without finding a solution."* ]]; then
+    PlanLength="no plan"
+  fi
 done < "$PlannerLog"
 
 # remove misc (if wished)

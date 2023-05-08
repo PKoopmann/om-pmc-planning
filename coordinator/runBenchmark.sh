@@ -26,7 +26,7 @@ tempLog="${directory}/${logName}_temp.txt"
 
 echo "run benchmarks from file $benchmarks with a time limit of ${TimeBound}s."
 echo "start time: $(date +'%d.%m.%Y at %H:%M')"
-echo "start time: $(date +'%Y %m %d %H %M')" >> $log
+echo "start time: $(date +'%d.%m.%Y at %H:%M')" >> $log
 echo "result will be written to $result"
 
 read -r head < "$benchmarks"
@@ -48,13 +48,13 @@ do
     echo "run ontology mediated planning for example with id ${id} (folder: ${folder})" >> $log
 
     runPlanner=1
-    ./runOMPlanning.sh $folder $ontology $domain $problem $TimeBound $DeleteMisc > "$tempLog"
+    ./runOMPlanning.sh $folder $ontology $domain $problem $TimeBound $DeleteMisc >"$tempLog" 2>"$tempLog"
   else if [[ $method == "horn_planning" ]]; then
     echo "run horn planning for example with id ${id} (folder: ${folder})"
     echo "run horn planning for example with id ${id} (folder: ${folder})" >> $log
 
     runPlanner=1
-    ./runHornPlanning.sh $folder $ontology $domain $problem $TimeBound $DeleteMisc > "$tempLog"
+    ./runHornPlanning.sh $folder $ontology $domain $problem $TimeBound $DeleteMisc >"$tempLog" 2>"$tempLog"
   else
     echo "ERROR: can not parse example with id ${id}. 'method' needs to be 'om_planning' or 'horn_planning'"
   fi fi
