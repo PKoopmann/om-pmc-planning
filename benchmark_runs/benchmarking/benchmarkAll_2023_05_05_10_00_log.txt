@@ -1,0 +1,6370 @@
+start time: 2023 05 05 10 00
+run ontology mediated planning for example with id 1 (folder: ../examples/elevator/elevator15)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+ontology size: 97
+hook count: 735
+fluent count: 45
+repair count: 16
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 2 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .700605117s
+planning time: .145759982s
+total time: .857997945s
+analyzed states: 6465
+plan length: 25
+run ontology mediated planning for example with id 3 (folder: ../examples/elevator/elevator16)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 102
+hook count: 832
+fluent count: 48
+repair count: 64
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 4 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .736527462s
+planning time: .148372280s
+total time: .897714248s
+analyzed states: 7086
+plan length: 29
+run ontology mediated planning for example with id 5 (folder: ../examples/elevator/elevator17)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 107
+hook count: 935
+fluent count: 51
+repair count: 1024
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 6 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .686131677s
+planning time: .145121113s
+total time: .843786024s
+analyzed states: 6365
+plan length: 22
+run ontology mediated planning for example with id 7 (folder: ../examples/elevator/elevator18)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+ontology size: 113
+hook count: 1044
+fluent count: 54
+repair count: 4
+created new domain
+start planning
+finished planning
+reasoning time: 297.435326575s
+planning time: .281334031s
+total time: 311.219983604s
+analyzed states: 29413
+plan length: 34
+run horn planning for example with id 8 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .711221776s
+planning time: .215759177s
+total time: .940151866s
+analyzed states: 22188
+plan length: 34
+run ontology mediated planning for example with id 9 (folder: ../examples/elevator/elevator19)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 118
+hook count: 1159
+fluent count: 57
+repair count: 1024
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 10 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .706630965s
+planning time: .211226714s
+total time: .929749151s
+analyzed states: 25852
+plan length: 33
+run ontology mediated planning for example with id 11 (folder: ../examples/elevator/elevator21)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 129
+hook count: 1407
+fluent count: 63
+repair count: 256
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 12 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .720325778s
+planning time: .414545688s
+total time: 1.147633133s
+analyzed states: 74972
+plan length: 38
+run ontology mediated planning for example with id 13 (folder: ../examples/elevator/elevator22)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 134
+hook count: 1540
+fluent count: 66
+repair count: 4096
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 14 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .684329562s
+planning time: .434236430s
+total time: 1.130120993s
+analyzed states: 88325
+plan length: 40
+run ontology mediated planning for example with id 15 (folder: ../examples/elevator/elevator23)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 140
+hook count: 1679
+fluent count: 69
+repair count: 256
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 16 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .713968471s
+planning time: 1.305728983s
+total time: 2.032829439s
+analyzed states: 263104
+plan length: 42
+run ontology mediated planning for example with id 17 (folder: ../examples/elevator/elevator24)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 145
+hook count: 1824
+fluent count: 72
+repair count: 256
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 18 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .676336101s
+planning time: 1.307291970s
+total time: 1.996179261s
+analyzed states: 288008
+plan length: 43
+run ontology mediated planning for example with id 19 (folder: ../examples/elevator/elevator25)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 151
+hook count: 1975
+fluent count: 75
+repair count: 256
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 20 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .706420588s
+planning time: 3.015429462s
+total time: 3.734928990s
+analyzed states: 685908
+plan length: 48
+run ontology mediated planning for example with id 21 (folder: ../examples/elevator/elevator26)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 156
+hook count: 2132
+fluent count: 78
+repair count: 1024
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 22 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .755553875s
+planning time: 4.236297208s
+total time: 5.004464086s
+analyzed states: 934869
+plan length: 45
+run ontology mediated planning for example with id 23 (folder: ../examples/elevator/elevator27)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 161
+hook count: 2295
+fluent count: 81
+repair count: 1024
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 24 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .700259958s
+planning time: 4.278306913s
+total time: 4.991451733s
+analyzed states: 938293
+plan length: 49
+run ontology mediated planning for example with id 25 (folder: ../examples/elevator/elevator28)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 167
+hook count: 2464
+fluent count: 84
+repair count: 256
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 26 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .732803940s
+planning time: 12.827773671s
+total time: 13.573542615s
+analyzed states: 2624557
+plan length: 51
+run ontology mediated planning for example with id 27 (folder: ../examples/elevator/elevator29)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 172
+hook count: 2639
+fluent count: 87
+repair count: 1024
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 28 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .746783618s
+planning time: 14.776661860s
+total time: 15.536715492s
+analyzed states: 3088539
+plan length: 54
+run ontology mediated planning for example with id 29 (folder: ../examples/elevator/elevator30)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 178
+hook count: 2820
+fluent count: 90
+repair count: 4096
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 30 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .748730774s
+planning time: 50.723679031s
+total time: 51.486394253s
+analyzed states: 9493985
+plan length: 55
+run ontology mediated planning for example with id 31 (folder: ../examples/elevator/elevator31)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 183
+hook count: 3007
+fluent count: 93
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 32 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .798760100s
+planning time: 45.786974284s
+total time: 46.598945644s
+analyzed states: 8854269
+plan length: 58
+run ontology mediated planning for example with id 33 (folder: ../examples/elevator/elevator32)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 188
+hook count: 3200
+fluent count: 96
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 34 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .714278882s
+planning time: 45.879681367s
+total time: 46.607193324s
+analyzed states: 8992994
+plan length: 57
+run ontology mediated planning for example with id 35 (folder: ../examples/elevator/elevator33)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 194
+hook count: 3399
+fluent count: 99
+repair count: 64
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 36 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .776928460s
+planning time: 185.310917436s
+total time: 186.101652207s
+analyzed states: 31779499
+plan length: 69
+run ontology mediated planning for example with id 37 (folder: ../examples/elevator/elevator34)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 199
+hook count: 3604
+fluent count: 102
+repair count: 4096
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 38 (folder: ../examples/horn_dl_benchmarks/elevator/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .760624757s
+planning time: 206.959472042s
+total time: 207.735132385s
+analyzed states: 32522324
+plan length: 66
+run ontology mediated planning for example with id 39 (folder: ../examples/cats/6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 189
+hook count: 12
+fluent count: 168
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 40 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .688332776s
+planning time: .117337297s
+total time: .816810657s
+analyzed states: 28
+plan length: 4
+run ontology mediated planning for example with id 41 (folder: ../examples/cats/7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 247
+hook count: 14
+fluent count: 224
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 42 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .705854320s
+planning time: .118422232s
+total time: .835223755s
+analyzed states: 180
+plan length: 6
+run ontology mediated planning for example with id 43 (folder: ../examples/cats/8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 313
+hook count: 16
+fluent count: 288
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 44 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .706007886s
+planning time: .122069995s
+total time: .840433341s
+analyzed states: 180
+plan length: 6
+run ontology mediated planning for example with id 45 (folder: ../examples/cats/9)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 387
+hook count: 18
+fluent count: 360
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 46 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .726280445s
+planning time: .162711933s
+total time: .901048098s
+analyzed states: 370
+plan length: 7
+run ontology mediated planning for example with id 47 (folder: ../examples/cats/10)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 469
+hook count: 20
+fluent count: 440
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 48 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .697053543s
+planning time: .132811568s
+total time: .841316359s
+analyzed states: 2021
+plan length: 9
+run ontology mediated planning for example with id 49 (folder: ../examples/cats/11)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 559
+hook count: 22
+fluent count: 528
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 50 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .706489903s
+planning time: .136922974s
+total time: .855237459s
+analyzed states: 2021
+plan length: 9
+run ontology mediated planning for example with id 51 (folder: ../examples/cats/12)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 657
+hook count: 24
+fluent count: 624
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 52 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .690578483s
+planning time: .147705659s
+total time: .849940668s
+analyzed states: 4066
+plan length: 10
+run ontology mediated planning for example with id 53 (folder: ../examples/cats/13)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 763
+hook count: 26
+fluent count: 728
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 54 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .711252666s
+planning time: .141879755s
+total time: .864786730s
+analyzed states: 4066
+plan length: 10
+run ontology mediated planning for example with id 55 (folder: ../examples/cats/14)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 877
+hook count: 28
+fluent count: 840
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 56 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .743373057s
+planning time: .246335474s
+total time: 1.002526465s
+analyzed states: 20432
+plan length: 12
+run ontology mediated planning for example with id 57 (folder: ../examples/cats/15)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 999
+hook count: 30
+fluent count: 960
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 58 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .710281262s
+planning time: .297835503s
+total time: 1.019584145s
+analyzed states: 40908
+plan length: 13
+run ontology mediated planning for example with id 59 (folder: ../examples/cats/16)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 1129
+hook count: 32
+fluent count: 1088
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 1039.373374011s
+planning time: .125198505s
+total time: 1079.333738620s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 60 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .712156675s
+planning time: .299917588s
+total time: 1.023847754s
+analyzed states: 40908
+plan length: 13
+run ontology mediated planning for example with id 61 (folder: ../examples/cats/17)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 1267
+hook count: 34
+fluent count: 1224
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 62 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .712008981s
+planning time: .987141138s
+total time: 1.711069209s
+analyzed states: 196533
+plan length: 15
+run ontology mediated planning for example with id 63 (folder: ../examples/cats/18)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 1413
+hook count: 36
+fluent count: 1368
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 533.761845324s
+planning time: .125635264s
+total time: 570.721396669s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 64 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .700183698s
+planning time: .939024003s
+total time: 1.651585831s
+analyzed states: 196533
+plan length: 15
+run ontology mediated planning for example with id 65 (folder: ../examples/cats/19)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 1567
+hook count: 38
+fluent count: 1520
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 542.975085115s
+planning time: .122879307s
+total time: 579.804186300s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 66 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .732640299s
+planning time: 1.921519862s
+total time: 2.666197908s
+analyzed states: 393136
+plan length: 16
+run ontology mediated planning for example with id 67 (folder: ../examples/cats/21)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 1899
+hook count: 42
+fluent count: 1848
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 135.198575272s
+planning time: .115236963s
+total time: 172.891672801s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 68 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .699637025s
+planning time: 8.986594024s
+total time: 9.698282977s
+analyzed states: 1834900
+plan length: 18
+run ontology mediated planning for example with id 69 (folder: ../examples/cats/22)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 2077
+hook count: 44
+fluent count: 2024
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 200.201840871s
+planning time: .115169712s
+total time: 236.995363791s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 70 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .708355314s
+planning time: 18.936202834s
+total time: 19.657264878s
+analyzed states: 3669902
+plan length: 19
+run ontology mediated planning for example with id 71 (folder: ../examples/cats/23)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 2263
+hook count: 46
+fluent count: 2208
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 162.862936931s
+planning time: .114675461s
+total time: 199.785708350s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 72 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .712685215s
+planning time: 20.543636681s
+total time: 21.269081996s
+analyzed states: 3669902
+plan length: 19
+run ontology mediated planning for example with id 73 (folder: ../examples/cats/24)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 2457
+hook count: 48
+fluent count: 2400
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 349.898887870s
+planning time: .124032318s
+total time: 386.857245056s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 74 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .691347717s
+planning time: 98.208709951s
+total time: 98.912690633s
+analyzed states: 16777069
+plan length: 21
+run ontology mediated planning for example with id 75 (folder: ../examples/cats/25)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 2659
+hook count: 50
+fluent count: 2600
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 439.125125602s
+planning time: .131165379s
+total time: 475.719318754s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 76 (folder: ../examples/horn_dl_benchmarks/cats/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .706267328s
+planning time: 223.001419291s
+total time: 223.720874550s
+analyzed states: 33554278
+plan length: 22
+run ontology mediated planning for example with id 77 (folder: ../examples/drones/5-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+ontology size: 221
+hook count: 1300
+fluent count: 52
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 812.311747604s
+planning time: .493270066s
+total time: 877.136399724s
+analyzed states: 2297
+plan length: 6
+run horn planning for example with id 78 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .707505083s
+planning time: .420515475s
+total time: 1.139348606s
+analyzed states: 1231
+plan length: 6
+run ontology mediated planning for example with id 79 (folder: ../examples/drones/5-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+ontology size: 221
+hook count: 1300
+fluent count: 52
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 946.558641522s
+planning time: .709356494s
+total time: 1022.155683084s
+analyzed states: 13851
+plan length: 8
+run horn planning for example with id 80 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .722551496s
+planning time: 1.134634589s
+total time: 1.868451965s
+analyzed states: 10468
+plan length: 8
+run ontology mediated planning for example with id 81 (folder: ../examples/drones/5-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+ontology size: 220
+hook count: 1300
+fluent count: 52
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 992.068635794s
+planning time: 6.328304086s
+total time: 1081.134327730s
+analyzed states: 184522
+plan length: 11
+run horn planning for example with id 82 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .762853413s
+planning time: 15.929492581s
+total time: 16.704219441s
+analyzed states: 135057
+plan length: 11
+run ontology mediated planning for example with id 83 (folder: ../examples/drones/5-8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+ontology size: 221
+hook count: 1300
+fluent count: 52
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 1058.163835471s
+planning time: 9.763494806s
+total time: 1161.916175703s
+analyzed states: 199521
+plan length: 
+run horn planning for example with id 84 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .718265382s
+planning time: 122.145129284s
+total time: 122.875509062s
+analyzed states: 680680
+plan length: 
+run ontology mediated planning for example with id 85 (folder: ../examples/drones/6-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+ontology size: 307
+hook count: 2664
+fluent count: 74
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 86 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .815120545s
+planning time: .620078757s
+total time: 1.448235190s
+analyzed states: 1074
+plan length: 5
+run ontology mediated planning for example with id 87 (folder: ../examples/drones/6-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+ontology size: 307
+hook count: 2664
+fluent count: 74
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 88 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .740139723s
+planning time: 1.617395271s
+total time: 2.369214213s
+analyzed states: 11490
+plan length: 8
+run ontology mediated planning for example with id 89 (folder: ../examples/drones/6-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+ontology size: 308
+hook count: 2664
+fluent count: 74
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 90 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .726594362s
+planning time: 9.901271862s
+total time: 10.639725881s
+analyzed states: 70775
+plan length: 11
+run ontology mediated planning for example with id 91 (folder: ../examples/drones/6-8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+ontology size: 307
+hook count: 2664
+fluent count: 74
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 92 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .699719872s
+planning time: 809.202247146s
+total time: 809.914444236s
+analyzed states: 4113745
+plan length: 13
+run ontology mediated planning for example with id 93 (folder: ../examples/drones/7-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+ontology size: 410
+hook count: 4900
+fluent count: 100
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 94 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .688265305s
+planning time: 1.020804654s
+total time: 1.720601187s
+analyzed states: 2132
+plan length: 6
+run ontology mediated planning for example with id 95 (folder: ../examples/drones/7-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+ontology size: 409
+hook count: 4900
+fluent count: 100
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 96 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .714072806s
+planning time: 1.836067156s
+total time: 2.562002946s
+analyzed states: 9604
+plan length: 6
+run ontology mediated planning for example with id 97 (folder: ../examples/drones/7-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+ontology size: 410
+hook count: 4900
+fluent count: 100
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 98 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .778359000s
+planning time: 16.389706975s
+total time: 17.180425937s
+analyzed states: 101471
+plan length: 9
+run ontology mediated planning for example with id 99 (folder: ../examples/drones/7-8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+ontology size: 409
+hook count: 4900
+fluent count: 100
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 100 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .744822472s
+planning time: 803.646686494s
+total time: 804.403184064s
+analyzed states: 4034537
+plan length: 10
+run ontology mediated planning for example with id 101 (folder: ../examples/drones/8-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+ontology size: 532
+hook count: 8320
+fluent count: 130
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 102 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .708623150s
+planning time: 1.418849558s
+total time: 2.139305168s
+analyzed states: 1424
+plan length: 5
+run ontology mediated planning for example with id 103 (folder: ../examples/drones/8-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+ontology size: 532
+hook count: 8320
+fluent count: 130
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 104 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .818768213s
+planning time: 4.101607106s
+total time: 4.933942318s
+analyzed states: 18655
+plan length: 7
+run ontology mediated planning for example with id 105 (folder: ../examples/drones/8-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+ontology size: 532
+hook count: 8320
+fluent count: 130
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 106 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .757385885s
+planning time: 18.160506691s
+total time: 18.930111141s
+analyzed states: 90164
+plan length: 8
+run ontology mediated planning for example with id 107 (folder: ../examples/drones/8-8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+ontology size: 532
+hook count: 8320
+fluent count: 130
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 108 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .730202690s
+planning time: 108.844202164s
+total time: 109.587576316s
+analyzed states: 497908
+plan length: 9
+run ontology mediated planning for example with id 109 (folder: ../examples/drones/9-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+ontology size: 669
+hook count: 13284
+fluent count: 164
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 110 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .712448051s
+planning time: 1.891597954s
+total time: 2.615154332s
+analyzed states: 859
+plan length: 5
+run ontology mediated planning for example with id 111 (folder: ../examples/drones/9-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+ontology size: 670
+hook count: 13284
+fluent count: 164
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 112 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .765446528s
+planning time: 3.274208160s
+total time: 4.052000810s
+analyzed states: 8959
+plan length: 6
+run ontology mediated planning for example with id 113 (folder: ../examples/drones/9-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+ontology size: 668
+hook count: 13284
+fluent count: 164
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 114 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .716251688s
+planning time: 41.935030243s
+total time: 42.663183266s
+analyzed states: 166783
+plan length: 9
+run ontology mediated planning for example with id 115 (folder: ../examples/drones/9-8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+ontology size: 669
+hook count: 13284
+fluent count: 164
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 116 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .730266771s
+planning time: 98.737782470s
+total time: 99.479791114s
+analyzed states: 408371
+plan length: 8
+run ontology mediated planning for example with id 117 (folder: ../examples/drones/10-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+ontology size: 821
+hook count: 20200
+fluent count: 202
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 118 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .744002913s
+planning time: 2.954074481s
+total time: 3.710120160s
+analyzed states: 1919
+plan length: 5
+run ontology mediated planning for example with id 119 (folder: ../examples/drones/10-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+ontology size: 823
+hook count: 20200
+fluent count: 202
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 120 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .826271265s
+planning time: 7.025491706s
+total time: 7.864133731s
+analyzed states: 18801
+plan length: 7
+run ontology mediated planning for example with id 121 (folder: ../examples/drones/10-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+ontology size: 824
+hook count: 20200
+fluent count: 202
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 122 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .736970940s
+planning time: 85.413004231s
+total time: 86.161309800s
+analyzed states: 255266
+plan length: 8
+run ontology mediated planning for example with id 123 (folder: ../examples/drones/10-8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+ontology size: 823
+hook count: 20200
+fluent count: 202
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 124 (folder: ../examples/horn_dl_benchmarks/drones/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .724295873s
+planning time: 261.796636420s
+total time: 262.532549792s
+analyzed states: 735588
+plan length: 9
+run ontology mediated planning for example with id 125 (folder: ../examples/taskAssign/3)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 66
+hook count: 9
+fluent count: 27
+repair count: 343
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 126 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .757305673s
+planning time: .139235155s
+total time: .908381778s
+analyzed states: 39
+plan length: 2
+run ontology mediated planning for example with id 127 (folder: ../examples/taskAssign/4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 78
+hook count: 12
+fluent count: 36
+repair count: 686
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 128 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .748842999s
+planning time: .155875762s
+total time: .916245312s
+analyzed states: 156
+plan length: 2
+run ontology mediated planning for example with id 129 (folder: ../examples/taskAssign/5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 91
+hook count: 15
+fluent count: 45
+repair count: 4802
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 130 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .787137296s
+planning time: .188945631s
+total time: .987208291s
+analyzed states: 71
+plan length: 2
+run ontology mediated planning for example with id 131 (folder: ../examples/taskAssign/6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 98
+hook count: 18
+fluent count: 54
+repair count: 117649
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 132 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .729562025s
+planning time: .238143082s
+total time: .979448074s
+analyzed states: 274
+plan length: 2
+run ontology mediated planning for example with id 133 (folder: ../examples/taskAssign/7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 113
+hook count: 21
+fluent count: 63
+repair count: 67228
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 134 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .703305654s
+planning time: .316481120s
+total time: 1.031304610s
+analyzed states: 154
+plan length: 2
+run ontology mediated planning for example with id 135 (folder: ../examples/taskAssign/8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 120
+hook count: 24
+fluent count: 72
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 136 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .705595838s
+planning time: .429913492s
+total time: 1.148835746s
+analyzed states: 820
+plan length: 2
+run ontology mediated planning for example with id 137 (folder: ../examples/taskAssign/9)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 134
+hook count: 27
+fluent count: 81
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 138 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .742065560s
+planning time: .570713629s
+total time: 1.324199976s
+analyzed states: 470
+plan length: 2
+run ontology mediated planning for example with id 139 (folder: ../examples/taskAssign/10)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 144
+hook count: 30
+fluent count: 90
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 905.515921244s
+planning time: .132610227s
+total time: 964.634200335s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 140 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .727761772s
+planning time: .761289113s
+total time: 1.500372153s
+analyzed states: 782
+plan length: 2
+run ontology mediated planning for example with id 141 (folder: ../examples/taskAssign/11)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 151
+hook count: 33
+fluent count: 99
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 740.621907711s
+planning time: .135436351s
+total time: 785.453653406s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 142 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .725819019s
+planning time: 1.044736839s
+total time: 1.782658322s
+analyzed states: 984
+plan length: 2
+run ontology mediated planning for example with id 143 (folder: ../examples/taskAssign/12)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 166
+hook count: 36
+fluent count: 108
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 144 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .737829692s
+planning time: 1.386308280s
+total time: 2.136096057s
+analyzed states: 1093
+plan length: 2
+run ontology mediated planning for example with id 145 (folder: ../examples/taskAssign/13)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 176
+hook count: 39
+fluent count: 117
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 146 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .811512150s
+planning time: 1.894921003s
+total time: 2.720700256s
+analyzed states: 1494
+plan length: 2
+run ontology mediated planning for example with id 147 (folder: ../examples/taskAssign/14)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 187
+hook count: 42
+fluent count: 126
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 632.677566487s
+planning time: .118002574s
+total time: 673.079205831s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 148 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .711767624s
+planning time: 2.548924303s
+total time: 3.271963761s
+analyzed states: 1674
+plan length: 2
+run ontology mediated planning for example with id 149 (folder: ../examples/taskAssign/15)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 194
+hook count: 45
+fluent count: 135
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 150 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .714291926s
+planning time: 3.548280497s
+total time: 4.274903256s
+analyzed states: 2592
+plan length: 2
+run ontology mediated planning for example with id 151 (folder: ../examples/taskAssign/16)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 208
+hook count: 48
+fluent count: 144
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 152 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .746509133s
+planning time: 4.440406354s
+total time: 5.200445434s
+analyzed states: 1485
+plan length: 2
+run ontology mediated planning for example with id 153 (folder: ../examples/taskAssign/17)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 219
+hook count: 51
+fluent count: 153
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 613.862081556s
+planning time: .138545166s
+total time: 655.626631267s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 154 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .748849887s
+planning time: 6.243421804s
+total time: 7.003986999s
+analyzed states: 3762
+plan length: 2
+run ontology mediated planning for example with id 155 (folder: ../examples/taskAssign/18)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 229
+hook count: 54
+fluent count: 162
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 974.863035968s
+planning time: .119184517s
+total time: 1025.990890416s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 156 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .720171323s
+planning time: 7.131297297s
+total time: 7.863078405s
+analyzed states: 2781
+plan length: 2
+run ontology mediated planning for example with id 157 (folder: ../examples/taskAssign/19)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 240
+hook count: 57
+fluent count: 171
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 593.488626385s
+planning time: .146974557s
+total time: 632.782148970s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 158 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .748887939s
+planning time: 9.534995521s
+total time: 10.296436908s
+analyzed states: 2169
+plan length: 2
+run ontology mediated planning for example with id 159 (folder: ../examples/taskAssign/21)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 261
+hook count: 63
+fluent count: 189
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 593.762241871s
+planning time: .120345988s
+total time: 631.502642730s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 160 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .729576862s
+planning time: 14.873155625s
+total time: 15.614794396s
+analyzed states: 3566
+plan length: 2
+run ontology mediated planning for example with id 161 (folder: ../examples/taskAssign/22)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 269
+hook count: 66
+fluent count: 198
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 1065.520005318s
+planning time: .128658452s
+total time: 1115.769236356s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 162 (folder: ../examples/horn_dl_benchmarks/taskassign/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .722827183s
+planning time: 18.241820001s
+total time: 18.978546511s
+analyzed states: 5548
+plan length: 2
+run ontology mediated planning for example with id 163 (folder: ../examples/tpsa/4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 344
+hook count: 108
+fluent count: 306
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 164 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .701282432s
+planning time: 25.823442660s
+total time: 26.536423056s
+analyzed states: 4631536
+plan length: 7
+run ontology mediated planning for example with id 165 (folder: ../examples/tpsa/5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 409
+hook count: 120
+fluent count: 370
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 166 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .708250863s
+planning time: 67.579668514s
+total time: 68.299236392s
+analyzed states: 8818464
+plan length: 7
+run ontology mediated planning for example with id 167 (folder: ../examples/tpsa/6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 480
+hook count: 132
+fluent count: 440
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 168 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .717390911s
+planning time: 104.621713597s
+total time: 105.352743990s
+analyzed states: 15766955
+plan length: 7
+run ontology mediated planning for example with id 169 (folder: ../examples/tpsa/7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 557
+hook count: 144
+fluent count: 516
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 170 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .665016703s
+planning time: 198.143114416s
+total time: 198.820699511s
+analyzed states: 26771542
+plan length: 7
+run ontology mediated planning for example with id 171 (folder: ../examples/tpsa/10)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 824
+hook count: 180
+fluent count: 780
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 172 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .751093274s
+planning time: 945.870643410s
+total time: 946.633893052s
+analyzed states: 103680261
+plan length: 7
+run ontology mediated planning for example with id 173 (folder: ../examples/tpsa/15)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 1389
+hook count: 240
+fluent count: 1340
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 1106.349549912s
+planning time: .131193666s
+total time: 1640.608744422s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 174 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .695521489s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 175 (folder: ../examples/tpsa/20)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 2104
+hook count: 300
+fluent count: 2050
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 500.082774264s
+planning time: .127847099s
+total time: 516.571590594s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 176 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .663080900s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 177 (folder: ../examples/tpsa/25)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 2969
+hook count: 360
+fluent count: 2910
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 509.800581425s
+planning time: .128613384s
+total time: 522.699228821s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 178 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .670119806s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 179 (folder: ../examples/tpsa/30)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 3984
+hook count: 420
+fluent count: 3920
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 139.650511082s
+planning time: .115360355s
+total time: 150.096503443s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 180 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .686024150s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 181 (folder: ../examples/tpsa/35)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 5149
+hook count: 480
+fluent count: 5080
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 145.876504287s
+planning time: .113304884s
+total time: 156.162652772s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 182 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .634400441s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 183 (folder: ../examples/tpsa/40)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 6464
+hook count: 540
+fluent count: 6390
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 139.995473898s
+planning time: .132671590s
+total time: 150.686539841s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 184 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .670823617s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 185 (folder: ../examples/tpsa/45)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 7929
+hook count: 600
+fluent count: 7850
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 140.467187048s
+planning time: .133485301s
+total time: 150.580280526s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 186 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .660028986s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 187 (folder: ../examples/tpsa/50)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 9544
+hook count: 660
+fluent count: 9460
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 158.925929799s
+planning time: .118487261s
+total time: 169.184556144s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 188 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .637916837s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 189 (folder: ../examples/tpsa/55)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 11309
+hook count: 720
+fluent count: 11220
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 160.427049576s
+planning time: .124012576s
+total time: 171.436576276s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 190 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .696337239s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 191 (folder: ../examples/tpsa/60)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 13224
+hook count: 780
+fluent count: 13130
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 147.870297718s
+planning time: .119061926s
+total time: 159.009846085s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 192 (folder: ../examples/horn_dl_benchmarks/tpsa/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .704795505s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 193 (folder: ../examples/vta/4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 217
+hook count: 405
+fluent count: 165
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 853.268923029s
+planning time: .117960637s
+total time: 891.290890102s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 194 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .735467935s
+planning time: .861817297s
+total time: 1.608689301s
+analyzed states: 3480
+plan length: 7
+run ontology mediated planning for example with id 195 (folder: ../examples/vta/5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 230
+hook count: 448
+fluent count: 176
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 196 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .752025676s
+planning time: 1.042096435s
+total time: 1.806566942s
+analyzed states: 3499
+plan length: 7
+run ontology mediated planning for example with id 197 (folder: ../examples/vta/6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 243
+hook count: 493
+fluent count: 187
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 1039.319240745s
+planning time: .125501208s
+total time: 1077.436432084s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 198 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .729915033s
+planning time: 1.247120741s
+total time: 1.988176290s
+analyzed states: 3514
+plan length: 7
+run ontology mediated planning for example with id 199 (folder: ../examples/vta/7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 256
+hook count: 540
+fluent count: 198
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 1001.138019999s
+planning time: .118484042s
+total time: 1035.777808371s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 200 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .710524909s
+planning time: 1.530503336s
+total time: 2.252459815s
+analyzed states: 3515
+plan length: 7
+run ontology mediated planning for example with id 201 (folder: ../examples/vta/10)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 295
+hook count: 693
+fluent count: 231
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 1078.374924951s
+planning time: .123878105s
+total time: 1113.120496941s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 202 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .750965419s
+planning time: 2.494288881s
+total time: 3.256770913s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 203 (folder: ../examples/vta/15)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 360
+hook count: 988
+fluent count: 286
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 1134.967558441s
+planning time: .124380585s
+total time: 1169.855562897s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 204 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .712236553s
+planning time: 4.939298253s
+total time: 5.664086147s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 205 (folder: ../examples/vta/20)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 425
+hook count: 1333
+fluent count: 341
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 699.055408576s
+planning time: .119186628s
+total time: 727.266416485s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 206 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .682468060s
+planning time: 7.946037630s
+total time: 8.641188974s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 207 (folder: ../examples/vta/25)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 490
+hook count: 1728
+fluent count: 396
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 663.509063341s
+planning time: .134280979s
+total time: 690.032325189s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 208 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .713483943s
+planning time: 13.266457193s
+total time: 13.994362829s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 209 (folder: ../examples/vta/30)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 555
+hook count: 2173
+fluent count: 451
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 634.923353447s
+planning time: .131442311s
+total time: 660.329548121s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 210 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .708908535s
+planning time: 18.685202976s
+total time: 19.408291917s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 211 (folder: ../examples/vta/35)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 620
+hook count: 2668
+fluent count: 506
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 711.986174679s
+planning time: .133701661s
+total time: 735.856062307s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 212 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .710491417s
+planning time: 26.479468997s
+total time: 27.204565625s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 213 (folder: ../examples/vta/40)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 685
+hook count: 3213
+fluent count: 561
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 569.053112444s
+planning time: .122151106s
+total time: 590.956901476s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 214 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .699685650s
+planning time: 36.268901035s
+total time: 36.985083665s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 215 (folder: ../examples/vta/45)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 750
+hook count: 3808
+fluent count: 616
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 540.242972040s
+planning time: .131779717s
+total time: 560.580651270s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 216 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .695804346s
+planning time: 48.223823168s
+total time: 48.937487566s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 217 (folder: ../examples/vta/50)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 815
+hook count: 4453
+fluent count: 671
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 206.852580817s
+planning time: .124345506s
+total time: 226.786712353s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 218 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .713329064s
+planning time: 62.442750364s
+total time: 63.174321345s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 219 (folder: ../examples/vta/55)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 880
+hook count: 5148
+fluent count: 726
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 163.467823980s
+planning time: .124192220s
+total time: 182.809168467s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 220 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .739930702s
+planning time: 79.351952573s
+total time: 80.116958769s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 221 (folder: ../examples/vta/60)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 945
+hook count: 5893
+fluent count: 781
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 148.982379753s
+planning time: .133850268s
+total time: 166.461839596s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 222 (folder: ../examples/horn_dl_benchmarks/vta/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .692237987s
+planning time: 98.097281691s
+total time: 98.815047411s
+analyzed states: 3516
+plan length: 7
+run ontology mediated planning for example with id 223 (folder: ../examples/vta_roles/4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 2325
+hook count: 2550
+fluent count: 2265
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 137.181780810s
+planning time: .124428723s
+total time: 146.817613703s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 224 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .732654923s
+planning time: .924796957s
+total time: 1.669483174s
+analyzed states: 5282
+plan length: 7
+run ontology mediated planning for example with id 225 (folder: ../examples/vta_roles/5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 2638
+hook count: 2896
+fluent count: 2576
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 122.096316319s
+planning time: .116212631s
+total time: 130.508844876s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 226 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .671036348s
+planning time: 1.096276651s
+total time: 1.778679818s
+analyzed states: 5756
+plan length: 7
+run ontology mediated planning for example with id 227 (folder: ../examples/vta_roles/6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 2971
+hook count: 3264
+fluent count: 2907
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 520.192504426s
+planning time: .118796483s
+total time: 529.010231273s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 228 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .685313108s
+planning time: 1.291205369s
+total time: 1.989465347s
+analyzed states: 5771
+plan length: 7
+run ontology mediated planning for example with id 229 (folder: ../examples/vta_roles/7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 3324
+hook count: 3654
+fluent count: 3258
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 508.041848120s
+planning time: .154014187s
+total time: 515.705719360s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 230 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .728098159s
+planning time: 1.676446010s
+total time: 2.416393579s
+analyzed states: 5885
+plan length: 7
+run ontology mediated planning for example with id 231 (folder: ../examples/vta_roles/10)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 4503
+hook count: 4956
+fluent count: 4431
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 473.682744457s
+planning time: .138590130s
+total time: 479.963105823s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 232 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .747966381s
+planning time: 2.459701767s
+total time: 3.219790144s
+analyzed states: 5902
+plan length: 7
+run ontology mediated planning for example with id 233 (folder: ../examples/vta_roles/15)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 6868
+hook count: 7566
+fluent count: 6786
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 573.791232227s
+planning time: .142943374s
+total time: 578.503311370s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 234 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .704902782s
+planning time: 4.708420679s
+total time: 5.426078180s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 235 (folder: ../examples/vta_roles/20)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 9733
+hook count: 10726
+fluent count: 9641
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 530.457439402s
+planning time: .121604962s
+total time: 534.354709272s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 236 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .709494404s
+planning time: 8.016094770s
+total time: 8.737576058s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 237 (folder: ../examples/vta_roles/25)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 13098
+hook count: 14436
+fluent count: 12996
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 180.573620764s
+planning time: .130575846s
+total time: 184.133809460s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 238 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .700074897s
+planning time: 13.505324033s
+total time: 14.219546676s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 239 (folder: ../examples/vta_roles/30)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 16963
+hook count: 18696
+fluent count: 16851
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 191.231134468s
+planning time: .120714180s
+total time: 194.894964869s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 240 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .731325317s
+planning time: 19.057230742s
+total time: 19.802239934s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 241 (folder: ../examples/vta_roles/35)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 21328
+hook count: 23506
+fluent count: 21206
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 205.194925213s
+planning time: .118911400s
+total time: 208.898024801s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 242 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .705131209s
+planning time: 27.182052742s
+total time: 27.903777125s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 243 (folder: ../examples/vta_roles/40)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 26193
+hook count: 28866
+fluent count: 26061
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 189.212356846s
+planning time: .122921635s
+total time: 193.209950372s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 244 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .748422304s
+planning time: 36.957896526s
+total time: 37.723008011s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 245 (folder: ../examples/vta_roles/45)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 31558
+hook count: 34776
+fluent count: 31416
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 198.547145394s
+planning time: .120803428s
+total time: 202.828854291s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 246 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .714929409s
+planning time: 48.176900432s
+total time: 48.909314608s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 247 (folder: ../examples/vta_roles/50)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 37423
+hook count: 41236
+fluent count: 37271
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 206.599484039s
+planning time: .127319083s
+total time: 211.408274858s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 248 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .722861680s
+planning time: 60.757314715s
+total time: 61.499140468s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 249 (folder: ../examples/vta_roles/55)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 43788
+hook count: 48246
+fluent count: 43626
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 201.472547113s
+planning time: .133288074s
+total time: 207.137194961s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 250 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .700493083s
+planning time: 79.399671439s
+total time: 80.123397292s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 251 (folder: ../examples/vta_roles/60)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 50653
+hook count: 55806
+fluent count: 50481
+repair count: 
+created new domain
+start planning
+finished planning
+reasoning time: 203.500348107s
+planning time: .129627013s
+total time: 209.780483497s
+analyzed states: 1
+plan length: 
+run horn planning for example with id 252 (folder: ../examples/horn_dl_benchmarks/vta-roles/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .727325446s
+planning time: 99.481943284s
+total time: 100.231971191s
+analyzed states: 5903
+plan length: 7
+run ontology mediated planning for example with id 253 (folder: ../examples/queens/5-1)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 51.747853121s
+planning time: .354747146s
+total time: 53.177432739s
+analyzed states: 1
+plan length: 0
+run horn planning for example with id 254 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .716287413s
+planning time: .875221026s
+total time: 1.603240064s
+analyzed states: 1
+plan length: 0
+run ontology mediated planning for example with id 255 (folder: ../examples/queens/5-2)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 53.005054607s
+planning time: .335645136s
+total time: 54.352837798s
+analyzed states: 23
+plan length: 1
+run horn planning for example with id 256 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .770516348s
+planning time: .922473171s
+total time: 1.705351117s
+analyzed states: 23
+plan length: 1
+run ontology mediated planning for example with id 257 (folder: ../examples/queens/5-3)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 50.295446266s
+planning time: .375508327s
+total time: 51.701664409s
+analyzed states: 35
+plan length: 1
+run horn planning for example with id 258 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .719008822s
+planning time: .899622593s
+total time: 1.630536756s
+analyzed states: 35
+plan length: 1
+run ontology mediated planning for example with id 259 (folder: ../examples/queens/5-4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 52.401025034s
+planning time: .321602199s
+total time: 53.759726878s
+analyzed states: 47
+plan length: 1
+run horn planning for example with id 260 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .736912296s
+planning time: .854309532s
+total time: 1.602456371s
+analyzed states: 47
+plan length: 1
+run ontology mediated planning for example with id 261 (folder: ../examples/queens/5-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 51.112201639s
+planning time: .336162340s
+total time: 52.469708316s
+analyzed states: 157
+plan length: 2
+run horn planning for example with id 262 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .695590856s
+planning time: .996956765s
+total time: 1.704368399s
+analyzed states: 802
+plan length: 2
+run ontology mediated planning for example with id 263 (folder: ../examples/queens/6-2)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 150.100984373s
+planning time: .554072716s
+total time: 152.660764651s
+analyzed states: 35
+plan length: 1
+run horn planning for example with id 264 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .705350668s
+planning time: 1.847433050s
+total time: 2.564959817s
+analyzed states: 35
+plan length: 1
+run ontology mediated planning for example with id 265 (folder: ../examples/queens/6-3)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 146.883463585s
+planning time: .551006485s
+total time: 149.427518556s
+analyzed states: 50
+plan length: 1
+run horn planning for example with id 266 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .679876735s
+planning time: 1.858990775s
+total time: 2.550440697s
+analyzed states: 50
+plan length: 1
+run ontology mediated planning for example with id 267 (folder: ../examples/queens/6-4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 148.516293290s
+planning time: .577671967s
+total time: 151.135665141s
+analyzed states: 160
+plan length: 2
+run horn planning for example with id 268 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .741823036s
+planning time: 1.907892472s
+total time: 2.661482602s
+analyzed states: 113
+plan length: 2
+run ontology mediated planning for example with id 269 (folder: ../examples/queens/6-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 148.311569607s
+planning time: .570199547s
+total time: 150.863149140s
+analyzed states: 1550
+plan length: 2
+run horn planning for example with id 270 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .734861331s
+planning time: 1.953426272s
+total time: 2.702751277s
+analyzed states: 137
+plan length: 2
+run ontology mediated planning for example with id 271 (folder: ../examples/queens/6-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 147.169671955s
+planning time: 5.952807210s
+total time: 155.115948449s
+analyzed states: 105578
+plan length: 4
+run horn planning for example with id 272 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .663241120s
+planning time: 175.447360400s
+total time: 176.123585756s
+analyzed states: 164354
+plan length: 4
+run ontology mediated planning for example with id 273 (folder: ../examples/queens/7-3)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 382.831737295s
+planning time: 1.016003725s
+total time: 387.588477200s
+analyzed states: 53
+plan length: 1
+run horn planning for example with id 274 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .706914014s
+planning time: 3.834595709s
+total time: 4.553754489s
+analyzed states: 53
+plan length: 1
+run ontology mediated planning for example with id 275 (folder: ../examples/queens/7-4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 386.877042562s
+planning time: .994530088s
+total time: 391.619916413s
+analyzed states: 79
+plan length: 1
+run horn planning for example with id 276 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .727280512s
+planning time: 3.881392844s
+total time: 4.620362266s
+analyzed states: 79
+plan length: 1
+run ontology mediated planning for example with id 277 (folder: ../examples/queens/7-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 386.152337073s
+planning time: 1.059706465s
+total time: 391.147232546s
+analyzed states: 97
+plan length: 1
+run horn planning for example with id 278 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .717871136s
+planning time: 3.753459006s
+total time: 4.483112897s
+analyzed states: 97
+plan length: 1
+run ontology mediated planning for example with id 279 (folder: ../examples/queens/7-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 384.202545615s
+planning time: 7.612669532s
+total time: 395.540962121s
+analyzed states: 93680
+plan length: 4
+run horn planning for example with id 280 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .694856831s
+planning time: 274.391036726s
+total time: 275.098551421s
+analyzed states: 163091
+plan length: 4
+run ontology mediated planning for example with id 281 (folder: ../examples/queens/7-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 382.096272358s
+planning time: 738.532609596s
+total time: 1124.354688676s
+analyzed states: 4349277
+plan length: 5
+run horn planning for example with id 282 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .691600165s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 283 (folder: ../examples/queens/8-4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 902.378132386s
+planning time: 1.707907003s
+total time: 910.835845442s
+analyzed states: 93
+plan length: 1
+run horn planning for example with id 284 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .718628823s
+planning time: 6.993223165s
+total time: 7.723530139s
+analyzed states: 93
+plan length: 1
+run ontology mediated planning for example with id 285 (folder: ../examples/queens/8-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 907.160367023s
+planning time: 1.772658592s
+total time: 915.598385693s
+analyzed states: 1977
+plan length: 2
+run horn planning for example with id 286 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .674913556s
+planning time: 7.630609472s
+total time: 8.317763209s
+analyzed states: 750
+plan length: 2
+run ontology mediated planning for example with id 287 (folder: ../examples/queens/8-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 908.052098570s
+planning time: 11.671226885s
+total time: 926.394124056s
+analyzed states: 135148
+plan length: 3
+run horn planning for example with id 288 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .707376607s
+planning time: 27.733997812s
+total time: 28.454682630s
+analyzed states: 16104
+plan length: 3
+run ontology mediated planning for example with id 289 (folder: ../examples/queens/8-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 908.642372989s
+planning time: 43.045433261s
+total time: 958.324976204s
+analyzed states: 491116
+plan length: 4
+run horn planning for example with id 290 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .684188715s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 291 (folder: ../examples/queens/8-8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+compute hooks 4200 til 4300
+compute hooks 4300 til 4400
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 1
+created new domain
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: 905.415984158s
+planning time: >1200s
+total time: -
+run horn planning for example with id 292 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .736084328s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 293 (folder: ../examples/queens/9-5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 294 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .696781028s
+planning time: 11.139473566s
+total time: 11.848668218s
+analyzed states: 127
+plan length: 1
+run ontology mediated planning for example with id 295 (folder: ../examples/queens/9-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 296 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .741958344s
+planning time: 358.500738215s
+total time: 359.255395118s
+analyzed states: 116034
+plan length: 3
+run ontology mediated planning for example with id 297 (folder: ../examples/queens/9-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 298 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .686083880s
+planning time: 208.812853946s
+total time: 209.512504403s
+analyzed states: 79614
+plan length: 3
+run ontology mediated planning for example with id 299 (folder: ../examples/queens/9-8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 300 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .702612317s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 301 (folder: ../examples/queens/9-9)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+compute hooks 3100 til 3200
+compute hooks 3200 til 3300
+compute hooks 3300 til 3400
+compute hooks 3400 til 3500
+compute hooks 3500 til 3600
+compute hooks 3600 til 3700
+compute hooks 3700 til 3800
+compute hooks 3800 til 3900
+compute hooks 3900 til 4000
+compute hooks 4000 til 4100
+compute hooks 4100 til 4200
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 302 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .712691578s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 303 (folder: ../examples/queens/10-6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 304 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .702109351s
+planning time: 67.472301065s
+total time: 68.187361353s
+analyzed states: 13760
+plan length: 3
+run ontology mediated planning for example with id 305 (folder: ../examples/queens/10-7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 306 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .713729829s
+planning time: 46.394585016s
+total time: 47.121436171s
+analyzed states: 12063
+plan length: 2
+run ontology mediated planning for example with id 307 (folder: ../examples/queens/10-8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 308 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .702089004s
+planning time: 386.145678882s
+total time: 386.861190073s
+analyzed states: 90507
+plan length: 3
+run ontology mediated planning for example with id 309 (folder: ../examples/queens/10-9)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 310 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .741325743s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 311 (folder: ../examples/queens/10-10)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+compute hooks 300 til 400
+compute hooks 400 til 500
+compute hooks 500 til 600
+compute hooks 600 til 700
+compute hooks 700 til 800
+compute hooks 800 til 900
+compute hooks 900 til 1000
+compute hooks 1000 til 1100
+compute hooks 1100 til 1200
+compute hooks 1200 til 1300
+compute hooks 1300 til 1400
+compute hooks 1400 til 1500
+compute hooks 1500 til 1600
+compute hooks 1600 til 1700
+compute hooks 1700 til 1800
+compute hooks 1800 til 1900
+compute hooks 1900 til 2000
+compute hooks 2000 til 2100
+compute hooks 2100 til 2200
+compute hooks 2200 til 2300
+compute hooks 2300 til 2400
+compute hooks 2400 til 2500
+compute hooks 2500 til 2600
+compute hooks 2600 til 2700
+compute hooks 2700 til 2800
+compute hooks 2800 til 2900
+compute hooks 2900 til 3000
+compute hooks 3000 til 3100
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 1
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 312 (folder: ../examples/horn_dl_benchmarks/queens/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 1200 seconds
+reasoning time: .719673067s
+planning time: >1200s
+total time: -
+run ontology mediated planning for example with id 313 (folder: ../examples/robot/3)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 61
+hook count: 20
+fluent count: 20
+repair count: 49
+created new domain
+start planning
+finished planning
+reasoning time: 137.840326983s
+planning time: .174578724s
+total time: 149.922675776s
+analyzed states: 15
+plan length: 3
+run horn planning for example with id 314 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .438055382s
+planning time: .130951909s
+total time: .580702405s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 315 (folder: ../examples/robot/4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 81
+hook count: 26
+fluent count: 26
+repair count: 400
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 316 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .491129923s
+planning time: .108076104s
+total time: .609547273s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 317 (folder: ../examples/robot/5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 101
+hook count: 32
+fluent count: 32
+repair count: 2304
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 318 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .478256344s
+planning time: .118060148s
+total time: .606717593s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 319 (folder: ../examples/robot/6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 121
+hook count: 38
+fluent count: 38
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 320 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .462468076s
+planning time: .121181822s
+total time: .594942041s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 321 (folder: ../examples/robot/7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 141
+hook count: 44
+fluent count: 44
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 322 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .474374642s
+planning time: .117467272s
+total time: .602664785s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 323 (folder: ../examples/robot/8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 161
+hook count: 50
+fluent count: 50
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 324 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .449583609s
+planning time: .116303786s
+total time: .577528890s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 325 (folder: ../examples/robot/9)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 181
+hook count: 56
+fluent count: 56
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 326 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .451563763s
+planning time: .124379810s
+total time: .587292472s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 327 (folder: ../examples/robot/10)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 201
+hook count: 62
+fluent count: 62
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 328 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .504357315s
+planning time: .135922490s
+total time: .652563603s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 329 (folder: ../examples/robot/11)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 221
+hook count: 68
+fluent count: 68
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 330 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .486583403s
+planning time: .122852046s
+total time: .620519154s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 331 (folder: ../examples/robot/12)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 241
+hook count: 74
+fluent count: 74
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 332 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .488057344s
+planning time: .128655346s
+total time: .628079700s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 333 (folder: ../examples/robot/13)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 261
+hook count: 80
+fluent count: 80
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 334 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .467182266s
+planning time: .129577687s
+total time: .607386783s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 335 (folder: ../examples/robot/14)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 281
+hook count: 86
+fluent count: 86
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 336 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .511158389s
+planning time: .127961149s
+total time: .649991998s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 337 (folder: ../examples/robot/15)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 301
+hook count: 92
+fluent count: 92
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 338 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .532220972s
+planning time: .133298533s
+total time: .677164024s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 339 (folder: ../examples/robot/16)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 321
+hook count: 98
+fluent count: 98
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 340 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .489949823s
+planning time: .129809470s
+total time: .631203980s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 341 (folder: ../examples/robot/17)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 341
+hook count: 104
+fluent count: 104
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 342 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .530533824s
+planning time: .137795771s
+total time: .679326448s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 343 (folder: ../examples/robot/18)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 361
+hook count: 110
+fluent count: 110
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 344 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .559852257s
+planning time: .149034599s
+total time: .720694857s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 345 (folder: ../examples/robot/19)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 381
+hook count: 116
+fluent count: 116
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 346 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .494127629s
+planning time: .134131307s
+total time: .640458064s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 347 (folder: ../examples/robot/20)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 401
+hook count: 122
+fluent count: 122
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 348 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .472212665s
+planning time: .163259958s
+total time: .646467272s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 349 (folder: ../examples/robot/21)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 421
+hook count: 128
+fluent count: 128
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 350 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .524254840s
+planning time: .141936161s
+total time: .677041396s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 351 (folder: ../examples/robot/22)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 441
+hook count: 134
+fluent count: 134
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 352 (folder: ../examples/horn_dl_benchmarks/robot/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .559281323s
+planning time: .147366637s
+total time: .718386731s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 353 (folder: ../examples/robotConj/3)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 60
+hook count: 20
+fluent count: 20
+repair count: 49
+created new domain
+start planning
+finished planning
+reasoning time: 154.873668016s
+planning time: .132855565s
+total time: 168.275981793s
+analyzed states: 15
+plan length: 3
+run horn planning for example with id 354 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .433905408s
+planning time: .112560387s
+total time: .557920198s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 355 (folder: ../examples/robotConj/4)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 80
+hook count: 26
+fluent count: 26
+repair count: 400
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 356 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .450906952s
+planning time: .120289314s
+total time: .582672349s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 357 (folder: ../examples/robotConj/5)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 100
+hook count: 32
+fluent count: 32
+repair count: 2304
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 358 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .426322282s
+planning time: .112363210s
+total time: .549169844s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 359 (folder: ../examples/robotConj/6)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 120
+hook count: 38
+fluent count: 38
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 360 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .427503346s
+planning time: .109815410s
+total time: .547784977s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 361 (folder: ../examples/robotConj/7)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 140
+hook count: 44
+fluent count: 44
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 362 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .471789294s
+planning time: .120111694s
+total time: .602725243s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 363 (folder: ../examples/robotConj/8)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 160
+hook count: 50
+fluent count: 50
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 364 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .428207627s
+planning time: .112252203s
+total time: .551750906s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 365 (folder: ../examples/robotConj/9)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 180
+hook count: 56
+fluent count: 56
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 366 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .453893652s
+planning time: .112735751s
+total time: .577333860s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 367 (folder: ../examples/robotConj/10)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 200
+hook count: 62
+fluent count: 62
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 368 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .525020330s
+planning time: .111721408s
+total time: .647262397s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 369 (folder: ../examples/robotConj/11)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 220
+hook count: 68
+fluent count: 68
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 370 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .538916795s
+planning time: .111773047s
+total time: .661483730s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 371 (folder: ../examples/robotConj/12)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 240
+hook count: 74
+fluent count: 74
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 372 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .546218356s
+planning time: .116116913s
+total time: .674160957s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 373 (folder: ../examples/robotConj/13)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 260
+hook count: 80
+fluent count: 80
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 374 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .470300274s
+planning time: .116046788s
+total time: .597475183s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 375 (folder: ../examples/robotConj/14)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 280
+hook count: 86
+fluent count: 86
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 376 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .464928874s
+planning time: .119927237s
+total time: .597108268s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 377 (folder: ../examples/robotConj/15)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 300
+hook count: 92
+fluent count: 92
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 378 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .464553268s
+planning time: .117688278s
+total time: .593617038s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 379 (folder: ../examples/robotConj/16)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 320
+hook count: 98
+fluent count: 98
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 380 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .480929848s
+planning time: .122734820s
+total time: .615327974s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 381 (folder: ../examples/robotConj/17)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 340
+hook count: 104
+fluent count: 104
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 382 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .467178693s
+planning time: .125998744s
+total time: .604488574s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 383 (folder: ../examples/robotConj/18)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 360
+hook count: 110
+fluent count: 110
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 384 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .491716296s
+planning time: .132707901s
+total time: .636615338s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 385 (folder: ../examples/robotConj/19)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 380
+hook count: 116
+fluent count: 116
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 386 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .484541685s
+planning time: .129903491s
+total time: .625969599s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 387 (folder: ../examples/robotConj/20)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 400
+hook count: 122
+fluent count: 122
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 388 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .465333059s
+planning time: .126993497s
+total time: .603046728s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 389 (folder: ../examples/robotConj/21)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 420
+hook count: 128
+fluent count: 128
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 390 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .497678916s
+planning time: .120860608s
+total time: .630672932s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 391 (folder: ../examples/robotConj/22)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+ontology size: 440
+hook count: 134
+fluent count: 134
+repair count: 
+timeout for rewriting generator after 1200 seconds
+reasoning time: >1200s
+planning time: -
+total time: -
+run horn planning for example with id 392 (folder: ../examples/horn_dl_benchmarks/robotConj/original)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .469202491s
+planning time: .134678361s
+total time: .614958232s
+analyzed states: 1
+plan length: 
+run ontology mediated planning for example with id 393 (folder: ../examples/pipes/pipes1)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 303
+hook count: 16
+fluent count: 98
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 37.363452271s
+planning time: .340680170s
+total time: 43.994835922s
+analyzed states: 48836
+plan length: 27
+run horn planning for example with id 394 (folder: ../examples/horn_pipes/pipes1)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .676619741s
+planning time: 2.376407580s
+total time: 3.064800855s
+analyzed states: 48440
+plan length: 27
+run ontology mediated planning for example with id 395 (folder: ../examples/pipes/pipes2)
+time limit is set to 1200s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 341
+hook count: 58
+fluent count: 103
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 21.235791939s
+planning time: 15.795695385s
+total time: 38.764298240s
+analyzed states: 3068788
+plan length: 32
+run horn planning for example with id 396 (folder: ../examples/horn_pipes/pipes2)
+time limit is set to 1200s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .773087141s
+planning time: 680.895089483s
+total time: 681.680507516s
+analyzed states: 6094844
+plan length: 32
+total time to run benchmark set: 225408.095537647s
