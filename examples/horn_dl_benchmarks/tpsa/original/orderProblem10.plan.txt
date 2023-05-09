@@ -1,8 +1,0 @@
-(confirmorder voiprequest voip aa)
-(preparecontract aa voip aa)
-(preparehardware aa voip aa)
-(courierservice aa aa)
-(contractsaving aa aa aa)
-(productactivation aa aa aa)
-(billingactivation aa aa)
-; cost = 7 (unit cost)

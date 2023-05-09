@@ -1,3 +1,3 @@
-(move ce dd)
-(move bc cb)
+(move ac aa)
+(move be eb)
 ; cost = 2 (unit cost)
