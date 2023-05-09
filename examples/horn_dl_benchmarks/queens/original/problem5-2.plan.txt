@@ -1,2 +1,2 @@
-(move ec dd)
+(move ea aa)
 ; cost = 1 (unit cost)
