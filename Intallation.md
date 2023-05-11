@@ -30,6 +30,7 @@ install
 `cd om-pmc-formula-generation`
     - build from source
 `cd implementation`
+- build the tool
 `sbt compile`
 `sbt assembly`
 
@@ -80,6 +81,20 @@ build clipper:
 `./build.sh`
 `cd ../..`
 
+## optional: install GraalVM
+`mkdir graalvm`
+`cd graalvm`
+`wget https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-22.3.2/graalvm-ce-java11-linux-amd64-22.3.2.tar.gz`
+`tar -xvzf graalvm-ce-java11-linux-amd64-22.3.2.tar.gz`
+`sudo mkdir /usr/lib/jvm`
+`sudo mv graalvm-ce-java11-22.3.2/ /usr/lib/jvm`
+
+add to path:
+`echo 'export PATH=/lib/jvm/graalvm-ce-java11-22.3.2/bin:$PATH' >> ~/.bashrc  `
+`echo 'export JAVA_HOME=/usr/lib/jvm/graalvm-ce-java11-22.3.2' >> ~/.bashrc`
+`source ~/.bashrc`
+get back
+`cd ..`
 
 
 
