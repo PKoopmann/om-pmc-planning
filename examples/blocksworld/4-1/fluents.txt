@@ -1,0 +1,12 @@
+# fluent definitions for blockworld example
+
+PREFIX blocksworld: <https://www.ifi.uio.no/tobiajoh/planning/blocksworld#>
+
+OBJECT block A  -> blocksworld:A
+OBJECT block B  -> blocksworld:B
+OBJECT block C  -> blocksworld:C
+OBJECT block D  -> blocksworld:D
+
+OBJECT robot pr2    -> blocksworld:pr2_1
+
+PREDICATE holding(robot, block)   -> blocksworld:holds

@@ -75,13 +75,17 @@
 # pipes2 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes2 pipes.ttl pipes.pddl pipesProblem7-7.pddl
 
+# blocks 5-0
+./runOMPlanning.sh ../examples/blocksworld/5-0 blocks.ttl blocks.pddl blocksProblem5-0.pddl
+
+# blocks 10-0
+./runOMPlanning.sh ../examples/blocksworld blocks.ttl blocks.pddl 10-0.pddl
 
 
 
 
 
-
-##############################################################################
+#######################################,#######################################
 
 # Horn planning
 
@@ -98,6 +102,9 @@
 
 # vta roles 4
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/vta-roles/original TTL.owl domain.pddl tripProblem4.pddl
+
+# drone 5-8
+./runHornPlanning.sh ../examples/horn_dl_benchmarks/drones/original TTL.owl drone.pddl droneProblem5-8.pddl
 
 # taskAssign 3
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/taskassign/original TTL.owl domain.pddl taskProblem3.pddl

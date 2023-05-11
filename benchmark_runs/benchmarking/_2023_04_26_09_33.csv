@@ -1,3 +1,0 @@
-id,method,name,folder,ontology,domain,problem,reasoning_time,planning_time,total_time
-1,om_planning,pipes1,../examples/pipes/pipes1,pipes.ttl,pipes.pddl,pipesProblem7-7.pddl, 31.044935990, .342390958, 31.410746500
-3,horn_planning,pipes2,../examples/horn_pipes/pipes1,pipes.ttl,pipes.pddl,pipesProblem7-7.pddl, .797882299, 2.563687141, 3.371857286

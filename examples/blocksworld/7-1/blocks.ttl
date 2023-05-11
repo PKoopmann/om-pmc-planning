@@ -1,0 +1,196 @@
+@prefix : <https://www.ifi.uio.no/tobiajoh/planning/blocksworld#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://www.ifi.uio.no/tobiajoh/planning/blocksworld> .
+
+<https://www.ifi.uio.no/tobiajoh/planning/blocksworld> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#holds
+:holds rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#FullHands
+:FullHands rdf:type owl:Class ;
+           rdfs:subClassOf :Robot .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#PR2
+:PR2 rdf:type owl:Class ;
+     rdfs:subClassOf :Robot .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#Robot
+:Robot rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#A
+:A rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#B
+:B rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#C
+:C rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#D
+:D rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#E
+:E rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#F
+:F rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#G
+:G rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#H
+:H rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#I
+:I rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#J
+:J rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#K
+:K rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#L
+:L rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#M
+:M rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#N
+:N rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#O
+:O rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#P
+:P rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#Q
+:Q rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#R
+:R rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#S
+:S rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#T
+:T rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#U
+:U rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#V
+:V rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#W
+:W rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#X
+:X rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#Y
+:Y rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#Z
+:Z rdf:type owl:NamedIndividual .
+
+
+###  https://www.ifi.uio.no/tobiajoh/planning/blocksworld#pr2_1
+:pr2_1 rdf:type owl:NamedIndividual ,
+                :PR2 .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( :PR2
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :holds ;
+                         owl:minCardinality "2"^^xsd:nonNegativeInteger
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf :FullHands
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :A
+                        :B
+                        :C
+                        :D
+                        :E
+                        :F
+                        :G
+                        :H
+                        :I
+                        :J
+                        :K
+                        :L
+                        :M
+                        :N
+                        :O
+                        :P
+                        :Q
+                        :R
+                        :S
+                        :T
+                        :U
+                        :V
+                        :W
+                        :X
+                        :Y
+                        :Z
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,8 @@
+(define (problem BLOCKS-9-1)
+(:domain BLOCKS)
+(:objects B E A C D F G H I - block pr2 - robot)
+(:INIT (CLEAR F) (ONTABLE A) (ON F E) (ON E B) (ON B D) (ON D C) (ON C I)
+ (ON I G) (ON G H) (ON H A) )
+(:goal (AND (ON D I) (ON I A) (ON A B) (ON B H) (ON H G) (ON G F) (ON F E)
+            (ON E C)))
+)

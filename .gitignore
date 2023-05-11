@@ -16,3 +16,4 @@ moreflags2
 examples/*/*/misc
 examples/*/*/*/misc
 coordinator/temp.log
+coordinator/benchmarkTemp.csv

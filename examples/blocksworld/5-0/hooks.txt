@@ -1,0 +1,12 @@
+# abstract hook definitions for blocksworld example
+
+PREFIX blocksworld: <https://www.ifi.uio.no/tobiajoh/planning/blocksworld#>
+
+HOOK_PREDICATE: KBquery_fullHands
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: blocksworld:Robot
+QUERY:
+	?x Type: blocksworld:FullHands
+	
+
