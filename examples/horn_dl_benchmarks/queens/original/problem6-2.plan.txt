@@ -1,2 +1,2 @@
-(move cb ad)
+(move cb ab)
 ; cost = 1 (unit cost)

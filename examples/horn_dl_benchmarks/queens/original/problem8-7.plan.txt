@@ -1,0 +1,5 @@
+(move ha hh)
+(move ed bg)
+(move dd cd)
+(move ab db)
+; cost = 4 (unit cost)
