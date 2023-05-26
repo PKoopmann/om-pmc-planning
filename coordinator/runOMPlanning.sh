@@ -151,6 +151,10 @@ while read line; do
     MemOut=1
     echo $line
   fi
+  if [[ "$line" == *"StackOverflowError"* ]]; then
+    MemOut=1
+    echo $line
+  fi
   if [[ "$line" == *"Exception"* ]]; then
     Exception=1
     echo $line

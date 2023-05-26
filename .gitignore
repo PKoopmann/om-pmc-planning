@@ -17,3 +17,6 @@ examples/*/*/misc
 examples/*/*/*/misc
 coordinator/temp.log
 coordinator/benchmarkTemp.csv
+coordinator/*.class
+benchmark_runs/temp_evaluation.ods
+coordinator/test.owl
