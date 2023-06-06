@@ -310,8 +310,18 @@ pipes:ah rdf:type owl:NamedIndividual ,
 pipes:ai rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:bh ,
-                      pipes:bi .
+         pipes:nextTo pipes:aj ,
+                      pipes:bh ,
+                      pipes:bi ,
+                      pipes:bj .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#aj
+pipes:aj rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:bi ,
+                      pipes:bj .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#auv
@@ -404,8 +414,18 @@ pipes:bh rdf:type owl:NamedIndividual ,
 pipes:bi rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:ch ,
-                      pipes:ci .
+         pipes:nextTo pipes:bj ,
+                      pipes:ch ,
+                      pipes:ci ,
+                      pipes:cj .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bj
+pipes:bj rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ci ,
+                      pipes:cj .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ca
@@ -491,8 +511,18 @@ pipes:ch rdf:type owl:NamedIndividual ,
 pipes:ci rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:dh ,
-                      pipes:di .
+         pipes:nextTo pipes:cj ,
+                      pipes:dh ,
+                      pipes:di ,
+                      pipes:dj .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cj
+pipes:cj rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:di ,
+                      pipes:dj .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#da
@@ -578,8 +608,18 @@ pipes:dh rdf:type owl:NamedIndividual ,
 pipes:di rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:eh ,
-                      pipes:ei .
+         pipes:nextTo pipes:dj ,
+                      pipes:eh ,
+                      pipes:ei ,
+                      pipes:ej .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#dj
+pipes:dj rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ei ,
+                      pipes:ej .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ea
@@ -665,8 +705,18 @@ pipes:eh rdf:type owl:NamedIndividual ,
 pipes:ei rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:fh ,
-                      pipes:fi .
+         pipes:nextTo pipes:ej ,
+                      pipes:fh ,
+                      pipes:fi ,
+                      pipes:fj .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ej
+pipes:ej rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:fi ,
+                      pipes:fj .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#fa
@@ -752,8 +802,18 @@ pipes:fh rdf:type owl:NamedIndividual ,
 pipes:fi rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:gh ,
-                      pipes:gi .
+         pipes:nextTo pipes:fj ,
+                      pipes:gh ,
+                      pipes:gi ,
+                      pipes:gj .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fj
+pipes:fj rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:gi ,
+                      pipes:gj .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ga
@@ -839,8 +899,18 @@ pipes:gh rdf:type owl:NamedIndividual ,
 pipes:gi rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:hh ,
-                      pipes:hi .
+         pipes:nextTo pipes:gj ,
+                      pipes:hh ,
+                      pipes:hi ,
+                      pipes:hj .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gj
+pipes:gj rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:hi ,
+                      pipes:hj .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ha
@@ -926,68 +996,182 @@ pipes:hh rdf:type owl:NamedIndividual ,
 pipes:hi rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:ih ,
-                      pipes:ii .
+         pipes:nextTo pipes:hj ,
+                      pipes:ih ,
+                      pipes:ii ,
+                      pipes:ij .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hj
+pipes:hj rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ii ,
+                      pipes:ij .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ia
 pipes:ia rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:ib .
+         pipes:nextTo pipes:ib ,
+                      pipes:ja ,
+                      pipes:jb .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ib
 pipes:ib rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:ic .
+         pipes:nextTo pipes:ic ,
+                      pipes:ja ,
+                      pipes:jb ,
+                      pipes:jc .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ic
 pipes:ic rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:id .
+         pipes:nextTo pipes:id ,
+                      pipes:jb ,
+                      pipes:jc ,
+                      pipes:jd .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#id
 pipes:id rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:ie .
+         pipes:nextTo pipes:ie ,
+                      pipes:jc ,
+                      pipes:jd ,
+                      pipes:je .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ie
 pipes:ie rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:if .
+         pipes:nextTo pipes:if ,
+                      pipes:jd ,
+                      pipes:je ,
+                      pipes:jf .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#if
 pipes:if rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:ig .
+         pipes:nextTo pipes:ig ,
+                      pipes:je ,
+                      pipes:jf ,
+                      pipes:jg .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ig
 pipes:ig rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:ih .
+         pipes:nextTo pipes:ih ,
+                      pipes:jf ,
+                      pipes:jg ,
+                      pipes:jh .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ih
 pipes:ih rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP ;
-         pipes:nextTo pipes:ii .
+         pipes:nextTo pipes:ii ,
+                      pipes:jg ,
+                      pipes:jh ,
+                      pipes:ji .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#ii
 pipes:ii rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ij ,
+                      pipes:jh ,
+                      pipes:ji ,
+                      pipes:jj .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ij
+pipes:ij rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ji ,
+                      pipes:jj .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ja
+pipes:ja rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:jb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#jb
+pipes:jb rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:jc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#jc
+pipes:jc rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:jd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#jd
+pipes:jd rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:je .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#je
+pipes:je rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:jf .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#jf
+pipes:jf rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:jg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#jg
+pipes:jg rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:jh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#jh
+pipes:jh rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ji .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ji
+pipes:ji rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:jj .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#jj
+pipes:jj rdf:type owl:NamedIndividual ,
                   pipes:Cell ,
                   pipes:WP .
 
@@ -1110,25 +1294,31 @@ pipes:pipeHH rdf:type owl:NamedIndividual ,
 pipes:pipeHI rdf:type owl:NamedIndividual ,
                       pipes:Cell ,
                       pipes:Pipe ;
-             pipes:connectedTo pipes:pipeGI ;
+             pipes:connectedTo pipes:pipeGI ,
+                               pipes:pipeHJ ;
              pipes:locatedAt pipes:hi .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#pipeHJ
 pipes:pipeHJ rdf:type owl:NamedIndividual ,
-                      pipes:Cell .
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:locatedAt pipes:hj .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#pipeIH
 pipes:pipeIH rdf:type owl:NamedIndividual ,
                       pipes:Cell ,
                       pipes:Pipe ;
+             pipes:connectedTo pipes:pipeJH ;
              pipes:locatedAt pipes:ih .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#pipeJH
 pipes:pipeJH rdf:type owl:NamedIndividual ,
-                      pipes:Cell .
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:locatedAt pipes:jh .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#tankCI
@@ -1264,7 +1454,10 @@ pipes:wall2 rdf:type owl:NamedIndividual ,
                             pipes:hc ,
                             pipes:ia ,
                             pipes:ib ,
-                            pipes:ic .
+                            pipes:ic ,
+                            pipes:ja ,
+                            pipes:jb ,
+                            pipes:jc .
 
 
 ###  https://www.ifi.uio.no/tobiajoh/pipes#wall3
@@ -1272,7 +1465,8 @@ pipes:wall3 rdf:type owl:NamedIndividual ,
                      pipes:Cell ,
                      pipes:Wall ;
             pipes:locatedAt pipes:hg ,
-                            pipes:ig .
+                            pipes:ig ,
+                            pipes:jg .
 
 
 #################################################################

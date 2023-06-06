@@ -75,6 +75,9 @@
 # pipes2 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes2 pipes.ttl pipes.pddl pipesProblem7-7.pddl
 
+# blocks 4-0
+./runOMPlanning.sh ../examples/blocksworld/4-0 blocks.ttl blocks.pddl blocksProblem4-0.pddl
+
 # blocks 5-0
 ./runOMPlanning.sh ../examples/blocksworld/5-0 blocks.ttl blocks.pddl blocksProblem5-0.pddl
 

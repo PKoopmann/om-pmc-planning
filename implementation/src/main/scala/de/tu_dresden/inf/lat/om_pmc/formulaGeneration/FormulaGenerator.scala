@@ -29,14 +29,16 @@ object FormulaGenerator {
 
     ontology.addAxioms(axiom2formula.axioms.asJava)
 
+
     val module =
       getModule(ontology,
         hook2axiom.hooks()
           .map(hook2axiom.axiom(_))
           .flatMap(_.getSignature().asScala))
 
-    //println("Axioms in module: "+module.getAxiomCount())
-    
+    //println("Number of axioms in module: "+module.getAxiomCount())
+    //println("Axioms in module1" + SimpleOWLFormatter.format(module))
+
     //manager.saveOntology(module, new FileOutputStream(new File("moduleUsed.owl")))
 
     println(explanationMethod)
@@ -277,6 +279,8 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     dnf
   }
+
+
 
   var inconsistentDNF: Option[Set[Set[OWLLogicalAxiom]]] = None
 

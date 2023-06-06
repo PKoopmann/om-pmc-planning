@@ -363,7 +363,7 @@
 		(Pipe pipeFI)
 		(Pipe pipeDI)
 		(PipeFailure pipeCB)
-		(PipeFailure pipeIH)
+		(Pipe pipeIH)
 		(Robot auv)
 		(Tank tankFA)
 		(Tank tankFC)
