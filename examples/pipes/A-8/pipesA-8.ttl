@@ -1,0 +1,1342 @@
+@prefix : <https://www.ifi.uio.no/tobiajoh/pipes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pipes: <https://www.ifi.uio.no/tobiajoh/pipes#> .
+@base <https://www.ifi.uio.no/tobiajoh/pipes#> .
+
+<https://www.ifi.uio.no/tobiajoh/pipes> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#connectedTo
+pipes:connectedTo rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#flowConnectedTo
+pipes:flowConnectedTo rdf:type owl:ObjectProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hasObject
+pipes:hasObject rdf:type owl:ObjectProperty ;
+                owl:inverseOf pipes:locatedAt .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hasPicture
+pipes:hasPicture rdf:type owl:ObjectProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#locatedAt
+pipes:locatedAt rdf:type owl:ObjectProperty ;
+                rdfs:range pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#nextTo
+pipes:nextTo rdf:type owl:ObjectProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#robotAt
+pipes:robotAt rdf:type owl:ObjectProperty ;
+              rdfs:domain pipes:Robot ;
+              rdfs:range pipes:WP .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Cell
+pipes:Cell rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ClosedValve
+pipes:ClosedValve rdf:type owl:Class ;
+                  rdfs:subClassOf pipes:Valve ;
+                  owl:disjointWith pipes:OpenValve .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Covered
+pipes:Covered rdf:type owl:Class ;
+              rdfs:subClassOf pipes:Risk ,
+                              [ rdf:type owl:Class ;
+                                owl:unionOf ( pipes:HighRisk
+                                              pipes:MediumRisk
+                                            )
+                              ] ;
+              rdfs:comment "this waypoint (that has some risk) is covered by the inspections" .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Dummy
+pipes:Dummy rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#FlowConnectedToFailure
+pipes:FlowConnectedToFailure rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( pipes:PipelineInfrastructure
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty pipes:flowConnectedTo ;
+                                                                          owl:someValuesFrom pipes:PipeFailure
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf pipes:PipelineInfrastructure .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ForbiddenWP
+pipes:ForbiddenWP rdf:type owl:Class ;
+                  rdfs:subClassOf pipes:WP ;
+                  owl:disjointWith _:genid8 .
+
+_:genid8 rdf:type owl:Restriction ;
+          owl:onProperty [ owl:inverseOf pipes:robotAt
+                         ] ;
+          owl:someValuesFrom pipes:Robot .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource pipes:ForbiddenWP ;
+   owl:annotatedProperty owl:disjointWith ;
+   owl:annotatedTarget _:genid8 ;
+   rdfs:comment "no robot is allowed to be at a WP that is forbidden"
+ ] .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#HighRisk
+pipes:HighRisk rdf:type owl:Class ;
+               rdfs:subClassOf pipes:Risk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#MediumRisk
+pipes:MediumRisk rdf:type owl:Class ;
+                 rdfs:subClassOf pipes:Risk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#MediumRiskPipe
+pipes:MediumRiskPipe rdf:type owl:Class ;
+                     rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Mine
+pipes:Mine rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#OpenValve
+pipes:OpenValve rdf:type owl:Class ;
+                rdfs:subClassOf pipes:Valve .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Pipe
+pipes:Pipe rdf:type owl:Class ;
+           rdfs:subClassOf pipes:PipelineInfrastructure .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#PipeFailure
+pipes:PipeFailure rdf:type owl:Class ;
+                  rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#PipelineInfrastructure
+pipes:PipelineInfrastructure rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ProtectedStructure
+pipes:ProtectedStructure rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Risk
+pipes:Risk rdf:type owl:Class ;
+           rdfs:subClassOf pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Robot
+pipes:Robot rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Rock
+pipes:Rock rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#RustyPipe
+pipes:RustyPipe rdf:type owl:Class ;
+                rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Tank
+pipes:Tank rdf:type owl:Class ;
+           rdfs:subClassOf pipes:PipelineInfrastructure ,
+                           pipes:ProtectedStructure ;
+           owl:disjointWith pipes:Wall .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#UnsupportedPipe
+pipes:UnsupportedPipe rdf:type owl:Class ;
+                      rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Valve
+pipes:Valve rdf:type owl:Class ;
+            owl:equivalentClass _:genid11 ;
+            rdfs:subClassOf pipes:PipelineInfrastructure .
+
+_:genid11 rdf:type owl:Class ;
+           owl:unionOf ( pipes:ClosedValve
+                         pipes:OpenValve
+                       ) .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource pipes:Valve ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget _:genid11 ;
+   rdfs:comment "not Horn DL!"
+ ] .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#WP
+pipes:WP rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#WPConnectedToFailure
+pipes:WPConnectedToFailure rdf:type owl:Class ;
+                           rdfs:subClassOf pipes:HighRisk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#WPTank
+pipes:WPTank rdf:type owl:Class ;
+             rdfs:subClassOf pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Wall
+pipes:Wall rdf:type owl:Class ;
+           rdfs:subClassOf pipes:ProtectedStructure .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#aa
+pipes:aa rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ab ,
+                      pipes:ba ,
+                      pipes:bb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ab
+pipes:ab rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ac ,
+                      pipes:ba ,
+                      pipes:bb ,
+                      pipes:bc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ac
+pipes:ac rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ad ,
+                      pipes:bb ,
+                      pipes:bc ,
+                      pipes:bd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ad
+pipes:ad rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ae ,
+                      pipes:bc ,
+                      pipes:bd ,
+                      pipes:be .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ae
+pipes:ae rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:af ,
+                      pipes:bd ,
+                      pipes:be ,
+                      pipes:bf .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#af
+pipes:af rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ag ,
+                      pipes:be ,
+                      pipes:bf ,
+                      pipes:bg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ag
+pipes:ag rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ah ,
+                      pipes:bf ,
+                      pipes:bg ,
+                      pipes:bh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ah
+pipes:ah rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:bg ,
+                      pipes:bh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#auv
+pipes:auv rdf:type owl:NamedIndividual ,
+                   pipes:Cell ,
+                   pipes:Robot ;
+          pipes:robotAt pipes:aa .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ba
+pipes:ba rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:bb ,
+                      pipes:ca ,
+                      pipes:cb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bb
+pipes:bb rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:bc ,
+                      pipes:ca ,
+                      pipes:cb ,
+                      pipes:cc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bc
+pipes:bc rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:bd ,
+                      pipes:cb ,
+                      pipes:cc ,
+                      pipes:cd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bd
+pipes:bd rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:be ,
+                      pipes:cc ,
+                      pipes:cd ,
+                      pipes:ce .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#be
+pipes:be rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:bf ,
+                      pipes:cd ,
+                      pipes:ce ,
+                      pipes:cf .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bf
+pipes:bf rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:bg ,
+                      pipes:ce ,
+                      pipes:cf ,
+                      pipes:cg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bg
+pipes:bg rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:bh ,
+                      pipes:cf ,
+                      pipes:cg ,
+                      pipes:ch .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#bh
+pipes:bh rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:cg ,
+                      pipes:ch .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ca
+pipes:ca rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:cb ,
+                      pipes:da ,
+                      pipes:db .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cb
+pipes:cb rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:cc ,
+                      pipes:da ,
+                      pipes:db ,
+                      pipes:dc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cc
+pipes:cc rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:cd ,
+                      pipes:db ,
+                      pipes:dc ,
+                      pipes:dd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cd
+pipes:cd rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ce ,
+                      pipes:dc ,
+                      pipes:dd ,
+                      pipes:de .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ce
+pipes:ce rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:cf ,
+                      pipes:dd ,
+                      pipes:de ,
+                      pipes:df .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cf
+pipes:cf rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:cg ,
+                      pipes:de ,
+                      pipes:df ,
+                      pipes:dg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#cg
+pipes:cg rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ch ,
+                      pipes:df ,
+                      pipes:dg ,
+                      pipes:dh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ch
+pipes:ch rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:dg ,
+                      pipes:dh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#da
+pipes:da rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:db ,
+                      pipes:ea ,
+                      pipes:eb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#db
+pipes:db rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:dc ,
+                      pipes:ea ,
+                      pipes:eb ,
+                      pipes:ec .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#dc
+pipes:dc rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:dd ,
+                      pipes:eb ,
+                      pipes:ec ,
+                      pipes:ed .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#dd
+pipes:dd rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:de ,
+                      pipes:ec ,
+                      pipes:ed ,
+                      pipes:ee .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#de
+pipes:de rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:df ,
+                      pipes:ed ,
+                      pipes:ee ,
+                      pipes:ef .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#df
+pipes:df rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:dg ,
+                      pipes:ee ,
+                      pipes:ef ,
+                      pipes:eg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#dg
+pipes:dg rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:dh ,
+                      pipes:ef ,
+                      pipes:eg ,
+                      pipes:eh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#dh
+pipes:dh rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:eg ,
+                      pipes:eh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ea
+pipes:ea rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:eb ,
+                      pipes:fa ,
+                      pipes:fb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#eb
+pipes:eb rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ec ,
+                      pipes:fa ,
+                      pipes:fb ,
+                      pipes:fc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ec
+pipes:ec rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ed ,
+                      pipes:fb ,
+                      pipes:fc ,
+                      pipes:fd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ed
+pipes:ed rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ee ,
+                      pipes:fc ,
+                      pipes:fd ,
+                      pipes:fe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ee
+pipes:ee rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ef ,
+                      pipes:fd ,
+                      pipes:fe ,
+                      pipes:ff .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ef
+pipes:ef rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:eg ,
+                      pipes:fe ,
+                      pipes:ff ,
+                      pipes:fg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#eg
+pipes:eg rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:eh ,
+                      pipes:ff ,
+                      pipes:fg ,
+                      pipes:fh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#eh
+pipes:eh rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:fg ,
+                      pipes:fh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fa
+pipes:fa rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:fb ,
+                      pipes:ga ,
+                      pipes:gb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fb
+pipes:fb rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:fc ,
+                      pipes:ga ,
+                      pipes:gb ,
+                      pipes:gc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fc
+pipes:fc rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:fd ,
+                      pipes:gb ,
+                      pipes:gc ,
+                      pipes:gd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fd
+pipes:fd rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:fe ,
+                      pipes:gc ,
+                      pipes:gd ,
+                      pipes:ge .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fe
+pipes:fe rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ff ,
+                      pipes:gd ,
+                      pipes:ge ,
+                      pipes:gf .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ff
+pipes:ff rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:fg ,
+                      pipes:ge ,
+                      pipes:gf ,
+                      pipes:gg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fg
+pipes:fg rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:fh ,
+                      pipes:gf ,
+                      pipes:gg ,
+                      pipes:gh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#fh
+pipes:fh rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:gg ,
+                      pipes:gh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ga
+pipes:ga rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:gb ,
+                      pipes:ha ,
+                      pipes:hb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gb
+pipes:gb rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:gc ,
+                      pipes:ha ,
+                      pipes:hb ,
+                      pipes:hc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gc
+pipes:gc rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:gd ,
+                      pipes:hb ,
+                      pipes:hc ,
+                      pipes:hd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gd
+pipes:gd rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:ge ,
+                      pipes:hc ,
+                      pipes:hd ,
+                      pipes:he .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ge
+pipes:ge rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:gf ,
+                      pipes:hd ,
+                      pipes:he ,
+                      pipes:hf .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gf
+pipes:gf rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:gg ,
+                      pipes:he ,
+                      pipes:hf ,
+                      pipes:hg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gg
+pipes:gg rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:gh ,
+                      pipes:hf ,
+                      pipes:hg ,
+                      pipes:hh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#gh
+pipes:gh rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:hg ,
+                      pipes:hh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ha
+pipes:ha rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:hb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hb
+pipes:hb rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:hc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hc
+pipes:hc rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:hd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hd
+pipes:hd rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:he .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#he
+pipes:he rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:hf .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hf
+pipes:hf rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:hg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hg
+pipes:hg rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP ;
+         pipes:nextTo pipes:hh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hh
+pipes:hh rdf:type owl:NamedIndividual ,
+                  pipes:Cell ,
+                  pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeBA
+pipes:pipeBA rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipeBB ;
+             pipes:locatedAt pipes:ba .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeBB
+pipes:pipeBB rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipeCB ,
+                               pipes:valveBD ;
+             pipes:locatedAt pipes:bb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeCB
+pipes:pipeCB rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:PipeFailure ;
+             pipes:locatedAt pipes:cb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeDB
+pipes:pipeDB rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipeCB ;
+             pipes:locatedAt pipes:db .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeDI
+pipes:pipeDI rdf:type owl:NamedIndividual ,
+                      pipes:Cell .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeEB
+pipes:pipeEB rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipeDB ;
+             pipes:locatedAt pipes:eb .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeED
+pipes:pipeED rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:valveEC ;
+             pipes:locatedAt pipes:ed .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeFD
+pipes:pipeFD rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipeED ;
+             pipes:locatedAt pipes:fd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeFI
+pipes:pipeFI rdf:type owl:NamedIndividual ,
+                      pipes:Cell .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeGI
+pipes:pipeGI rdf:type owl:NamedIndividual ,
+                      pipes:Cell .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeHD
+pipes:pipeHD rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipeHE ;
+             pipes:locatedAt pipes:hd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeHE
+pipes:pipeHE rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipeHG ;
+             pipes:locatedAt pipes:he .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeHG
+pipes:pipeHG rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:connectedTo pipes:pipeHH ,
+                               pipes:valveGG ;
+             pipes:locatedAt pipes:hg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeHH
+pipes:pipeHH rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Pipe ;
+             pipes:locatedAt pipes:hh .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeHI
+pipes:pipeHI rdf:type owl:NamedIndividual ,
+                      pipes:Cell .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeHJ
+pipes:pipeHJ rdf:type owl:NamedIndividual ,
+                      pipes:Cell .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeIH
+pipes:pipeIH rdf:type owl:NamedIndividual ,
+                      pipes:Cell .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#pipeJH
+pipes:pipeJH rdf:type owl:NamedIndividual ,
+                      pipes:Cell .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#tankCI
+pipes:tankCI rdf:type owl:NamedIndividual ,
+                      pipes:Cell .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#tankFA
+pipes:tankFA rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Tank ;
+             pipes:locatedAt pipes:fa .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#tankFC
+pipes:tankFC rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Tank ;
+             pipes:locatedAt pipes:fc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#tankFE
+pipes:tankFE rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Tank ;
+             pipes:locatedAt pipes:fe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#tankFG
+pipes:tankFG rdf:type owl:NamedIndividual ,
+                      pipes:Cell ,
+                      pipes:Tank ;
+             pipes:locatedAt pipes:fg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#tankLarge
+pipes:tankLarge rdf:type owl:NamedIndividual ,
+                         pipes:Cell ,
+                         pipes:Tank ;
+                pipes:locatedAt pipes:ae ,
+                                pipes:af ,
+                                pipes:be ,
+                                pipes:bf ,
+                                pipes:ce ,
+                                pipes:cf .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#valveBD
+pipes:valveBD rdf:type owl:NamedIndividual ,
+                       pipes:Cell ,
+                       pipes:OpenValve ,
+                       pipes:Valve ;
+              pipes:connectedTo pipes:tankLarge ;
+              pipes:locatedAt pipes:bd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#valveEA
+pipes:valveEA rdf:type owl:NamedIndividual ,
+                       pipes:Cell ,
+                       pipes:OpenValve ,
+                       pipes:Valve ;
+              pipes:connectedTo pipes:pipeEB ,
+                                pipes:tankFA ;
+              pipes:locatedAt pipes:ea .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#valveEC
+pipes:valveEC rdf:type owl:NamedIndividual ,
+                       pipes:Cell ,
+                       pipes:OpenValve ,
+                       pipes:Valve ;
+              pipes:connectedTo pipes:pipeEB ,
+                                pipes:tankFC ;
+              pipes:locatedAt pipes:ec .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#valveEE
+pipes:valveEE rdf:type owl:NamedIndividual ,
+                       pipes:Cell ,
+                       pipes:OpenValve ,
+                       pipes:Valve ;
+              pipes:connectedTo pipes:pipeED ,
+                                pipes:tankFE ;
+              pipes:locatedAt pipes:ee .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#valveEI
+pipes:valveEI rdf:type owl:NamedIndividual ,
+                       pipes:Cell .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#valveGD
+pipes:valveGD rdf:type owl:NamedIndividual ,
+                       pipes:Cell ,
+                       pipes:OpenValve ,
+                       pipes:Valve ;
+              pipes:connectedTo pipes:pipeFD ,
+                                pipes:pipeHD ;
+              pipes:locatedAt pipes:gd .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#valveGG
+pipes:valveGG rdf:type owl:NamedIndividual ,
+                       pipes:Cell ,
+                       pipes:OpenValve ,
+                       pipes:Valve ;
+              pipes:connectedTo pipes:tankFG ;
+              pipes:locatedAt pipes:gg .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#wall
+pipes:wall rdf:type owl:NamedIndividual ,
+                    pipes:Cell ,
+                    pipes:Wall ;
+           pipes:locatedAt pipes:ac ,
+                           pipes:bc ,
+                           pipes:cc ,
+                           pipes:dc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#wall2
+pipes:wall2 rdf:type owl:NamedIndividual ,
+                     pipes:Cell ,
+                     pipes:Wall ;
+            pipes:locatedAt pipes:ha ,
+                            pipes:hb ,
+                            pipes:hc .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#wall3
+pipes:wall3 rdf:type owl:NamedIndividual ,
+                     pipes:Cell ,
+                     pipes:Wall ;
+            pipes:locatedAt pipes:hg .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( pipes:HighRisk
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:Covered
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( pipes:MediumRisk
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty pipes:hasObject ;
+                                               owl:someValuesFrom [ owl:intersectionOf ( pipes:Pipe
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty pipes:connectedTo ;
+                                                                                           owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty pipes:locatedAt ;
+                                                                                                                owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                                                                                                                                    ] ;
+                                                                                                                                     owl:someValuesFrom pipes:Robot
+                                                                                                                                   ]
+                                                                                                              ]
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ]
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf pipes:Covered
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget pipes:Covered ;
+  rdfs:comment "a waypoint with medium risk is covered, if the pipe at this waypoint is connected to a pipe at a waypoint with a photo from some AUV"
+] .
+
+
+[ owl:intersectionOf ( pipes:MediumRisk
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:Covered
+] .
+
+
+[ owl:intersectionOf ( pipes:Pipe
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:connectedTo ;
+                         owl:someValuesFrom pipes:RustyPipe
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRiskPipe
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:FlowConnectedToFailure
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:WPConnectedToFailure
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:MediumRiskPipe
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRisk
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:Pipe
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:Rock
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRisk
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:Tank
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:WPTank
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( pipes:WP
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty pipes:hasObject ;
+                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( pipes:Mine
+                                                                                  pipes:ProtectedStructure
+                                                                                )
+                                                                  ]
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf pipes:ForbiddenWP
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget pipes:ForbiddenWP ;
+  rdfs:comment "a waypoint where there is a mine is not allowed to be visited"
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                              owl:unionOf ( pipes:RustyPipe
+                                                            pipes:UnsupportedPipe
+                                                          )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:HighRisk
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+pipes:y rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+pipes:x rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+pipes:z rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "trans flowconnect valve" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> pipes:OpenValve ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:y
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> pipes:y
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> pipes:y ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> pipes:z
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> pipes:z
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "trans flowconnected pipes" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> pipes:Pipe ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:y
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> pipes:y
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> pipes:y ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> pipes:z
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> pipes:z
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "connected -> flowconnected" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:connectedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> pipes:y
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> pipes:y
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.5.0.2023-01-14T12:41:38Z) https://github.com/owlcs/owlapi/

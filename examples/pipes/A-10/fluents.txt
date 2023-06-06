@@ -1,0 +1,119 @@
+# fluent definitions for drone example
+
+PREFIX pipes: <https://www.ifi.uio.no/tobiajoh/pipes#>
+
+OBJECT wp aa	-> pipes:aa
+OBJECT wp ab	-> pipes:ab
+OBJECT wp ac	-> pipes:ac
+OBJECT wp ad	-> pipes:ad
+OBJECT wp ae	-> pipes:ae
+OBJECT wp af	-> pipes:af
+OBJECT wp ag	-> pipes:ag
+OBJECT wp ah	-> pipes:ah
+OBJECT wp ai	-> pipes:ai
+OBJECT wp aj	-> pipes:aj
+OBJECT wp ba	-> pipes:ba
+OBJECT wp bb	-> pipes:bb
+OBJECT wp bc	-> pipes:bc
+OBJECT wp bd	-> pipes:bd
+OBJECT wp be	-> pipes:be
+OBJECT wp bf	-> pipes:bf
+OBJECT wp bg	-> pipes:bg
+OBJECT wp bh	-> pipes:bh
+OBJECT wp bi	-> pipes:bi
+OBJECT wp bj	-> pipes:bj
+OBJECT wp ca	-> pipes:ca
+OBJECT wp cb	-> pipes:cb
+OBJECT wp cc	-> pipes:cc
+OBJECT wp cd	-> pipes:cd
+OBJECT wp ce	-> pipes:ce
+OBJECT wp cf	-> pipes:cf
+OBJECT wp cg	-> pipes:cg
+OBJECT wp ch	-> pipes:ch
+OBJECT wp ci	-> pipes:ci
+OBJECT wp cj	-> pipes:cj
+OBJECT wp da	-> pipes:da
+OBJECT wp db	-> pipes:db
+OBJECT wp dc	-> pipes:dc
+OBJECT wp dd	-> pipes:dd
+OBJECT wp de	-> pipes:de
+OBJECT wp df	-> pipes:df
+OBJECT wp dg	-> pipes:dg
+OBJECT wp dh	-> pipes:dh
+OBJECT wp di	-> pipes:di
+OBJECT wp dj	-> pipes:dj
+OBJECT wp ea	-> pipes:ea
+OBJECT wp eb	-> pipes:eb
+OBJECT wp ec	-> pipes:ec
+OBJECT wp ed	-> pipes:ed
+OBJECT wp ee	-> pipes:ee
+OBJECT wp ef	-> pipes:ef
+OBJECT wp eg	-> pipes:eg
+OBJECT wp eh	-> pipes:eh
+OBJECT wp ei	-> pipes:ei
+OBJECT wp ej	-> pipes:ej
+OBJECT wp fa	-> pipes:fa
+OBJECT wp fb	-> pipes:fb
+OBJECT wp fc	-> pipes:fc
+OBJECT wp fd	-> pipes:fd
+OBJECT wp fe	-> pipes:fe
+OBJECT wp ff	-> pipes:ff
+OBJECT wp fg	-> pipes:fg
+OBJECT wp fh	-> pipes:fh
+OBJECT wp fi	-> pipes:fi
+OBJECT wp fj	-> pipes:fj
+OBJECT wp ga	-> pipes:ga
+OBJECT wp gb	-> pipes:gb
+OBJECT wp gc	-> pipes:gc
+OBJECT wp gd	-> pipes:gd
+OBJECT wp ge	-> pipes:ge
+OBJECT wp gf	-> pipes:gf
+OBJECT wp gg	-> pipes:gg
+OBJECT wp gh	-> pipes:gh
+OBJECT wp gi	-> pipes:gi
+OBJECT wp gj	-> pipes:gj
+OBJECT wp ha	-> pipes:ha
+OBJECT wp hb	-> pipes:hb
+OBJECT wp hc	-> pipes:hc
+OBJECT wp hd	-> pipes:hd
+OBJECT wp he	-> pipes:he
+OBJECT wp hf	-> pipes:hf
+OBJECT wp hg	-> pipes:hg
+OBJECT wp hh	-> pipes:hh
+OBJECT wp hi	-> pipes:hi
+OBJECT wp hj	-> pipes:hj
+OBJECT wp ia	-> pipes:ia
+OBJECT wp ib	-> pipes:ib
+OBJECT wp ic	-> pipes:ic
+OBJECT wp id	-> pipes:id
+OBJECT wp ie	-> pipes:ie
+OBJECT wp if	-> pipes:if
+OBJECT wp ig	-> pipes:ig
+OBJECT wp ih	-> pipes:ih
+OBJECT wp ii	-> pipes:ii
+OBJECT wp ij	-> pipes:ij
+OBJECT wp ja	-> pipes:ja
+OBJECT wp jb	-> pipes:jb
+OBJECT wp jc	-> pipes:jc
+OBJECT wp jd	-> pipes:jd
+OBJECT wp je	-> pipes:je
+OBJECT wp jf	-> pipes:jf
+OBJECT wp jg	-> pipes:jg
+OBJECT wp jh	-> pipes:jh
+OBJECT wp ji	-> pipes:ji
+OBJECT wp jj	-> pipes:jj
+
+OBJECT robot auv	-> pipes:auv
+OBJECT valve valveBD -> pipes:valveBD
+OBJECT valve valveEA -> pipes:valveEA
+OBJECT valve valveEC -> pipes:valveEC
+OBJECT valve valveEE -> pipes:valveEE
+OBJECT valve valveGD -> pipes:valveGD
+
+
+PREDICATE robotAt(robot, wp)	-> pipes:robotAt
+PREDICATE hasPicture(robot, wp)	-> pipes:hasPicture
+PREDICATE open(valve)   -> pipes:OpenValve
+
+
+

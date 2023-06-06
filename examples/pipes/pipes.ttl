@@ -1,0 +1,483 @@
+@prefix : <https://www.ifi.uio.no/tobiajoh/pipes#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pipes: <https://www.ifi.uio.no/tobiajoh/pipes#> .
+@base <https://www.ifi.uio.no/tobiajoh/pipes> .
+
+<https://www.ifi.uio.no/tobiajoh/pipes> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#connectedTo
+pipes:connectedTo rdf:type owl:ObjectProperty ,
+                           owl:SymmetricProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#flowConnectedTo
+pipes:flowConnectedTo rdf:type owl:ObjectProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hasObject
+pipes:hasObject rdf:type owl:ObjectProperty ;
+                owl:inverseOf pipes:locatedAt .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#hasPicture
+pipes:hasPicture rdf:type owl:ObjectProperty .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#locatedAt
+pipes:locatedAt rdf:type owl:ObjectProperty ;
+                rdfs:range pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#robotAt
+pipes:robotAt rdf:type owl:ObjectProperty ;
+              rdfs:domain pipes:Robot ;
+              rdfs:range pipes:WP .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ClosedValve
+pipes:ClosedValve rdf:type owl:Class ;
+                  rdfs:subClassOf <https://www.ifi.uio.no/tobiajoh/pipes#Valve> ;
+                  owl:disjointWith pipes:OpenValve .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Covered
+pipes:Covered rdf:type owl:Class ;
+              rdfs:subClassOf pipes:Risk ,
+                              [ rdf:type owl:Class ;
+                                owl:unionOf ( pipes:HighRisk
+                                              pipes:MediumRisk
+                                            )
+                              ] ;
+              rdfs:comment "this waypoint (that has some risk) is covered by the inspections" .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Dummy
+pipes:Dummy rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#FlowConnectedToFailure
+pipes:FlowConnectedToFailure rdf:type owl:Class ;
+                             owl:equivalentClass [ owl:intersectionOf ( pipes:PipelineInfrastructure
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty pipes:flowConnectedTo ;
+                                                                          owl:someValuesFrom pipes:PipeFailure
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ] ;
+                             rdfs:subClassOf pipes:PipelineInfrastructure .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ForbiddenWP
+pipes:ForbiddenWP rdf:type owl:Class ;
+                  rdfs:subClassOf pipes:WP ;
+                  owl:disjointWith [ rdf:type owl:Restriction ;
+                                     owl:onProperty [ owl:inverseOf pipes:robotAt
+                                                    ] ;
+                                     owl:someValuesFrom pipes:Robot
+                                   ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource pipes:ForbiddenWP ;
+   owl:annotatedProperty owl:disjointWith ;
+   owl:annotatedTarget [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:robotAt
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ] ;
+   rdfs:comment "no robot is allowed to be at a WP that is forbidden"
+ ] .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#HighRisk
+pipes:HighRisk rdf:type owl:Class ;
+               rdfs:subClassOf pipes:Risk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#MediumRisk
+pipes:MediumRisk rdf:type owl:Class ;
+                 rdfs:subClassOf pipes:Risk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#MediumRiskPipe
+pipes:MediumRiskPipe rdf:type owl:Class ;
+                     rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Mine
+pipes:Mine rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#OpenValve
+pipes:OpenValve rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.ifi.uio.no/tobiajoh/pipes#Valve> .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Pipe
+pipes:Pipe rdf:type owl:Class ;
+           rdfs:subClassOf pipes:PipelineInfrastructure .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#PipeFailure
+pipes:PipeFailure rdf:type owl:Class ;
+                  rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#PipelineInfrastructure
+pipes:PipelineInfrastructure rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#ProtectedStructure
+pipes:ProtectedStructure rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Risk
+pipes:Risk rdf:type owl:Class ;
+           rdfs:subClassOf pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Robot
+pipes:Robot rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Rock
+pipes:Rock rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#RustyPipe
+pipes:RustyPipe rdf:type owl:Class ;
+                rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#UnsupportedPipe
+pipes:UnsupportedPipe rdf:type owl:Class ;
+                      rdfs:subClassOf pipes:Pipe .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#WP
+pipes:WP rdf:type owl:Class .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#WPConnectedToFailure
+pipes:WPConnectedToFailure rdf:type owl:Class ;
+                           rdfs:subClassOf pipes:HighRisk .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#WPTank
+pipes:WPTank rdf:type owl:Class ;
+             rdfs:subClassOf pipes:WP .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Wall
+pipes:Wall rdf:type owl:Class ;
+           rdfs:subClassOf pipes:ProtectedStructure ;
+           owl:disjointWith <https://www.ifi.uio.no/tobiajoh/pipes#Tank> .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Tank
+<https://www.ifi.uio.no/tobiajoh/pipes#Tank> rdf:type owl:Class ;
+                                             rdfs:subClassOf pipes:PipelineInfrastructure ,
+                                                             pipes:ProtectedStructure .
+
+
+###  https://www.ifi.uio.no/tobiajoh/pipes#Valve
+<https://www.ifi.uio.no/tobiajoh/pipes#Valve> rdf:type owl:Class ;
+                                              owl:equivalentClass [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( pipes:ClosedValve
+                                                                                  pipes:OpenValve
+                                                                                )
+                                                                  ] ;
+                                              rdfs:subClassOf pipes:PipelineInfrastructure .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://www.ifi.uio.no/tobiajoh/pipes#Valve> ;
+   owl:annotatedProperty owl:equivalentClass ;
+   owl:annotatedTarget [ rdf:type owl:Class ;
+                         owl:unionOf ( pipes:ClosedValve
+                                       pipes:OpenValve
+                                     )
+                       ] ;
+   rdfs:comment "not Horn DL!"
+ ] .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ owl:intersectionOf ( pipes:HighRisk
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:Covered
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( pipes:MediumRisk
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty pipes:hasObject ;
+                                               owl:someValuesFrom [ owl:intersectionOf ( pipes:Pipe
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty pipes:connectedTo ;
+                                                                                           owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                owl:onProperty pipes:locatedAt ;
+                                                                                                                owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                     owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                                                                                                                                    ] ;
+                                                                                                                                     owl:someValuesFrom pipes:Robot
+                                                                                                                                   ]
+                                                                                                              ]
+                                                                                         ]
+                                                                                       ) ;
+                                                                    rdf:type owl:Class
+                                                                  ]
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf pipes:Covered
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget pipes:Covered ;
+  rdfs:comment "a waypoint with medium risk is covered, if the pipe at this waypoint is connected to a pipe at a waypoint with a photo from some AUV"
+] .
+
+
+[ owl:intersectionOf ( pipes:MediumRisk
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty [ owl:inverseOf pipes:hasPicture
+                                        ] ;
+                         owl:someValuesFrom pipes:Robot
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:Covered
+] .
+
+
+[ owl:intersectionOf ( pipes:Pipe
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:connectedTo ;
+                         owl:someValuesFrom pipes:RustyPipe
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRiskPipe
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:FlowConnectedToFailure
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:WPConnectedToFailure
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:MediumRiskPipe
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRisk
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:Pipe
+                       ]
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom pipes:Rock
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:MediumRisk
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom <https://www.ifi.uio.no/tobiajoh/pipes#Tank>
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:WPTank
+] .
+
+
+[ rdf:type owl:Axiom ;
+  owl:annotatedSource [ owl:intersectionOf ( pipes:WP
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty pipes:hasObject ;
+                                               owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( pipes:Mine
+                                                                                  pipes:ProtectedStructure
+                                                                                )
+                                                                  ]
+                                             ]
+                                           ) ;
+                        rdf:type owl:Class ;
+                        rdfs:subClassOf pipes:ForbiddenWP
+                      ] ;
+  owl:annotatedProperty rdfs:subClassOf ;
+  owl:annotatedTarget pipes:ForbiddenWP ;
+  rdfs:comment "a waypoint where there is a mine is not allowed to be visited"
+] .
+
+
+[ owl:intersectionOf ( pipes:WP
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty pipes:hasObject ;
+                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                              owl:unionOf ( pipes:RustyPipe
+                                                            pipes:UnsupportedPipe
+                                                          )
+                                            ]
+                       ]
+                     ) ;
+  rdf:type owl:Class ;
+  rdfs:subClassOf pipes:HighRisk
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+pipes:y rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+pipes:x rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+pipes:z rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "trans flowconnect valve"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> pipes:OpenValve ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:y
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> pipes:y
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> pipes:y ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> pipes:z
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> pipes:z
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "trans flowconnected pipes"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> pipes:Pipe ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:y
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> pipes:y
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> pipes:y ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> pipes:z
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> pipes:z
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment ""^^xsd:string ;
+   rdfs:label "connected -> flowconnected"^^xsd:string ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:connectedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> pipes:y
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> pipes:flowConnectedTo ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> pipes:x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> pipes:y
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

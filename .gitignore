@@ -20,3 +20,5 @@ coordinator/benchmarkTemp.csv
 coordinator/*.class
 benchmark_runs/temp_evaluation.ods
 coordinator/test.owl
+implementation/test.owl
+examples/temp/
