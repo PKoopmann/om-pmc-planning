@@ -90,6 +90,8 @@ OBJECT valve valveEA -> pipes:valveEA
 OBJECT valve valveEC -> pipes:valveEC
 OBJECT valve valveEE -> pipes:valveEE
 OBJECT valve valveGD -> pipes:valveGD
+OBJECT valve valveGG -> pipes:valveGG
+OBJECT valve valveEI -> pipes:valveEI
 
 
 PREDICATE robotAt(robot, wp)	-> pipes:robotAt

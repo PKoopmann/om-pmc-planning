@@ -1,6 +1,6 @@
 (define (problem pipes_problem)
 	(:domain pipes)
-	(:objects aa ab ac ad ae ba bb bc bd be ca cb cc cd ce da db dc dd de ea eb ec ed ee auv valveBD valveEA valveEC valveEE valveGD)
+	(:objects aa ab ac ad ae ba bb bc bd be ca cb cc cd ce da db dc dd de ea eb ec ed ee auv valveBD valveEA valveEC valveEE valveGD valveGG valveEI)
 	(:init
 		(nextTo aa ab)
 		(nextTo aa ba)

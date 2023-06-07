@@ -1,6 +1,6 @@
 (define (problem pipes_problem)
 	(:domain pipes)
-	(:objects aa ab ac ad ae af ag ba bb bc bd be bf bg ca cb cc cd ce cf cg da db dc dd de df dg ea eb ec ed ee ef eg fa fb fc fd fe ff fg ga gb gc gd ge gf gg auv valveBD valveEA valveEC valveEE valveGD)
+	(:objects aa ab ac ad ae af ag ba bb bc bd be bf bg ca cb cc cd ce cf cg da db dc dd de df dg ea eb ec ed ee ef eg fa fb fc fd fe ff fg ga gb gc gd ge gf gg auv valveBD valveEA valveEC valveEE valveGD valveGG valveEI)
 	(:init
 		(nextTo aa ab)
 		(nextTo aa ba)
@@ -165,11 +165,13 @@
 		(open valveEC)
 		(open valveEE)
 		(open valveGD)
+		(open valveGG)
 		(locatedAt valveBD bd)
 		(locatedAt valveEA ea)
 		(locatedAt valveEC ec)
 		(locatedAt valveEE ee)
 		(locatedAt valveGD gd)
+		(locatedAt valveGG gg)
 	)
 	(:goal (and
 		;(robotAt auv gg) 
