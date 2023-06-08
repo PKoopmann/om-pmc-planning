@@ -75,6 +75,7 @@
 # pipes2 7-7
 ./runOMPlanning.sh ../examples/pipes/pipes2 pipes.ttl pipes.pddl pipesProblem7-7.pddl
 
+
 # pipes A-10
 ./runOMPlanning.sh ../examples/pipes/A-10 pipesA-10.ttl pipes.pddl pipesProblemA-10.pddl 200
 
@@ -120,6 +121,9 @@
 
 # pipes1 7-7
 ./runHornPlanning.sh ../examples/horn_pipes/pipes1 pipes.ttl pipes.pddl pipesProblem7-7.pddl
+
+# pipesB-5
+./runHornPlanning.sh ../examples/horn_pipes/B-5 pipes.ttl pipes.pddl pipesProblemB-5.pddl
 
 # queens 5-5
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/queens/original TTL.owl domain.pddl problem5-5.pddl

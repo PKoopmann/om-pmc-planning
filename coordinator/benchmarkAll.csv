@@ -446,3 +446,17 @@ id,method,name,folder,ontology,domain,problem
 445,horn_planning,pipesB-9,../examples/horn_pipes/B-9,pipes.ttl,pipes.pddl,pipesProblemB-9.pddl
 446,om_planning,pipesB-10,../examples/pipes/B-10,pipesB-10.ttl,pipes.pddl,pipesProblemB-10.pddl
 447,horn_planning,pipesB-10,../examples/horn_pipes/B-10,pipes.ttl,pipes.pddl,pipesProblemB-10.pddl
+448,om_planning,pipesC-4,../examples/pipes/C-4,pipesC-4.ttl,pipes.pddl,pipesProblemC-4.pddl
+449,horn_planning,pipesC-4,../examples/horn_pipes/C-4,pipes.ttl,pipes.pddl,pipesProblemC-4.pddl
+450,om_planning,pipesC-5,../examples/pipes/C-5,pipesC-5.ttl,pipes.pddl,pipesProblemC-5.pddl
+451,horn_planning,pipesC-5,../examples/horn_pipes/C-5,pipes.ttl,pipes.pddl,pipesProblemC-5.pddl
+452,om_planning,pipesC-6,../examples/pipes/C-6,pipesC-6.ttl,pipes.pddl,pipesProblemC-6.pddl
+453,horn_planning,pipesC-6,../examples/horn_pipes/C-6,pipes.ttl,pipes.pddl,pipesProblemC-6.pddl
+454,om_planning,pipesC-7,../examples/pipes/C-7,pipesC-7.ttl,pipes.pddl,pipesProblemC-7.pddl
+455,horn_planning,pipesC-7,../examples/horn_pipes/C-7,pipes.ttl,pipes.pddl,pipesProblemC-7.pddl
+456,om_planning,pipesC-8,../examples/pipes/C-8,pipesC-8.ttl,pipes.pddl,pipesProblemC-8.pddl
+457,horn_planning,pipesC-8,../examples/horn_pipes/C-8,pipes.ttl,pipes.pddl,pipesProblemC-8.pddl
+458,om_planning,pipesC-9,../examples/pipes/C-9,pipesC-9.ttl,pipes.pddl,pipesProblemC-9.pddl
+459,horn_planning,pipesC-9,../examples/horn_pipes/C-9,pipes.ttl,pipes.pddl,pipesProblemC-9.pddl
+460,om_planning,pipesC-10,../examples/pipes/C-10,pipesC-10.ttl,pipes.pddl,pipesProblemC-10.pddl
+461,horn_planning,pipesC-10,../examples/horn_pipes/C-10,pipes.ttl,pipes.pddl,pipesProblemC-10.pddl
