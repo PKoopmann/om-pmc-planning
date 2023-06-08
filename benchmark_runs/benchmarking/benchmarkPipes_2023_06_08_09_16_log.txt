@@ -1,0 +1,615 @@
+start time: 08.06.2023 at 09:16
+run ontology mediated planning for example with id 420 (folder: ../examples/pipes/A-4)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 163
+hook count: 16
+fluent count: 33
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 5.541544817s
+planning time: .150931391s
+total time: 6.171839063s
+analyzed states: 192
+plan length: no plan
+run horn planning for example with id 421 (folder: ../examples/horn_pipes/A-4)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: 1.163066226s
+planning time: .214458595s
+total time: 1.389595130s
+analyzed states: 192
+plan length: no plan
+run ontology mediated planning for example with id 422 (folder: ../examples/pipes/A-5)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 225
+hook count: 28
+fluent count: 54
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 9.590925963s
+planning time: .402000067s
+total time: 11.298566495s
+analyzed states: 72689
+plan length: 20
+run horn planning for example with id 423 (folder: ../examples/horn_pipes/A-5)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .753666533s
+planning time: 8.933394499s
+total time: 9.699816122s
+analyzed states: 230767
+plan length: 20
+run ontology mediated planning for example with id 424 (folder: ../examples/pipes/A-6)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 288
+hook count: 45
+fluent count: 76
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 18.026971096s
+planning time: 2.598842485s
+total time: 23.100703013s
+analyzed states: 602413
+plan length: 21
+run horn planning for example with id 425 (folder: ../examples/horn_pipes/A-6)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .820339072s
+planning time: 42.872360941s
+total time: 43.707271884s
+analyzed states: 634734
+plan length: 21
+run ontology mediated planning for example with id 426 (folder: ../examples/pipes/A-7)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 353
+hook count: 59
+fluent count: 104
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 21.554085738s
+planning time: 5.714263238s
+total time: 30.205211237s
+analyzed states: 1179859
+plan length: 21
+run horn planning for example with id 427 (folder: ../examples/horn_pipes/A-7)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .825966675s
+planning time: 175.874161268s
+total time: 176.714694966s
+analyzed states: 1959566
+plan length: 21
+run ontology mediated planning for example with id 428 (folder: ../examples/pipes/A-8)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 434
+hook count: 74
+fluent count: 134
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 42.668056315s
+planning time: 35.615445739s
+total time: 82.937030349s
+analyzed states: 7548522
+plan length: 21
+run horn planning for example with id 429 (folder: ../examples/horn_pipes/A-8)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: .855209313s
+planning time: >600s
+total time: -
+run ontology mediated planning for example with id 430 (folder: ../examples/pipes/A-9)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 535
+hook count: 92
+fluent count: 169
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 82.979215131s
+planning time: 84.084168204s
+total time: 173.768826218s
+analyzed states: 17297553
+plan length: 21
+run horn planning for example with id 431 (folder: ../examples/horn_pipes/A-9)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: .755354252s
+planning time: >600s
+total time: -
+run ontology mediated planning for example with id 432 (folder: ../examples/pipes/A-10)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+ontology size: 623
+hook count: 111
+fluent count: 207
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 126.150556850s
+planning time: 120.239258136s
+total time: 257.854878890s
+analyzed states: 23658273
+plan length: 21
+run horn planning for example with id 433 (folder: ../examples/horn_pipes/A-10)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: .796302892s
+planning time: >600s
+total time: -
+run ontology mediated planning for example with id 434 (folder: ../examples/pipes/B-4)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 161
+hook count: 20
+fluent count: 33
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 6.775944439s
+planning time: .131353901s
+total time: 7.651561784s
+analyzed states: 447
+plan length: 11
+run horn planning for example with id 435 (folder: ../examples/horn_pipes/B-4)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .745228172s
+planning time: .215692219s
+total time: .973103948s
+analyzed states: 434
+plan length: 11
+run ontology mediated planning for example with id 436 (folder: ../examples/pipes/B-5)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 209
+hook count: 29
+fluent count: 53
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 7.985627083s
+planning time: .139669231s
+total time: 9.150155658s
+analyzed states: 1471
+plan length: 13
+run horn planning for example with id 437 (folder: ../examples/horn_pipes/B-5)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .833037805s
+planning time: .314129969s
+total time: 1.160347935s
+analyzed states: 2624
+plan length: 13
+run ontology mediated planning for example with id 438 (folder: ../examples/pipes/B-6)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 271
+hook count: 41
+fluent count: 75
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 11.572473313s
+planning time: .161578420s
+total time: 13.306027312s
+analyzed states: 6673
+plan length: 14
+run horn planning for example with id 439 (folder: ../examples/horn_pipes/B-6)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .731593603s
+planning time: .524150222s
+total time: 1.268004289s
+analyzed states: 6752
+plan length: 14
+run ontology mediated planning for example with id 440 (folder: ../examples/pipes/B-7)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 357
+hook count: 54
+fluent count: 103
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 17.972983936s
+planning time: 124.314881936s
+total time: 144.861673817s
+analyzed states: 22688859
+plan length: 32
+run horn planning for example with id 441 (folder: ../examples/horn_pipes/B-7)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: .789426577s
+planning time: >600s
+total time: -
+run ontology mediated planning for example with id 442 (folder: ../examples/pipes/B-8)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 442
+hook count: 71
+fluent count: 133
+repair count: 1
+created new domain
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: 28.223647313s
+planning time: >600s
+total time: -
+run horn planning for example with id 443 (folder: ../examples/horn_pipes/B-8)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: .817610560s
+planning time: >600s
+total time: -
+run ontology mediated planning for example with id 444 (folder: ../examples/pipes/B-9)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 537
+hook count: 88
+fluent count: 168
+repair count: 1
+created new domain
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: 94.960547501s
+planning time: >600s
+total time: -
+run horn planning for example with id 445 (folder: ../examples/horn_pipes/B-9)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: .810780776s
+planning time: >600s
+total time: -
+run ontology mediated planning for example with id 446 (folder: ../examples/pipes/B-10)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+ontology size: 619
+hook count: 110
+fluent count: 206
+repair count: 1
+created new domain
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: 140.702886571s
+planning time: >600s
+total time: -
+run horn planning for example with id 447 (folder: ../examples/horn_pipes/B-10)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+timeout for rewriting generator after 600 seconds
+reasoning time: .780115508s
+planning time: >600s
+total time: -
+run ontology mediated planning for example with id 448 (folder: ../examples/pipes/C-4)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 152
+hook count: 16
+fluent count: 34
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 5.331917178s
+planning time: .128348229s
+total time: 5.881305119s
+analyzed states: 213
+plan length: 12
+run horn planning for example with id 449 (folder: ../examples/horn_pipes/C-4)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .786644579s
+planning time: .206312445s
+total time: 1.005866972s
+analyzed states: 638
+plan length: 12
+run ontology mediated planning for example with id 450 (folder: ../examples/pipes/C-5)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 209
+hook count: 26
+fluent count: 52
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 7.094469433s
+planning time: .139869133s
+total time: 8.057003630s
+analyzed states: 2250
+plan length: 15
+run horn planning for example with id 451 (folder: ../examples/horn_pipes/C-5)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .809949317s
+planning time: .317839337s
+total time: 1.140607760s
+analyzed states: 3690
+plan length: 15
+run ontology mediated planning for example with id 452 (folder: ../examples/pipes/C-6)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 269
+hook count: 37
+fluent count: 75
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 9.194649163s
+planning time: .186780278s
+total time: 10.579109038s
+analyzed states: 16384
+plan length: no plan
+run horn planning for example with id 453 (folder: ../examples/horn_pipes/C-6)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .736116699s
+planning time: 1.752016276s
+total time: 2.500058673s
+analyzed states: 32768
+plan length: no plan
+run ontology mediated planning for example with id 454 (folder: ../examples/pipes/C-7)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 331
+hook count: 50
+fluent count: 102
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 13.019131283s
+planning time: .278248279s
+total time: 15.062404722s
+analyzed states: 40960
+plan length: no plan
+run horn planning for example with id 455 (folder: ../examples/horn_pipes/C-7)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .745994685s
+planning time: 11.452091820s
+total time: 12.210565802s
+analyzed states: 163840
+plan length: no plan
+run ontology mediated planning for example with id 456 (folder: ../examples/pipes/C-8)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 399
+hook count: 65
+fluent count: 132
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 20.801721704s
+planning time: .922063203s
+total time: 24.273055487s
+analyzed states: 229376
+plan length: no plan
+run horn planning for example with id 457 (folder: ../examples/horn_pipes/C-8)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .808770127s
+planning time: 36.925231100s
+total time: 37.748103055s
+analyzed states: 458752
+plan length: no plan
+run ontology mediated planning for example with id 458 (folder: ../examples/pipes/C-9)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+ontology size: 479
+hook count: 82
+fluent count: 166
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 29.405018107s
+planning time: 2.175533242s
+total time: 35.152142962s
+analyzed states: 581632
+plan length: no plan
+run horn planning for example with id 459 (folder: ../examples/horn_pipes/C-9)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .761614448s
+planning time: 118.713302582s
+total time: 119.489643558s
+analyzed states: 1163264
+plan length: no plan
+run ontology mediated planning for example with id 460 (folder: ../examples/pipes/C-10)
+time limit is set to 600s
+delete misc folders
+start generating rewritings
+compute hooks 0 til 100
+compute hooks 100 til 200
+compute hooks 200 til 300
+ontology size: 560
+hook count: 101
+fluent count: 204
+repair count: 1
+created new domain
+start planning
+finished planning
+reasoning time: 58.185355341s
+planning time: 6.431918722s
+total time: 71.965531910s
+analyzed states: 1689493
+plan length: 34
+run horn planning for example with id 461 (folder: ../examples/horn_pipes/C-10)
+time limit is set to 600s
+delete misc folders
+start compiling Horn axioms
+finished compiling Horn axioms
+start planning
+finished planning
+reasoning time: .747496798s
+planning time: 443.802258416s
+total time: 444.564382746s
+analyzed states: 3517892
+plan length: 34
+total time to run benchmark set: 8081.817800553s
