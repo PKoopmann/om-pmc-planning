@@ -1,0 +1,7 @@
+(pick-up pr2 a)
+(unstack pr2 c b)
+(stack pr2 c d)
+(pick-up pr2 b)
+(stack pr2 b c)
+(stack pr2 a b)
+; cost = 6 (unit cost)
