@@ -3,7 +3,7 @@
 # year: 2023
 
 # usage: ./runOMPlanning.sh FOLDER ONTOLOGY PDDL-DOMAIN PDDL-PROBLEM [TIME-BOUND (in s) DELETE-MISC]
-# cave: as current: optin -delete-misc can only be added if time bound is used
+# cave: as current: option -delete-misc can only be added if time bound is used
 
 
 

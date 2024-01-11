@@ -135,3 +135,7 @@
 ./runHornPlanning.sh ../examples/horn_dl_benchmarks/queens/original TTL.owl domain.pddl problem8-4.pddl
 
 
+
+# performance benchmark
+
+./runBenchmark.sh benchmarkPerformanceCheck.csv 10
