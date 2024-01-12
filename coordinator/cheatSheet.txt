@@ -139,3 +139,7 @@
 # performance benchmark
 
 ./runBenchmark.sh benchmarkPerformanceCheck.csv 10
+
+
+# build jar with sbt
+sbt assembly
