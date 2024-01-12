@@ -148,7 +148,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
   }
 
   def updateReasoner(ontology: OWLOntology) = {
-    var oldOntology = reasoner.getRootOntology
+    val oldOntology = reasoner.getRootOntology
     oldOntology.removeAxioms(oldOntology.getAxioms())
     oldOntology.addAxioms(ontology.getAxioms())
     reasoner.flush()
