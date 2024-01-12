@@ -1,0 +1,10 @@
+id,method,name,folder,ontology,domain,problem,reasoning_time,planning_time,total_time,plan_length,analyzed_states,ontology_axioms,hooks,fluents,repairs
+1,om_planning,drone5-5,../examples/performance_check/drone5-5,drone5-5.ttl,drone.pddl,droneProblem5-5.pddl, >600, -, -,-,-, 221, 1300, 52, 1
+2,om_planning,cats6,../examples/performance_check/cats6,cats6.ttl,cats.pddl,catsProblem6.pddl, >600, -, -,-,-, 51, 12, 24,
+3,om_planning,elevator16,../examples/performance_check/elevator16,elevator16.ttl,elevator.pddl,elevatorProblem16.pddl, >600, -, -,-,-, 102, 832, 48, 64
+4,om_planning,pipesA-8,../examples/performance_check/pipesA-8,pipesA-8.ttl,pipes.pddl,pipesProblemA-8.pddl, 39.994183437, 37.427755298, 82.042312158, 21, 7548522, 434, 74, 134, 1
+5,om_planning,pipesB-6,../examples/performance_check/pipesB-6,pipesB-6.ttl,pipes.pddl,pipesProblemB-6.pddl, 11.256536589, .163801145, 12.994870158, 14, 6673, 271, 41, 75, 1
+6,om_planning,queens5-1,../examples/performance_check/queens5-1,queens5-1.ttl,queens.pddl,problem5-1.pddl, 51.814421226, .339168023, 53.724964613, 0, 1, 143, 675, 25, 1
+7,om_planning,robot3,../examples/performance_check/robot3,TTL3.owl,robotDomain3.pddl,robotProblem3.pddl, 107.710995134, .155460221, 126.196047980, 3, 15, 61, 20, 20, 49
+8,om_planning,robotConj6,../examples/performance_check/robotConj6,TTL6.owl,robotDomain6.pddl,robotProblem6.pddl, >600, -, -,-,-, 120, 38, 38,
+9,om_planning,taskAssign3,../examples/performance_check/taskAssign3,task3.ttl,domain.pddl,taskProblem3.pddl, >600, -, -,-,-, 66, 9, 27, 343
