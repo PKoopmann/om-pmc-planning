@@ -7,7 +7,7 @@ import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import openllet.owlapi.OpenlletReasonerFactory
 import org.semanticweb.HermiT.{Configuration, ReasonerFactory}
 import org.semanticweb.elk.owlapi.ElkReasonerFactory
-import org.semanticweb.owlapi.model.{IRI, OWLAxiom, OWLClass, OWLEntity, OWLLogicalAxiom, OWLOntology, OWLOntologyManager}
+import org.semanticweb.owlapi.model.{IRI, OWLAxiom, OWLClass, OWLDataFactory, OWLEntity, OWLLogicalAxiom, OWLOntology, OWLOntologyManager}
 import org.semanticweb.owlapi.profiles.OWL2ELProfile
 import org.semanticweb.owlapi.reasoner.{OWLReasoner, OWLReasonerConfiguration, OWLReasonerFactory}
 import uk.ac.manchester.cs.owlapi.modularity.{ModuleType, SyntacticLocalityModuleExtractor}
@@ -15,6 +15,7 @@ import uk.ac.manchester.cs.owlapi.modularity.{ModuleType, SyntacticLocalityModul
 import java.io.{File, FileOutputStream}
 import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
 import scala.collection.convert.ImplicitConversions.`set asScala`
+import scala.collection.mutable
 import scala.collection.mutable.Map
 
 object FormulaGenerator {
@@ -35,8 +36,8 @@ object FormulaGenerator {
     val module =
       getModule(ontology,
         hook2axiom.hooks()
-          .map(hook2axiom.axiom(_))
-          .flatMap(_.getSignature().asScala))
+          .map(hook2axiom.axiom)
+          .flatMap(_.getSignature.asScala))
 
     //println("Number of axioms in module: "+module.getAxiomCount())
     //println("Axioms in module1" + SimpleOWLFormatter.format(module))
@@ -83,7 +84,7 @@ object FormulaGenerator {
     result
   }
 
-  def inEL(ontology: OWLOntology) = {
+  def inEL(ontology: OWLOntology): Boolean = {
     val profileReport = (new OWL2ELProfile).checkOntology(ontology);
     val result = profileReport.isInProfile()
     // if (!result)
@@ -91,7 +92,7 @@ object FormulaGenerator {
     result
   }
 
-  def getModule(ontology: OWLOntology, signature: Set[OWLEntity]) = {
+  def getModule(ontology: OWLOntology, signature: Set[OWLEntity]): OWLOntology = {
 //    println("Signature: "+signature)
     val moduleExtractor =
       new SyntacticLocalityModuleExtractor(
@@ -115,12 +116,12 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
                                 ontologyManager: OWLOntologyManager,
                                 reasonerFactory: OWLReasonerFactory) {
 
-  val relevantAxioms = axiom2formula.axioms
+  val relevantAxioms: Set[OWLLogicalAxiom] = axiom2formula.axioms
   var reasoner: OWLReasoner = _
   var ontology: OWLOntology = _
   var staticReasoner: OWLReasoner = _
   var staticOntology: OWLOntology = _
-  val factory = ontologyManager.getOWLDataFactory
+  val factory: OWLDataFactory = ontologyManager.getOWLDataFactory
 
   protected def initExplanationGenerator(ontology: OWLOntology): Unit
 
@@ -130,7 +131,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   protected def getExplanations(axiom: OWLLogicalAxiom): Iterable[_ <: Set[OWLLogicalAxiom]]
 
-  def getReasoner(ontology: OWLOntology) =
+  def getReasoner(ontology: OWLOntology): OWLReasoner =
     if(reasonerFactory.isInstanceOf[ReasonerFactory]){
       val config = new Configuration();
       config.throwInconsistentOntologyException=false
@@ -139,9 +140,10 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     else
       reasonerFactory.createReasoner(ontology)
 
-  def getHooks() = hook2axiom.hooks()
 
-  def initReasoner(ontology: OWLOntology) = {
+  def getHooks(): Set[String] = hook2axiom.hooks()
+
+  def initReasoner(ontology: OWLOntology): Unit = {
     this.ontology=ontology
 
     reasoner = getReasoner(ontology)
@@ -149,7 +151,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     initExplanationGenerator(ontology)
   }
 
-  def updateReasoner(ontology: OWLOntology) = {
+  def updateReasoner(ontology: OWLOntology): Unit = {
     val oldOntology = reasoner.getRootOntology
     //oldOntology.removeAxioms(oldOntology.getAxioms())
     //oldOntology.addAxioms(ontology.getAxioms())
@@ -160,8 +162,8 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     val addAxioms = newAxioms.diff(oldAxioms)
 
     // apply changes to ontology
-    oldOntology.removeAxioms(deleteAxioms asJava)
-    oldOntology.addAxioms(addAxioms asJava)
+    oldOntology.removeAxioms(deleteAxioms.asJava)
+    oldOntology.addAxioms(addAxioms.asJava)
 
     reasoner.flush()
 
@@ -180,7 +182,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     dnfToStr(generateInconsistentDNF());
   }
 
-  def generateFormula(hook: String) = {
+  private def generateFormula(hook: String) = {
     dnfToStr(generateDNF(hook))
   }
 
@@ -245,7 +247,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     // only add explanation, if it is not a subset of an already computed explanation
     if (!dnf_new.exists(_.forall(rel))) {
-      dnf_new += rel.toSet
+      dnf_new += rel
     }
     dnf_new
   }
@@ -283,11 +285,11 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   // map to store generated rewritings
   // maps from hook axioms to explanation DNFs
-  private var repairCentricRewritings : Option[Map[OWLLogicalAxiom, Set[Set[OWLLogicalAxiom]]]] = None
+  private var repairCentricRewritings : Option[mutable.Map[OWLLogicalAxiom, Set[Set[OWLLogicalAxiom]]]] = None
 
   // iterates over all repairs and calculates the rewritings for all hooks
-  def generateRepairCentricRewritings() = {
-    var rewritings : Map[OWLLogicalAxiom, Set[Set[OWLLogicalAxiom]]] = Map()
+  private def generateRepairCentricRewritings() = {
+    var rewritings : mutable.Map[OWLLogicalAxiom, Set[Set[OWLLogicalAxiom]]] = mutable.Map()
 
     // get repairs
     val repairs = getRepairs()
@@ -337,12 +339,10 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     if (repairCentricRewritings.isEmpty)
       generateRepairCentricRewritings()
 
-    if (repairCentricRewritings.get.contains(axiom)) {
-      //println(repairCentricRewritings.get(axiom))
-      return repairCentricRewritings.get(axiom)
-    } else {
-      return Set(Set())
-    }
+    if (repairCentricRewritings.get.contains(axiom))
+       repairCentricRewritings.get(axiom)
+    else
+       Set(Set())
   }
 
   var inconsistentDNF: Option[Set[Set[OWLLogicalAxiom]]] = None
@@ -377,7 +377,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
         // forward subsumption deletion
         if (!dnf.exists(_.forall(rel)))
-          dnf += rel.toSet
+          dnf += rel
       }
 
     }
@@ -404,7 +404,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       //println(dnf.toList)
       repairsSet = Some(hittingSet(dnf.toList))
     }
-    return repairsSet.get
+    repairsSet.get
   }
 
   def hittingSet[T](sets: List[Set[T]]): Set[Set[T]] = sets match {
@@ -412,7 +412,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     case head :: Nil =>
       //      println("A: "+ head.map(Set(_)))
       head.map(Set(_))
-    case head :: rest => {
+    case head :: rest =>
       val restSet = hittingSet(rest)
       val b = restSet.flatMap {set =>
         if (set.intersect(head).isEmpty) {
@@ -428,14 +428,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       }
       b
 
-      /*val a = head.flatMap { first =>
-        //	println("B: "+ hittingSet(rest).map(_+first))
-        hittingSet(rest).map(_ + first)
-      }
-      //	println("C: "+a)
-      a
-      */
-    }
+
   }
 
   def dnfToStr(dnf: Set[Set[OWLLogicalAxiom]]): String = {
