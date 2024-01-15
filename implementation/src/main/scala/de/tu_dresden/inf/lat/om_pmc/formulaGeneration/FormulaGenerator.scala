@@ -14,6 +14,8 @@ import uk.ac.manchester.cs.owlapi.modularity.{ModuleType, SyntacticLocalityModul
 
 import java.io.{File, FileOutputStream}
 import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
+import scala.collection.convert.ImplicitConversions.`set asScala`
+import scala.collection.mutable.Map
 
 object FormulaGenerator {
 
@@ -149,12 +151,23 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   def updateReasoner(ontology: OWLOntology) = {
     val oldOntology = reasoner.getRootOntology
-    oldOntology.removeAxioms(oldOntology.getAxioms())
-    oldOntology.addAxioms(ontology.getAxioms())
+    //oldOntology.removeAxioms(oldOntology.getAxioms())
+    //oldOntology.addAxioms(ontology.getAxioms())
+
+    val oldAxioms = oldOntology.getAxioms()
+    val newAxioms = ontology.getAxioms()
+    val deleteAxioms = oldAxioms.diff(newAxioms)
+    val addAxioms = newAxioms.diff(oldAxioms)
+
+    // apply changes to ontology
+    oldOntology.removeAxioms(deleteAxioms asJava)
+    oldOntology.addAxioms(addAxioms asJava)
+
     reasoner.flush()
 
     synchronizeExplanationGenerator()
   }
+
 
   def generateAllFormulaDefinitions(): Iterable[String] = {
     List("formula inconsistent = (" + generateInconsistencyFormula() + ")") ++
@@ -174,6 +187,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
   private def generateDNF(hook: String): Set[Set[OWLLogicalAxiom]] =
     generateDNF(hook2axiom.axiom(hook))
 
+
   def generateDNF(axiom: OWLLogicalAxiom): Set[Set[OWLLogicalAxiom]] =
   {
     val inconsistentDNF = generateInconsistentDNF()
@@ -191,61 +205,9 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       println("entailed in static ontology")
     }
     else {
-      val axioms = ontology.getAxioms()
-
-      val repairs = getRepairs()
-
-
-      println("Number of repairs: " + repairs.size)
-      //println("Repairs: " + repairs)
-
-      var counter = 0
-
-      //println("Ontology:")
-      //println(SimpleOWLFormatter.format(ontology))
-
-      //println("Relevant axioms: "+relevantAxioms.map(SimpleOWLFormatter.format))
-
-      repairs.foreach { repair =>
-        counter += 1
-        //println("Using repair nr. "+counter)
-        val repairedAxioms = axioms.asScala -- repair
-        val repairedOntology = ontologyManager.createOntology(repairedAxioms.asJava)
-
-        updateReasoner(repairedOntology)
-
-        val consistent = reasoner.isConsistent()
-        val entailed = reasoner.isEntailed(axiom)
-
-        //println("Consistency of ontology: " + consistent)
-        //println("Entailment: " + entailed)
-        if (!consistent || entailed) {
-          val start = System.currentTimeMillis
-          //println("Generating Explanations for " + axiom)
-          val explanations = getExplanations(axiom)
-
-          explanations.foreach { exp =>
-            // println("Adding new explanation")
-            //println("Explanations before: "+dnf.size)
-
-            val rel = exp.filter(relevantAxioms)
-            dnf = dnf.filterNot(rel.forall)
-            if (!dnf.exists(_.forall(rel))) {
-              dnf += rel.toSet
-              //println("Explanations after: "+dnf.size)
-            }
-          }
-
-        }
-      }
-      val oldOntology = ontologyManager.createOntology(axioms)
-      updateReasoner(oldOntology)
+      //dnf ++= generateDNFHookCentric(axiom)
+      dnf ++= generateDNFRepairCentric(axiom)
     }
-
-    //ontology=originalOntology
-
-    //      initReasoner()
-    //      reasoner.flush()
 
     dnf --= inconsistentDNF
 
@@ -259,12 +221,135 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
   }
 
 
+  // returns the explanation for an OWL axiom
+  // CAVE: uses the current set-up of the reasoner and it MUST NOT change the setup during the process!
+  private def explanationWithCurrentReasoner(axiom : OWLLogicalAxiom) : Set[Set[OWLLogicalAxiom]] = {
+
+    var dnf = Set[Set[OWLLogicalAxiom]]()
+
+    val consistent = reasoner.isConsistent()
+    val entailed = reasoner.isEntailed(axiom)
+
+    if (!consistent || entailed) {
+      val explanations = getExplanations(axiom)
+      dnf ++= explanations
+    }
+    dnf
+  }
+
+  private def addExplanationToDNF(dnf: Set[Set[OWLLogicalAxiom]], explanation : Set[OWLLogicalAxiom]) : Set[Set[OWLLogicalAxiom]] = {
+    // filter explanation to relevant axioms
+    val rel = explanation.filter(relevantAxioms)
+    // remove all explanations that are supersets of the found explanations
+    var dnf_new = dnf.filterNot(rel.forall)
+
+    // only add explanation, if it is not a subset of an already computed explanation
+    if (!dnf_new.exists(_.forall(rel))) {
+      dnf_new += rel.toSet
+    }
+    dnf_new
+  }
+
+  // generate DNF by iterating over repairs for one hook at a time
+  def generateDNFHookCentric(axiom: OWLLogicalAxiom): Set[Set[OWLLogicalAxiom]] = {
+    var dnf = Set[Set[OWLLogicalAxiom]]()
+
+    val axioms = ontology.getAxioms()
+
+    val repairs = getRepairs()
+    println("Number of repairs: " + repairs.size)
+
+    repairs.foreach { repair =>
+
+      // compute repaired ontology
+      val repairedAxioms = axioms.asScala -- repair
+      val repairedOntology = ontologyManager.createOntology(repairedAxioms.asJava)
+      updateReasoner(repairedOntology)
+      // get explanations using the repaired ontology
+      val explanations =  explanationWithCurrentReasoner(axiom)
+
+      // add all found explanations to DNF
+      explanations.foreach { exp =>
+        dnf = addExplanationToDNF(dnf, exp)
+      }
+
+    }
+    val oldOntology = ontologyManager.createOntology(axioms)
+    updateReasoner(oldOntology)
+
+    dnf
+  }
+
+
+  // map to store generated rewritings
+  // maps from hook axioms to explanation DNFs
+  private var repairCentricRewritings : Option[Map[OWLLogicalAxiom, Set[Set[OWLLogicalAxiom]]]] = None
+
+  // iterates over all repairs and calculates the rewritings for all hooks
+  def generateRepairCentricRewritings() = {
+    var rewritings : Map[OWLLogicalAxiom, Set[Set[OWLLogicalAxiom]]] = Map()
+
+    // get repairs
+    val repairs = getRepairs()
+    println("Number of repairs: " + repairs.size)
+
+
+    val axioms = ontology.getAxioms()
+
+    // iterate through all repairs
+    var counter = 0
+    repairs.foreach { repair =>
+      counter += 1
+      println("Computing hooks for repair nr. "+counter)
+
+      val repairedAxioms = axioms.asScala -- repair
+      val repairedOntology = ontologyManager.createOntology(repairedAxioms.asJava)
+
+      updateReasoner(repairedOntology)
+
+      hook2axiom.hooks().foreach { hook =>
+        val axiom = hook2axiom.axiom(hook)
+
+        // find axiom (if we already have rewritings for it
+        var dnf : Set[Set[OWLLogicalAxiom]] = {
+          if(rewritings.contains(axiom))
+            rewritings(axiom)
+          else
+            Set()
+        }
+
+        // get explanations w.r.t. the current (repaired) ontology
+        val explanations = explanationWithCurrentReasoner(axiom)
+        explanations.foreach {exp =>
+          dnf = addExplanationToDNF(dnf, exp)
+        }
+        // add updated explanation DNF to the map
+        rewritings += (axiom -> dnf)
+
+      }
+    }
+
+    repairCentricRewritings = Some(rewritings)
+  }
+  // generate DNF by iterating over all hooks for one rewriting at a time
+  def generateDNFRepairCentric(axiom: OWLLogicalAxiom) : Set[Set[OWLLogicalAxiom]] = {
+    // generate repairs if it had not been done in the past
+    if (repairCentricRewritings.isEmpty)
+      generateRepairCentricRewritings()
+
+    if (repairCentricRewritings.get.contains(axiom)) {
+      //println(repairCentricRewritings.get(axiom))
+      return repairCentricRewritings.get(axiom)
+    } else {
+      return Set(Set())
+    }
+  }
 
   var inconsistentDNF: Option[Set[Set[OWLLogicalAxiom]]] = None
 
   def generateInconsistentDNF(): Set[Set[OWLLogicalAxiom]] = {
 
-    if(!inconsistentDNF.isEmpty)
+    if(inconsistentDNF.isDefined)
       return inconsistentDNF.get
 
     var dnf = Set[Set[OWLLogicalAxiom]]()
@@ -302,7 +387,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   var repairsSet: Option[Set[Set[OWLLogicalAxiom]]] = None
 
-  def getRepairs(): Set[Set[OWLLogicalAxiom]] = {
+  private def getRepairs(): Set[Set[OWLLogicalAxiom]] = {
     // safe repairs to not compute them all over again
     if(repairsSet.isDefined)
       return repairsSet.get
@@ -313,7 +398,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     //println("----------")
     //println(dnf.mkString("\n"))
     //println("-----------")
-    if (dnf.size == 0) {
+    if (dnf.isEmpty) {
       repairsSet = Some(Set(Set()))
     } else {
       //println(dnf.toList)
@@ -367,7 +452,6 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       clause.map(c => toStr(c)).mkString("(", " & ", ")")
   }
 
-  def toStr(axiom: OWLLogicalAxiom) =
+  def toStr(axiom: OWLLogicalAxiom): String =
     axiom2formula.formula(axiom)
-
 }
