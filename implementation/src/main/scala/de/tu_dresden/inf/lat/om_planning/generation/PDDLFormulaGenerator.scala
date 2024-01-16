@@ -17,13 +17,14 @@ import scala.collection.JavaConverters.setAsJavaSetConverter
  * @param fluentMap
  * @param hookPredicates
  */
-class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
+class PDDLFormulaGenerator(override val formulaGenerator: FormulaGenerator,
                            constantReasoner: OWLReasoner,
                            factory: OWLDataFactory,
                            fluentMap: FluentMap,
                            hookPredicates: Seq[HookPredicate]) extends PlanningFormulaGenerator(hookPredicates) {
 
   val hookInstantiator = new HookInstantiator(constantReasoner,factory)
+
   val tab = " "*4
 
   def inconsistencyDefinition() = {
@@ -54,6 +55,18 @@ class PDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
     tab + ")\n"
   }
 
+  def generateRelevantHookNames(hookPredicate: HookPredicate, start: Int, end: Int) = {
+    val assignments = sortAssignments(hookInstantiator.validAssignments(hookPredicate))
+    val slice  = assignments.slice(start, end)
+    var result = Set[OWLLogicalAxiom]()
+
+    result ++= slice.flatMap { ass =>
+      hookInstantiator.instantiateQuery(hookPredicate, ass)
+    }
+
+    (result, assignments.size)
+
+  }
 
   override def generateHookFormulas(hookPredicate: HookPredicate, start: Int, end: Int) = {
     var result = List[String]()

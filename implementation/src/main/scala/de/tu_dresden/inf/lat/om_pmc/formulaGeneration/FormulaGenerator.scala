@@ -117,6 +117,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
                                 reasonerFactory: OWLReasonerFactory) {
 
   val relevantAxioms: Set[OWLLogicalAxiom] = axiom2formula.axioms
+  var relevantHooks: Set[OWLLogicalAxiom] = hook2axiom.hooks().map(hook2axiom.axiom)
   var reasoner: OWLReasoner = _
   var ontology: OWLOntology = _
   var staticReasoner: OWLReasoner = _
@@ -142,6 +143,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
 
   def getHooks(): Set[String] = hook2axiom.hooks()
+
 
   def initReasoner(ontology: OWLOntology): Unit = {
     this.ontology=ontology
@@ -309,8 +311,9 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
       updateReasoner(repairedOntology)
 
-      hook2axiom.hooks().foreach { hook =>
-        val axiom = hook2axiom.axiom(hook)
+      //hook2axiom.hooks().foreach { hook =>
+      relevantHooks.foreach { axiom =>
+        //val axiom = hook2axiom.axiom(hook)
 
         // find axiom (if we already have rewritings for it
         var dnf : Set[Set[OWLLogicalAxiom]] = {
@@ -341,8 +344,10 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     if (repairCentricRewritings.get.contains(axiom))
        repairCentricRewritings.get(axiom)
-    else
+    else {
+      println("WARNING: no rewritings for " + axiom + " where computed.")
        Set(Set())
+    }
   }
 
   var inconsistentDNF: Option[Set[Set[OWLLogicalAxiom]]] = None

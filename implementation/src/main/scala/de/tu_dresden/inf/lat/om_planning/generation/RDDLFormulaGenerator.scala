@@ -14,7 +14,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner
  * @param fluentMap
  * @param hookPredicates
  */
-class RDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
+class RDDLFormulaGenerator(override val formulaGenerator: FormulaGenerator,
                            constantReasoner: OWLReasoner,
                            factory: OWLDataFactory,
                            fluentMap: FluentMap,
@@ -32,6 +32,20 @@ class RDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
   def generateInconsistencyFormula() =
     dnfToStr(formulaGenerator.generateInconsistentDNF())
 
+
+  def generateRelevantHookNames(hookPredicate: HookPredicate, start: Int, end: Int) = {
+    val assignments = sortAssignments(hookInstantiator.validAssignments(hookPredicate))
+    val slice  = assignments.slice(start, end)
+    var result = Set[OWLLogicalAxiom]()
+
+    result ++= slice.flatMap { ass =>
+      hookInstantiator.instantiateQuery(hookPredicate, ass)
+    }
+
+    (result, assignments.size)
+
+  }
+
   override def generateHookFormulas(hookPredicate: HookPredicate) = {
     tab +hookPredicate.name + hookPredicate.variables.mkString(" ", " ", " =")+ "\n"+
       tab*2 + "if (inconsistent)\n" +
@@ -47,6 +61,8 @@ class RDDLFormulaGenerator(formulaGenerator: FormulaGenerator,
       tab*2 + "false;\n" +
     "\n"
   }
+
+
 
   override def generateHookFormulas(hookPredicate: HookPredicate, start: Int, end: Int) = {
     var result = List[String]()
