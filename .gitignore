@@ -18,6 +18,8 @@ examples/*/*/*/misc
 coordinator/temp.log
 coordinator/benchmarkTemp.csv
 coordinator/*.class
+coordinator/evaluation/*.class
+
 benchmark_runs/temp_evaluation.ods
 coordinator/test.owl
 implementation/test.owl

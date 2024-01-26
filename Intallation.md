@@ -30,6 +30,7 @@ install
 `cd om-pmc-formula-generation`
     - build from source
 `cd implementation`
+- optional: create `logback.xml`file in folder `src/main/resources`to prevent OWL API from logging (which will be dozens of MBs)
 - build the tool
 `sbt compile`
 `sbt assembly`
