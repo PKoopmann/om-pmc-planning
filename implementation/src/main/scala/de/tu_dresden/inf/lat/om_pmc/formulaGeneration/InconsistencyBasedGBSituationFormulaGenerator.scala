@@ -2,7 +2,8 @@ package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
 import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
-import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLLogicalAxiom, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom}
+import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLLogicalAxiom, OWLOntology,
+  OWLOntologyManager, OWLSubClassOfAxiom, OWLObjectPropertyAssertionAxiom}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
 import java.io.{File, FileOutputStream}
@@ -30,11 +31,19 @@ class InconsistencyBasedGBSituationFormulaGenerator(
     if(needsToAddAxiom)
       ontology.addAxiom(negated)
 
-  /*  println("Needs to add axiom: "+needsToAddAxiom)
-    println("negatedAxiom: "+SimpleOWLFormatter.format(negated))
-*/
+    //println("Needs to add axiom: "+needsToAddAxiom)
+    //println("negatedAxiom: "+SimpleOWLFormatter.format(negated))
+
     initReasoner(ontology)
     reasoner.flush()
+
+    /*
+    println("ontology: ")
+   println("--------------");
+   println(SimpleOWLFormatter.format(ontology))
+   println(ontology.getAxiomCount()+" axioms");
+*/
+
 
     ontologyManager.saveOntology(ontology, new FileOutputStream(new File("test.owl")))
 
@@ -46,7 +55,15 @@ class InconsistencyBasedGBSituationFormulaGenerator(
 
     assert(result.size>0)
 
-    //System.out.println("Explanations found: "+result.size)
+    System.out.println("Explanations found: "+result.size)
+   /* result.foreach { r =>
+      r.foreach { a =>
+        print(SimpleOWLFormatter.format(a))
+      }
+      println()
+    }
+
+    */
 
     /*if(result.size==0)
       System.out.println("WARNING: Hook that is never satisfied for axiom "+SimpleOWLFormatter.format(axiom))
@@ -79,6 +96,11 @@ class InconsistencyBasedGBSituationFormulaGenerator(
         ),
         factory.getOWLAnonymousIndividual
       )
+    case op: OWLObjectPropertyAssertionAxiom =>
+      factory.getOWLNegativeObjectPropertyAssertionAxiom(
+        op.getProperty, op.getSubject, op.getObject
+      )
+
     case _ => assert(false, "NOT SUPPORTED YET: "+axiom)
       null
   }

@@ -1,5 +1,6 @@
 package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
+import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.FormulaGenerator.{Methods, explanationMethod}
 import de.tu_dresden.inf.lat.om_pmc.ifm.IfmSituationFormulaGenerator.Methods.{BLACK_BOX, Value}
 import de.tu_dresden.inf.lat.om_pmc.ifm.{IfmBlackboxSituationFormulaGenerator, IfmGlassboxSituationFormulaGenerator, IfmInconsistencyBasedGBSituationFormulaGenerator, IfmSituationFormulaGenerator}
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
@@ -21,7 +22,9 @@ import scala.collection.mutable.Map
 object FormulaGenerator {
 
   val PREFIX = "http://lat.inf.tu-dresden.de/OM-PMC#"
+  //var explanationMethod = Methods.INC_BASED // Methods.BLACK_BOX
   var explanationMethod = Methods.BLACK_BOX // Methods.INC_BASED
+
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
@@ -209,8 +212,14 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       println("entailed in static ontology")
     }
     else {
-      //dnf ++= generateDNFHookCentric(axiom)
-      dnf ++= generateDNFRepairCentric(axiom)
+      // different approaches for different reasoning methods
+      val dnfAdd = explanationMethod match {
+        case Methods.INC_BASED =>
+          generateDNFIncBased(axiom)
+        case _ =>
+          generateDNFRepairCentric(axiom)
+      }
+      dnf ++= dnfAdd
     }
 
     dnf --= inconsistentDNF
@@ -252,6 +261,26 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
       dnf_new += rel
     }
     dnf_new
+  }
+
+
+  // generate DNF by using inconsistency based approach
+  def generateDNFIncBased(axiom: OWLLogicalAxiom) : Set[Set[OWLLogicalAxiom]] = {
+    var dnf = Set[Set[OWLLogicalAxiom]]()
+    println("explain using inc. based method")
+    val explanations = getExplanations(axiom)
+    explanations.foreach { exp =>
+      val rel = exp.filter(relevantAxioms)
+
+      // backward subsumption deletion
+      dnf = dnf.filterNot(rel.forall)
+
+      // forward subsumption deletion
+      if (!dnf.exists(_.forall(rel)))
+        dnf += rel
+    }
+
+    dnf
   }
 
   // generate DNF by iterating over repairs for one hook at a time

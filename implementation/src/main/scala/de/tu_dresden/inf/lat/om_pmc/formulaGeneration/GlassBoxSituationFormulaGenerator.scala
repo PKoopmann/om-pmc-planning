@@ -22,11 +22,16 @@ class GlassboxCapableSituationFormulaGenerator(
   //initExplanationGenerator(ontology)
 
   override def initExplanationGenerator(ontology: OWLOntology) = {
-    val axioms = ontology.getAxioms().asScala.toSet
-    val relevantAxiomsFiltered = relevantAxioms.filter(axioms)
-    //explanationGenerator = MyExplanation.getBlackBoxExplanation(reasonerFactory, reasoner, relevantAxiomsFiltered.asJava)
+    val axioms = ontology.getLogicalAxioms().asScala.toSet
 
-    explanationGenerator = new MyExplanation(ontology, true, relevantAxiomsFiltered.asJava) // above line seems to fail
+    val relevantAxiomsFiltered = relevantAxioms.filter(axioms)
+
+
+    // TODO: as indicated by a later comment: this line may not work properly. Test this!
+    explanationGenerator = MyExplanation.getBlackBoxExplanation(reasonerFactory, reasoner, relevantAxiomsFiltered.asJava)
+
+    //explanationGenerator = new MyExplanation(ontology, true, relevantAxiomsFiltered.asJava) // above line seems to fail
+
   }
 
   override def synchronizeExplanationGenerator() = {
