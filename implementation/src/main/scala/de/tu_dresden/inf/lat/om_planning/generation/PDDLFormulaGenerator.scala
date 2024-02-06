@@ -18,12 +18,11 @@ import scala.collection.JavaConverters.setAsJavaSetConverter
  * @param hookPredicates
  */
 class PDDLFormulaGenerator(override val formulaGenerator: FormulaGenerator,
-                           constantReasoner: OWLReasoner,
+                           hookInstantiator: HookInstantiator,
                            factory: OWLDataFactory,
                            fluentMap: FluentMap,
                            hookPredicates: Seq[HookPredicate]) extends PlanningFormulaGenerator(hookPredicates) {
 
-  val hookInstantiator = new HookInstantiator(constantReasoner,factory)
 
   val tab = " "*4
 

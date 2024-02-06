@@ -12,6 +12,25 @@ import java.io.{File, FileWriter, PrintWriter}
 object CreatePlanningDefinitions {
 
   def main(args: Array[String]) = {
+
+    /*create(
+      "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/pipesA-9.ttl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/temp_rewritings.txt")
+    )
+
+     */
+    create(
+      "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/drone5-5.ttl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/temp_rewritings.txt")
+    )
+
+
     if (args.isEmpty || (args.size != 5 && args.size!=7) ) {
       println("Expected parameters : ")
       println("outputSyntax formulaFile hookFile ontologyFile outputFile [slice-start slide-end]")
@@ -37,14 +56,9 @@ object CreatePlanningDefinitions {
         args(6).toInt
       )
 
-    }/*
-    create(
-      "-pddl",
-      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/fluents.txt"),
-      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/hooks.txt"),
-      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/drone5-5.ttl"),
-      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/misc/rewritings_new.txt"))
-      */
+    }
+
+
   }
 
   def create(outputSyntax: String, formulaFile: File, hookFile: File, ontologyFile: File, outputFile: File,
@@ -56,9 +70,11 @@ object CreatePlanningDefinitions {
     val fluentSpec = new FluentSpecificationParser(ontology, factory).parse(formulaFile)
     val hookSpec = new HookSpecificationParser(ontology).parse(hookFile)
 
-    val reasoner = new ReasonerFactory().createReasoner(ontology)
+    // we use a copy here, to disentangle this reasoner from the other ones --> prevents memory leak
+    val ontologyCopy = OWLManager.createOWLOntologyManager().loadOntologyFromOntologyDocument(ontologyFile)
+    val hookInstantiatorReasoner = new ReasonerFactory().createReasoner(ontologyCopy)
 
-    val hookInstantiator = new HookInstantiator(reasoner, factory)
+    val hookInstantiator = new HookInstantiator(hookInstantiatorReasoner, factory)
 
     // val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
     val formulaGenerator = FormulaGenerator
@@ -68,10 +84,11 @@ object CreatePlanningDefinitions {
 
     val planningFormulaGenerator: PlanningFormulaGenerator =
       if (outputSyntax=="-pddl") {
-        new PDDLFormulaGenerator(formulaGenerator, reasoner, factory, fluentSpec, hookSpec)
+        new PDDLFormulaGenerator(formulaGenerator, hookInstantiator, factory, fluentSpec, hookSpec)
       } else { //if (outputSyntax == "-rddl") {
         assert(outputSyntax=="-rddl")
-        new RDDLFormulaGenerator(formulaGenerator, reasoner, factory, fluentSpec, hookSpec)
+        // TODO: modify analogue to PDDLFormulaGenerator
+        new RDDLFormulaGenerator(formulaGenerator, hookInstantiatorReasoner, factory, fluentSpec, hookSpec)
       }
 
     if(sliceStart == -1)

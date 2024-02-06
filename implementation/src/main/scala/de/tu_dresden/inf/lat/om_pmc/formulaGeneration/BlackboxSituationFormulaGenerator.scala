@@ -48,12 +48,19 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     //    println("Relevant axioms after filtering: "+relevantAxiomsFiltered)
 
+    val r = getReasoner(currentOntology)
+
     val singleGen = new MyBlackBoxExplanation(
       currentOntology,
       reasonerFactory,
-      reasoner
+      // TODO: swap the next two lines and delete "r"
+      r
+      //reasoner
       //reasonerFactory.createNonBufferingReasoner(ontology)
     )
+
+    // TODO: does this help?
+    expGenerator.dispose()
 
     expGenerator =
       new MyHSTExplanationGenerator(
@@ -71,7 +78,8 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
   }
 
   override def getExplanationsForInconsistency(): Iterable[Set[OWLLogicalAxiom]] = {
-    initReasoner(ontology)
+    //initReasoner(ontology)
+    updateReasoner(ontology)
 
     expGenerator.getExplanations(factory.getOWLThing)
       .asScala

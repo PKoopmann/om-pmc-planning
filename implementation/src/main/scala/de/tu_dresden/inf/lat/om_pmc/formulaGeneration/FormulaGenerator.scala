@@ -21,7 +21,6 @@ import scala.collection.mutable.Map
 
 object FormulaGenerator {
 
-  val PREFIX = "http://lat.inf.tu-dresden.de/OM-PMC#"
   //var explanationMethod = Methods.INC_BASED // Methods.BLACK_BOX
   var explanationMethod = Methods.BLACK_BOX // Methods.INC_BASED
 
@@ -175,6 +174,13 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     synchronizeExplanationGenerator()
   }
 
+  private def freeSomeMemory() : Unit ={
+    staticReasoner.dispose()
+    staticReasoner = getReasoner(staticOntology)
+    reasoner.flush()
+    synchronizeExplanationGenerator()
+  }
+
 
   def generateAllFormulaDefinitions(): Iterable[String] = {
     List("formula inconsistent = (" + generateInconsistencyFormula() + ")") ++
@@ -320,6 +326,8 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   // iterates over all repairs and calculates the rewritings for all hooks
   private def generateRepairCentricRewritings() = {
+    freeSomeMemory()
+
     var rewritings : mutable.Map[OWLLogicalAxiom, Set[Set[OWLLogicalAxiom]]] = mutable.Map()
 
     // get repairs
@@ -331,6 +339,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     // iterate through all repairs
     var counter = 0
+    var totalHookCount = 0
     repairs.foreach { repair =>
       counter += 1
       println("Computing hooks for repair nr. "+counter)
@@ -342,6 +351,15 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
       //hook2axiom.hooks().foreach { hook =>
       relevantHooks.foreach { axiom =>
+        totalHookCount += 1
+
+
+
+        // free some memory every tenth hook
+        if (totalHookCount %20 == 0) {
+          println(s"free some memory: hock count=$totalHookCount")
+          freeSomeMemory()
+        }
         //val axiom = hook2axiom.axiom(hook)
 
         // find axiom (if we already have rewritings for it
@@ -375,7 +393,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
        repairCentricRewritings.get(axiom)
     else {
       println("WARNING: no rewritings for " + axiom + " where computed.")
-       Set(Set())
+       Set(Set()) // disjunction with empty conjuction --> true
     }
   }
 
@@ -393,8 +411,10 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     println("Generating inconsistency dnf")
     //println("Ontology has now "+ontology.getAxiomCount()+ " axioms.")
 
-    initReasoner(ontology)
-    initExplanationGenerator(ontology)
+    //initReasoner(ontology)
+    //initExplanationGenerator(ontology)
+
+    updateReasoner(ontology)
     reasoner.flush()
 
     if (!reasoner.isConsistent) {
