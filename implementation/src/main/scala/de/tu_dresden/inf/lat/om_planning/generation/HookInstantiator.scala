@@ -79,4 +79,16 @@ class HookInstantiator(reasoner: OWLReasoner, factory: OWLDataFactory) {
     ))
     result
   }
+
+  // returns all the axioms referred to by the hook, but in primitive form, i.e. if a hook refers to a query with multiple
+  // axioms, all axioms are listed individually
+  def primitiveHookAxioms(hookSpecifications: Iterable[HookPredicate]) : Set[OWLLogicalAxiom] ={
+    var a : Set[OWLLogicalAxiom] = Set()
+    hookSpecifications.foreach(f => instantiateQueries(f).foreach(query => {
+      query.foreach(axiom => {
+        a += axiom
+      })
+    }))
+    a
+  }
 }

@@ -78,7 +78,12 @@ object CreatePlanningDefinitions {
 
     // val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
     val formulaGenerator = FormulaGenerator
-      .formulaGenerator(fluentSpec.asAxiom2FormulaMap(factory), hookInstantiator.asHookToAxiomMap(hookSpec), ontology)
+      .formulaGenerator(
+        fluentSpec.asAxiom2FormulaMap(factory),
+        hookInstantiator.asHookToAxiomMap(hookSpec),
+        ontology,
+        hookInstantiator.primitiveHookAxioms(hookSpec)
+      )
 
     val printWriter = new PrintWriter(new FileWriter(outputFile,true))
 

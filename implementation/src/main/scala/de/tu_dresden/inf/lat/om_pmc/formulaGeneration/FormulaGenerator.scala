@@ -27,7 +27,8 @@ object FormulaGenerator {
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
-                       ontology: OWLOntology)
+                       ontology: OWLOntology,
+                       primitiveHookAxioms: Set[OWLLogicalAxiom])
   : FormulaGenerator = {
 
     val manager = ontology.getOWLOntologyManager
@@ -78,6 +79,8 @@ object FormulaGenerator {
     result.staticReasoner = result.getReasoner(result.staticOntology)
     result.staticReasoner.flush()
 
+    result.relevantHooks = primitiveHookAxioms
+
     //println("Module axioms: "+module.getAxioms().asScala.map(SimpleOWLFormatter.format))
     println("Module size: " + module.getAxioms().size)
     println("Number of Hooks: " + hook2axiom.size)
@@ -119,7 +122,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
                                 reasonerFactory: OWLReasonerFactory) {
 
   val relevantAxioms: Set[OWLLogicalAxiom] = axiom2formula.axioms
-  var relevantHooks: Set[OWLLogicalAxiom] = hook2axiom.hooks().map(hook2axiom.axiom)
+  var relevantHooks: Set[OWLLogicalAxiom] = _ // hook2axiom.hooks().map(hook2axiom.axiom)
   var reasoner: OWLReasoner = _
   var ontology: OWLOntology = _
   var staticReasoner: OWLReasoner = _
@@ -174,6 +177,8 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     synchronizeExplanationGenerator()
   }
 
+
+  // frees some allocated memory by synchronizing the various reasoners (and thus clear their cache)
   private def freeSomeMemory() : Unit ={
     staticReasoner.dispose()
     staticReasoner = getReasoner(staticOntology)
@@ -349,7 +354,6 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
       updateReasoner(repairedOntology)
 
-      //hook2axiom.hooks().foreach { hook =>
       relevantHooks.foreach { axiom =>
         totalHookCount += 1
 
@@ -376,6 +380,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
           dnf = addExplanationToDNF(dnf, exp)
         }
         // add updated explanation DNF to the map
+        //println("add axiom: " + SimpleOWLFormatter.format(axiom))
         rewritings += (axiom -> dnf)
 
       }
@@ -393,7 +398,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
        repairCentricRewritings.get(axiom)
     else {
       println("WARNING: no rewritings for " + axiom + " where computed.")
-       Set(Set()) // disjunction with empty conjuction --> true
+       Set() // empty disjunction --> false
     }
   }
 

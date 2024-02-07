@@ -32,7 +32,7 @@ object CreatePrismDefinitions {
     //println("Mapping PRISM hook -> DL axiom: "+hook2axiom)
 
  //   val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
-    val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
+    val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology, hook2axiom.hooks().map(hook2axiom.axiom))
 
     val printWriter = new PrintWriter(outputFile)
 
