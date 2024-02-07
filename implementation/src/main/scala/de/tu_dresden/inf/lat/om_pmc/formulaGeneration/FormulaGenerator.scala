@@ -21,8 +21,8 @@ import scala.collection.mutable.Map
 
 object FormulaGenerator {
 
-  //var explanationMethod = Methods.INC_BASED // Methods.BLACK_BOX
-  var explanationMethod = Methods.BLACK_BOX // Methods.INC_BASED
+  var explanationMethod = Methods.INC_BASED // Methods.BLACK_BOX
+  //var explanationMethod = Methods.BLACK_BOX // Methods.INC_BASED
 
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
@@ -71,7 +71,9 @@ object FormulaGenerator {
       case Methods.GLASS_BOX =>
         new GlassboxCapableSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
       case Methods.INC_BASED =>
-        new InconsistencyBasedGBSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
+        // TODO: does this line work?
+        new InconsistencyBasedBlackBSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
+        //new InconsistencyBasedGBSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
     }
 
     val staticAxioms = module.getAxioms().asScala -- axiom2formula.axioms
@@ -152,6 +154,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   def initReasoner(ontology: OWLOntology): Unit = {
     this.ontology=ontology
+
 
     reasoner = getReasoner(ontology)
 
@@ -277,9 +280,11 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
   // generate DNF by using inconsistency based approach
   def generateDNFIncBased(axiom: OWLLogicalAxiom) : Set[Set[OWLLogicalAxiom]] = {
+    freeSomeMemory()  // avoid memory leaks
     var dnf = Set[Set[OWLLogicalAxiom]]()
     println("explain using inc. based method")
     val explanations = getExplanations(axiom)
+
     explanations.foreach { exp =>
       val rel = exp.filter(relevantAxioms)
 
@@ -359,7 +364,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
 
 
-        // free some memory every tenth hook
+        // free some memory every 20th hook
         if (totalHookCount %20 == 0) {
           println(s"free some memory: hock count=$totalHookCount")
           freeSomeMemory()
