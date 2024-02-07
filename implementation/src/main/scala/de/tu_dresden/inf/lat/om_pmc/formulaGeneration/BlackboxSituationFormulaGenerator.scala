@@ -48,18 +48,17 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     //    println("Relevant axioms after filtering: "+relevantAxiomsFiltered)
 
+    // get fresh reasoner
     val r = getReasoner(currentOntology)
 
     val singleGen = new MyBlackBoxExplanation(
       currentOntology,
       reasonerFactory,
-      // TODO: swap the next two lines and delete "r"
       r
-      //reasoner
       //reasonerFactory.createNonBufferingReasoner(ontology)
     )
 
-    // TODO: does this help?
+    // clear some memory before assigning new value
     expGenerator.dispose()
 
     expGenerator =

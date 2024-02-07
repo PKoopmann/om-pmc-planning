@@ -92,8 +92,7 @@ object CreatePlanningDefinitions {
         new PDDLFormulaGenerator(formulaGenerator, hookInstantiator, factory, fluentSpec, hookSpec)
       } else { //if (outputSyntax == "-rddl") {
         assert(outputSyntax=="-rddl")
-        // TODO: modify analogue to PDDLFormulaGenerator
-        new RDDLFormulaGenerator(formulaGenerator, hookInstantiatorReasoner, factory, fluentSpec, hookSpec)
+        new RDDLFormulaGenerator(formulaGenerator, hookInstantiator, factory, fluentSpec, hookSpec)
       }
 
     if(sliceStart == -1)

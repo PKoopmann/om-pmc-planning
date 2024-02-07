@@ -15,12 +15,11 @@ import org.semanticweb.owlapi.reasoner.OWLReasoner
  * @param hookPredicates
  */
 class RDDLFormulaGenerator(override val formulaGenerator: FormulaGenerator,
-                           constantReasoner: OWLReasoner,
+                           hookInstantiator: HookInstantiator,
                            factory: OWLDataFactory,
                            fluentMap: FluentMap,
                            hookPredicates: Seq[HookPredicate]) extends PlanningFormulaGenerator(hookPredicates)  {
 
-  val hookInstantiator = new HookInstantiator(constantReasoner,factory)
   val tab = " "*4
 
 

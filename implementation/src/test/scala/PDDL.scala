@@ -25,16 +25,19 @@ class PDDL {
     val fluentSpec = new FluentSpecificationParser(ontology, factory).parse(Source.fromResource(fluentPath))
     val hookSpec = new HookSpecificationParser(ontology).parse(Source.fromResource(hookPath))
 
-    val reasoner = new ReasonerFactory().createReasoner(ontology)
+    // we use a copy here, to disentangle this reasoner from the other ones --> prevents memory leak
+    val ontologyCopy = OWLManager.createOWLOntologyManager().loadOntologyFromOntologyDocument(
+      new ReaderDocumentSource(Source.fromResource(ontologyPath).reader()))
+    val hookInstantiatorReasoner = new ReasonerFactory().createReasoner(ontologyCopy)
 
-    val hookInstantiator = new HookInstantiator(reasoner, factory)
+    val hookInstantiator = new HookInstantiator(hookInstantiatorReasoner, factory)
 
     // val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula,hook2axiom,ontology)
     val formulaGenerator = FormulaGenerator
-      .formulaGenerator(fluentSpec.asAxiom2FormulaMap(factory), hookInstantiator.asHookToAxiomMap(hookSpec), ontology)
+      .formulaGenerator(fluentSpec.asAxiom2FormulaMap(factory), hookInstantiator.asHookToAxiomMap(hookSpec), ontology, hookInstantiator.primitiveHookAxioms(hookSpec))
 
     val planningFormulaGenerator: PlanningFormulaGenerator =
-      new PDDLFormulaGenerator(formulaGenerator, reasoner, factory, fluentSpec, hookSpec)
+      new PDDLFormulaGenerator(formulaGenerator, hookInstantiator, factory, fluentSpec, hookSpec)
 
     planningFormulaGenerator.generateAllFormulaDefinitions()
       .foreach(println)

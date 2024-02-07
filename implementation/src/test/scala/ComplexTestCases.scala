@@ -44,7 +44,7 @@ class ComplexTestCases {
     println("Hook2Axiom: " + hook2axiom)
 
 
-    val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula, hook2axiom, ontology)
+    val formulaGenerator = FormulaGenerator.formulaGenerator(axiom2Formula, hook2axiom, ontology, hook2axiom.hooks().map(hook2axiom.axiom))
 
     formulaGenerator.generateAllFormulaDefinitions()
       .foreach(println(_))
