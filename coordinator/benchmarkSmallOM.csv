@@ -1,0 +1,13 @@
+id,method,name,folder,ontology,domain,problem
+1,om_planning,elevator15,../examples/elevator/elevator15,elevator15.ttl,elevator.pddl,elevatorProblem15.pddl
+41,om_planning,cats6,../examples/cats/6,cats6.ttl,cats.pddl,catsProblem6.pddl
+81,om_planning,drones5-5,../examples/drones/5-5,drone5-5.ttl,drone.pddl,droneProblem5-5.pddl
+129,om_planning,taskAssign3,../examples/taskAssign/3,task3.ttl,domain.pddl,taskProblem3.pddl
+169,om_planning,tpsa4,../examples/tpsa/4,tpsa4.ttl,domain.pddl,orderProblem4.pddl
+199,om_planning,vta4,../examples/vta/4,vta4.ttl,domain.pddl,tripProblem4.pddl
+229,om_planning,vta-roles4,../examples/vta_roles/4,vta-roles4.ttl,domain.pddl,tripProblem4.pddl
+259,om_planning,queens5-1,../examples/queens/5-1,queens5-1.ttl,queens.pddl,problem5-1.pddl
+319,om_planning,robot3,../examples/robot/3,TTL3.owl,robotDomain3.pddl,robotProblem3.pddl
+359,om_planning,robotConj3,../examples/robotConj/3,TTL3.owl,robotDomain3.pddl,robotProblem3.pddl
+399,om_planning,blocksworld4-0,../examples/blocksworld/4-0,blocks.ttl,blocks.pddl,blocksProblem4-0.pddl
+420,om_planning,pipesA-4,../examples/pipes/A-4,pipesA-4.ttl,pipes.pddl,pipesProblemA-4.pddl

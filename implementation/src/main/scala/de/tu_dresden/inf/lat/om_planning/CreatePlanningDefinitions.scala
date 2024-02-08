@@ -21,14 +21,17 @@ object CreatePlanningDefinitions {
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/temp_rewritings.txt")
     )
 
-     */
+
     create(
       "-pddl",
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/fluents.txt"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/hooks.txt"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/drone5-5.ttl"),
-      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/temp_rewritings.txt")
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/temp_rewritings_2.txt"),
+      0,
+      75
     )
+    */
 
 
     if (args.isEmpty || (args.size != 5 && args.size!=7) ) {
