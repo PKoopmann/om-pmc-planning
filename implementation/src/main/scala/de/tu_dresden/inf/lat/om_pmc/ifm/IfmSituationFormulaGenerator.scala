@@ -1,6 +1,6 @@
 package de.tu_dresden.inf.lat.om_pmc.ifm
 
-import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.{BlackboxSituationFormulaGenerator, GlassboxCapableSituationFormulaGenerator, InconsistencyBasedGBSituationFormulaGenerator}
+import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.{BlackboxSituationFormulaGenerator, InconsistencyBasedFormulaGenerator}
 import openllet.owlapi.OpenlletReasonerFactory
 import org.semanticweb.elk.owlapi.ElkReasonerFactory
 import org.semanticweb.owlapi.model._

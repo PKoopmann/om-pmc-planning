@@ -9,6 +9,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 import java.io.{File, FileOutputStream}
 import scala.collection.JavaConverters.asScalaSetConverter
 
+@deprecated("use 'InconsistencyBasedFormulaGenerator', which is based on black box explanations")
 class InconsistencyBasedGBSituationFormulaGenerator(
                                                      axiom2formula: AxiomToFormulaMap,
                                                      hook2axiom: HookToAxiomMap,

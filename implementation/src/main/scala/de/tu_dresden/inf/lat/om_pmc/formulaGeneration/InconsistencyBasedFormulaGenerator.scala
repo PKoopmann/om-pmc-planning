@@ -7,7 +7,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
 import scala.collection.JavaConverters.asScalaSetConverter
 
-class InconsistencyBasedBlackBSituationFormulaGenerator(
+class InconsistencyBasedFormulaGenerator(
                                                      axiom2formula: AxiomToFormulaMap,
                                                      hook2axiom: HookToAxiomMap,
                                                      ontologyManager: OWLOntologyManager,
@@ -17,11 +17,6 @@ class InconsistencyBasedBlackBSituationFormulaGenerator(
 
   override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] = {
 
-  /*  println("Ontology before: ")
-    println("--------------");
-    println(SimpleOWLFormatter.format(ontology))
-    println(ontology.getAxiomCount()+" axioms");
-*/
     val negated = negateAxiom(axiom)
 
     val needsToAddAxiom = !ontology.containsAxiom(negated)
@@ -49,7 +44,25 @@ class InconsistencyBasedBlackBSituationFormulaGenerator(
     result
   }
 
+  // generate DNF by using inconsistency based approach
+  override def fluentExplanationsAsDNF(axiom: OWLLogicalAxiom) : Set[Set[OWLLogicalAxiom]] = {
+    freeSomeMemory()  // avoid memory leaks
+    var dnf = Set[Set[OWLLogicalAxiom]]()
+    val explanations = getExplanations(axiom)
 
+    explanations.foreach { exp =>
+      val rel = exp.filter(relevantAxioms)
+
+      // backward subsumption deletion
+      dnf = dnf.filterNot(rel.forall)
+
+      // forward subsumption deletion
+      if (!dnf.exists(_.forall(rel)))
+        dnf += rel
+    }
+
+    dnf
+  }
 
   def negateAxiom(axiom: OWLLogicalAxiom): OWLLogicalAxiom = axiom match {
     case ca: OWLClassAssertionAxiom =>

@@ -50,4 +50,21 @@ class GlassboxCapableSituationFormulaGenerator(
       .asScala
       .map(_.asScala.toSet[OWLAxiom].map(_.asInstanceOf[OWLLogicalAxiom]))
   }
+
+  // generic method to generate explanation
+  override def fluentExplanationsAsDNF(axiom: OWLLogicalAxiom): Set[Set[OWLLogicalAxiom]] = {
+    var dnf = Set[Set[OWLLogicalAxiom]]()
+    val explanations = getExplanations(axiom)
+
+    explanations.foreach { exp =>
+      val rel = exp.filter(relevantAxioms)
+      // backward subsumption deletion
+      dnf = dnf.filterNot(rel.forall)
+      // forward subsumption deletion
+      if (!dnf.exists(_.forall(rel)))
+        dnf += rel
+    }
+
+    dnf
+  }
 }

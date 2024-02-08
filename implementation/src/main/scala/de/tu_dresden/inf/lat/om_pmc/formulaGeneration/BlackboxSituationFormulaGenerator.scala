@@ -8,7 +8,7 @@ import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
 import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
 
-class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
+abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
                                         hook2axiom: HookToAxiomMap,
                                         ontologyManager: OWLOntologyManager,
                                         reasonerFactory: OWLReasonerFactory
@@ -110,5 +110,4 @@ class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMap,
         )
       )
   }
-
 }
