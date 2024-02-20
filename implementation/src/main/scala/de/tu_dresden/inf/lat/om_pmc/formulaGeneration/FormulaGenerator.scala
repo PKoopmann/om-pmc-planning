@@ -21,7 +21,7 @@ import scala.collection.mutable.Map
 
 object FormulaGenerator {
 
-  var explanationMethod = Methods.INC_BASED // Methods.INC_BASED, Methods.HOOK_CENTRIC
+  var explanationMethod = Methods.CLASS_BASED // Methods.INC_BASED, Methods.HOOK_CENTRIC
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
@@ -72,6 +72,8 @@ object FormulaGenerator {
         new GlassboxCapableSituationFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
       case Methods.INC_BASED =>
         new InconsistencyBasedFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
+      case Methods.CLASS_BASED =>
+        new ClassBasedFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
     }
 
     val staticAxioms = module.getAxioms().asScala -- axiom2formula.axioms
@@ -111,7 +113,7 @@ object FormulaGenerator {
   }
 
   object Methods extends Enumeration {
-    val GLASS_BOX, HOOK_CENTRIC, REPAIR_CENTRIC, INC_BASED = Value
+    val GLASS_BOX, HOOK_CENTRIC, REPAIR_CENTRIC, INC_BASED, CLASS_BASED = Value
   }
 }
 
@@ -120,7 +122,7 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
                                 ontologyManager: OWLOntologyManager,
                                 reasonerFactory: OWLReasonerFactory) {
 
-  val relevantAxioms: Set[OWLLogicalAxiom] = axiom2formula.axioms
+  var relevantAxioms: Set[OWLLogicalAxiom] = axiom2formula.axioms
   var relevantHooks: Set[OWLLogicalAxiom] = _ // hook2axiom.hooks().map(hook2axiom.axiom)
   var reasoner: OWLReasoner = _
   var ontology: OWLOntology = _

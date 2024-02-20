@@ -1,0 +1,62 @@
+    (:derived (inconsistent) 
+        (or (WetDrone cb) (Drone cb) (WetDrone ee) (WetDrone da) (Drone ee) (Drone da))
+    )
+
+    (:derived (KBquery_Objectx ?x)
+        (or
+
+            (and (= ?x aa) (or (Drone aa) (WetDrone aa)))
+            (and (= ?x ab) (or (WetDrone ab) (Drone ab)))
+    (:derived (inconsistent) 
+        (or (WetDrone cb) (Drone cb) (WetDrone ee) (WetDrone da) (Drone ee) (Drone da))
+    )
+
+    (:derived (KBquery_Objectx ?x)
+        (or
+
+            (and (= ?x aa) (or (Drone aa) (WetDrone aa)))
+            (and (= ?x ab) (or (WetDrone ab) (Drone ab)))
+    (:derived (inconsistent) 
+        (or (WetDrone cb) (Drone cb) (WetDrone ee) (WetDrone da) (Drone ee) (Drone da))
+    )
+
+    (:derived (KBquery_Objectx ?x)
+        (or
+
+            (and (= ?x aa) (or (Drone aa) (WetDrone aa)))
+            (and (= ?x ab) (or (WetDrone ab) (Drone ab)))
+    (:derived (inconsistent) 
+        (or (WetDrone cb) (Drone cb) (WetDrone ee) (WetDrone da) (Drone ee) (Drone da))
+    )
+
+    (:derived (KBquery_Objectx ?x)
+        (or
+
+            (and (= ?x aa) (or (Drone aa) (WetDrone aa)))
+            (and (= ?x ab) (or (WetDrone ab) (Drone ab)))
+            (= ?x ac)
+            (and (= ?x ad) (or (Drone ad) (WetDrone ad)))
+    (:derived (inconsistent) 
+        (or (WetDrone cb) (Drone cb) (WetDrone ee) (WetDrone da) (Drone ee) (Drone da))
+    )
+
+    (:derived (KBquery_Objectx ?x)
+        (or
+
+            (and (= ?x aa) (or (Drone aa) (WetDrone aa)))
+            (and (= ?x ab) (or (WetDrone ab) (Drone ab)))
+            (= ?x ac)
+            (and (= ?x ad) (or (Drone ad) (WetDrone ad)))
+            (and (= ?x ae) (or (Drone ae) (WetDrone ae)))
+            (and (= ?x ba) (or (WetDrone ba) (Drone ba)))
+    (:derived (inconsistent) 
+        (or (WetDrone cb) (Drone cb) (WetDrone ee) (WetDrone da) (Drone ee) (Drone da))
+    )
+
+    (:derived (KBquery_Objectx ?x)
+        (or
+
+            (and (= ?x aa) (or (Drone aa) (WetDrone aa)))
+            (and (= ?x ab) (or (WetDrone ab) (Drone ab)))
+            (= ?x ac)
+            (and (= ?x ad) (or (Drone ad) (WetDrone ad)))

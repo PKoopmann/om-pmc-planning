@@ -1,0 +1,36 @@
+PREFIX drone: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+ 
+OBJECT thing aa -> drone:aa
+OBJECT thing ab -> drone:ab
+OBJECT thing ac -> drone:ac
+OBJECT thing ad -> drone:ad
+OBJECT thing ae -> drone:ae
+OBJECT thing ba -> drone:ba
+OBJECT thing bb -> drone:bb
+OBJECT thing bc -> drone:bc
+OBJECT thing bd -> drone:bd
+OBJECT thing be -> drone:be
+OBJECT thing ca -> drone:ca
+OBJECT thing cb -> drone:cb
+OBJECT thing cc -> drone:cc
+OBJECT thing cd -> drone:cd
+OBJECT thing ce -> drone:ce
+OBJECT thing da -> drone:da
+OBJECT thing db -> drone:db
+OBJECT thing dc -> drone:dc
+OBJECT thing dd -> drone:dd
+OBJECT thing de -> drone:de
+OBJECT thing ea -> drone:ea
+OBJECT thing eb -> drone:eb
+OBJECT thing ec -> drone:ec
+OBJECT thing ed -> drone:ed
+OBJECT thing ee -> drone:ee
+OBJECT thing env -> drone:env
+
+OBJECT environment env	-> drone:env
+
+PREDICATE WetDrone(thing)	-> drone:WetDrone
+PREDICATE Drone(thing)			-> drone:Drone
+
+
+

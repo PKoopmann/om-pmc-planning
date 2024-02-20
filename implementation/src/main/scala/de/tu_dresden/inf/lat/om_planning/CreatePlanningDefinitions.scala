@@ -24,14 +24,55 @@ object CreatePlanningDefinitions {
 
     create(
       "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/cats/6/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/cats/6/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/cats/6/cats6.ttl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/cats/6/temp_rewritings.txt"),
+      0,
+      50
+    )
+
+
+    create(
+      "-pddl",
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/fluents.txt"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/hooks.txt"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/drone5-5.ttl"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/drones/5-5/temp_rewritings_2.txt"),
       0,
-      75
+      50
     )
-    */
+
+     */
+
+
+
+    create(
+      "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/drone5-5.ttl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/temp_rewritings_2.txt"),
+      0,
+      4
+    )
+
+
+/*
+    create(
+      "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniElevator/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniElevator/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniElevator/elevator16.ttl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniElevator/temp_rewritings.txt"),
+      0,
+      10
+    )
+
+ */
+
+
+
 
 
     if (args.isEmpty || (args.size != 5 && args.size!=7) ) {

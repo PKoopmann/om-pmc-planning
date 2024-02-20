@@ -28,8 +28,6 @@ class InconsistencyBasedFormulaGenerator(
     //println("negatedAxiom: "+SimpleOWLFormatter.format(negated))
 
     updateReasoner(ontology)
-    reasoner.flush()
-    synchronizeExplanationGenerator()
 
     val result = getExplanationsForInconsistency()
 
@@ -39,7 +37,6 @@ class InconsistencyBasedFormulaGenerator(
       ontology.removeAxiom(negated)
 
     updateReasoner(ontology)
-    reasoner.flush()
 
     result
   }
