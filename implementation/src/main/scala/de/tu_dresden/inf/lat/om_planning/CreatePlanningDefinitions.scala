@@ -54,13 +54,25 @@ object CreatePlanningDefinitions {
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/drone5-5.ttl"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/temp_rewritings_2.txt"),
       0,
-      60
+      750
     )
 
  */
+/*
+    create(
+      "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/pipesA-8/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/pipesA-8/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/pipesA-8/pipesA-8.ttl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/pipesA-8/temp_rewritings.txt"),
+      0,
+      75
+    )
+    
+ */
 
 
-
+/*
     create(
       "-pddl",
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniElevator/fluents.txt"),
@@ -71,6 +83,8 @@ object CreatePlanningDefinitions {
       100
     )
 
+
+ */
 
 
 
