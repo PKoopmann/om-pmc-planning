@@ -171,7 +171,8 @@ public class MyHSTExplanationGenerator implements MultipleExplanationGenerator {
 
         //System.out.println("Explanation before filtering: "+result);
 
-	    result.retainAll(relevantAxioms);
+        // filtering should be done by calling class, because some require the whole justification
+	    //result.retainAll(relevantAxioms);
 
         //System.out.println("Explanation after filtering: "+result);
 

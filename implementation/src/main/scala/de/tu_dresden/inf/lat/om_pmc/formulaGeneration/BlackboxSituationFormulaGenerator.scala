@@ -78,14 +78,31 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
 
   override def getExplanationsForInconsistency(): Iterable[Set[OWLLogicalAxiom]] = {
     //initReasoner(ontology)
-    updateReasoner(ontology)
+    /*updateReasoner(ontology)
 
     expGenerator.getExplanations(factory.getOWLThing)
       .asScala
       .map(_.asScala
         .toSet[OWLAxiom]
         .map(_.asInstanceOf[OWLLogicalAxiom]))
+
+     */
     //getExplanations(getInconsistentAxiom)
+
+    val allExplanations = getCompleteExplanationsForInconsistency()
+    allExplanations.map(relevantAxioms.intersect(_))
+  }
+
+  def getCompleteExplanationsForInconsistency(): Iterable[Set[OWLLogicalAxiom]] = {
+    //initReasoner(ontology)
+    updateReasoner(ontology)
+    expGenerator.getExplanations(factory.getOWLThing)
+      .asScala
+      .map(_.asScala
+        .toSet[OWLAxiom]
+        .map(_.asInstanceOf[OWLLogicalAxiom]))
+    //getExplanations(getInconsistentAxiom)
+
   }
 
   def getInconsistentAxiom() = {

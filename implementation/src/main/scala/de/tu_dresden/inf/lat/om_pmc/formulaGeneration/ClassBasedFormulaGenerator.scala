@@ -2,6 +2,7 @@ package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
 import com.clarkparsia.owlapi.explanation.{MyBlackBoxExplanation, MyHSTExplanationGenerator}
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
+import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.model.{OWLAxiom, OWLClassAssertionAxiom, OWLClassExpression, OWLLogicalAxiom, OWLObjectPropertyAssertionAxiom, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom}
 import org.semanticweb.owlapi.reasoner.{OWLReasoner, OWLReasonerFactory}
@@ -24,6 +25,8 @@ class ClassBasedFormulaGenerator (
   private val localOntology = manager.createOntology(Set[OWLAxiom]().asJava)
 
   private val localReasoner: OWLReasoner = getReasoner(localOntology)
+
+  private val fluentAxioms = relevantAxioms
 
   override def fluentExplanationsAsDNF(axiom: OWLLogicalAxiom): Iterable[_ <: Set[OWLLogicalAxiom]] = {
     // generate repairs if it had not been done in the past
@@ -62,33 +65,37 @@ class ClassBasedFormulaGenerator (
       // only compute rewriting for hook, if it does not exists yet, i.e. was not already computed together with
       // another hook
       if (!rewritings.contains(axiom)) {
+        println("compute hooks with pattern as " + SimpleOWLFormatter.format(axiom))
+        // find all hooks that are of the same class
+        relevantHooks.foreach { hook =>
+          if (sameClass(axiom, hook))
+            rewritings.update(hook, Set())   // initialize with empty disjunction, i.e. false
+        }
 
         // compute axiom to add
+        // anchorAxiom: the axiom that introduces the new inconsistency
+        val (anchorAxiom, supportingAxioms) = additionalAxioms(axiom)
 
-        val (generalizedAxiom, supportingAxioms) = additionalAxioms(axiom)
-
-        println(generalizedAxiom)
-        supportingAxioms.foreach(println)
         // add general class explanation to ontology
 
-        ontology.addAxiom(generalizedAxiom)
+        ontology.addAxiom(anchorAxiom)
         supportingAxioms.foreach(ontology.addAxiom(_))
 
         updateReasoner(ontology)
 
         // generate justifications
-        val justifications = getExplanationsForInconsistency()
+        val justifications = getCompleteExplanationsForInconsistency()
 
        // println(justifications)
-
+        println("computed justifications")
         // iterate over justifications and decide which hooks they explain
         justifications.foreach { j =>
-          println("j: " + j)
-          val jrelevant = (j - generalizedAxiom)
+          //println("j " + j)
+          val jrelevant = (j - anchorAxiom)
           // we explain only witch fluents
-          val filteredJustification = jrelevant.filter(relevantAxioms)
+          val filteredJustification = jrelevant.filter(fluentAxioms)
 
-          if (!j.contains(generalizedAxiom)) {
+          if (!j.contains(anchorAxiom)) {
             // justification for inconsistency
             inconsistencyDnf = addExplanationToDNF(inconsistencyDnf, filteredJustification)
           }
@@ -107,7 +114,7 @@ class ClassBasedFormulaGenerator (
         }
 
         // put ontology back to original state
-        ontology.removeAxiom(generalizedAxiom)
+        ontology.removeAxiom(anchorAxiom)
         supportingAxioms.foreach(ontology.removeAxiom(_))
 
         updateReasoner(ontology)
@@ -150,7 +157,7 @@ class ClassBasedFormulaGenerator (
   // result: 'key axiom' plus set of supporting axioms
   def additionalAxioms(hookClass: OWLClassExpression): (OWLLogicalAxiom, Set[OWLLogicalAxiom]) = {
     // define new class with new name
-    val className = "hookIndividualsInClass"
+    val className = "hookIndividualsInClass"+hookClass.toString.stripPrefix("<").stripPrefix(">")
     val indClass = factory.getOWLClass(className)
 
     var supportingAxioms: Set[OWLLogicalAxiom] = Set()
@@ -168,23 +175,14 @@ class ClassBasedFormulaGenerator (
       case _ => null
     }
 
-    val keyAxiom = factory.getOWLSubClassOfAxiom(
+    val anchorAxiom = factory.getOWLSubClassOfAxiom(
       factory.getOWLObjectIntersectionOf(
         hookClass, indClass
       ),
       factory.getOWLNothing
     )
 
-    (keyAxiom, supportingAxioms)
-  }
-
-  def generalizedNegateAxiom(axiom: OWLLogicalAxiom): OWLLogicalAxiom = axiom match {
-    case ca: OWLClassAssertionAxiom =>
-     factory.getOWLSubClassOfAxiom(
-       ca.getClassExpression, factory.getOWLNothing
-     )
-    case _ => assert(false, "NOT SUPPORTED YET: "+axiom)
-      null
+    (anchorAxiom, supportingAxioms)
   }
 
   def getClassExpression(axiom: OWLLogicalAxiom): OWLClassExpression = axiom match {
@@ -192,31 +190,6 @@ class ClassBasedFormulaGenerator (
         ca.getClassExpression
     case _ => assert(false, "NOT SUPPORTED YET: "+axiom)
       null
-  }
-
-  // specialized method, because we do not want to filter the justifications to fluents, but keep all axioms
-  override def synchronizeExplanationGenerator(): Unit = {
-    val currentOntology = reasoner.getRootOntology()
-
-    //    println("Relevant axioms after filtering: "+relevantAxiomsFiltered)
-
-    // get fresh reasoner
-    val r = getReasoner(currentOntology)
-
-    val singleGen = new MyBlackBoxExplanation(
-      currentOntology,
-      reasonerFactory,
-      r
-      //reasonerFactory.createNonBufferingReasoner(ontology)
-    )
-
-    // clear some memory before assigning new value
-    expGenerator.dispose()
-
-    expGenerator =
-      new MyHSTExplanationGenerator(
-        ontology.getLogicalAxioms(),
-        singleGen)
   }
 
   def updateLocalReasoner(newAxioms: Set[OWLAxiom]): Unit = {
@@ -233,5 +206,17 @@ class ClassBasedFormulaGenerator (
     oldOntology.addAxioms(addAxioms.asJava)
 
     localReasoner.flush()
+  }
+
+  // decides, if the two hooks (i.e. axioms) are of the same class, i.e., calculated with the same justification run
+  def sameClass(hook1 : OWLLogicalAxiom, hook2: OWLLogicalAxiom) : Boolean = hook1 match {
+    case ca1 : OWLClassAssertionAxiom =>
+      hook2 match {
+        case ca2: OWLClassAssertionAxiom =>
+          ca1.getClassExpression == ca2.getClassExpression
+        case _ => false
+      }
+    case _ => assert(false, "NOT SUPPORTED YET: " + hook1)
+      false
   }
 }
