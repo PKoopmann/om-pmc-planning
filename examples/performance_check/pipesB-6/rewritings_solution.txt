@@ -1,0 +1,34 @@
+    (:derived (inconsistent) 
+        (or (robotAt auv ed) (robotAt auv ff) (robotAt auv df) (robotAt auv ba) (robotAt auv fe) (robotAt auv ee) (robotAt auv ca) (robotAt auv bb) (robotAt auv cb))
+    )
+
+    (:derived (KBquery_connectedToFailure ?x)
+        (or
+
+            (= ?x ad)
+            (and (= ?x ba) (open valveCC))
+            (and (= ?x bb) (open valveCC))
+            (= ?x bd)
+            (and (= ?x ca) (open valveCC))
+            (and (= ?x cb) (open valveCC))
+            (= ?x cc)
+            (= ?x cd)
+            (= ?x ce)
+            (and (= ?x cf) (open valveCE))
+            (and (= ?x df) (open valveCE))
+
+        )
+    )
+
+    (:derived (KBquery_WPTank ?x)
+        (or
+
+            (= ?x ba)
+            (= ?x bb)
+            (= ?x ca)
+            (= ?x cb)
+            (= ?x df)
+
+        )
+    )
+

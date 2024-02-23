@@ -1,0 +1,164 @@
+    (:derived (inconsistent) 
+        (or (and (LeftOf1 robot) (RightOf1 robot)) (and (AboveOf1 robot) (BelowOf1 robot)) (and (RightOf2 robot) (LeftOf2 robot)) (and (AboveOf2 robot) (BelowOf2 robot)) (and (AboveOf2 robot) (BelowOf1 robot)) (and (LeftOf1 robot) (RightOf2 robot)))
+    )
+
+    (:derived (KBquery_AboveOf0 ?x)
+        (or
+
+            (and (= ?x robot) (or (AboveOf1 robot) (AboveOf2 robot) (AboveOf0 robot)))
+
+        )
+    )
+
+    (:derived (KBquery_AboveOf1 ?x)
+        (or
+
+            (and (= ?x robot) (or (AboveOf1 robot) (AboveOf2 robot)))
+
+        )
+    )
+
+    (:derived (KBquery_AboveOf2 ?x)
+        (or
+
+            (and (= ?x robot) (AboveOf2 robot))
+
+        )
+    )
+
+    (:derived (KBquery_BelowOf1 ?x)
+        (or
+
+            (and (= ?x robot) (BelowOf1 robot))
+
+        )
+    )
+
+    (:derived (KBquery_BelowOf2 ?x)
+        (or
+
+            (and (= ?x robot) (or (BelowOf1 robot) (BelowOf2 robot)))
+
+        )
+    )
+
+    (:derived (KBquery_BelowOf3 ?x)
+        (or
+
+            (and (= ?x robot) (or (BelowOf1 robot) (BelowOf2 robot) (BelowOf3 robot)))
+
+        )
+    )
+
+    (:derived (KBquery_Column0 ?x)
+        (or
+
+            (and (= ?x robot) (Column0 robot))
+
+        )
+    )
+
+    (:derived (KBquery_Column1 ?x)
+        (or
+
+            (and (= ?x robot) (Column1 robot))
+
+        )
+    )
+
+    (:derived (KBquery_Column2 ?x)
+        (or
+
+            (and (= ?x robot) (Column2 robot))
+
+        )
+    )
+
+    (:derived (KBquery_Columns ?x)
+        (or
+
+            (and (= ?x robot) (or (RightOf1 robot) (Columns robot) (RightOf2 robot) (LeftOf2 robot) (LeftOf1 robot) (LeftOf3 robot) (RightOf0 robot)))
+
+        )
+    )
+
+    (:derived (KBquery_LeftOf1 ?x)
+        (or
+
+            (and (= ?x robot) (LeftOf1 robot))
+
+        )
+    )
+
+    (:derived (KBquery_LeftOf2 ?x)
+        (or
+
+            (and (= ?x robot) (or (LeftOf1 robot) (LeftOf2 robot)))
+
+        )
+    )
+
+    (:derived (KBquery_LeftOf3 ?x)
+        (or
+
+            (and (= ?x robot) (or (LeftOf1 robot) (LeftOf2 robot) (LeftOf3 robot)))
+
+        )
+    )
+
+    (:derived (KBquery_RightOf0 ?x)
+        (or
+
+            (and (= ?x robot) (or (RightOf2 robot) (RightOf1 robot) (RightOf0 robot)))
+
+        )
+    )
+
+    (:derived (KBquery_RightOf1 ?x)
+        (or
+
+            (and (= ?x robot) (or (RightOf2 robot) (RightOf1 robot)))
+
+        )
+    )
+
+    (:derived (KBquery_RightOf2 ?x)
+        (or
+
+            (and (= ?x robot) (RightOf2 robot))
+
+        )
+    )
+
+    (:derived (KBquery_Row0 ?x)
+        (or
+
+            (and (= ?x robot) (Row0 robot))
+
+        )
+    )
+
+    (:derived (KBquery_Row1 ?x)
+        (or
+
+            (and (= ?x robot) (Row1 robot))
+
+        )
+    )
+
+    (:derived (KBquery_Row2 ?x)
+        (or
+
+            (and (= ?x robot) (Row2 robot))
+
+        )
+    )
+
+    (:derived (KBquery_Rows ?x)
+        (or
+
+            (and (= ?x robot) (or (AboveOf0 robot) (AboveOf1 robot) (BelowOf1 robot) (BelowOf3 robot) (BelowOf2 robot) (Rows robot) (AboveOf2 robot)))
+
+        )
+    )
+

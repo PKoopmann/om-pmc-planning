@@ -1,0 +1,33 @@
+# abstract hook definitions for drone example
+
+PREFIX elevator: <http://www.semanticweb.org/anon/ontologies/2021/3/>
+
+
+HOOK_PREDICATE: KBquery_lift_at
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: elevator:lift_at
+	
+HOOK_PREDICATE: KBquery_passenger
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: elevator:passenger
+	
+HOOK_PREDICATE: KBquery_served
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: elevator:served
+
+HOOK_PREDICATE: KBquery_boarded
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: elevator:boarded
+  
