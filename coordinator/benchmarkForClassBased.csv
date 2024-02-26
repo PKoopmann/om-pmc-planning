@@ -1,4 +1,4 @@
-1,method,name,folder,ontology,domain,problem
+id,method,name,folder,ontology,domain,problem
 1,om_planning,elevator15,../examples/elevator/elevator15,elevator15.ttl,elevator.pddl,elevatorProblem15.pddl
 3,om_planning,elevator16,../examples/elevator/elevator16,elevator16.ttl,elevator.pddl,elevatorProblem16.pddl
 5,om_planning,elevator17,../examples/elevator/elevator17,elevator17.ttl,elevator.pddl,elevatorProblem17.pddl
