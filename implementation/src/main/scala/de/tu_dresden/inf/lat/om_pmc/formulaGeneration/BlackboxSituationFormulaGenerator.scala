@@ -1,6 +1,7 @@
 package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
-import com.clarkparsia.owlapi.explanation.{MultipleExplanationGenerator, MyBlackBoxExplanation, MyHSTExplanationGenerator}
+import com.clarkparsia.owlapi.explanation.{MultipleExplanationGenerator, MyBlackBoxExplanation, MyHSTExplanationGenerator, RestrictionHSTExplanationGenerator, TransactionAwareSingleExpGen}
+import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.FormulaGenerator.Methods.Value
 import de.tu_dresden.inf.lat.om_pmc.ifm.IfmSituationFormulaGenerator
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
 import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLClassExpression, OWLLogicalAxiom, OWLObjectPropertyAssertionAxiom, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom}
@@ -17,7 +18,30 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
 
   var expGenerator: MultipleExplanationGenerator = _
 
+  var generatorOption = ExplanationMethods.DEFAULT
+
+  // parameters for some formula generators such as class-based formula generator
+  var hookSpecificAxioms: Set[OWLLogicalAxiom] = Set()
+  var anchorAxiom: OWLLogicalAxiom = null
+
   //initExplanationGenerator(ontology)
+
+
+  def getExplanationGenerator(relevantAxioms: Set[OWLLogicalAxiom],
+                              singleGen: TransactionAwareSingleExpGen): MultipleExplanationGenerator  = {
+    generatorOption match {
+      case ExplanationMethods.DEFAULT =>
+        new MyHSTExplanationGenerator(
+          relevantAxioms.asJava,
+          singleGen)
+      case ExplanationMethods.RESTRICTED =>
+        new RestrictionHSTExplanationGenerator(
+          relevantAxioms.asJava,
+          hookSpecificAxioms.asJava,
+          anchorAxiom,
+          singleGen)
+    }
+  }
 
   override def initExplanationGenerator(ontology: OWLOntology) = {
     val axioms = ontology.getAxioms().asScala.toSet
@@ -32,10 +56,8 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
       //reasonerFactory.createNonBufferingReasoner(ontology)
     )
 
-    expGenerator =
-      new MyHSTExplanationGenerator(
-        relevantAxiomsFiltered.toSet[OWLLogicalAxiom].asJava,
-        singleGen)
+    expGenerator = getExplanationGenerator(relevantAxiomsFiltered, singleGen)
+
   }
 
   /**
@@ -61,10 +83,8 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
     // clear some memory before assigning new value
     expGenerator.dispose()
 
-    expGenerator =
-      new MyHSTExplanationGenerator(
-        relevantAxiomsFiltered.toSet[OWLLogicalAxiom].asJava,
-        singleGen)
+    expGenerator = getExplanationGenerator(relevantAxiomsFiltered, singleGen)
+
   }
 
   override def getExplanations(axiom: OWLLogicalAxiom): Iterable[Set[OWLLogicalAxiom]] = {
@@ -126,5 +146,9 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
           factory.getOWLObjectHasValue(prp.getProperty(), prp.getObject)
         )
       )
+  }
+
+  object ExplanationMethods extends Enumeration {
+    val DEFAULT, RESTRICTED = Value
   }
 }

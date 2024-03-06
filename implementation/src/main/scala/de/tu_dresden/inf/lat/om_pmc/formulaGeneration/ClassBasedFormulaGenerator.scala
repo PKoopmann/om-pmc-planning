@@ -28,6 +28,9 @@ class ClassBasedFormulaGenerator (
 
   private val fluentAxioms = relevantAxioms
 
+  // maps (sets of) supporting axioms to the (set of) hooks they are associated with
+  private val supportToHookMap = new supportToHook()
+
   override def fluentExplanationsAsDNF(axiom: OWLLogicalAxiom): Iterable[_ <: Set[OWLLogicalAxiom]] = {
     // generate repairs if it had not been done in the past
     if (classCentricRewritings.isEmpty)
@@ -53,6 +56,8 @@ class ClassBasedFormulaGenerator (
   // map to store generated rewritings
   // maps from hook axioms to explanation DNFs
   private var classCentricRewritings : Option[mutable.Map[OWLLogicalAxiom, Set[Set[OWLLogicalAxiom]]]] = None
+    generatorOption = ExplanationMethods.RESTRICTED
+
   private def generateClassCentricRewritings(): Unit =  {
     freeSomeMemory()
 
@@ -76,6 +81,12 @@ class ClassBasedFormulaGenerator (
         // anchorAxiom: the axiom that introduces the new inconsistency
         val (anchorAxiom, supportingAxioms) = additionalAxioms(axiom)
 
+        // set parameter for explanation generator
+        hookSpecificAxioms = supportingAxioms
+        this.anchorAxiom = anchorAxiom
+
+
+
         // if supportingAxioms is empty --> no hook element to explain
         if (supportingAxioms.nonEmpty) {
 
@@ -85,7 +96,7 @@ class ClassBasedFormulaGenerator (
           supportingAxioms.foreach(ontology.addAxiom(_))
 
           // add anchor axiom to distinguish between explanations for inconsistency and hook
-          relevantAxioms += anchorAxiom
+          //relevantAxioms += anchorAxiom
           supportingAxioms.foreach(relevantAxioms+=_)
 
           updateReasoner(ontology)
@@ -101,6 +112,7 @@ class ClassBasedFormulaGenerator (
             val jrelevant = (j - anchorAxiom)
             // we explain only witch fluents
             val filteredJustification = jrelevant.filter(fluentAxioms)
+            val supportJustification = jrelevant.filter(supportingAxioms)
 
             if (!j.contains(anchorAxiom)) {
               // justification for inconsistency
@@ -111,8 +123,10 @@ class ClassBasedFormulaGenerator (
 
               // add all the supporting axioms to infer all hooks that might be explained by justification
               val extendedJustification = (staticOntology.getAxioms() ++ filteredJustification).toSet[OWLAxiom]
-              val explainedHooks = justifiedHooks(extendedJustification, axiom)
 
+              //val explainedHooks = justifiedHooks(extendedJustification, axiom)
+              val explainedHooks = justifiedHooksUsingSupport(supportJustification.toSet[OWLAxiom])
+              val i = " "
               explainedHooks.foreach{hook =>
                 if (rewritings.contains(hook)) {
                   val newRewriting = addExplanationToDNF(rewritings(hook), filteredJustification)
@@ -141,16 +155,24 @@ class ClassBasedFormulaGenerator (
   }
 
   // takes justification and one representative of the relevant hooks and computes all hooks explained by the justification
-  private def justifiedHooks(justification: Set[OWLAxiom], axiom: OWLLogicalAxiom): Set[OWLLogicalAxiom] = axiom match {
+
+  private def justifiedHooksUsingReasoner(justification: Set[OWLAxiom], axiom: OWLLogicalAxiom): Set[OWLLogicalAxiom] = axiom match {
       case ca: OWLClassAssertionAxiom =>
-        justifiedHooks(justification, ca.getClassExpression)
+        justifiedHooksUsingReasoner(justification, ca.getClassExpression)
       case op: OWLObjectPropertyAssertionAxiom =>
-        justifiedHooks(justification, op.getProperty)
+        justifiedHooksUsingReasoner(justification, op.getProperty)
       case _ => assert(false, "NOT SUPPORTED YET: " + axiom)
         null
   }
 
-  private def justifiedHooks(justification: Set[OWLAxiom],
+
+
+  // takes justification that contains only the axioms from the supportAxioms and computes all hooks explained by the justification
+  private def justifiedHooksUsingSupport(justification: Set[OWLAxiom]): Set[OWLLogicalAxiom] =  {
+    this.supportToHookMap.get(justification)
+  }
+
+  private def justifiedHooksUsingReasoner(justification: Set[OWLAxiom],
                              classExpression: OWLClassExpression): Set[OWLLogicalAxiom] = {
     // compute which hooks can be explained by this justification
     updateLocalReasoner(justification)
@@ -164,11 +186,21 @@ class ClassBasedFormulaGenerator (
         classExpression, individual.getRepresentativeElement
       )
     }
+    val a = " "
+
+    justification.foreach { j =>
+     // print(j)
+      j match {
+        case axiom: OWLLogicalAxiom => if (hookSpecificAxioms.contains(axiom))
+          println(j)
+        case _ =>
+      }
+    }
 
     result
   }
 
-  private def justifiedHooks(justification: Set[OWLAxiom],
+  private def justifiedHooksUsingReasoner(justification: Set[OWLAxiom],
                              propertyExpression: OWLObjectPropertyExpression): Set[OWLLogicalAxiom] = {
     // compute which hooks can be explained by this justification
     updateLocalReasoner(justification)
@@ -232,6 +264,7 @@ class ClassBasedFormulaGenerator (
             indClass, ca.getIndividual
           )
           supportingAxioms += newAxiom
+          supportToHookMap.add(Set(newAxiom).toSet[OWLAxiom], Set(ca))
         }
 
       case _ => null
@@ -280,6 +313,8 @@ class ClassBasedFormulaGenerator (
             rangeClass, op.getObject
           )
           supportingAxioms += rangeAxiom
+          supportToHookMap.add(Set(domainAxiom, rangeAxiom).toSet[OWLAxiom], Set(op))
+
         }
 
       case _ => null

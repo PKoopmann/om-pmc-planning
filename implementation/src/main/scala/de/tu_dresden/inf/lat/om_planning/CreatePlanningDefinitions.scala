@@ -13,7 +13,8 @@ object CreatePlanningDefinitions {
 
   def main(args: Array[String]) = {
 
-    /*create(
+    /*
+    create(
       "-pddl",
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/fluents.txt"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/hooks.txt"),
@@ -21,7 +22,11 @@ object CreatePlanningDefinitions {
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/temp_rewritings.txt")
     )
 
+     */
 
+
+
+/*
     create(
       "-pddl",
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/cats/6/fluents.txt"),
@@ -54,10 +59,13 @@ object CreatePlanningDefinitions {
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/drone5-5.ttl"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/temp_rewritings_2.txt"),
       0,
-      750
+      200
     )
 
- */
+*/
+
+
+
 /*
     create(
       "-pddl",
