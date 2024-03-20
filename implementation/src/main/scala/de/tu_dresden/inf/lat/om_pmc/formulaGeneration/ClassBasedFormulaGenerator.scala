@@ -1,6 +1,6 @@
 package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
-import com.clarkparsia.owlapi.explanation.{MyBlackBoxExplanation, MyHSTExplanationGenerator}
+import com.clarkparsia.owlapi.explanation.{MultipleExplanationGenerator, RestrictionHSTExplanationGenerator, TransactionAwareSingleExpGen}
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
 import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import org.semanticweb.owlapi.apibinding.OWLManager
@@ -31,6 +31,15 @@ class ClassBasedFormulaGenerator (
   // maps (sets of) supporting axioms to the (set of) hooks they are associated with
   private val supportToHookMap = new supportToHook()
 
+
+  override def getExplanationGenerator(relevantAxioms: Set[OWLLogicalAxiom],
+                              singleGen: TransactionAwareSingleExpGen): MultipleExplanationGenerator  = {
+        new RestrictionHSTExplanationGenerator(
+          relevantAxioms.asJava,
+          hookSpecificAxioms.asJava,
+          anchorAxiom,
+          singleGen)
+  }
   override def fluentExplanationsAsDNF(axiom: OWLLogicalAxiom): Iterable[_ <: Set[OWLLogicalAxiom]] = {
     // generate repairs if it had not been done in the past
     if (classCentricRewritings.isEmpty)
@@ -56,7 +65,6 @@ class ClassBasedFormulaGenerator (
   // map to store generated rewritings
   // maps from hook axioms to explanation DNFs
   private var classCentricRewritings : Option[mutable.Map[OWLLogicalAxiom, Set[Set[OWLLogicalAxiom]]]] = None
-    generatorOption = ExplanationMethods.RESTRICTED
 
   private def generateClassCentricRewritings(): Unit =  {
     freeSomeMemory()

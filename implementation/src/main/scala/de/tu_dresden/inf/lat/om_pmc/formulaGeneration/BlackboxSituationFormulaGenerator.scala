@@ -1,8 +1,6 @@
 package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
-import com.clarkparsia.owlapi.explanation.{MultipleExplanationGenerator, MyBlackBoxExplanation, MyHSTExplanationGenerator, RestrictionHSTExplanationGenerator, TransactionAwareSingleExpGen}
-import de.tu_dresden.inf.lat.om_pmc.formulaGeneration.FormulaGenerator.Methods.Value
-import de.tu_dresden.inf.lat.om_pmc.ifm.IfmSituationFormulaGenerator
+import com.clarkparsia.owlapi.explanation.{MultipleExplanationGenerator, MyBlackBoxExplanation, MyHSTExplanationGenerator, TransactionAwareSingleExpGen}
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
 import org.semanticweb.owlapi.model.{OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLClassExpression, OWLLogicalAxiom, OWLObjectPropertyAssertionAxiom, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
@@ -18,8 +16,6 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
 
   var expGenerator: MultipleExplanationGenerator = _
 
-  var generatorOption = ExplanationMethods.DEFAULT
-
   // parameters for some formula generators such as class-based formula generator
   var hookSpecificAxioms: Set[OWLLogicalAxiom] = Set()
   var anchorAxiom: OWLLogicalAxiom = null
@@ -29,18 +25,9 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
 
   def getExplanationGenerator(relevantAxioms: Set[OWLLogicalAxiom],
                               singleGen: TransactionAwareSingleExpGen): MultipleExplanationGenerator  = {
-    generatorOption match {
-      case ExplanationMethods.DEFAULT =>
         new MyHSTExplanationGenerator(
           relevantAxioms.asJava,
           singleGen)
-      case ExplanationMethods.RESTRICTED =>
-        new RestrictionHSTExplanationGenerator(
-          relevantAxioms.asJava,
-          hookSpecificAxioms.asJava,
-          anchorAxiom,
-          singleGen)
-    }
   }
 
   override def initExplanationGenerator(ontology: OWLOntology) = {
@@ -97,18 +84,6 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
   }
 
   override def getExplanationsForInconsistency(): Iterable[Set[OWLLogicalAxiom]] = {
-    //initReasoner(ontology)
-    /*updateReasoner(ontology)
-
-    expGenerator.getExplanations(factory.getOWLThing)
-      .asScala
-      .map(_.asScala
-        .toSet[OWLAxiom]
-        .map(_.asInstanceOf[OWLLogicalAxiom]))
-
-     */
-    //getExplanations(getInconsistentAxiom)
-
     val allExplanations = getCompleteExplanationsForInconsistency()
     allExplanations.map(relevantAxioms.intersect(_))
   }
