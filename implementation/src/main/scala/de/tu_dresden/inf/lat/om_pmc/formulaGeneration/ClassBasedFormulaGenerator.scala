@@ -4,7 +4,7 @@ import com.clarkparsia.owlapi.explanation.{MultipleExplanationGenerator, Restric
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
 import de.tu_dresden.inf.lat.prettyPrinting.formatting.SimpleOWLFormatter
 import org.semanticweb.owlapi.apibinding.OWLManager
-import org.semanticweb.owlapi.model.{OWLAxiom, OWLClassAssertionAxiom, OWLClassExpression, OWLLogicalAxiom, OWLObjectPropertyAssertionAxiom, OWLObjectPropertyExpression, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom}
+import org.semanticweb.owlapi.model.{OWLAxiom, OWLClassAssertionAxiom, OWLClassExpression, OWLLogicalAxiom, OWLObjectPropertyAssertionAxiom, OWLObjectPropertyExpression, OWLOntology, OWLOntologyManager, OWLSubClassOfAxiom, SWRLAtom}
 import org.semanticweb.owlapi.reasoner.{OWLReasoner, OWLReasonerFactory}
 
 import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
@@ -30,6 +30,11 @@ class ClassBasedFormulaGenerator (
 
   private val fluentAxioms = relevantAxioms
 
+  // parameters for some formula generators such as class-based formula generator
+  var hookSpecificAxioms: Set[OWLLogicalAxiom] = Set()
+  var anchorAxioms: Set[OWLLogicalAxiom] = Set()
+
+
   // maps (sets of) supporting axioms to the (set of) hooks they are associated with
   private val supportToHookMap = new supportToHook()
 
@@ -39,7 +44,7 @@ class ClassBasedFormulaGenerator (
     new RestrictionHSTExplanationGenerator(
       relevantAxioms.asJava,
       hookSpecificAxioms.asJava,
-      anchorAxiom,
+      anchorAxioms.asJava,
       singleGen)
   }
   override def fluentExplanationsAsDNF(axiom: OWLLogicalAxiom): Iterable[_ <: Set[OWLLogicalAxiom]] = {
@@ -75,11 +80,17 @@ class ClassBasedFormulaGenerator (
 
     var inconsistencyDnf = Set[Set[OWLLogicalAxiom]]()
 
+    val ontologyAxioms = ontology.getAxioms()
+
+
     // iterate over all hooks
     relevantHooks.foreach {axiom =>
       // only compute rewriting for hook, if it does not exists yet, i.e. was not already computed together with
       // another hook
       if (!rewritings.contains(axiom)) {
+
+
+
         println("compute hooks with pattern as " + SimpleOWLFormatter.format(axiom))
         // find all hooks that are of the same class
         relevantHooks.foreach { hook =>
@@ -89,11 +100,11 @@ class ClassBasedFormulaGenerator (
 
         // compute axiom to add
         // anchorAxiom: the axiom that introduces the new inconsistency
-        val (anchorAxiom, supportingAxioms) = additionalAxioms(axiom)
+        val (anchorAxioms, supportingAxioms) = additionalAxioms(axiom)
 
         // set parameter for explanation generator
         hookSpecificAxioms = supportingAxioms
-        this.anchorAxiom = anchorAxiom
+        this.anchorAxioms = anchorAxioms
 
 
 
@@ -102,8 +113,11 @@ class ClassBasedFormulaGenerator (
 
           // add general class explanation to ontology
 
-          ontology.addAxiom(anchorAxiom)
+          anchorAxioms.foreach(ontology.addAxiom(_))
           supportingAxioms.foreach(ontology.addAxiom(_))
+
+          //println(SimpleOWLFormatter.format(ontology))
+
 
           // add anchor axiom to distinguish between explanations for inconsistency and hook
           //relevantAxioms += anchorAxiom
@@ -119,12 +133,12 @@ class ClassBasedFormulaGenerator (
           // iterate over justifications and decide which hooks they explain
           justifications.foreach { j =>
             //println("j " + j)
-            val jrelevant = (j - anchorAxiom)
+            val jrelevant = (j -- anchorAxioms)
             // we explain only witch fluents
             val filteredJustification = jrelevant.filter(fluentAxioms)
             val supportJustification = jrelevant.filter(supportingAxioms)
 
-            if (!j.contains(anchorAxiom)) {
+            if (j.intersect(anchorAxioms).isEmpty) {
               // justification for inconsistency
               inconsistencyDnf = addExplanationToDNF(inconsistencyDnf, filteredJustification)
             }
@@ -149,10 +163,10 @@ class ClassBasedFormulaGenerator (
           }
 
           // put ontology back to original state
-          ontology.removeAxiom(anchorAxiom)
-          supportingAxioms.foreach(ontology.removeAxiom(_))
+          ontology.removeAxioms(ontology.getAxioms())
+          ontology.addAxioms(ontologyAxioms)
 
-          relevantAxioms -= anchorAxiom
+          anchorAxioms.foreach(relevantAxioms -= _)
 
           updateReasoner(ontology)
         }
@@ -244,16 +258,16 @@ class ClassBasedFormulaGenerator (
   }
 
   // result: 'anchor axiom' plus set of supporting axioms
-  private def additionalAxioms(axiom: OWLLogicalAxiom): (OWLLogicalAxiom, Set[OWLLogicalAxiom]) = axiom match {
+  private def additionalAxioms(axiom: OWLLogicalAxiom): (Set[OWLLogicalAxiom], Set[OWLLogicalAxiom]) = axiom match {
     case ca: OWLClassAssertionAxiom =>
       additionalAxioms(ca.getClassExpression)
     case op: OWLObjectPropertyAssertionAxiom =>
-      additionalAxioms(op.getProperty)
+      additionalAxiomsUsingSWRL(op.getProperty)
     case _ =>  assert(false, "NOT SUPPORTED YET: "+axiom)
       null
   }
 
-  private def additionalAxioms(hookClass: OWLClassExpression): (OWLLogicalAxiom, Set[OWLLogicalAxiom]) = {
+  private def additionalAxioms(hookClass: OWLClassExpression): (Set[OWLLogicalAxiom], Set[OWLLogicalAxiom]) = {
     // define new class with new name
     val className = "hookIndividualsInClass"+hookClass.toString.stripPrefix("<").stripSuffix(">")
     val indClass = factory.getOWLClass(className)
@@ -287,15 +301,17 @@ class ClassBasedFormulaGenerator (
       factory.getOWLNothing
     )
 
-    (anchorAxiom, supportingAxioms)
+    (Set(anchorAxiom), supportingAxioms)
   }
 
-  private def additionalAxioms(hookProperty: OWLObjectPropertyExpression): (OWLLogicalAxiom, Set[OWLLogicalAxiom]) = {
+  private def additionalAxioms(hookProperty: OWLObjectPropertyExpression): (Set[OWLLogicalAxiom], Set[OWLLogicalAxiom]) = {
     val domainClassName = "hookIndividualsInDomainFor" + hookProperty.toString.stripPrefix("<").stripSuffix(">")
     val rangeClassName = "hookIndividualsInRangeFor" + hookProperty.toString.stripPrefix("<").stripSuffix(">")
+    val relationName = "hookIndividualsInRelationFor" + hookProperty.toString.stripPrefix("<").stripSuffix(">")
 
     val domainClass = factory.getOWLClass(domainClassName)
     val rangeClass = factory.getOWLClass(rangeClassName)
+    val relation = factory.getOWLObjectProperty(relationName)
 
     var supportingAxioms: Set[OWLLogicalAxiom] = Set()
 
@@ -312,9 +328,22 @@ class ClassBasedFormulaGenerator (
       factory.getOWLNothing
     )
 
+    // define domain and range of newly introduced relation
+    val domainAxiom = factory.getOWLObjectPropertyDomainAxiom(
+      relation,
+      domainClass
+    )
+
+    val rangeAxiom = factory.getOWLObjectPropertyRangeAxiom(
+      relation,
+      rangeClass
+    )
+
     relevantHooks.foreach {
       case op: OWLObjectPropertyAssertionAxiom =>
         if (op.getProperty == hookProperty) {
+          /*
+          // old encoding
           val domainAxiom = factory.getOWLClassAssertionAxiom(
             domainClass, op.getSubject
           )
@@ -325,12 +354,97 @@ class ClassBasedFormulaGenerator (
           supportingAxioms += rangeAxiom
           supportToHookMap.add(Set(domainAxiom, rangeAxiom).toSet[OWLAxiom], Set(op))
 
+           */
+          // new encoding
+          val relationAxiom = factory.getOWLObjectPropertyAssertionAxiom(
+            relation,
+            op.getSubject,
+            op.getObject
+          )
+          supportingAxioms += relationAxiom
+          supportToHookMap.add(Set(relationAxiom).toSet[OWLAxiom], Set(op))
         }
 
       case _ => null
     }
 
-    (anchorAxiom, supportingAxioms)
+    (Set(anchorAxiom, domainAxiom, rangeAxiom), supportingAxioms)
+  }
+
+
+  private def additionalAxiomsUsingSWRL(hookProperty: OWLObjectPropertyExpression): (Set[OWLLogicalAxiom], Set[OWLLogicalAxiom]) = {
+
+    val shortPropertyName = hookProperty.toString.stripPrefix("<").stripSuffix(">")
+    val incClassName = "hhokIndividualsInClassFor" + shortPropertyName
+    val relationName = "hookIndividualsInRelationFor" + shortPropertyName
+
+    val incClass = factory.getOWLClass(incClassName)
+    val relation = factory.getOWLObjectProperty(relationName)
+
+    var supportingAxioms: Set[OWLLogicalAxiom] = Set()
+
+    // anchor: domain /\ E property. range subClassOf Nothing
+    // i.e. property connects nothing from domain to range
+    val anchorAxiom = factory.getOWLSubClassOfAxiom(
+      incClass,
+      factory.getOWLNothing
+    )
+
+
+    val swrlRule = factory.getSWRLRule(
+      Set(
+        factory.getSWRLObjectPropertyAtom(
+          hookProperty,
+          factory.getSWRLVariable(shortPropertyName + "x"),
+          factory.getSWRLVariable(shortPropertyName + "y")
+        ),
+        factory.getSWRLObjectPropertyAtom(
+          relation,
+          factory.getSWRLVariable(shortPropertyName + "x"),
+          factory.getSWRLVariable(shortPropertyName + "y")
+        )
+      ).toSet[SWRLAtom].asJava,
+      Set(
+        factory.getSWRLClassAtom(
+          incClass,
+          factory.getSWRLVariable(shortPropertyName + "x")
+        )
+      ).toSet[SWRLAtom].asJava
+    )
+
+
+
+
+    relevantHooks.foreach {
+      case op: OWLObjectPropertyAssertionAxiom =>
+        if (op.getProperty == hookProperty) {
+          /*
+          // old encoding
+          val domainAxiom = factory.getOWLClassAssertionAxiom(
+            domainClass, op.getSubject
+          )
+          supportingAxioms += domainAxiom
+          val rangeAxiom = factory.getOWLClassAssertionAxiom(
+            rangeClass, op.getObject
+          )
+          supportingAxioms += rangeAxiom
+          supportToHookMap.add(Set(domainAxiom, rangeAxiom).toSet[OWLAxiom], Set(op))
+
+           */
+          // new encoding
+          val relationAxiom = factory.getOWLObjectPropertyAssertionAxiom(
+            relation,
+            op.getSubject,
+            op.getObject
+          )
+          supportingAxioms += relationAxiom
+          supportToHookMap.add(Set(relationAxiom).toSet[OWLAxiom], Set(op))
+        }
+
+      case _ => null
+    }
+
+    (Set(anchorAxiom, swrlRule), supportingAxioms)
   }
 
   def getClassExpression(axiom: OWLLogicalAxiom): OWLClassExpression = axiom match {

@@ -24,6 +24,28 @@ object CreatePlanningDefinitions {
 
      */
 
+    /*
+    create(
+      "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/robotConj6/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/robotConj6/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/robotConj6/TTL6.owl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/robotConj6/temp_rewritings.txt"),
+      0,
+      1
+    )
+    */
+
+/*
+    create(
+      "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/robot3/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/robot3/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/robot3/TTL3.owl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/robot3/temp_rewritings.txt"),
+    )
+
+ */
 
 
 /*
@@ -62,8 +84,7 @@ object CreatePlanningDefinitions {
       200
     )
 
-*/
-
+ */
 
 
 /*
@@ -74,10 +95,12 @@ object CreatePlanningDefinitions {
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/pipesA-8/pipesA-8.ttl"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/pipesA-8/temp_rewritings.txt"),
       0,
-      75
+      1000
     )
-    
+
+
  */
+
 
 
 /*

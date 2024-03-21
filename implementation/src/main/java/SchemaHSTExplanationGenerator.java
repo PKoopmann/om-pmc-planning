@@ -1,30 +1,23 @@
 package com.clarkparsia.owlapi.explanation;
 
-import com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor;
-import com.clarkparsia.owlapi.explanation.util.OntologyUtils;
-import com.clarkparsia.owlapi.explanation.util.SilentExplanationProgressMonitor;
+
+import org.apache.http.annotation.Obsolete;
 import org.semanticweb.HermiT.ReasonerFactory;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
-import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.util.OWLAPIPreconditions;
-import org.semanticweb.owlapi.util.OWLEntityCollector;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import scala.Int;
+
 
 import javax.annotation.Nonnegative;
-import javax.annotation.Nullable;
 import java.util.*;
-import java.util.stream.Collectors;
 
-import static org.semanticweb.owlapi.model.parameters.Imports.INCLUDED;
-import static org.semanticweb.owlapi.util.OWLAPIPreconditions.checkNotNull;
 
 /**
  * HST explanation generator.
  */
+
+// use MupsTrackingHSTExplanationGenerator instead (faster)
 public class SchemaHSTExplanationGenerator extends com.clarkparsia.owlapi.explanation.RestrictionHSTExplanationGenerator
         implements MultipleExplanationGenerator {
 
@@ -46,9 +39,9 @@ public class SchemaHSTExplanationGenerator extends com.clarkparsia.owlapi.explan
      */
     public SchemaHSTExplanationGenerator(Set<OWLLogicalAxiom> relevantAxioms,
                                          Set<OWLLogicalAxiom> hookIndividualAxioms,
-                                         OWLLogicalAxiom anchorAxiom,
+                                         Set<OWLLogicalAxiom> anchorAxioms,
                                          TransactionAwareSingleExpGen singleExplanationGenerator) throws OWLOntologyCreationException {
-        super(relevantAxioms, hookIndividualAxioms, anchorAxiom, singleExplanationGenerator);
+        super(relevantAxioms, hookIndividualAxioms, anchorAxioms, singleExplanationGenerator);
         this.originalAxioms = getOntology().getAxioms();
     }
 
@@ -79,6 +72,8 @@ public class SchemaHSTExplanationGenerator extends com.clarkparsia.owlapi.explan
             allMups.add(firstMups);
             // call to schemas
             addAnalogMUPS(firstMups, allMups);
+           // System.out.println(firstMups);
+            //System.out.println(allMups);
             Set<Set<OWLAxiom>> satPaths = new HashSet<>();
             Set<OWLAxiom> currentPathContents = new HashSet<>();
             singleExplanationGenerator.beginTransaction();
@@ -136,10 +131,10 @@ public class SchemaHSTExplanationGenerator extends com.clarkparsia.owlapi.explan
 
             // only compute analogue mups if this pattern has not been considered yet
             if (!allMups.contains(newMUPS))
+                // call forward reasoning
                 addAnalogMUPS(newMUPS, allMups);
             allMups.add(newMUPS);
 
-            // TODO: call forward reasoning here!
             progressMonitor.foundExplanation(newMUPS);
             // Recompute priority here?
             constructHittingSetTree(unsatClass, newMUPS, allMups, satPaths, currentPathContents,
@@ -152,16 +147,18 @@ public class SchemaHSTExplanationGenerator extends com.clarkparsia.owlapi.explan
     }
 
     // adds all analog mups to set of all mups
-    private void addAnalogMUPS(Set<OWLAxiom> newMUPS, Set<Set<OWLAxiom>> allMUPS) {
+    protected void addAnalogMUPS(Set<OWLAxiom> newMUPS, Set<Set<OWLAxiom>> allMUPS) {
        // System.out.println("original mups ");
         // System.out.println(newMUPS);
         Set<Set<OWLAxiom>> analogMUPS = computeAnalogJustifications(newMUPS);
-        Integer i = 0;
-        for (Set<OWLAxiom> mups : analogMUPS){
-           // System.out.println("analogue mups " + i++);
-            // System.out.println(mups);
-            allMUPS.add(mups);
-        }
+        //Integer i = 0;
+        // System.out.println("analogue mups " + i++);
+        //System.out.println(newMUPS);
+        //System.out.println("found analog: " + analogMUPS.size());
+        //for (Set<OWLAxiom> m : analogMUPS)
+        //    if (allMUPS.contains(m))
+        //       System.out.println("bad");
+        allMUPS.addAll(analogMUPS);
     }
 
 
@@ -172,7 +169,7 @@ public class SchemaHSTExplanationGenerator extends com.clarkparsia.owlapi.explan
 
 
     // computes all justifications with a similar pattern
-    private Set<Set<OWLAxiom>> computeAnalogJustifications(Set<OWLAxiom> justification) {
+    protected Set<Set<OWLAxiom>> computeAnalogJustifications(Set<OWLAxiom> justification) {
         Set<Set<OWLAxiom>> analogJustifications = new HashSet<>();
 
 
@@ -262,17 +259,22 @@ class JustificationSchema {
 
         Set<Map<OWLIndividual, OWLIndividual>> allMappings = allMappings(
                 variableNames,
-                individuals
+                individuals,
+                allowedAxioms
         );
         Set<Map<OWLIndividual, OWLIndividual>> varToIndMap = new HashSet<>(allMappings);
+
 
 
                 // check, if the mapping is allowed or not
         for (Map<OWLIndividual, OWLIndividual> map : allMappings){
             // compute instantiatiation according to mapping
             Set<OWLAxiom> instantiatedPattern = instantiate(map);
+            //if (instantiatedPattern.toString().contains("aa") && instantiatedPattern.toString().contains("ab"))
+           //     System.out.println("found");
             for (OWLAxiom axiom : instantiatedPattern) {
                 // check if any instantiated axiom is not in ontology --> remove this mapping
+                // TODO: check if the axiom is a fluent, only then check, if it is in ontology?
                 if (!allowedAxioms.contains(axiom)) {
                     varToIndMap.remove(map);
                     break;
@@ -290,6 +292,38 @@ class JustificationSchema {
             instantiatedAxioms.add(replaceIndividuals(a, varToIndMap));
         }
         return instantiatedAxioms;
+    }
+
+    // returns true, if the (partial) mapping does not violate the allowed axioms,
+    // i.e. creates new, fully instantiated axioms that are not part of "allowedAxioms"
+    private boolean validMapping(Map<OWLIndividual, OWLIndividual> varToIndMap, Set<OWLAxiom> allowedAxioms) {
+        Set<OWLAxiom> axioms = partialInstantiate(varToIndMap);
+        for (OWLAxiom a : axioms) {
+            if (!allowedAxioms.contains(a))
+                return false;
+        }
+        return true;
+    }
+
+    // instantiates only the axioms that already have all the variables assigned from map
+    private Set<OWLAxiom> partialInstantiate(Map<OWLIndividual, OWLIndividual> varToIndMap) {
+        Set<OWLAxiom> instantiatedAxioms = new HashSet<>();
+        // replace all variables in the axioms to get schema
+        for (OWLAxiom a : justificationSchema) {
+            // check, if all variables mapped
+            if (allVariablesMapped(a, varToIndMap))
+                instantiatedAxioms.add(replaceIndividuals(a, varToIndMap));
+        }
+        return instantiatedAxioms;
+    }
+
+    // returns true if all variables in the axiom are assigned to something by the map
+    private boolean allVariablesMapped(OWLAxiom axiom, Map<OWLIndividual, OWLIndividual> varToIndMap){
+        for (OWLIndividual i : axiom.individualsInSignature().toList()) {
+            if (!varToIndMap.containsKey(i))
+                return false;
+        }
+        return true;
     }
 
     // replaces all individuals according to the map
@@ -317,7 +351,8 @@ class JustificationSchema {
     }
 
     private Set<Map<OWLIndividual, OWLIndividual>> allMappings(Set<OWLIndividual> variables,
-                                                               Set<OWLIndividual> individuals) {
+                                                               Set<OWLIndividual> individuals,
+                                                               Set<OWLAxiom> allowedAxioms) {
 
         Optional<OWLIndividual> variable = variables.stream().findFirst();
         if (variables.isEmpty())
@@ -329,7 +364,8 @@ class JustificationSchema {
             for (OWLIndividual ind : individuals) {
                 Map<OWLIndividual, OWLIndividual> mapping = new HashMap<>();
                 mapping.put(variable.get(), ind);
-                mappings.add(mapping);
+                if (validMapping(mapping, allowedAxioms))
+                    mappings.add(mapping);
             }
             return mappings;
         }
@@ -337,14 +373,15 @@ class JustificationSchema {
             // recursive call
             Set<OWLIndividual> newVariables = new HashSet<>(variables);
             newVariables.remove(variable.get());
-            Set<Map<OWLIndividual, OWLIndividual>> recursiveMappings = allMappings(newVariables, individuals);
+            Set<Map<OWLIndividual, OWLIndividual>> recursiveMappings = allMappings(newVariables, individuals, allowedAxioms);
             Set<Map<OWLIndividual, OWLIndividual>> mappings = new HashSet<>();
 
-            for (Map<OWLIndividual, OWLIndividual> map : mappings){
+            for (Map<OWLIndividual, OWLIndividual> map : recursiveMappings){
                 for (OWLIndividual ind : individuals) {
                     Map<OWLIndividual, OWLIndividual> mapping = new HashMap<>(map);
                     mapping.put(variable.get(), ind);
-                    mappings.add(mapping);
+                    if (validMapping(mapping, allowedAxioms))
+                        mappings.add(mapping);
                 }
             }
             return mappings;

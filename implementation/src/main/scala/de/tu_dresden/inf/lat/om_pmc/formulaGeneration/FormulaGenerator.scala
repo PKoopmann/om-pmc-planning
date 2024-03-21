@@ -211,13 +211,13 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
     val inconsistentDNF = generateInconsistentDNF()
     var dnf = Set[Set[OWLLogicalAxiom]]()
 
-    println("Generate DNF for axiom: " + SimpleOWLFormatter.format(axiom))
+    //println("Generate DNF for axiom: " + SimpleOWLFormatter.format(axiom))
 
     if (staticReasoner.isEntailed(axiom)) {
       // axiom is already entailed in static ontology
       // add empty explanation
       dnf += Set()
-      println("entailed in static ontology")
+      //println("entailed in static ontology")
     }
     else {
       // next line uses different approaches for different reasoning methods
@@ -226,11 +226,14 @@ abstract class FormulaGenerator(axiom2formula: AxiomToFormulaMap,
 
     dnf --= inconsistentDNF
 
+    /*
     dnf.size match {
       case 0 => println("no explanation found")
       case 1 => println("1 explanation found")
       case n => println(n + " explanations found")
     }
+
+     */
 
     dnf
   }

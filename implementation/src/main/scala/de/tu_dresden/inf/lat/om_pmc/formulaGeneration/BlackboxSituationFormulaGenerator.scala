@@ -16,10 +16,6 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
 
   var expGenerator: MultipleExplanationGenerator = _
 
-  // parameters for some formula generators such as class-based formula generator
-  var hookSpecificAxioms: Set[OWLLogicalAxiom] = Set()
-  var anchorAxiom: OWLLogicalAxiom = null
-
   //initExplanationGenerator(ontology)
 
 
@@ -54,8 +50,6 @@ abstract class BlackboxSituationFormulaGenerator(axiom2formula: AxiomToFormulaMa
     val currentOntology = reasoner.getRootOntology()
     val axioms = currentOntology.getAxioms().asScala.toSet
     val relevantAxiomsFiltered = relevantAxioms.filter(axioms)
-
-    //    println("Relevant axioms after filtering: "+relevantAxiomsFiltered)
 
     // get fresh reasoner
     val r = getReasoner(currentOntology)

@@ -344,7 +344,7 @@ public class ExtractResults {
         var rawData = new BenchmarkSet();
 
         // DL benchmark
-        rawData.addFromCSV("../../benchmark_runs/benchmarking/benchmarkRelevantForIncOM_2024_02_09_inc_based.csv");
+        rawData.addFromCSV("../../benchmark_runs/benchmarking/benchmarkForClassBased2_2024_03_06_13_14.csv");
 
         // new method
         //rawData.addFromCSV("../../benchmark_runs/benchmarking/benchmarkAll_2024_01_17_15_51.csv");

@@ -42,7 +42,7 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
     // each hook is related to only one of the following axioms, i.e. these are the supporting axioms
     // such as the class belonging for each hook
     protected final Set<OWLLogicalAxiom> hookIndividualAxioms;
-    protected final OWLLogicalAxiom anchorAxiom; // anchor for hooks that get explained
+    protected final Set<OWLLogicalAxiom> anchorAxioms; // anchor for hooks that get explained
 
     protected int depthCounter = 0;
 
@@ -53,11 +53,11 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
      */
     public RestrictionHSTExplanationGenerator(Set<OWLLogicalAxiom> relevantAxioms,
                                               Set<OWLLogicalAxiom> hookIndividualAxioms,
-                                              OWLLogicalAxiom anchorAxiom,
+                                              Set<OWLLogicalAxiom> anchorAxioms,
                                               TransactionAwareSingleExpGen singleExplanationGenerator) {
 	this.relevantAxioms = relevantAxioms;
     this.hookIndividualAxioms = hookIndividualAxioms;
-    this.anchorAxiom = anchorAxiom;
+    this.anchorAxioms = anchorAxioms;
 	
 	this.singleExplanationGenerator =
 	    checkNotNull(singleExplanationGenerator,
@@ -72,8 +72,8 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
      * @param allMups The set of all MUPS which is used to calculate the ordering
      * @return the ordered mups
      */
-    static List<OWLAxiom> getOrderedMUPS(List<OWLAxiom> mups,
-                                         final Set<Set<OWLAxiom>> allMups) {
+    protected static List<OWLAxiom> getOrderedMUPS(List<OWLAxiom> mups,
+                                                   final Set<Set<OWLAxiom>> allMups) {
         Comparator<OWLAxiom> mupsComparator = (o1, o2) -> {
             // The axiom that appears in most MUPS has the lowest index
             // in the list
@@ -126,8 +126,8 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
      * @param currentPathContents the current path contents
      * @return true, if successful
      */
-    private static boolean checkEarlyTermination(Set<Set<OWLAxiom>> satPaths,
-        Set<OWLAxiom> currentPathContents) {
+    protected static boolean checkEarlyTermination(Set<Set<OWLAxiom>> satPaths,
+                                                   Set<OWLAxiom> currentPathContents) {
         boolean earlyTermination = false;
         // Early path termination. If our path contents are the superset of
         // the contents of a path then we can terminate here.
@@ -182,9 +182,12 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
         //System.out.println("SingleExplanationGenerator: "+singleExplanationGenerator);
         Set<OWLAxiom> result =
                 new HashSet<OWLAxiom>(singleExplanationGenerator.getExplanation(unsatClass));
+
         justificationCalls++;
         if (result.isEmpty())
             emptyJustificationCalls++;
+        //else
+        //    System.out.println(result);
         return result;
     }
 
@@ -274,14 +277,15 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
                 Set<OWLAxiom> axiomsToRemove = new HashSet<>(Collections.emptySet());
                 axiomsToRemove.add(axiom);
 
+                //System.out.println(depthCounter + " MUPSnew "+ Integer.valueOf(allMups.size())+" : "+ mups);
                 //System.out.println(depthCounter + " remove initial: " + axiom);
+
                 var remainingHookSpecificAxioms = new HashSet<>(hookIndividualAxioms);
                 remainingHookSpecificAxioms.removeAll(currentPathContents);
 
                 if (!hookIndividualAxioms.contains(axiom)) {
                     //System.out.println("BUM! " + axiom);
                     // remove all hook specific axioms that are not already contained in mups
-                    //System.out.println(depthCounter + " MUPSnew "+ Integer.valueOf(allMups.size())+" : "+ mups);
                     if (!isDisjoint(mups, hookIndividualAxioms)) {
                         // create set of all hook specific axioms that are still to consider, i.e. have not been removed
                         // on the path to the node
@@ -303,7 +307,7 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
                 //    System.out.println("r: " + remainingHookSpecificAxioms + " " + axiom);
                 //    System.out.println("p: " + currentPathContents);
                 if (remainingHookSpecificAxioms.isEmpty()) {
-                    axiomsToRemove.add(anchorAxiom);
+                    axiomsToRemove.addAll(anchorAxioms);
                     //System.out.println("remove anchor");
                 }
 
@@ -383,26 +387,9 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
         return orderedMups;
     }
 
-    private void backtrack(Set<OWLAxiom> currentPathContents, OWLAxiom axiom,
-        List<OWLDeclarationAxiom> temporaryDeclarations,
-        Set<OWLOntology> ontologies) {
-		
-        // Back track - go one level up the tree and run for the next axiom
-        currentPathContents.remove(axiom);
-        LOGGER.info("Restoring axiom: {}", axiom);
-		
-        // Remove any temporary declarations
-        for (OWLDeclarationAxiom decl : temporaryDeclarations) {
-            OntologyUtils.removeAxiom(decl, getReasoner().getRootOntology().importsClosure());
-        }
-		
-        // Done with the axiom that was removed. Add it back in
-        OntologyUtils.addAxiom(axiom, ontologies.stream());
-    }
-
-    private void backtrack(Set<OWLAxiom> currentPathContents, Set<OWLAxiom> axioms,
-                           List<OWLDeclarationAxiom> temporaryDeclarations,
-                           Set<OWLOntology> ontologies) {
+    protected void backtrack(Set<OWLAxiom> currentPathContents, Set<OWLAxiom> axioms,
+                             List<OWLDeclarationAxiom> temporaryDeclarations,
+                             Set<OWLOntology> ontologies) {
 
         // Back track - go one level up the tree and run for the next axiom
         currentPathContents.removeAll(axioms);
@@ -449,35 +436,14 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
     }
 
     /**
-     * Removes the axiom and add declarations.
-     *
-     * @param axiom the axiom
-     * @param temporaryDeclarations the temporary declarations
-     * @return the sets the
-     */
-    private Set<OWLOntology> removeAxiomAndAddDeclarations(OWLAxiom axiom,
-        List<OWLDeclarationAxiom> temporaryDeclarations) {
-        // Remove the current axiom from all the ontologies it is included
-        // in
-        Set<OWLOntology> ontologies = OntologyUtils
-            .removeAxiom(axiom, getReasoner().getRootOntology()
-                .importsClosure());
-        collectTemporaryDeclarations(axiom, temporaryDeclarations);
-        for (OWLDeclarationAxiom decl : temporaryDeclarations) {
-            OntologyUtils.addAxiom(decl, getReasoner().getRootOntology().importsClosure());
-        }
-        return ontologies;
-    }
-
-    /**
      * Removes multiple axioms and add declarations.
      *
      * @param axioms the axioms
      * @param temporaryDeclarations the temporary declarations
      * @return the sets the
      */
-    private Set<OWLOntology> removeAxiomsAndAddDeclarations(Set<OWLAxiom> axioms,
-                                                           List<OWLDeclarationAxiom> temporaryDeclarations) {
+    protected Set<OWLOntology> removeAxiomsAndAddDeclarations(Set<OWLAxiom> axioms,
+                                                              List<OWLDeclarationAxiom> temporaryDeclarations) {
         // Remove the current axiom from all the ontologies it is included
         // in
         Set<OWLOntology> ontologies = Collections.emptySet();
@@ -522,7 +488,7 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
         return getOntologyManager().getOWLDataFactory().getOWLDeclarationAxiom(e);
     }
 
-    private boolean isDisjoint(Set<OWLAxiom> a, Set<OWLLogicalAxiom> b) {
+    protected boolean isDisjoint(Set<OWLAxiom> a, Set<OWLLogicalAxiom> b) {
         for (OWLAxiom tempAxiom : a) {
             if (b.contains(tempAxiom))
                 return false;

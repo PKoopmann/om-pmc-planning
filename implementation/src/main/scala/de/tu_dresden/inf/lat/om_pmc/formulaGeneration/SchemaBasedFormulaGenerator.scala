@@ -1,6 +1,6 @@
 package de.tu_dresden.inf.lat.om_pmc.formulaGeneration
 
-import com.clarkparsia.owlapi.explanation.{MultipleExplanationGenerator, SchemaHSTExplanationGenerator, TransactionAwareSingleExpGen}
+import com.clarkparsia.owlapi.explanation.{MupsTrackingHSTExplanationGenerator, MultipleExplanationGenerator, SchemaHSTExplanationGenerator, TransactionAwareSingleExpGen}
 import de.tu_dresden.inf.lat.om_pmc.interface.{AxiomToFormulaMap, HookToAxiomMap}
 import org.semanticweb.owlapi.model.{OWLLogicalAxiom, OWLOntologyManager}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
@@ -19,10 +19,10 @@ class SchemaBasedFormulaGenerator (
 
   override def getExplanationGenerator(relevantAxioms: Set[OWLLogicalAxiom],
                                        singleGen: TransactionAwareSingleExpGen): MultipleExplanationGenerator  = {
-    new SchemaHSTExplanationGenerator(
+    new MupsTrackingHSTExplanationGenerator(
       relevantAxioms.asJava,
       hookSpecificAxioms.asJava,
-      anchorAxiom,
+      anchorAxioms.asJava,
       singleGen
     )
   }
