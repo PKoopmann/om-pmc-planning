@@ -21,7 +21,7 @@ import scala.collection.mutable.Map
 
 object FormulaGenerator {
 
-  var explanationMethod = Methods.CLASS_BASED // Methods.INC_BASED, Methods.HOOK_CENTRIC
+  var explanationMethod = Methods.SCHEMA_BASED // Methods.INC_BASED, Methods.HOOK_CENTRIC
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
@@ -74,6 +74,8 @@ object FormulaGenerator {
         new InconsistencyBasedFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
       case Methods.CLASS_BASED =>
         new ClassBasedFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
+      case Methods.SCHEMA_BASED =>
+        new SchemaBasedFormulaGenerator(axiom2formula, hook2axiom, manager, reasonerFactory)
     }
 
     val staticAxioms = module.getAxioms().asScala -- axiom2formula.axioms
@@ -113,7 +115,7 @@ object FormulaGenerator {
   }
 
   object Methods extends Enumeration {
-    val GLASS_BOX, HOOK_CENTRIC, REPAIR_CENTRIC, INC_BASED, CLASS_BASED = Value
+    val GLASS_BOX, HOOK_CENTRIC, REPAIR_CENTRIC, INC_BASED, CLASS_BASED, SCHEMA_BASED = Value
   }
 }
 

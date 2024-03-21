@@ -28,19 +28,23 @@ import static org.semanticweb.owlapi.util.OWLAPIPreconditions.checkNotNull;
  */
 public class RestrictionHSTExplanationGenerator implements MultipleExplanationGenerator {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(HSTExplanationGenerator.class);
-    private final TransactionAwareSingleExpGen singleExplanationGenerator;
-    private ExplanationProgressMonitor progressMonitor = new SilentExplanationProgressMonitor();
+    protected static final Logger LOGGER = LoggerFactory.getLogger(HSTExplanationGenerator.class);
+    protected final TransactionAwareSingleExpGen singleExplanationGenerator;
+    protected ExplanationProgressMonitor progressMonitor = new SilentExplanationProgressMonitor();
 
-    private final Set<OWLLogicalAxiom> relevantAxioms;
+    protected final Set<OWLLogicalAxiom> relevantAxioms;
+
+
+    protected int justificationCalls = 0;
+    protected int emptyJustificationCalls = 0;
 
 
     // each hook is related to only one of the following axioms, i.e. these are the supporting axioms
     // such as the class belonging for each hook
-    private final Set<OWLLogicalAxiom> hookIndividualAxioms;
-    private final OWLLogicalAxiom anchorAxiom; // anchor for hooks that get explained
+    protected final Set<OWLLogicalAxiom> hookIndividualAxioms;
+    protected final OWLLogicalAxiom anchorAxiom; // anchor for hooks that get explained
 
-    private int depthCounter = 0;
+    protected int depthCounter = 0;
 
     /**
      * Instantiates a new hST explanation generator.
@@ -68,8 +72,8 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
      * @param allMups The set of all MUPS which is used to calculate the ordering
      * @return the ordered mups
      */
-    private static List<OWLAxiom> getOrderedMUPS(List<OWLAxiom> mups,
-        final Set<Set<OWLAxiom>> allMups) {
+    static List<OWLAxiom> getOrderedMUPS(List<OWLAxiom> mups,
+                                         final Set<Set<OWLAxiom>> allMups) {
         Comparator<OWLAxiom> mupsComparator = (o1, o2) -> {
             // The axiom that appears in most MUPS has the lowest index
             // in the list
@@ -177,24 +181,11 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
     public Set<OWLAxiom> getExplanation(OWLClassExpression unsatClass) {
         //System.out.println("SingleExplanationGenerator: "+singleExplanationGenerator);
         Set<OWLAxiom> result =
-	        new HashSet<OWLAxiom>(singleExplanationGenerator.getExplanation(unsatClass));
-
-        //System.out.println("Explanation before filtering: "+result);
-
-        // filtering should be done by calling class, because some require the whole justification
-	    //result.retainAll(relevantAxioms);
-
-        //System.out.println("Explanation after filtering: "+result);
-
-	    // for(OWLAxiom axiom: getOntology().getAxioms()){
-	    // 	if(!relevantAxioms.contains(axiom))
-	    // 		result.add(axiom);
-	    // }
-
-        if(result.isEmpty())
-            LOGGER.info("Empty explanation after filtering!");
-
-	    return result;
+                new HashSet<OWLAxiom>(singleExplanationGenerator.getExplanation(unsatClass));
+        justificationCalls++;
+        if (result.isEmpty())
+            emptyJustificationCalls++;
+        return result;
     }
 
     @Override
@@ -256,10 +247,10 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
      * @param maxExplanations the max explanations
      * @throws OWLException the oWL exception
      */
-    private void constructHittingSetTree(OWLClassExpression unsatClass, Set<OWLAxiom> mups,
-        Set<Set<OWLAxiom>> allMups,
-        Set<Set<OWLAxiom>> satPaths, Set<OWLAxiom> currentPathContents, int maxExplanations)
-        throws OWLException {
+    protected void constructHittingSetTree(OWLClassExpression unsatClass, Set<OWLAxiom> mups,
+                                         Set<Set<OWLAxiom>> allMups,
+                                         Set<Set<OWLAxiom>> satPaths, Set<OWLAxiom> currentPathContents, int maxExplanations)
+            throws OWLException {
         //System.out.println(depthCounter + " MUPS "+ Integer.valueOf(allMups.size())+" : "+ mups);
         if (progressMonitor.isCancelled()) {
             return;
@@ -273,12 +264,7 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
             }
             OWLAxiom axiom = orderedMups.get(0);
 
-            // remove anchorAxiom first (if possible), to get to tree that explains inconsistency faster
-            //if (orderedMups.contains(anchorAxiom))
-            //    axiom = anchorAxiom;
-
             orderedMups.remove(0);
-            //orderedMups.remove(axiom);
             if(relevantAxioms.contains(axiom)){
                 if (allMups.size() == maxExplanations) {
                     LOGGER.info("Computed {} explanations", Integer.valueOf(maxExplanations));
@@ -288,7 +274,10 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
                 Set<OWLAxiom> axiomsToRemove = new HashSet<>(Collections.emptySet());
                 axiomsToRemove.add(axiom);
 
-               // System.out.println(depthCounter + " remove initial: " + axiom);
+                //System.out.println(depthCounter + " remove initial: " + axiom);
+                var remainingHookSpecificAxioms = new HashSet<>(hookIndividualAxioms);
+                remainingHookSpecificAxioms.removeAll(currentPathContents);
+
                 if (!hookIndividualAxioms.contains(axiom)) {
                     //System.out.println("BUM! " + axiom);
                     // remove all hook specific axioms that are not already contained in mups
@@ -296,12 +285,11 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
                     if (!isDisjoint(mups, hookIndividualAxioms)) {
                         // create set of all hook specific axioms that are still to consider, i.e. have not been removed
                         // on the path to the node
-                        var remainingHookSpecificAxioms = new HashSet<>(hookIndividualAxioms);
-                        remainingHookSpecificAxioms.removeAll(currentPathContents);
+                        // System.out.println("p: " + currentPathContents);
                         for (OWLAxiom tempAxiom : remainingHookSpecificAxioms) {
                             if (!mups.contains(tempAxiom)) {
                                 axiomsToRemove.add(tempAxiom);
-                               // System.out.println(depthCounter + " remove " + tempAxiom);
+                                //System.out.println(depthCounter + " remove " + tempAxiom);
                             }
                         }
                     }
@@ -309,9 +297,15 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
 
                 // if no individual is marked as relevant anymore, we also remove the anchor axiom, to trigger early
                 // termination faster
-                //remainingHookSpecificAxioms.removeAll(axiomsToRemove);
-                //if (remainingHookSpecificAxioms.isEmpty())
-                //    axiomsToRemove.add(anchorAxiom);
+                remainingHookSpecificAxioms.removeAll(axiomsToRemove);
+                //System.out.println(remainingHookSpecificAxioms.size());
+                // if (remainingHookSpecificAxioms.size() ==1)
+                //    System.out.println("r: " + remainingHookSpecificAxioms + " " + axiom);
+                //    System.out.println("p: " + currentPathContents);
+                if (remainingHookSpecificAxioms.isEmpty()) {
+                    axiomsToRemove.add(anchorAxiom);
+                    //System.out.println("remove anchor");
+                }
 
                 //System.out.println("Removing axiom: "+axiom+" "+
                 // Integer.valueOf(currentPathContents.size())
@@ -321,10 +315,10 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
                 // are added
                 List<OWLDeclarationAxiom> temporaryDeclarations = new ArrayList<>();
                 Set<OWLOntology> ontologies =
-                    //removeAxiomAndAddDeclarations(axiom,
-                    //              temporaryDeclarations);
-                    removeAxiomsAndAddDeclarations(axiomsToRemove,
-                            temporaryDeclarations);
+                        //removeAxiomAndAddDeclarations(axiom,
+                        //              temporaryDeclarations);
+                        removeAxiomsAndAddDeclarations(axiomsToRemove,
+                                temporaryDeclarations);
 
                 currentPathContents.addAll(axiomsToRemove);
 
@@ -333,13 +327,13 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
                 depthCounter += 1;
                 if (!earlyTermination) {
                     orderedMups = recurse(unsatClass, allMups, satPaths, currentPathContents,
-                              maxExplanations, orderedMups,
-                              axiom);
+                            maxExplanations, orderedMups,
+                            axiom);
                 }
                 backtrack(currentPathContents, axiomsToRemove,
-                      temporaryDeclarations, ontologies);
+                        temporaryDeclarations, ontologies);
                 depthCounter -= 1;
-	        }
+            }
         }
     }
 
@@ -356,7 +350,7 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
      * @return the list
      * @throws OWLException the oWL exception
      */
-    private List<OWLAxiom> recurse(OWLClassExpression unsatClass, Set<Set<OWLAxiom>> allMups,
+    protected List<OWLAxiom> recurse(OWLClassExpression unsatClass, Set<Set<OWLAxiom>> allMups,
 				   Set<Set<OWLAxiom>> satPaths, Set<OWLAxiom> currentPathContents, int maxExplanations,
 				   List<OWLAxiom> orderedMups,
 				   OWLAxiom axiom) throws OWLException {
@@ -434,7 +428,7 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
      * @param currentPathContents the current path contents
      * @return the new mups
      */
-    private Set<OWLAxiom> getNewMUPS(OWLClassExpression unsatClass, Set<Set<OWLAxiom>> allMups,
+    protected Set<OWLAxiom> getNewMUPS(OWLClassExpression unsatClass, Set<Set<OWLAxiom>> allMups,
         Set<OWLAxiom> currentPathContents) {
 		
         Set<OWLAxiom> newMUPS = null;

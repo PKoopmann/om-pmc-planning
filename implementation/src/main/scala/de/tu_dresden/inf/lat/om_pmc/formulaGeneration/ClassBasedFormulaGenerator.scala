@@ -12,6 +12,8 @@ import scala.collection.convert.ImplicitConversions.`set asScala`
 import scala.collection.immutable.Set
 import scala.collection.mutable
 
+
+// generates all explanations for one class / hook at ones
 class ClassBasedFormulaGenerator (
                                    axiom2formula: AxiomToFormulaMap,
                                    hook2axiom: HookToAxiomMap,
@@ -34,11 +36,11 @@ class ClassBasedFormulaGenerator (
 
   override def getExplanationGenerator(relevantAxioms: Set[OWLLogicalAxiom],
                               singleGen: TransactionAwareSingleExpGen): MultipleExplanationGenerator  = {
-        new RestrictionHSTExplanationGenerator(
-          relevantAxioms.asJava,
-          hookSpecificAxioms.asJava,
-          anchorAxiom,
-          singleGen)
+    new RestrictionHSTExplanationGenerator(
+      relevantAxioms.asJava,
+      hookSpecificAxioms.asJava,
+      anchorAxiom,
+      singleGen)
   }
   override def fluentExplanationsAsDNF(axiom: OWLLogicalAxiom): Iterable[_ <: Set[OWLLogicalAxiom]] = {
     // generate repairs if it had not been done in the past
@@ -130,11 +132,11 @@ class ClassBasedFormulaGenerator (
               //println("j " + j.filter(relevantAxioms))
 
               // add all the supporting axioms to infer all hooks that might be explained by justification
-              val extendedJustification = (staticOntology.getAxioms() ++ filteredJustification).toSet[OWLAxiom]
+              //val extendedJustification = (staticOntology.getAxioms() ++ filteredJustification).toSet[OWLAxiom]
 
               //val explainedHooks = justifiedHooks(extendedJustification, axiom)
               val explainedHooks = justifiedHooksUsingSupport(supportJustification.toSet[OWLAxiom])
-              val i = " "
+              //val i = " "
               explainedHooks.foreach{hook =>
                 if (rewritings.contains(hook)) {
                   val newRewriting = addExplanationToDNF(rewritings(hook), filteredJustification)
