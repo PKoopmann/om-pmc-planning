@@ -110,7 +110,7 @@ public class MupsTrackingHSTExplanationGenerator extends com.clarkparsia.owlapi.
         // We go through the current mups, axiom by axiom, and extend the tree
         // with edges for each axiom
         List<OWLAxiom> orderedMups = getOrderedMUPS(new ArrayList<>(mups), allMups);
-        System.out.println("m: " + depthCounter + " " + mups + " ");
+        //System.out.println("m: " + depthCounter + " " + mups + " ");
         //System.out.println("p: " + depthCounter + " " + currentPathContents + " ");
         while (!orderedMups.isEmpty()) {
             if (progressMonitor.isCancelled()) {
