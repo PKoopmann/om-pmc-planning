@@ -88,9 +88,6 @@ class ClassBasedFormulaGenerator (
       // only compute rewriting for hook, if it does not exists yet, i.e. was not already computed together with
       // another hook
       if (!rewritings.contains(axiom)) {
-
-
-
         println("compute hooks with pattern as " + SimpleOWLFormatter.format(axiom))
         // find all hooks that are of the same class
         relevantHooks.foreach { hook =>
@@ -341,20 +338,10 @@ class ClassBasedFormulaGenerator (
 
     relevantHooks.foreach {
       case op: OWLObjectPropertyAssertionAxiom =>
-        if (op.getProperty == hookProperty) {
-          /*
-          // old encoding
-          val domainAxiom = factory.getOWLClassAssertionAxiom(
-            domainClass, op.getSubject
-          )
-          supportingAxioms += domainAxiom
-          val rangeAxiom = factory.getOWLClassAssertionAxiom(
-            rangeClass, op.getObject
-          )
-          supportingAxioms += rangeAxiom
-          supportToHookMap.add(Set(domainAxiom, rangeAxiom).toSet[OWLAxiom], Set(op))
-
-           */
+        // only add, if property is of the hook to consider and if it is not entailed in static ontology
+        // (the latter case is handled outside this function)
+        if (op.getProperty == hookProperty
+          && !staticReasoner.isEntailed(op)) {
           // new encoding
           val relationAxiom = factory.getOWLObjectPropertyAssertionAxiom(
             relation,
