@@ -23,6 +23,16 @@ object CreatePlanningDefinitions {
     )
 
      */
+/*
+    create(
+      "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/blocksworld/4-0/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/blocksworld/4-0/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/blocksworld/4-0/blocks.ttl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/blocksworld/4-0/temp_rewritings.txt")
+    )
+
+ */
 
     /*
     create(

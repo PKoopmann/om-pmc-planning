@@ -48,6 +48,7 @@ public class MupsTrackingHSTExplanationGenerator extends com.clarkparsia.owlapi.
                 //return Collections.emptySet();
             }
             Set<Set<OWLAxiom>> allMups = new LinkedHashSet<>();
+            //System.out.println(firstMups);
 
             progressMonitor.foundExplanation(firstMups);
             allMups.add(firstMups);
@@ -109,7 +110,7 @@ public class MupsTrackingHSTExplanationGenerator extends com.clarkparsia.owlapi.
         // We go through the current mups, axiom by axiom, and extend the tree
         // with edges for each axiom
         List<OWLAxiom> orderedMups = getOrderedMUPS(new ArrayList<>(mups), allMups);
-        //System.out.println("m: " + depthCounter + " " + mups + " ");
+        System.out.println("m: " + depthCounter + " " + mups + " ");
         //System.out.println("p: " + depthCounter + " " + currentPathContents + " ");
         while (!orderedMups.isEmpty()) {
             if (progressMonitor.isCancelled()) {

@@ -69,11 +69,14 @@ public class SchemaHSTExplanationGenerator extends com.clarkparsia.owlapi.explan
                 //return Collections.emptySet();
             }
             Set<Set<OWLAxiom>> allMups = new LinkedHashSet<>();
+
+
+
             progressMonitor.foundExplanation(firstMups);
             allMups.add(firstMups);
             // call to schemas
             addAnalogMUPS(firstMups, allMups);
-           // System.out.println(firstMups);
+            //System.out.println(firstMups);
             //System.out.println(allMups);
             Set<Set<OWLAxiom>> satPaths = new HashSet<>();
             Set<OWLAxiom> currentPathContents = new HashSet<>();
@@ -230,7 +233,9 @@ class JustificationSchema {
         // get individual names
         Set<OWLIndividual> justIndividuals = new HashSet<>();
         for (OWLAxiom a : justification)
-            Collections.addAll(justIndividuals, a.individualsInSignature().toArray(OWLIndividual[]::new));
+            // only consider the individuals in assertions
+            if (a instanceof OWLClassAssertionAxiom || a instanceof  OWLObjectPropertyAssertionAxiom)
+                Collections.addAll(justIndividuals, a.individualsInSignature().toArray(OWLIndividual[]::new));
 
         Map<OWLIndividual, OWLIndividual> indToVarMap = new HashMap<>();
         // generate fresh variables for each individual
@@ -253,9 +258,9 @@ class JustificationSchema {
 
         // collect all occuring individuals
         Set<OWLIndividual> individuals = new HashSet<>();
-        for (OWLAxiom a : allowedAxioms)
+        for (OWLAxiom a : allowedAxioms) {
             Collections.addAll(individuals, a.individualsInSignature().toArray(OWLIndividual[]::new));
-
+        }
         // compute all mappings
 
         Set<Map<OWLIndividual, OWLIndividual>> allMappings = allMappings(
