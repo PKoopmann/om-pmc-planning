@@ -11,6 +11,7 @@ import org.semanticweb.owlapi.util.OWLAPIPreconditions;
 
 import javax.annotation.Nonnegative;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 /**
@@ -319,7 +320,7 @@ class JustificationSchema {
 
     // returns true if all variables in the axiom are assigned to something by the map
     private boolean allVariablesMapped(OWLAxiom axiom, Map<OWLIndividual, OWLIndividual> varToIndMap){
-        for (OWLIndividual i : axiom.individualsInSignature().toList()) {
+        for (OWLIndividual i : axiom.individualsInSignature().collect(Collectors.toSet())) {
             if (!varToIndMap.containsKey(i))
                 return false;
         }
