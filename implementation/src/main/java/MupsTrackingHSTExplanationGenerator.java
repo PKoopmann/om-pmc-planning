@@ -6,6 +6,7 @@ import org.semanticweb.owlapi.util.OWLAPIPreconditions;
 
 import javax.annotation.Nonnegative;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 // idea: track in the recursion the mups from "allMups" that could be valid on this path
@@ -277,7 +278,7 @@ public class MupsTrackingHSTExplanationGenerator extends com.clarkparsia.owlapi.
         Set<OWLAxiom> newMUPS = null;
 
         if (!allMupsRelevant.isEmpty())
-            newMUPS = allMupsRelevant.stream().toList().get(0);
+            newMUPS = allMupsRelevant.stream().findAny().get();
 
         if (newMUPS == null) {
             newMUPS = getExplanation(unsatClass);
