@@ -54,6 +54,16 @@ import com.clarkparsia.owlapi.explanation.util.OntologyUtils;
 public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
     implements SingleExplanationGenerator {
 
+    private Set<OWLAxiom> staticPart = Collections.emptySet();
+
+    /**
+     * Sets set of axioms that are always included in the justification
+     * @param axioms
+     */
+    public void setStaticPart(Set<OWLAxiom> axioms) {
+        this.staticPart=axioms;
+    }
+
     /**
      * default expansion limit.
      */
@@ -173,7 +183,7 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
             satTestCount++;
             if (isFirstExplanation() && getReasoner().isSatisfiable(unsatClass)) {
                 //System.out.println("first explanation and satisfiable");
-                return Collections.emptySet();
+                return staticPart; //Collections.emptySet();
             }
             reset();
             //System.out.println("after resetting: "+debuggingAxioms);
@@ -307,8 +317,10 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
             int endIndex = startIndex + fastPruningWindowSize;
             for (int axiomIndex = startIndex; axiomIndex < endIndex; axiomIndex++) {
                 OWLAxiom currentAxiom = (OWLAxiom) axioms[axiomIndex];
-                axiomWindow.add(currentAxiom);
-                debuggingAxioms.remove(currentAxiom);
+                if(!staticPart.contains(currentAxiom)) {
+                    axiomWindow.add(currentAxiom);
+                    debuggingAxioms.remove(currentAxiom);
+                }
             }
             if (isSatisfiable(unsatClass)) {
                 debuggingAxioms.addAll(axiomWindow);
@@ -322,7 +334,9 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
             while (fragmentIndex < axioms.length) {
                 OWLAxiom curAxiom = (OWLAxiom) axioms[fragmentIndex];
                 axiomWindow.add(curAxiom);
-                debuggingAxioms.remove(curAxiom);
+                if(!staticPart.contains(curAxiom)) {
+                    debuggingAxioms.remove(curAxiom);
+                }
                 fragmentIndex++;
             }
             if (isSatisfiable(unsatClass)) {
@@ -338,10 +352,12 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
         // an SOS axiom.
         List<OWLAxiom> axiomsCopy = new ArrayList<>(debuggingAxioms);
         for (OWLAxiom ax : axiomsCopy) {
-            debuggingAxioms.remove(ax);
-            if (isSatisfiable(unsatClass)) {
-                // Affects satisfiability, so add back in
-                debuggingAxioms.add(ax);
+            if(!staticPart.contains(ax)) { // don't remove the static part
+                debuggingAxioms.remove(ax);
+                if (isSatisfiable(unsatClass)) {
+                    // Affects satisfiability, so add back in
+                    debuggingAxioms.add(ax);
+                }
             }
         }
     }
@@ -400,6 +416,7 @@ public class MyBlackBoxExplanation extends SingleExplanationGeneratorImpl
         // the debugging axioms set to be expanded to the
         // defining axioms for the class being debugged
         resetSatisfiabilityTestCounter();
+        debuggingAxioms.addAll(staticPart); // ensure the static part is always in
         if (unsatClass.isAnonymous()) {
             //System.out.println("Anonymous");
             OWLClass owlThing = man.getOWLDataFactory().getOWLThing();
