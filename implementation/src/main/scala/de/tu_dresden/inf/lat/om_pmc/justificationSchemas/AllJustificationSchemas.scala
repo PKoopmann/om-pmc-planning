@@ -25,7 +25,7 @@ class AllJustificationSchemas(ontology: OWLOntology, relevantAxioms: Set[OWLLogi
 
   def allJustifications() = {
     allJustificationSchemas().map(justSchema =>
-     justSchema.valuations().map(justSchema.instantiateWith).map(_.toSet[OWLAxiom])
+     justSchema.valuations().map(justSchema.instantiateWith).map(_.toSet[OWLAxiom]++justSchema.prefix)
     ).flatten
   }
 
@@ -97,7 +97,7 @@ class AllJustificationSchemas(ontology: OWLOntology, relevantAxioms: Set[OWLLogi
   def getJustificationSchema(ontology: OWLOntology): JustificationSchema = {
     val anyJustification = getJustification(ontology)
 
-    val justSchema = new JustificationSchema(anyJustification, this.ontology, ontology, relevantAxioms.toSet[OWLAxiom], reasonerFactory)
+    val justSchema = new JustificationSchema(anyJustification, this.ontology, ontology, relevantAxioms, reasonerFactory)
     //justSchema.valuations() // computes also all insufficient patterns
     justSchema
   }

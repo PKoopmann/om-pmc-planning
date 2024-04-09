@@ -1,28 +1,29 @@
 package de.tu_dresden.inf.lat.om_pmc.justificationSchemas
 
-import com.clarkparsia.owlapi.explanation.MyBlackBoxExplanation
+import com.clarkparsia.owlapi.explanation.{MyBlackBoxExplanation, MyHSTExplanationGenerator}
 import de.tu_dresden.inf.lat.om_planning.tools.{OWLTools, Tools}
 import org.semanticweb.HermiT.Configuration
 import org.semanticweb.owlapi.model.parameters.Imports
-import org.semanticweb.owlapi.model.{AxiomType, IRI, OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLEntity, OWLIndividual, OWLNamedIndividual, OWLObjectProperty, OWLObjectPropertyAssertionAxiom, OWLOntology}
+import org.semanticweb.owlapi.model.{AxiomType, IRI, OWLAxiom, OWLClass, OWLClassAssertionAxiom, OWLEntity, OWLIndividual, OWLLogicalAxiom, OWLNamedIndividual, OWLObjectProperty, OWLObjectPropertyAssertionAxiom, OWLOntology}
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory
 
-import scala.collection.JavaConverters.{asJavaIterableConverter, asScalaSetConverter}
+import scala.collection.JavaConverters.{asScalaSetConverter, setAsJavaSetConverter}
 import scala.collection.{SortedSet, mutable}
 
 class JustificationSchema(val prefix: List[OWLAxiom],
                           val schema: List[OWLEntity],
                           completeOntology: OWLOntology,
                           currentOntology: OWLOntology,
-                          relevantAxioms: Set[OWLAxiom],
+                          relevantAxioms: Set[OWLLogicalAxiom],
                           reasonerFactory: OWLReasonerFactory) {
 
   println("My Schema is: "+schema)
+  println("My prefix is: "+prefix)
 
   def this(justification: Iterable[OWLAxiom],
            completeOntology: OWLOntology,
            currentOntology: OWLOntology,
-           relevantAxioms: Set[OWLAxiom],
+           relevantAxioms: Set[OWLLogicalAxiom],
            reasonerFactory: OWLReasonerFactory) = {
     this(
       prefix = justification.filter(_.isOfType(AxiomType.TBoxAndRBoxAxiomTypes)).toList,
@@ -270,15 +271,15 @@ class JustificationSchema(val prefix: List[OWLAxiom],
   def canExtendPattern(pattern: Seq[Int], valuations: Set[List[OWLNamedIndividual]]) = {
     var instantiation = instantiate(schema, pattern).toSet
     instantiation ++= maximalExtension(instantiation)
-    instantiation ++= prefix
+    instantiation ++= currentOntology.getTBoxAxioms(Imports.INCLUDED).asScala //prefix
     println("Checking whether the following extension is consistent: ")
     instantiation.foreach(x => println(" - "+x))
     if(consistent(reasonerFactory,instantiation)) {
       println("It is.")
-      None
+      Set[JustificationSchema]()
     } else {
       println("It isn't.")
-      Some(justification(instantiation))
+      justifications(instantiation)
     }
 
     /*valuations.filterNot(Tools.hasDuplicates)
@@ -293,7 +294,7 @@ class JustificationSchema(val prefix: List[OWLAxiom],
   /**
    * TODO duplication with AllJustificationSchemas
    */
-  def justification(axioms: Set[OWLAxiom]) = {
+  def justifications(axioms: Set[OWLAxiom]) = {
     val ontology = ontologyManager.createOntology()
     axioms.foreach(ontology.add)
     val singleGen = new MyBlackBoxExplanation(
@@ -302,8 +303,28 @@ class JustificationSchema(val prefix: List[OWLAxiom],
       getReasoner(ontology),
       //reasonerFactory.createNonBufferingReasoner(ontology)
     )
-    val justification = singleGen.getExplanation(factory.getOWLThing).asScala.toSet
+    /*val justification = singleGen.getExplanation(factory.getOWLThing).asScala.toSet
+    println()
+    println("Selected justification: ")
+    justification.foreach(println)
+    println()
     new JustificationSchema(justification, completeOntology, currentOntology, relevantAxioms, reasonerFactory)
+    */
+    val expGenerator = new MyHSTExplanationGenerator(
+      Set[OWLLogicalAxiom]().asJava,//relevantAxioms.toSet[OWLLogicalAxiom].asJava,
+      singleGen)
+
+    val explanations = expGenerator.getExplanations(factory.getOWLThing)
+      .asScala
+      .toSet
+
+    println("Found "+explanations.size+" explanations.")
+
+    explanations.map{(j: java.util.Set[OWLAxiom]) =>
+        println()
+        println("Selected justification: ")
+        j.asScala.foreach(println)
+        new JustificationSchema(j.asScala,completeOntology,currentOntology, relevantAxioms, reasonerFactory)}
   }
 
   def consistent(factory: OWLReasonerFactory, axioms: Set[OWLAxiom]) = {
@@ -317,6 +338,7 @@ class JustificationSchema(val prefix: List[OWLAxiom],
     val individuals = axioms.flatMap(_.getIndividualsInSignature.asScala)
     currentOntology.getABoxAxioms(Imports.EXCLUDED)
       .asScala
+      .map(_.asInstanceOf[OWLLogicalAxiom])
       .filter(relevantAxioms)
       .flatMap(_.getSignature.asScala)
       .flatMap(_ match {
