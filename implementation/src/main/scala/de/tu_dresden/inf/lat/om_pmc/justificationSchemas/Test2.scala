@@ -1,8 +1,11 @@
 package de.tu_dresden.inf.lat.om_pmc.justificationSchemas
 
-import org.semanticweb.HermiT.ReasonerFactory
+import com.clarkparsia.owlapi.explanation.{MyBlackBoxExplanation, MyHSTExplanationGenerator}
+import org.semanticweb.HermiT.{Configuration, ReasonerFactory}
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.model.{IRI, OWLAxiom, OWLLogicalAxiom}
+
+import scala.collection.JavaConverters.setAsJavaSetConverter
 
 object Test2 {
 
@@ -20,7 +23,7 @@ object Test2 {
 
     var relevantAxioms = Set[OWLLogicalAxiom]()
 
-    Range(0,10).foreach { i =>
+    Range(0,6).foreach { i =>
       val ind = factory.getOWLNamedIndividual(IRI.create("a" + i))
       val ind2 = factory.getOWLNamedIndividual(IRI.create("a" + (i+1)))
       val ax1 = factory.getOWLClassAssertionAxiom(A, ind)
@@ -34,7 +37,7 @@ object Test2 {
       relevantAxioms += ax3
     }
 
-    val start = System.nanoTime()
+    var start = System.nanoTime()
     val allJust = new AllJustificationSchemas(ontology, relevantAxioms, new ReasonerFactory())
     val computingTime = System.nanoTime()-start
 
@@ -45,6 +48,28 @@ object Test2 {
     System.out.println("All justifications: "+justifications.size)
     System.out.println("Took: "+computingTime)
 
+    System.out.println("Now trying the default implementation")
 
+    val reasonerFactory = new ReasonerFactory()
+    val config = new Configuration();
+    config.throwInconsistentOntologyException=false
+    val reasoner = reasonerFactory.createReasoner(ontology,config)
+
+    val singleGen = new MyBlackBoxExplanation(
+      ontology,
+      reasonerFactory,
+      reasoner
+      //reasonerFactory.createNonBufferingReasoner(ontology)
+    )
+    val expGenerator = new MyHSTExplanationGenerator(
+      relevantAxioms.asJava,
+      singleGen)
+
+
+    start = System.nanoTime()
+    val explanations = expGenerator.getExplanations(factory.getOWLThing())
+    val computingTime2 = System.nanoTime()-start
+    println("Found "+explanations.size()+" explanations.")
+    println("Took "+computingTime2+" vs "+computingTime+" with the new method.")
   }
 }

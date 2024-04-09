@@ -198,7 +198,7 @@ class JustificationSchema(val prefix: List[OWLAxiom],
               incompleteValuations = incompleteValuations.map{tuple: List[OWLNamedIndividual] =>
                 if(newKey1 && newKey2) {
                   // both values are new
-                  if(schema(variablePosition)==schema(variablePosition+1))
+                  if(pattern(variablePosition)==pattern(variablePosition+1))
                     valuePairs.map(pair => tuple.:+(pair._1))
                   else // two new variables to be added
                     valuePairs.map(pair => tuple.:+(pair._1).:+(pair._2))
@@ -206,7 +206,7 @@ class JustificationSchema(val prefix: List[OWLAxiom],
                   // both values are old
                   val el1 = tuple(pattern(variablePosition))
                   val el2 = tuple(pattern(variablePosition+1))
-                  if(values1(el1) && values2(el2))
+                  if(valuePairs((el1,el2)))//values1(el1) && values2(el2))
                     Set(tuple) // the assignment still works
                   else
                     Set() // the assignment does not work anymore
@@ -273,9 +273,11 @@ class JustificationSchema(val prefix: List[OWLAxiom],
     instantiation ++= prefix
     println("Checking whether the following extension is consistent: ")
     instantiation.foreach(x => println(" - "+x))
-    if(consistent(reasonerFactory,instantiation))
+    if(consistent(reasonerFactory,instantiation)) {
+      println("It is.")
       None
-    else {
+    } else {
+      println("It isn't.")
       Some(justification(instantiation))
     }
 
