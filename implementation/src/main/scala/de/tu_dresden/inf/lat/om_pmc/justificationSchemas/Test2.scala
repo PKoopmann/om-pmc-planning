@@ -20,12 +20,15 @@ object Test2 {
     ontology.addAxiom(factory.getOWLDisjointClassesAxiom(A, B))
     ontology.addAxiom(factory.getOWLDisjointClassesAxiom(A,
       factory.getOWLObjectSomeValuesFrom(r, B)))
+    ontology.addAxiom(factory.getOWLSubClassOfAxiom(
+      factory.getOWLObjectSomeValuesFrom(r, B),
+      B))
 
     var results = List[String]()
 
-    Range(1, 10).foreach { max =>
+    Range(1, 4).foreach { max =>
 
-      //val max = 3 // also failing: 4+8
+      //val max = 3
 
       var relevantAxioms = Set[OWLLogicalAxiom]()
 
