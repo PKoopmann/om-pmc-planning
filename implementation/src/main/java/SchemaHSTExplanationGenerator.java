@@ -176,21 +176,25 @@ public class SchemaHSTExplanationGenerator extends com.clarkparsia.owlapi.explan
     protected Set<Set<OWLAxiom>> computeAnalogJustifications(Set<OWLAxiom> justification) {
         Set<Set<OWLAxiom>> analogJustifications = new HashSet<>();
 
-
+        System.out.println(justification);
         JustificationSchema schema = new JustificationSchema(justification, owlFactory);
         // get valid mappings w.r.t. axioms in current ontology
         Set<Map<OWLIndividual, OWLIndividual>> mappings = schema.getValidMappings(originalAxioms);
+        //System.out.println("found schema");
 
         for (Map<OWLIndividual, OWLIndividual> m : mappings) {
             Set<OWLAxiom> just = schema.instantiate(m);
 
             // do forward reasoning to check, if instantiated schema is also a justification
-            updateForwardReasoner(just);
-            if (!forwardReasoner.isConsistent()) {
+            //updateForwardReasoner(just);
+            //if (!forwardReasoner.isConsistent()) {
                 // we found another (analog justification)
                 analogJustifications.add(just);
-            }
+            //}
+           // else
+            //    System.out.println("Strange...");
         }
+        System.out.println("done");
         return analogJustifications;
     }
 
@@ -263,11 +267,16 @@ class JustificationSchema {
         }
         // compute all mappings
 
-        Set<Map<OWLIndividual, OWLIndividual>> allMappings = allMappings(
-                variableNames,
-                individuals,
-                allowedAxioms
-        );
+        Set<Map<OWLIndividual, OWLIndividual>> allMappings = new HashSet<>();
+        System.out.println(variableNames.size());
+        // only compute mappings if there are at most 10 individuals
+        // TODO: only temporary fix, remove later, when overall algorithm to find mappings works better
+        if (variableNames.size() <= 10)
+            allMappings = allMappings(
+                    variableNames,
+                    individuals,
+                    allowedAxioms
+            );
         Set<Map<OWLIndividual, OWLIndividual>> varToIndMap = new HashSet<>(allMappings);
 
 
@@ -287,6 +296,7 @@ class JustificationSchema {
                 }
             }
         }
+        System.out.println(varToIndMap.size());
 
         return varToIndMap;
     }
