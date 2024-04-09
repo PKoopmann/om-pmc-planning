@@ -1,12 +1,10 @@
 package com.clarkparsia.owlapi.explanation;
 
-import com.clarkparsia.owlapi.explanation.util.OntologyUtils;
 import org.semanticweb.owlapi.model.*;
 import org.semanticweb.owlapi.util.OWLAPIPreconditions;
 
 import javax.annotation.Nonnegative;
 import java.util.*;
-import java.util.stream.Collectors;
 
 
 // idea: track in the recursion the mups from "allMups" that could be valid on this path
@@ -129,7 +127,7 @@ public class MupsTrackingHSTExplanationGenerator extends com.clarkparsia.owlapi.
                 Set<OWLAxiom> axiomsToRemove = new HashSet<>(Collections.emptySet());
                 axiomsToRemove.add(axiom);
 
-                var remainingHookSpecificAxioms = new HashSet<>(hookIndividualAxioms);
+                Set<OWLAxiom> remainingHookSpecificAxioms = new HashSet<>(hookIndividualAxioms);
                 remainingHookSpecificAxioms.removeAll(currentPathContents);
 
                 if (!hookIndividualAxioms.contains(axiom)) {

@@ -1,4 +1,4 @@
-package de.tu_dresden.inf.lat.om_pmc.formulaGeneration.schemas
+package de.tu_dresden.inf.lat.om_pmc.justificationSchemas
 
 import com.clarkparsia.owlapi.explanation.{MyBlackBoxExplanation, MyHSTExplanationGenerator}
 import de.tu_dresden.inf.lat.om_planning.tools.OWLTools

@@ -1,8 +1,5 @@
 package com.clarkparsia.owlapi.explanation;
 
-import com.clarkparsia.owlapi.explanation.HSTExplanationGenerator;
-import com.clarkparsia.owlapi.explanation.MultipleExplanationGenerator;
-import com.clarkparsia.owlapi.explanation.TransactionAwareSingleExpGen;
 import com.clarkparsia.owlapi.explanation.util.ExplanationProgressMonitor;
 import com.clarkparsia.owlapi.explanation.util.OntologyUtils;
 import com.clarkparsia.owlapi.explanation.util.SilentExplanationProgressMonitor;
@@ -280,7 +277,7 @@ public class RestrictionHSTExplanationGenerator implements MultipleExplanationGe
                 //System.out.println(depthCounter + " MUPSnew "+ Integer.valueOf(allMups.size())+" : "+ mups);
                 //System.out.println(depthCounter + " remove initial: " + axiom);
 
-                var remainingHookSpecificAxioms = new HashSet<>(hookIndividualAxioms);
+                Set<OWLAxiom> remainingHookSpecificAxioms = new HashSet<>(hookIndividualAxioms);
                 remainingHookSpecificAxioms.removeAll(currentPathContents);
 
                 if (!hookIndividualAxioms.contains(axiom)) {

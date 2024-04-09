@@ -1,4 +1,4 @@
-package de.tu_dresden.inf.lat.om_pmc.formulaGeneration.schemas
+package de.tu_dresden.inf.lat.om_pmc.justificationSchemas
 
 import org.semanticweb.HermiT.ReasonerFactory
 import org.semanticweb.owlapi.apibinding.OWLManager
@@ -20,7 +20,7 @@ object Test2 {
 
     var relevantAxioms = Set[OWLLogicalAxiom]()
 
-    Range(0,5).foreach { i =>
+    Range(0,10).foreach { i =>
       val ind = factory.getOWLNamedIndividual(IRI.create("a" + i))
       val ind2 = factory.getOWLNamedIndividual(IRI.create("a" + (i+1)))
       val ax1 = factory.getOWLClassAssertionAxiom(A, ind)

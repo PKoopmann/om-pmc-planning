@@ -1,4 +1,4 @@
-package de.tu_dresden.inf.lat.om_pmc.formulaGeneration.schemas
+package de.tu_dresden.inf.lat.om_pmc.justificationSchemas
 
 import com.clarkparsia.owlapi.explanation.MyBlackBoxExplanation
 import de.tu_dresden.inf.lat.om_planning.tools.{OWLTools, Tools}
@@ -70,15 +70,36 @@ class JustificationSchema(val prefix: List[OWLAxiom],
       case entity => throw new AssertionError("Unexpected entity: "+entity)
     }).sum
 
+    def compare(l1: Seq[Int], l2:Seq[Int]): Boolean = {
+      if(l1.isEmpty)
+        return false
+      else if(l2.isEmpty)
+        return true
+      val cmpMax = l1.max-l2.max
+      if(cmpMax!=0)
+        cmpMax>0
+      else {
+        val first = l1.head-l2.head
+        if(first!=0)
+          first>0
+        else
+          compare(l1.tail, l2.tail)
+      }
+    }
 
-    val ordering = Ordering.by[Seq[Int],Int](-_.max)  // TODO removes elements!
+    val ordering = Ordering.fromLessThan[Seq[Int]](compare)
+      // Ordering.by[Seq[Int],Int](-_.max)  // TODO removes elements!
     var patterns =
       SortedSet()(ordering) ++
         PatternTools.homomorphicPatterns(Range(0,positions).toList,positions)
 
+
     var result = Set[Seq[OWLNamedIndividual]]()
 
     while(!patterns.isEmpty){
+      println("Patterns in order: ")
+      patterns.foreach(x => println(" - "+x))
+
       val pattern = patterns.head
       patterns -= pattern
       println("Current pattern: "+pattern)
@@ -137,11 +158,29 @@ class JustificationSchema(val prefix: List[OWLAxiom],
 
             variablePosition+=1
           case p: OWLObjectProperty => {
+
+            println("schema position for "+variablePosition+": "+pattern(variablePosition))
+            println("schema position for "+(variablePosition+1)+": "+pattern(variablePosition+1))
+
             val newKey1 = newKey(variablePosition)
             val newKey2 = newKey(variablePosition+1)
-            val valuePairs = fastABoxLookup.forProperty(p)
+
+            var valuePairs = fastABoxLookup.forProperty(p)
+
+            // special case r(x,x)
+            if(pattern(variablePosition)==pattern(variablePosition+1)) {
+              println("jo!")
+              valuePairs = valuePairs.filter(p => p._1.equals(p._2))
+            }
+            println("valuePairs: "+valuePairs)
             val values1 = intersectValues(variablePosition,valuePairs.map(_._1))
             val values2 = intersectValues(variablePosition,valuePairs.map(_._2))
+
+
+
+            println("values1: "+values1)
+            println("values2: "+values2)
+
             if(!values1.isEmpty && !values2.isEmpty){
 
               if(valueSequence.size<=pattern(variablePosition))
@@ -159,7 +198,10 @@ class JustificationSchema(val prefix: List[OWLAxiom],
               incompleteValuations = incompleteValuations.map{tuple: List[OWLNamedIndividual] =>
                 if(newKey1 && newKey2) {
                   // both values are new
-                  valuePairs.map(pair => tuple.:+(pair._1).:+(pair._2))
+                  if(schema(variablePosition)==schema(variablePosition+1))
+                    valuePairs.map(pair => tuple.:+(pair._1))
+                  else // two new variables to be added
+                    valuePairs.map(pair => tuple.:+(pair._1).:+(pair._2))
                 } else if (!newKey1 && !newKey2) {
                   // both values are old
                   val el1 = tuple(pattern(variablePosition))
