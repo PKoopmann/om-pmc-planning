@@ -7,6 +7,11 @@ import scala.collection.JavaConverters.setAsJavaSetConverter
 
 object Tools {
 
+  /** check whether the given iterable contains duplicates */
+  def hasDuplicates[A](iter:Iterable[A]): Boolean = {
+    iter.size>iter.toSet.size // TODO this looks like it can be optimized
+  }
+
   def setOfMaps[A,B](map: Map[A, Iterable[B]]): Set[Map[A,B]] = {
     def inner(list: List[(A, Iterable[B])], current: List[(A,B)]): Set[Map[A,B]] = list match {
       case Nil => Set(current.toMap[A,B])

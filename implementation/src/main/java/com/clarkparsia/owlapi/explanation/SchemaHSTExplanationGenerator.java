@@ -1,7 +1,6 @@
 package com.clarkparsia.owlapi.explanation;
 
 
-import org.apache.http.annotation.Obsolete;
 import org.semanticweb.HermiT.ReasonerFactory;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.*;
