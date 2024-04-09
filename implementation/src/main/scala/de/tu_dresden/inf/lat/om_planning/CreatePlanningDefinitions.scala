@@ -13,7 +13,7 @@ object CreatePlanningDefinitions {
 
   def main(args: Array[String]) = {
 
-    /*
+/*
     create(
       "-pddl",
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/fluents.txt"),
@@ -21,8 +21,10 @@ object CreatePlanningDefinitions {
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/pipesA-9.ttl"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/pipes/A-9/temp_rewritings.txt")
     )
+*/
 
-     */
+
+
 /*
     create(
       "-pddl",
@@ -91,10 +93,10 @@ object CreatePlanningDefinitions {
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/drone5-5.ttl"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/miniDrone/temp_rewritings_2.txt"),
       0,
-      200
+      500
     )
+*/
 
- */
 
 
 /*
@@ -124,8 +126,18 @@ object CreatePlanningDefinitions {
       100
     )
 
-
  */
+
+
+    // IndexOutOfBoundsException
+    create(
+      "-pddl",
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/cats6/fluents.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/cats6/hooks.txt"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/cats6/cats6.ttl"),
+      new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/cats6/temp_rewritings.txt")
+    )
+
 
 
 

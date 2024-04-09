@@ -117,7 +117,7 @@ class ClassBasedFormulaGenerator (
 
 
           // add anchor axiom to distinguish between explanations for inconsistency and hook
-          //relevantAxioms += anchorAxiom
+          //anchorAxioms.foreach((relevantAxioms+=_))
           supportingAxioms.foreach(relevantAxioms+=_)
 
           updateReasoner(ontology)
@@ -135,18 +135,24 @@ class ClassBasedFormulaGenerator (
             val filteredJustification = jrelevant.filter(fluentAxioms)
             val supportJustification = jrelevant.filter(supportingAxioms)
 
-            if (j.intersect(anchorAxioms).isEmpty) {
-              // justification for inconsistency
+            // TODO: use first line, if possible
+            //if (j.intersect(anchorAxioms).isEmpty) {
+            if (j.intersect(supportingAxioms).isEmpty) {
+                // justification for inconsistency
               inconsistencyDnf = addExplanationToDNF(inconsistencyDnf, filteredJustification)
             }
             else {
               //println("j " + j.filter(relevantAxioms))
 
               // add all the supporting axioms to infer all hooks that might be explained by justification
-              //val extendedJustification = (staticOntology.getAxioms() ++ filteredJustification).toSet[OWLAxiom]
+              val extendedJustification = (staticOntology.getAxioms() ++ filteredJustification).toSet[OWLAxiom]
 
-              //val explainedHooks = justifiedHooks(extendedJustification, axiom)
-              val explainedHooks = justifiedHooksUsingSupport(supportJustification.toSet[OWLAxiom])
+              val explainedHooks = justifiedHooksUsingReasoner(extendedJustification, axiom)
+
+              // use only hook axiom
+              // TODO: use next line, if possible
+              //val explainedHooks = justifiedHooksUsingSupport(supportJustification.toSet[OWLAxiom])
+
               //val i = " "
               explainedHooks.foreach{hook =>
                 if (rewritings.contains(hook)) {
