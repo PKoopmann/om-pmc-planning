@@ -25,7 +25,7 @@ class AllJustificationSchemas(ontology: OWLOntology, relevantAxioms: Set[OWLLogi
 
   def allJustifications() = {
     allJustificationSchemas().map(justSchema =>
-     justSchema.valuations().map(justSchema.instantiateWith)
+     justSchema.valuations().map(justSchema.instantiateWith).map(_.toSet[OWLAxiom])
     ).flatten
   }
 
