@@ -280,12 +280,17 @@ if [ $TimeLimit == -1 ]; then
   # run without time limit
   $Planner --plan-file $Plan --sas-file $PlannerSAS $DomainNew $ProblemNew --search "astar(blind())"  > "$PlannerLog"
 else
-  timeout "$TimeLimit"s $Planner --plan-file $Plan --sas-file $PlannerSAS $DomainNew $ProblemNew --search "astar(blind())"  > "$PlannerLog"
+  # time limit is shorter by amount of time used for reasoning
+  RoundedDurationReasoning=${DurationReasoning%*"."*}
+  TimeLimitPlanning=$((TimeLimit-RoundedDurationReasoning))
+  echo "time limit for planning is $TimeLimitPlanning"
+
+  timeout "$TimeLimitPlanning"s $Planner --plan-file $Plan --sas-file $PlannerSAS $DomainNew $ProblemNew --search "astar(blind())"  > "$PlannerLog"
   if [ $? -eq 124 ]
   then
-    echo "timeout for rewriting generator after $TimeLimit seconds"
+    echo "timeout for rewriting generator after $TimeLimitPlanning seconds"
     echo "reasoning time: ${DurationReasoning}s"
-    echo "planning time: >${TimeLimit}s"
+    echo "planning time: >${TimeLimitPlanning}s"
     echo "total time: -"
     # remove misc (if wished)
     if [[ $DeleteMisc == true ]]; then
