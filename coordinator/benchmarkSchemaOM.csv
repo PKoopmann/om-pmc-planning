@@ -101,6 +101,7 @@ id,method,name,folder,ontology,domain,problem
 369,om_planning,robotConj8,../examples/robotConj/8,TTL8.owl,robotDomain8.pddl,robotProblem8.pddl
 371,om_planning,robotConj9,../examples/robotConj/9,TTL9.owl,robotDomain9.pddl,robotProblem9.pddl
 373,om_planning,robotConj10,../examples/robotConj/10,TTL10.owl,robotDomain10.pddl,robotProblem10.pddl
+399,om_planning,blocksworld4-0,../examples/blocksworld/4-0,blocks.ttl,blocks.pddl,blocksProblem4-0.pddl
 400,om_planning,blocksworld4-1,../examples/blocksworld/4-1,blocks.ttl,blocks.pddl,blocksProblem4-1.pddl
 401,om_planning,blocksworld4-2,../examples/blocksworld/4-2,blocks.ttl,blocks.pddl,blocksProblem4-2.pddl
 402,om_planning,blocksworld5-0,../examples/blocksworld/5-0,blocks.ttl,blocks.pddl,blocksProblem5-0.pddl

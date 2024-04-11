@@ -1,0 +1,13 @@
+name,#examples,Horn,DL paper,improved repairs,naive inconsistency based,class based,schema based
+cats,20,20,0,0,0,0,0
+elevator,20,20,1,10,0,0,2
+robot,20,20,1,2,5,4,4
+taskAssign,20,20,0,2,5,3,4
+tpsa,15,5,0,0,0,0,0
+vta,15,15,0,0,0,0,0
+vta-roles,15,15,0,0,0,0,0
+drones,24,24,4,9,0,0,11
+queens,30,24,19,25,11,0,25
+robotConj,20,20,1,2,5,4,4
+blocksworld,21,0,13,13,14,13,12
+pipes,21,14,19,19,17,19,16

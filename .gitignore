@@ -25,3 +25,4 @@ coordinator/test.owl
 implementation/test.owl
 examples/temp/
 coordinator/benchmarkTemp.csv
+examples/performance_check/*/*.txt
