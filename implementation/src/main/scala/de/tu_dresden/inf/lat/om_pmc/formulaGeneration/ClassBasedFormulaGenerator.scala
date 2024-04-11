@@ -147,11 +147,12 @@ class ClassBasedFormulaGenerator (
               // add all the supporting axioms to infer all hooks that might be explained by justification
               val extendedJustification = (staticOntology.getAxioms() ++ filteredJustification).toSet[OWLAxiom]
 
-              val explainedHooks = justifiedHooksUsingReasoner(extendedJustification, axiom)
+              // there seems to be some bug with this form of explanation (test with elevator15 and check for KBquery_origin)
+              //val explainedHooks = justifiedHooksUsingReasoner(extendedJustification, axiom)
 
               // use only hook axiom
               // TODO: use next line, if possible
-              //val explainedHooks = justifiedHooksUsingSupport(supportJustification.toSet[OWLAxiom])
+              val explainedHooks = justifiedHooksUsingSupport(supportJustification.toSet[OWLAxiom])
 
               //val i = " "
               explainedHooks.foreach{hook =>
