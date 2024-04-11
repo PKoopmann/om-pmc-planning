@@ -22,20 +22,22 @@ class SchemaBasedFormulaGenerator (
 
   override def getExplanationGenerator(relevantAxioms: Set[OWLLogicalAxiom],
                                        singleGen: TransactionAwareSingleExpGen): MultipleExplanationGenerator  = {
-    /*new MupsTrackingHSTExplanationGenerator(
+    new MupsTrackingHSTExplanationGenerator(
       relevantAxioms.asJava,
       hookSpecificAxioms.asJava,
       anchorAxioms.asJava,
       singleGen
     )
 
-     */
 
+/*
     new SchemaBasedExplanationGenerator(
       ontology,
       relevantAxioms,
       reasonerFactory,
       getReasoner(ontology)
     )
+
+ */
   }
 }

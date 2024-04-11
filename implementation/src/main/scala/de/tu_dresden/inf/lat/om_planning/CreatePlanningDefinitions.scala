@@ -130,6 +130,7 @@ object CreatePlanningDefinitions {
 
 
     // IndexOutOfBoundsException
+    /*
     create(
       "-pddl",
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/cats6/fluents.txt"),
@@ -137,6 +138,8 @@ object CreatePlanningDefinitions {
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/cats6/cats6.ttl"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/cats6/temp_rewritings.txt")
     )
+
+     */
 
 
 

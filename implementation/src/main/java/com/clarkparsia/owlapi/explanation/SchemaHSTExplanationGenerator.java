@@ -268,9 +268,9 @@ class JustificationSchema {
 
         Set<Map<OWLIndividual, OWLIndividual>> allMappings = new HashSet<>();
         System.out.println(variableNames.size());
-        // only compute mappings if there are at most 10 individuals
+        // only compute mappings if there are at most 5 individuals
         // TODO: only temporary fix, remove later, when overall algorithm to find mappings works better
-        if (variableNames.size() <= 10)
+        if (variableNames.size() <= 5)
             allMappings = allMappings(
                     variableNames,
                     individuals,
