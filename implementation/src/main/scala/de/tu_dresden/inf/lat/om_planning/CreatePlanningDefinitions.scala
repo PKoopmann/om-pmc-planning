@@ -107,11 +107,13 @@ object CreatePlanningDefinitions {
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/pipesA-8/pipesA-8.ttl"),
       new File("/home/tobias/Documents/programming/ontologies/om-pmc-formula-generation/examples/performance_check/pipesA-8/temp_rewritings.txt"),
       0,
-      1000
+      10
     )
-
-
+    
  */
+
+
+
 
 /*
     create(
