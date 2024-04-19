@@ -1,0 +1,3600 @@
+start time: 15.04.2024 at 15:59
+run ontology mediated planning for example with id 1 (folder: ../examples/elevator/elevator15)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 97
+hook count: 735
+fluent count: 45
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 3 (folder: ../examples/elevator/elevator16)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 102
+hook count: 832
+fluent count: 48
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 5 (folder: ../examples/elevator/elevator17)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 107
+hook count: 935
+fluent count: 51
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 7 (folder: ../examples/elevator/elevator18)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 113
+hook count: 1044
+fluent count: 54
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 9 (folder: ../examples/elevator/elevator19)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 118
+hook count: 1159
+fluent count: 57
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 11 (folder: ../examples/elevator/elevator20)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 124
+hook count: 1280
+fluent count: 60
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 13 (folder: ../examples/elevator/elevator21)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 129
+hook count: 1407
+fluent count: 63
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 15 (folder: ../examples/elevator/elevator22)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 134
+hook count: 1540
+fluent count: 66
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 17 (folder: ../examples/elevator/elevator23)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 140
+hook count: 1679
+fluent count: 69
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 19 (folder: ../examples/elevator/elevator24)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 145
+hook count: 1824
+fluent count: 72
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 21 (folder: ../examples/elevator/elevator25)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 151
+hook count: 1975
+fluent count: 75
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 23 (folder: ../examples/elevator/elevator26)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 156
+hook count: 2132
+fluent count: 78
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 25 (folder: ../examples/elevator/elevator27)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 161
+hook count: 2295
+fluent count: 81
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 27 (folder: ../examples/elevator/elevator28)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 167
+hook count: 2464
+fluent count: 84
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 29 (folder: ../examples/elevator/elevator29)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 172
+hook count: 2639
+fluent count: 87
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 31 (folder: ../examples/elevator/elevator30)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 178
+hook count: 2820
+fluent count: 90
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 33 (folder: ../examples/elevator/elevator31)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 183
+hook count: 3007
+fluent count: 93
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 35 (folder: ../examples/elevator/elevator32)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 188
+hook count: 3200
+fluent count: 96
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 37 (folder: ../examples/elevator/elevator33)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 194
+hook count: 3399
+fluent count: 99
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 39 (folder: ../examples/elevator/elevator34)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 199
+hook count: 3604
+fluent count: 102
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 41 (folder: ../examples/cats/6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 189
+hook count: 12
+fluent count: 168
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 43 (folder: ../examples/cats/7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 247
+hook count: 14
+fluent count: 224
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 45 (folder: ../examples/cats/8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 313
+hook count: 16
+fluent count: 288
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 47 (folder: ../examples/cats/9)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 387
+hook count: 18
+fluent count: 360
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 49 (folder: ../examples/cats/10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 469
+hook count: 20
+fluent count: 440
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 51 (folder: ../examples/cats/11)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 559
+hook count: 22
+fluent count: 528
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 53 (folder: ../examples/cats/12)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 657
+hook count: 24
+fluent count: 624
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 55 (folder: ../examples/cats/13)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 763
+hook count: 26
+fluent count: 728
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 57 (folder: ../examples/cats/14)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 877
+hook count: 28
+fluent count: 840
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 59 (folder: ../examples/cats/15)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 999
+hook count: 30
+fluent count: 960
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 61 (folder: ../examples/cats/16)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 1129
+hook count: 32
+fluent count: 1088
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 63 (folder: ../examples/cats/17)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 1267
+hook count: 34
+fluent count: 1224
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 65 (folder: ../examples/cats/18)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 1413
+hook count: 36
+fluent count: 1368
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 67 (folder: ../examples/cats/19)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 1567
+hook count: 38
+fluent count: 1520
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 69 (folder: ../examples/cats/20)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.StackOverflowError
+Exception in thread "main" java.lang.StackOverflowError
+ontology size: 1729
+hook count: 40
+fluent count: 1680
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 71 (folder: ../examples/cats/21)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.StackOverflowError
+Exception in thread "main" java.lang.StackOverflowError
+ontology size: 1899
+hook count: 42
+fluent count: 1848
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 73 (folder: ../examples/cats/22)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.StackOverflowError
+Exception in thread "main" java.lang.StackOverflowError
+ontology size: 2077
+hook count: 44
+fluent count: 2024
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 75 (folder: ../examples/cats/23)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.StackOverflowError
+Exception in thread "main" java.lang.StackOverflowError
+ontology size: 2263
+hook count: 46
+fluent count: 2208
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 77 (folder: ../examples/cats/24)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.StackOverflowError
+Exception in thread "main" java.lang.StackOverflowError
+ontology size: 2457
+hook count: 48
+fluent count: 2400
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 79 (folder: ../examples/cats/25)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.StackOverflowError
+Exception in thread "main" java.lang.StackOverflowError
+ontology size: 2659
+hook count: 50
+fluent count: 2600
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 81 (folder: ../examples/drones/5-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 221
+hook count: 1300
+fluent count: 52
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 83 (folder: ../examples/drones/5-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 221
+hook count: 1300
+fluent count: 52
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 85 (folder: ../examples/drones/5-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 220
+hook count: 1300
+fluent count: 52
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 87 (folder: ../examples/drones/5-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 221
+hook count: 1300
+fluent count: 52
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 89 (folder: ../examples/drones/6-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 307
+hook count: 2664
+fluent count: 74
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 91 (folder: ../examples/drones/6-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 307
+hook count: 2664
+fluent count: 74
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 93 (folder: ../examples/drones/6-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 308
+hook count: 2664
+fluent count: 74
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 95 (folder: ../examples/drones/6-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 307
+hook count: 2664
+fluent count: 74
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 97 (folder: ../examples/drones/7-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 410
+hook count: 4900
+fluent count: 100
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 99 (folder: ../examples/drones/7-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 409
+hook count: 4900
+fluent count: 100
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 101 (folder: ../examples/drones/7-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 410
+hook count: 4900
+fluent count: 100
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 103 (folder: ../examples/drones/7-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 409
+hook count: 4900
+fluent count: 100
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 105 (folder: ../examples/drones/8-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 532
+hook count: 8320
+fluent count: 130
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 107 (folder: ../examples/drones/8-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 532
+hook count: 8320
+fluent count: 130
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 109 (folder: ../examples/drones/8-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 532
+hook count: 8320
+fluent count: 130
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 111 (folder: ../examples/drones/8-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 532
+hook count: 8320
+fluent count: 130
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 113 (folder: ../examples/drones/9-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 669
+hook count: 13284
+fluent count: 164
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 115 (folder: ../examples/drones/9-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 670
+hook count: 13284
+fluent count: 164
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 117 (folder: ../examples/drones/9-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 668
+hook count: 13284
+fluent count: 164
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 119 (folder: ../examples/drones/9-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 669
+hook count: 13284
+fluent count: 164
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 121 (folder: ../examples/drones/10-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 821
+hook count: 20200
+fluent count: 202
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 123 (folder: ../examples/drones/10-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 823
+hook count: 20200
+fluent count: 202
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 125 (folder: ../examples/drones/10-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 824
+hook count: 20200
+fluent count: 202
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 127 (folder: ../examples/drones/10-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 823
+hook count: 20200
+fluent count: 202
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 129 (folder: ../examples/taskAssign/3)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 66
+hook count: 9
+fluent count: 27
+repair count: 
+created new domain
+start planning
+time limit for planning is 1788
+finished planning
+reasoning time: 12.609787879s
+planning time: .163086285s
+total time: 12.806003964s
+analyzed states: 38
+plan length: 2
+run ontology mediated planning for example with id 131 (folder: ../examples/taskAssign/4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 78
+hook count: 12
+fluent count: 36
+repair count: 
+created new domain
+start planning
+time limit for planning is 1777
+finished planning
+reasoning time: 23.791275064s
+planning time: .157015554s
+total time: 23.979969785s
+analyzed states: 51
+plan length: 2
+run ontology mediated planning for example with id 133 (folder: ../examples/taskAssign/5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 91
+hook count: 15
+fluent count: 45
+repair count: 
+created new domain
+start planning
+time limit for planning is 1749
+finished planning
+reasoning time: 51.220328101s
+planning time: .192610692s
+total time: 51.445551865s
+analyzed states: 70
+plan length: 2
+run ontology mediated planning for example with id 135 (folder: ../examples/taskAssign/6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 98
+hook count: 18
+fluent count: 54
+repair count: 
+created new domain
+start planning
+time limit for planning is 1624
+finished planning
+reasoning time: 176.129857545s
+planning time: .204919250s
+total time: 176.369401043s
+analyzed states: 133
+plan length: 2
+run ontology mediated planning for example with id 137 (folder: ../examples/taskAssign/7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 113
+hook count: 21
+fluent count: 63
+repair count: 
+created new domain
+start planning
+time limit for planning is 1080
+finished planning
+reasoning time: 720.152332363s
+planning time: .221747686s
+total time: 720.404664644s
+analyzed states: 154
+plan length: 2
+run ontology mediated planning for example with id 139 (folder: ../examples/taskAssign/8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 120
+hook count: 24
+fluent count: 72
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 141 (folder: ../examples/taskAssign/9)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 134
+hook count: 27
+fluent count: 81
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 143 (folder: ../examples/taskAssign/10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 144
+hook count: 30
+fluent count: 90
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 145 (folder: ../examples/taskAssign/11)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 151
+hook count: 33
+fluent count: 99
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 147 (folder: ../examples/taskAssign/12)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 166
+hook count: 36
+fluent count: 108
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 149 (folder: ../examples/taskAssign/13)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 176
+hook count: 39
+fluent count: 117
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 151 (folder: ../examples/taskAssign/14)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 187
+hook count: 42
+fluent count: 126
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 153 (folder: ../examples/taskAssign/15)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 194
+hook count: 45
+fluent count: 135
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 155 (folder: ../examples/taskAssign/16)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 208
+hook count: 48
+fluent count: 144
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 157 (folder: ../examples/taskAssign/17)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 219
+hook count: 51
+fluent count: 153
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 159 (folder: ../examples/taskAssign/18)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 229
+hook count: 54
+fluent count: 162
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 161 (folder: ../examples/taskAssign/19)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 240
+hook count: 57
+fluent count: 171
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 163 (folder: ../examples/taskAssign/20)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 250
+hook count: 60
+fluent count: 180
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 165 (folder: ../examples/taskAssign/21)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+SEVERE: Exception thrown when performing the maintenance task
+java.lang.OutOfMemoryError: Java heap space
+ontology size: 261
+hook count: 63
+fluent count: 189
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 167 (folder: ../examples/taskAssign/22)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 269
+hook count: 66
+fluent count: 198
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 169 (folder: ../examples/tpsa/4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 344
+hook count: 108
+fluent count: 306
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 171 (folder: ../examples/tpsa/5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 409
+hook count: 120
+fluent count: 370
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 173 (folder: ../examples/tpsa/6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 480
+hook count: 132
+fluent count: 440
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 175 (folder: ../examples/tpsa/7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 557
+hook count: 144
+fluent count: 516
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 177 (folder: ../examples/tpsa/10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 824
+hook count: 180
+fluent count: 780
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 179 (folder: ../examples/tpsa/15)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 1389
+hook count: 240
+fluent count: 1340
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 181 (folder: ../examples/tpsa/20)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 2104
+hook count: 300
+fluent count: 2050
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 183 (folder: ../examples/tpsa/25)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 2969
+hook count: 360
+fluent count: 2910
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 185 (folder: ../examples/tpsa/30)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 3984
+hook count: 420
+fluent count: 3920
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 187 (folder: ../examples/tpsa/35)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 5149
+hook count: 480
+fluent count: 5080
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 189 (folder: ../examples/tpsa/40)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+at org.semanticweb.HermiT.Reasoner.throwInconsistentOntologyExceptionIfNecessary(Reasoner.java:2310)
+ontology size: 6464
+hook count: 540
+fluent count: 6390
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 191 (folder: ../examples/tpsa/45)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 7929
+hook count: 600
+fluent count: 7850
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 193 (folder: ../examples/tpsa/50)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 9544
+hook count: 660
+fluent count: 9460
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 195 (folder: ../examples/tpsa/55)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 11309
+hook count: 720
+fluent count: 11220
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 197 (folder: ../examples/tpsa/60)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 13224
+hook count: 780
+fluent count: 13130
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 199 (folder: ../examples/vta/4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 217
+hook count: 405
+fluent count: 165
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 201 (folder: ../examples/vta/5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 230
+hook count: 448
+fluent count: 176
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 203 (folder: ../examples/vta/6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 243
+hook count: 493
+fluent count: 187
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 205 (folder: ../examples/vta/7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 256
+hook count: 540
+fluent count: 198
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 207 (folder: ../examples/vta/10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 295
+hook count: 693
+fluent count: 231
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 209 (folder: ../examples/vta/15)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 360
+hook count: 988
+fluent count: 286
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 211 (folder: ../examples/vta/20)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 425
+hook count: 1333
+fluent count: 341
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 213 (folder: ../examples/vta/25)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 490
+hook count: 1728
+fluent count: 396
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 215 (folder: ../examples/vta/30)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 555
+hook count: 2173
+fluent count: 451
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 217 (folder: ../examples/vta/35)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 620
+hook count: 2668
+fluent count: 506
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 219 (folder: ../examples/vta/40)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 685
+hook count: 3213
+fluent count: 561
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 221 (folder: ../examples/vta/45)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 750
+hook count: 3808
+fluent count: 616
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 223 (folder: ../examples/vta/50)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 815
+hook count: 4453
+fluent count: 671
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 225 (folder: ../examples/vta/55)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 880
+hook count: 5148
+fluent count: 726
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 227 (folder: ../examples/vta/60)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 945
+hook count: 5893
+fluent count: 781
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 229 (folder: ../examples/vta_roles/4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+at org.semanticweb.HermiT.Reasoner.throwInconsistentOntologyExceptionIfNecessary(Reasoner.java:2310)
+ontology size: 2325
+hook count: 2550
+fluent count: 2265
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 231 (folder: ../examples/vta_roles/5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 2638
+hook count: 2896
+fluent count: 2576
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 233 (folder: ../examples/vta_roles/6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 2971
+hook count: 3264
+fluent count: 2907
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 235 (folder: ../examples/vta_roles/7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 3324
+hook count: 3654
+fluent count: 3258
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 237 (folder: ../examples/vta_roles/10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space: failed reallocation of scalar replaced objects
+ontology size: 4503
+hook count: 4956
+fluent count: 4431
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 239 (folder: ../examples/vta_roles/15)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 6868
+hook count: 7566
+fluent count: 6786
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 241 (folder: ../examples/vta_roles/20)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 9733
+hook count: 10726
+fluent count: 9641
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 243 (folder: ../examples/vta_roles/25)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 13098
+hook count: 14436
+fluent count: 12996
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 245 (folder: ../examples/vta_roles/30)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+at org.semanticweb.HermiT.Reasoner.throwInconsistentOntologyExceptionIfNecessary(Reasoner.java:2310)
+ontology size: 16963
+hook count: 18696
+fluent count: 16851
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 247 (folder: ../examples/vta_roles/35)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 21328
+hook count: 23506
+fluent count: 21206
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 249 (folder: ../examples/vta_roles/40)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+ontology size: 26193
+hook count: 28866
+fluent count: 26061
+repair count: 
+memory out for rewriting generator
+reasoning time: MEMOUT
+planning time: -
+total time: -
+run ontology mediated planning for example with id 251 (folder: ../examples/vta_roles/45)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 31558
+hook count: 34776
+fluent count: 31416
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 253 (folder: ../examples/vta_roles/50)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 37423
+hook count: 41236
+fluent count: 37271
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 255 (folder: ../examples/vta_roles/55)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 43788
+hook count: 48246
+fluent count: 43626
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 257 (folder: ../examples/vta_roles/60)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 50653
+hook count: 55806
+fluent count: 50481
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 259 (folder: ../examples/queens/5-1)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 
+created new domain
+start planning
+time limit for planning is 1748
+finished planning
+reasoning time: 52.827831271s
+planning time: .730193130s
+total time: 53.631579677s
+analyzed states: 1
+plan length: 0
+run ontology mediated planning for example with id 261 (folder: ../examples/queens/5-2)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 
+created new domain
+start planning
+time limit for planning is 1761
+finished planning
+reasoning time: 39.437554935s
+planning time: .868748416s
+total time: 40.334964428s
+analyzed states: 300
+plan length: no plan
+run ontology mediated planning for example with id 263 (folder: ../examples/queens/5-3)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 
+created new domain
+start planning
+time limit for planning is 1761
+finished planning
+reasoning time: 39.137106736s
+planning time: 2.324099251s
+total time: 41.492534843s
+analyzed states: 2300
+plan length: no plan
+run ontology mediated planning for example with id 265 (folder: ../examples/queens/5-4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 
+created new domain
+start planning
+time limit for planning is 1761
+finished planning
+reasoning time: 39.205673287s
+planning time: 9.956083955s
+total time: 49.192697907s
+analyzed states: 12650
+plan length: no plan
+run ontology mediated planning for example with id 267 (folder: ../examples/queens/5-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+ontology size: 143
+hook count: 675
+fluent count: 25
+repair count: 
+created new domain
+start planning
+time limit for planning is 1761
+finished planning
+reasoning time: 39.255755168s
+planning time: 52.693902304s
+total time: 91.978604611s
+analyzed states: 53130
+plan length: no plan
+run ontology mediated planning for example with id 269 (folder: ../examples/queens/6-2)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 
+created new domain
+start planning
+time limit for planning is 1695
+finished planning
+reasoning time: 105.184130256s
+planning time: 2.443481485s
+total time: 107.658533673s
+analyzed states: 630
+plan length: no plan
+run ontology mediated planning for example with id 271 (folder: ../examples/queens/6-3)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 
+created new domain
+start planning
+time limit for planning is 1695
+finished planning
+reasoning time: 105.762919748s
+planning time: 15.153696477s
+total time: 120.948777039s
+analyzed states: 7140
+plan length: no plan
+run ontology mediated planning for example with id 273 (folder: ../examples/queens/6-4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 
+created new domain
+start planning
+time limit for planning is 1693
+finished planning
+reasoning time: 107.130898420s
+planning time: 141.947798850s
+total time: 249.109953702s
+analyzed states: 58905
+plan length: no plan
+run ontology mediated planning for example with id 275 (folder: ../examples/queens/6-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 
+created new domain
+start planning
+time limit for planning is 1696
+finished planning
+reasoning time: 104.354767422s
+planning time: 1064.337103774s
+total time: 1168.723358186s
+analyzed states: 376992
+plan length: no plan
+run ontology mediated planning for example with id 277 (folder: ../examples/queens/6-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+ontology size: 203
+hook count: 1368
+fluent count: 36
+repair count: 
+created new domain
+start planning
+time limit for planning is 1695
+timeout for rewriting generator after 1695 seconds
+reasoning time: 105.032266749s
+planning time: >1695s
+total time: -
+run ontology mediated planning for example with id 279 (folder: ../examples/queens/7-3)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 
+created new domain
+start planning
+time limit for planning is 1525
+finished planning
+reasoning time: 275.089280802s
+planning time: 91.569245529s
+total time: 366.692445138s
+analyzed states: 18424
+plan length: no plan
+run ontology mediated planning for example with id 281 (folder: ../examples/queens/7-4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 
+created new domain
+start planning
+time limit for planning is 1525
+finished planning
+reasoning time: 275.553431201s
+planning time: 1265.365793507s
+total time: 1540.957077943s
+analyzed states: 211876
+plan length: no plan
+run ontology mediated planning for example with id 283 (folder: ../examples/queens/7-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 
+created new domain
+start planning
+time limit for planning is 1527
+timeout for rewriting generator after 1527 seconds
+reasoning time: 273.693340918s
+planning time: >1527s
+total time: -
+run ontology mediated planning for example with id 285 (folder: ../examples/queens/7-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 
+created new domain
+start planning
+time limit for planning is 1530
+timeout for rewriting generator after 1530 seconds
+reasoning time: 270.088149235s
+planning time: >1530s
+total time: -
+run ontology mediated planning for example with id 287 (folder: ../examples/queens/7-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+ontology size: 275
+hook count: 2499
+fluent count: 49
+repair count: 
+created new domain
+start planning
+time limit for planning is 1528
+timeout for rewriting generator after 1528 seconds
+reasoning time: 272.256183572s
+planning time: >1528s
+total time: -
+run ontology mediated planning for example with id 289 (folder: ../examples/queens/8-4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 
+created new domain
+start planning
+time limit for planning is 1128
+timeout for rewriting generator after 1128 seconds
+reasoning time: 672.455590081s
+planning time: >1128s
+total time: -
+run ontology mediated planning for example with id 291 (folder: ../examples/queens/8-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 
+created new domain
+start planning
+time limit for planning is 1137
+timeout for rewriting generator after 1137 seconds
+reasoning time: 663.708662083s
+planning time: >1137s
+total time: -
+run ontology mediated planning for example with id 293 (folder: ../examples/queens/8-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 
+created new domain
+start planning
+time limit for planning is 1131
+timeout for rewriting generator after 1131 seconds
+reasoning time: 669.363586897s
+planning time: >1131s
+total time: -
+run ontology mediated planning for example with id 295 (folder: ../examples/queens/8-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 
+created new domain
+start planning
+time limit for planning is 1130
+timeout for rewriting generator after 1130 seconds
+reasoning time: 670.603428986s
+planning time: >1130s
+total time: -
+run ontology mediated planning for example with id 297 (folder: ../examples/queens/8-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+ontology size: 359
+hook count: 4224
+fluent count: 64
+repair count: 
+created new domain
+start planning
+time limit for planning is 1130
+timeout for rewriting generator after 1130 seconds
+reasoning time: 670.429774918s
+planning time: >1130s
+total time: -
+run ontology mediated planning for example with id 299 (folder: ../examples/queens/9-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+compute hooks 6000 til 6500
+compute hooks 6500 til 7000
+compute hooks 7000 til 7500
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 
+created new domain
+start planning
+time limit for planning is 298
+timeout for rewriting generator after 298 seconds
+reasoning time: 1502.840042236s
+planning time: >298s
+total time: -
+run ontology mediated planning for example with id 301 (folder: ../examples/queens/9-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+compute hooks 6000 til 6500
+compute hooks 6500 til 7000
+compute hooks 7000 til 7500
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 
+created new domain
+start planning
+time limit for planning is 289
+timeout for rewriting generator after 289 seconds
+reasoning time: 1511.715719006s
+planning time: >289s
+total time: -
+run ontology mediated planning for example with id 303 (folder: ../examples/queens/9-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+compute hooks 6000 til 6500
+compute hooks 6500 til 7000
+compute hooks 7000 til 7500
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 
+created new domain
+start planning
+time limit for planning is 298
+timeout for rewriting generator after 298 seconds
+reasoning time: 1502.138769794s
+planning time: >298s
+total time: -
+run ontology mediated planning for example with id 305 (folder: ../examples/queens/9-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+compute hooks 6000 til 6500
+compute hooks 6500 til 7000
+compute hooks 7000 til 7500
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 
+created new domain
+start planning
+time limit for planning is 307
+timeout for rewriting generator after 307 seconds
+reasoning time: 1493.392542004s
+planning time: >307s
+total time: -
+run ontology mediated planning for example with id 307 (folder: ../examples/queens/9-9)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+compute hooks 6000 til 6500
+compute hooks 6500 til 7000
+compute hooks 7000 til 7500
+ontology size: 455
+hook count: 6723
+fluent count: 81
+repair count: 
+created new domain
+start planning
+time limit for planning is 320
+timeout for rewriting generator after 320 seconds
+reasoning time: 1480.428822549s
+planning time: >320s
+total time: -
+run ontology mediated planning for example with id 309 (folder: ../examples/queens/10-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 311 (folder: ../examples/queens/10-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 313 (folder: ../examples/queens/10-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 315 (folder: ../examples/queens/10-9)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 317 (folder: ../examples/queens/10-10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+compute hooks 1000 til 1500
+compute hooks 1500 til 2000
+compute hooks 2000 til 2500
+compute hooks 2500 til 3000
+compute hooks 3000 til 3500
+compute hooks 3500 til 4000
+compute hooks 4000 til 4500
+compute hooks 4500 til 5000
+compute hooks 5000 til 5500
+compute hooks 5500 til 6000
+ontology size: 563
+hook count: 10200
+fluent count: 100
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 319 (folder: ../examples/robot/3)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 61
+hook count: 20
+fluent count: 20
+repair count: 
+created new domain
+start planning
+time limit for planning is 1788
+finished planning
+reasoning time: 12.166693252s
+planning time: .196901727s
+total time: 12.406593072s
+analyzed states: 15
+plan length: 3
+run ontology mediated planning for example with id 321 (folder: ../examples/robot/4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 81
+hook count: 26
+fluent count: 26
+repair count: 
+created new domain
+start planning
+time limit for planning is 1776
+finished planning
+reasoning time: 24.756754763s
+planning time: .224296928s
+total time: 25.024744166s
+analyzed states: 76
+plan length: 5
+run ontology mediated planning for example with id 323 (folder: ../examples/robot/5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 101
+hook count: 32
+fluent count: 32
+repair count: 
+created new domain
+start planning
+time limit for planning is 1747
+finished planning
+reasoning time: 53.104061657s
+planning time: .342665764s
+total time: 53.495225668s
+analyzed states: 217
+plan length: 7
+run ontology mediated planning for example with id 325 (folder: ../examples/robot/6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 121
+hook count: 38
+fluent count: 38
+repair count: 
+created new domain
+start planning
+time limit for planning is 1670
+finished planning
+reasoning time: 130.932280220s
+planning time: .337366082s
+total time: 131.320783114s
+analyzed states: 468
+plan length: 9
+run ontology mediated planning for example with id 327 (folder: ../examples/robot/7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 141
+hook count: 44
+fluent count: 44
+repair count: 
+created new domain
+start planning
+time limit for planning is 354
+finished planning
+reasoning time: 1446.201219243s
+planning time: .507258439s
+total time: 1446.760616129s
+analyzed states: 876
+plan length: 11
+run ontology mediated planning for example with id 329 (folder: ../examples/robot/8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 161
+hook count: 50
+fluent count: 50
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 331 (folder: ../examples/robot/9)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 181
+hook count: 56
+fluent count: 56
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 333 (folder: ../examples/robot/10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 201
+hook count: 62
+fluent count: 62
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 335 (folder: ../examples/robot/11)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 221
+hook count: 68
+fluent count: 68
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 337 (folder: ../examples/robot/12)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 241
+hook count: 74
+fluent count: 74
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 339 (folder: ../examples/robot/13)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 261
+hook count: 80
+fluent count: 80
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 341 (folder: ../examples/robot/14)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 281
+hook count: 86
+fluent count: 86
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 343 (folder: ../examples/robot/15)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 301
+hook count: 92
+fluent count: 92
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 345 (folder: ../examples/robot/16)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 321
+hook count: 98
+fluent count: 98
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 347 (folder: ../examples/robot/17)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 341
+hook count: 104
+fluent count: 104
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 349 (folder: ../examples/robot/18)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 361
+hook count: 110
+fluent count: 110
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 351 (folder: ../examples/robot/19)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 381
+hook count: 116
+fluent count: 116
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 353 (folder: ../examples/robot/20)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 401
+hook count: 122
+fluent count: 122
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 355 (folder: ../examples/robot/21)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 421
+hook count: 128
+fluent count: 128
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 357 (folder: ../examples/robot/22)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 441
+hook count: 134
+fluent count: 134
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 359 (folder: ../examples/robotConj/3)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 60
+hook count: 20
+fluent count: 20
+repair count: 
+created new domain
+start planning
+time limit for planning is 1787
+finished planning
+reasoning time: 13.147336425s
+planning time: .174474642s
+total time: 13.356005668s
+analyzed states: 15
+plan length: 3
+run ontology mediated planning for example with id 361 (folder: ../examples/robotConj/4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 80
+hook count: 26
+fluent count: 26
+repair count: 
+created new domain
+start planning
+time limit for planning is 1775
+finished planning
+reasoning time: 25.822641653s
+planning time: .187523034s
+total time: 26.044590357s
+analyzed states: 68
+plan length: 5
+run ontology mediated planning for example with id 363 (folder: ../examples/robotConj/5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 100
+hook count: 32
+fluent count: 32
+repair count: 
+created new domain
+start planning
+time limit for planning is 1749
+finished planning
+reasoning time: 51.349838284s
+planning time: .206112091s
+total time: 51.595445488s
+analyzed states: 184
+plan length: 7
+run ontology mediated planning for example with id 365 (folder: ../examples/robotConj/6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 120
+hook count: 38
+fluent count: 38
+repair count: 
+created new domain
+start planning
+time limit for planning is 1672
+finished planning
+reasoning time: 128.285198289s
+planning time: .219812796s
+total time: 128.549896265s
+analyzed states: 405
+plan length: 9
+run ontology mediated planning for example with id 367 (folder: ../examples/robotConj/7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 140
+hook count: 44
+fluent count: 44
+repair count: 
+created new domain
+start planning
+time limit for planning is 1027
+finished planning
+reasoning time: 773.215082207s
+planning time: .247249162s
+total time: 773.511695842s
+analyzed states: 767
+plan length: 11
+run ontology mediated planning for example with id 369 (folder: ../examples/robotConj/8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 160
+hook count: 50
+fluent count: 50
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 371 (folder: ../examples/robotConj/9)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 180
+hook count: 56
+fluent count: 56
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 373 (folder: ../examples/robotConj/10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 200
+hook count: 62
+fluent count: 62
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 375 (folder: ../examples/robotConj/11)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 220
+hook count: 68
+fluent count: 68
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 377 (folder: ../examples/robotConj/12)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 240
+hook count: 74
+fluent count: 74
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 379 (folder: ../examples/robotConj/13)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 260
+hook count: 80
+fluent count: 80
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 381 (folder: ../examples/robotConj/14)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 280
+hook count: 86
+fluent count: 86
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 383 (folder: ../examples/robotConj/15)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 300
+hook count: 92
+fluent count: 92
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 385 (folder: ../examples/robotConj/16)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 320
+hook count: 98
+fluent count: 98
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 387 (folder: ../examples/robotConj/17)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 340
+hook count: 104
+fluent count: 104
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 389 (folder: ../examples/robotConj/18)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 360
+hook count: 110
+fluent count: 110
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 391 (folder: ../examples/robotConj/19)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 380
+hook count: 116
+fluent count: 116
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 393 (folder: ../examples/robotConj/20)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 400
+hook count: 122
+fluent count: 122
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 395 (folder: ../examples/robotConj/21)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 420
+hook count: 128
+fluent count: 128
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 397 (folder: ../examples/robotConj/22)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 440
+hook count: 134
+fluent count: 134
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 399 (folder: ../examples/blocksworld/4-0)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 15
+hook count: 1
+fluent count: 4
+repair count: 
+created new domain
+start planning
+time limit for planning is 1795
+finished planning
+reasoning time: 5.774401067s
+planning time: .165707247s
+total time: 5.967060865s
+analyzed states: 501
+plan length: 6
+run ontology mediated planning for example with id 400 (folder: ../examples/blocksworld/4-1)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 15
+hook count: 1
+fluent count: 4
+repair count: 
+created new domain
+start planning
+time limit for planning is 1796
+finished planning
+reasoning time: 4.756953172s
+planning time: .159563354s
+total time: 4.946282363s
+analyzed states: 556
+plan length: 8
+run ontology mediated planning for example with id 401 (folder: ../examples/blocksworld/4-2)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 15
+hook count: 1
+fluent count: 4
+repair count: 
+created new domain
+start planning
+time limit for planning is 1796
+finished planning
+reasoning time: 4.802591839s
+planning time: .175824593s
+total time: 5.010754277s
+analyzed states: 535
+plan length: 6
+run ontology mediated planning for example with id 402 (folder: ../examples/blocksworld/5-0)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 17
+hook count: 1
+fluent count: 5
+repair count: 
+created new domain
+start planning
+time limit for planning is 1795
+finished planning
+reasoning time: 5.024778410s
+planning time: .213421378s
+total time: 5.270058750s
+analyzed states: 11638
+plan length: 10
+run ontology mediated planning for example with id 403 (folder: ../examples/blocksworld/5-1)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 17
+hook count: 1
+fluent count: 5
+repair count: 
+created new domain
+start planning
+time limit for planning is 1796
+finished planning
+reasoning time: 4.836618480s
+planning time: .191192293s
+total time: 5.054477741s
+analyzed states: 5646
+plan length: 8
+run ontology mediated planning for example with id 404 (folder: ../examples/blocksworld/5-2)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 17
+hook count: 1
+fluent count: 5
+repair count: 
+created new domain
+start planning
+time limit for planning is 1796
+finished planning
+reasoning time: 4.840305676s
+planning time: .897942132s
+total time: 5.767165574s
+analyzed states: 229596
+plan length: 14
+run ontology mediated planning for example with id 405 (folder: ../examples/blocksworld/6-0)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 19
+hook count: 1
+fluent count: 6
+repair count: 
+created new domain
+start planning
+time limit for planning is 1795
+finished planning
+reasoning time: 5.137387292s
+planning time: 1.459256085s
+total time: 6.628604730s
+analyzed states: 373468
+plan length: 12
+run ontology mediated planning for example with id 406 (folder: ../examples/blocksworld/6-1)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 19
+hook count: 1
+fluent count: 6
+repair count: 
+created new domain
+start planning
+time limit for planning is 1795
+finished planning
+reasoning time: 5.318424210s
+planning time: 1.542289651s
+total time: 6.891963955s
+analyzed states: 414506
+plan length: 10
+run ontology mediated planning for example with id 407 (folder: ../examples/blocksworld/6-2)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 19
+hook count: 1
+fluent count: 6
+repair count: 
+created new domain
+start planning
+time limit for planning is 1795
+finished planning
+reasoning time: 5.302667296s
+planning time: 3.215682461s
+total time: 8.549776343s
+analyzed states: 846770
+plan length: 14
+run ontology mediated planning for example with id 408 (folder: ../examples/blocksworld/7-0)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 21
+hook count: 1
+fluent count: 7
+repair count: 
+created new domain
+start planning
+time limit for planning is 1795
+finished planning
+reasoning time: 5.463226960s
+planning time: 167.002203435s
+total time: 172.497290979s
+analyzed states: 36450217
+plan length: 17
+run ontology mediated planning for example with id 409 (folder: ../examples/blocksworld/7-1)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 21
+hook count: 1
+fluent count: 7
+repair count: 
+created new domain
+start planning
+time limit for planning is 1795
+finished planning
+reasoning time: 5.865956567s
+planning time: 476.600929179s
+total time: 482.500657182s
+analyzed states: 108824509
+plan length: 16
+run ontology mediated planning for example with id 410 (folder: ../examples/blocksworld/7-2)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 21
+hook count: 1
+fluent count: 7
+repair count: 
+created new domain
+start planning
+time limit for planning is 1795
+finished planning
+reasoning time: 5.819301452s
+planning time: 110.302270805s
+total time: 116.156022214s
+analyzed states: 25344189
+plan length: 15
+run ontology mediated planning for example with id 411 (folder: ../examples/blocksworld/8-0)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 23
+hook count: 1
+fluent count: 8
+repair count: 
+created new domain
+start planning
+time limit for planning is 1794
+finished planning
+reasoning time: 6.066992657s
+planning time: 484.566071198s
+total time: 490.666194736s
+analyzed states: 100161737
+plan length: 14
+run ontology mediated planning for example with id 412 (folder: ../examples/blocksworld/8-1)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 23
+hook count: 1
+fluent count: 8
+repair count: 
+created new domain
+start planning
+time limit for planning is 1795
+finished planning
+reasoning time: 5.937248573s
+planning time: 1704.180906874s
+total time: 1710.167594961s
+analyzed states: 
+plan length: 
+run ontology mediated planning for example with id 413 (folder: ../examples/blocksworld/8-2)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 23
+hook count: 1
+fluent count: 8
+repair count: 
+created new domain
+start planning
+time limit for planning is 1793
+finished planning
+reasoning time: 7.432546202s
+planning time: 1555.576205756s
+total time: 1563.074029031s
+analyzed states: 339294107
+plan length: 14
+run ontology mediated planning for example with id 414 (folder: ../examples/blocksworld/9-0)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 25
+hook count: 1
+fluent count: 9
+repair count: 
+created new domain
+start planning
+time limit for planning is 1793
+timeout for rewriting generator after 1793 seconds
+reasoning time: 7.566804877s
+planning time: >1793s
+total time: -
+run ontology mediated planning for example with id 415 (folder: ../examples/blocksworld/9-1)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 25
+hook count: 1
+fluent count: 9
+repair count: 
+created new domain
+start planning
+time limit for planning is 1793
+finished planning
+reasoning time: 7.619202980s
+planning time: 1604.616640071s
+total time: 1612.308513303s
+analyzed states: 
+plan length: 
+run ontology mediated planning for example with id 416 (folder: ../examples/blocksworld/9-2)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 25
+hook count: 1
+fluent count: 9
+repair count: 
+created new domain
+start planning
+time limit for planning is 1793
+finished planning
+reasoning time: 7.830865345s
+planning time: 1757.418885330s
+total time: 1765.304381496s
+analyzed states: 
+plan length: 
+run ontology mediated planning for example with id 417 (folder: ../examples/blocksworld/10-0)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 27
+hook count: 1
+fluent count: 10
+repair count: 
+created new domain
+start planning
+time limit for planning is 1792
+finished planning
+reasoning time: 8.263910523s
+planning time: 1723.188161019s
+total time: 1731.516781387s
+analyzed states: 
+plan length: 
+run ontology mediated planning for example with id 418 (folder: ../examples/blocksworld/10-1)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 27
+hook count: 1
+fluent count: 10
+repair count: 
+created new domain
+start planning
+time limit for planning is 1793
+finished planning
+reasoning time: 7.984935514s
+planning time: 1533.632928554s
+total time: 1541.679778550s
+analyzed states: 
+plan length: 
+run ontology mediated planning for example with id 419 (folder: ../examples/blocksworld/10-2)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 27
+hook count: 1
+fluent count: 10
+repair count: 
+created new domain
+start planning
+time limit for planning is 1792
+finished planning
+reasoning time: 8.081015389s
+planning time: 1719.641107168s
+total time: 1727.797508632s
+analyzed states: 
+plan length: 
+run ontology mediated planning for example with id 420 (folder: ../examples/pipes/A-4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 163
+hook count: 16
+fluent count: 33
+repair count: 
+created new domain
+start planning
+time limit for planning is 1786
+finished planning
+reasoning time: 14.855026944s
+planning time: .445068999s
+total time: 15.365992237s
+analyzed states: 192
+plan length: no plan
+run ontology mediated planning for example with id 422 (folder: ../examples/pipes/A-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 225
+hook count: 28
+fluent count: 54
+repair count: 
+created new domain
+start planning
+time limit for planning is 1769
+finished planning
+reasoning time: 31.369657884s
+planning time: .481475656s
+total time: 31.883146486s
+analyzed states: 72689
+plan length: 20
+run ontology mediated planning for example with id 424 (folder: ../examples/pipes/A-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 288
+hook count: 45
+fluent count: 76
+repair count: 
+created new domain
+start planning
+time limit for planning is 1718
+finished planning
+reasoning time: 82.801183710s
+planning time: 3.214424092s
+total time: 86.050408914s
+analyzed states: 602413
+plan length: 21
+run ontology mediated planning for example with id 426 (folder: ../examples/pipes/A-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 353
+hook count: 59
+fluent count: 104
+repair count: 
+created new domain
+start planning
+time limit for planning is 1639
+finished planning
+reasoning time: 161.462273616s
+planning time: 6.684404493s
+total time: 168.181281875s
+analyzed states: 1179859
+plan length: 21
+run ontology mediated planning for example with id 428 (folder: ../examples/pipes/A-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 434
+hook count: 74
+fluent count: 134
+repair count: 
+created new domain
+start planning
+time limit for planning is 1412
+finished planning
+reasoning time: 388.357169729s
+planning time: 42.828570463s
+total time: 431.223298615s
+analyzed states: 7548522
+plan length: 21
+run ontology mediated planning for example with id 430 (folder: ../examples/pipes/A-9)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 535
+hook count: 92
+fluent count: 169
+repair count: 
+created new domain
+start planning
+time limit for planning is 931
+finished planning
+reasoning time: 869.129078555s
+planning time: 102.958443733s
+total time: 972.128228921s
+analyzed states: 17297553
+plan length: 21
+run ontology mediated planning for example with id 432 (folder: ../examples/pipes/A-10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 623
+hook count: 111
+fluent count: 207
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+run ontology mediated planning for example with id 434 (folder: ../examples/pipes/B-4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 161
+hook count: 20
+fluent count: 33
+repair count: 
+created new domain
+start planning
+time limit for planning is 1787
+finished planning
+reasoning time: 13.945203001s
+planning time: .188000674s
+total time: 14.173253976s
+analyzed states: 447
+plan length: 11
+run ontology mediated planning for example with id 436 (folder: ../examples/pipes/B-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 209
+hook count: 29
+fluent count: 53
+repair count: 
+created new domain
+start planning
+time limit for planning is 1770
+finished planning
+reasoning time: 30.293917754s
+planning time: .178810837s
+total time: 30.502494357s
+analyzed states: 1471
+plan length: 13
+run ontology mediated planning for example with id 438 (folder: ../examples/pipes/B-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 271
+hook count: 41
+fluent count: 75
+repair count: 
+created new domain
+start planning
+time limit for planning is 1739
+finished planning
+reasoning time: 61.865522793s
+planning time: .225178763s
+total time: 62.126841367s
+analyzed states: 6673
+plan length: 14
+run ontology mediated planning for example with id 440 (folder: ../examples/pipes/B-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 357
+hook count: 54
+fluent count: 103
+repair count: 
+created new domain
+start planning
+time limit for planning is 1709
+finished planning
+reasoning time: 91.911949347s
+planning time: 159.170767789s
+total time: 251.121015484s
+analyzed states: 22688859
+plan length: 32
+run ontology mediated planning for example with id 442 (folder: ../examples/pipes/B-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 442
+hook count: 71
+fluent count: 133
+repair count: 
+created new domain
+start planning
+time limit for planning is 1461
+finished planning
+reasoning time: 339.821174455s
+planning time: 1260.838782826s
+total time: 1600.700028299s
+analyzed states: 176768579
+plan length: 33
+run ontology mediated planning for example with id 444 (folder: ../examples/pipes/B-9)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 537
+hook count: 88
+fluent count: 168
+repair count: 
+created new domain
+start planning
+time limit for planning is 1098
+timeout for rewriting generator after 1098 seconds
+reasoning time: 702.473454506s
+planning time: >1098s
+total time: -
+run ontology mediated planning for example with id 446 (folder: ../examples/pipes/B-10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 619
+hook count: 110
+fluent count: 206
+repair count: 
+created new domain
+start planning
+time limit for planning is 452
+timeout for rewriting generator after 452 seconds
+reasoning time: 1348.451288502s
+planning time: >452s
+total time: -
+run ontology mediated planning for example with id 448 (folder: ../examples/pipes/C-4)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 152
+hook count: 16
+fluent count: 34
+repair count: 
+created new domain
+start planning
+time limit for planning is 1788
+finished planning
+reasoning time: 12.673988947s
+planning time: .154993868s
+total time: 12.860377190s
+analyzed states: 213
+plan length: 12
+run ontology mediated planning for example with id 450 (folder: ../examples/pipes/C-5)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 209
+hook count: 26
+fluent count: 52
+repair count: 
+created new domain
+start planning
+time limit for planning is 1766
+finished planning
+reasoning time: 34.367729823s
+planning time: .193542143s
+total time: 34.595269250s
+analyzed states: 2250
+plan length: 15
+run ontology mediated planning for example with id 452 (folder: ../examples/pipes/C-6)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 269
+hook count: 37
+fluent count: 75
+repair count: 
+created new domain
+start planning
+time limit for planning is 1729
+finished planning
+reasoning time: 71.457426824s
+planning time: .241845338s
+total time: 71.731924767s
+analyzed states: 16384
+plan length: no plan
+run ontology mediated planning for example with id 454 (folder: ../examples/pipes/C-7)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 331
+hook count: 50
+fluent count: 102
+repair count: 
+created new domain
+start planning
+time limit for planning is 1636
+finished planning
+reasoning time: 164.352130692s
+planning time: .405532672s
+total time: 164.795095765s
+analyzed states: 40960
+plan length: no plan
+run ontology mediated planning for example with id 456 (folder: ../examples/pipes/C-8)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 399
+hook count: 65
+fluent count: 132
+repair count: 
+created new domain
+start planning
+time limit for planning is 1398
+finished planning
+reasoning time: 402.815025787s
+planning time: 1.183920728s
+total time: 404.036358799s
+analyzed states: 229376
+plan length: no plan
+run ontology mediated planning for example with id 458 (folder: ../examples/pipes/C-9)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+compute hooks 500 til 1000
+ontology size: 479
+hook count: 82
+fluent count: 166
+repair count: 
+created new domain
+start planning
+time limit for planning is 463
+finished planning
+reasoning time: 1337.540267426s
+planning time: 2.785722214s
+total time: 1340.366346589s
+analyzed states: 581632
+plan length: no plan
+run ontology mediated planning for example with id 460 (folder: ../examples/pipes/C-10)
+time limit is set to 1800s
+start generating rewritings
+compute hooks 0 til 500
+ontology size: 560
+hook count: 101
+fluent count: 204
+repair count: 
+timeout for rewriting generator after 1800 seconds
+reasoning time: >1800s
+planning time: -
+total time: -
+total time to run benchmark set: 324102.453118318s
