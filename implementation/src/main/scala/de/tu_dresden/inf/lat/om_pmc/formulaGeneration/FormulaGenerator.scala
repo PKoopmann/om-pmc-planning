@@ -21,7 +21,7 @@ import scala.collection.mutable.Map
 
 object FormulaGenerator {
 
-  var explanationMethod = Methods.INC_BASED // Methods.INC_BASED, Methods.HOOK_CENTRIC
+  var explanationMethod = Methods.CLASS_BASED // Methods.INC_BASED, Methods.HOOK_CENTRIC
 
   def formulaGenerator(axiom2formula: AxiomToFormulaMap,
                        hook2axiom: HookToAxiomMap,
