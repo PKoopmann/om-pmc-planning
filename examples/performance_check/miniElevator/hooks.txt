@@ -2,6 +2,20 @@
 
 PREFIX elevator: <http://www.semanticweb.org/anon/ontologies/2021/3/>
 
+HOOK_PREDICATE: KBquery_origin
+VARIABLES: ?x ?y
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+	?y Type: owl:Thing
+QUERY:
+  ?x elevator:origin ?y
+  
+HOOK_PREDICATE: KBquery_passenger
+VARIABLES: ?x
+TYPE_SPECIFICATION:
+	?x Type: owl:Thing
+QUERY:
+	?x Type: elevator:passenger
 
 HOOK_PREDICATE: KBquery_lift_at
 VARIABLES: ?x
@@ -10,12 +24,7 @@ TYPE_SPECIFICATION:
 QUERY:
 	?x Type: elevator:lift_at
 	
-HOOK_PREDICATE: KBquery_passenger
-VARIABLES: ?x
-TYPE_SPECIFICATION:
-	?x Type: owl:Thing
-QUERY:
-	?x Type: elevator:passenger
+
 	
 HOOK_PREDICATE: KBquery_served
 VARIABLES: ?x
