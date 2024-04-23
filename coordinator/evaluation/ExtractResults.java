@@ -278,6 +278,7 @@ class BenchmarkSet {
                 times.add(filteredData.getData(bi.getKey()).getSingletonResult().planningTime);
             
         }
+        System.out.println(times);
         return median(times);
     }
 
@@ -297,6 +298,8 @@ class BenchmarkSet {
     static float median(List<Float> list) {
         if (list.isEmpty())
             return (float) -1.0;
+        Collections.sort(list);
+
         float[] x = new float[list.size()];
         for(int i = 0; i < list.size(); i++) x[i] = list.get(i);
         var n = x.length;
@@ -344,7 +347,7 @@ public class ExtractResults {
         var rawData = new BenchmarkSet();
 
         // DL benchmark
-        rawData.addFromCSV("../../benchmark_runs/benchmarking/benchmarkAll_ConceptOM_2024_11.csv");
+        rawData.addFromCSV("../../benchmark_runs/benchmarking/benchmarkAll_Schema_2024_04_11.csv");
 
         // new method
         //rawData.addFromCSV("../../benchmark_runs/benchmarking/benchmarkAll_2024_01_17_15_51.csv");
