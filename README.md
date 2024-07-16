@@ -27,7 +27,7 @@
 3. output will be written to a a file in a folder [benchmark_runs](benchmark_runs)
  
 ## General Structure
-- om-pmc-formula-generation
+- implementation
     - project that contains the generator for the rewritings
 - coordinator:
     - contains script to construct plans for examples
