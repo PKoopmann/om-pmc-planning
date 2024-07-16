@@ -26,7 +26,7 @@ do
   
   end=$((start+increment))
 
-  echo "compute hooks $start til $end"
+  echo "compute rewritings for queries (hooks) $start til $end"
   # possible options: -Xmx16g (increase RAM limit)
   java -Xmx8g -cp "$RewritingGenerator" de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" $start $end >> "$ReasonerLog" 2>>"$ReasonerLog"
   #java -cp "$RewritingGenerator" de.tu_dresden.inf.lat.om_planning.CreatePlanningDefinitions "-pddl" "$Fluents" "$Hooks" "$Ontology" "$Rewritings" >> "$ReasonerLog"
