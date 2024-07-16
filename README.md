@@ -13,7 +13,8 @@ This repository contains a tool for planning w.r.t. to OWL ontologies. The imple
 - automatically, a folder `misc` is created, to save the intermediate PDDL files and log files. If you wish to automatically delete them, you can append `-delete-misc`to the arguments
 - if you want to provide a time limit, you can add the number of seconds
 - overall, this might look like this (60s time limit for planning and `misc` folder gets deleted):
-`./omPlanner.sh examples/performance_check/pipesA-8 pipesA-8.ttl pipes.pddl pipesProblemA-8.pddl 60 -delete-misc`
+
+  `./omPlanner.sh examples/performance_check/pipesA-8 pipesA-8.ttl pipes.pddl pipesProblemA-8.pddl 60 -delete-misc`
 
 ## Evaluation ECAI 2024 paper
 - the files with the results of the evaluation for our ECAI 2024 paper and instructions on how to reproduce them can be found in the branch [ecai](https://github.com/PKoopmann/om-pmc-planning/tree/ecai)
