@@ -10,7 +10,21 @@
     - horn algorithm: [benchmarkAll_Schema_Horn_2024_04_11.csv](ECAI-evaluationbenchmarkAll_Schema_Horn_2024_04_11.csv) (method: horn_planning)
 
 ## Reproduction of Benchmark Runs
-- add info here, after modifying tool
+- Note: reproducing the evaluation takes several hours (in our experiments, it was about 100h on a server with an Intel Xeon Gold 5118 CPU @2.30GHz)
+### Schema-Based Algorithm and Horn
+1. build the tool by running `sbt assembly`
+1. go to folder [coordinator](coordinator)
+2. run `./runBenchmark.sh benchmarkAllECAI.csv 1800`
+3. output will be written to a a file in a folder [benchmark_runs](benchmark_runs)
+
+### Basic and Concept-Based Algorithm
+1. edit line 24 in [FormulaGenerator.scala](implementation/src/main/scala/de/tu_dresden/inf/lat/om_pmc/formulaGeneration/FormulaGenerator.scala)
+   - use `var explanationMethod = Methods.INC_BASED` for basic algorithm
+   - use `var explanationMethod = Methods.CLASS_BASED` for concept-based algorithm
+1. build the tool by running `sbt assembly`
+1. go to folder [coordinator](coordinator)
+2. run `./runBenchmark.sh benchmarkAllOmECAI.csv 1800`
+3. output will be written to a a file in a folder [benchmark_runs](benchmark_runs)
  
 ## General Structure
 - om-pmc-formula-generation
@@ -21,7 +35,6 @@
     - contains script to analyze generated benchmark documentations
 - examples:
     - set of examples
-
 
 ## Usage
 - we recommend using the version of the tool from the [main branch](https://github.com/PKoopmann/om-pmc-planning/tree/main)
