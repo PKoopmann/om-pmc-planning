@@ -19,7 +19,7 @@ see file `Installation.md`
 - examples:
     - set of examples
 - ECAI-evaluation:
-    - benchmark runs that are the foundation of the evaluation in our paper submitted to ECAI 2024
+    - benchmark runs that are the foundation of the evaluation in our paper "Planning with OWL-DL Ontologies" published at ECAI 2024
 
 ## Usage
 - go to folder "coordintor"
