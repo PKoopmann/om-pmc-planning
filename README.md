@@ -2,6 +2,9 @@
 
 - add some general information… 
 
+## ECAI 2024 paper
+- files with the results of the evaluation for our ECAI 2024 paper can be found in branch [ecai](https://github.com/PKoopmann/om-pmc-planning/tree/ecai)
+
 ## Installation
 see file `Installation.md`
 
@@ -18,8 +21,6 @@ see file `Installation.md`
     - contains script to analyze generated benchmark documentations
 - examples:
     - set of examples
-- ECAI-evaluation:
-    - benchmark runs that are the foundation of the evaluation in our paper submitted to ECAI 2024
 
 ## Usage
 - go to folder "coordintor"
