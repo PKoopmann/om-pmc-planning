@@ -14,8 +14,12 @@ see file `Installation.md`
     - project that contains the generator for the rewritings
 - coordinator:
     - contains script to construct plans for examples
+- coordinator/evaluation:
+    - contains script to analyze generated benchmark documentations
 - examples:
     - set of examples
+- ECAI-evaluation:
+    - benchmark runs that are the foundation of the evaluation in our paper submitted to ECAI 2024
 
 ## Usage
 - go to folder "coordintor"
