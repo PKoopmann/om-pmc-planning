@@ -1,9 +1,0 @@
-id,method,name,folder,ontology,domain,problem
-1,om_planning,drone5-5,../examples/performance_check/drone5-5,drone5-5.ttl,drone.pddl,droneProblem5-5.pddl
-3,om_planning,elevator16,../examples/performance_check/elevator16,elevator16.ttl,elevator.pddl,elevatorProblem16.pddl
-4,om_planning,pipesA-8,../examples/performance_check/pipesA-8,pipesA-8.ttl,pipes.pddl,pipesProblemA-8.pddl
-5,om_planning,pipesB-6,../examples/performance_check/pipesB-6,pipesB-6.ttl,pipes.pddl,pipesProblemB-6.pddl
-6,om_planning,queens5-1,../examples/performance_check/queens5-1,queens5-1.ttl,queens.pddl,problem5-1.pddl
-7,om_planning,robot3,../examples/performance_check/robot3,TTL3.owl,robotDomain3.pddl,robotProblem3.pddl
-8,om_planning,robotConj6,../examples/performance_check/robotConj6,TTL6.owl,robotDomain6.pddl,robotProblem6.pddl
-9,om_planning,taskAssign3,../examples/performance_check/taskAssign3,task3.ttl,domain.pddl,taskProblem3.pddl

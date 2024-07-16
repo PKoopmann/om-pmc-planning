@@ -1,3 +1,0 @@
-id,method,name,folder,ontology,domain,problem
-1,om_planning,pipes1,../examples/pipes/pipes1,pipes.ttl,pipes.pddl,pipesProblem7-7.pddl
-3,horn_planning,pipes1,../examples/horn_pipes/pipes1,pipes.ttl,pipes.pddl,pipesProblem7-7.pddl
