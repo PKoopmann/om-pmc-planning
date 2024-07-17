@@ -24,9 +24,9 @@ install
 `mvn clean install`
 
 ### obtain reasoner
-- clone repository
+- clone this repository
     - use git to clone repository 
-`git clone https://gitlab.tcs.inf.tu-dresden.de/koopmann/om-pmc-formula-generation.git`
+`git clone https://github.com/PKoopmann/om-pmc-planning`
 `cd om-pmc-formula-generation`
     - build from source
 `cd implementation`
@@ -36,7 +36,7 @@ install
 `sbt assembly`
 
 
-## install FD
+## install FD planner
 install dependencies for FD planner
 `sudo apt install cmake g++ git make python3`
 clone patched fork
@@ -49,7 +49,7 @@ call "build"
 `./build.py`
 `cd`
 
-## Obtain Horn-Reasoner
+## Obtain Horn-Reasoner (to reproduce evaluation)
 only necessary to run benchmark sets that include the Horn reasoning
 Requirement: obtain DVL
 `curl https://www.dlvsystem.it/files/dlv.i386-linux-elf-static.bin --output dlv`

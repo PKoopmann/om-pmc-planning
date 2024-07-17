@@ -32,3 +32,5 @@ examples/pipes/A-9/temp_rewritings.txt
 examples/performance_check/miniDrone/temp_rewritings_2.txt
 examples/performance_check/miniDrone/temp_rewritings_2.txt
 temp.txt
+
+!implementation/src/main/resources/logback.xml
