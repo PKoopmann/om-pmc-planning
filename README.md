@@ -4,22 +4,22 @@ This repository contains a tool for planning w.r.t. to OWL ontologies. The imple
 
 ## Usage
 ### Docker
-The easiest way to use our tool is to download the docker iamge provided on Zenodo: [download](https://zenodo.org/records/12799965/files/omplanner.tar?download=1)
+The easiest way to use our tool is to download the docker iamge provided on [Zenodo](https://doi.org/10.5281/zenodo.12799965). 
 
-1. obtain the container image `omplan.tar`
+1. obtain the container image `omplan.tar` using this [download link](https://zenodo.org/records/12799965/files/omplanner.tar?download=1)
 2. load image `docker load -i omplan.tar`
 3. use `docker run omplan` to solve ontology-mediate planning problems
     - run examples from repository:
       ```
       docker run omplan <directory-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
       ```
-    - run from your own file by mounting the directory from your machine:
+    - run using your own files by mounting the directory from your machine:
        ```
-      docker run -v <directory-on-your-machine>:<directory-in-container> omplan <folder-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
+      docker run -v <directory-on-your-machine>:<directory-in-container> omplan <directory-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
        ```
     - the plan (if found) is output on the terminal and saved in the specified folder
 
-### Options
+#### Options
 - automatically, a folder `misc` is created, to save the intermediate PDDL files and log files. If you wish to automatically delete them, you can append `-delete-misc` to the arguments
 - if you want to provide a time limit, you can add the number of seconds
 - overall, this might look like this (60s time limit for planning and `misc` folder gets deleted):
@@ -32,7 +32,7 @@ The easiest way to use our tool is to download the docker iamge provided on Zeno
 
 1. run the tool by calling:
    ```
-   ./omPlanner.sh <folder-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
+   ./omPlanner.sh <directory-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
    ```
   e.g. 
   ```
