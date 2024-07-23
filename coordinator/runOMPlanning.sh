@@ -165,7 +165,7 @@ done < "$ReasonerLog"
 echo "ontology size: ${AxiomCount}"
 echo "hook count: ${HookCount}"
 echo "fluent count: ${FluentCount}"
-echo "repair count: ${RepairCount}"
+#echo "repair count: ${RepairCount}"
 
 if [[ $TimeOut == 1 ]]; then
   echo "timeout for rewriting generator after $TimeLimit seconds"
@@ -338,3 +338,10 @@ echo "total time: ${DurationAll}s"
 
 echo "analyzed states: ${Evaluations}"
 echo "plan length: ${PlanLength}"
+
+# display plan, if one was generated
+if ! [[ "$PlanLength" == "no plan" ]]; then
+  echo ""
+  echo "Found plan:"
+  cat $Plan
+fi
