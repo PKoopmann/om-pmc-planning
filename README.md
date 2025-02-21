@@ -4,7 +4,7 @@ This repository contains a tool for planning w.r.t. to OWL ontologies. The imple
 
 ## Usage
 ### Docker
-The easiest way to use our tool is to download the docker iamge provided on [Zenodo](https://doi.org/10.5281/zenodo.12799965). 
+The easiest way to use our tool is to download the docker image provided on [Zenodo](https://doi.org/10.5281/zenodo.12799965). 
 
 1. obtain the container image `omplan.tar` using this [download link](https://zenodo.org/records/12799965/files/omplanner.tar?download=1)
 2. load image `docker load -i omplan.tar`
