@@ -11,11 +11,11 @@ The easiest way to use our tool is to download the docker image provided on [Zen
 3. use `docker run omplan` to solve ontology-mediate planning problems
     - run examples from repository:
       ```
-      docker run omplan <directory-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
+      docker run --rm omplan <directory-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
       ```
     - run using your own files by mounting the directory from your machine:
        ```
-      docker run -v <directory-on-your-machine>:<directory-in-container> omplan <directory-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
+      docker run --rm -v <directory-on-your-machine>:<directory-in-container> omplan <directory-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
        ```
     - the tool expects a `fluents.txt` and a `hooks.txt` file in the folder that specify the interface between the planning domain / problem and the ontology. To see an example how to specify the interfacr, you should have a look at the [blocksworld domain](examples/blocksworld/10-0).
     - the plan (if found) is output on the terminal and saved in the specified folder
@@ -25,7 +25,7 @@ The easiest way to use our tool is to download the docker image provided on [Zen
 - if you want to provide a time limit, you can add the number of seconds
 - overall, this might look like this (60s time limit for planning and `misc` folder gets deleted):
   ```
-  docker run omplan examples/performance_check/pipesA-8 pipesA-8.ttl pipes.pddl pipesProblemA-8.pddl 60 -delete-misc
+  docker run --rm omplan examples/performance_check/pipesA-8 pipesA-8.ttl pipes.pddl pipesProblemA-8.pddl 60 -delete-misc
   ```
 
 ### Usage without Docker
