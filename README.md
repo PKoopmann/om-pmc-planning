@@ -1,5 +1,7 @@
 # Ontology-Mediated Planning (ECAI 2024 evaluation)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12799965.svg)](https://doi.org/10.5281/zenodo.12799965)
+
 ## ECAI Evaluation
 - can be found in folder [ECAI-evaluation](/ECAI-evaluation)
 - we measured the times for reasoning, planning and the total time as well as some metrics of the generated plan and the analyzed ontology
