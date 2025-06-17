@@ -17,7 +17,7 @@ The easiest way to use our tool is to download the docker image provided on [Zen
        ```
       docker run --rm -v <directory-on-your-machine>:<directory-in-container> omplan <directory-of-files> <name-of-ontology-file> <name-of-PDDL-domain-file> <name-of-PDDL-problem-file>
        ```
-    - the tool expects a `fluents.txt` and a `hooks.txt` file in the folder that specify the interface between the planning domain / problem and the ontology. To see an example how to specify the interfacr, you should have a look at the [blocksworld domain](examples/blocksworld/10-0).
+    - the tool expects a `fluents.txt` and a `hooks.txt` file in the folder that specify the interface between the planning domain / problem and the ontology. To see an example how to specify the interface, you should have a look at the [blocksworld domain](examples/blocksworld/10-0).
     - the plan (if found) is output on the terminal and saved in the specified folder
 
 #### Options
